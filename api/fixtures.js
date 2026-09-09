@@ -18,254 +18,241 @@ export default async function handler(req, res) {
 
     /*
       PAGES OF FOOTBALL
-      Competizioni principali europee
 
-      L'ID identifica la competizione.
-      Il paese viene controllato dopo la risposta
-      dell'API per evitare omonimie tipo:
-      "Premier League" India / "Ligue 1" Algeria.
+      Lista delle competizioni europee che vogliamo mostrare.
+
+      FILTRIAMO PER ID, NON PER NOME.
+      Questo impedisce di prendere per errore:
+      - Premier League India
+      - Ligue 1 Algeria
+      - altre competizioni omonime
     */
 
-    const competitions = [
+    const allowedCompetitions = {
+      2: {
+        name: "Champions League",
+        country: "World",
+        order: 20
+      },
+
+      3: {
+        name: "Europa League",
+        country: "World",
+        order: 21
+      },
+
+      848: {
+        name: "Conference League",
+        country: "World",
+        order: 22
+      },
+
       // 🇬🇧 England
-      {
-        id: 39,
+      39: {
         name: "Premier League",
         country: "England",
         order: 1
       },
-      {
-        id: 45,
+
+      45: {
         name: "FA Cup",
         country: "England",
         order: 10
       },
-      {
-        id: 48,
+
+      48: {
         name: "EFL Cup",
         country: "England",
         order: 11
       },
 
       // 🇮🇹 Italy
-      {
-        id: 135,
+      135: {
         name: "Serie A",
         country: "Italy",
         order: 2
       },
-      {
-        id: 137,
+
+      137: {
         name: "Coppa Italia",
         country: "Italy",
         order: 12
       },
 
       // 🇪🇸 Spain
-      {
-        id: 140,
+      140: {
         name: "La Liga",
         country: "Spain",
         order: 3
       },
 
       // 🇩🇪 Germany
-      {
-        id: 78,
+      78: {
         name: "Bundesliga",
         country: "Germany",
         order: 4
       },
 
       // 🇫🇷 France
-      {
-        id: 61,
+      61: {
         name: "Ligue 1",
         country: "France",
         order: 5
       },
 
       // 🇵🇹 Portugal
-      {
-        id: 94,
+      94: {
         name: "Primeira Liga",
         country: "Portugal",
         order: 6
       },
 
       // 🇳🇱 Netherlands
-      {
-        id: 88,
+      88: {
         name: "Eredivisie",
         country: "Netherlands",
         order: 7
       },
 
       // 🇧🇪 Belgium
-      {
-        id: 144,
+      144: {
         name: "Belgian Pro League",
         country: "Belgium",
         order: 8
       },
 
       // 🇹🇷 Turkey
-      {
-        id: 203,
+      203: {
         name: "Süper Lig",
         country: "Turkey",
         order: 9
-      },
-
-      // 🇪🇺 UEFA
-      {
-        id: 2,
-        name: "Champions League",
-        country: "World",
-        order: 20
-      },
-      {
-        id: 3,
-        name: "Europa League",
-        country: "World",
-        order: 21
-      },
-      {
-        id: 848,
-        name: "Conference League",
-        country: "World",
-        order: 22
       }
-    ];
+    };
 
     /*
-      Le stagioni dei campionati europei 2026/27
-      sono indicate dall'anno di inizio: 2026.
+      UNA SOLA CHIAMATA API.
+
+      Non specifichiamo league e season.
+      Chiediamo semplicemente tutte le partite
+      della data desiderata.
     */
 
-    const season = 2026;
+    const url =
+      "https://v3.football.api-sports.io/fixtures" +
+      "?date=" + encodeURIComponent(date) +
+      "&timezone=Europe/Rome";
 
-    const requests = competitions.map(async (competition) => {
-      try {
-        const url =
-          "https://v3.football.api-sports.io/fixtures" +
-          "?league=" + competition.id +
-          "&season=" + season +
-          "&date=" + encodeURIComponent(date) +
-          "&timezone=Europe/Rome";
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "x-apisports-key": apiKey,
+        "Accept": "application/json"
+      }
+    });
 
-        const response = await fetch(url, {
-          method: "GET",
-          headers: {
-            "x-apisports-key": apiKey,
-            "Accept": "application/json"
-          }
-        });
+    const data = await response.json();
 
-        const data = await response.json();
+    if (!response.ok) {
+      return res.status(response.status).json({
+        error: "Errore API-Football",
+        details: data.errors || null
+      });
+    }
 
-        if (!response.ok) {
-          console.warn(
-            `Errore HTTP ${competition.name}:`,
-            response.status
-          );
+    if (
+      data.errors &&
+      Object.keys(data.errors).length > 0
+    ) {
+      return res.status(500).json({
+        error: "Errore API-Football",
+        details: data.errors
+      });
+    }
 
-          return [];
+    /*
+      FILTRO PRINCIPALE
+
+      Guardiamo l'ID della competizione restituita
+      da API-Football.
+
+      Se l'ID non è nella nostra whitelist,
+      la partita viene eliminata.
+    */
+
+    const fixtures = (data.response || [])
+      .filter((fixture) => {
+        if (!fixture.league) {
+          return false;
         }
+
+        const leagueId = Number(fixture.league.id);
+
+        return allowedCompetitions[leagueId] !== undefined;
+      })
+      .map((fixture) => {
+        const leagueId = Number(fixture.league.id);
+        const competition = allowedCompetitions[leagueId];
+
+        /*
+          Controllo extra del paese.
+
+          Per Champions / Europa / Conference
+          il paese viene ignorato perché sono competizioni UEFA.
+        */
 
         if (
-          data.errors &&
-          Object.keys(data.errors).length > 0
+          competition.country !== "World" &&
+          fixture.league.country !== competition.country
         ) {
-          console.warn(
-            `Errore API ${competition.name}:`,
-            data.errors
-          );
-
-          return [];
+          return null;
         }
 
         /*
-          FILTRO DI SICUREZZA
-
-          Controlliamo sia l'ID sia il paese.
-          In questo modo una competizione omonima
-          non può finire accidentalmente nel sito.
+          Normalizziamo il nome ricevuto dall'API
+          usando il nostro nome ufficiale.
         */
 
-        const validFixtures = (data.response || []).filter(
-          (fixture) => {
-            const league = fixture.league;
-
-            if (!league) {
-              return false;
-            }
-
-            // L'ID deve essere quello che abbiamo richiesto
-            if (Number(league.id) !== competition.id) {
-              return false;
-            }
-
-            // Per le competizioni nazionali controlliamo il paese
-            if (competition.country !== "World") {
-              if (league.country !== competition.country) {
-                return false;
-              }
-            }
-
-            return true;
-          }
-        );
-
-        /*
-          Normalizziamo il nome della competizione
-          così il frontend riceve sempre quello deciso da noi.
-        */
-
-        return validFixtures.map((fixture) => ({
+        return {
           ...fixture,
 
           league: {
             ...fixture.league,
+
             name: competition.name,
-            country: competition.country
+            country: competition.country,
+
+            /*
+              Conserviamo anche l'ordine che abbiamo deciso.
+            */
+            order: competition.order
           }
-        }));
-
-      } catch (error) {
-        console.warn(
-          `Errore caricando ${competition.name}:`,
-          error.message
-        );
-
-        return [];
-      }
-    });
+        };
+      })
+      .filter(Boolean);
 
     /*
-      Promise.all permette di aspettare tutte le competizioni.
-      Un errore di una singola lega NON blocca le altre.
-    */
-
-    const results = await Promise.all(requests);
-
-    const fixtures = results.flat();
-
-    /*
-      Ordine cronologico
+      Ordine:
+      prima per data/ora,
+      poi per ordine della competizione.
     */
 
     fixtures.sort((a, b) => {
-      return (
+      const dateDifference =
         new Date(a.fixture.date) -
-        new Date(b.fixture.date)
+        new Date(b.fixture.date);
+
+      if (dateDifference !== 0) {
+        return dateDifference;
+      }
+
+      return (
+        (a.league.order || 999) -
+        (b.league.order || 999)
       );
     });
 
     /*
-      Cache:
-      non richiamiamo inutilmente API-Football
-      ogni volta che la pagina viene caricata.
+      Cache di 60 secondi.
     */
 
     res.setHeader(
