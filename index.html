@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
+
   <meta charset="UTF-8">
 
   <meta
@@ -10,9 +12,17 @@
 
   <title>Pages Of Football</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
 
   <style>
+
+    /* =========================
+       SEARCH RESULTS
+    ========================= */
+
     .search-wrapper {
       position: relative;
       max-width: 600px;
@@ -24,18 +34,28 @@
       top: calc(100% + 8px);
       left: 0;
       right: 0;
+
       background: white;
+
       border: 1px solid #ddd;
+
       z-index: 50;
+
       display: none;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
     }
 
     .search-result {
       display: block;
+
       padding: 15px 18px;
+
       text-decoration: none;
+
       color: #111;
+
       border-bottom: 1px solid #eee;
     }
 
@@ -50,8 +70,11 @@
     .search-result-type {
       font-size: 10px;
       font-weight: 700;
+
       letter-spacing: 1px;
+
       color: #888;
+
       margin-bottom: 4px;
     }
 
@@ -62,1214 +85,1661 @@
 
     .search-result-meta {
       font-size: 12px;
+
       color: #777;
+
       margin-top: 3px;
     }
+
   </style>
+
 </head>
+
 
 <body>
 
-  <div class="page">
 
-    <!-- HEADER -->
+<div class="page">
 
-    <header>
 
-      <a href="index.html" class="brand">
-        <div class="logo">P</div>
-        <span>Pages Of Football</span>
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+
+    <a
+      href="index.html"
+      class="brand"
+    >
+
+      <div class="logo">
+        P
+      </div>
+
+      <span>
+        Pages Of Football
+      </span>
+
+    </a>
+
+
+    <nav>
+
+      <a
+        href="index.html"
+        class="active"
+      >
+        Home
       </a>
 
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="giocatori.html">Giocatori</a>
-        <a href="squadre.html">Squadre</a>
-        <a href="competizioni.html">Competizioni</a>
-        <a href="almanacco.html">Almanacco</a>
-      </nav>
+      <a href="giocatori.html">
+        Giocatori
+      </a>
 
-    </header>
+      <a href="squadre.html">
+        Squadre
+      </a>
+
+      <a href="competizioni.html">
+        Competizioni
+      </a>
+
+      <a href="almanacco.html">
+        Almanacco
+      </a>
+
+    </nav>
+
+  </header>
 
 
-    <!-- HERO -->
 
-    <section class="hero">
+  <!-- =========================
+       HERO
+  ========================= -->
 
-      <div class="eyebrow">
-        FOOTBALL • DATABASE • HISTORY
+  <section class="hero">
+
+    <div class="eyebrow">
+      FOOTBALL • DATABASE • HISTORY
+    </div>
+
+
+    <h1>
+      Il calcio,<br>
+      raccontato.
+    </h1>
+
+
+    <p>
+      Partite, giocatori, squadre e storie
+      del calcio. Un archivio costruito
+      per ricordare tutto.
+    </p>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-wrapper">
+
+      <div class="search">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Cerca giocatore, squadra o competizione..."
+          autocomplete="off"
+        >
+
+        <button id="searchButton">
+          Cerca
+        </button>
+
       </div>
 
-      <h1>
-        Il calcio,<br>
-        raccontato.
-      </h1>
 
-      <p>
-        Partite, giocatori, squadre e storie del calcio.
-        Un archivio costruito per ricordare tutto.
-      </p>
+      <div
+        id="searchResults"
+        class="search-results"
+      ></div>
+
+    </div>
+
+  </section>
 
 
-      <!-- SEARCH -->
 
-      <div class="search-wrapper">
+  <!-- =========================
+       MATCHES
+  ========================= -->
 
-        <div class="search">
+  <section class="matches">
+
+
+    <div class="section-header">
+
+
+      <div>
+
+        <span class="section-label">
+          MATCHES
+        </span>
+
+        <h2 id="matchesTitle">
+          Partite
+        </h2>
+
+      </div>
+
+
+
+      <!-- DATE SELECTOR -->
+
+      <div class="date-controls">
+
+
+        <button
+          id="prevDay"
+          class="date-arrow"
+          aria-label="Giorno precedente"
+        >
+          ←
+        </button>
+
+
+        <label
+          class="date-display"
+          for="datePicker"
+        >
+
+          <strong id="matchDay">
+            10
+          </strong>
+
+          <span id="matchDate">
+            SET<br>2026
+          </span>
+
 
           <input
-            type="text"
-            id="searchInput"
-            placeholder="Cerca giocatore, squadra o competizione..."
-            autocomplete="off"
+            type="date"
+            id="datePicker"
           >
 
-          <button id="searchButton">
-            Cerca
-          </button>
-
-        </div>
-
-        <div
-          id="searchResults"
-          class="search-results"
-        ></div>
-
-      </div>
-
-    </section>
+        </label>
 
 
-    <!-- MATCHES -->
-
-    <section class="matches">
-
-      <div class="section-header">
-
-        <div>
-
-          <span class="section-label">
-            MATCHES
-          </span>
-
-          <h2 id="matchesTitle">
-            Partite
-          </h2>
-
-        </div>
-
-
-        <!-- DATE NAVIGATION -->
-
-        <div class="date-controls">
-
-          <button
-            id="prevDay"
-            class="date-arrow"
-            aria-label="Giorno precedente"
-          >
-            ←
-          </button>
-
-
-          <label
-            class="date-display"
-            for="datePicker"
-          >
-
-            <strong id="matchDay">
-              10
-            </strong>
-
-            <span id="matchDate">
-              SET<br>2026
-            </span>
-
-            <input
-              type="date"
-              id="datePicker"
-            >
-
-          </label>
-
-
-          <button
-            id="nextDay"
-            class="date-arrow"
-            aria-label="Giorno successivo"
-          >
-            →
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- DYNAMIC MATCHES -->
-
-      <div id="matchesContainer">
-
-        <div class="matches-loading">
-          Caricamento partite...
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- EXPLORE -->
-
-    <section class="explore">
-
-      <div class="section-header">
-
-        <div>
-
-          <span class="section-label">
-            EXPLORE
-          </span>
-
-          <h2>
-            Scopri Pages Of Football
-          </h2>
-
-        </div>
-
-      </div>
-
-
-      <div class="explore-grid">
-
-        <a
-          href="giocatori.html"
-          class="explore-card"
+        <button
+          id="nextDay"
+          class="date-arrow"
+          aria-label="Giorno successivo"
         >
+          →
+        </button>
 
-          <span class="explore-number">
-            01
-          </span>
-
-          <h3>
-            Giocatori
-          </h3>
-
-          <p>
-            Carriere, statistiche e storie dei protagonisti.
-          </p>
-
-          <span class="explore-arrow">
-            →
-          </span>
-
-        </a>
-
-
-        <a
-          href="squadre.html"
-          class="explore-card"
-        >
-
-          <span class="explore-number">
-            02
-          </span>
-
-          <h3>
-            Squadre
-          </h3>
-
-          <p>
-            Rose, stagioni, trofei e storia dei club.
-          </p>
-
-          <span class="explore-arrow">
-            →
-          </span>
-
-        </a>
-
-
-        <a
-          href="almanacco.html"
-          class="explore-card"
-        >
-
-          <span class="explore-number">
-            03
-          </span>
-
-          <h3>
-            Almanacco
-          </h3>
-
-          <p>
-            Le storie che hanno fatto il calcio.
-          </p>
-
-          <span class="explore-arrow">
-            →
-          </span>
-
-        </a>
 
       </div>
 
-    </section>
 
-  </div>
+    </div>
 
 
-  <!-- JAVASCRIPT -->
 
-  <script>
+    <!-- MATCHES CONTAINER -->
 
-    /* =========================
-       DATE
-    ========================= */
+    <div id="matchesContainer">
 
-    const today = new Date();
+      <div class="matches-loading">
+        Caricamento partite...
+      </div>
 
-    let selectedDate = new Date(
-      today.getFullYear(),
-      today.getMonth(),
-      today.getDate()
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       EXPLORE
+  ========================= -->
+
+  <section class="explore">
+
+
+    <div class="section-header">
+
+      <div>
+
+        <span class="section-label">
+          EXPLORE
+        </span>
+
+        <h2>
+          Scopri Pages Of Football
+        </h2>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="explore-grid">
+
+
+      <a
+        href="giocatori.html"
+        class="explore-card"
+      >
+
+        <span class="explore-number">
+          01
+        </span>
+
+        <h3>
+          Giocatori
+        </h3>
+
+        <p>
+          Carriere, statistiche e storie
+          dei protagonisti.
+        </p>
+
+        <span class="explore-arrow">
+          →
+        </span>
+
+      </a>
+
+
+
+      <a
+        href="squadre.html"
+        class="explore-card"
+      >
+
+        <span class="explore-number">
+          02
+        </span>
+
+        <h3>
+          Squadre
+        </h3>
+
+        <p>
+          Rose, stagioni, trofei e storia
+          dei club.
+        </p>
+
+        <span class="explore-arrow">
+          →
+        </span>
+
+      </a>
+
+
+
+      <a
+        href="almanacco.html"
+        class="explore-card"
+      >
+
+        <span class="explore-number">
+          03
+        </span>
+
+        <h3>
+          Almanacco
+        </h3>
+
+        <p>
+          Le storie che hanno fatto
+          il calcio.
+        </p>
+
+        <span class="explore-arrow">
+          →
+        </span>
+
+      </a>
+
+
+    </div>
+
+  </section>
+
+
+</div>
+
+
+
+<script>
+
+
+/* ==================================================
+   DATE
+================================================== */
+
+
+const today = new Date();
+
+
+let selectedDate = new Date(
+  today.getFullYear(),
+  today.getMonth(),
+  today.getDate()
+);
+
+
+const datePicker =
+  document.getElementById(
+    "datePicker"
+  );
+
+
+const prevDay =
+  document.getElementById(
+    "prevDay"
+  );
+
+
+const nextDay =
+  document.getElementById(
+    "nextDay"
+  );
+
+
+const matchDay =
+  document.getElementById(
+    "matchDay"
+  );
+
+
+const matchDate =
+  document.getElementById(
+    "matchDate"
+  );
+
+
+const matchesTitle =
+  document.getElementById(
+    "matchesTitle"
+  );
+
+
+const matchesContainer =
+  document.getElementById(
+    "matchesContainer"
+  );
+
+
+const months = [
+  "GEN",
+  "FEB",
+  "MAR",
+  "APR",
+  "MAG",
+  "GIU",
+  "LUG",
+  "AGO",
+  "SET",
+  "OTT",
+  "NOV",
+  "DIC"
+];
+
+
+const fullMonths = [
+  "gennaio",
+  "febbraio",
+  "marzo",
+  "aprile",
+  "maggio",
+  "giugno",
+  "luglio",
+  "agosto",
+  "settembre",
+  "ottobre",
+  "novembre",
+  "dicembre"
+];
+
+
+
+function formatDateForAPI(date) {
+
+  const year =
+    date.getFullYear();
+
+
+  const month =
+    String(
+      date.getMonth() + 1
+    ).padStart(2, "0");
+
+
+  const day =
+    String(
+      date.getDate()
+    ).padStart(2, "0");
+
+
+  return `${year}-${month}-${day}`;
+
+}
+
+
+
+function updateDateUI() {
+
+  const day =
+    selectedDate.getDate();
+
+
+  const month =
+    selectedDate.getMonth();
+
+
+  const year =
+    selectedDate.getFullYear();
+
+
+  matchDay.textContent =
+    day;
+
+
+  matchDate.innerHTML =
+    `${months[month]}<br>${year}`;
+
+
+  datePicker.value =
+    formatDateForAPI(
+      selectedDate
     );
 
 
-    const datePicker =
-      document.getElementById("datePicker");
-
-    const prevDay =
-      document.getElementById("prevDay");
-
-    const nextDay =
-      document.getElementById("nextDay");
-
-    const matchDay =
-      document.getElementById("matchDay");
-
-    const matchDate =
-      document.getElementById("matchDate");
-
-    const matchesTitle =
-      document.getElementById("matchesTitle");
-
-    const matchesContainer =
-      document.getElementById("matchesContainer");
+  const todayString =
+    formatDateForAPI(
+      new Date()
+    );
 
 
-    const months = [
-      "GEN",
-      "FEB",
-      "MAR",
-      "APR",
-      "MAG",
-      "GIU",
-      "LUG",
-      "AGO",
-      "SET",
-      "OTT",
-      "NOV",
-      "DIC"
-    ];
+  const selectedString =
+    formatDateForAPI(
+      selectedDate
+    );
 
 
-    const fullMonths = [
-      "gennaio",
-      "febbraio",
-      "marzo",
-      "aprile",
-      "maggio",
-      "giugno",
-      "luglio",
-      "agosto",
-      "settembre",
-      "ottobre",
-      "novembre",
-      "dicembre"
-    ];
+  if (
+    selectedString ===
+    todayString
+  ) {
+
+    matchesTitle.textContent =
+      "Partite di oggi";
+
+  } else {
+
+    matchesTitle.innerHTML =
+      `Partite del ${day} ${fullMonths[month]}`;
+
+  }
+
+}
 
 
-    function formatDateForAPI(date) {
 
-      const year = date.getFullYear();
-
-      const month = String(
-        date.getMonth() + 1
-      ).padStart(2, "0");
-
-      const day = String(
-        date.getDate()
-      ).padStart(2, "0");
-
-      return `${year}-${month}-${day}`;
-    }
+/* ==================================================
+   COMPETITIONS
+================================================== */
 
 
-    function updateDateUI() {
-
-      const day =
-        selectedDate.getDate();
-
-      const month =
-        selectedDate.getMonth();
-
-      const year =
-        selectedDate.getFullYear();
+const allowedCompetitions = {
 
 
-      matchDay.textContent = day;
-
-      matchDate.innerHTML =
-        `${months[month]}<br>${year}`;
-
-
-      datePicker.value =
-        formatDateForAPI(selectedDate);
+  "UEFA Champions League": {
+    name: "UEFA Champions League",
+    order: 1
+  },
 
 
-      const todayDate =
-        new Date();
-
-      const todayString =
-        formatDateForAPI(todayDate);
-
-      const selectedString =
-        formatDateForAPI(selectedDate);
+  "Premier League": {
+    name: "Premier League",
+    order: 2
+  },
 
 
-      if (selectedString === todayString) {
-
-        matchesTitle.textContent =
-          "Partite di oggi";
-
-      } else {
-
-        matchesTitle.innerHTML =
-          `Partite del ${day} ${fullMonths[month]}`;
-
-      }
-
-    }
+  "Serie A": {
+    name: "Serie A",
+    order: 3
+  },
 
 
-    /* =========================
-       COMPETITIONS
-    ========================= */
+  "La Liga": {
+    name: "La Liga",
+    order: 4
+  },
 
-    const allowedCompetitions = {
 
-      2: {
-        name: "UEFA Champions League",
-        order: 1
-      },
+  "Bundesliga": {
+    name: "Bundesliga",
+    order: 5
+  },
 
-      39: {
-        name: "Premier League",
-        order: 2
-      },
 
-      135: {
-        name: "Serie A",
-        order: 3
-      },
+  "Ligue 1": {
+    name: "Ligue 1",
+    order: 6
+  },
 
-      140: {
-        name: "La Liga",
-        order: 4
-      },
 
-      78: {
-        name: "Bundesliga",
-        order: 5
-      },
+  "UEFA Europa League": {
+    name: "UEFA Europa League",
+    order: 7
+  },
 
-      61: {
-        name: "Ligue 1",
-        order: 6
-      },
 
-      3: {
-        name: "UEFA Europa League",
-        order: 7
-      },
+  "UEFA Europa Conference League": {
+    name: "UEFA Conference League",
+    order: 8
+  },
 
-      848: {
-        name: "UEFA Conference League",
-        order: 8
-      },
 
-      137: {
-        name: "Coppa Italia",
-        order: 9
-      },
+  "Coppa Italia": {
+    name: "Coppa Italia",
+    order: 9
+  },
 
-      45: {
-        name: "FA Cup",
-        order: 10
-      },
 
-      48: {
-        name: "EFL Cup",
-        order: 11
-      }
+  "FA Cup": {
+    name: "FA Cup",
+    order: 10
+  },
+
+
+  "EFL Cup": {
+    name: "EFL Cup",
+    order: 11
+  }
+
+};
+
+
+
+/* ==================================================
+   MATCH STATUS
+================================================== */
+
+
+function getMatchDisplay(match) {
+
+
+  const status =
+    match.fixture.status.short;
+
+
+  const liveStatuses = [
+    "1H",
+    "HT",
+    "2H",
+    "ET",
+    "BT",
+    "P",
+    "INT",
+    "SUSP"
+  ];
+
+
+  if (
+    liveStatuses.includes(
+      status
+    )
+  ) {
+
+    return {
+
+      live: true,
+
+      text:
+        status === "HT"
+          ? "HT"
+          : `${match.fixture.status.elapsed || ""}'`
 
     };
 
-
-    /* =========================
-       MATCH STATUS
-    ========================= */
-
-    function getMatchDisplay(match) {
-
-      const status =
-        match.fixture.status.short;
+  }
 
 
-      const liveStatuses = [
-        "1H",
-        "HT",
-        "2H",
-        "ET",
-        "BT",
-        "P",
-        "INT",
-        "SUSP"
-      ];
+
+  if (
+    status === "FT" ||
+    status === "AET" ||
+    status === "PEN"
+  ) {
+
+    return {
+
+      live: false,
+
+      text: "FIN"
+
+    };
+
+  }
 
 
-      if (liveStatuses.includes(status)) {
 
-        return {
-          live: true,
-          text:
-            status === "HT"
-              ? "HT"
-              : `${match.fixture.status.elapsed || ""}'`
-        };
+  if (status === "PST") {
 
-      }
+    return {
 
+      live: false,
 
-      if (
-        status === "FT" ||
-        status === "AET" ||
-        status === "PEN"
-      ) {
+      text: "POST"
 
-        return {
-          live: false,
-          text: "FIN"
-        };
+    };
 
-      }
+  }
 
 
-      if (status === "PST") {
 
-        return {
-          live: false,
-          text: "POST"
-        };
+  if (status === "CANC") {
 
-      }
+    return {
 
+      live: false,
 
-      if (status === "CANC") {
+      text: "ANN"
 
-        return {
-          live: false,
-          text: "ANN"
-        };
+    };
 
-      }
+  }
 
 
-      return {
-        live: false,
-        text:
-          new Date(match.fixture.date)
-            .toLocaleTimeString(
-              "it-IT",
-              {
-                hour: "2-digit",
-                minute: "2-digit"
-              }
-            )
-      };
+
+  const matchDate =
+    new Date(
+      match.fixture.date
+    );
+
+
+  return {
+
+    live: false,
+
+    text:
+      matchDate.toLocaleTimeString(
+        "it-IT",
+        {
+          hour: "2-digit",
+          minute: "2-digit"
+        }
+      )
+
+  };
+
+}
+
+
+
+/* ==================================================
+   RENDER MATCH
+================================================== */
+
+
+function renderMatch(match) {
+
+
+  const home =
+    match.teams.home;
+
+
+  const away =
+    match.teams.away;
+
+
+  const status =
+    getMatchDisplay(match);
+
+
+  const homeScore =
+    match.goals.home;
+
+
+  const awayScore =
+    match.goals.away;
+
+
+  const statusCode =
+    match.fixture.status.short;
+
+
+  const isFinished =
+    [
+      "FT",
+      "AET",
+      "PEN"
+    ].includes(
+      statusCode
+    );
+
+
+  const isLive =
+    status.live;
+
+
+  const isFeatured =
+    (
+      home.name
+        .toLowerCase()
+        .includes("como") &&
+      away.name
+        .toLowerCase()
+        .includes("leipzig")
+    )
+    ||
+    (
+      away.name
+        .toLowerCase()
+        .includes("como") &&
+      home.name
+        .toLowerCase()
+        .includes("leipzig")
+    );
+
+
+  return `
+
+    <div
+      class="match
+      ${isFeatured ? "featured" : ""}"
+    >
+
+
+      <div class="match-time">
+
+        ${
+          isLive
+            ? `<span class="live-dot"></span>`
+            : ""
+        }
+
+        <span
+          class="${isLive ? "live-text" : ""}"
+        >
+          ${status.text}
+        </span>
+
+      </div>
+
+
+
+      <div class="team home">
+
+        <span class="team-name">
+          ${home.name}
+        </span>
+
+        <img
+          class="team-logo"
+          src="${home.logo}"
+          alt="${home.name}"
+          loading="lazy"
+        >
+
+      </div>
+
+
+
+      <div class="versus">
+
+
+        ${
+          (
+            isFinished ||
+            isLive
+          )
+
+          ? `
+
+            <strong>
+              ${homeScore ?? "-"}
+              -
+              ${awayScore ?? "-"}
+            </strong>
+
+          `
+
+          : "—"
+        }
+
+
+      </div>
+
+
+
+      <div class="team away">
+
+        <img
+          class="team-logo"
+          src="${away.logo}"
+          alt="${away.name}"
+          loading="lazy"
+        >
+
+        <span class="team-name">
+          ${away.name}
+        </span>
+
+      </div>
+
+
+
+      <div class="match-arrow">
+        →
+      </div>
+
+
+    </div>
+
+  `;
+
+}
+
+
+
+/* ==================================================
+   LOAD MATCHES
+================================================== */
+
+
+async function loadMatches() {
+
+
+  matchesContainer.innerHTML = `
+
+    <div class="matches-loading">
+      Caricamento partite...
+    </div>
+
+  `;
+
+
+  const date =
+    formatDateForAPI(
+      selectedDate
+    );
+
+
+  try {
+
+
+    const response =
+      await fetch(
+        `/api/fixtures?date=${date}`
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if (!response.ok) {
+
+      throw new Error(
+        data.error ||
+        "Errore API"
+      );
 
     }
 
 
-    /* =========================
-       RENDER MATCH
-    ========================= */
-
-    function renderMatch(match) {
-
-      const home =
-        match.teams.home;
-
-      const away =
-        match.teams.away;
+    let fixtures =
+      data.response || [];
 
 
-      const status =
-        getMatchDisplay(match);
+    console.log(
+      "Partite ricevute:",
+      fixtures
+    );
 
 
-      const homeScore =
-        match.goals.home;
-
-      const awayScore =
-        match.goals.away;
-
-
-      const isFinished =
-        ["FT", "AET", "PEN"].includes(
-          match.fixture.status.short
-        );
+    /*
+      Filtriamo le competizioni
+      che vogliamo mostrare.
+    */
 
 
-      const isLive =
-        status.live;
+    fixtures =
+      fixtures.filter(
+        match => {
+
+          return Boolean(
+            allowedCompetitions[
+              match.league.name
+            ]
+          );
+
+        }
+      );
 
 
-      const isFeatured =
-        (
-          home.name.includes("Como") &&
-          away.name.includes("Leipzig")
-        ) ||
-        (
-          away.name.includes("Como") &&
-          home.name.includes("Leipzig")
-        );
+    /*
+      Nessuna partita.
+    */
 
 
-      return `
+    if (
+      fixtures.length === 0
+    ) {
 
-        <div class="match ${isFeatured ? "featured" : ""}">
-
-          <div class="match-time">
-
-            ${
-              isLive
-                ? `<span class="live-dot"></span>`
-                : ""
-            }
-
-            <span
-              class="${isLive ? "live-text" : ""}"
-            >
-              ${status.text}
-            </span>
-
-          </div>
-
-
-          <div class="team home">
-
-            <span class="team-name">
-              ${home.name}
-            </span>
-
-            <img
-              class="team-logo"
-              src="${home.logo}"
-              alt="${home.name}"
-              loading="lazy"
-            >
-
-          </div>
-
-
-          <div class="versus">
-
-            ${
-              (isFinished || isLive)
-                ? `
-                  <strong>
-                    ${homeScore ?? "-"}
-                    -
-                    ${awayScore ?? "-"}
-                  </strong>
-                `
-                : "—"
-            }
-
-          </div>
-
-
-          <div class="team away">
-
-            <img
-              class="team-logo"
-              src="${away.logo}"
-              alt="${away.name}"
-              loading="lazy"
-            >
-
-            <span class="team-name">
-              ${away.name}
-            </span>
-
-          </div>
-
-
-          <div class="match-arrow">
-            →
-          </div>
-
-        </div>
-
-      `;
-
-    }
-
-
-    /* =========================
-       LOAD MATCHES
-    ========================= */
-
-    async function loadMatches() {
 
       matchesContainer.innerHTML = `
-        <div class="matches-loading">
-          Caricamento partite...
+
+        <div class="no-matches">
+
+          <div class="no-matches-number">
+            —
+          </div>
+
+          <h3>
+            Nessuna partita
+          </h3>
+
+          <p>
+            Non ci sono partite delle
+            principali competizioni
+            in questa data.
+          </p>
+
         </div>
+
       `;
 
 
-      const date =
-        formatDateForAPI(selectedDate);
+      return;
+
+    }
 
 
-      try {
 
-        const response =
-          await fetch(
-            `/api/fixtures?date=${date}`
-          );
-
-
-        const data =
-          await response.json();
+    /*
+      Raggruppiamo
+      per competizione.
+    */
 
 
-        if (!response.ok) {
+    const groups = {};
 
-          throw new Error(
-            data.error ||
-            "Errore API"
-          );
+
+
+    fixtures.forEach(
+      match => {
+
+
+        const leagueName =
+          match.league.name;
+
+
+        if (
+          !groups[
+            leagueName
+          ]
+        ) {
+
+          groups[
+            leagueName
+          ] = [];
 
         }
 
 
-        let fixtures =
-          data.response || [];
+        groups[
+          leagueName
+        ].push(match);
+
+      }
+    );
 
 
-        /*
 
-          Manteniamo solo
-          le competizioni che
-          ci interessano.
+    /*
+      Ordiniamo le
+      competizioni.
+    */
 
-        */
 
-        fixtures =
-          fixtures.filter(
-            match =>
+    const sortedGroups =
+      Object.entries(groups)
+        .sort(
+          (
+            [nameA],
+            [nameB]
+          ) => {
+
+            return (
               allowedCompetitions[
-                match.league.id
-              ]
-          );
-
-
-        if (fixtures.length === 0) {
-
-          matchesContainer.innerHTML = `
-
-            <div class="no-matches">
-
-              <div class="no-matches-number">
-                —
-              </div>
-
-              <h3>
-                Nessuna partita
-              </h3>
-
-              <p>
-                Non ci sono partite delle
-                principali competizioni
-                in questa data.
-              </p>
-
-            </div>
-
-          `;
-
-          return;
-
-        }
-
-
-        /*
-
-          Raggruppiamo per competizione.
-
-        */
-
-        const groups = {};
-
-
-        fixtures.forEach(match => {
-
-          const id =
-            match.league.id;
-
-
-          if (!groups[id]) {
-            groups[id] = [];
-          }
-
-
-          groups[id].push(match);
-
-        });
-
-
-        /*
-
-          Ordine competizioni.
-
-        */
-
-        const sortedGroups =
-          Object.entries(groups)
-            .sort(
-              ([idA], [idB]) =>
-                allowedCompetitions[idA].order -
-                allowedCompetitions[idB].order
+                nameA
+              ].order
+              -
+              allowedCompetitions[
+                nameB
+              ].order
             );
-
-
-        let html = "";
-
-
-        sortedGroups.forEach(
-          ([leagueId, matches]) => {
-
-            const competition =
-              allowedCompetitions[leagueId];
-
-
-            matches.sort(
-              (a, b) =>
-                new Date(a.fixture.date) -
-                new Date(b.fixture.date)
-            );
-
-
-            html += `
-
-              <div class="competition">
-
-                <div class="competition-header">
-
-                  <div class="competition-title">
-
-                    ${
-                      matches[0].league.logo
-                        ? `
-                          <img
-                            src="${matches[0].league.logo}"
-                            alt=""
-                            class="competition-logo"
-                          >
-                        `
-                        : ""
-                    }
-
-                    <span>
-                      ${competition.name}
-                    </span>
-
-                  </div>
-
-                  <span class="competition-link">
-                    Vedi competizione →
-                  </span>
-
-                </div>
-
-
-                <div class="competition-matches">
-
-                  ${matches
-                    .map(renderMatch)
-                    .join("")}
-
-                </div>
-
-              </div>
-
-            `;
 
           }
         );
 
 
-        matchesContainer.innerHTML =
-          html;
+
+    let html = "";
 
 
-      } catch (error) {
 
-        console.error(error);
+    sortedGroups.forEach(
+      (
+        [
+          leagueName,
+          matches
+        ]
+      ) => {
 
 
-        matchesContainer.innerHTML = `
+        const competition =
+          allowedCompetitions[
+            leagueName
+          ];
 
-          <div class="no-matches">
 
-            <div class="no-matches-number">
-              !
+        /*
+          Ordine cronologico
+        */
+
+
+        matches.sort(
+          (a, b) => {
+
+            return (
+              new Date(
+                a.fixture.date
+              )
+              -
+              new Date(
+                b.fixture.date
+              )
+            );
+
+          }
+        );
+
+
+
+        const leagueLogo =
+          matches[0]
+            ?.league
+            ?.logo;
+
+
+
+        html += `
+
+          <div class="competition">
+
+
+            <div
+              class="competition-header"
+            >
+
+
+              <div
+                class="competition-title"
+              >
+
+
+                ${
+                  leagueLogo
+
+                    ? `
+
+                      <img
+                        src="${leagueLogo}"
+                        alt=""
+                        class="competition-logo"
+                        loading="lazy"
+                      >
+
+                    `
+
+                    : ""
+                }
+
+
+                <span>
+                  ${competition.name}
+                </span>
+
+
+              </div>
+
+
+              <span
+                class="competition-link"
+              >
+                ${matches.length}
+                ${
+                  matches.length === 1
+                    ? " partita"
+                    : " partite"
+                }
+              </span>
+
+
             </div>
 
-            <h3>
-              Non riesco a caricare le partite
-            </h3>
 
-            <p>
-              Controlla la connessione
-              oppure riprova tra poco.
-            </p>
+
+            <div
+              class="competition-matches"
+            >
+
+              ${
+                matches
+                  .map(
+                    renderMatch
+                  )
+                  .join("")
+              }
+
+            </div>
+
 
           </div>
 
         `;
 
       }
+    );
+
+
+
+    matchesContainer.innerHTML =
+      html;
+
+
+  } catch (error) {
+
+
+    console.error(
+      "ERRORE CARICAMENTO:",
+      error
+    );
+
+
+    matchesContainer.innerHTML = `
+
+      <div class="no-matches">
+
+        <div class="no-matches-number">
+          !
+        </div>
+
+        <h3>
+          Non riesco a caricare le partite
+        </h3>
+
+        <p>
+          ${error.message}
+        </p>
+
+      </div>
+
+    `;
+
+  }
+
+}
+
+
+
+/* ==================================================
+   DATE BUTTONS
+================================================== */
+
+
+prevDay.addEventListener(
+  "click",
+  () => {
+
+
+    selectedDate.setDate(
+      selectedDate.getDate() - 1
+    );
+
+
+    updateDateUI();
+
+    loadMatches();
+
+  }
+);
+
+
+
+nextDay.addEventListener(
+  "click",
+  () => {
+
+
+    selectedDate.setDate(
+      selectedDate.getDate() + 1
+    );
+
+
+    updateDateUI();
+
+    loadMatches();
+
+  }
+);
+
+
+
+datePicker.addEventListener(
+  "change",
+  () => {
+
+
+    if (
+      !datePicker.value
+    ) {
+
+      return;
 
     }
 
 
-    /* =========================
-       DATE BUTTONS
-    ========================= */
-
-    prevDay.addEventListener(
-      "click",
-      () => {
-
-        selectedDate.setDate(
-          selectedDate.getDate() - 1
-        );
-
-        updateDateUI();
-        loadMatches();
-
-      }
-    );
+    const [
+      year,
+      month,
+      day
+    ] =
+      datePicker.value
+        .split("-")
+        .map(Number);
 
 
-    nextDay.addEventListener(
-      "click",
-      () => {
-
-        selectedDate.setDate(
-          selectedDate.getDate() + 1
-        );
-
-        updateDateUI();
-        loadMatches();
-
-      }
-    );
+    selectedDate =
+      new Date(
+        year,
+        month - 1,
+        day
+      );
 
 
-    datePicker.addEventListener(
-      "change",
-      () => {
+    updateDateUI();
 
-        const value =
-          datePicker.value;
+    loadMatches();
 
-
-        if (!value) return;
+  }
+);
 
 
-        const [
-          year,
-          month,
-          day
-        ] = value
-          .split("-")
-          .map(Number);
+
+/* ==================================================
+   SEARCH
+================================================== */
 
 
-        selectedDate =
-          new Date(
-            year,
-            month - 1,
-            day
-          );
+const searchInput =
+  document.getElementById(
+    "searchInput"
+  );
 
 
-        updateDateUI();
-        loadMatches();
-
-      }
-    );
-
-
-    /* =========================
-       SEARCH
-    ========================= */
-
-    const searchInput =
-      document.getElementById("searchInput");
-
-    const searchButton =
-      document.getElementById("searchButton");
-
-    const searchResults =
-      document.getElementById("searchResults");
+const searchButton =
+  document.getElementById(
+    "searchButton"
+  );
 
 
-    const searchData = [
-
-      {
-        name: "Kenan Yildiz",
-        type: "GIOCATORE",
-        meta: "Juventus · Turchia · 2005",
-        keywords: [
-          "yildiz",
-          "kenan",
-          "turchia",
-          "turkey",
-          "juventus"
-        ],
-        link: "giocatori.html"
-      },
-
-      {
-        name: "Juventus",
-        type: "SQUADRA",
-        meta: "Torino · Italia · 1897",
-        keywords: [
-          "juventus",
-          "juve",
-          "juventus fc",
-          "bianconeri",
-          "torino"
-        ],
-        link: "juventus.html"
-      },
-
-      {
-        name: "Turchia",
-        type: "NAZIONALE",
-        meta: "Nazionale turca",
-        keywords: [
-          "turchia",
-          "turkey",
-          "turkiye",
-          "yildiz",
-          "kenan"
-        ],
-        link: "#"
-      },
-
-      {
-        name: "Francisco Conceição",
-        type: "GIOCATORE",
-        meta: "Juventus · Portogallo · 2002",
-        keywords: [
-          "conceicao",
-          "francisco",
-          "portogallo",
-          "juventus"
-        ],
-        link: "giocatori.html"
-      },
-
-      {
-        name: "Edon Zhegrova",
-        type: "GIOCATORE",
-        meta: "Juventus · Kosovo · 1999",
-        keywords: [
-          "zhegrova",
-          "edon",
-          "kosovo",
-          "juventus"
-        ],
-        link: "giocatori.html"
-      },
-
-      {
-        name: "Serie A",
-        type: "COMPETIZIONE",
-        meta: "Italia",
-        keywords: [
-          "serie a",
-          "italia",
-          "calcio italiano"
-        ],
-        link: "competizioni.html"
-      },
-
-      {
-        name: "Champions League",
-        type: "COMPETIZIONE",
-        meta: "UEFA",
-        keywords: [
-          "champions",
-          "champions league",
-          "uefa"
-        ],
-        link: "competizioni.html"
-      }
-
-    ];
+const searchResults =
+  document.getElementById(
+    "searchResults"
+  );
 
 
-    function performSearch() {
 
-      const query =
-        searchInput.value
-          .trim()
+const searchData = [
+
+
+  {
+    name: "Kenan Yildiz",
+
+    type: "GIOCATORE",
+
+    meta:
+      "Juventus · Turchia · 2005",
+
+    keywords: [
+      "yildiz",
+      "kenan",
+      "turchia",
+      "turkey",
+      "juventus"
+    ],
+
+    link:
+      "giocatori.html"
+  },
+
+
+  {
+    name: "Juventus",
+
+    type: "SQUADRA",
+
+    meta:
+      "Torino · Italia · 1897",
+
+    keywords: [
+      "juventus",
+      "juve",
+      "juventus fc",
+      "bianconeri",
+      "torino"
+    ],
+
+    link:
+      "juventus.html"
+  },
+
+
+  {
+    name: "Turchia",
+
+    type: "NAZIONALE",
+
+    meta:
+      "Nazionale turca",
+
+    keywords: [
+      "turchia",
+      "turkey",
+      "turkiye",
+      "yildiz",
+      "kenan"
+    ],
+
+    link:
+      "#"
+  },
+
+
+  {
+    name:
+      "Francisco Conceição",
+
+    type:
+      "GIOCATORE",
+
+    meta:
+      "Juventus · Portogallo · 2002",
+
+    keywords: [
+      "conceicao",
+      "francisco",
+      "portogallo",
+      "juventus"
+    ],
+
+    link:
+      "giocatori.html"
+  },
+
+
+  {
+    name:
+      "Edon Zhegrova",
+
+    type:
+      "GIOCATORE",
+
+    meta:
+      "Juventus · Kosovo · 1999",
+
+    keywords: [
+      "zhegrova",
+      "edon",
+      "kosovo",
+      "juventus"
+    ],
+
+    link:
+      "giocatori.html"
+  },
+
+
+  {
+    name:
+      "Serie A",
+
+    type:
+      "COMPETIZIONE",
+
+    meta:
+      "Italia",
+
+    keywords: [
+      "serie a",
+      "italia",
+      "calcio italiano"
+    ],
+
+    link:
+      "competizioni.html"
+  },
+
+
+  {
+    name:
+      "Champions League",
+
+    type:
+      "COMPETIZIONE",
+
+    meta:
+      "UEFA",
+
+    keywords: [
+      "champions",
+      "champions league",
+      "uefa"
+    ],
+
+    link:
+      "competizioni.html"
+  }
+
+];
+
+
+
+function performSearch() {
+
+
+  const query =
+    searchInput.value
+      .trim()
+      .toLowerCase();
+
+
+  if (!query) {
+
+    searchResults.style.display =
+      "none";
+
+    searchResults.innerHTML =
+      "";
+
+    return;
+
+  }
+
+
+
+  const results =
+    searchData.filter(
+      item => {
+
+
+        const text = [
+
+          item.name,
+
+          item.meta,
+
+          ...item.keywords
+
+        ]
+          .join(" ")
           .toLowerCase();
 
 
-      if (!query) {
-
-        searchResults.style.display =
-          "none";
-
-        searchResults.innerHTML = "";
-
-        return;
+        return text.includes(
+          query
+        );
 
       }
+    );
 
 
-      const results =
-        searchData.filter(item => {
 
-          const text = [
-            item.name,
-            item.meta,
-            ...item.keywords
-          ]
-            .join(" ")
-            .toLowerCase();
+  if (
+    results.length === 0
+  ) {
 
 
-          return text.includes(query);
+    searchResults.innerHTML = `
 
-        });
+      <div
+        class="search-result"
+      >
+
+        <div
+          class="search-result-name"
+        >
+          Nessun risultato
+        </div>
+
+      </div>
+
+    `;
 
 
-      if (results.length === 0) {
+    searchResults.style.display =
+      "block";
 
-        searchResults.innerHTML = `
 
-          <div class="search-result">
+    return;
 
-            <div class="search-result-name">
-              Nessun risultato
+  }
+
+
+
+  searchResults.innerHTML =
+    results
+      .map(
+        item => `
+
+          <a
+            href="${item.link}"
+            class="search-result"
+          >
+
+            <div
+              class="search-result-type"
+            >
+              ${item.type}
             </div>
 
-          </div>
 
-        `;
-
-        searchResults.style.display =
-          "block";
-
-        return;
-
-      }
-
-
-      searchResults.innerHTML =
-        results
-          .map(item => `
-
-            <a
-              href="${item.link}"
-              class="search-result"
+            <div
+              class="search-result-name"
             >
+              ${item.name}
+            </div>
 
-              <div class="search-result-type">
-                ${item.type}
-              </div>
 
-              <div class="search-result-name">
-                ${item.name}
-              </div>
+            <div
+              class="search-result-meta"
+            >
+              ${item.meta}
+            </div>
 
-              <div class="search-result-meta">
-                ${item.meta}
-              </div>
+          </a>
 
-            </a>
+        `
+      )
+      .join("");
 
-          `)
-          .join("");
 
+  searchResults.style.display =
+    "block";
+
+}
+
+
+
+searchInput.addEventListener(
+  "input",
+  performSearch
+);
+
+
+
+searchButton.addEventListener(
+  "click",
+  performSearch
+);
+
+
+
+document.addEventListener(
+  "click",
+  event => {
+
+
+    if (
+      !event.target.closest(
+        ".search-wrapper"
+      )
+    ) {
 
       searchResults.style.display =
-        "block";
+        "none";
 
     }
 
-
-    searchInput.addEventListener(
-      "input",
-      performSearch
-    );
+  }
+);
 
 
-    searchButton.addEventListener(
-      "click",
-      performSearch
-    );
+
+/* ==================================================
+   START
+================================================== */
 
 
-    document.addEventListener(
-      "click",
-      event => {
+updateDateUI();
 
-        if (
-          !event.target.closest(
-            ".search-wrapper"
-          )
-        ) {
-
-          searchResults.style.display =
-            "none";
-
-        }
-
-      }
-    );
+loadMatches();
 
 
-    /* =========================
-       START
-    ========================= */
+</script>
 
-    updateDateUI();
-    loadMatches();
-
-  </script>
 
 </body>
+
 </html>
