@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/juventus",
+      "destination": "/juventus.html"
+    }
+  ]
+}
