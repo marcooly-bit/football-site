@@ -8,7 +8,7 @@ export default async function handler(req, res) {
       });
     }
 
-    const apiKey = process.env.api_football_key;
+    const apiKey = process.env.API_FOOTBALL_KEY;
 
     if (!apiKey) {
       return res.status(500).json({
