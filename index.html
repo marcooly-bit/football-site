@@ -205,7 +205,6 @@
 
     <section class="matches">
 
-
       <div class="section-header">
 
         <div>
@@ -214,7 +213,7 @@
             LIVE • FIXTURES
           </p>
 
-          <h2>
+          <h2 id="matchesTitle">
             Partite di domani
           </h2>
 
@@ -223,11 +222,11 @@
 
         <div class="date">
 
-          <strong>
+          <strong id="matchDay">
             10
           </strong>
 
-          <span>
+          <span id="matchDate">
             SET<br>
             2026
           </span>
@@ -244,7 +243,7 @@
           UEFA CHAMPIONS LEAGUE
         </span>
 
-        <a href="#">
+        <a href="competizioni.html">
           Calendario completo →
         </a>
 
@@ -252,336 +251,36 @@
 
 
 
-      <!-- FENERBAHCE - ROMA -->
+      <!--
+        Le partite vengono inserite automaticamente
+        da API-Football qui dentro.
+      -->
 
-      <div class="match">
+      <div id="matchesContainer">
 
-        <div class="match-time">
+        <div class="match loading-match">
 
-          <strong>
-            18:45
-          </strong>
-
-          <span>
-            DOMANI
-          </span>
-
-        </div>
-
-
-        <div class="team home">
-
-          <span>
-            Fenerbahçe
-          </span>
-
-          <div class="crest">
-            FEN
+          <div class="match-time">
+            <strong>—</strong>
+            <span>CARICAMENTO</span>
           </div>
 
-        </div>
-
-
-        <div class="versus">
-          —
-        </div>
-
-
-        <div class="team away">
-
-          <div class="crest">
-            ROM
+          <div class="team home">
+            <span>Caricamento partite</span>
           </div>
 
-          <span>
-            Roma
-          </span>
-
-        </div>
-
-
-        <div class="match-arrow">
-          →
-        </div>
-
-      </div>
-
-
-
-      <!-- PSV - SHAKHTAR -->
-
-      <div class="match">
-
-        <div class="match-time">
-
-          <strong>
-            18:45
-          </strong>
-
-          <span>
-            DOMANI
-          </span>
-
-        </div>
-
-
-        <div class="team home">
-
-          <span>
-            PSV
-          </span>
-
-          <div class="crest">
-            PSV
+          <div class="versus">
+            —
           </div>
 
-        </div>
-
-
-        <div class="versus">
-          —
-        </div>
-
-
-        <div class="team away">
-
-          <div class="crest">
-            SHA
+          <div class="team away">
+            <span>—</span>
           </div>
 
-          <span>
-            Shakhtar
-          </span>
-
-        </div>
-
-
-        <div class="match-arrow">
-          →
-        </div>
-
-      </div>
-
-
-
-      <!-- COMO - RB LEIPZIG -->
-
-      <div class="match featured">
-
-        <div class="match-time">
-
-          <strong>
-            21:00
-          </strong>
-
-          <span>
-            DOMANI
-          </span>
-
-        </div>
-
-
-        <div class="team home">
-
-          <span>
-            Como
-          </span>
-
-          <div class="crest blue">
-            COM
+          <div class="match-arrow">
+            →
           </div>
 
-        </div>
-
-
-        <div class="versus">
-          —
-        </div>
-
-
-        <div class="team away">
-
-          <div class="crest red">
-            RBL
-          </div>
-
-          <span>
-            RB Leipzig
-          </span>
-
-        </div>
-
-
-        <div class="match-arrow">
-          →
-        </div>
-
-      </div>
-
-
-
-      <!-- BAYERN - BODO/GLIMT -->
-
-      <div class="match">
-
-        <div class="match-time">
-
-          <strong>
-            21:00
-          </strong>
-
-          <span>
-            DOMANI
-          </span>
-
-        </div>
-
-
-        <div class="team home">
-
-          <span>
-            Bayern Munich
-          </span>
-
-          <div class="crest">
-            BAY
-          </div>
-
-        </div>
-
-
-        <div class="versus">
-          —
-        </div>
-
-
-        <div class="team away">
-
-          <div class="crest">
-            BOG
-          </div>
-
-          <span>
-            Bodø/Glimt
-          </span>
-
-        </div>
-
-
-        <div class="match-arrow">
-          →
-        </div>
-
-      </div>
-
-
-
-      <!-- MANCHESTER UNITED - SABAH -->
-
-      <div class="match">
-
-        <div class="match-time">
-
-          <strong>
-            21:00
-          </strong>
-
-          <span>
-            DOMANI
-          </span>
-
-        </div>
-
-
-        <div class="team home">
-
-          <span>
-            Manchester United
-          </span>
-
-          <div class="crest red">
-            MUN
-          </div>
-
-        </div>
-
-
-        <div class="versus">
-          —
-        </div>
-
-
-        <div class="team away">
-
-          <div class="crest">
-            SBH
-          </div>
-
-          <span>
-            Sabah
-          </span>
-
-        </div>
-
-
-        <div class="match-arrow">
-          →
-        </div>
-
-      </div>
-
-
-
-      <!-- SLAVIA PRAGUE - LENS -->
-
-      <div class="match">
-
-        <div class="match-time">
-
-          <strong>
-            21:00
-          </strong>
-
-          <span>
-            DOMANI
-          </span>
-
-        </div>
-
-
-        <div class="team home">
-
-          <span>
-            Slavia Prague
-          </span>
-
-          <div class="crest">
-            SLA
-          </div>
-
-        </div>
-
-
-        <div class="versus">
-          —
-        </div>
-
-
-        <div class="team away">
-
-          <div class="crest">
-            RCL
-          </div>
-
-          <span>
-            Lens
-          </span>
-
-        </div>
-
-
-        <div class="match-arrow">
-          →
         </div>
 
       </div>
@@ -595,7 +294,6 @@
     ========================= -->
 
     <section class="explore">
-
 
       <div class="section-header">
 
@@ -710,9 +408,7 @@
 
   <script>
 
-
     const searchData = [
-
 
       {
         name: "Kenan Yildiz",
@@ -831,26 +527,20 @@
         link: "competizioni.html"
       }
 
-
     ];
-
 
 
     const searchInput =
       document.getElementById("searchInput");
 
-
     const searchButton =
       document.getElementById("searchButton");
-
 
     const searchResults =
       document.getElementById("searchResults");
 
 
-
     function performSearch() {
-
 
       const query =
         searchInput.value
@@ -868,7 +558,6 @@
 
         return;
       }
-
 
 
       const results =
@@ -891,14 +580,11 @@
         );
 
 
-
       searchResults.innerHTML =
         "";
 
 
-
       if (results.length === 0) {
-
 
         searchResults.innerHTML = `
 
@@ -911,24 +597,18 @@
 
         `;
 
-
       } else {
 
-
         results.forEach(item => {
-
 
           const result =
             document.createElement("a");
 
-
           result.className =
             "search-result";
 
-
           result.href =
             item.link;
-
 
           result.innerHTML = `
 
@@ -946,22 +626,17 @@
 
           `;
 
-
           searchResults.appendChild(result);
-
 
         });
 
       }
 
 
-
       searchResults.style.display =
         "block";
 
-
     }
-
 
 
     searchInput.addEventListener(
@@ -970,35 +645,27 @@
     );
 
 
-
     searchButton.addEventListener(
       "click",
       performSearch
     );
 
 
-
     searchInput.addEventListener(
       "keydown",
       function(event) {
 
-
         if (event.key === "Enter") {
-
           performSearch();
-
         }
-
 
       }
     );
 
 
-
     document.addEventListener(
       "click",
       function(event) {
-
 
         if (
           !event.target.closest(".search")
@@ -1009,10 +676,347 @@
 
         }
 
-
       }
     );
 
+
+    /* =========================
+       API-FOOTBALL
+    ========================= */
+
+    async function loadMatches() {
+
+      const container =
+        document.getElementById("matchesContainer");
+
+      const matchDay =
+        document.getElementById("matchDay");
+
+      const matchDate =
+        document.getElementById("matchDate");
+
+
+      /*
+        Calcoliamo automaticamente DOMANI.
+        In questo modo il sito non rimarrà
+        bloccato sul 10 settembre 2026.
+      */
+
+      const tomorrow =
+        new Date();
+
+      tomorrow.setDate(
+        tomorrow.getDate() + 1
+      );
+
+
+      const year =
+        tomorrow.getFullYear();
+
+      const month =
+        String(
+          tomorrow.getMonth() + 1
+        ).padStart(2, "0");
+
+      const day =
+        String(
+          tomorrow.getDate()
+        ).padStart(2, "0");
+
+
+      const apiDate =
+        `${year}-${month}-${day}`;
+
+
+      const months = [
+        "GEN",
+        "FEB",
+        "MAR",
+        "APR",
+        "MAG",
+        "GIU",
+        "LUG",
+        "AGO",
+        "SET",
+        "OTT",
+        "NOV",
+        "DIC"
+      ];
+
+
+      matchDay.textContent =
+        day;
+
+
+      matchDate.innerHTML =
+        `${months[tomorrow.getMonth()]}<br>${year}`;
+
+
+      try {
+
+        const response =
+          await fetch(
+            `/api/fixtures?date=${apiDate}`
+          );
+
+
+        const data =
+          await response.json();
+
+
+        if (
+          !response.ok ||
+          !data.response
+        ) {
+
+          throw new Error(
+            "Risposta API non valida"
+          );
+
+        }
+
+
+        /*
+          Mostriamo solamente le partite
+          di Champions League.
+        */
+
+        const matches =
+          data.response.filter(
+            match =>
+              match.league &&
+              (
+                match.league.name
+                  .toLowerCase()
+                  .includes("champions")
+              )
+          );
+
+
+        container.innerHTML =
+          "";
+
+
+        if (matches.length === 0) {
+
+          container.innerHTML = `
+
+            <div class="match">
+
+              <div class="match-time">
+                <strong>—</strong>
+                <span>DOMANI</span>
+              </div>
+
+              <div class="team home">
+                <span>Nessuna partita</span>
+              </div>
+
+              <div class="versus">
+                —
+              </div>
+
+              <div class="team away">
+                <span>—</span>
+              </div>
+
+              <div class="match-arrow">
+                →
+              </div>
+
+            </div>
+
+          `;
+
+          return;
+        }
+
+
+        matches.forEach(
+          (match, index) => {
+
+            const home =
+              match.teams.home;
+
+            const away =
+              match.teams.away;
+
+
+            const date =
+              new Date(
+                match.fixture.date
+              );
+
+
+            const time =
+              date.toLocaleTimeString(
+                "it-IT",
+                {
+                  hour: "2-digit",
+                  minute: "2-digit",
+                  timeZone: "Europe/Rome"
+                }
+              );
+
+
+            const row =
+              document.createElement("div");
+
+
+            row.className =
+              "match";
+
+
+            /*
+              Manteniamo evidenziata
+              la partita Como-Lipsia
+              se presente.
+            */
+
+            if (
+              home.name
+                .toLowerCase()
+                .includes("como")
+              ||
+              away.name
+                .toLowerCase()
+                .includes("leipzig")
+            ) {
+
+              row.classList.add(
+                "featured"
+              );
+
+            }
+
+
+            row.innerHTML = `
+
+              <div class="match-time">
+
+                <strong>
+                  ${time}
+                </strong>
+
+                <span>
+                  DOMANI
+                </span>
+
+              </div>
+
+
+              <div class="team home">
+
+                <span>
+                  ${home.name}
+                </span>
+
+                <img
+                  class="team-logo"
+                  src="${home.logo}"
+                  alt="${home.name}"
+                  loading="lazy"
+                >
+
+              </div>
+
+
+              <div class="versus">
+                —
+              </div>
+
+
+              <div class="team away">
+
+                <img
+                  class="team-logo"
+                  src="${away.logo}"
+                  alt="${away.name}"
+                  loading="lazy"
+                >
+
+                <span>
+                  ${away.name}
+                </span>
+
+              </div>
+
+
+              <div class="match-arrow">
+                →
+              </div>
+
+            `;
+
+
+            container.appendChild(row);
+
+          }
+        );
+
+
+      } catch (error) {
+
+        console.error(
+          "Errore caricamento partite:",
+          error
+        );
+
+
+        container.innerHTML = `
+
+          <div class="match">
+
+            <div class="match-time">
+
+              <strong>
+                —
+              </strong>
+
+              <span>
+                ERRORE
+              </span>
+
+            </div>
+
+
+            <div class="team home">
+
+              <span>
+                Partite non disponibili
+              </span>
+
+            </div>
+
+
+            <div class="versus">
+              —
+            </div>
+
+
+            <div class="team away">
+
+              <span>
+                Riprova più tardi
+              </span>
+
+            </div>
+
+
+            <div class="match-arrow">
+              →
+            </div>
+
+          </div>
+
+        `;
+
+      }
+
+    }
+
+
+    loadMatches();
 
   </script>
 
