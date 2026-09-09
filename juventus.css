@@ -1,0 +1,882 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f4f3ef;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  height: 82px;
+  padding: 0 55px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.brand-name {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  color: #111;
+}
+
+.menu {
+  display: none;
+}
+
+
+/* =========================
+   GENERALE
+========================= */
+
+.label {
+  margin: 0;
+  color: #777;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.section-header h2 {
+  margin: 9px 0 0;
+  font-size: 38px;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.section-number {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.team-hero {
+  padding: 55px 55px 0;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-number {
+  color: #999;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.team-main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 55px 0 50px;
+}
+
+.club-info {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.juve-crest {
+  width: 86px;
+  height: 86px;
+  background: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.country {
+  margin: 0 0 12px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.club-info h1 {
+  margin: 0;
+  font-size: clamp(65px, 9vw, 115px);
+  line-height: .82;
+  letter-spacing: -7px;
+}
+
+.nickname {
+  margin: 18px 0 0;
+  color: #777;
+  font-size: 13px;
+}
+
+.club-year {
+  text-align: right;
+}
+
+.club-year span {
+  display: block;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.club-year strong {
+  font-size: 38px;
+  letter-spacing: -2px;
+}
+
+.hero-image {
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      120deg,
+      #171717 0%,
+      #333 45%,
+      #666 100%
+    );
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      transparent 0%,
+      rgba(255,255,255,.08) 50%,
+      transparent 50%
+    );
+
+  background-size: 80px 80px;
+}
+
+.image-overlay {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  bottom: 22px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   CLUB OVERVIEW
+========================= */
+
+.club-overview {
+  padding: 90px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.section-title h2 {
+  margin: 9px 0 0;
+  font-size: 38px;
+  letter-spacing: -2px;
+}
+
+.overview-grid {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 100px;
+}
+
+.overview-text {
+  max-width: 620px;
+}
+
+.overview-text p {
+  margin: 0 0 25px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #111;
+}
+
+.fact {
+  padding: 20px 0;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.fact:nth-child(odd) {
+  margin-right: 25px;
+}
+
+.fact span {
+  display: block;
+  margin-bottom: 7px;
+  color: #888;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.fact strong {
+  font-size: 14px;
+}
+
+
+/* =========================
+   PALMARES
+========================= */
+
+.palmares {
+  padding: 80px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.trophies {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trophy {
+  min-height: 145px;
+  padding: 20px 25px;
+  border-left: 1px solid #d7d5cf;
+}
+
+.trophy:first-child {
+  border-left: 0;
+}
+
+.trophy strong {
+  display: block;
+  font-size: 65px;
+  line-height: .9;
+  letter-spacing: -5px;
+}
+
+.trophy span {
+  display: block;
+  margin-top: 18px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.trophy.european {
+  background: #111;
+  color: white;
+}
+
+.trophy.european span {
+  color: #aaa;
+}
+
+
+/* =========================
+   ROSA
+========================= */
+
+.squad {
+  padding: 90px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.squad-group {
+  margin-top: 55px;
+}
+
+.squad-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.squad-heading span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.squad-heading span:last-child {
+  color: #999;
+}
+
+.player-row {
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: 65px 55px 1fr;
+  align-items: center;
+  border-bottom: 1px solid #d7d5cf;
+  transition: .2s;
+}
+
+.player-row:hover {
+  background: #ebeae5;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.player-photo {
+  width: 48px;
+  height: 48px;
+  background: #d7d5cf;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-photo::after {
+  content: "PHOTO";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+.shirt-number {
+  color: #888;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.player-row strong {
+  font-size: 15px;
+}
+
+
+/* =========================
+   TRASFERIMENTI
+========================= */
+
+.transfers {
+  padding: 90px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.transfer-columns {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+.transfer-title {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.transfer-title span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.transfer-title strong {
+  font-size: 12px;
+}
+
+.transfer-row {
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: 55px 1fr auto;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.transfer-photo {
+  width: 42px;
+  height: 42px;
+  background: #d7d5cf;
+}
+
+.transfer-player strong {
+  display: block;
+  font-size: 13px;
+}
+
+.transfer-player span {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+  font-size: 9px;
+}
+
+.transfer-value {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.transfer-balance {
+  margin-top: 35px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #111;
+}
+
+.transfer-balance span {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.transfer-balance strong {
+  font-size: 18px;
+}
+
+
+/* =========================
+   FIXTURES
+========================= */
+
+.fixtures {
+  padding: 80px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.fixtures .section-header a {
+  color: #555;
+  text-decoration: none;
+  font-size: 11px;
+}
+
+.fixture {
+  min-height: 82px;
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 90px 150px 1fr 40px 1fr 70px;
+  align-items: center;
+  border-top: 1px solid #d7d5cf;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.fixture-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fixture-date strong {
+  font-size: 30px;
+  line-height: .8;
+}
+
+.fixture-date span {
+  color: #888;
+  font-size: 8px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.competition {
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.fixture-team {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vs {
+  text-align: center;
+  color: #aaa;
+}
+
+.fixture-time {
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   LEGGENDE
+========================= */
+
+.legends {
+  padding: 80px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.legend-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.legend-card {
+  min-height: 250px;
+  padding: 25px;
+  position: relative;
+  border: 1px solid #d3d1ca;
+  transition: .25s;
+}
+
+.legend-card:hover {
+  background: #111;
+  color: white;
+  transform: translateY(-4px);
+}
+
+.legend-number {
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.legend-card h3 {
+  margin: 60px 0 12px;
+  font-size: 26px;
+  line-height: .95;
+  letter-spacing: -1px;
+}
+
+.legend-card p {
+  margin: 0;
+  color: #888;
+  font-size: 11px;
+}
+
+.legend-card b {
+  position: absolute;
+  right: 25px;
+  bottom: 22px;
+  font-size: 20px;
+}
+
+
+/* =========================
+   STORIA
+========================= */
+
+.history {
+  padding: 90px 55px;
+  border-bottom: 1px solid #d7d5cf;
+}
+
+.history .section-header h2 {
+  max-width: 650px;
+  line-height: 1;
+}
+
+.timeline {
+  margin-top: 65px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 130px 1px 1fr;
+  min-height: 150px;
+}
+
+.timeline-year {
+  padding-top: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.timeline-line {
+  width: 1px;
+  background: #111;
+  position: relative;
+}
+
+.timeline-line::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -4px;
+  width: 9px;
+  height: 9px;
+  background: #111;
+}
+
+.timeline-content {
+  padding: 0 0 55px 45px;
+  max-width: 650px;
+}
+
+.timeline-content h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  min-height: 130px;
+  padding: 35px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.footer-brand strong {
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+footer p {
+  margin: 0;
+  color: #888;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  header {
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-left: auto;
+    border: 0;
+    background: none;
+    font-size: 20px;
+  }
+
+
+  .team-hero {
+    padding: 40px 20px 0;
+  }
+
+  .team-main {
+    padding: 45px 0;
+  }
+
+  .club-info {
+    gap: 15px;
+  }
+
+  .juve-crest {
+    width: 58px;
+    height: 58px;
+    font-size: 35px;
+  }
+
+  .club-info h1 {
+    font-size: 65px;
+    letter-spacing: -5px;
+  }
+
+  .club-year {
+    display: none;
+  }
+
+  .hero-image {
+    height: 230px;
+  }
+
+  .image-overlay {
+    font-size: 7px;
+  }
+
+
+  .club-overview,
+  .palmares,
+  .squad,
+  .transfers,
+  .fixtures,
+  .legends,
+  .history {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+
+  .trophies {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .trophy {
+    border-left: 0;
+    border-bottom: 1px solid #d7d5cf;
+  }
+
+  .trophy strong {
+    font-size: 50px;
+  }
+
+
+  .player-row {
+    grid-template-columns: 55px 40px 1fr;
+  }
+
+  .player-row strong {
+    font-size: 13px;
+  }
+
+
+  .transfer-columns {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+
+  .fixture {
+    grid-template-columns: 55px 1fr 20px 1fr 45px;
+  }
+
+  .competition {
+    display: none;
+  }
+
+  .fixture-team {
+    font-size: 11px;
+  }
+
+
+  .legend-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .timeline-item {
+    grid-template-columns: 75px 1px 1fr;
+  }
+
+  .timeline-content {
+    padding-left: 25px;
+  }
+
+  .timeline-content h3 {
+    font-size: 19px;
+  }
+
+
+  footer {
+    padding: 30px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+}
