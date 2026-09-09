@@ -265,25 +265,15 @@ nav a.active {
   justify-content: flex-start;
 }
 
-.crest {
+/* =========================
+   REAL TEAM LOGOS
+========================= */
+
+.team-logo {
   width: 34px;
   height: 34px;
-  border-radius: 50%;
-  background: #222;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 8px;
-  font-weight: bold;
-}
-
-.crest.blue {
-  background: #0875d1;
-}
-
-.crest.red {
-  background: #d71920;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .versus {
@@ -402,10 +392,9 @@ nav a.active {
     text-align: right;
   }
 
-  .crest {
+  .team-logo {
     width: 28px;
     height: 28px;
-    font-size: 7px;
   }
 
   .competition-header a {
@@ -419,4 +408,5 @@ nav a.active {
   .cards {
     grid-template-columns: 1fr;
   }
+
 }
