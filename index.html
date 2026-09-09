@@ -5,242 +5,1017 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pages Of Football</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    /* =========================
+       SEARCH RESULTS
+    ========================= */
+
+    .search {
+      position: relative;
+    }
+
+    .search-results {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: white;
+      border: 1px solid #c8c6c0;
+      z-index: 100;
+      display: none;
+      max-height: 360px;
+      overflow-y: auto;
+    }
+
+    .search-result {
+      display: block;
+      padding: 16px 18px;
+      border-bottom: 1px solid #e0ded8;
+      color: #111;
+      text-decoration: none;
+      transition: .15s;
+    }
+
+    .search-result:last-child {
+      border-bottom: 0;
+    }
+
+    .search-result:hover {
+      background: #f0efeb;
+    }
+
+    .search-result-type {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+      font-size: 9px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+
+    .search-result-name {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .search-result-info {
+      display: block;
+      margin-top: 4px;
+      color: #777;
+      font-size: 11px;
+    }
+
+    .search-no-results {
+      padding: 18px;
+      color: #777;
+      font-size: 12px;
+    }
+
+  </style>
 </head>
+
 
 <body>
 
   <div class="page">
 
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
     <header>
+
       <div class="brand">
-        <div class="logo">P</div>
-        <strong>PAGES OF FOOTBALL</strong>
+
+        <a href="index.html" class="logo">
+          P
+        </a>
+
+        <a
+          href="index.html"
+          style="color:#111; text-decoration:none;"
+        >
+          <strong>PAGES OF FOOTBALL</strong>
+        </a>
+
       </div>
 
+
       <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Giocatori</a>
-        <a href="#">Squadre</a>
-        <a href="#">Competizioni</a>
-        <a href="#">Almanacco</a>
+
+        <a href="index.html" class="active">
+          Home
+        </a>
+
+        <a href="giocatori.html">
+          Giocatori
+        </a>
+
+        <a href="squadre.html">
+          Squadre
+        </a>
+
+        <a href="competizioni.html">
+          Competizioni
+        </a>
+
+        <a href="almanacco.html">
+          Almanacco
+        </a>
+
       </nav>
 
-      <button class="menu">☰</button>
+
+      <button class="menu">
+        ☰
+      </button>
+
     </header>
 
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
     <section class="hero">
+
       <div class="hero-text">
 
-        <p class="label">FOOTBALL • DATABASE • HISTORY</p>
+        <p class="label">
+          FOOTBALL • DATABASE • HISTORY
+        </p>
+
 
         <h1>
           Il calcio,<br>
           <em>raccontato.</em>
         </h1>
 
+
         <p class="description">
           Giocatori, squadre, competizioni e storie
           che hanno costruito il calcio.
         </p>
 
+
+
+        <!-- SEARCH -->
+
         <div class="search">
-          <span>⌕</span>
+
+          <span>
+            ⌕
+          </span>
+
 
           <input
+            id="searchInput"
             type="text"
             placeholder="Cerca un giocatore, una squadra..."
+            autocomplete="off"
           >
 
-          <button>Cerca</button>
+
+          <button id="searchButton">
+            Cerca
+          </button>
+
+
+          <div
+            id="searchResults"
+            class="search-results"
+          ></div>
+
         </div>
 
       </div>
+
     </section>
+
+
+
+    <!-- =========================
+         MATCHES
+    ========================= -->
 
     <section class="matches">
 
+
       <div class="section-header">
+
         <div>
-          <p class="label">LIVE • FIXTURES</p>
-          <h2>Partite di oggi</h2>
+
+          <p class="label">
+            LIVE • FIXTURES
+          </p>
+
+          <h2>
+            Partite di domani
+          </h2>
+
         </div>
+
 
         <div class="date">
-          <strong>09</strong>
-          <span>SET<br>2026</span>
+
+          <strong>
+            10
+          </strong>
+
+          <span>
+            SET<br>
+            2026
+          </span>
+
         </div>
+
       </div>
+
+
 
       <div class="competition-header">
-        <span>UEFA CHAMPIONS LEAGUE</span>
-        <a href="#">Calendario completo →</a>
+
+        <span>
+          UEFA CHAMPIONS LEAGUE
+        </span>
+
+        <a href="#">
+          Calendario completo →
+        </a>
+
       </div>
+
+
+
+      <!-- FENERBAHCE - ROMA -->
 
       <div class="match">
+
         <div class="match-time">
-          <strong>18:45</strong>
-          <span>OGGI</span>
+
+          <strong>
+            18:45
+          </strong>
+
+          <span>
+            DOMANI
+          </span>
+
         </div>
+
 
         <div class="team home">
-          <span>Barcelona</span>
-          <div class="crest">BAR</div>
+
+          <span>
+            Fenerbahçe
+          </span>
+
+          <div class="crest">
+            FEN
+          </div>
+
         </div>
 
-        <div class="versus">—</div>
+
+        <div class="versus">
+          —
+        </div>
+
 
         <div class="team away">
-          <div class="crest">FEY</div>
-          <span>Feyenoord</span>
+
+          <div class="crest">
+            ROM
+          </div>
+
+          <span>
+            Roma
+          </span>
+
         </div>
 
-        <div class="match-arrow">→</div>
+
+        <div class="match-arrow">
+          →
+        </div>
+
       </div>
+
+
+
+      <!-- PSV - SHAKHTAR -->
 
       <div class="match">
+
         <div class="match-time">
-          <strong>18:45</strong>
-          <span>OGGI</span>
+
+          <strong>
+            18:45
+          </strong>
+
+          <span>
+            DOMANI
+          </span>
+
         </div>
+
 
         <div class="team home">
-          <span>Stuttgart</span>
-          <div class="crest">VFB</div>
+
+          <span>
+            PSV
+          </span>
+
+          <div class="crest">
+            PSV
+          </div>
+
         </div>
 
-        <div class="versus">—</div>
+
+        <div class="versus">
+          —
+        </div>
+
 
         <div class="team away">
-          <div class="crest">VIK</div>
-          <span>Viking</span>
+
+          <div class="crest">
+            SHA
+          </div>
+
+          <span>
+            Shakhtar
+          </span>
+
         </div>
 
-        <div class="match-arrow">→</div>
+
+        <div class="match-arrow">
+          →
+        </div>
+
       </div>
+
+
+
+      <!-- COMO - RB LEIPZIG -->
 
       <div class="match featured">
+
         <div class="match-time">
-          <strong>21:00</strong>
-          <span>OGGI</span>
+
+          <strong>
+            21:00
+          </strong>
+
+          <span>
+            DOMANI
+          </span>
+
         </div>
+
 
         <div class="team home">
-          <span>Napoli</span>
-          <div class="crest blue">NAP</div>
+
+          <span>
+            Como
+          </span>
+
+          <div class="crest blue">
+            COM
+          </div>
+
         </div>
 
-        <div class="versus">—</div>
+
+        <div class="versus">
+          —
+        </div>
+
 
         <div class="team away">
-          <div class="crest red">ARS</div>
-          <span>Arsenal</span>
+
+          <div class="crest red">
+            RBL
+          </div>
+
+          <span>
+            RB Leipzig
+          </span>
+
         </div>
 
-        <div class="match-arrow">→</div>
+
+        <div class="match-arrow">
+          →
+        </div>
+
       </div>
 
+
+
+      <!-- BAYERN - BODO/GLIMT -->
+
       <div class="match">
+
         <div class="match-time">
-          <strong>21:00</strong>
-          <span>OGGI</span>
+
+          <strong>
+            21:00
+          </strong>
+
+          <span>
+            DOMANI
+          </span>
+
         </div>
+
 
         <div class="team home">
-          <span>Liverpool</span>
-          <div class="crest">LIV</div>
+
+          <span>
+            Bayern Munich
+          </span>
+
+          <div class="crest">
+            BAY
+          </div>
+
         </div>
 
-        <div class="versus">—</div>
+
+        <div class="versus">
+          —
+        </div>
+
 
         <div class="team away">
-          <div class="crest">ATM</div>
-          <span>Atlético Madrid</span>
+
+          <div class="crest">
+            BOG
+          </div>
+
+          <span>
+            Bodø/Glimt
+          </span>
+
         </div>
 
-        <div class="match-arrow">→</div>
+
+        <div class="match-arrow">
+          →
+        </div>
+
       </div>
 
+
+
+      <!-- MANCHESTER UNITED - SABAH -->
+
       <div class="match">
+
         <div class="match-time">
-          <strong>21:00</strong>
-          <span>OGGI</span>
+
+          <strong>
+            21:00
+          </strong>
+
+          <span>
+            DOMANI
+          </span>
+
         </div>
+
 
         <div class="team home">
-          <span>PSG</span>
-          <div class="crest">PSG</div>
+
+          <span>
+            Manchester United
+          </span>
+
+          <div class="crest red">
+            MUN
+          </div>
+
         </div>
 
-        <div class="versus">—</div>
+
+        <div class="versus">
+          —
+        </div>
+
 
         <div class="team away">
-          <div class="crest">SLO</div>
-          <span>Slovan Bratislava</span>
+
+          <div class="crest">
+            SBH
+          </div>
+
+          <span>
+            Sabah
+          </span>
+
         </div>
 
-        <div class="match-arrow">→</div>
+
+        <div class="match-arrow">
+          →
+        </div>
+
       </div>
 
+
+
+      <!-- SLAVIA PRAGUE - LENS -->
+
       <div class="match">
+
         <div class="match-time">
-          <strong>21:00</strong>
-          <span>OGGI</span>
+
+          <strong>
+            21:00
+          </strong>
+
+          <span>
+            DOMANI
+          </span>
+
         </div>
+
 
         <div class="team home">
-          <span>Sporting</span>
-          <div class="crest">SCP</div>
+
+          <span>
+            Slavia Prague
+          </span>
+
+          <div class="crest">
+            SLA
+          </div>
+
         </div>
 
-        <div class="versus">—</div>
+
+        <div class="versus">
+          —
+        </div>
+
 
         <div class="team away">
-          <div class="crest">GAL</div>
-          <span>Galatasaray</span>
+
+          <div class="crest">
+            RCL
+          </div>
+
+          <span>
+            Lens
+          </span>
+
         </div>
 
-        <div class="match-arrow">→</div>
+
+        <div class="match-arrow">
+          →
+        </div>
+
       </div>
 
     </section>
+
+
+
+    <!-- =========================
+         EXPLORE
+    ========================= -->
 
     <section class="explore">
 
+
       <div class="section-header">
+
         <div>
-          <p class="label">EXPLORE</p>
-          <h2>Esplora Pages Of Football</h2>
+
+          <p class="label">
+            EXPLORE
+          </p>
+
+          <h2>
+            Esplora Pages Of Football
+          </h2>
+
         </div>
+
       </div>
+
+
 
       <div class="cards">
 
-        <div class="card">
-          <span>01</span>
-          <h3>Giocatori</h3>
-          <p>Profili, statistiche e carriere.</p>
-          <b>↗</b>
-        </div>
 
-        <div class="card">
-          <span>02</span>
-          <h3>Squadre</h3>
-          <p>Storia, rose e trofei.</p>
-          <b>↗</b>
-        </div>
+        <a
+          href="giocatori.html"
+          class="card"
+          style="text-decoration:none; color:inherit;"
+        >
 
-        <div class="card">
-          <span>03</span>
-          <h3>Almanacco</h3>
-          <p>Le storie che hanno fatto il calcio.</p>
-          <b>↗</b>
-        </div>
+          <span>
+            01
+          </span>
+
+          <h3>
+            Giocatori
+          </h3>
+
+          <p>
+            Profili, statistiche e carriere.
+          </p>
+
+          <b>
+            ↗
+          </b>
+
+        </a>
+
+
+
+        <a
+          href="squadre.html"
+          class="card"
+          style="text-decoration:none; color:inherit;"
+        >
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Squadre
+          </h3>
+
+          <p>
+            Storia, rose e trofei.
+          </p>
+
+          <b>
+            ↗
+          </b>
+
+        </a>
+
+
+
+        <a
+          href="almanacco.html"
+          class="card"
+          style="text-decoration:none; color:inherit;"
+        >
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Almanacco
+          </h3>
+
+          <p>
+            Le storie che hanno fatto il calcio.
+          </p>
+
+          <b>
+            ↗
+          </b>
+
+        </a>
+
 
       </div>
 
     </section>
 
+
   </div>
+
+
+
+  <!-- =========================
+       SEARCH JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+
+    const searchData = [
+
+
+      {
+        name: "Kenan Yildiz",
+        type: "GIOCATORE",
+        info: "Juventus · Turchia · 2005",
+
+        keywords: [
+          "yildiz",
+          "kenan yildiz",
+          "kenan",
+          "turchia",
+          "turkey",
+          "juventus"
+        ],
+
+        link: "giocatori.html"
+      },
+
+
+      {
+        name: "Juventus",
+        type: "SQUADRA",
+        info: "Torino · Italia · 1897",
+
+        keywords: [
+          "juventus",
+          "juve",
+          "juventus fc",
+          "bianconeri",
+          "torino"
+        ],
+
+        link: "juventus.html"
+      },
+
+
+      {
+        name: "Turchia",
+        type: "NAZIONALE",
+        info: "Nazionale turca",
+
+        keywords: [
+          "turchia",
+          "turkey",
+          "turkiye",
+          "yildiz",
+          "kenan"
+        ],
+
+        link: "#"
+      },
+
+
+      {
+        name: "Francisco Conceição",
+        type: "GIOCATORE",
+        info: "Juventus · Portogallo · 2002",
+
+        keywords: [
+          "conceicao",
+          "conceição",
+          "francisco",
+          "portogallo",
+          "portugal",
+          "juventus"
+        ],
+
+        link: "giocatori.html"
+      },
+
+
+      {
+        name: "Edon Zhegrova",
+        type: "GIOCATORE",
+        info: "Juventus · Kosovo · 1999",
+
+        keywords: [
+          "zhegrova",
+          "edon",
+          "kosovo",
+          "juventus"
+        ],
+
+        link: "giocatori.html"
+      },
+
+
+      {
+        name: "Serie A",
+        type: "COMPETIZIONE",
+        info: "Campionato italiano",
+
+        keywords: [
+          "serie a",
+          "seriea",
+          "italia",
+          "italian league"
+        ],
+
+        link: "competizioni.html"
+      },
+
+
+      {
+        name: "Champions League",
+        type: "COMPETIZIONE",
+        info: "UEFA Champions League",
+
+        keywords: [
+          "champions",
+          "champions league",
+          "ucl",
+          "uefa"
+        ],
+
+        link: "competizioni.html"
+      }
+
+
+    ];
+
+
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+
+    const searchButton =
+      document.getElementById("searchButton");
+
+
+    const searchResults =
+      document.getElementById("searchResults");
+
+
+
+    function performSearch() {
+
+
+      const query =
+        searchInput.value
+          .toLowerCase()
+          .trim();
+
+
+      if (!query) {
+
+        searchResults.style.display =
+          "none";
+
+        searchResults.innerHTML =
+          "";
+
+        return;
+      }
+
+
+
+      const results =
+        searchData.filter(item =>
+
+          item.name
+            .toLowerCase()
+            .includes(query)
+
+          ||
+
+          item.keywords.some(keyword =>
+
+            keyword
+              .toLowerCase()
+              .includes(query)
+
+          )
+
+        );
+
+
+
+      searchResults.innerHTML =
+        "";
+
+
+
+      if (results.length === 0) {
+
+
+        searchResults.innerHTML = `
+
+          <div class="search-no-results">
+
+            Nessun risultato trovato per
+            "<strong>${searchInput.value}</strong>"
+
+          </div>
+
+        `;
+
+
+      } else {
+
+
+        results.forEach(item => {
+
+
+          const result =
+            document.createElement("a");
+
+
+          result.className =
+            "search-result";
+
+
+          result.href =
+            item.link;
+
+
+          result.innerHTML = `
+
+            <span class="search-result-type">
+              ${item.type}
+            </span>
+
+            <span class="search-result-name">
+              ${item.name}
+            </span>
+
+            <span class="search-result-info">
+              ${item.info}
+            </span>
+
+          `;
+
+
+          searchResults.appendChild(result);
+
+
+        });
+
+      }
+
+
+
+      searchResults.style.display =
+        "block";
+
+
+    }
+
+
+
+    searchInput.addEventListener(
+      "input",
+      performSearch
+    );
+
+
+
+    searchButton.addEventListener(
+      "click",
+      performSearch
+    );
+
+
+
+    searchInput.addEventListener(
+      "keydown",
+      function(event) {
+
+
+        if (event.key === "Enter") {
+
+          performSearch();
+
+        }
+
+
+      }
+    );
+
+
+
+    document.addEventListener(
+      "click",
+      function(event) {
+
+
+        if (
+          !event.target.closest(".search")
+        ) {
+
+          searchResults.style.display =
+            "none";
+
+        }
+
+
+      }
+    );
+
+
+  </script>
+
 
 </body>
 </html>
