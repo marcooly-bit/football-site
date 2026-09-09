@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competizioni — Pages Of Football</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+  <header>
+    <a href="index.html" class="brand">
+      <div class="logo">P</div>
+      <strong>PAGES OF FOOTBALL</strong>
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="squadre.html">Squadre</a>
+      <a href="giocatori.html">Giocatori</a>
+      <a href="competizioni.html" class="active">Competizioni</a>
+      <a href="almanacco.html">Almanacco</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p class="label">DATABASE</p>
+      <h1>Competizioni</h1>
+      <p class="description">
+        Campionati, coppe e tornei internazionali. Esplora le competizioni,
+        le loro stagioni e le storie che le hanno rese uniche.
+      </p>
+    </section>
+
+    <section class="matches">
+
+      <div class="section-header">
+        <div>
+          <p class="label">IN EVIDENZA</p>
+          <h2>Competizioni</h2>
+        </div>
+      </div>
+
+      <div class="cards">
+
+        <a href="#" class="card">
+          <span>ITALIA</span>
+          <h3>Serie A</h3>
+          <p>Campionato italiano</p>
+          <b>→</b>
+        </a>
+
+        <a href="#" class="card">
+          <span>EUROPA</span>
+          <h3>Champions League</h3>
+          <p>La massima competizione europea per club</p>
+          <b>→</b>
+        </a>
+
+        <a href="#" class="card">
+          <span>ITALIA</span>
+          <h3>Coppa Italia</h3>
+          <p>La coppa nazionale italiana</p>
+          <b>→</b>
+        </a>
+
+        <a href="#" class="card">
+          <span>EUROPA</span>
+          <h3>Europa League</h3>
+          <p>La seconda competizione europea per club</p>
+          <b>→</b>
+        </a>
+
+        <a href="#" class="card">
+          <span>EUROPA</span>
+          <h3>Conference League</h3>
+          <p>La terza competizione europea per club</p>
+          <b>→</b>
+        </a>
+
+        <a href="#" class="card">
+          <span>MONDO</span>
+          <h3>Coppa del Mondo</h3>
+          <p>Il torneo più importante per nazionali</p>
+          <b>→</b>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>PAGES OF FOOTBALL</strong>
+    <span>Football, documented.</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
