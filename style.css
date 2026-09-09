@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: #f4f3ef;
@@ -9,10 +13,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 .page {
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
 }
+
 
 /* =========================
    HEADER
@@ -21,129 +30,153 @@ body {
 header {
   height: 82px;
   padding: 0 55px;
+
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #d7d5cf;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #d8d6d0;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 12px;
+
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .logo {
-  width: 36px;
-  height: 36px;
-  border: 2px solid #111;
+  width: 38px;
+  height: 38px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background: #111;
+  color: white;
+
   font-size: 20px;
   font-weight: 900;
 }
 
-.brand strong {
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-
 nav {
-  margin-left: auto;
   display: flex;
-  gap: 32px;
+  gap: 30px;
 }
 
 nav a {
-  color: #555;
   text-decoration: none;
+
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 700;
+
+  color: #777;
+
+  transition: color 0.2s ease;
 }
 
+nav a:hover,
 nav a.active {
   color: #111;
 }
 
-.menu {
-  display: none;
-}
 
 /* =========================
    HERO
 ========================= */
 
 .hero {
-  padding: 95px 55px 100px;
-  border-bottom: 1px solid #d7d5cf;
+  padding: 95px 55px 85px;
 }
 
-.label {
-  margin: 0;
-  color: #777;
+.eyebrow,
+.section-label {
+  display: block;
+
   font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+
+  color: #777;
 }
 
 .hero h1 {
-  margin: 22px 0;
-  font-size: clamp(65px, 9vw, 115px);
-  line-height: .86;
-  letter-spacing: -7px;
+  margin: 20px 0 25px;
+
+  font-size: clamp(58px, 8vw, 108px);
+  line-height: 0.9;
+
+  letter-spacing: -6px;
+  font-weight: 800;
 }
 
-.hero h1 em {
-  font-weight: normal;
-}
+.hero p {
+  max-width: 520px;
 
-.description {
-  max-width: 470px;
-  margin: 30px 0 0;
+  margin: 0;
+
   color: #666;
-  font-size: 15px;
+
+  font-size: 16px;
   line-height: 1.6;
 }
+
 
 /* =========================
    SEARCH
 ========================= */
 
-.search {
+.search-wrapper {
   width: 600px;
   max-width: 100%;
-  height: 56px;
+
   margin-top: 35px;
-  display: flex;
-  align-items: center;
-  background: white;
-  border: 1px solid #c8c6c0;
 }
 
-.search span {
-  padding-left: 17px;
-  font-size: 22px;
+.search {
+  display: flex;
+
+  background: white;
+  border: 1px solid #d5d3ce;
 }
 
 .search input {
   flex: 1;
-  height: 100%;
-  padding: 0 15px;
+
+  min-width: 0;
+
   border: 0;
   outline: 0;
-  font-size: 13px;
+
+  background: transparent;
+
+  padding: 17px 18px;
+
+  font-size: 14px;
 }
 
 .search button {
-  height: 100%;
-  padding: 0 27px;
   border: 0;
+
+  padding: 0 24px;
+
   background: #111;
   color: white;
+
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
+
   cursor: pointer;
 }
+
+.search button:hover {
+  background: #333;
+}
+
 
 /* =========================
    MATCHES
@@ -155,189 +188,360 @@ nav a.active {
 
 .section-header {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 35px;
 }
 
 .section-header h2 {
-  margin: 9px 0 0;
-  font-size: 38px;
-  letter-spacing: -2px;
+  margin: 10px 0 0;
+
+  font-size: 34px;
+  letter-spacing: -1.5px;
 }
 
-.date {
+
+/* =========================
+   DATE CONTROLS
+========================= */
+
+.date-controls {
   display: flex;
   align-items: center;
-  gap: 9px;
-  text-align: right;
+  gap: 10px;
 }
 
-.date strong {
-  font-size: 44px;
-  line-height: .8;
+.date-arrow {
+  width: 42px;
+  height: 42px;
+
+  border: 1px solid #d5d3ce;
+
+  background: transparent;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
-.date span {
+.date-arrow:hover {
+  background: #111;
+  color: white;
+}
+
+.date-display {
+  position: relative;
+
+  min-width: 100px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  background: white;
+
+  border: 1px solid #d5d3ce;
+
+  cursor: pointer;
+
+  padding: 0 12px;
+}
+
+.date-display strong {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.date-display span {
   font-size: 9px;
   line-height: 1.2;
-  letter-spacing: 1px;
+  font-weight: 800;
   color: #777;
 }
 
+.date-display input {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  cursor: pointer;
+}
+
+
 /* =========================
-   COMPETITION
+   COMPETITIONS
 ========================= */
 
+.competition {
+  margin-bottom: 42px;
+}
+
 .competition-header {
-  margin-top: 45px;
-  padding: 13px 0;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #d7d5cf;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+
+  padding-bottom: 13px;
+
+  border-bottom: 2px solid #111;
 }
 
-.competition-header span {
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
+.competition-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-.competition-header a {
-  color: #666;
-  text-decoration: none;
   font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
+
+.competition-logo {
+  width: 25px;
+  height: 25px;
+
+  object-fit: contain;
+}
+
+.competition-link {
+  font-size: 10px;
+  font-weight: 700;
+
+  color: #888;
+}
+
 
 /* =========================
-   MATCH ROW
+   MATCH
 ========================= */
 
 .match {
-  min-height: 76px;
   display: grid;
-  grid-template-columns: 90px 1fr 40px 1fr 40px;
+
+  grid-template-columns:
+    80px
+    1fr
+    70px
+    1fr
+    40px;
+
   align-items: center;
-  border-bottom: 1px solid #d7d5cf;
-  transition: .2s;
+
+  min-height: 76px;
+
+  border-bottom: 1px solid #ddd9d1;
+
+  transition: background 0.2s ease;
 }
 
 .match:hover {
-  padding-left: 8px;
-  padding-right: 8px;
-  background: #ebeae5;
+  background: rgba(255,255,255,0.55);
 }
 
 .match.featured {
-  background: #ebeae5;
+  background: white;
 }
 
 .match-time {
+  font-size: 12px;
+  font-weight: 700;
+
+  color: #777;
+
   display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.match-time strong {
-  font-size: 15px;
-}
-
-.match-time span {
-  color: #999;
-  font-size: 8px;
-  letter-spacing: 1px;
+  align-items: center;
+  gap: 5px;
 }
 
 .team {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .team.home {
   justify-content: flex-end;
+  text-align: right;
 }
 
 .team.away {
   justify-content: flex-start;
+  text-align: left;
 }
-
-/* =========================
-   REAL TEAM LOGOS
-========================= */
 
 .team-logo {
   width: 34px;
   height: 34px;
+
   object-fit: contain;
+
   flex-shrink: 0;
 }
 
 .versus {
   text-align: center;
+
+  font-size: 12px;
   color: #aaa;
+}
+
+.versus strong {
+  color: #111;
+  font-size: 14px;
 }
 
 .match-arrow {
   text-align: right;
-  font-size: 18px;
+
+  font-size: 16px;
+  color: #999;
 }
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+
+  display: inline-block;
+
+  background: #111;
+
+  border-radius: 50%;
+}
+
+.live-text {
+  font-weight: 800;
+  color: #111;
+}
+
+
+/* =========================
+   LOADING / EMPTY
+========================= */
+
+.matches-loading,
+.no-matches {
+  padding: 70px 20px;
+
+  text-align: center;
+
+  color: #777;
+}
+
+.no-matches-number {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111;
+}
+
+.no-matches h3 {
+  margin: 10px 0;
+
+  color: #111;
+
+  font-size: 22px;
+}
+
+.no-matches p {
+  margin: 0;
+
+  font-size: 13px;
+}
+
 
 /* =========================
    EXPLORE
 ========================= */
 
 .explore {
-  padding: 40px 55px 100px;
-  border-top: 1px solid #d7d5cf;
+  padding: 30px 55px 90px;
 }
 
-.cards {
+.explore-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 30px;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 18px;
 }
 
-.card {
-  min-height: 190px;
-  padding: 25px;
-  border: 1px solid #d3d1ca;
+.explore-card {
   position: relative;
-  transition: .2s;
+
+  min-height: 250px;
+
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid #e0ddd7;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.card:hover {
-  background: #111;
-  color: white;
+.explore-card:hover {
   transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.06);
 }
 
-.card > span {
-  color: #888;
+.explore-number {
   font-size: 10px;
+  font-weight: 800;
+
+  color: #999;
 }
 
-.card h3 {
-  margin: 45px 0 8px;
-  font-size: 25px;
+.explore-card h3 {
+  margin: 70px 0 10px;
+
+  font-size: 28px;
+  letter-spacing: -1px;
 }
 
-.card p {
+.explore-card p {
+  max-width: 260px;
+
   margin: 0;
+
   color: #777;
-  font-size: 12px;
+
+  font-size: 13px;
+  line-height: 1.5;
 }
 
-.card b {
+.explore-arrow {
   position: absolute;
-  right: 25px;
-  bottom: 25px;
+
+  right: 30px;
+  bottom: 28px;
+
   font-size: 20px;
 }
+
 
 /* =========================
    MOBILE
@@ -354,33 +558,42 @@ nav a.active {
     display: none;
   }
 
-  .menu {
-    display: block;
-    margin-left: auto;
-    border: 0;
-    background: none;
-    font-size: 20px;
-  }
-
   .hero {
-    padding: 65px 20px 70px;
+    padding: 65px 20px 60px;
   }
 
   .hero h1 {
-    font-size: 68px;
-    letter-spacing: -5px;
+    font-size: 60px;
+    letter-spacing: -4px;
   }
 
   .matches {
     padding: 55px 20px;
   }
 
+  .section-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .section-header h2 {
-    font-size: 30px;
+    font-size: 28px;
+  }
+
+  .date-controls {
+    width: 100%;
+    justify-content: flex-end;
   }
 
   .match {
-    grid-template-columns: 55px 1fr 20px 1fr 20px;
+    grid-template-columns:
+      55px
+      1fr
+      45px
+      1fr
+      20px;
+
+    min-height: 70px;
   }
 
   .team {
@@ -388,24 +601,28 @@ nav a.active {
     gap: 7px;
   }
 
-  .team.home {
-    text-align: right;
-  }
-
   .team-logo {
     width: 28px;
     height: 28px;
   }
 
-  .competition-header a {
+  .match-arrow {
+    font-size: 13px;
+  }
+
+  .competition-link {
     display: none;
   }
 
-  .explore {
-    padding: 35px 20px 70px;
+  .competition-title {
+    font-size: 9px;
   }
 
-  .cards {
+  .explore {
+    padding: 20px 20px 60px;
+  }
+
+  .explore-grid {
     grid-template-columns: 1fr;
   }
 
