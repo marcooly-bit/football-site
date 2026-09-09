@@ -1,412 +1,48 @@
-* {
-  box-sizing: border-box;
-}
+export default async function handler(req, res) {
+  try {
+    const date = req.query.date;
 
-body {
-  margin: 0;
-  background: #f4f3ef;
-  color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    if (!date) {
+      return res.status(400).json({
+        error: "Manca la data"
+      });
+    }
 
-.page {
-  max-width: 1400px;
-  margin: auto;
-}
+    const apiKey = process.env.api_football_key;
 
-/* =========================
-   HEADER
-========================= */
+    if (!apiKey) {
+      return res.status(500).json({
+        error: "API key non trovata su Vercel"
+      });
+    }
 
-header {
-  height: 82px;
-  padding: 0 55px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #d7d5cf;
-}
+    const url =
+      "https://v3.football.api-sports.io/fixtures?date=" +
+      encodeURIComponent(date) +
+      "&timezone=Europe/Rome";
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-}
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "x-apisports-key": apiKey
+      }
+    });
 
-.logo {
-  width: 36px;
-  height: 36px;
-  border: 2px solid #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 900;
-}
+    const data = await response.json();
 
-.brand strong {
-  font-size: 14px;
-  letter-spacing: 2px;
-}
+    if (!response.ok) {
+      return res.status(response.status).json(data);
+    }
 
-nav {
-  margin-left: auto;
-  display: flex;
-  gap: 32px;
-}
+    return res.status(200).json(data);
 
-nav a {
-  color: #555;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: 600;
-}
+  } catch (error) {
 
-nav a.active {
-  color: #111;
-}
+    console.error("API FOOTBALL ERROR:", error);
 
-.menu {
-  display: none;
-}
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  padding: 95px 55px 100px;
-  border-bottom: 1px solid #d7d5cf;
-}
-
-.label {
-  margin: 0;
-  color: #777;
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.hero h1 {
-  margin: 22px 0;
-  font-size: clamp(65px, 9vw, 115px);
-  line-height: .86;
-  letter-spacing: -7px;
-}
-
-.hero h1 em {
-  font-weight: normal;
-}
-
-.description {
-  max-width: 470px;
-  margin: 30px 0 0;
-  color: #666;
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-/* =========================
-   SEARCH
-========================= */
-
-.search {
-  width: 600px;
-  max-width: 100%;
-  height: 56px;
-  margin-top: 35px;
-  display: flex;
-  align-items: center;
-  background: white;
-  border: 1px solid #c8c6c0;
-}
-
-.search span {
-  padding-left: 17px;
-  font-size: 22px;
-}
-
-.search input {
-  flex: 1;
-  height: 100%;
-  padding: 0 15px;
-  border: 0;
-  outline: 0;
-  font-size: 13px;
-}
-
-.search button {
-  height: 100%;
-  padding: 0 27px;
-  border: 0;
-  background: #111;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* =========================
-   MATCHES
-========================= */
-
-.matches {
-  padding: 70px 55px;
-}
-
-.section-header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.section-header h2 {
-  margin: 9px 0 0;
-  font-size: 38px;
-  letter-spacing: -2px;
-}
-
-.date {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  text-align: right;
-}
-
-.date strong {
-  font-size: 44px;
-  line-height: .8;
-}
-
-.date span {
-  font-size: 9px;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  color: #777;
-}
-
-/* =========================
-   COMPETITION
-========================= */
-
-.competition-header {
-  margin-top: 45px;
-  padding: 13px 0;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #d7d5cf;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.competition-header span {
-  font-size: 10px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-
-.competition-header a {
-  color: #666;
-  text-decoration: none;
-  font-size: 11px;
-}
-
-/* =========================
-   MATCH ROW
-========================= */
-
-.match {
-  min-height: 76px;
-  display: grid;
-  grid-template-columns: 90px 1fr 40px 1fr 40px;
-  align-items: center;
-  border-bottom: 1px solid #d7d5cf;
-  transition: .2s;
-}
-
-.match:hover {
-  padding-left: 8px;
-  padding-right: 8px;
-  background: #ebeae5;
-}
-
-.match.featured {
-  background: #ebeae5;
-}
-
-.match-time {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.match-time strong {
-  font-size: 15px;
-}
-
-.match-time span {
-  color: #999;
-  font-size: 8px;
-  letter-spacing: 1px;
-}
-
-.team {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.team.home {
-  justify-content: flex-end;
-}
-
-.team.away {
-  justify-content: flex-start;
-}
-
-/* =========================
-   REAL TEAM LOGOS
-========================= */
-
-.team-logo {
-  width: 34px;
-  height: 34px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.versus {
-  text-align: center;
-  color: #aaa;
-}
-
-.match-arrow {
-  text-align: right;
-  font-size: 18px;
-}
-
-/* =========================
-   EXPLORE
-========================= */
-
-.explore {
-  padding: 40px 55px 100px;
-  border-top: 1px solid #d7d5cf;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 30px;
-}
-
-.card {
-  min-height: 190px;
-  padding: 25px;
-  border: 1px solid #d3d1ca;
-  position: relative;
-  transition: .2s;
-}
-
-.card:hover {
-  background: #111;
-  color: white;
-  transform: translateY(-4px);
-}
-
-.card > span {
-  color: #888;
-  font-size: 10px;
-}
-
-.card h3 {
-  margin: 45px 0 8px;
-  font-size: 25px;
-}
-
-.card p {
-  margin: 0;
-  color: #777;
-  font-size: 12px;
-}
-
-.card b {
-  position: absolute;
-  right: 25px;
-  bottom: 25px;
-  font-size: 20px;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 800px) {
-
-  header {
-    height: 70px;
-    padding: 0 20px;
+    return res.status(500).json({
+      error: "Errore interno",
+      details: error.message
+    });
   }
-
-  nav {
-    display: none;
-  }
-
-  .menu {
-    display: block;
-    margin-left: auto;
-    border: 0;
-    background: none;
-    font-size: 20px;
-  }
-
-  .hero {
-    padding: 65px 20px 70px;
-  }
-
-  .hero h1 {
-    font-size: 68px;
-    letter-spacing: -5px;
-  }
-
-  .matches {
-    padding: 55px 20px;
-  }
-
-  .section-header h2 {
-    font-size: 30px;
-  }
-
-  .match {
-    grid-template-columns: 55px 1fr 20px 1fr 20px;
-  }
-
-  .team {
-    font-size: 11px;
-    gap: 7px;
-  }
-
-  .team.home {
-    text-align: right;
-  }
-
-  .team-logo {
-    width: 28px;
-    height: 28px;
-  }
-
-  .competition-header a {
-    display: none;
-  }
-
-  .explore {
-    padding: 35px 20px 70px;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
 }
