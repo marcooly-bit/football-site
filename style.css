@@ -2,82 +2,114 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
   margin: 0;
+
   background: #f4f3ef;
+
   color: #111;
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
 }
+
 
 a {
   color: inherit;
 }
 
+
 .page {
   max-width: 1400px;
+
   margin: 0 auto;
 }
+
 
 
 /* =========================
    HEADER
 ========================= */
 
+
 header {
   height: 82px;
+
   padding: 0 55px;
 
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
 
-  border-bottom: 1px solid #d8d6d0;
+  border-bottom:
+    1px solid #d8d6d0;
 }
+
 
 .brand {
   display: flex;
+
   align-items: center;
+
   gap: 12px;
 
   text-decoration: none;
+
   font-weight: 700;
+
   letter-spacing: -0.3px;
 }
+
 
 .logo {
   width: 38px;
   height: 38px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   background: #111;
+
   color: white;
 
   font-size: 20px;
+
   font-weight: 900;
 }
 
+
 nav {
   display: flex;
+
   gap: 30px;
 }
+
 
 nav a {
   text-decoration: none;
 
   font-size: 12px;
+
   font-weight: 700;
 
   color: #777;
 
-  transition: color 0.2s ease;
+  transition:
+    color 0.2s ease;
 }
+
 
 nav a:hover,
 nav a.active {
@@ -85,34 +117,51 @@ nav a.active {
 }
 
 
+
 /* =========================
    HERO
 ========================= */
 
+
 .hero {
-  padding: 95px 55px 85px;
+  padding:
+    95px 55px
+    85px;
 }
+
 
 .eyebrow,
 .section-label {
   display: block;
 
   font-size: 10px;
+
   font-weight: 800;
+
   letter-spacing: 1.8px;
 
   color: #777;
 }
 
-.hero h1 {
-  margin: 20px 0 25px;
 
-  font-size: clamp(58px, 8vw, 108px);
+.hero h1 {
+  margin:
+    20px 0 25px;
+
+  font-size:
+    clamp(
+      58px,
+      8vw,
+      108px
+    );
+
   line-height: 0.9;
 
   letter-spacing: -6px;
+
   font-weight: 800;
 }
+
 
 .hero p {
   max-width: 520px;
@@ -122,27 +171,35 @@ nav a.active {
   color: #666;
 
   font-size: 16px;
+
   line-height: 1.6;
 }
+
 
 
 /* =========================
    SEARCH
 ========================= */
 
+
 .search-wrapper {
   width: 600px;
+
   max-width: 100%;
 
   margin-top: 35px;
 }
 
+
 .search {
   display: flex;
 
   background: white;
-  border: 1px solid #d5d3ce;
+
+  border:
+    1px solid #d5d3ce;
 }
+
 
 .search input {
   flex: 1;
@@ -150,75 +207,99 @@ nav a.active {
   min-width: 0;
 
   border: 0;
+
   outline: 0;
 
   background: transparent;
 
-  padding: 17px 18px;
+  padding:
+    17px 18px;
 
   font-size: 14px;
 }
 
+
 .search button {
   border: 0;
 
-  padding: 0 24px;
+  padding:
+    0 24px;
 
   background: #111;
+
   color: white;
 
   font-size: 12px;
+
   font-weight: 700;
 
   cursor: pointer;
 }
+
 
 .search button:hover {
   background: #333;
 }
 
 
+
 /* =========================
    MATCHES
 ========================= */
 
+
 .matches {
-  padding: 70px 55px;
+  padding:
+    70px 55px;
 }
+
 
 .section-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-end;
 
   gap: 30px;
 
   margin-bottom: 35px;
 }
 
+
 .section-header h2 {
-  margin: 10px 0 0;
+  margin:
+    10px 0 0;
 
   font-size: 34px;
+
   letter-spacing: -1.5px;
 }
+
 
 
 /* =========================
    DATE CONTROLS
 ========================= */
 
+
 .date-controls {
   display: flex;
+
   align-items: center;
+
   gap: 10px;
 }
+
 
 .date-arrow {
   width: 42px;
   height: 42px;
 
-  border: 1px solid #d5d3ce;
+  border:
+    1px solid #d5d3ce;
 
   background: transparent;
 
@@ -231,43 +312,58 @@ nav a.active {
     color 0.2s ease;
 }
 
+
 .date-arrow:hover {
   background: #111;
+
   color: white;
 }
+
 
 .date-display {
   position: relative;
 
   min-width: 100px;
+
   height: 50px;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   gap: 10px;
 
   background: white;
 
-  border: 1px solid #d5d3ce;
+  border:
+    1px solid #d5d3ce;
 
   cursor: pointer;
 
-  padding: 0 12px;
+  padding:
+    0 12px;
 }
+
 
 .date-display strong {
   font-size: 26px;
+
   line-height: 1;
 }
 
+
 .date-display span {
   font-size: 9px;
+
   line-height: 1.2;
+
   font-weight: 800;
+
   color: #777;
 }
+
 
 .date-display input {
   position: absolute;
@@ -275,6 +371,7 @@ nav a.active {
   inset: 0;
 
   width: 100%;
+
   height: 100%;
 
   opacity: 0;
@@ -283,33 +380,46 @@ nav a.active {
 }
 
 
+
 /* =========================
-   COMPETITIONS
+   COMPETITION
 ========================= */
+
 
 .competition {
   margin-bottom: 42px;
 }
 
+
 .competition-header {
   display: flex;
+
   align-items: center;
-  justify-content: space-between;
+
+  justify-content:
+    space-between;
 
   padding-bottom: 13px;
 
-  border-bottom: 2px solid #111;
+  border-bottom:
+    2px solid #111;
 }
+
 
 .competition-title {
   display: flex;
+
   align-items: center;
+
   gap: 10px;
 
   font-size: 11px;
+
   font-weight: 800;
+
   letter-spacing: 1px;
 }
+
 
 .competition-logo {
   width: 25px;
@@ -318,17 +428,21 @@ nav a.active {
   object-fit: contain;
 }
 
+
 .competition-link {
   font-size: 10px;
+
   font-weight: 700;
 
   color: #888;
 }
 
 
+
 /* =========================
    MATCH
 ========================= */
+
 
 .match {
   display: grid;
@@ -344,48 +458,73 @@ nav a.active {
 
   min-height: 76px;
 
-  border-bottom: 1px solid #ddd9d1;
+  border-bottom:
+    1px solid #ddd9d1;
 
-  transition: background 0.2s ease;
+  transition:
+    background 0.2s ease;
 }
+
 
 .match:hover {
-  background: rgba(255,255,255,0.55);
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.55
+    );
 }
+
 
 .match.featured {
   background: white;
 }
 
+
 .match-time {
   font-size: 12px;
+
   font-weight: 700;
 
   color: #777;
 
   display: flex;
+
   align-items: center;
+
   gap: 5px;
 }
 
+
 .team {
   display: flex;
+
   align-items: center;
+
   gap: 12px;
 
   font-size: 14px;
+
   font-weight: 700;
 }
 
+
 .team.home {
-  justify-content: flex-end;
+  justify-content:
+    flex-end;
+
   text-align: right;
 }
 
+
 .team.away {
-  justify-content: flex-start;
+  justify-content:
+    flex-start;
+
   text-align: left;
 }
+
 
 .team-logo {
   width: 34px;
@@ -396,24 +535,31 @@ nav a.active {
   flex-shrink: 0;
 }
 
+
 .versus {
   text-align: center;
 
   font-size: 12px;
+
   color: #aaa;
 }
 
+
 .versus strong {
   color: #111;
+
   font-size: 14px;
 }
+
 
 .match-arrow {
   text-align: right;
 
   font-size: 16px;
+
   color: #999;
 }
+
 
 .live-dot {
   width: 7px;
@@ -426,38 +572,49 @@ nav a.active {
   border-radius: 50%;
 }
 
+
 .live-text {
   font-weight: 800;
+
   color: #111;
 }
+
 
 
 /* =========================
    LOADING / EMPTY
 ========================= */
 
+
 .matches-loading,
 .no-matches {
-  padding: 70px 20px;
+  padding:
+    70px 20px;
 
   text-align: center;
 
   color: #777;
 }
 
+
 .no-matches-number {
   font-size: 42px;
+
   font-weight: 800;
+
   color: #111;
 }
 
+
 .no-matches h3 {
-  margin: 10px 0;
+  margin:
+    10px 0;
 
   color: #111;
 
   font-size: 22px;
 }
+
 
 .no-matches p {
   margin: 0;
@@ -466,13 +623,18 @@ nav a.active {
 }
 
 
+
 /* =========================
    EXPLORE
 ========================= */
 
+
 .explore {
-  padding: 30px 55px 90px;
+  padding:
+    30px 55px
+    90px;
 }
+
 
 .explore-grid {
   display: grid;
@@ -483,6 +645,7 @@ nav a.active {
   gap: 18px;
 }
 
+
 .explore-card {
   position: relative;
 
@@ -492,7 +655,8 @@ nav a.active {
 
   background: white;
 
-  border: 1px solid #e0ddd7;
+  border:
+    1px solid #e0ddd7;
 
   text-decoration: none;
 
@@ -501,26 +665,35 @@ nav a.active {
     box-shadow 0.2s ease;
 }
 
+
 .explore-card:hover {
-  transform: translateY(-4px);
+  transform:
+    translateY(-4px);
 
   box-shadow:
-    0 15px 35px rgba(0,0,0,0.06);
+    0 15px 35px
+    rgba(0,0,0,0.06);
 }
+
 
 .explore-number {
   font-size: 10px;
+
   font-weight: 800;
 
   color: #999;
 }
 
+
 .explore-card h3 {
-  margin: 70px 0 10px;
+  margin:
+    70px 0 10px;
 
   font-size: 28px;
+
   letter-spacing: -1px;
 }
+
 
 .explore-card p {
   max-width: 260px;
@@ -530,60 +703,87 @@ nav a.active {
   color: #777;
 
   font-size: 13px;
+
   line-height: 1.5;
 }
+
 
 .explore-arrow {
   position: absolute;
 
   right: 30px;
+
   bottom: 28px;
 
   font-size: 20px;
 }
 
 
+
 /* =========================
    MOBILE
 ========================= */
 
-@media (max-width: 800px) {
+
+@media (
+  max-width: 800px
+) {
+
 
   header {
     height: 70px;
-    padding: 0 20px;
+
+    padding:
+      0 20px;
   }
+
 
   nav {
     display: none;
   }
 
+
   .hero {
-    padding: 65px 20px 60px;
+    padding:
+      65px 20px
+      60px;
   }
+
 
   .hero h1 {
     font-size: 60px;
+
     letter-spacing: -4px;
   }
 
+
   .matches {
-    padding: 55px 20px;
+    padding:
+      55px 20px;
   }
 
+
   .section-header {
-    align-items: flex-start;
-    flex-direction: column;
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
   }
+
 
   .section-header h2 {
     font-size: 28px;
   }
 
+
   .date-controls {
     width: 100%;
-    justify-content: flex-end;
+
+    justify-content:
+      flex-end;
   }
+
 
   .match {
     grid-template-columns:
@@ -596,34 +796,45 @@ nav a.active {
     min-height: 70px;
   }
 
+
   .team {
     font-size: 11px;
+
     gap: 7px;
   }
+
 
   .team-logo {
     width: 28px;
     height: 28px;
   }
 
+
   .match-arrow {
     font-size: 13px;
   }
+
 
   .competition-link {
     display: none;
   }
 
+
   .competition-title {
     font-size: 9px;
   }
 
+
   .explore {
-    padding: 20px 20px 60px;
+    padding:
+      20px 20px
+      60px;
   }
 
+
   .explore-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:
+      1fr;
   }
 
 }
