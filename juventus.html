@@ -1,713 +1,1299 @@
-* {
-box-sizing: border-box;
-}
-
-body {
-margin: 0;
-background: #f4f3ef;
-color: #111;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-.page {
-max-width: 1400px;
-margin: auto;
-}
-
-
-/* =========================
-HEADER
-========================= */
-
-header {
-height: 82px;
-padding: 0 55px;
-display: flex;
-align-items: center;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.brand {
-display: flex;
-align-items: center;
-gap: 11px;
-}
-
-.logo {
-width: 36px;
-height: 36px;
-border: 2px solid #111;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 20px;
-font-weight: 900;
-}
-
-.brand strong {
-font-size: 14px;
-letter-spacing: 2px;
-}
-
-nav {
-margin-left: auto;
-display: flex;
-gap: 32px;
-}
-
-nav a {
-color: #555;
-text-decoration: none;
-font-size: 12px;
-font-weight: 600;
-}
-
-nav a.active {
-color: #111;
-}
-
-.menu {
-display: none;
-}
-
-
-/* =========================
-HERO JUVENTUS
-========================= */
-
-.team-hero {
-padding: 55px;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.hero-top {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-.team-number {
-font-size: 11px;
-color: #888;
-letter-spacing: 2px;
-}
-
-
-.team-main {
-margin-top: 45px;
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-}
-
-.club-info {
-display: flex;
-align-items: center;
-gap: 28px;
-}
-
-.juve-crest {
-width: 105px;
-height: 125px;
-background: #111;
-color: white;
-display: flex;
-justify-content: center;
-align-items: center;
-clip-path: polygon(
-15% 0,
-85% 0,
-85% 72%,
-50% 100%,
-15% 72%
-);
-}
-
-.juve-crest span {
-font-family: Georgia, serif;
-font-size: 70px;
-font-weight: bold;
-}
-
-.country {
-margin: 0 0 10px;
-color: #777;
-font-size: 10px;
-letter-spacing: 2px;
-font-weight: bold;
-}
-
-.team-main h1 {
-margin: 0;
-font-size: clamp(65px, 10vw, 125px);
-line-height: .82;
-letter-spacing: -7px;
-}
-
-.nickname {
-margin: 20px 0 0;
-color: #777;
-font-family: Georgia, serif;
-font-style: italic;
-font-size: 18px;
-}
-
-.club-year {
-text-align: right;
-}
-
-.club-year span {
-display: block;
-margin-bottom: 5px;
-color: #888;
-font-size: 9px;
-letter-spacing: 2px;
-}
-
-.club-year strong {
-font-size: 55px;
-letter-spacing: -3px;
-}
-
-
-/* =========================
-HERO IMAGE
-========================= */
-
-.hero-image {
-height: 330px;
-margin-top: 55px;
-position: relative;
-
-background:
-linear-gradient(
-to top,
-rgba(0,0,0,.65),
-rgba(0,0,0,.05)
-),
-url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1800&q=80");
-
-background-size: cover;
-background-position: center;
-}
-
-.image-overlay {
-position: absolute;
-bottom: 22px;
-left: 25px;
-right: 25px;
-
-display: flex;
-justify-content: space-between;
-
-color: white;
-font-size: 9px;
-letter-spacing: 2px;
-font-weight: bold;
-}
-
-
-/* =========================
-CLUB OVERVIEW
-========================= */
-
-.club-overview {
-padding: 75px 55px;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.section-title h2 {
-margin: 10px 0 45px;
-font-size: 40px;
-letter-spacing: -2px;
-}
-
-.overview-grid {
-display: grid;
-grid-template-columns: 1.4fr 1fr;
-gap: 100px;
-}
-
-.overview-text {
-max-width: 650px;
-}
-
-.overview-text p {
-margin: 0 0 20px;
-color: #555;
-font-family: Georgia, serif;
-font-size: 19px;
-line-height: 1.65;
-}
-
-.facts {
-border-top: 1px solid #111;
-}
-
-.fact {
-min-height: 65px;
-padding: 15px 0;
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.fact span {
-color: #888;
-font-size: 9px;
-letter-spacing: 1.5px;
-}
-
-.fact strong {
-font-size: 13px;
-}
-
-
-/* =========================
-PALMARES
-========================= */
-
-.palmares {
-padding: 75px 55px;
-background: #111;
-color: white;
-}
-
-.palmares .label {
-color: #888;
-}
-
-.palmares h2 {
-margin: 10px 0 45px;
-font-size: 40px;
-letter-spacing: -2px;
-}
-
-.section-header {
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-}
-
-.section-number {
-color: #777;
-font-size: 11px;
-letter-spacing: 2px;
-}
-
-.trophies {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-border-top: 1px solid #444;
-}
-
-.trophy {
-min-height: 180px;
-padding: 25px;
-border-right: 1px solid #444;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-}
-
-.trophy:last-child {
-border-right: 0;
-}
-
-.trophy strong {
-font-size: 70px;
-line-height: 1;
-letter-spacing: -5px;
-}
-
-.trophy span {
-color: #999;
-font-size: 9px;
-letter-spacing: 1.5px;
-}
-
-
-/* =========================
-FIXTURES
-========================= */
-
-.fixtures {
-padding: 75px 55px;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.fixtures h2 {
-margin: 10px 0 40px;
-font-size: 40px;
-letter-spacing: -2px;
-}
-
-.fixtures .section-header > a {
-color: #555;
-text-decoration: none;
-font-size: 11px;
-}
-
-.fixture {
-min-height: 90px;
-display: grid;
-grid-template-columns: 80px 150px 1fr 40px 1fr 70px;
-align-items: center;
-border-top: 1px solid #d7d5cf;
-}
-
-.fixture:last-child {
-border-bottom: 1px solid #d7d5cf;
-}
-
-.fixture-date {
-display: flex;
-align-items: center;
-gap: 7px;
-}
-
-.fixture-date strong {
-font-size: 28px;
-}
-
-.fixture-date span {
-color: #888;
-font-size: 8px;
-line-height: 1.2;
-letter-spacing: 1px;
-}
-
-.competition {
-color: #888;
-font-size: 9px;
-letter-spacing: 1px;
-}
-
-.fixture-team {
-font-size: 15px;
-font-weight: bold;
-}
-
-.vs {
-text-align: center;
-color: #aaa;
-}
-
-.fixture-time {
-text-align: right;
-font-size: 13px;
-font-weight: bold;
-}
-
-
-/* =========================
-LEGENDS
-========================= */
-
-.legends {
-padding: 75px 55px;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.legends h2 {
-margin: 10px 0 40px;
-font-size: 40px;
-letter-spacing: -2px;
-}
-
-.legend-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 15px;
-}
-
-.legend-card {
-min-height: 270px;
-padding: 25px;
-position: relative;
-border: 1px solid #d3d1ca;
-transition: .25s;
-}
-
-.legend-card:hover {
-background: #111;
-color: white;
-transform: translateY(-5px);
-}
-
-.legend-number {
-color: #888;
-font-size: 10px;
-}
-
-.legend-card h3 {
-margin: 65px 0 10px;
-font-family: Georgia, serif;
-font-size: 28px;
-line-height: 1;
-}
-
-.legend-card p {
-margin: 0;
-color: #888;
-font-size: 10px;
-letter-spacing: 1px;
-}
-
-.legend-card b {
-position: absolute;
-right: 25px;
-bottom: 25px;
-font-size: 20px;
-}
-
-
-/* =========================
-HISTORY
-========================= */
-
-.history {
-padding: 75px 55px 100px;
-}
-
-.history h2 {
-margin: 10px 0 50px;
-font-size: 40px;
-letter-spacing: -2px;
-}
-
-.timeline {
-border-top: 1px solid #111;
-}
-
-.timeline-item {
-display: grid;
-grid-template-columns: 130px 1px 1fr;
-min-height: 145px;
-border-bottom: 1px solid #d7d5cf;
-}
-
-.timeline-year {
-padding-top: 25px;
-font-size: 20px;
-font-weight: bold;
-}
-
-.timeline-line {
-background: #111;
-}
-
-.timeline-content {
-padding: 22px 0 25px 40px;
-}
-
-.timeline-content h3 {
-margin: 0 0 10px;
-font-family: Georgia, serif;
-font-size: 24px;
-}
-
-.timeline-content p {
-max-width: 600px;
-margin: 0;
-color: #666;
-font-size: 13px;
-line-height: 1.6;
-}
-
-
-/* =========================
-FOOTER
-========================= */
-
-footer {
-min-height: 100px;
-padding: 30px 55px;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-border-top: 1px solid #d7d5cf;
-}
-
-.footer-brand {
-display: flex;
-align-items: center;
-gap: 11px;
-}
-
-.footer-brand strong {
-font-size: 13px;
-letter-spacing: 2px;
-}
-
-footer p {
-margin: 0;
-color: #888;
-font-size: 10px;
-letter-spacing: 1.5px;
-}
-
-
-/* =========================
-MOBILE
-========================= */
-
-@media (max-width: 800px) {
-
-header {
-height: 70px;
-padding: 0 20px;
-}
-
-nav {
-display: none;
-}
-
-.menu {
-display: block;
-margin-left: auto;
-border: 0;
-background: none;
-font-size: 20px;
-}
-
-.team-hero {
-padding: 35px 20px 45px;
-}
-
-.team-main {
-margin-top: 35px;
-display: block;
-}
-
-.club-info {
-gap: 18px;
-}
-
-.juve-crest {
-width: 70px;
-height: 85px;
-}
-
-.juve-crest span {
-font-size: 45px;
-}
-
-.team-main h1 {
-font-size: 60px;
-letter-spacing: -5px;
-}
-
-.club-year {
-margin-top: 30px;
-text-align: left;
-}
-
-.club-year strong {
-font-size: 40px;
-}
-
-.hero-image {
-height: 220px;
-margin-top: 35px;
-}
-
-.image-overlay {
-left: 15px;
-right: 15px;
-}
-
-.club-overview,
-.palmares,
-.fixtures,
-.legends,
-.history {
-padding-left: 20px;
-padding-right: 20px;
-}
-
-.overview-grid {
-grid-template-columns: 1fr;
-gap: 45px;
-}
-
-.overview-text p {
-font-size: 17px;
-}
-
-.section-title h2,
-.palmares h2,
-.fixtures h2,
-.legends h2,
-.history h2 {
-font-size: 32px;
-}
-
-.trophies {
-grid-template-columns: 1fr 1fr;
-}
-
-.trophy {
-min-height: 140px;
-border-bottom: 1px solid #444;
-}
-
-.trophy:nth-child(2) {
-border-right: 0;
-}
-
-.trophy strong {
-font-size: 50px;
-}
-
-.fixture {
-grid-template-columns: 55px 1fr 25px 1fr 50px;
-gap: 5px;
-min-height: 100px;
-}
-
-.competition {
-display: none;
-}
-
-.fixture-team {
-font-size: 12px;
-}
-
-.fixture-time {
-font-size: 11px;
-}
-
-.legend-grid {
-grid-template-columns: 1fr 1fr;
-}
-
-.legend-card {
-min-height: 220px;
-}
-
-.legend-card h3 {
-margin-top: 45px;
-font-size: 22px;
-}
-
-.timeline-item {
-grid-template-columns: 75px 1px 1fr;
-}
-
-.timeline-content {
-padding-left: 20px;
-}
-
-footer {
-padding: 25px 20px;
-}
-
-footer p {
-display: none;
-}
-
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Juventus — Pages Of Football</title>
+
+  <link rel="stylesheet" href="juventus.css">
+</head>
+
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="brand">
+
+      <a href="index.html" class="logo">P</a>
+
+      <a href="index.html" class="brand-name">
+        PAGES OF FOOTBALL
+      </a>
+
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="squadre.html" class="active">Squadre</a>
+      <a href="giocatori.html">Giocatori</a>
+      <a href="competizioni.html">Competizioni</a>
+      <a href="almanacco.html">Almanacco</a>
+    </nav>
+
+    <button class="menu">☰</button>
+
+  </header>
+
+
+  <!-- HERO -->
+
+  <section class="team-hero">
+
+    <div class="hero-top">
+
+      <p class="label">
+        CLUB · ITALIA
+      </p>
+
+      <span class="team-number">
+        001
+      </span>
+
+    </div>
+
+
+    <div class="team-main">
+
+      <div class="club-info">
+
+        <div class="juve-crest">
+          J
+        </div>
+
+        <div>
+
+          <p class="country">
+            ITALIA · TORINO
+          </p>
+
+          <h1>Juventus</h1>
+
+          <p class="nickname">
+            La Vecchia Signora
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="club-year">
+
+        <span>
+          FOUNDED
+        </span>
+
+        <strong>
+          1897
+        </strong>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+      <div class="image-overlay">
+
+        <span>
+          JUVENTUS FOOTBALL CLUB
+        </span>
+
+        <span>
+          TORINO · ITALIA
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CLUB OVERVIEW -->
+
+  <section class="club-overview">
+
+    <div class="section-title">
+
+      <p class="label">
+        IL CLUB
+      </p>
+
+      <h2>
+        Juventus Football Club
+      </h2>
+
+    </div>
+
+
+    <div class="overview-grid">
+
+      <div class="overview-text">
+
+        <p>
+          Fondata a Torino nel 1897, la Juventus è uno dei club più
+          importanti e riconoscibili della storia del calcio italiano.
+        </p>
+
+        <p>
+          Dalla prima grande era degli anni Trenta alle conquiste
+          internazionali, fino alla rinascita dopo il 2006, la storia
+          bianconera è fatta di campioni, vittorie e momenti destinati
+          a rimanere nella memoria del calcio.
+        </p>
+
+      </div>
+
+
+      <div class="facts">
+
+        <div class="fact">
+
+          <span>
+            FONDAZIONE
+          </span>
+
+          <strong>
+            1897
+          </strong>
+
+        </div>
+
+        <div class="fact">
+
+          <span>
+            CITTÀ
+          </span>
+
+          <strong>
+            Torino
+          </strong>
+
+        </div>
+
+        <div class="fact">
+
+          <span>
+            STADIO
+          </span>
+
+          <strong>
+            Allianz Stadium
+          </strong>
+
+        </div>
+
+        <div class="fact">
+
+          <span>
+            COLORI
+          </span>
+
+          <strong>
+            Bianconero
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PALMARES -->
+
+  <section class="palmares">
+
+    <div class="section-header">
+
+      <div>
+
+        <p class="label">
+          PALMARES
+        </p>
+
+        <h2>
+          I trofei
+        </h2>
+
+      </div>
+
+      <span class="section-number">
+        04 CATEGORIE
+      </span>
+
+    </div>
+
+
+    <div class="trophies">
+
+      <div class="trophy">
+
+        <strong>
+          36
+        </strong>
+
+        <span>
+          SCUDETTI
+        </span>
+
+      </div>
+
+
+      <div class="trophy">
+
+        <strong>
+          15
+        </strong>
+
+        <span>
+          COPPE ITALIA
+        </span>
+
+      </div>
+
+
+      <div class="trophy">
+
+        <strong>
+          9
+        </strong>
+
+        <span>
+          SUPERCOPPE ITALIANE
+        </span>
+
+      </div>
+
+
+      <div class="trophy european">
+
+        <strong>
+          2
+        </strong>
+
+        <span>
+          CHAMPIONS LEAGUE
+        </span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ROSA -->
+
+  <section class="squad">
+
+    <div class="section-header">
+
+      <div>
+
+        <p class="label">
+          2026 · 27
+        </p>
+
+        <h2>
+          Rosa
+        </h2>
+
+      </div>
+
+      <span class="section-number">
+        PRIMA SQUADRA
+      </span>
+
+    </div>
+
+
+    <!-- PORTIERI -->
+
+    <div class="squad-group">
+
+      <div class="squad-heading">
+
+        <span>
+          PORTIERI
+        </span>
+
+        <span>
+          03
+        </span>
+
+      </div>
+
+
+      <div class="player-row">
+
+        <div class="player-photo"></div>
+
+        <span class="shirt-number">1</span>
+
+        <strong>Kamil Grabara</strong>
+
+      </div>
+
+
+      <div class="player-row">
+
+        <div class="player-photo"></div>
+
+        <span class="shirt-number">23</span>
+
+        <strong>Carlo Pinsoglio</strong>
+
+      </div>
+
+
+      <div class="player-row">
+
+        <div class="player-photo"></div>
+
+        <span class="shirt-number">25</span>
+
+        <strong>Guglielmo Vicario</strong>
+
+      </div>
+
+    </div>
+
+
+    <!-- DIFENSORI -->
+
+    <div class="squad-group">
+
+      <div class="squad-heading">
+
+        <span>
+          DIFENSORI
+        </span>
+
+        <span>
+          09
+        </span>
+
+      </div>
+
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">2</span>
+        <strong>Mehmet Zeki Çelik</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">3</span>
+        <strong>Gleison Bremer</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">4</span>
+        <strong>Federico Gatti</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">6</span>
+        <strong>Lloyd Kelly</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">15</span>
+        <strong>Pierre Kalulu</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">20</span>
+        <strong>Andrea Cambiaso</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">24</span>
+        <strong>Daniele Rugani</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">26</span>
+        <strong>Jhon Lucumí</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">32</span>
+        <strong>Juan David Cabal</strong>
+      </div>
+
+    </div>
+
+
+    <!-- CENTROCAMPISTI -->
+
+    <div class="squad-group">
+
+      <div class="squad-heading">
+
+        <span>
+          CENTROCAMPISTI
+        </span>
+
+        <span>
+          08
+        </span>
+
+      </div>
+
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">5</span>
+        <strong>Manuel Locatelli</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">8</span>
+        <strong>Teun Koopmeiners</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">12</span>
+        <strong>Douglas Luiz</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">17</span>
+        <strong>Kerim Alajbegović</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">19</span>
+        <strong>Khéphren Thuram</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">22</span>
+        <strong>Weston McKennie</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">29</span>
+        <strong>Pape Matar Sarr</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">31</span>
+        <strong>Nicolas Ivan Gonzalez</strong>
+      </div>
+
+    </div>
+
+
+    <!-- ATTACCANTI -->
+
+    <div class="squad-group">
+
+      <div class="squad-heading">
+
+        <span>
+          ATTACCANTI
+        </span>
+
+        <span>
+          08
+        </span>
+
+      </div>
+
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">7</span>
+        <strong>Francisco Conceição</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">9</span>
+        <strong>Randal Kolo Muani</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">10</span>
+        <strong>Kenan Yildiz</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">11</span>
+        <strong>Edon Zhegrova</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">13</span>
+        <strong>Jeremie Boga</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">14</span>
+        <strong>Arkadiusz Milik</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">18</span>
+        <strong>Jeff Ekhator</strong>
+      </div>
+
+      <div class="player-row">
+        <div class="player-photo"></div>
+        <span class="shirt-number">27</span>
+        <strong>Nick Woltemade</strong>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRASFERIMENTI -->
+
+  <section class="transfers">
+
+    <div class="section-header">
+
+      <div>
+
+        <p class="label">
+          2026 · 27
+        </p>
+
+        <h2>
+          Trasferimenti
+        </h2>
+
+      </div>
+
+      <span class="section-number">
+        MERCATO
+      </span>
+
+    </div>
+
+
+    <div class="transfer-columns">
+
+
+      <!-- ARRIVI -->
+
+      <div>
+
+        <div class="transfer-title">
+
+          <span>
+            ARRIVI
+          </span>
+
+          <strong>
+            €157.95M
+          </strong>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Loïs Openda</strong>
+            <span>RB Leipzig</span>
+          </div>
+
+          <div class="transfer-value">
+            €42.75M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Randal Kolo Muani</strong>
+            <span>Paris Saint-Germain</span>
+          </div>
+
+          <div class="transfer-value">
+            €41.20M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Kerim Alajbegović</strong>
+            <span>Bayer Leverkusen</span>
+          </div>
+
+          <div class="transfer-value">
+            €32.00M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Jhon Lucumí</strong>
+            <span>Bologna</span>
+          </div>
+
+          <div class="transfer-value">
+            €20.10M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Jeff Ekhator</strong>
+            <span>Genoa</span>
+          </div>
+
+          <div class="transfer-value">
+            €16.40M
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PARTENZE -->
+
+      <div>
+
+        <div class="transfer-title">
+
+          <span>
+            PARTENZE
+          </span>
+
+          <strong>
+            €26.50M
+          </strong>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Dušan Vlahović</strong>
+            <span>Fine contratto</span>
+          </div>
+
+          <div class="transfer-value">
+            Gratis
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Timothy Weah</strong>
+            <span>Marseille</span>
+          </div>
+
+          <div class="transfer-value">
+            €14.40M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>João Mário</strong>
+            <span>Fiorentina</span>
+          </div>
+
+          <div class="transfer-value">
+            €1.80M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Fabio Miretti</strong>
+            <span>Beşiktaş</span>
+          </div>
+
+          <div class="transfer-value">
+            €2.10M
+          </div>
+
+        </div>
+
+
+        <div class="transfer-row">
+
+          <div class="transfer-photo"></div>
+
+          <div class="transfer-player">
+            <strong>Michele Di Gregorio</strong>
+            <span>Bournemouth</span>
+          </div>
+
+          <div class="transfer-value">
+            €1.30M
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="transfer-balance">
+
+      <span>
+        BILANCIO MERCATO
+      </span>
+
+      <strong>
+        − €131.45M
+      </strong>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROSSIME PARTITE -->
+
+  <section class="fixtures">
+
+    <div class="section-header">
+
+      <div>
+
+        <p class="label">
+          CALENDARIO
+        </p>
+
+        <h2>
+          Prossime partite
+        </h2>
+
+      </div>
+
+      <a href="index.html">
+        VEDI CALENDARIO →
+      </a>
+
+    </div>
+
+
+    <div class="fixture">
+
+      <div class="fixture-date">
+
+        <strong>13</strong>
+
+        <span>
+          SET<br>
+          2026
+        </span>
+
+      </div>
+
+      <div class="competition">
+        SERIE A
+      </div>
+
+      <div class="fixture-team">
+        Juventus
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="fixture-team">
+        Inter
+      </div>
+
+      <div class="fixture-time">
+        20:45
+      </div>
+
+    </div>
+
+
+    <div class="fixture">
+
+      <div class="fixture-date">
+
+        <strong>16</strong>
+
+        <span>
+          SET<br>
+          2026
+        </span>
+
+      </div>
+
+      <div class="competition">
+        CHAMPIONS LEAGUE
+      </div>
+
+      <div class="fixture-team">
+        Juventus
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="fixture-team">
+        — 
+      </div>
+
+      <div class="fixture-time">
+        —
+      </div>
+
+    </div>
+
+
+    <div class="fixture">
+
+      <div class="fixture-date">
+
+        <strong>20</strong>
+
+        <span>
+          SET<br>
+          2026
+        </span>
+
+      </div>
+
+      <div class="competition">
+        SERIE A
+      </div>
+
+      <div class="fixture-team">
+        Juventus
+      </div>
+
+      <div class="vs">
+        VS
+      </div>
+
+      <div class="fixture-team">
+        —
+      </div>
+
+      <div class="fixture-time">
+        —
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LEGGENDE -->
+
+  <section class="legends">
+
+    <div class="section-header">
+
+      <div>
+
+        <p class="label">
+          MEMORIA
+        </p>
+
+        <h2>
+          Leggende
+        </h2>
+
+      </div>
+
+      <span class="section-number">
+        04 NOMI
+      </span>
+
+    </div>
+
+
+    <div class="legend-grid">
+
+      <div class="legend-card">
+
+        <span class="legend-number">
+          01
+        </span>
+
+        <h3>
+          Alessandro<br>
+          Del Piero
+        </h3>
+
+        <p>
+          1993 — 2012
+        </p>
+
+        <b>→</b>
+
+      </div>
+
+
+      <div class="legend-card">
+
+        <span class="legend-number">
+          02
+        </span>
+
+        <h3>
+          Gianluigi<br>
+          Buffon
+        </h3>
+
+        <p>
+          2001 — 2018 · 2019 — 2021
+        </p>
+
+        <b>→</b>
+
+      </div>
+
+
+      <div class="legend-card">
+
+        <span class="legend-number">
+          03
+        </span>
+
+        <h3>
+          Michel<br>
+          Platini
+        </h3>
+
+        <p>
+          1982 — 1987
+        </p>
+
+        <b>→</b>
+
+      </div>
+
+
+      <div class="legend-card">
+
+        <span class="legend-number">
+          04
+        </span>
+
+        <h3>
+          Gaetano<br>
+          Scirea
+        </h3>
+
+        <p>
+          1974 — 1988
+        </p>
+
+        <b>→</b>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STORIA -->
+
+  <section class="history">
+
+    <div class="section-header">
+
+      <div>
+
+        <p class="label">
+          CRONOLOGIA
+        </p>
+
+        <h2>
+          Alcuni momenti che hanno fatto la Juventus
+        </h2>
+
+      </div>
+
+      <span class="section-number">
+        07 MOMENTI
+      </span>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          1897
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            La fondazione
+          </h3>
+
+          <p>
+            Un gruppo di studenti torinesi fonda la Juventus.
+            Nasce una delle storie più importanti del calcio italiano.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          1931–35
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Il Quinquennio d'Oro
+          </h3>
+
+          <p>
+            Cinque Scudetti consecutivi trasformano la Juventus
+            nella squadra dominante del calcio italiano.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          1985
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Heysel e la prima Coppa dei Campioni
+          </h3>
+
+          <p>
+            Una delle notti più drammatiche della storia del calcio
+            coincide con il primo grande trionfo europeo bianconero.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          1996
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            La seconda Champions League
+          </h3>
+
+          <p>
+            A Roma la Juventus supera l'Ajax ai rigori e conquista
+            la sua seconda Coppa dei Campioni.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          2006
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Calciopoli e la Serie B
+          </h3>
+
+          <p>
+            Lo scandalo che sconvolge il calcio italiano porta
+            la Juventus in Serie B e apre uno dei capitoli più
+            difficili della sua storia.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          2012
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Il ritorno allo Scudetto
+          </h3>
+
+          <p>
+            La Juventus torna campione d'Italia dopo nove anni,
+            iniziando una nuova era di dominio nazionale.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <div class="timeline-year">
+          2018
+        </div>
+
+        <div class="timeline-line"></div>
+
+        <div class="timeline-content">
+
+          <h3>
+            Arriva Cristiano Ronaldo
+          </h3>
+
+          <p>
+            Uno dei trasferimenti più importanti nella storia
+            del calcio porta Cristiano Ronaldo a Torino.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-brand">
+
+      <div class="logo">
+        P
+      </div>
+
+      <strong>
+        PAGES OF FOOTBALL
+      </strong>
+
+    </div>
+
+    <p>
+      Football, documented.
+    </p>
+
+  </footer>
+
+</div>
+
+</body>
+</html>
