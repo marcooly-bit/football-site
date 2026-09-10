@@ -424,18 +424,17 @@
 
 
 /*
-  Per il momento partiamo dal 10 settembre 2026,
-  così possiamo verificare le partite che abbiamo
-  già confermato tramite football-data.org.
+  La Home parte automaticamente
+  dalla data corrente.
 */
 
 const today = new Date();
 
 
 let selectedDate = new Date(
-  2026,
-  8,
-  10
+  today.getFullYear(),
+  today.getMonth(),
+  today.getDate()
 );
 
 
