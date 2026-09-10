@@ -1,11 +1,10 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Inter | Pages Of Football</title>
+  <title>Inter · Pages Of Football</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="inter.css">
@@ -16,7 +15,8 @@
 <div class="page">
 
   <!-- HEADER -->
-  <header>
+
+  <header class="site-header">
 
     <a href="index.html" class="brand">
       <div class="logo">P</div>
@@ -25,47 +25,52 @@
 
     <nav>
       <a href="index.html">Home</a>
-      <a href="squadre.html" class="active">Squadre</a>
       <a href="giocatori.html">Giocatori</a>
+      <a href="squadre.html" class="active">Squadre</a>
       <a href="#">Competizioni</a>
       <a href="#">Almanacco</a>
     </nav>
+
+    <button class="search-button">⌕</button>
 
   </header>
 
 
   <!-- HERO -->
-  <section class="team-hero">
 
-    <div class="team-hero-image">
+  <section class="hero">
+
+    <div class="hero-image">
+
       <img
         src="images/stadium/inter-stadium.jpg"
         alt="Stadio dell'Inter"
       >
-    </div>
 
-    <div class="team-hero-overlay"></div>
+      <div class="hero-overlay"></div>
 
-    <div class="team-hero-content">
+      <div class="hero-content">
 
-      <div class="team-hero-logo">
-        <img
-          src="images/teams/inter.png"
-          alt="Inter"
-        >
-      </div>
+        <div class="inter-crest">
+          <img
+            src="images/teams/inter.png"
+            alt="Inter"
+          >
+        </div>
 
-      <div class="team-hero-text">
+        <div>
 
-        <span class="team-kicker">
-          ITALIA · SERIE A
-        </span>
+          <div class="hero-kicker">
+            ITALIA · SERIE A
+          </div>
 
-        <h1>Inter</h1>
+          <h1>Inter</h1>
 
-        <p>
-          Milano - San Siro
-        </p>
+          <p>
+            Milano · San Siro
+          </p>
+
+        </div>
 
       </div>
 
@@ -75,6 +80,7 @@
 
 
   <!-- CLUB -->
+
   <section class="club-section">
 
     <div class="section-label">
@@ -87,19 +93,23 @@
         Internazionale Milano
       </h2>
 
-      <p>
-        Fondata nel 1908, l'Inter è una delle società più importanti
-        della storia del calcio italiano e internazionale.
-        Il club ha costruito la propria identità attraverso grandi
-        generazioni di giocatori, allenatori e successi.
-      </p>
+      <div>
 
-      <p>
-        Dalla Grande Inter degli anni Sessanta alle conquiste
-        internazionali più recenti, la storia nerazzurra è fatta
-        di epoche, protagonisti e momenti destinati a rimanere
-        nell'almanacco del calcio.
-      </p>
+        <p>
+          Fondata nel 1908, l'Inter è una delle società più importanti
+          della storia del calcio italiano e internazionale.
+          Il club ha costruito la propria identità attraverso grandi
+          generazioni di giocatori, allenatori e successi.
+        </p>
+
+        <p>
+          Dalla Grande Inter degli anni Sessanta alle conquiste
+          internazionali più recenti, la storia nerazzurra è fatta
+          di epoche, protagonisti e momenti destinati a rimanere
+          nell'almanacco del calcio.
+        </p>
+
+      </div>
 
     </div>
 
@@ -107,117 +117,198 @@
 
 
   <!-- PALMARES -->
+
   <section class="palmares-section">
 
     <div class="section-label">
       02 · PALMARÈS
     </div>
 
-    <div class="trophies-grid">
+    <div class="trophy-grid">
+
 
       <div class="trophy-card">
 
-        <div class="trophy-number">20</div>
-
-        <div class="trophy-info">
-          <strong>Scudetti</strong>
-          <span>Campionato Italiano</span>
-        </div>
-
         <img
+          class="trophy-image"
           src="images/trophies/scudetto.png"
           alt="Scudetto"
         >
 
+        <div class="trophy-info">
+
+          <strong>20</strong>
+
+          <span>
+            Scudetti
+          </span>
+
+        </div>
+
       </div>
 
 
       <div class="trophy-card">
 
-        <div class="trophy-number">9</div>
-
-        <div class="trophy-info">
-          <strong>Coppe Italia</strong>
-          <span>Coppa Italia</span>
-        </div>
-
         <img
+          class="trophy-image"
           src="images/trophies/coppa-italia.png"
           alt="Coppa Italia"
         >
 
+        <div class="trophy-info">
+
+          <strong>9</strong>
+
+          <span>
+            Coppe Italia
+          </span>
+
+        </div>
+
       </div>
 
 
       <div class="trophy-card">
 
-        <div class="trophy-number">8</div>
-
-        <div class="trophy-info">
-          <strong>Supercoppe Italiane</strong>
-          <span>Supercoppa Italiana</span>
-        </div>
-
         <img
+          class="trophy-image"
           src="images/trophies/supercoppa-italiana.png"
           alt="Supercoppa Italiana"
         >
 
+        <div class="trophy-info">
+
+          <strong>8</strong>
+
+          <span>
+            Supercoppe Italiane
+          </span>
+
+        </div>
+
       </div>
 
 
       <div class="trophy-card">
 
-        <div class="trophy-number">3</div>
-
-        <div class="trophy-info">
-          <strong>Champions League</strong>
-          <span>Coppa dei Campioni / Champions League</span>
-        </div>
-
         <img
+          class="trophy-image"
           src="images/trophies/champions-league.png"
           alt="Champions League"
         >
 
+        <div class="trophy-info">
+
+          <strong>3</strong>
+
+          <span>
+            Champions League
+          </span>
+
+        </div>
+
       </div>
 
     </div>
 
 
-    <div class="other-trophies">
+    <!-- ALTRI TROFEI -->
 
-      <div class="other-trophy">
-        <strong>3</strong>
-        <span>Coppe UEFA</span>
+    <details class="other-trophies">
+
+      <summary>
+        <span>+</span>
+        ALTRI TROFEI
+      </summary>
+
+      <div class="other-trophies-list">
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-uefa.png"
+            alt="Coppa UEFA"
+          >
+
+          <div>
+            <strong>3</strong>
+            <span>Coppe UEFA</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-delle-coppe.png"
+            alt="Coppa delle Coppe"
+          >
+
+          <div>
+            <strong>1</strong>
+            <span>Coppa delle Coppe</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-intercontinentale.png"
+            alt="Coppa Intercontinentale"
+          >
+
+          <div>
+            <strong>3</strong>
+            <span>Coppe Intercontinentali</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-del-mondo-per-club.png"
+            alt="Coppa del Mondo per Club"
+          >
+
+          <div>
+            <strong>1</strong>
+            <span>Coppa del Mondo per Club</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/supercoppa-uefa.png"
+            alt="Supercoppa UEFA"
+          >
+
+          <div>
+            <strong>1</strong>
+            <span>Supercoppa UEFA</span>
+          </div>
+
+        </div>
+
+
       </div>
 
-      <div class="other-trophy">
-        <strong>1</strong>
-        <span>Coppa delle Coppe</span>
-      </div>
-
-      <div class="other-trophy">
-        <strong>3</strong>
-        <span>Coppe Intercontinentali</span>
-      </div>
-
-      <div class="other-trophy">
-        <strong>1</strong>
-        <span>Coppa del Mondo per Club</span>
-      </div>
-
-      <div class="other-trophy">
-        <strong>1</strong>
-        <span>Supercoppa UEFA</span>
-      </div>
-
-    </div>
+    </details>
 
   </section>
 
 
   <!-- SQUADRA -->
+
   <section class="squad-section">
 
     <div class="section-label">
@@ -226,13 +317,16 @@
 
 
     <!-- COMPETIZIONE -->
+
     <a href="serie-a.html" class="competition-button">
 
       <div class="competition-button-logo">
+
         <img
           src="images/competitions/serie-a.png"
           alt="Serie A"
         >
+
       </div>
 
       <div class="competition-button-content">
@@ -251,84 +345,84 @@
 
 
     <!-- PORTIERI -->
+
     <div class="squad-group">
 
-      <div class="squad-group-title">
-        <span>PORTIERI</span>
-      </div>
+      <h3>
+        PORTIERI
+      </h3>
 
-      <div class="players-list">
+      <div class="players-grid">
+
 
         <a href="#" class="player-card">
 
-          <div class="player-number">1</div>
+          <div class="shirt-number">1</div>
 
-          <div class="player-photo">
-            <img
-              src="images/players/josep-martinez.png"
-              alt="Josep Martínez"
-            >
-          </div>
+          <img
+            src="images/players/josep-martinez.png"
+            alt="Josep Martínez"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Josep Martínez
               <img src="images/flags/spain.png" alt="Spagna">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">12</div>
+          <div class="shirt-number">12</div>
 
-          <div class="player-photo">
-            <img
-              src="images/players/raffaele-di-gennaro.png"
-              alt="Raffaele Di Gennaro"
-            >
-          </div>
+          <img
+            src="images/players/raffaele-di-gennaro.png"
+            alt="Raffaele Di Gennaro"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Raffaele Di Gennaro
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">49</div>
+          <div class="shirt-number">49</div>
 
-          <div class="player-photo">
-            <img
-              src="images/players/ivan-provedel.png"
-              alt="Ivan Provedel"
-            >
-          </div>
+          <img
+            src="images/players/ivan-provedel.png"
+            alt="Ivan Provedel"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Ivan Provedel
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
+
             <span>Inter</span>
+
           </div>
 
-          <div class="player-arrow">→</div>
-
         </a>
+
 
       </div>
 
@@ -336,201 +430,222 @@
 
 
     <!-- DIFENSORI -->
+
     <div class="squad-group">
 
-      <div class="squad-group-title">
-        <span>DIFENSORI</span>
-      </div>
+      <h3>
+        DIFENSORI
+      </h3>
 
-      <div class="players-list">
+      <div class="players-grid">
+
 
         <a href="#" class="player-card">
 
-          <div class="player-number">6</div>
+          <div class="shirt-number">6</div>
 
-          <div class="player-photo">
-            <img src="images/players/john-stones.png" alt="John Stones">
-          </div>
+          <img
+            src="images/players/john-stones.png"
+            alt="John Stones"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               John Stones
               <img src="images/flags/england.png" alt="Inghilterra">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">25</div>
+          <div class="shirt-number">25</div>
 
-          <div class="player-photo">
-            <img src="images/players/manuel-akanji.png" alt="Manuel Akanji">
-          </div>
+          <img
+            src="images/players/manuel-akanji.png"
+            alt="Manuel Akanji"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Manuel Akanji
               <img src="images/flags/switzerland.png" alt="Svizzera">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">28</div>
+          <div class="shirt-number">28</div>
 
-          <div class="player-photo">
-            <img src="images/players/benjamin-pavard.png" alt="Benjamin Pavard">
-          </div>
+          <img
+            src="images/players/benjamin-pavard.png"
+            alt="Benjamin Pavard"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Benjamin Pavard
               <img src="images/flags/france.png" alt="Francia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">30</div>
+          <div class="shirt-number">30</div>
 
-          <div class="player-photo">
-            <img src="images/players/carlos-augusto.png" alt="Carlos Augusto">
-          </div>
+          <img
+            src="images/players/carlos-augusto.png"
+            alt="Carlos Augusto"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Carlos Augusto
               <img src="images/flags/brazil.png" alt="Brasile">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">31</div>
+          <div class="shirt-number">31</div>
 
-          <div class="player-photo">
-            <img src="images/players/yann-bisseck.png" alt="Yann Bisseck">
-          </div>
+          <img
+            src="images/players/yann-bisseck.png"
+            alt="Yann Bisseck"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Yann Bisseck
               <img src="images/flags/germany.png" alt="Germania">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">32</div>
+          <div class="shirt-number">32</div>
 
-          <div class="player-photo">
-            <img src="images/players/federico-dimarco.png" alt="Federico Dimarco">
-          </div>
+          <img
+            src="images/players/federico-dimarco.png"
+            alt="Federico Dimarco"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Federico Dimarco
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">54</div>
+          <div class="shirt-number">54</div>
 
-          <div class="player-photo">
-            <img src="images/players/mattia-marello.png" alt="Mattia Marello">
-          </div>
+          <img
+            src="images/players/mattia-marello.png"
+            alt="Mattia Marello"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Mattia Marello
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">95</div>
+          <div class="shirt-number">95</div>
 
-          <div class="player-photo">
-            <img src="images/players/alessandro-bastoni.png" alt="Alessandro Bastoni">
-          </div>
+          <img
+            src="images/players/alessandro-bastoni.png"
+            alt="Alessandro Bastoni"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Alessandro Bastoni
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">99</div>
+          <div class="shirt-number">99</div>
 
-          <div class="player-photo">
-            <img src="images/players/djed-spence.png" alt="Djed Spence">
-          </div>
+          <img
+            src="images/players/djed-spence.png"
+            alt="Djed Spence"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Djed Spence
               <img src="images/flags/england.png" alt="Inghilterra">
             </strong>
+
             <span>Inter</span>
+
           </div>
 
-          <div class="player-arrow">→</div>
-
         </a>
+
 
       </div>
 
@@ -538,180 +653,199 @@
 
 
     <!-- CENTROCAMPISTI -->
+
     <div class="squad-group">
 
-      <div class="squad-group-title">
-        <span>CENTROCAMPISTI</span>
-      </div>
+      <h3>
+        CENTROCAMPISTI
+      </h3>
 
-      <div class="players-list">
+      <div class="players-grid">
+
 
         <a href="#" class="player-card">
 
-          <div class="player-number">5</div>
+          <div class="shirt-number">5</div>
 
-          <div class="player-photo">
-            <img src="images/players/aleksandar-stankovic.png" alt="Aleksandar Stanković">
-          </div>
+          <img
+            src="images/players/aleksandar-stankovic.png"
+            alt="Aleksandar Stanković"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Aleksandar Stanković
               <img src="images/flags/serbia.png" alt="Serbia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">7</div>
+          <div class="shirt-number">7</div>
 
-          <div class="player-photo">
-            <img src="images/players/piotr-zielinski.png" alt="Piotr Zielinski">
-          </div>
+          <img
+            src="images/players/piotr-zielinski.png"
+            alt="Piotr Zielinski"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Piotr Zielinski
               <img src="images/flags/poland.png" alt="Polonia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">8</div>
+          <div class="shirt-number">8</div>
 
-          <div class="player-photo">
-            <img src="images/players/petar-sucic.png" alt="Petar Sučić">
-          </div>
+          <img
+            src="images/players/petar-sucic.png"
+            alt="Petar Sučić"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Petar Sučić
               <img src="images/flags/croatia.png" alt="Croazia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">17</div>
+          <div class="shirt-number">17</div>
 
-          <div class="player-photo">
-            <img src="images/players/andy-diouf.png" alt="Andy Diouf">
-          </div>
+          <img
+            src="images/players/andy-diouf.png"
+            alt="Andy Diouf"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Andy Diouf
               <img src="images/flags/france.png" alt="Francia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">20</div>
+          <div class="shirt-number">20</div>
 
-          <div class="player-photo">
-            <img src="images/players/hakan-calhanoglu.png" alt="Hakan Çalhanoğlu">
-          </div>
+          <img
+            src="images/players/hakan-calhanoglu.png"
+            alt="Hakan Çalhanoğlu"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Hakan Çalhanoğlu
               <img src="images/flags/turkey.png" alt="Turchia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">21</div>
+          <div class="shirt-number">21</div>
 
-          <div class="player-photo">
-            <img src="images/players/curtis-jones.png" alt="Curtis Jones">
-          </div>
+          <img
+            src="images/players/curtis-jones.png"
+            alt="Curtis Jones"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Curtis Jones
               <img src="images/flags/england.png" alt="Inghilterra">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">22</div>
+          <div class="shirt-number">22</div>
 
-          <div class="player-photo">
-            <img src="images/players/henrikh-mkhitaryan.png" alt="Henrikh Mkhitaryan">
-          </div>
+          <img
+            src="images/players/henrikh-mkhitaryan.png"
+            alt="Henrikh Mkhitaryan"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Henrikh Mkhitaryan
               <img src="images/flags/armenia.png" alt="Armenia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">23</div>
+          <div class="shirt-number">23</div>
 
-          <div class="player-photo">
-            <img src="images/players/nicolo-barella.png" alt="Nicolò Barella">
-          </div>
+          <img
+            src="images/players/nicolo-barella.png"
+            alt="Nicolò Barella"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Nicolò Barella
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
+
             <span>Inter</span>
+
           </div>
 
-          <div class="player-arrow">→</div>
-
         </a>
+
 
       </div>
 
@@ -719,117 +853,130 @@
 
 
     <!-- ATTACCANTI -->
+
     <div class="squad-group">
 
-      <div class="squad-group-title">
-        <span>ATTACCANTI</span>
-      </div>
+      <h3>
+        ATTACCANTI
+      </h3>
 
-      <div class="players-list">
+      <div class="players-grid">
+
 
         <a href="#" class="player-card">
 
-          <div class="player-number">9</div>
+          <div class="shirt-number">9</div>
 
-          <div class="player-photo">
-            <img src="images/players/marcus-thuram.png" alt="Marcus Thuram">
-          </div>
+          <img
+            src="images/players/marcus-thuram.png"
+            alt="Marcus Thuram"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Marcus Thuram
               <img src="images/flags/france.png" alt="Francia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">10</div>
+          <div class="shirt-number">10</div>
 
-          <div class="player-photo">
-            <img src="images/players/lautaro-martinez.png" alt="Lautaro Martínez">
-          </div>
+          <img
+            src="images/players/lautaro-martinez.png"
+            alt="Lautaro Martínez"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Lautaro Martínez
               <img src="images/flags/argentina.png" alt="Argentina">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">11</div>
+          <div class="shirt-number">11</div>
 
-          <div class="player-photo">
-            <img src="images/players/luis-henrique.png" alt="Luis Henrique">
-          </div>
+          <img
+            src="images/players/luis-henrique.png"
+            alt="Luis Henrique"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Luis Henrique
               <img src="images/flags/brazil.png" alt="Brasile">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">14</div>
+          <div class="shirt-number">14</div>
 
-          <div class="player-photo">
-            <img src="images/players/ange-yoan-bonny.png" alt="Ange-Yoan Bonny">
-          </div>
+          <img
+            src="images/players/ange-yoan-bonny.png"
+            alt="Ange-Yoan Bonny"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Ange-Yoan Bonny
               <img src="images/flags/france.png" alt="Francia">
             </strong>
-            <span>Inter</span>
-          </div>
 
-          <div class="player-arrow">→</div>
+            <span>Inter</span>
+
+          </div>
 
         </a>
 
 
         <a href="#" class="player-card">
 
-          <div class="player-number">94</div>
+          <div class="shirt-number">94</div>
 
-          <div class="player-photo">
-            <img src="images/players/pio-esposito.png" alt="Pio Esposito">
-          </div>
+          <img
+            src="images/players/pio-esposito.png"
+            alt="Pio Esposito"
+          >
 
-          <div class="player-info">
+          <div class="player-card-info">
+
             <strong>
               Pio Esposito
               <img src="images/flags/italy.png" alt="Italia">
             </strong>
+
             <span>Inter</span>
+
           </div>
 
-          <div class="player-arrow">→</div>
-
         </a>
+
 
       </div>
 
@@ -839,6 +986,7 @@
 
 
   <!-- ALLENATORE -->
+
   <section class="coach-section">
 
     <div class="section-label">
@@ -848,10 +996,12 @@
     <a href="#" class="coach-card">
 
       <div class="coach-photo">
+
         <img
           src="images/coaches/cristian-chivu.png"
           alt="Cristian Chivu"
         >
+
       </div>
 
       <div class="coach-info">
@@ -860,7 +1010,9 @@
           ALLENATORE · 2026/27
         </span>
 
-        <strong>Cristian Chivu</strong>
+        <strong>
+          Cristian Chivu
+        </strong>
 
         <div class="coach-nationality">
 
@@ -889,6 +1041,7 @@
 
 
   <!-- TRASFERIMENTI -->
+
   <section class="transfers-section">
 
     <div class="section-label">
@@ -897,68 +1050,272 @@
 
     <div class="transfers-grid">
 
+
+      <!-- IN -->
+
       <div class="transfer-column">
 
-        <div class="transfer-title">
-          <span>IN</span>
-        </div>
+        <h3>
+          IN
+        </h3>
 
         <div class="transfer-list">
 
-          <div class="transfer-row">
-            <strong>John Stones</strong>
-            <span>Manchester City</span>
-            <b>€</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/john-stones.png"
+                alt="John Stones"
+              >
+            </div>
+
+            <div class="transfer-player">
+              John Stones
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                ←
+              </span>
+
+              <div class="transfer-club">
+                <img
+                  src="images/teams/manchester-city.png"
+                  alt="Manchester City"
+                >
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              €
+            </div>
+
           </div>
 
-          <div class="transfer-row">
-            <strong>Manuel Akanji</strong>
-            <span>Manchester City</span>
-            <b>€</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/manuel-akanji.png"
+                alt="Manuel Akanji"
+              >
+            </div>
+
+            <div class="transfer-player">
+              Manuel Akanji
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                ←
+              </span>
+
+              <div class="transfer-club">
+                <img
+                  src="images/teams/manchester-city.png"
+                  alt="Manchester City"
+                >
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              €
+            </div>
+
           </div>
 
-          <div class="transfer-row">
-            <strong>Andy Diouf</strong>
-            <span>RC Lens</span>
-            <b>€</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/andy-diouf.png"
+                alt="Andy Diouf"
+              >
+            </div>
+
+            <div class="transfer-player">
+              Andy Diouf
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                ←
+              </span>
+
+              <div class="transfer-club">
+                <img
+                  src="images/teams/rc-lens.png"
+                  alt="RC Lens"
+                >
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              €
+            </div>
+
           </div>
 
-          <div class="transfer-row">
-            <strong>Luis Henrique</strong>
-            <span>Olympique Marseille</span>
-            <b>€</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/luis-henrique.png"
+                alt="Luis Henrique"
+              >
+            </div>
+
+            <div class="transfer-player">
+              Luis Henrique
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                ←
+              </span>
+
+              <div class="transfer-club">
+                <img
+                  src="images/teams/marseille.png"
+                  alt="Olympique Marseille"
+                >
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              €
+            </div>
+
           </div>
+
 
         </div>
 
       </div>
 
 
+      <!-- OUT -->
+
       <div class="transfer-column">
 
-        <div class="transfer-title">
-          <span>OUT</span>
-        </div>
+        <h3>
+          OUT
+        </h3>
 
         <div class="transfer-list">
 
-          <div class="transfer-row">
-            <strong>Marcus Thuram</strong>
-            <span>—</span>
-            <b>—</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/marcus-thuram.png"
+                alt="Marcus Thuram"
+              >
+            </div>
+
+            <div class="transfer-player">
+              Marcus Thuram
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                →
+              </span>
+
+              <div class="transfer-club">
+                —
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              —
+            </div>
+
           </div>
 
-          <div class="transfer-row">
-            <strong>Hakan Çalhanoğlu</strong>
-            <span>—</span>
-            <b>—</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/hakan-calhanoglu.png"
+                alt="Hakan Çalhanoğlu"
+              >
+            </div>
+
+            <div class="transfer-player">
+              Hakan Çalhanoğlu
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                →
+              </span>
+
+              <div class="transfer-club">
+                —
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              —
+            </div>
+
           </div>
 
-          <div class="transfer-row">
-            <strong>Kristjan Asllani</strong>
-            <span>Torino</span>
-            <b>Prestito</b>
+
+          <div class="transfer">
+
+            <div class="transfer-photo">
+              <img
+                src="images/players/kristjan-asllani.png"
+                alt="Kristjan Asllani"
+              >
+            </div>
+
+            <div class="transfer-player">
+              Kristjan Asllani
+            </div>
+
+            <div class="transfer-club-area">
+
+              <span class="transfer-arrow">
+                →
+              </span>
+
+              <div class="transfer-club">
+                <img
+                  src="images/teams/torino.png"
+                  alt="Torino"
+                >
+              </div>
+
+            </div>
+
+            <div class="transfer-price">
+              Prestito
+            </div>
+
           </div>
+
 
         </div>
 
@@ -970,6 +1327,7 @@
 
 
   <!-- LEGGENDE -->
+
   <section class="legends-section">
 
     <div class="section-label">
@@ -978,19 +1336,33 @@
 
     <div class="legends-grid">
 
+
       <a href="#" class="legend-card">
 
         <div class="legend-photo">
+
           <img
             src="images/legends/javier-zanetti.png"
             alt="Javier Zanetti"
           >
+
         </div>
 
-        <div class="legend-info">
-          <span>1963 — ARGENTINA</span>
-          <strong>Javier Zanetti</strong>
+        <div class="legend-number">
+          01
         </div>
+
+        <h3>
+          Javier Zanetti
+        </h3>
+
+        <p>
+          1963 — ARGENTINA
+        </p>
+
+        <b>
+          →
+        </b>
 
       </a>
 
@@ -998,16 +1370,29 @@
       <a href="#" class="legend-card">
 
         <div class="legend-photo">
+
           <img
             src="images/legends/giacinto-facchetti.png"
             alt="Giacinto Facchetti"
           >
+
         </div>
 
-        <div class="legend-info">
-          <span>1942 — ITALIA</span>
-          <strong>Giacinto Facchetti</strong>
+        <div class="legend-number">
+          02
         </div>
+
+        <h3>
+          Giacinto Facchetti
+        </h3>
+
+        <p>
+          1942 — ITALIA
+        </p>
+
+        <b>
+          →
+        </b>
 
       </a>
 
@@ -1015,16 +1400,29 @@
       <a href="#" class="legend-card">
 
         <div class="legend-photo">
+
           <img
             src="images/legends/diego-milito.png"
             alt="Diego Milito"
           >
+
         </div>
 
-        <div class="legend-info">
-          <span>1979 — ARGENTINA</span>
-          <strong>Diego Milito</strong>
+        <div class="legend-number">
+          03
         </div>
+
+        <h3>
+          Diego Milito
+        </h3>
+
+        <p>
+          1979 — ARGENTINA
+        </p>
+
+        <b>
+          →
+        </b>
 
       </a>
 
@@ -1032,18 +1430,32 @@
       <a href="#" class="legend-card">
 
         <div class="legend-photo">
+
           <img
             src="images/legends/giuseppe-meazza.png"
             alt="Giuseppe Meazza"
           >
+
         </div>
 
-        <div class="legend-info">
-          <span>1910 — ITALIA</span>
-          <strong>Giuseppe Meazza</strong>
+        <div class="legend-number">
+          04
         </div>
+
+        <h3>
+          Giuseppe Meazza
+        </h3>
+
+        <p>
+          1910 — ITALIA
+        </p>
+
+        <b>
+          →
+        </b>
 
       </a>
+
 
     </div>
 
@@ -1051,6 +1463,7 @@
 
 
   <!-- STORIA -->
+
   <section class="history-section">
 
     <div class="section-label">
@@ -1063,24 +1476,28 @@
         Una storia nerazzurra
       </h2>
 
-      <p>
-        L'Inter nasce nel 1908 dalla volontà di un gruppo di soci
-        di fondare un club aperto a giocatori di ogni nazionalità.
-        Da quella scelta nasce un'identità che accompagnerà
-        la società per oltre un secolo.
-      </p>
+      <div>
 
-      <p>
-        Gli anni Sessanta rappresentano una delle epoche più
-        leggendarie, con Helenio Herrera e una squadra capace
-        di conquistare l'Italia e l'Europa.
-      </p>
+        <p>
+          L'Inter nasce nel 1908 dalla volontà di un gruppo di soci
+          di fondare un club aperto a giocatori di ogni nazionalità.
+          Da quella scelta nasce un'identità che accompagnerà
+          la società per oltre un secolo.
+        </p>
 
-      <p>
-        Nel 2010 l'Inter raggiunge nuovamente il vertice del
-        calcio mondiale con il Triplete di José Mourinho,
-        completando una stagione entrata nella storia del club.
-      </p>
+        <p>
+          Gli anni Sessanta rappresentano una delle epoche più
+          leggendarie, con Helenio Herrera e una squadra capace
+          di conquistare l'Italia e l'Europa.
+        </p>
+
+        <p>
+          Nel 2010 l'Inter raggiunge nuovamente il vertice del
+          calcio mondiale con il Triplete di José Mourinho,
+          completando una stagione entrata nella storia del club.
+        </p>
+
+      </div>
 
     </div>
 
@@ -1088,9 +1505,12 @@
 
 
   <!-- FOOTER -->
+
   <footer>
 
-    <strong>PAGES OF FOOTBALL</strong>
+    <div>
+      PAGES OF FOOTBALL
+    </div>
 
     <span>
       Football history, one page at a time.
@@ -1102,4 +1522,3 @@
 
 </body>
 </html>
-```
