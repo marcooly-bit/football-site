@@ -73,7 +73,8 @@ nav a.active {
   position: relative;
   display: flex;
   align-items: flex-end;
-  background-image: url("images/stadium/juventus-stadium.jpg");
+
+  background-image: url("images/stadium/inter-stadium.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -81,6 +82,7 @@ nav a.active {
 .hero-overlay {
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
     to top,
     rgba(0,0,0,.78),
@@ -91,40 +93,49 @@ nav a.active {
 .hero-content {
   position: relative;
   z-index: 2;
+
   width: 100%;
   padding: 55px 60px;
+
   display: flex;
   align-items: center;
   gap: 28px;
+
   color: white;
 }
 
-.juve-crest {
+.inter-crest {
   width: 92px;
   height: 92px;
   padding: 15px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   background: rgba(255,255,255,.95);
   border: 1px solid rgba(255,255,255,.5);
 }
 
-.juve-crest img {
+.inter-crest img {
   width: 100%;
   height: 100%;
+
   object-fit: contain;
 }
 
 .hero-kicker {
   margin-bottom: 10px;
+
   color: rgba(255,255,255,.7);
+
   font-size: 10px;
   letter-spacing: 2px;
 }
 
 .hero h1 {
   margin: 0;
+
   font-size: 64px;
   line-height: .95;
   font-weight: 500;
@@ -133,7 +144,9 @@ nav a.active {
 
 .hero p {
   margin: 14px 0 0;
+
   color: rgba(255,255,255,.72);
+
   font-size: 13px;
 }
 
@@ -144,8 +157,10 @@ nav a.active {
 
 .section-label {
   color: #777;
+
   font-size: 9px;
   letter-spacing: 2px;
+
   text-transform: uppercase;
 }
 
@@ -156,12 +171,14 @@ nav a.active {
 
 .club-section {
   padding: 90px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
 .club-content {
   max-width: 1050px;
   margin-top: 42px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -169,6 +186,7 @@ nav a.active {
 
 .club-content h2 {
   margin: 0;
+
   font-size: 52px;
   line-height: .98;
   font-weight: 500;
@@ -177,7 +195,9 @@ nav a.active {
 
 .club-content p {
   margin: 0;
+
   color: #666;
+
   font-size: 15px;
   line-height: 1.75;
 }
@@ -189,11 +209,13 @@ nav a.active {
 
 .palmares-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
 .trophy-grid {
   margin-top: 38px;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 14px;
@@ -202,9 +224,11 @@ nav a.active {
 .trophy-card {
   min-height: 220px;
   padding: 25px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   border: 1px solid #d3d1ca;
   background: #f6f5f1;
 }
@@ -212,6 +236,7 @@ nav a.active {
 .trophy-image {
   width: 75px;
   height: 105px;
+
   object-fit: contain;
 }
 
@@ -229,6 +254,7 @@ nav a.active {
 
 .trophy-info span {
   color: #777;
+
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -241,13 +267,16 @@ nav a.active {
 
 .other-trophies {
   margin-top: 18px;
+
   border: 1px solid #d3d1ca;
 }
 
 .other-trophies summary {
   padding: 20px 22px;
+
   cursor: pointer;
   list-style: none;
+
   font-size: 10px;
   letter-spacing: 1.5px;
   font-weight: 700;
@@ -259,11 +288,13 @@ nav a.active {
 
 .other-trophies summary span {
   margin-right: 10px;
+
   font-size: 15px;
 }
 
 .other-trophies-list {
   padding: 0 22px 22px;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
@@ -272,15 +303,18 @@ nav a.active {
 .other-trophy {
   min-height: 100px;
   padding: 15px;
+
   display: flex;
   align-items: center;
   gap: 14px;
+
   border-top: 1px solid #d3d1ca;
 }
 
 .other-trophy img {
   width: 42px;
   height: 55px;
+
   object-fit: contain;
 }
 
@@ -296,6 +330,7 @@ nav a.active {
 
 .other-trophy span {
   color: #777;
+
   font-size: 9px;
 }
 
@@ -306,6 +341,7 @@ nav a.active {
 
 .squad-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -317,6 +353,7 @@ nav a.active {
 .competition-button {
   width: min(520px, 100%);
   min-height: 88px;
+
   margin: 34px 0 52px;
   padding: 12px 14px 12px 12px;
 
@@ -339,6 +376,7 @@ nav a.active {
 .competition-button:hover {
   background: #eeece7;
   border-color: #111;
+
   transform: translateY(-2px);
 }
 
@@ -359,6 +397,7 @@ nav a.active {
 .competition-button-logo img {
   width: 44px;
   height: 44px;
+
   object-fit: contain;
 }
 
@@ -370,6 +409,7 @@ nav a.active {
 
 .competition-button-content span {
   color: #888;
+
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 1.8px;
@@ -384,6 +424,7 @@ nav a.active {
 .competition-button-arrow {
   width: 42px;
   height: 42px;
+
   margin-left: auto;
 
   display: flex;
@@ -403,6 +444,7 @@ nav a.active {
 .competition-button:hover .competition-button-arrow {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
@@ -418,6 +460,7 @@ nav a.active {
 .squad-group h3 {
   margin: 0 0 18px;
   padding-bottom: 12px;
+
   border-bottom: 1px solid #d3d1ca;
 
   font-size: 10px;
@@ -438,6 +481,7 @@ nav a.active {
 
 .player-card {
   height: 230px;
+
   position: relative;
   overflow: hidden;
 
@@ -485,6 +529,7 @@ nav a.active {
 .shirt-number {
   position: absolute;
   z-index: 2;
+
   top: 12px;
   left: 12px;
 
@@ -496,6 +541,7 @@ nav a.active {
 .player-card-info {
   position: absolute;
   z-index: 2;
+
   left: 15px;
   right: 15px;
   bottom: 14px;
@@ -528,6 +574,7 @@ nav a.active {
 
 .player-card-info > span {
   color: rgba(255,255,255,.65);
+
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -540,12 +587,14 @@ nav a.active {
 
 .coach-section {
   padding: 85px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
 .coach-card {
   width: min(760px, 100%);
   min-height: 180px;
+
   margin-top: 55px;
 
   display: flex;
@@ -566,6 +615,7 @@ nav a.active {
 .coach-card:hover {
   background: #eeece7;
   border-color: #111;
+
   transform: translateY(-2px);
 }
 
@@ -680,6 +730,7 @@ nav a.active {
 .coach-card:hover .coach-arrow {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
@@ -690,6 +741,7 @@ nav a.active {
 
 .transfers-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -748,6 +800,7 @@ nav a.active {
 
 .transfer-arrow {
   color: #888;
+
   font-size: 13px;
 }
 
@@ -769,6 +822,7 @@ nav a.active {
 
 .transfer-price {
   text-align: right;
+
   font-size: 10px;
 }
 
@@ -779,6 +833,7 @@ nav a.active {
 
 .legends-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -792,10 +847,12 @@ nav a.active {
 
 .legend-card {
   position: relative;
+
   min-height: 390px;
   overflow: hidden;
 
   color: white;
+
   background: #222;
 }
 
@@ -934,6 +991,7 @@ footer div {
 
 footer span {
   color: #888;
+
   font-size: 10px;
 }
 
@@ -1045,7 +1103,7 @@ footer span {
     gap: 18px;
   }
 
-  .juve-crest {
+  .inter-crest {
     width: 68px;
     height: 68px;
     padding: 11px;
@@ -1093,8 +1151,10 @@ footer span {
   .competition-button {
     width: 100%;
     min-height: 76px;
+
     margin-top: 28px;
     margin-bottom: 42px;
+
     gap: 12px;
   }
 
@@ -1115,6 +1175,7 @@ footer span {
   .competition-button-arrow {
     width: 36px;
     height: 36px;
+
     font-size: 17px;
   }
 
@@ -1166,7 +1227,9 @@ footer span {
   .coach-arrow {
     width: 34px;
     height: 34px;
+
     margin-right: 15px;
+
     font-size: 16px;
   }
 
