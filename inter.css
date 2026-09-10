@@ -1,3 +1,4 @@
+```css
 * {
   box-sizing: border-box;
 }
@@ -14,7 +15,9 @@ body {
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 header {
   height: 72px;
@@ -78,7 +81,9 @@ nav a.active {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .team-hero {
   position: relative;
@@ -92,26 +97,36 @@ nav a.active {
   border-bottom: 1px solid #d3d1ca;
 }
 
-.team-hero-background {
+.team-hero-image {
+  position: absolute;
+  inset: 0;
+}
+
+.team-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-hero-overlay {
   position: absolute;
   inset: 0;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.82) 0%,
-      rgba(0,0,0,.55) 45%,
-      rgba(0,0,0,.25) 100%
-    ),
-    url("images/stadium/inter-stadium.jpg");
-
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+    90deg,
+    rgba(0,0,0,.82) 0%,
+    rgba(0,0,0,.55) 45%,
+    rgba(0,0,0,.25) 100%
+  );
 }
 
 .team-hero-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   width: 100%;
   padding: 65px 60px;
@@ -123,7 +138,7 @@ nav a.active {
   color: white;
 }
 
-.team-crest {
+.team-hero-logo {
   width: 120px;
   height: 120px;
 
@@ -137,9 +152,11 @@ nav a.active {
   border: 1px solid rgba(255,255,255,.7);
 }
 
-.team-crest img {
+.team-hero-logo img {
   width: 82px;
   height: 82px;
+
+  display: block;
 
   object-fit: contain;
 }
@@ -148,7 +165,7 @@ nav a.active {
   max-width: 650px;
 }
 
-.team-country {
+.team-kicker {
   color: rgba(255,255,255,.65);
 
   font-size: 9px;
@@ -176,7 +193,9 @@ nav a.active {
 }
 
 
-/* GENERAL SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 .club-section,
 .palmares-section,
@@ -199,18 +218,22 @@ nav a.active {
 }
 
 
-/* CLUB */
+/* =========================
+   CLUB
+========================= */
 
-.club-grid {
+.club-content {
   margin-top: 55px;
 
+  max-width: 1050px;
+
   display: grid;
-  grid-template-columns: 1.2fr .8fr;
+  grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
 
-.club-intro h2 {
-  margin: 0 0 30px;
+.club-content h2 {
+  margin: 0;
 
   font-size: 52px;
   line-height: .95;
@@ -219,8 +242,7 @@ nav a.active {
   letter-spacing: -2px;
 }
 
-.club-intro p {
-  max-width: 580px;
+.club-content p {
   margin: 0 0 18px;
 
   color: #666;
@@ -229,36 +251,12 @@ nav a.active {
   line-height: 1.8;
 }
 
-.club-facts {
-  border-top: 1px solid #d3d1ca;
-}
 
-.fact {
-  padding: 22px 0;
+/* =========================
+   PALMARES
+========================= */
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.fact span {
-  color: #888;
-
-  font-size: 9px;
-  letter-spacing: 1.5px;
-}
-
-.fact strong {
-  font-size: 17px;
-  font-weight: 500;
-}
-
-
-/* PALMARES */
-
-.main-trophies {
+.trophies-grid {
   margin-top: 55px;
 
   display: grid;
@@ -268,7 +266,7 @@ nav a.active {
   border-left: 1px solid #d3d1ca;
 }
 
-.trophy-main {
+.trophy-card {
   min-height: 190px;
   padding: 25px;
 
@@ -280,19 +278,43 @@ nav a.active {
   border-bottom: 1px solid #d3d1ca;
 }
 
-.trophy-main span {
-  color: #888;
-
-  font-size: 9px;
-  letter-spacing: 1.5px;
-}
-
-.trophy-main strong {
+.trophy-number {
   font-size: 65px;
   line-height: .8;
   font-weight: 400;
+
   letter-spacing: -3px;
 }
+
+.trophy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trophy-info strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trophy-info span {
+  color: #888;
+
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.trophy-card > img {
+  width: 58px;
+  height: 75px;
+
+  object-fit: contain;
+
+  align-self: flex-end;
+}
+
+
+/* OTHER TROPHIES */
 
 .other-trophies {
   display: grid;
@@ -301,7 +323,8 @@ nav a.active {
   border-left: 1px solid #d3d1ca;
 }
 
-.other-trophies div {
+.other-trophy {
+  min-height: 100px;
   padding: 20px;
 
   display: flex;
@@ -312,18 +335,22 @@ nav a.active {
   border-bottom: 1px solid #d3d1ca;
 }
 
-.other-trophies span {
-  color: #888;
-  font-size: 9px;
-}
-
-.other-trophies strong {
+.other-trophy strong {
   font-size: 24px;
   font-weight: 500;
 }
 
+.other-trophy span {
+  color: #888;
 
-/* COMPETITION BUTTON */
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+
+/* =========================
+   COMPETITION BUTTON
+========================= */
 
 .competition-button {
   width: min(520px, 100%);
@@ -351,6 +378,7 @@ nav a.active {
 .competition-button:hover {
   background: #eeece7;
   border-color: #111;
+
   transform: translateY(-2px);
 }
 
@@ -362,15 +390,17 @@ nav a.active {
   align-items: center;
   justify-content: center;
 
+  flex-shrink: 0;
+
   background: #f6f5f1;
   border: 1px solid #d3d1ca;
-
-  flex-shrink: 0;
 }
 
 .competition-button-logo img {
   width: 44px;
   height: 44px;
+
+  display: block;
 
   object-fit: contain;
 }
@@ -392,6 +422,7 @@ nav a.active {
 .competition-button-content strong {
   font-size: 21px;
   font-weight: 700;
+
   letter-spacing: -.4px;
 }
 
@@ -404,6 +435,8 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 
   border: 1px solid #d3d1ca;
 
@@ -418,24 +451,27 @@ nav a.active {
 .competition-button:hover .competition-button-arrow {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
 
-/* SQUAD */
+/* =========================
+   SQUAD
+========================= */
 
-.position-group {
+.squad-group {
   margin-top: 55px;
 }
 
-.position-title {
+.squad-group-title {
   margin-bottom: 18px;
   padding-bottom: 12px;
 
   border-bottom: 1px solid #d3d1ca;
 }
 
-.position-title span {
+.squad-group-title span {
   color: #777;
 
   font-size: 9px;
@@ -443,12 +479,15 @@ nav a.active {
   letter-spacing: 2px;
 }
 
-.players-grid {
+.players-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
   gap: 10px;
 }
+
+
+/* PLAYER CARD */
 
 .player-card {
   min-height: 145px;
@@ -463,6 +502,9 @@ nav a.active {
   background: #dedcd6;
   border: 1px solid #d3d1ca;
 
+  color: white;
+  text-decoration: none;
+
   transition:
     transform .2s ease,
     border-color .2s ease;
@@ -470,14 +512,17 @@ nav a.active {
 
 .player-card:hover {
   transform: translateY(-3px);
+
   border-color: #111;
 }
 
 .player-number {
   position: absolute;
+
   top: 12px;
   left: 12px;
-  z-index: 2;
+
+  z-index: 3;
 
   color: white;
 
@@ -524,11 +569,11 @@ nav a.active {
   width: 100%;
   padding: 15px;
 
-  color: white;
-
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  color: white;
 }
 
 .player-info strong {
@@ -544,6 +589,9 @@ nav a.active {
   width: 18px;
   height: 12px;
 
+  position: static;
+  inset: auto;
+
   flex-shrink: 0;
 
   display: block;
@@ -553,7 +601,7 @@ nav a.active {
   border: 1px solid rgba(255,255,255,.35);
 }
 
-.player-info span {
+.player-info > span {
   color: rgba(255,255,255,.65);
 
   font-size: 8px;
@@ -561,14 +609,33 @@ nav a.active {
   letter-spacing: 1px;
 }
 
+.player-arrow {
+  position: absolute;
 
-/* COACH */
+  right: 12px;
+  bottom: 12px;
 
-.coach-section {
-  padding: 85px 60px;
+  z-index: 3;
 
-  border-bottom: 1px solid #d3d1ca;
+  color: rgba(255,255,255,.75);
+
+  font-size: 17px;
+
+  transition:
+    transform .2s ease,
+    color .2s ease;
 }
+
+.player-card:hover .player-arrow {
+  color: white;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   COACH
+========================= */
 
 .coach-card {
   width: min(760px, 100%);
@@ -582,8 +649,8 @@ nav a.active {
   background: #fff;
   border: 1px solid #d3d1ca;
 
-  text-decoration: none;
   color: #111;
+  text-decoration: none;
 
   transition:
     background .2s ease,
@@ -594,6 +661,7 @@ nav a.active {
 .coach-card:hover {
   background: #eeece7;
   border-color: #111;
+
   transform: translateY(-2px);
 }
 
@@ -638,12 +706,11 @@ nav a.active {
 .coach-info strong {
   font-size: 28px;
   line-height: 1;
+
   font-weight: 500;
+
   letter-spacing: -.8px;
 }
-
-
-/* COACH NATIONALITY */
 
 .coach-nationality {
   margin-top: 10px;
@@ -665,12 +732,11 @@ nav a.active {
 }
 
 .coach-nationality span {
-  margin: 0 !important;
+  color: #555;
 
-  color: #555 !important;
+  font-size: 10px;
+  letter-spacing: .6px;
 
-  font-size: 10px !important;
-  letter-spacing: .6px !important;
   text-transform: uppercase;
 }
 
@@ -681,6 +747,7 @@ nav a.active {
 
   font-size: 10px;
   letter-spacing: .8px;
+
   text-transform: uppercase;
 }
 
@@ -710,11 +777,14 @@ nav a.active {
 .coach-card:hover .coach-arrow {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
 
-/* TRANSFERS */
+/* =========================
+   TRANSFERS
+========================= */
 
 .transfers-grid {
   margin-top: 55px;
@@ -725,36 +795,45 @@ nav a.active {
   gap: 60px;
 }
 
-.transfer-heading {
+.transfer-title {
   padding-bottom: 12px;
 
   border-bottom: 1px solid #111;
 }
 
-.transfer-heading span {
+.transfer-title span {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+.transfer-list {
+  width: 100%;
 }
 
 .transfer-row {
   min-height: 70px;
   padding: 15px 0;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+
+  align-items: center;
 
   border-bottom: 1px solid #d3d1ca;
 }
 
 .transfer-row strong {
+  grid-column: 1;
+
   font-size: 14px;
   font-weight: 500;
 }
 
 .transfer-row span {
+  grid-column: 1;
+
   color: #888;
 
   font-size: 9px;
@@ -762,8 +841,20 @@ nav a.active {
   letter-spacing: .8px;
 }
 
+.transfer-row b {
+  grid-column: 2;
+  grid-row: 1 / span 2;
 
-/* LEGENDS */
+  color: #111;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   LEGENDS
+========================= */
 
 .legends-grid {
   margin-top: 55px;
@@ -840,7 +931,9 @@ nav a.active {
 }
 
 
-/* HISTORY */
+/* =========================
+   HISTORY
+========================= */
 
 .history-content {
   margin-top: 55px;
@@ -861,7 +954,7 @@ nav a.active {
 .history-content p {
   max-width: 600px;
 
-  margin: 0 0 35px;
+  margin: 0 0 25px;
 
   color: #666;
 
@@ -905,11 +998,14 @@ nav a.active {
 .history-button:hover strong {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   padding: 40px 60px;
@@ -929,15 +1025,18 @@ footer strong {
 
 footer span {
   color: #888;
+
   font-size: 10px;
 }
 
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE — TABLET
+========================= */
 
 @media (max-width: 900px) {
 
-  .players-grid {
+  .players-list {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -945,7 +1044,7 @@ footer span {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .main-trophies {
+  .trophies-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -953,13 +1052,16 @@ footer span {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .club-grid {
+  .club-content {
     grid-template-columns: 1fr;
     gap: 50px;
   }
-
 }
 
+
+/* =========================
+   RESPONSIVE — SMALL TABLET
+========================= */
 
 @media (max-width: 800px) {
 
@@ -990,12 +1092,15 @@ footer span {
     padding-right: 35px;
   }
 
-  .players-grid {
+  .players-list {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
+
+/* =========================
+   RESPONSIVE — MOBILE
+========================= */
 
 @media (max-width: 600px) {
 
@@ -1016,6 +1121,9 @@ footer span {
     letter-spacing: 1px;
   }
 
+
+  /* HERO */
+
   .team-hero {
     min-height: 500px;
   }
@@ -1027,12 +1135,12 @@ footer span {
     align-items: flex-start;
   }
 
-  .team-crest {
+  .team-hero-logo {
     width: 90px;
     height: 90px;
   }
 
-  .team-crest img {
+  .team-hero-logo img {
     width: 62px;
     height: 62px;
   }
@@ -1040,6 +1148,9 @@ footer span {
   .team-hero h1 {
     font-size: 50px;
   }
+
+
+  /* SECTIONS */
 
   .club-section,
   .palmares-section,
@@ -1051,28 +1162,77 @@ footer span {
     padding: 60px 25px;
   }
 
-  .club-intro h2,
+
+  /* CLUB */
+
+  .club-content h2,
   .history-content h2 {
     font-size: 42px;
   }
 
-  .main-trophies {
+
+  /* PALMARES */
+
+  .trophies-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .trophy-main {
+  .trophy-card {
     min-height: 150px;
   }
 
-  .trophy-main strong {
+  .trophy-number {
     font-size: 48px;
+  }
+
+  .trophy-card > img {
+    width: 45px;
+    height: 60px;
   }
 
   .other-trophies {
     grid-template-columns: 1fr 1fr;
   }
 
-  .players-grid {
+
+  /* COMPETITION */
+
+  .competition-button {
+    width: 100%;
+
+    min-height: 76px;
+
+    margin-top: 28px;
+    margin-bottom: 42px;
+
+    gap: 12px;
+  }
+
+  .competition-button-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .competition-button-logo img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .competition-button-content strong {
+    font-size: 18px;
+  }
+
+  .competition-button-arrow {
+    width: 36px;
+    height: 36px;
+
+    font-size: 17px;
+  }
+
+
+  /* PLAYERS */
+
+  .players-list {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -1094,6 +1254,9 @@ footer span {
     width: 16px;
     height: 11px;
   }
+
+
+  /* COACH */
 
   .coach-card {
     min-height: 130px;
@@ -1125,10 +1288,17 @@ footer span {
     font-size: 16px;
   }
 
+
+  /* TRANSFERS */
+
   .transfers-grid {
     grid-template-columns: 1fr;
+
     gap: 45px;
   }
+
+
+  /* LEGENDS */
 
   .legends-grid {
     grid-template-columns: 1fr 1fr;
@@ -1138,6 +1308,9 @@ footer span {
     min-height: 240px;
   }
 
+
+  /* FOOTER */
+
   footer {
     padding: 30px 25px;
 
@@ -1146,5 +1319,5 @@ footer span {
 
     gap: 10px;
   }
-
 }
+```
