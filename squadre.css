@@ -1,4 +1,3 @@
-```css
 * {
   box-sizing: border-box;
 }
@@ -15,9 +14,9 @@ body {
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* ========================= */
+/* HEADER */
+/* ========================= */
 
 header {
   height: 72px;
@@ -81,9 +80,9 @@ nav a.active {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* ========================= */
+/* HERO */
+/* ========================= */
 
 .teams-hero {
   padding: 90px 60px 75px;
@@ -111,7 +110,6 @@ nav a.active {
 
 .description {
   max-width: 600px;
-
   margin: 0;
 
   color: #666;
@@ -121,9 +119,9 @@ nav a.active {
 }
 
 
-/* =========================
-   COUNTRY
-========================= */
+/* ========================= */
+/* COUNTRY */
+/* ========================= */
 
 .league-section {
   padding: 0 60px 80px;
@@ -132,9 +130,13 @@ nav a.active {
 }
 
 .country-header {
-  margin: 0 -60px 0;
+  margin: 0 -60px;
 
-  padding: 32px 60px;
+  padding: 28px 60px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
 
   background: #164a73;
   color: white;
@@ -154,9 +156,36 @@ nav a.active {
 }
 
 
-/* =========================
-   LEAGUE
-========================= */
+/* FLAG BOX */
+
+.country-visual {
+  width: 54px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.25);
+
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.country-visual img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* ========================= */
+/* LEAGUE */
+/* ========================= */
 
 .league {
   border-bottom: 1px solid #d3d1ca;
@@ -164,30 +193,62 @@ nav a.active {
 
 .league summary {
   min-height: 105px;
-
-  padding: 22px 0;
+  padding: 18px 25px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   cursor: pointer;
-
   list-style: none;
 
   background: #111;
   color: white;
-
-  margin: 0;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .league summary::-webkit-details-marker {
   display: none;
 }
 
-.league summary > div {
+
+/* LEAGUE TITLE */
+
+.league-title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+/* COMPETITION LOGO BOX */
+
+.competition-logo {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f6f5f1;
+  border: 1px solid #333;
+
+  flex-shrink: 0;
+}
+
+.competition-logo img {
+  width: 38px;
+  height: 38px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* LEAGUE TEXT */
+
+.league-text {
   display: flex;
   flex-direction: column;
 }
@@ -219,6 +280,9 @@ nav a.active {
   letter-spacing: .8px;
 }
 
+
+/* ARROW */
+
 .arrow {
   width: 38px;
   height: 38px;
@@ -248,9 +312,9 @@ nav a.active {
 }
 
 
-/* =========================
-   TEAM LIST
-========================= */
+/* ========================= */
+/* TEAM LIST */
+/* ========================= */
 
 .teams-list {
   display: grid;
@@ -263,19 +327,15 @@ nav a.active {
 }
 
 
-/* =========================
-   TEAM
-========================= */
+/* TEAM */
 
 .team {
   min-height: 72px;
+  padding: 0 22px;
 
   display: flex;
   align-items: center;
-
   gap: 18px;
-
-  padding: 0 22px;
 
   color: #111;
   text-decoration: none;
@@ -294,7 +354,6 @@ nav a.active {
 
 .team:hover {
   background: #eeece7;
-
   padding-left: 28px;
 }
 
@@ -315,9 +374,9 @@ nav a.active {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* ========================= */
+/* FOOTER */
+/* ========================= */
 
 footer {
   padding: 40px 60px;
@@ -337,14 +396,13 @@ footer strong {
 
 footer span {
   color: #888;
-
   font-size: 10px;
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
 
 @media (max-width: 800px) {
 
@@ -415,11 +473,30 @@ footer span {
     padding-right: 25px;
   }
 
+  .country-visual {
+    width: 48px;
+    height: 34px;
+  }
+
   .league summary {
     min-height: 90px;
 
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .league-title {
+    gap: 13px;
+  }
+
+  .competition-logo {
+    width: 46px;
+    height: 46px;
+  }
+
+  .competition-logo img {
+    width: 32px;
+    height: 32px;
   }
 
   .league h3 {
@@ -432,7 +509,6 @@ footer span {
 
   .team {
     min-height: 64px;
-
     border-right: none;
   }
 
