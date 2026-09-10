@@ -134,24 +134,24 @@ body {
 
 /* CLUB INTRO */
 
-.club-intro {
+.club-section {
   padding: 85px 60px;
   border-bottom: 1px solid #d3d1ca;
 }
 
-.club-intro-content {
+.club-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
 }
 
-.club-intro h2 {
+.club-content h2 {
   margin: 0;
   font-size: 42px;
   letter-spacing: -2px;
 }
 
-.club-intro p {
+.club-content p {
   margin: 0;
   max-width: 500px;
   font-size: 14px;
@@ -162,30 +162,9 @@ body {
 
 /* PALMARES */
 
-.palmares {
+.palmares-section {
   padding: 85px 60px;
   border-bottom: 1px solid #d3d1ca;
-}
-
-.palmares-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  margin-bottom: 45px;
-}
-
-.palmares-header h2 {
-  margin: 0;
-  font-size: 42px;
-  letter-spacing: -2px;
-}
-
-.palmares-header p {
-  margin: 0;
-  max-width: 450px;
-  font-size: 14px;
-  line-height: 1.7;
-  color: #666;
 }
 
 
@@ -315,62 +294,104 @@ body {
   border-bottom: 1px solid #d3d1ca;
 }
 
-.squad-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 45px;
+.squad-group {
+  margin-bottom: 55px;
 }
 
-.squad-header h2 {
-  margin: 0;
-  font-size: 42px;
-  letter-spacing: -2px;
+.squad-group:last-child {
+  margin-bottom: 0;
 }
 
-.squad-header a {
-  color: #111;
-  font-size: 11px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.squad-list {
-  border-top: 1px solid #d3d1ca;
-}
-
-.squad-role {
-  padding: 25px 0 12px;
+.squad-group h3 {
+  margin: 0 0 20px;
   font-size: 10px;
   color: #999;
   letter-spacing: 2px;
 }
 
-.squad-player {
-  min-height: 62px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  border-bottom: 1px solid #d3d1ca;
+
+/* PLAYER GRID */
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
-.squad-player .number {
-  width: 35px;
-  font-size: 11px;
-  color: #999;
+
+/* PLAYER CARD */
+
+.player-card {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #d7d5cf;
+  border: 1px solid #d3d1ca;
 }
 
-.squad-player img {
-  width: 40px;
-  height: 40px;
+.player-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
-  background: #ddd;
+  display: block;
+  transition: transform 0.45s ease;
 }
 
-.squad-player > span:last-child {
-  font-size: 13px;
+.player-card:hover img {
+  transform: scale(1.04);
+}
+
+.player-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.02) 20%,
+    rgba(0,0,0,.08) 45%,
+    rgba(0,0,0,.78) 100%
+  );
+  z-index: 1;
+}
+
+.shirt-number {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.player-card-info {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-card-info strong {
+  font-size: 15px;
+  line-height: 1.05;
+  color: white;
+}
+
+.player-card-info span {
+  margin-top: 5px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ddd;
 }
 
 
@@ -638,8 +659,8 @@ footer {
     font-size: 44px;
   }
 
-  .club-intro,
-  .palmares,
+  .club-section,
+  .palmares-section,
   .squad-section,
   .transfers-section,
   .legends-section,
@@ -647,8 +668,7 @@ footer {
     padding: 60px 30px;
   }
 
-  .club-intro-content,
-  .palmares-header,
+  .club-content,
   .history-content {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -660,6 +680,10 @@ footer {
 
   .other-trophies-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .players-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .legends-grid {
@@ -676,12 +700,42 @@ footer {
 
 @media (max-width: 600px) {
 
+  .hero-content {
+    padding: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .juve-crest {
+    width: 60px;
+    height: 60px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding: 50px 20px;
+  }
+
   .trophy-grid {
     grid-template-columns: 1fr;
   }
 
   .other-trophies-list {
     grid-template-columns: 1fr;
+  }
+
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player-card {
+    height: 210px;
   }
 
   .legends-grid {
