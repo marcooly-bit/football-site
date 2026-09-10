@@ -11,103 +11,45 @@
 
 <body>
 
-<div class="page">
+<header class="site-header">
 
-  <!-- HEADER -->
+  <div class="logo">
+    PAGES OF FOOTBALL
+  </div>
 
-  <header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="juventus.html" class="active">Squadre</a>
+    <a href="#">Competizioni</a>
+    <a href="#">Almanacco</a>
+  </nav>
 
-    <div class="brand">
+  <button class="search-button">⌕</button>
 
-      <a href="index.html" class="logo">P</a>
+</header>
 
-      <a href="index.html" class="brand-name">
-        PAGES OF FOOTBALL
-      </a>
 
-    </div>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="squadre.html" class="active">Squadre</a>
-      <a href="giocatori.html">Giocatori</a>
-      <a href="competizioni.html">Competizioni</a>
-      <a href="almanacco.html">Almanacco</a>
-    </nav>
-
-    <button class="menu">☰</button>
-
-  </header>
-
+<main>
 
   <!-- HERO -->
 
-  <section class="team-hero">
+  <section class="hero">
 
-    <div class="hero-top">
+    <div class="hero-image">
+      <div class="hero-overlay"></div>
 
-      <p class="label">
-        CLUB · ITALIA
-      </p>
-
-      <span class="team-number">
-        001
-      </span>
-
-    </div>
-
-
-    <div class="team-main">
-
-      <div class="club-info">
+      <div class="hero-content">
 
         <div class="juve-crest">
           <img src="images/teams/juventus.png" alt="Juventus">
         </div>
 
         <div>
-
-          <p class="country">
-            ITALIA · TORINO
-          </p>
-
-          <h1>Juventus</h1>
-
-          <p class="nickname">
-            La Vecchia Signora
-          </p>
-
+          <div class="hero-kicker">ITALIA · SERIE A</div>
+          <h1>JUVENTUS</h1>
+          <p>Torino · Allianz Stadium</p>
         </div>
-
-      </div>
-
-
-      <div class="club-year">
-
-        <span>
-          FOUNDED
-        </span>
-
-        <strong>
-          1897
-        </strong>
-
-      </div>
-
-    </div>
-
-
-    <div class="hero-image">
-
-      <div class="image-overlay">
-
-        <span>
-          JUVENTUS FOOTBALL CLUB
-        </span>
-
-        <span>
-          TORINO · ITALIA
-        </span>
 
       </div>
 
@@ -116,92 +58,27 @@
   </section>
 
 
-  <!-- CLUB OVERVIEW -->
+  <!-- CLUB INFO -->
 
-  <section class="club-overview">
+  <section class="club-intro">
 
-    <div class="section-title">
-
-      <p class="label">
-        IL CLUB
-      </p>
-
-      <h2>
-        Juventus Football Club
-      </h2>
-
+    <div class="section-label">
+      01 · IL CLUB
     </div>
 
+    <div class="club-intro-content">
 
-    <div class="overview-grid">
-
-      <div class="overview-text">
-
-        <p>
-          Fondata a Torino nel 1897, la Juventus è uno dei club più
-          importanti e riconoscibili della storia del calcio italiano.
-        </p>
-
-        <p>
-          Dalla prima grande era degli anni Trenta alle conquiste
-          internazionali, fino alla rinascita dopo il 2006, la storia
-          bianconera è fatta di campioni, vittorie e momenti destinati
-          a rimanere nella memoria del calcio.
-        </p>
-
+      <div>
+        <h2>Juventus Football Club</h2>
       </div>
 
-
-      <div class="facts">
-
-        <div class="fact">
-
-          <span>
-            FONDAZIONE
-          </span>
-
-          <strong>
-            1897
-          </strong>
-
-        </div>
-
-        <div class="fact">
-
-          <span>
-            CITTÀ
-          </span>
-
-          <strong>
-            Torino
-          </strong>
-
-        </div>
-
-        <div class="fact">
-
-          <span>
-            STADIO
-          </span>
-
-          <strong>
-            Allianz Stadium
-          </strong>
-
-        </div>
-
-        <div class="fact">
-
-          <span>
-            COLORI
-          </span>
-
-          <strong>
-            Bianconero
-          </strong>
-
-        </div>
-
+      <div>
+        <p>
+          Fondata nel 1897 a Torino, la Juventus è uno dei club più
+          importanti e vincenti della storia del calcio italiano.
+          La sua storia attraversa più di un secolo di calcio,
+          generazioni di campioni e grandi successi nazionali e internazionali.
+        </p>
       </div>
 
     </div>
@@ -213,78 +90,384 @@
 
   <section class="palmares">
 
-    <div class="section-header">
+    <div class="section-label">
+      02 · PALMARES
+    </div>
+
+    <div class="palmares-header">
 
       <div>
-
-        <p class="label">
-          PALMARES
-        </p>
-
-        <h2>
-          I trofei
-        </h2>
-
+        <h2>I trofei</h2>
       </div>
 
-      <span class="section-number">
-        04 CATEGORIE
-      </span>
+      <div>
+        <p>
+          I principali successi della Juventus nella sua storia.
+        </p>
+      </div>
 
     </div>
 
 
-    <div class="trophies">
+    <!-- TOP 4 -->
 
-      <div class="trophy">
+    <div class="trophy-grid">
 
-        <strong>
-          36
-        </strong>
+      <div class="trophy-card">
 
-        <span>
-          SCUDETTI
-        </span>
+        <img
+          src="images/trophies/scudetto.png"
+          alt="Scudetto"
+          class="trophy-image"
+        >
 
-      </div>
-
-
-      <div class="trophy">
-
-        <strong>
-          15
-        </strong>
-
-        <span>
-          COPPE ITALIA
-        </span>
+        <div class="trophy-info">
+          <strong>36</strong>
+          <span>Scudetti</span>
+        </div>
 
       </div>
 
 
-      <div class="trophy">
+      <div class="trophy-card">
 
-        <strong>
-          9
-        </strong>
+        <img
+          src="images/trophies/coppa-italia.png"
+          alt="Coppa Italia"
+          class="trophy-image"
+        >
 
-        <span>
-          SUPERCOPPE ITALIANE
-        </span>
+        <div class="trophy-info">
+          <strong>15</strong>
+          <span>Coppe Italia</span>
+        </div>
 
       </div>
 
 
-      <div class="trophy european">
+      <div class="trophy-card">
 
-        <strong>
-          2
-        </strong>
+        <img
+          src="images/trophies/supercoppa-italiana.png"
+          alt="Supercoppa Italiana"
+          class="trophy-image"
+        >
 
-        <span>
-          CHAMPIONS LEAGUE
-        </span>
+        <div class="trophy-info">
+          <strong>9</strong>
+          <span>Supercoppe Italiane</span>
+        </div>
 
+      </div>
+
+
+      <div class="trophy-card">
+
+        <img
+          src="images/trophies/champions-league.png"
+          alt="Champions League"
+          class="trophy-image"
+        >
+
+        <div class="trophy-info">
+          <strong>2</strong>
+          <span>Champions League</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- OTHER TROPHIES -->
+
+    <details class="other-trophies">
+
+      <summary>
+        <span>＋</span> MOSTRA TUTTI I TROFEI
+      </summary>
+
+      <div class="other-trophies-list">
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-delle-coppe.png"
+            alt="Coppa delle Coppe"
+          >
+
+          <div>
+            <strong>1</strong>
+            <span>Coppa delle Coppe</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-uefa.png"
+            alt="Coppa UEFA"
+          >
+
+          <div>
+            <strong>3</strong>
+            <span>Coppe UEFA</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/supercoppa-uefa.png"
+            alt="Supercoppa UEFA"
+          >
+
+          <div>
+            <strong>2</strong>
+            <span>Supercoppe UEFA</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-intercontinentale.png"
+            alt="Coppa Intercontinentale"
+          >
+
+          <div>
+            <strong>2</strong>
+            <span>Coppe Intercontinentali</span>
+          </div>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img
+            src="images/trophies/coppa-intertoto.png"
+            alt="Coppa Intertoto"
+          >
+
+          <div>
+            <strong>1</strong>
+            <span>Coppa Intertoto</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </details>
+
+  </section>
+
+
+  <!-- SQUAD -->
+
+  <section class="squad-section">
+
+    <div class="section-label">
+      03 · ROSA
+    </div>
+
+    <div class="squad-header">
+
+      <h2>Squadra 2026/27</h2>
+
+      <a href="giocatori.html">
+        Vedi rosa completa →
+      </a>
+
+    </div>
+
+
+    <div class="squad-list">
+
+      <div class="squad-role">PORTIERI</div>
+
+      <div class="squad-player">
+        <span class="number">1</span>
+        <img src="images/players/kamil-grabara.png" alt="Kamil Grabara">
+        <span>Kamil Grabara</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">23</span>
+        <img src="images/players/carlo-pinsoglio.png" alt="Carlo Pinsoglio">
+        <span>Carlo Pinsoglio</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">25</span>
+        <img src="images/players/guglielmo-vicario.png" alt="Guglielmo Vicario">
+        <span>Guglielmo Vicario</span>
+      </div>
+
+
+      <div class="squad-role">DIFENSORI</div>
+
+      <div class="squad-player">
+        <span class="number">2</span>
+        <img src="images/players/mehmet-zeki-celik.png" alt="Mehmet Zeki Çelik">
+        <span>Mehmet Zeki Çelik</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">3</span>
+        <img src="images/players/gleison-bremer.png" alt="Gleison Bremer">
+        <span>Gleison Bremer</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">4</span>
+        <img src="images/players/federico-gatti.png" alt="Federico Gatti">
+        <span>Federico Gatti</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">6</span>
+        <img src="images/players/lloyd-kelly.png" alt="Lloyd Kelly">
+        <span>Lloyd Kelly</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">15</span>
+        <img src="images/players/pierre-kalulu.png" alt="Pierre Kalulu">
+        <span>Pierre Kalulu</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">20</span>
+        <img src="images/players/andrea-cambiaso.png" alt="Andrea Cambiaso">
+        <span>Andrea Cambiaso</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">24</span>
+        <img src="images/players/daniele-rugani.png" alt="Daniele Rugani">
+        <span>Daniele Rugani</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">26</span>
+        <img src="images/players/jhon-lucumi.png" alt="Jhon Lucumí">
+        <span>Jhon Lucumí</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">32</span>
+        <img src="images/players/juan-david-cabal.png" alt="Juan David Cabal">
+        <span>Juan David Cabal</span>
+      </div>
+
+
+      <div class="squad-role">CENTROCAMPISTI</div>
+
+      <div class="squad-player">
+        <span class="number">5</span>
+        <img src="images/players/manuel-locatelli.png" alt="Manuel Locatelli">
+        <span>Manuel Locatelli</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">8</span>
+        <img src="images/players/teun-koopmeiners.png" alt="Teun Koopmeiners">
+        <span>Teun Koopmeiners</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">12</span>
+        <img src="images/players/douglas-luiz.png" alt="Douglas Luiz">
+        <span>Douglas Luiz</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">17</span>
+        <img src="images/players/kerim-alajbegovic.png" alt="Kerim Alajbegović">
+        <span>Kerim Alajbegović</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">19</span>
+        <img src="images/players/khephren-thuram.png" alt="Khéphren Thuram">
+        <span>Khéphren Thuram</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">22</span>
+        <img src="images/players/weston-mckennie.png" alt="Weston McKennie">
+        <span>Weston McKennie</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">29</span>
+        <img src="images/players/pape-matar-sarr.png" alt="Pape Matar Sarr">
+        <span>Pape Matar Sarr</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">31</span>
+        <img src="images/players/nicolas-gonzalez.png" alt="Nicolás González">
+        <span>Nicolás González</span>
+      </div>
+
+
+      <div class="squad-role">ATTACCANTI</div>
+
+      <div class="squad-player">
+        <span class="number">7</span>
+        <img src="images/players/francisco-conceicao.png" alt="Francisco Conceição">
+        <span>Francisco Conceição</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">9</span>
+        <img src="images/players/randal-kolo-muani.png" alt="Randal Kolo Muani">
+        <span>Randal Kolo Muani</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">10</span>
+        <img src="images/players/kenan-yildiz.png" alt="Kenan Yildiz">
+        <span>Kenan Yildiz</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">11</span>
+        <img src="images/players/edon-zhegrova.png" alt="Edon Zhegrova">
+        <span>Edon Zhegrova</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">13</span>
+        <img src="images/players/jeremie-boga.png" alt="Jérémie Boga">
+        <span>Jérémie Boga</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">14</span>
+        <img src="images/players/arkadiusz-milik.png" alt="Arkadiusz Milik">
+        <span>Arkadiusz Milik</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">18</span>
+        <img src="images/players/jeff-ekhator.png" alt="Jeff Ekhator">
+        <span>Jeff Ekhator</span>
+      </div>
+
+      <div class="squad-player">
+        <span class="number">27</span>
+        <img src="images/players/nick-woltemade.png" alt="Nick Woltemade">
+        <span>Nick Woltemade</span>
       </div>
 
     </div>
@@ -292,681 +475,158 @@
   </section>
 
 
-  <!-- ROSA -->
+  <!-- TRANSFERS -->
 
-  <section class="squad">
+  <section class="transfers-section">
 
-    <div class="section-header">
-
-      <div>
-
-        <p class="label">
-          2026 · 27
-        </p>
-
-        <h2>
-          Rosa
-        </h2>
-
-      </div>
-
-      <span class="section-number">
-        PRIMA SQUADRA
-      </span>
-
+    <div class="section-label">
+      04 · TRASFERIMENTI
     </div>
 
+    <div class="transfers-grid">
 
-    <!-- PORTIERI -->
+      <div class="transfer-column">
 
-    <div class="squad-group">
+        <h3>IN</h3>
 
-      <div class="squad-heading">
-
-        <span>
-          PORTIERI
-        </span>
-
-        <span>
-          03
-        </span>
-
-      </div>
-
-
-      <div class="player-row">
-
-        <div class="player-photo">
-          <img src="images/players/kamil-grabara.png" alt="Kamil Grabara">
-        </div>
-
-        <span class="shirt-number">1</span>
-
-        <strong>Kamil Grabara</strong>
-
-      </div>
-
-
-      <div class="player-row">
-
-        <div class="player-photo">
-          <img src="images/players/carlo-pinsoglio.png" alt="Carlo Pinsoglio">
-        </div>
-
-        <span class="shirt-number">23</span>
-
-        <strong>Carlo Pinsoglio</strong>
-
-      </div>
-
-
-      <div class="player-row">
-
-        <div class="player-photo">
-          <img src="images/players/guglielmo-vicario.png" alt="Guglielmo Vicario">
-        </div>
-
-        <span class="shirt-number">25</span>
-
-        <strong>Guglielmo Vicario</strong>
-
-      </div>
-
-    </div>
-
-
-    <!-- DIFENSORI -->
-
-    <div class="squad-group">
-
-      <div class="squad-heading">
-
-        <span>
-          DIFENSORI
-        </span>
-
-        <span>
-          09
-        </span>
-
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/mehmet-zeki-celik.png" alt="Mehmet Zeki Çelik">
-        </div>
-        <span class="shirt-number">2</span>
-        <strong>Mehmet Zeki Çelik</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/gleison-bremer.png" alt="Gleison Bremer">
-        </div>
-        <span class="shirt-number">3</span>
-        <strong>Gleison Bremer</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/federico-gatti.png" alt="Federico Gatti">
-        </div>
-        <span class="shirt-number">4</span>
-        <strong>Federico Gatti</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/lloyd-kelly.png" alt="Lloyd Kelly">
-        </div>
-        <span class="shirt-number">6</span>
-        <strong>Lloyd Kelly</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/pierre-kalulu.png" alt="Pierre Kalulu">
-        </div>
-        <span class="shirt-number">15</span>
-        <strong>Pierre Kalulu</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/andrea-cambiaso.png" alt="Andrea Cambiaso">
-        </div>
-        <span class="shirt-number">20</span>
-        <strong>Andrea Cambiaso</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/daniele-rugani.png" alt="Daniele Rugani">
-        </div>
-        <span class="shirt-number">24</span>
-        <strong>Daniele Rugani</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/jhon-lucumi.png" alt="Jhon Lucumí">
-        </div>
-        <span class="shirt-number">26</span>
-        <strong>Jhon Lucumí</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/juan-david-cabal.png" alt="Juan David Cabal">
-        </div>
-        <span class="shirt-number">32</span>
-        <strong>Juan David Cabal</strong>
-      </div>
-
-    </div>
-
-
-    <!-- CENTROCAMPISTI -->
-
-    <div class="squad-group">
-
-      <div class="squad-heading">
-
-        <span>
-          CENTROCAMPISTI
-        </span>
-
-        <span>
-          08
-        </span>
-
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/manuel-locatelli.png" alt="Manuel Locatelli">
-        </div>
-        <span class="shirt-number">5</span>
-        <strong>Manuel Locatelli</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/teun-koopmeiners.png" alt="Teun Koopmeiners">
-        </div>
-        <span class="shirt-number">8</span>
-        <strong>Teun Koopmeiners</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/douglas-luiz.png" alt="Douglas Luiz">
-        </div>
-        <span class="shirt-number">12</span>
-        <strong>Douglas Luiz</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/kerim-alajbegovic.png" alt="Kerim Alajbegović">
-        </div>
-        <span class="shirt-number">17</span>
-        <strong>Kerim Alajbegović</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/khephren-thuram.png" alt="Khéphren Thuram">
-        </div>
-        <span class="shirt-number">19</span>
-        <strong>Khéphren Thuram</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/weston-mckennie.png" alt="Weston McKennie">
-        </div>
-        <span class="shirt-number">22</span>
-        <strong>Weston McKennie</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/pape-matar-sarr.png" alt="Pape Matar Sarr">
-        </div>
-        <span class="shirt-number">29</span>
-        <strong>Pape Matar Sarr</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/nicolas-gonzalez.png" alt="Nicolas Ivan Gonzalez">
-        </div>
-        <span class="shirt-number">31</span>
-        <strong>Nicolas Ivan Gonzalez</strong>
-      </div>
-
-    </div>
-
-
-    <!-- ATTACCANTI -->
-
-    <div class="squad-group">
-
-      <div class="squad-heading">
-
-        <span>
-          ATTACCANTI
-        </span>
-
-        <span>
-          08
-        </span>
-
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/francisco-conceicao.png" alt="Francisco Conceição">
-        </div>
-        <span class="shirt-number">7</span>
-        <strong>Francisco Conceição</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/randal-kolo-muani.png" alt="Randal Kolo Muani">
-        </div>
-        <span class="shirt-number">9</span>
-        <strong>Randal Kolo Muani</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/kenan-yildiz.png" alt="Kenan Yildiz">
-        </div>
-        <span class="shirt-number">10</span>
-        <strong>Kenan Yildiz</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/edon-zhegrova.png" alt="Edon Zhegrova">
-        </div>
-        <span class="shirt-number">11</span>
-        <strong>Edon Zhegrova</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/jeremie-boga.png" alt="Jeremie Boga">
-        </div>
-        <span class="shirt-number">13</span>
-        <strong>Jeremie Boga</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/arkadiusz-milik.png" alt="Arkadiusz Milik">
-        </div>
-        <span class="shirt-number">14</span>
-        <strong>Arkadiusz Milik</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/jeff-ekhator.png" alt="Jeff Ekhator">
-        </div>
-        <span class="shirt-number">18</span>
-        <strong>Jeff Ekhator</strong>
-      </div>
-
-
-      <div class="player-row">
-        <div class="player-photo">
-          <img src="images/players/nick-woltemade.png" alt="Nick Woltemade">
-        </div>
-        <span class="shirt-number">27</span>
-        <strong>Nick Woltemade</strong>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TRASFERIMENTI -->
-
-  <section class="transfers">
-
-    <div class="section-header">
-
-      <div>
-
-        <p class="label">
-          2026 · 27
-        </p>
-
-        <h2>
-          Trasferimenti
-        </h2>
-
-      </div>
-
-      <span class="section-number">
-        MERCATO
-      </span>
-
-    </div>
-
-
-    <div class="transfer-columns">
-
-
-      <!-- ARRIVI -->
-
-      <div>
-
-        <div class="transfer-title">
-
-          <span>
-            ARRIVI
-          </span>
-
-          <strong>
-            €157.95M
-          </strong>
-
-        </div>
-
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/lois-openda.png" alt="Loïs Openda">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Loïs Openda</strong>
             <span>RB Leipzig</span>
           </div>
-
-          <div class="transfer-value">
-            €42.75M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/randal-kolo-muani.png" alt="Randal Kolo Muani">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Randal Kolo Muani</strong>
-            <span>Paris Saint-Germain</span>
+            <span>PSG</span>
           </div>
-
-          <div class="transfer-value">
-            €41.20M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/kerim-alajbegovic.png" alt="Kerim Alajbegović">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Kerim Alajbegović</strong>
             <span>Bayer Leverkusen</span>
           </div>
-
-          <div class="transfer-value">
-            €32.00M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/jhon-lucumi.png" alt="Jhon Lucumí">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Jhon Lucumí</strong>
             <span>Bologna</span>
           </div>
-
-          <div class="transfer-value">
-            €20.10M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/jeff-ekhator.png" alt="Jeff Ekhator">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Jeff Ekhator</strong>
             <span>Genoa</span>
           </div>
-
-          <div class="transfer-value">
-            €16.40M
-          </div>
-
         </div>
 
       </div>
 
 
-      <!-- PARTENZE -->
+      <div class="transfer-column">
 
-      <div>
+        <h3>OUT</h3>
 
-        <div class="transfer-title">
-
-          <span>
-            PARTENZE
-          </span>
-
-          <strong>
-            €26.50M
-          </strong>
-
-        </div>
-
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/dusan-vlahovic.png" alt="Dušan Vlahović">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Dušan Vlahović</strong>
-            <span>Fine contratto</span>
+            <span>Fenerbahçe</span>
           </div>
-
-          <div class="transfer-value">
-            Gratis
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/timothy-weah.png" alt="Timothy Weah">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Timothy Weah</strong>
-            <span>Marseille</span>
+            <span>Olympique Marseille</span>
           </div>
-
-          <div class="transfer-value">
-            €14.40M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/joao-mario.png" alt="João Mário">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>João Mário</strong>
-            <span>Fiorentina</span>
+            <span>Besiktas</span>
           </div>
-
-          <div class="transfer-value">
-            €1.80M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/fabio-miretti.png" alt="Fabio Miretti">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Fabio Miretti</strong>
-            <span>Beşiktaş</span>
+            <span>Genoa</span>
           </div>
-
-          <div class="transfer-value">
-            €2.10M
-          </div>
-
         </div>
 
-
-        <div class="transfer-row">
-
+        <div class="transfer">
           <div class="transfer-photo">
             <img src="images/players/michele-di-gregorio.png" alt="Michele Di Gregorio">
           </div>
-
-          <div class="transfer-player">
+          <div>
             <strong>Michele Di Gregorio</strong>
-            <span>Bournemouth</span>
+            <span>Monza</span>
           </div>
-
-          <div class="transfer-value">
-            €1.30M
-          </div>
-
         </div>
 
       </div>
-
-    </div>
-
-
-    <div class="transfer-balance">
-
-      <span>
-        BILANCIO MERCATO
-      </span>
-
-      <strong>
-        − €131.45M
-      </strong>
 
     </div>
 
   </section>
 
 
-  <!-- LEGGENDE -->
+  <!-- LEGENDS -->
 
-  <section class="legends">
+  <section class="legends-section">
 
-    <div class="section-header">
-
-      <div>
-
-        <p class="label">
-          MEMORIA
-        </p>
-
-        <h2>
-          Leggende
-        </h2>
-
-      </div>
-
-      <span class="section-number">
-        04 NOMI
-      </span>
-
+    <div class="section-label">
+      05 · LEGGENDE
     </div>
 
-
-    <div class="legend-grid">
+    <div class="legends-grid">
 
       <div class="legend-card">
 
         <div class="legend-photo">
-          <img src="images/legends/alessandro-del-piero.jpg" alt="Alessandro Del Piero">
+          <img
+            src="images/legends/alessandro-del-piero.jpg"
+            alt="Alessandro Del Piero"
+          >
         </div>
 
-        <span class="legend-number">
-          01
-        </span>
+        <span class="legend-number">10</span>
 
-        <h3>
-          Alessandro<br>
-          Del Piero
-        </h3>
+        <h3>Alessandro<br>Del Piero</h3>
 
-        <p>
-          1993 — 2012
-        </p>
+        <p>188 gol · 705 presenze</p>
 
         <b>→</b>
 
@@ -976,21 +636,17 @@
       <div class="legend-card">
 
         <div class="legend-photo">
-          <img src="images/legends/gianluigi-buffon.jpg" alt="Gianluigi Buffon">
+          <img
+            src="images/legends/gianluigi-buffon.jpg"
+            alt="Gianluigi Buffon"
+          >
         </div>
 
-        <span class="legend-number">
-          02
-        </span>
+        <span class="legend-number">01</span>
 
-        <h3>
-          Gianluigi<br>
-          Buffon
-        </h3>
+        <h3>Gianluigi<br>Buffon</h3>
 
-        <p>
-          2001 — 2018 · 2019 — 2021
-        </p>
+        <p>489 presenze · 10 trofei</p>
 
         <b>→</b>
 
@@ -1000,21 +656,17 @@
       <div class="legend-card">
 
         <div class="legend-photo">
-          <img src="images/legends/michel-platini.jpg" alt="Michel Platini">
+          <img
+            src="images/legends/michel-platini.jpg"
+            alt="Michel Platini"
+          >
         </div>
 
-        <span class="legend-number">
-          03
-        </span>
+        <span class="legend-number">10</span>
 
-        <h3>
-          Michel<br>
-          Platini
-        </h3>
+        <h3>Michel<br>Platini</h3>
 
-        <p>
-          1982 — 1987
-        </p>
+        <p>104 gol · 224 presenze</p>
 
         <b>→</b>
 
@@ -1024,21 +676,17 @@
       <div class="legend-card">
 
         <div class="legend-photo">
-          <img src="images/legends/gaetano-scirea.jpg" alt="Gaetano Scirea">
+          <img
+            src="images/legends/gaetano-scirea.jpg"
+            alt="Gaetano Scirea"
+          >
         </div>
 
-        <span class="legend-number">
-          04
-        </span>
+        <span class="legend-number">06</span>
 
-        <h3>
-          Gaetano<br>
-          Scirea
-        </h3>
+        <h3>Gaetano<br>Scirea</h3>
 
-        <p>
-          1974 — 1988
-        </p>
+        <p>552 presenze · 7 trofei</p>
 
         <b>→</b>
 
@@ -1049,230 +697,44 @@
   </section>
 
 
-  <!-- STORIA -->
+  <!-- HISTORY -->
 
-  <section class="history">
+  <section class="history-section">
 
-    <div class="section-header">
-
-      <div>
-
-        <p class="label">
-          CRONOLOGIA
-        </p>
-
-        <h2>
-          Alcuni momenti che hanno fatto la Juventus
-        </h2>
-
-      </div>
-
-      <span class="section-number">
-        07 MOMENTI
-      </span>
-
+    <div class="section-label">
+      06 · STORIA
     </div>
 
-
-    <div class="timeline">
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          1897
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            La fondazione
-          </h3>
-
-          <p>
-            Un gruppo di studenti torinesi fonda la Juventus.
-            Nasce una delle storie più importanti del calcio italiano.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          1931–35
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            Il Quinquennio d'Oro
-          </h3>
-
-          <p>
-            Cinque Scudetti consecutivi trasformano la Juventus
-            nella squadra dominante del calcio italiano.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          1985
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            Heysel e la prima Coppa dei Campioni
-          </h3>
-
-          <p>
-            Una delle notti più drammatiche della storia del calcio
-            coincide con il primo grande trionfo europeo bianconero.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          1996
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            La seconda Champions League
-          </h3>
-
-          <p>
-            A Roma la Juventus supera l'Ajax ai rigori e conquista
-            la sua seconda Coppa dei Campioni.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          2006
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            Calciopoli e la Serie B
-          </h3>
-
-          <p>
-            Lo scandalo che sconvolge il calcio italiano porta
-            la Juventus in Serie B e apre uno dei capitoli più
-            difficili della sua storia.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          2012
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            Il ritorno allo Scudetto
-          </h3>
-
-          <p>
-            La Juventus torna campione d'Italia dopo nove anni,
-            iniziando una nuova era di dominio nazionale.
-          </p>
-
-        </div>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="timeline-year">
-          2018
-        </div>
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-content">
-
-          <h3>
-            Arriva Cristiano Ronaldo
-          </h3>
-
-          <p>
-            Uno dei trasferimenti più importanti nella storia
-            del calcio porta Cristiano Ronaldo a Torino.
-          </p>
-
-        </div>
-
-      </div>
+    <div class="history-content">
+
+      <h2>
+        Oltre un secolo<br>
+        di Juventus.
+      </h2>
+
+      <p>
+        Dalla fondazione del 1897 alle grandi squadre che hanno segnato
+        epoche intere del calcio italiano ed europeo.
+      </p>
 
     </div>
 
   </section>
 
+</main>
 
-  <!-- FOOTER -->
 
-  <footer>
+<footer>
 
-    <div class="footer-brand">
+  <div>
+    PAGES OF FOOTBALL
+  </div>
 
-      <div class="logo">
-        P
-      </div>
+  <span>
+    Football history, one page at a time.
+  </span>
 
-      <strong>
-        PAGES OF FOOTBALL
-      </strong>
-
-    </div>
-
-    <p>
-      Football, documented.
-    </p>
-
-  </footer>
-
-</div>
+</footer>
 
 </body>
 </html>
