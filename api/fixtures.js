@@ -1,13 +1,7 @@
 export default async function handler(req, res) {
   try {
-    const { date } = req.query;
-
-    if (!date) {
-      return res.status(400).json({
-        error: "Manca la data"
-      });
-    }
-
+    // Data di oggi o passata tramite query string (es. ?date=2026-09-10)
+    const date = req.query.date || "2026-09-10";
     const apiKey = process.env.API_FOOTBALL_KEY;
 
     if (!apiKey) {
@@ -16,8 +10,9 @@ export default async function handler(req, res) {
       });
     }
 
+    // ID 2 corrisponde alla UEFA Champions League su API-Football
     const response = await fetch(
-      `https://v3.football.api-sports.io/fixtures?date=${date}&timezone=Europe/Rome`,
+      `https://v3.football.api-sports.io/fixtures?date=${date}&league=2&timezone=Europe/Rome`,
       {
         headers: {
           "x-apisports-key": apiKey
@@ -31,8 +26,6 @@ export default async function handler(req, res) {
       return res.status(response.status).json(data);
     }
 
-    // Permette a Vercel di conservare temporaneamente il risultato
-    // e ridurre il numero di richieste all'API.
     res.setHeader(
       "Cache-Control",
       "s-maxage=60, stale-while-revalidate=300"
@@ -42,7 +35,7 @@ export default async function handler(req, res) {
 
   } catch (error) {
     return res.status(500).json({
-      error: "Errore nel collegamento con API-Football"
+      error: "Errore nel recupero delle partite da API-Football"
     });
   }
 }
