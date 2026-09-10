@@ -24,27 +24,9 @@ body {
   background: #f6f5f1;
 }
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #111;
-  text-decoration: none;
-}
-
-.brand .logo {
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #111;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.brand strong {
+.logo {
   font-size: 11px;
+  font-weight: 700;
   letter-spacing: 2px;
 }
 
@@ -67,34 +49,44 @@ nav a.active {
   color: #111;
 }
 
+.search-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d3d1ca;
+  background: transparent;
+  color: #111;
+  font-size: 19px;
+  cursor: pointer;
+}
+
 
 /* =========================
    HERO
 ========================= */
 
-.team-hero {
+.hero {
   width: 100%;
+}
+
+.hero-image {
   min-height: 560px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+
+  background-image: url("images/stadium/inter-stadium.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.team-hero-image {
+.hero-image > img {
+  display: none;
+}
+
+.hero-overlay {
   position: absolute;
   inset: 0;
-}
 
-.team-hero-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-}
-
-.team-hero-overlay {
-  position: absolute;
-  inset: 0;
   background: linear-gradient(
     to top,
     rgba(0,0,0,.78),
@@ -102,19 +94,21 @@ nav a.active {
   );
 }
 
-.team-hero-content {
+.hero-content {
   position: relative;
   z-index: 2;
+
   width: 100%;
-  min-height: 560px;
   padding: 55px 60px;
+
   display: flex;
   align-items: center;
   gap: 28px;
+
   color: white;
 }
 
-.team-hero-logo {
+.inter-crest {
   width: 92px;
   height: 92px;
   padding: 15px;
@@ -127,35 +121,36 @@ nav a.active {
   border: 1px solid rgba(255,255,255,.5);
 }
 
-.team-hero-logo img {
+.inter-crest img {
   width: 100%;
   height: 100%;
+
   object-fit: contain;
 }
 
-.team-hero-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.team-kicker {
+.hero-kicker {
   margin-bottom: 10px;
+
   color: rgba(255,255,255,.7);
+
   font-size: 10px;
   letter-spacing: 2px;
 }
 
-.team-hero h1 {
+.hero h1 {
   margin: 0;
+
   font-size: 64px;
   line-height: .95;
   font-weight: 500;
   letter-spacing: -3px;
 }
 
-.team-hero p {
+.hero p {
   margin: 14px 0 0;
+
   color: rgba(255,255,255,.72);
+
   font-size: 13px;
 }
 
@@ -166,8 +161,10 @@ nav a.active {
 
 .section-label {
   color: #777;
+
   font-size: 9px;
   letter-spacing: 2px;
+
   text-transform: uppercase;
 }
 
@@ -178,6 +175,7 @@ nav a.active {
 
 .club-section {
   padding: 90px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -208,10 +206,6 @@ nav a.active {
   line-height: 1.75;
 }
 
-.club-content p + p {
-  margin-top: 24px;
-}
-
 
 /* =========================
    PALMARES
@@ -219,10 +213,11 @@ nav a.active {
 
 .palmares-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
-.trophies-grid {
+.trophy-grid {
   margin-top: 38px;
 
   display: grid;
@@ -234,8 +229,6 @@ nav a.active {
   min-height: 220px;
   padding: 25px;
 
-  position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -244,40 +237,29 @@ nav a.active {
   background: #f6f5f1;
 }
 
-.trophy-card > img {
+.trophy-image {
   width: 75px;
   height: 105px;
 
   object-fit: contain;
-  object-position: left top;
-}
-
-.trophy-number {
-  margin-top: auto;
-
-  font-size: 38px;
-  line-height: .9;
-  font-weight: 500;
-  letter-spacing: -2px;
 }
 
 .trophy-info {
-  margin-top: 5px;
-
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
 .trophy-info strong {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -2px;
 }
 
 .trophy-info span {
   color: #777;
 
-  font-size: 9px;
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -290,10 +272,36 @@ nav a.active {
 .other-trophies {
   margin-top: 18px;
 
+  border: 1px solid #d3d1ca;
+}
+
+.other-trophies summary {
+  padding: 20px 22px;
+
+  cursor: pointer;
+  list-style: none;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.other-trophies summary::-webkit-details-marker {
+  display: none;
+}
+
+.other-trophies summary span {
+  margin-right: 10px;
+
+  font-size: 15px;
+}
+
+.other-trophies-list {
+  padding: 0 22px 22px;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-
-  border: 1px solid #d3d1ca;
+  gap: 10px;
 }
 
 .other-trophy {
@@ -301,26 +309,33 @@ nav a.active {
   padding: 15px;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 5px;
+  align-items: center;
+  gap: 14px;
 
-  border-right: 1px solid #d3d1ca;
+  border-top: 1px solid #d3d1ca;
 }
 
-.other-trophy:last-child {
-  border-right: none;
+.other-trophy img {
+  width: 42px;
+  height: 55px;
+
+  object-fit: contain;
+}
+
+.other-trophy div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .other-trophy strong {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
 }
 
 .other-trophy span {
   color: #777;
+
   font-size: 9px;
-  line-height: 1.35;
 }
 
 
@@ -330,6 +345,7 @@ nav a.active {
 
 .squad-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -364,6 +380,7 @@ nav a.active {
 .competition-button:hover {
   background: #eeece7;
   border-color: #111;
+
   transform: translateY(-2px);
 }
 
@@ -384,6 +401,7 @@ nav a.active {
 .competition-button-logo img {
   width: 44px;
   height: 44px;
+
   object-fit: contain;
 }
 
@@ -430,6 +448,7 @@ nav a.active {
 .competition-button:hover .competition-button-arrow {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
@@ -442,9 +461,8 @@ nav a.active {
   margin-top: 55px;
 }
 
-.squad-group-title {
+.squad-group h3 {
   margin: 0 0 18px;
-
   padding-bottom: 12px;
 
   border-bottom: 1px solid #d3d1ca;
@@ -459,7 +477,7 @@ nav a.active {
    PLAYER CARDS
 ========================= */
 
-.players-list {
+.players-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
@@ -480,33 +498,26 @@ nav a.active {
   border: 1px solid #d3d1ca;
 }
 
-.player-photo {
+.player-card > img {
   position: absolute;
   inset: 0;
 
   width: 100%;
   height: 100%;
 
-  overflow: hidden;
-}
-
-.player-photo img {
-  width: 100%;
-  height: 100%;
-
-  display: block;
-
   object-fit: cover;
   object-position: center top;
+
+  display: block;
 
   transition: transform .45s ease;
 }
 
-.player-card:hover .player-photo img {
+.player-card:hover > img {
   transform: scale(1.04);
 }
 
-.player-photo::after {
+.player-card::after {
   content: "";
 
   position: absolute;
@@ -519,7 +530,7 @@ nav a.active {
   );
 }
 
-.player-number {
+.shirt-number {
   position: absolute;
   z-index: 2;
 
@@ -531,7 +542,7 @@ nav a.active {
   line-height: 1;
 }
 
-.player-info {
+.player-card-info {
   position: absolute;
   z-index: 2;
 
@@ -544,7 +555,7 @@ nav a.active {
   gap: 4px;
 }
 
-.player-info strong {
+.player-card-info strong {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -553,10 +564,7 @@ nav a.active {
   font-weight: 700;
 }
 
-.player-info strong img {
-  position: static;
-  inset: auto;
-
+.player-card-info strong img {
   width: 18px;
   height: 12px;
 
@@ -568,44 +576,12 @@ nav a.active {
   border: 1px solid rgba(255,255,255,.35);
 }
 
-.player-info > span {
+.player-card-info > span {
   color: rgba(255,255,255,.65);
 
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.player-arrow {
-  position: absolute;
-  z-index: 3;
-
-  right: 14px;
-  bottom: 14px;
-
-  width: 30px;
-  height: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid rgba(255,255,255,.35);
-
-  color: white;
-  font-size: 15px;
-
-  opacity: 0;
-
-  transition:
-    opacity .2s ease,
-    transform .2s ease,
-    background .2s ease;
-}
-
-.player-card:hover .player-arrow {
-  opacity: 1;
-  transform: translateX(2px);
 }
 
 
@@ -615,6 +591,7 @@ nav a.active {
 
 .coach-section {
   padding: 85px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -642,6 +619,7 @@ nav a.active {
 .coach-card:hover {
   background: #eeece7;
   border-color: #111;
+
   transform: translateY(-2px);
 }
 
@@ -756,6 +734,7 @@ nav a.active {
 .coach-card:hover .coach-arrow {
   background: #111;
   color: white;
+
   transform: translateX(3px);
 }
 
@@ -766,6 +745,7 @@ nav a.active {
 
 .transfers-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -824,6 +804,7 @@ nav a.active {
 
 .transfer-arrow {
   color: #888;
+
   font-size: 13px;
 }
 
@@ -845,6 +826,7 @@ nav a.active {
 
 .transfer-price {
   text-align: right;
+
   font-size: 10px;
 }
 
@@ -855,6 +837,7 @@ nav a.active {
 
 .legends-section {
   padding: 80px 60px;
+
   border-bottom: 1px solid #d3d1ca;
 }
 
@@ -868,10 +851,12 @@ nav a.active {
 
 .legend-card {
   position: relative;
+
   min-height: 390px;
   overflow: hidden;
 
   color: white;
+
   background: #222;
 }
 
@@ -884,10 +869,7 @@ nav a.active {
   width: 100%;
   height: 100%;
 
-  display: block;
-
   object-fit: cover;
-  object-position: center top;
 }
 
 .legend-card::after {
@@ -990,10 +972,6 @@ nav a.active {
   line-height: 1.75;
 }
 
-.history-content p + p {
-  margin-top: 24px;
-}
-
 
 /* =========================
    FOOTER
@@ -1007,7 +985,6 @@ footer {
   justify-content: space-between;
 
   border-top: 1px solid #d3d1ca;
-  background: #f6f5f1;
 }
 
 footer div {
@@ -1018,6 +995,7 @@ footer div {
 
 footer span {
   color: #888;
+
   font-size: 10px;
 }
 
@@ -1028,24 +1006,16 @@ footer span {
 
 @media (max-width: 1000px) {
 
-  .players-list {
+  .players-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .trophies-grid {
+  .trophy-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .other-trophies {
+  .other-trophies-list {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .other-trophy {
-    border-bottom: 1px solid #d3d1ca;
-  }
-
-  .other-trophy:nth-child(even) {
-    border-right: none;
   }
 
   .legends-grid {
@@ -1073,8 +1043,7 @@ footer span {
     font-size: 9px;
   }
 
-  .team-hero-content {
-    min-height: 560px;
+  .hero-content {
     padding: 45px 35px;
   }
 
@@ -1116,7 +1085,7 @@ footer span {
     height: 65px;
   }
 
-  .brand strong {
+  .logo {
     display: none;
   }
 
@@ -1129,32 +1098,31 @@ footer span {
     letter-spacing: 1px;
   }
 
-  .team-hero {
+  .hero-image {
     min-height: 430px;
   }
 
-  .team-hero-content {
-    min-height: 430px;
+  .hero-content {
     padding: 30px 25px;
     gap: 18px;
   }
 
-  .team-hero-logo {
+  .inter-crest {
     width: 68px;
     height: 68px;
     padding: 11px;
   }
 
-  .team-hero h1 {
+  .hero h1 {
     font-size: 43px;
     letter-spacing: -2px;
   }
 
-  .team-kicker {
+  .hero-kicker {
     font-size: 8px;
   }
 
-  .team-hero p {
+  .hero p {
     font-size: 11px;
   }
 
@@ -1173,47 +1141,12 @@ footer span {
     font-size: 40px;
   }
 
-
-  /* TROPHIES */
-
-  .trophies-grid {
+  .trophy-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .trophy-card {
-    min-height: 200px;
-    padding: 20px;
-  }
-
-  .trophy-card > img {
-    width: 62px;
-    height: 88px;
-  }
-
-  .trophy-number {
-    font-size: 34px;
-  }
-
-  .trophy-info strong {
-    font-size: 13px;
-  }
-
-  .trophy-info span {
-    font-size: 8px;
-  }
-
-  .other-trophies {
+  .other-trophies-list {
     grid-template-columns: 1fr;
-  }
-
-  .other-trophy,
-  .other-trophy:nth-child(even) {
-    border-right: none;
-    border-bottom: 1px solid #d3d1ca;
-  }
-
-  .other-trophy:last-child {
-    border-bottom: none;
   }
 
 
@@ -1246,13 +1179,14 @@ footer span {
   .competition-button-arrow {
     width: 36px;
     height: 36px;
+
     font-size: 17px;
   }
 
 
   /* PLAYER CARDS */
 
-  .players-list {
+  .players-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1260,24 +1194,14 @@ footer span {
     height: 210px;
   }
 
-  .player-info strong {
+  .player-card-info strong {
     font-size: 13px;
     gap: 5px;
   }
 
-  .player-info strong img {
+  .player-card-info strong img {
     width: 16px;
     height: 11px;
-  }
-
-  .player-arrow {
-    width: 27px;
-    height: 27px;
-
-    right: 10px;
-    bottom: 10px;
-
-    font-size: 13px;
   }
 
 
