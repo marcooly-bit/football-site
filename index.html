@@ -690,6 +690,13 @@ function getMatchDisplay(match) {
     match.fixture.status.short;
 
 
+  /*
+    Stati live.
+
+    LIVE è quello restituito
+    dal nostro backend football-data.org.
+  */
+
   const liveStatuses = [
     "1H",
     "HT",
@@ -698,7 +705,7 @@ function getMatchDisplay(match) {
     "BT",
     "P",
     "INT",
-    "SUSP"
+    "LIVE"
   ];
 
 
@@ -708,14 +715,42 @@ function getMatchDisplay(match) {
     )
   ) {
 
+    /*
+      football-data.org
+      al momento non ci manda
+      il minuto trascorso nello
+      stesso formato di API-Football.
+
+      Quindi:
+      - HT → HT
+      - LIVE con minuto disponibile → minuto
+      - LIVE senza minuto → LIVE
+    */
+
+    let liveText = "LIVE";
+
+
+    if (
+      status === "HT"
+    ) {
+
+      liveText = "HT";
+
+    } else if (
+      match.fixture.status.elapsed
+    ) {
+
+      liveText =
+        `${match.fixture.status.elapsed}'`;
+
+    }
+
+
     return {
 
       live: true,
 
-      text:
-        status === "HT"
-          ? "HT"
-          : `${match.fixture.status.elapsed || ""}'`
+      text: liveText
 
     };
 
@@ -961,20 +996,138 @@ function renderMatch(match) {
 
 
 /* ==================================================
+   AUTO REFRESH
+================================================== */
+
+
+/*
+  Timer per l'aggiornamento automatico.
+
+  Se ci sono partite LIVE:
+  → controllo ogni 30 secondi.
+
+  Se non ci sono partite LIVE:
+  → controllo ogni 5 minuti.
+*/
+
+let refreshTimer = null;
+
+
+
+function scheduleAutoRefresh(
+  fixtures
+) {
+
+
+  /*
+    Cancella sempre
+    il timer precedente.
+  */
+
+  if (refreshTimer) {
+
+    clearTimeout(
+      refreshTimer
+    );
+
+    refreshTimer = null;
+
+  }
+
+
+  /*
+    Controlliamo se almeno
+    una partita è LIVE.
+  */
+
+  const hasLiveMatch =
+    fixtures.some(
+      match => {
+
+        const status =
+          match.fixture.status.short;
+
+        return [
+          "1H",
+          "HT",
+          "2H",
+          "ET",
+          "BT",
+          "P",
+          "INT",
+          "LIVE"
+        ].includes(
+          status
+        );
+
+      }
+    );
+
+
+  /*
+    30 secondi se c'è
+    una partita live.
+
+    5 minuti altrimenti.
+  */
+
+  const refreshDelay =
+    hasLiveMatch
+      ? 30000
+      : 300000;
+
+
+  refreshTimer =
+    setTimeout(
+      () => {
+
+        loadMatches(
+          true
+        );
+
+      },
+      refreshDelay
+    );
+
+
+  console.log(
+    hasLiveMatch
+      ? "Auto-refresh: 30 secondi"
+      : "Auto-refresh: 5 minuti"
+  );
+
+}
+
+
+
+/* ==================================================
    LOAD MATCHES
 ================================================== */
 
 
-async function loadMatches() {
+async function loadMatches(
+  isAutoRefresh = false
+) {
 
 
-  matchesContainer.innerHTML = `
+  /*
+    Durante un auto-refresh
+    NON mostriamo "Caricamento partite..."
+    perché sarebbe fastidioso vedere
+    la pagina svuotarsi ogni 30 secondi.
+  */
 
-    <div class="matches-loading">
-      Caricamento partite...
-    </div>
+  if (!isAutoRefresh) {
 
-  `;
+    matchesContainer.innerHTML = `
+
+      <div class="matches-loading">
+        Caricamento partite...
+      </div>
+
+    `;
+
+  }
 
 
   const date =
@@ -988,7 +1141,10 @@ async function loadMatches() {
 
     const response =
       await fetch(
-        `/api/fixtures?date=${date}`
+        `/api/fixtures?date=${date}`,
+        {
+          cache: "no-store"
+        }
       );
 
 
@@ -1033,6 +1189,16 @@ async function loadMatches() {
 
         }
       );
+
+
+    /*
+      Aggiorniamo il timer
+      anche se non ci sono partite.
+    */
+
+    scheduleAutoRefresh(
+      fixtures
+    );
 
 
     /*
@@ -1286,25 +1452,67 @@ async function loadMatches() {
     );
 
 
-    matchesContainer.innerHTML = `
+    /*
+      In caso di errore durante
+      un auto-refresh, non distruggiamo
+      una pagina che magari stava già
+      mostrando dati corretti.
+    */
 
-      <div class="no-matches">
+    if (!isAutoRefresh) {
 
-        <div class="no-matches-number">
-          !
+      matchesContainer.innerHTML = `
+
+        <div class="no-matches">
+
+          <div class="no-matches-number">
+            !
+          </div>
+
+          <h3>
+            Non riesco a caricare le partite
+          </h3>
+
+          <p>
+            ${error.message}
+          </p>
+
         </div>
 
-        <h3>
-          Non riesco a caricare le partite
-        </h3>
+      `;
 
-        <p>
-          ${error.message}
-        </p>
+    }
 
-      </div>
 
-    `;
+    /*
+      Se è stato un auto-refresh,
+      riproviamo comunque dopo 30 secondi.
+    */
+
+    if (isAutoRefresh) {
+
+      if (refreshTimer) {
+
+        clearTimeout(
+          refreshTimer
+        );
+
+      }
+
+
+      refreshTimer =
+        setTimeout(
+          () => {
+
+            loadMatches(
+              true
+            );
+
+          },
+          30000
+        );
+
+    }
 
   }
 
@@ -1320,6 +1528,17 @@ async function loadMatches() {
 prevDay.addEventListener(
   "click",
   () => {
+
+
+    if (refreshTimer) {
+
+      clearTimeout(
+        refreshTimer
+      );
+
+      refreshTimer = null;
+
+    }
 
 
     selectedDate.setDate(
@@ -1339,6 +1558,17 @@ prevDay.addEventListener(
 nextDay.addEventListener(
   "click",
   () => {
+
+
+    if (refreshTimer) {
+
+      clearTimeout(
+        refreshTimer
+      );
+
+      refreshTimer = null;
+
+    }
 
 
     selectedDate.setDate(
@@ -1365,6 +1595,17 @@ datePicker.addEventListener(
     ) {
 
       return;
+
+    }
+
+
+    if (refreshTimer) {
+
+      clearTimeout(
+        refreshTimer
+      );
+
+      refreshTimer = null;
 
     }
 
