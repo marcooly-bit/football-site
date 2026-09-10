@@ -1,654 +1,1150 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Atalanta · Pages Of Football</title>
+
   <link rel="stylesheet" href="atalanta.css">
 </head>
+
 <body>
 
-  <header class="site-header">
-    <a href="index.html" class="site-logo">
-      <span class="logo-mark">P</span>
-      <span>Pages Of Football</span>
-    </a>
+<header class="site-header">
 
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="giocatori.html">Giocatori</a>
-      <a href="squadre.html" class="active">Squadre</a>
-      <a href="#">Competizioni</a>
-      <a href="#">Almanacco</a>
-    </nav>
-  </header>
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
+  </nav>
+
+  <button class="search-button">⌕</button>
+
+</header>
 
 
-  <!-- HERO -->
-  <section class="hero-image" style="background-image: url('images/stadium/atalanta-stadium.jpg');">
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+  <div class="hero-image">
+
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
+
       <div class="club-crest">
         <img src="images/teams/atalanta.png" alt="Atalanta">
       </div>
 
-      <div class="hero-text">
-        <p class="eyebrow">Serie A · Italia</p>
+      <div>
+
+        <div class="hero-kicker">
+          BERGAMO · ITALIA
+        </div>
+
         <h1>Atalanta</h1>
-        <p class="hero-subtitle">Bergamo, Italia · New Balance Arena</p>
+
+        <p>
+          La storia, la rosa e i protagonisti della Dea.
+        </p>
+
       </div>
+
     </div>
-  </section>
+
+  </div>
+
+</section>
 
 
-  <main>
+<!-- =========================
+     CLUB
+========================= -->
 
-    <!-- CLUB -->
-    <section class="section club-section">
-      <div class="section-number">01</div>
+<section class="club-section">
 
-      <div class="section-content">
-        <p class="section-label">Il club</p>
-        <h2>Atalanta Bergamasca Calcio</h2>
+  <span class="section-label">01 · IL CLUB</span>
 
-        <div class="club-grid">
-          <div>
-            <p>
-              Fondata nel 1907, l'Atalanta è una delle realtà più riconoscibili
-              del calcio italiano. Legata profondamente alla città di Bergamo,
-              ha costruito la propria identità attraverso un calcio offensivo,
-              una forte cultura del settore giovanile e una straordinaria
-              capacità di valorizzare giovani talenti.
-            </p>
-          </div>
+  <div class="club-content">
 
-          <div class="club-facts">
-            <div class="fact">
-              <span>Fondazione</span>
-              <strong>1907</strong>
-            </div>
+    <h2>
+      Una città.<br>
+      Una Dea.<br>
+      Una storia.
+    </h2>
 
-            <div class="fact">
-              <span>Città</span>
-              <strong>Bergamo</strong>
-            </div>
+    <p>
+      L'Atalanta Bergamasca Calcio nasce nel 1907 ed è profondamente legata
+      alla città di Bergamo. Nel corso della propria storia il club ha costruito
+      una delle identità più riconoscibili del calcio italiano, distinguendosi
+      per il settore giovanile, la valorizzazione dei talenti e un calcio spesso
+      offensivo e spettacolare.
+      <br><br>
+      Negli ultimi anni l'Atalanta si è affermata stabilmente ai vertici del
+      calcio italiano ed europeo, raggiungendo per la prima volta la Champions
+      League e conquistando l'Europa League nella stagione 2023/24.
+    </p>
 
-            <div class="fact">
-              <span>Stadio</span>
-              <strong>New Balance Arena</strong>
-            </div>
+  </div>
 
-            <div class="fact">
-              <span>Capienza</span>
-              <strong>24.950</strong>
-            </div>
-          </div>
-        </div>
+</section>
+
+
+<!-- =========================
+     PALMARES
+========================= -->
+
+<section class="palmares-section">
+
+  <span class="section-label">02 · PALMARES</span>
+
+  <div class="trophy-grid">
+
+    <div class="trophy-card">
+
+      <img
+        src="images/trophies/coppa-italia.png"
+        alt="Coppa Italia"
+        class="trophy-image"
+      >
+
+      <div class="trophy-info">
+        <strong>1</strong>
+        <span>Coppa Italia</span>
       </div>
-    </section>
+
+    </div>
 
 
-    <!-- PALMARES -->
-    <section class="section trophies-section">
-      <div class="section-number">02</div>
+    <div class="trophy-card">
 
-      <div class="section-content">
-        <p class="section-label">Palmarès</p>
-        <h2>I trofei</h2>
+      <img
+        src="images/trophies/europa-league.png"
+        alt="Europa League"
+        class="trophy-image"
+      >
 
-        <div class="trophy-grid">
-
-          <div class="trophy-card">
-            <div class="trophy-image">
-              <img src="images/trophies/coppa-italia.png" alt="Coppa Italia">
-            </div>
-            <strong>1</strong>
-            <span>Coppa Italia</span>
-          </div>
-
-          <div class="trophy-card">
-            <div class="trophy-image">
-              <img src="images/trophies/serie-b.png" alt="Serie B">
-            </div>
-            <strong>6</strong>
-            <span>Serie B</span>
-          </div>
-
-          <div class="trophy-card">
-            <div class="trophy-image">
-              <img src="images/trophies/serie-c.png" alt="Serie C">
-            </div>
-            <strong>1</strong>
-            <span>Serie C</span>
-          </div>
-
-          <div class="trophy-card">
-            <div class="trophy-image">
-              <img src="images/trophies/coppa-italia.png" alt="Coppa Italia">
-            </div>
-            <strong>1</strong>
-            <span>Coppa Italia Lega Nord</span>
-          </div>
-
-        </div>
+      <div class="trophy-info">
+        <strong>1</strong>
+        <span>Europa League</span>
       </div>
-    </section>
+
+    </div>
 
 
-    <!-- SQUAD -->
-    <section class="section squad-section">
-      <div class="section-number">03</div>
+    <div class="trophy-card">
 
-      <div class="section-content">
-        <div class="section-heading-row">
-          <div>
-            <p class="section-label">Rosa 2026/27</p>
-            <h2>La squadra</h2>
-          </div>
+      <img
+        src="images/trophies/serie-b.png"
+        alt="Serie B"
+        class="trophy-image"
+      >
 
-          <span class="season-tag">2026 / 27</span>
+      <div class="trophy-info">
+        <strong>6</strong>
+        <span>Serie B</span>
+      </div>
+
+    </div>
+
+
+    <div class="trophy-card">
+
+      <img
+        src="images/trophies/serie-c.png"
+        alt="Serie C"
+        class="trophy-image"
+      >
+
+      <div class="trophy-info">
+        <strong>1</strong>
+        <span>Serie C</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <details class="other-trophies">
+
+    <summary>
+      <span>＋</span>
+      ALTRI TROFEI
+    </summary>
+
+    <div class="other-trophies-list">
+
+      <div class="other-trophy">
+
+        <img
+          src="images/trophies/coppa-italia.png"
+          alt="Coppa Italia Lega Nord"
+        >
+
+        <div>
+          <strong>1</strong>
+          <span>Coppa Italia Lega Nord</span>
         </div>
-
-
-        <!-- PORTIERI -->
-        <div class="position-group">
-          <h3>Portieri</h3>
-
-          <div class="player-grid">
-
-            <div class="player-card">
-              <div class="player-number">29</div>
-              <img src="images/players/carnesecchi.png" alt="Marco Carnesecchi">
-              <div class="player-info">
-                <strong>Marco Carnesecchi</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/vismara.png" alt="Paolo Vismara">
-              <div class="player-info">
-                <strong>Paolo Vismara</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">57</div>
-              <img src="images/players/sportiello.png" alt="Marco Sportiello">
-              <div class="player-info">
-                <strong>Marco Sportiello</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">31</div>
-              <img src="images/players/rossi.png" alt="Francesco Rossi">
-              <div class="player-info">
-                <strong>Francesco Rossi</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <!-- DIFENSORI -->
-        <div class="position-group">
-          <h3>Difensori</h3>
-
-          <div class="player-grid">
-
-            <div class="player-card">
-              <div class="player-number">42</div>
-              <img src="images/players/scalvini.png" alt="Giorgio Scalvini">
-              <div class="player-info">
-                <strong>Giorgio Scalvini</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">69</div>
-              <img src="images/players/ahanor.png" alt="Honest Ahanor">
-              <div class="player-info">
-                <strong>Honest Ahanor</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">4</div>
-              <img src="images/players/hien.png" alt="Isak Hien">
-              <div class="player-info">
-                <strong>Isak Hien</strong>
-                <span>🇸🇪 Svezia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">3</div>
-              <img src="images/players/kossounou.png" alt="Odilon Kossounou">
-              <div class="player-info">
-                <strong>Odilon Kossounou</strong>
-                <span>🇨🇮 Costa d'Avorio</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">19</div>
-              <img src="images/players/djimsiti.png" alt="Berat Djimsiti">
-              <div class="player-info">
-                <strong>Berat Djimsiti</strong>
-                <span>🇦🇱 Albania</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">23</div>
-              <img src="images/players/kolasinac.png" alt="Sead Kolašinac">
-              <div class="player-info">
-                <strong>Sead Kolašinac</strong>
-                <span>🇧🇦 Bosnia-Erzegovina</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/bonfanti.png" alt="Giovanni Bonfanti">
-              <div class="player-info">
-                <strong>Giovanni Bonfanti</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/cittadini.png" alt="Giorgio Cittadini">
-              <div class="player-info">
-                <strong>Giorgio Cittadini</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <!-- CENTROCAMPISTI -->
-        <div class="position-group">
-          <h3>Centrocampisti</h3>
-
-          <div class="player-grid">
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/gaetano.png" alt="Gianluca Gaetano">
-              <div class="player-info">
-                <strong>Gianluca Gaetano</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/sulemana.png" alt="Ibrahim Sulemana">
-              <div class="player-info">
-                <strong>Ibrahim Sulemana</strong>
-                <span>🇬🇭 Ghana</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">15</div>
-              <img src="images/players/deroon.png" alt="Marten de Roon">
-              <div class="player-info">
-                <strong>Marten de Roon</strong>
-                <span>🇳🇱 Olanda</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">13</div>
-              <img src="images/players/ederson.png" alt="Éderson">
-              <div class="player-info">
-                <strong>Éderson</strong>
-                <span>🇧🇷 Brasile</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">8</div>
-              <img src="images/players/pasalic.png" alt="Mario Pašalić">
-              <div class="player-info">
-                <strong>Mario Pašalić</strong>
-                <span>🇭🇷 Croazia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">16</div>
-              <img src="images/players/bellanova.png" alt="Raoul Bellanova">
-              <div class="player-info">
-                <strong>Raoul Bellanova</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">77</div>
-              <img src="images/players/zappacosta.png" alt="Davide Zappacosta">
-              <div class="player-info">
-                <strong>Davide Zappacosta</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">47</div>
-              <img src="images/players/bernasconi.png" alt="Lorenzo Bernasconi">
-              <div class="player-info">
-                <strong>Lorenzo Bernasconi</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">59</div>
-              <img src="images/players/zalewski.png" alt="Nicola Zalewski">
-              <div class="player-info">
-                <strong>Nicola Zalewski</strong>
-                <span>🇵🇱 Polonia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">5</div>
-              <img src="images/players/bakker.png" alt="Mitchel Bakker">
-              <div class="player-info">
-                <strong>Mitchel Bakker</strong>
-                <span>🇳🇱 Olanda</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-        <!-- TREQUARTISTI / ATTACCANTI -->
-        <div class="position-group">
-          <h3>Attaccanti</h3>
-
-          <div class="player-grid">
-
-            <div class="player-card">
-              <div class="player-number">17</div>
-              <img src="images/players/deketelaere.png" alt="Charles De Ketelaere">
-              <div class="player-info">
-                <strong>Charles De Ketelaere</strong>
-                <span>🇧🇪 Belgio</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">10</div>
-              <img src="images/players/samardzic.png" alt="Lazar Samardžić">
-              <div class="player-info">
-                <strong>Lazar Samardžić</strong>
-                <span>🇷🇸 Serbia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/maldini.png" alt="Daniel Maldini">
-              <div class="player-info">
-                <strong>Daniel Maldini</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">7</div>
-              <img src="images/players/sulemana-kamaldeen.png" alt="Kamaldeen Sulemana">
-              <div class="player-info">
-                <strong>Kamaldeen Sulemana</strong>
-                <span>🇬🇭 Ghana</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/elbilal.png" alt="El Bilal Touré">
-              <div class="player-info">
-                <strong>El Bilal Touré</strong>
-                <span>🇲🇱 Mali</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">—</div>
-              <img src="images/players/krstovic.png" alt="Nikola Krstović">
-              <div class="player-info">
-                <strong>Nikola Krstović</strong>
-                <span>🇲🇪 Montenegro</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">18</div>
-              <img src="images/players/raspadori.png" alt="Giacomo Raspadori">
-              <div class="player-info">
-                <strong>Giacomo Raspadori</strong>
-                <span>🇮🇹 Italia</span>
-              </div>
-            </div>
-
-            <div class="player-card">
-              <div class="player-number">90</div>
-              <img src="images/players/vlahovic.png" alt="Vanja Vlahović">
-              <div class="player-info">
-                <strong>Vanja Vlahović</strong>
-                <span>🇷🇸 Serbia</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <a href="#" class="competition-button">
-          <span>Serie A</span>
-          <span>→</span>
-        </a>
 
       </div>
-    </section>
+
+    </div>
+
+  </details>
+
+</section>
 
 
-    <!-- COACH -->
-    <section class="section coach-section">
-      <div class="section-number">04</div>
+<!-- =========================
+     SQUAD
+========================= -->
 
-      <div class="section-content">
-        <p class="section-label">Allenatore</p>
-        <h2>Maurizio Sarri</h2>
+<section class="squad-section">
 
-        <div class="coach-card">
-          <img src="images/coaches/sarri.png" alt="Maurizio Sarri">
+  <span class="section-label">03 · ROSA 2026/27</span>
 
-          <div class="coach-info">
-            <span class="coach-role">Allenatore · Italia 🇮🇹</span>
-            <h3>Maurizio Sarri</h3>
-            <p>
-              Tecnico toscano dalla forte identità tattica, Sarri è tornato
-              protagonista del calcio italiano alla guida dell'Atalanta,
-              portando a Bergamo la propria idea di gioco basata su possesso,
-              pressing e costruzione dal basso.
-            </p>
-          </div>
+
+  <a href="#" class="competition-button">
+
+    <div class="competition-button-logo">
+
+      <img
+        src="images/competitions/serie-a.png"
+        alt="Serie A"
+      >
+
+    </div>
+
+    <div class="competition-button-content">
+
+      <span>COMPETIZIONE</span>
+
+      <strong>Serie A</strong>
+
+    </div>
+
+    <div class="competition-button-arrow">
+      →
+    </div>
+
+  </a>
+
+
+  <!-- PORTIERI -->
+
+  <div class="squad-group">
+
+    <h3>PORTIERI</h3>
+
+    <div class="players-grid">
+
+      <a href="#" class="player-card">
+        <img src="images/players/carnesecchi.png" alt="Marco Carnesecchi">
+        <span class="shirt-number">29</span>
+
+        <div class="player-card-info">
+          <strong>
+            Marco Carnesecchi
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Portiere</span>
         </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/sportiello.png" alt="Marco Sportiello">
+        <span class="shirt-number">57</span>
+
+        <div class="player-card-info">
+          <strong>
+            Marco Sportiello
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Portiere</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/rossi.png" alt="Francesco Rossi">
+        <span class="shirt-number">31</span>
+
+        <div class="player-card-info">
+          <strong>
+            Francesco Rossi
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Portiere</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/pompei.png" alt="Thomas Pompei">
+        <span class="shirt-number">22</span>
+
+        <div class="player-card-info">
+          <strong>
+            Thomas Pompei
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Portiere</span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- DIFENSORI -->
+
+  <div class="squad-group">
+
+    <h3>DIFENSORI</h3>
+
+    <div class="players-grid">
+
+      <a href="#" class="player-card">
+        <img src="images/players/scalvini.png" alt="Giorgio Scalvini">
+        <span class="shirt-number">42</span>
+
+        <div class="player-card-info">
+          <strong>
+            Giorgio Scalvini
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/hien.png" alt="Isak Hien">
+        <span class="shirt-number">4</span>
+
+        <div class="player-card-info">
+          <strong>
+            Isak Hien
+            <img src="images/flags/sweden.png" alt="Svezia">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/kossounou.png" alt="Odilon Kossounou">
+        <span class="shirt-number">3</span>
+
+        <div class="player-card-info">
+          <strong>
+            Odilon Kossounou
+            <img src="images/flags/ivory-coast.png" alt="Costa d'Avorio">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/kolasinac.png" alt="Sead Kolašinac">
+        <span class="shirt-number">23</span>
+
+        <div class="player-card-info">
+          <strong>
+            Sead Kolašinac
+            <img src="images/flags/bosnia.png" alt="Bosnia-Erzegovina">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/kristensen.png" alt="Thomas Kristensen">
+        <span class="shirt-number">31</span>
+
+        <div class="player-card-info">
+          <strong>
+            Thomas Kristensen
+            <img src="images/flags/denmark.png" alt="Danimarca">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/bellanova.png" alt="Raoul Bellanova">
+        <span class="shirt-number">16</span>
+
+        <div class="player-card-info">
+          <strong>
+            Raoul Bellanova
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/bernasconi.png" alt="Lorenzo Bernasconi">
+        <span class="shirt-number">47</span>
+
+        <div class="player-card-info">
+          <strong>
+            Lorenzo Bernasconi
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/zappacosta.png" alt="Davide Zappacosta">
+        <span class="shirt-number">77</span>
+
+        <div class="player-card-info">
+          <strong>
+            Davide Zappacosta
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/obric.png" alt="Relja Obrić">
+        <span class="shirt-number">40</span>
+
+        <div class="player-card-info">
+          <strong>
+            Relja Obrić
+            <img src="images/flags/serbia.png" alt="Serbia">
+          </strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- CENTROCAMPISTI -->
+
+  <div class="squad-group">
+
+    <h3>CENTROCAMPISTI</h3>
+
+    <div class="players-grid">
+
+      <a href="#" class="player-card">
+        <img src="images/players/ederson.png" alt="Éderson">
+        <span class="shirt-number">13</span>
+
+        <div class="player-card-info">
+          <strong>
+            Éderson
+            <img src="images/flags/brazil.png" alt="Brasile">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/pasalic.png" alt="Mario Pašalić">
+        <span class="shirt-number">8</span>
+
+        <div class="player-card-info">
+          <strong>
+            Mario Pašalić
+            <img src="images/flags/croatia.png" alt="Croazia">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/kessie.png" alt="Franck Kessié">
+        <span class="shirt-number">19</span>
+
+        <div class="player-card-info">
+          <strong>
+            Franck Kessié
+            <img src="images/flags/ivory-coast.png" alt="Costa d'Avorio">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/elmas.png" alt="Eljif Elmas">
+        <span class="shirt-number">99</span>
+
+        <div class="player-card-info">
+          <strong>
+            Eljif Elmas
+            <img src="images/flags/north-macedonia.png" alt="Macedonia del Nord">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/gaetano.png" alt="Gianluca Gaetano">
+        <span class="shirt-number">70</span>
+
+        <div class="player-card-info">
+          <strong>
+            Gianluca Gaetano
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/samardzic.png" alt="Lazar Samardžić">
+        <span class="shirt-number">10</span>
+
+        <div class="player-card-info">
+          <strong>
+            Lazar Samardžić
+            <img src="images/flags/serbia.png" alt="Serbia">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/zalewski.png" alt="Nicola Zalewski">
+        <span class="shirt-number">59</span>
+
+        <div class="player-card-info">
+          <strong>
+            Nicola Zalewski
+            <img src="images/flags/poland.png" alt="Polonia">
+          </strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ATTACCANTI -->
+
+  <div class="squad-group">
+
+    <h3>ATTACCANTI</h3>
+
+    <div class="players-grid">
+
+      <a href="#" class="player-card">
+        <img src="images/players/deketelaere.png" alt="Charles De Ketelaere">
+        <span class="shirt-number">17</span>
+
+        <div class="player-card-info">
+          <strong>
+            Charles De Ketelaere
+            <img src="images/flags/belgium.png" alt="Belgio">
+          </strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/scamacca.png" alt="Gianluca Scamacca">
+        <span class="shirt-number">9</span>
+
+        <div class="player-card-info">
+          <strong>
+            Gianluca Scamacca
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/krstovic.png" alt="Nikola Krstović">
+        <span class="shirt-number">90</span>
+
+        <div class="player-card-info">
+          <strong>
+            Nikola Krstović
+            <img src="images/flags/montenegro.png" alt="Montenegro">
+          </strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/raspadori.png" alt="Giacomo Raspadori">
+        <span class="shirt-number">18</span>
+
+        <div class="player-card-info">
+          <strong>
+            Giacomo Raspadori
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/rowe.png" alt="Jonathan Rowe">
+        <span class="shirt-number">11</span>
+
+        <div class="player-card-info">
+          <strong>
+            Jonathan Rowe
+            <img src="images/flags/england.png" alt="Inghilterra">
+          </strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a href="#" class="player-card">
+        <img src="images/players/sulemana-kamaldeen.png" alt="Kamaldeen Sulemana">
+        <span class="shirt-number">7</span>
+
+        <div class="player-card-info">
+          <strong>
+            Kamaldeen Sulemana
+            <img src="images/flags/ghana.png" alt="Ghana">
+          </strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     COACH
+========================= -->
+
+<section class="coach-section">
+
+  <span class="section-label">04 · ALLENATORE</span>
+
+  <a href="#" class="coach-card">
+
+    <div class="coach-photo">
+
+      <img
+        src="images/coaches/sarri.png"
+        alt="Maurizio Sarri"
+      >
+
+    </div>
+
+    <div class="coach-info">
+
+      <span class="coach-kicker">ALLENATORE</span>
+
+      <strong>Maurizio Sarri</strong>
+
+      <div class="coach-nationality">
+
+        <img
+          src="images/flags/italy.png"
+          alt="Italia"
+        >
+
+        <span>Italia</span>
+
       </div>
-    </section>
+
+      <span class="coach-club">
+        Atalanta · 2026/27
+      </span>
+
+    </div>
+
+    <div class="coach-arrow">
+      →
+    </div>
+
+  </a>
+
+</section>
 
 
-    <!-- TRANSFERS -->
-    <section class="section transfers-section">
-      <div class="section-number">05</div>
+<!-- =========================
+     TRANSFERS
+========================= -->
 
-      <div class="section-content">
-        <p class="section-label">Mercato</p>
-        <h2>Trasferimenti 2026/27</h2>
+<section class="transfers-section">
 
-        <div class="transfer-grid">
+  <span class="section-label">05 · TRASFERIMENTI</span>
 
-          <div class="transfer-column">
-            <h3>Arrivi</h3>
-
-            <div class="transfer-item">
-              <strong>Gianluca Gaetano</strong>
-              <span>← Cagliari · €12 mln</span>
-            </div>
-
-          </div>
+  <div class="transfers-grid">
 
 
-          <div class="transfer-column">
-            <h3>Partenze</h3>
+    <!-- IN -->
 
-            <div class="transfer-item">
-              <strong>Marco Palestra</strong>
-              <span>→ Chelsea · €57 mln</span>
-            </div>
+    <div class="transfer-column">
 
-            <div class="transfer-item">
-              <strong>Marco Brescianini</strong>
-              <span>→ Fiorentina · €10 mln</span>
-            </div>
+      <h3>IN</h3>
 
-            <div class="transfer-item">
-              <strong>Ben Godfrey</strong>
-              <span>→ Rangers · Prestito</span>
-            </div>
 
-            <div class="transfer-item">
-              <strong>Yunus Musah</strong>
-              <span>→ Milan · Fine prestito</span>
-            </div>
+      <div class="transfer">
 
+        <div class="transfer-photo">
+          <img src="images/players/gaetano.png" alt="Gianluca Gaetano">
+        </div>
+
+        <span class="transfer-player">
+          Gianluca Gaetano
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">←</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/cagliari.png" alt="Cagliari">
           </div>
 
         </div>
+
+        <span class="transfer-price">€12M</span>
+
       </div>
-    </section>
 
 
-    <!-- LEGENDS -->
-    <section class="section legends-section">
-      <div class="section-number">06</div>
+      <div class="transfer">
 
-      <div class="section-content">
-        <p class="section-label">Storia</p>
-        <h2>Leggende</h2>
+        <div class="transfer-photo">
+          <img src="images/players/kristensen.png" alt="Thomas Kristensen">
+        </div>
 
-        <div class="legends-grid">
+        <span class="transfer-player">
+          Thomas Kristensen
+        </span>
 
-          <div class="legend-card">
-            <img src="images/legends/papu-gomez.png" alt="Papu Gómez">
-            <div>
-              <strong>Papu Gómez</strong>
-              <span>2014 — 2021</span>
-            </div>
-          </div>
+        <div class="transfer-club-area">
 
-          <div class="legend-card">
-            <img src="images/legends/gasperini.png" alt="Gian Piero Gasperini">
-            <div>
-              <strong>Gian Piero Gasperini</strong>
-              <span>2016 — 2024</span>
-            </div>
-          </div>
+          <span class="transfer-arrow">←</span>
 
-          <div class="legend-card">
-            <img src="images/legends/ilicic.png" alt="Josip Iličić">
-            <div>
-              <strong>Josip Iličić</strong>
-              <span>2017 — 2022</span>
-            </div>
-          </div>
-
-          <div class="legend-card">
-            <img src="images/legends/zapata.png" alt="Duván Zapata">
-            <div>
-              <strong>Duván Zapata</strong>
-              <span>2018 — 2023</span>
-            </div>
+          <div class="transfer-club">
+            <img src="images/teams/udinese.png" alt="Udinese">
           </div>
 
         </div>
+
+        <span class="transfer-price">€10M</span>
+
       </div>
-    </section>
 
 
-    <!-- HISTORY -->
-    <section class="section history-section">
-      <div class="section-number">07</div>
+      <div class="transfer">
 
-      <div class="section-content">
-        <p class="section-label">Almanacco</p>
-        <h2>La storia</h2>
+        <div class="transfer-photo">
+          <img src="images/players/elmas.png" alt="Eljif Elmas">
+        </div>
 
-        <div class="history-grid">
+        <span class="transfer-player">
+          Eljif Elmas
+        </span>
 
-          <div>
-            <p>
-              L'Atalanta nasce nel 1907 a Bergamo e attraversa gran parte
-              della propria storia tra Serie A e Serie B, diventando nel
-              tempo una delle principali realtà provinciali del calcio italiano.
-            </p>
+        <div class="transfer-club-area">
 
-            <p>
-              Il vero salto di qualità arriva negli anni Duemila e soprattutto
-              sotto la guida di Gian Piero Gasperini. L'Atalanta sviluppa un
-              calcio offensivo riconoscibile, raggiunge stabilmente le prime
-              posizioni della Serie A e conquista per la prima volta nella
-              propria storia la qualificazione alla Champions League.
-            </p>
-          </div>
+          <span class="transfer-arrow">←</span>
 
-          <div>
-            <p>
-              Il momento più alto arriva nella stagione 2023/24, quando
-              l'Atalanta conquista l'Europa League battendo il Bayer Leverkusen
-              in finale a Dublino. È il primo grande trofeo internazionale
-              nella storia del club.
-            </p>
-
-            <p>
-              La storia nerazzurra continua attraverso una generazione di
-              giocatori cresciuti nel settore giovanile e talenti arrivati
-              dall'estero, confermando Bergamo come uno dei principali
-              laboratori calcistici d'Europa.
-            </p>
+          <div class="transfer-club">
+            <img src="images/teams/rb-leipzig.png" alt="RB Leipzig">
           </div>
 
         </div>
+
+        <span class="transfer-price">€18M</span>
+
       </div>
-    </section>
-
-  </main>
 
 
-  <footer>
-    <strong>Pages Of Football</strong>
-    <span>Football · History · Stories</span>
-  </footer>
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/kessie.png" alt="Franck Kessié">
+        </div>
+
+        <span class="transfer-player">
+          Franck Kessié
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">←</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/placeholder.png" alt="">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Svincolato</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/rowe.png" alt="Jonathan Rowe">
+        </div>
+
+        <span class="transfer-player">
+          Jonathan Rowe
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">←</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/bologna.png" alt="Bologna">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Prestito</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- OUT -->
+
+    <div class="transfer-column">
+
+      <h3>OUT</h3>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/palestra.png" alt="Marco Palestra">
+        </div>
+
+        <span class="transfer-player">
+          Marco Palestra
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/chelsea.png" alt="Chelsea">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">€57M</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/brescianini.png" alt="Marco Brescianini">
+        </div>
+
+        <span class="transfer-player">
+          Marco Brescianini
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/fiorentina.png" alt="Fiorentina">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">€10M</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/djimsiti.png" alt="Berat Djimsiti">
+        </div>
+
+        <span class="transfer-player">
+          Berat Djimsiti
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/placeholder.png" alt="">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Trasferito</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/maldini.png" alt="Daniel Maldini">
+        </div>
+
+        <span class="transfer-player">
+          Daniel Maldini
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/cagliari.png" alt="Cagliari">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Trasferito</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/elbilal.png" alt="El Bilal Touré">
+        </div>
+
+        <span class="transfer-player">
+          El Bilal Touré
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/parma.png" alt="Parma">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Prestito</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img src="images/players/deroon.png" alt="Marten de Roon">
+        </div>
+
+        <span class="transfer-player">
+          Marten de Roon
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img src="images/teams/roma.png" alt="Roma">
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Trasferito</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     LEGENDS
+========================= -->
+
+<section class="legends-section">
+
+  <span class="section-label">06 · LEGGENDE</span>
+
+  <div class="legends-grid">
+
+    <div class="legend-card">
+
+      <div class="legend-photo">
+        <img src="images/legends/papu-gomez.jpg" alt="Papu Gómez">
+      </div>
+
+      <span class="legend-number">01</span>
+
+      <h3>Papu<br>Gómez</h3>
+
+      <p>ATALANTA · 2014–2021</p>
+
+      <b>10</b>
+
+    </div>
+
+
+    <div class="legend-card">
+
+      <div class="legend-photo">
+        <img src="images/legends/ilicic.jpg" alt="Josip Iličić">
+      </div>
+
+      <span class="legend-number">02</span>
+
+      <h3>Josip<br>Iličić</h3>
+
+      <p>ATALANTA · 2017–2022</p>
+
+      <b>72</b>
+
+    </div>
+
+
+    <div class="legend-card">
+
+      <div class="legend-photo">
+        <img src="images/legends/zapata.jpg" alt="Duván Zapata">
+      </div>
+
+      <span class="legend-number">03</span>
+
+      <h3>Duván<br>Zapata</h3>
+
+      <p>ATALANTA · 2018–2023</p>
+
+      <b>91</b>
+
+    </div>
+
+
+    <div class="legend-card">
+
+      <div class="legend-photo">
+        <img src="images/legends/donadoni.jpg" alt="Roberto Donadoni">
+      </div>
+
+      <span class="legend-number">04</span>
+
+      <h3>Roberto<br>Donadoni</h3>
+
+      <p>ATALANTA · 1982–1986</p>
+
+      <b>7</b>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     HISTORY
+========================= -->
+
+<section class="history-section">
+
+  <span class="section-label">07 · STORIA</span>
+
+  <div class="history-content">
+
+    <h2>
+      La Dea.<br>
+      Dalle provinciali<br>
+      all'Europa.
+    </h2>
+
+    <p>
+      Fondata nel 1907, l'Atalanta ha attraversato gran parte della propria
+      storia tra Serie A e Serie B, costruendo nel tempo una reputazione
+      particolare nel calcio italiano.
+      <br><br>
+      La svolta arriva soprattutto nel XXI secolo e raggiunge il suo apice
+      sotto la guida di Gian Piero Gasperini. Il club conquista stabilmente
+      le prime posizioni della Serie A, raggiunge la Champions League per
+      la prima volta e trasforma Bergamo in uno dei principali laboratori
+      calcistici d'Europa.
+      <br><br>
+      Nella stagione 2023/24 arriva il momento più alto della storia europea
+      del club: l'Atalanta batte il Bayer Leverkusen nella finale di Dublino
+      e conquista la sua prima Europa League.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div>PAGES OF FOOTBALL</div>
+
+  <span>© 2026 · Football, history & stories</span>
+
+</footer>
 
 </body>
 </html>
-```
-
