@@ -1,32 +1,40 @@
 export default async function handler(req, res) {
-  const date = req.query.date;
+  try {
+    const { date } = req.query;
 
-  const apiKey = process.env.API_FOOTBALL_KEY;
+    if (!date) {
+      return res.status(400).json({
+        error: "Manca la data"
+      });
+    }
 
-  if (!apiKey) {
+    const response = await fetch(
+      `https://v3.football.api-sports.io/fixtures?date=${date}&timezone=Europe/Rome`,
+      {
+        headers: {
+          "x-apisports-key": process.env.api_football_key
+        }
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      return res.status(response.status).json(data);
+    }
+
+    // Permette a Vercel di conservare temporaneamente il risultato
+    // e ridurre il numero di richieste all'API.
+    res.setHeader(
+      "Cache-Control",
+      "s-maxage=60, stale-while-revalidate=300"
+    );
+
+    return res.status(200).json(data);
+
+  } catch (error) {
     return res.status(500).json({
-      error: "API key non trovata"
+      error: "Errore nel collegamento con API-Football"
     });
   }
-
-  const url =
-    "https://v3.football.api-sports.io/fixtures" +
-    "?date=" + encodeURIComponent(date) +
-    "&timezone=Europe/Rome";
-
-  const response = await fetch(url, {
-    headers: {
-      "x-apisports-key": apiKey,
-      "Accept": "application/json"
-    }
-  });
-
-  const data = await response.json();
-
-  return res.status(200).json({
-    apiStatus: response.status,
-    apiErrors: data.errors,
-    apiResults: data.results,
-    firstFixtures: (data.response || []).slice(0, 5)
-  });
 }
