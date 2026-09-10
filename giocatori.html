@@ -1,86 +1,657 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giocatori — Pages Of Football</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giocatori | Pages Of Football</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="giocatori.css">
 </head>
 
 <body>
 
-<div class="page">
+<header class="site-header">
 
-  <header>
-    <a href="index.html" class="brand">
-      <div class="logo">P</div>
-      <strong>PAGES OF FOOTBALL</strong>
-    </a>
+    <a href="index.html" class="logo">P</a>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="squadre.html">Squadre</a>
-      <a href="giocatori.html" class="active">Giocatori</a>
-      <a href="competizioni.html">Competizioni</a>
-      <a href="almanacco.html">Almanacco</a>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="giocatori.html" class="active">Giocatori</a>
+        <a href="squadre.html">Squadre</a>
+        <a href="competizioni.html">Competizioni</a>
+        <a href="almanacco.html">Almanacco</a>
     </nav>
-  </header>
 
-  <main>
+</header>
 
-    <section class="hero">
-      <p class="label">DATABASE</p>
-      <h1>Giocatori</h1>
-      <p class="description">
-        Scopri le carriere, le statistiche e le storie dei giocatori
-        che hanno lasciato il segno nel calcio.
-      </p>
-    </section>
 
-    <section class="matches">
+<main>
 
-      <div class="section-header">
-        <div>
-          <p class="label">IN EVIDENZA</p>
-          <h2>Giocatori</h2>
+    <!-- HERO -->
+
+    <section class="players-hero">
+
+        <div class="hero-label">
+            PAGES OF FOOTBALL
         </div>
-      </div>
 
-      <div class="cards">
+        <h1>Giocatori</h1>
 
-        <a href="#" class="card">
-          <span>JUVENTUS · ATTACCANTE</span>
-          <h3>Kenan Yıldız</h3>
-          <p>Turchia · 2005</p>
-          <b>→</b>
-        </a>
-
-        <a href="#" class="card">
-          <span>JUVENTUS · ATTACCANTE</span>
-          <h3>Francisco Conceição</h3>
-          <p>Portogallo · 2002</p>
-          <b>→</b>
-        </a>
-
-        <a href="#" class="card">
-          <span>JUVENTUS · ATTACCANTE</span>
-          <h3>Edon Zhegrova</h3>
-          <p>Kosovo · 1999</p>
-          <b>→</b>
-        </a>
-
-      </div>
+        <p>
+            I protagonisti del calcio, raccontati oltre il campo.
+        </p>
 
     </section>
 
-  </main>
 
-  <footer>
-    <strong>PAGES OF FOOTBALL</strong>
-    <span>Football, documented.</span>
-  </footer>
+    <!-- TEAM FILTER -->
 
-</div>
+    <section class="players-toolbar">
+
+        <div class="team-selector">
+
+            <button class="team-button active">
+                Juventus
+            </button>
+
+            <button class="team-button">
+                Inter
+            </button>
+
+            <button class="team-button">
+                Milan
+            </button>
+
+        </div>
+
+        <div class="season-label">
+            Stagione <strong>2026/27</strong>
+        </div>
+
+    </section>
+
+
+    <!-- JUVENTUS -->
+
+    <section class="team-section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-kicker">
+                    SERIE A
+                </span>
+
+                <h2>Juventus</h2>
+            </div>
+
+            <span class="player-count">
+                28 giocatori
+            </span>
+
+        </div>
+
+
+        <!-- PORTIERI -->
+
+        <div class="position-section">
+
+            <div class="position-title">
+                <span>01</span>
+                <h3>Portieri</h3>
+            </div>
+
+            <div class="players-grid">
+
+
+                <!-- KAMIL GRABARA -->
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img
+                            src="images/players/kamil-grabara.jpg"
+                            alt="Kamil Grabara"
+                        >
+
+                        <span class="shirt-number">
+                            1
+                        </span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">
+                            PORTIERE
+                        </span>
+
+                        <h4>Kamil Grabara</h4>
+                    </div>
+
+                </a>
+
+
+                <!-- CARLO PINSOGLIO -->
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img
+                            src="images/players/carlo-pinsoglio.jpg"
+                            alt="Carlo Pinsoglio"
+                        >
+
+                        <span class="shirt-number">
+                            23
+                        </span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">
+                            PORTIERE
+                        </span>
+
+                        <h4>Carlo Pinsoglio</h4>
+                    </div>
+
+                </a>
+
+
+                <!-- GUGLIELMO VICARIO -->
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img
+                            src="images/players/guglielmo-vicario.jpg"
+                            alt="Guglielmo Vicario"
+                        >
+
+                        <span class="shirt-number">
+                            25
+                        </span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">
+                            PORTIERE
+                        </span>
+
+                        <h4>Guglielmo Vicario</h4>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- DIFENSORI -->
+
+        <div class="position-section">
+
+            <div class="position-title">
+                <span>02</span>
+                <h3>Difensori</h3>
+            </div>
+
+            <div class="players-grid">
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/mehmet-zeki-celik.jpg" alt="Mehmet Zeki Çelik">
+                        <span class="shirt-number">2</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Mehmet Zeki Çelik</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/gleison-bremer.jpg" alt="Gleison Bremer">
+                        <span class="shirt-number">3</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Gleison Bremer</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/federico-gatti.jpg" alt="Federico Gatti">
+                        <span class="shirt-number">4</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Federico Gatti</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/lloyd-kelly.jpg" alt="Lloyd Kelly">
+                        <span class="shirt-number">6</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Lloyd Kelly</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/pierre-kalulu.jpg" alt="Pierre Kalulu">
+                        <span class="shirt-number">15</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Pierre Kalulu</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/andrea-cambiaso.jpg" alt="Andrea Cambiaso">
+                        <span class="shirt-number">20</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Andrea Cambiaso</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/daniele-rugani.jpg" alt="Daniele Rugani">
+                        <span class="shirt-number">24</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Daniele Rugani</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/jhon-lucumi.jpg" alt="Jhon Lucumí">
+                        <span class="shirt-number">26</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Jhon Lucumí</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/juan-david-cabal.jpg" alt="Juan David Cabal">
+                        <span class="shirt-number">32</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">DIFENSORE</span>
+                        <h4>Juan David Cabal</h4>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CENTROCAMPISTI -->
+
+        <div class="position-section">
+
+            <div class="position-title">
+                <span>03</span>
+                <h3>Centrocampisti</h3>
+            </div>
+
+            <div class="players-grid">
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/manuel-locatelli.jpg" alt="Manuel Locatelli">
+                        <span class="shirt-number">5</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Manuel Locatelli</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/teun-koopmeiners.jpg" alt="Teun Koopmeiners">
+                        <span class="shirt-number">8</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Teun Koopmeiners</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/douglas-luiz.jpg" alt="Douglas Luiz">
+                        <span class="shirt-number">12</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Douglas Luiz</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/kerim-alajbegovic.jpg" alt="Kerim Alajbegović">
+                        <span class="shirt-number">17</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Kerim Alajbegović</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/khéphren-thuram.jpg" alt="Khéphren Thuram">
+                        <span class="shirt-number">19</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Khéphren Thuram</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/weston-mckennie.jpg" alt="Weston McKennie">
+                        <span class="shirt-number">22</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Weston McKennie</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/pape-matar-sarr.jpg" alt="Pape Matar Sarr">
+                        <span class="shirt-number">29</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Pape Matar Sarr</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/nicolas-gonzalez.jpg" alt="Nicolas Ivan Gonzalez">
+                        <span class="shirt-number">31</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">CENTROCAMPISTA</span>
+                        <h4>Nicolas Ivan Gonzalez</h4>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ATTACCANTI -->
+
+        <div class="position-section">
+
+            <div class="position-title">
+                <span>04</span>
+                <h3>Attaccanti</h3>
+            </div>
+
+            <div class="players-grid">
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/francisco-conceicao.jpg" alt="Francisco Conceição">
+                        <span class="shirt-number">7</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Francisco Conceição</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/randal-kolo-muani.jpg" alt="Randal Kolo Muani">
+                        <span class="shirt-number">9</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Randal Kolo Muani</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/kenan-yildiz.jpg" alt="Kenan Yildiz">
+                        <span class="shirt-number">10</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Kenan Yildiz</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/edon-zhegrova.jpg" alt="Edon Zhegrova">
+                        <span class="shirt-number">11</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Edon Zhegrova</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/jeremie-boga.jpg" alt="Jeremie Boga">
+                        <span class="shirt-number">13</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Jeremie Boga</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/arkadiusz-milik.jpg" alt="Arkadiusz Milik">
+                        <span class="shirt-number">14</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Arkadiusz Milik</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/jeff-ekhator.jpg" alt="Jeff Ekhator">
+                        <span class="shirt-number">18</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Jeff Ekhator</h4>
+                    </div>
+
+                </a>
+
+
+                <a href="#" class="player-card">
+
+                    <div class="player-image">
+                        <img src="images/players/nick-woltemade.jpg" alt="Nick Woltemade">
+                        <span class="shirt-number">27</span>
+                    </div>
+
+                    <div class="player-info">
+                        <span class="player-role">ATTACCANTE</span>
+                        <h4>Nick Woltemade</h4>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- COACH -->
+
+    <section class="coach-section">
+
+        <div class="coach-label">
+            ALLENATORE
+        </div>
+
+        <div class="coach-content">
+
+            <div>
+                <span>JUVENTUS 2026/27</span>
+                <h2>Luciano Spalletti</h2>
+            </div>
+
+            <div class="coach-number">
+                <span>HEAD</span>
+                <strong>COACH</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-logo">
+        P
+    </div>
+
+    <p>
+        Pages Of Football — Il calcio, raccontato.
+    </p>
+
+</footer>
+
 
 </body>
 </html>
