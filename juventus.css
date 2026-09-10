@@ -151,12 +151,17 @@ nav a.active {
   width: 86px;
   height: 86px;
   background: #111;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 55px;
-  font-weight: 900;
+  overflow: hidden;
+}
+
+.juve-crest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .country {
@@ -201,13 +206,9 @@ nav a.active {
   height: 340px;
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(
-      120deg,
-      #171717 0%,
-      #333 45%,
-      #666 100%
-    );
+  background-image: url("images/stadium/juventus-stadium.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-image::before {
@@ -472,7 +473,9 @@ nav a.active {
   width: 42px;
   height: 42px;
   background: #d7d5cf;
+  position: relative;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .transfer-photo img {
@@ -520,73 +523,6 @@ nav a.active {
 
 
 /* =========================
-   FIXTURES
-========================= */
-
-.fixtures {
-  padding: 80px 55px;
-  border-bottom: 1px solid #d7d5cf;
-}
-
-.fixtures .section-header a {
-  color: #555;
-  text-decoration: none;
-  font-size: 11px;
-}
-
-.fixture {
-  min-height: 82px;
-  margin-top: 12px;
-  display: grid;
-  grid-template-columns: 90px 150px 1fr 40px 1fr 70px;
-  align-items: center;
-  border-top: 1px solid #d7d5cf;
-  border-bottom: 1px solid #d7d5cf;
-}
-
-.fixture-date {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.fixture-date strong {
-  font-size: 30px;
-  line-height: .8;
-}
-
-.fixture-date span {
-  color: #888;
-  font-size: 8px;
-  line-height: 1.2;
-  letter-spacing: 1px;
-}
-
-.competition {
-  color: #777;
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  font-weight: bold;
-}
-
-.fixture-team {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.vs {
-  text-align: center;
-  color: #aaa;
-}
-
-.fixture-time {
-  text-align: right;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-
-/* =========================
    LEGGENDE
 ========================= */
 
@@ -606,6 +542,7 @@ nav a.active {
   min-height: 250px;
   padding: 25px;
   position: relative;
+  overflow: hidden;
   border: 1px solid #d3d1ca;
   transition: .25s;
 }
@@ -614,6 +551,38 @@ nav a.active {
   background: #111;
   color: white;
   transform: translateY(-4px);
+}
+
+.legend-photo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.legend-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.legend-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.05) 20%,
+    rgba(0,0,0,.15) 45%,
+    rgba(0,0,0,.8) 100%
+  );
+}
+
+.legend-card > *:not(.legend-photo) {
+  position: relative;
+  z-index: 1;
 }
 
 .legend-number {
@@ -627,11 +596,12 @@ nav a.active {
   font-size: 26px;
   line-height: .95;
   letter-spacing: -1px;
+  color: white;
 }
 
 .legend-card p {
   margin: 0;
-  color: #888;
+  color: #ddd;
   font-size: 11px;
 }
 
@@ -640,6 +610,7 @@ nav a.active {
   right: 25px;
   bottom: 22px;
   font-size: 20px;
+  color: white;
 }
 
 
@@ -779,7 +750,6 @@ footer p {
   .juve-crest {
     width: 58px;
     height: 58px;
-    font-size: 35px;
   }
 
   .club-info h1 {
@@ -804,7 +774,6 @@ footer p {
   .palmares,
   .squad,
   .transfers,
-  .fixtures,
   .legends,
   .history {
     padding-left: 20px;
@@ -843,19 +812,6 @@ footer p {
   .transfer-columns {
     grid-template-columns: 1fr;
     gap: 55px;
-  }
-
-
-  .fixture {
-    grid-template-columns: 55px 1fr 20px 1fr 45px;
-  }
-
-  .competition {
-    display: none;
-  }
-
-  .fixture-team {
-    font-size: 11px;
   }
 
 
