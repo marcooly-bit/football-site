@@ -1,0 +1,669 @@
+```css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f5f1;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.site-header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 42px;
+  border-bottom: 1px solid #d3d1ca;
+  background: #f6f5f1;
+}
+
+.logo {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 34px;
+}
+
+nav a {
+  color: #777;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #111;
+}
+
+.search-button {
+  border: 0;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #111;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero-image {
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: #cfcfcf;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, .65),
+    rgba(0, 0, 0, .18),
+    rgba(0, 0, 0, .05)
+  );
+}
+
+.hero-content {
+  position: absolute;
+  left: 60px;
+  bottom: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: white;
+}
+
+.club-crest {
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.club-crest img {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+}
+
+.hero-kicker {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: .95;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #ddd;
+}
+
+
+/* ================================
+   GENERALE
+================================ */
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+
+/* ================================
+   CLUB
+================================ */
+
+.club-section {
+  padding: 85px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.club-content {
+  max-width: 760px;
+  margin-top: 55px;
+}
+
+.club-content h2,
+.history-content h2 {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  margin: 0 0 28px;
+}
+
+.club-content p,
+.history-content p {
+  max-width: 600px;
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   PALMARES
+================================ */
+
+.palmares-section {
+  padding: 85px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.trophies-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 55px;
+  gap: 12px;
+}
+
+.trophy {
+  min-height: 190px;
+  border: 1px solid #d3d1ca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f1f0eb;
+}
+
+.trophy img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.trophy strong {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.trophy span {
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #777;
+}
+
+.other-trophies {
+  margin-top: 12px;
+  border-top: 1px solid #d3d1ca;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.other-trophies summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other-trophies summary::-webkit-details-marker {
+  display: none;
+}
+
+.other-trophies summary span {
+  font-size: 18px;
+}
+
+.other-trophies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 0 0 20px;
+}
+
+.other-trophy {
+  border: 1px solid #d3d1ca;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.other-trophy img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.other-trophy strong {
+  font-size: 24px;
+}
+
+.other-trophy span {
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #777;
+  margin-top: 4px;
+}
+
+
+/* ================================
+   SQUADRA
+================================ */
+
+.squad-section {
+  padding: 85px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.position-title {
+  margin-top: 50px;
+  margin-bottom: 18px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.player-card {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: white;
+  background: #d7d5cf;
+  border: 1px solid #d3d1ca;
+}
+
+.player-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform .45s ease;
+}
+
+.player-card:hover img {
+  transform: scale(1.04);
+}
+
+.player-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, .02) 20%,
+    rgba(0, 0, 0, .08) 45%,
+    rgba(0, 0, 0, .78) 100%
+  );
+  z-index: 1;
+}
+
+.shirt-number {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+}
+
+.player-card-info {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.player-card-info strong {
+  font-size: 15px;
+  line-height: 1.05;
+  color: white;
+}
+
+.player-card-info span {
+  margin-top: 5px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+
+/* ================================
+   TRASFERIMENTI
+================================ */
+
+.transfers-section {
+  padding: 85px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.transfers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-top: 55px;
+}
+
+.transfer-column h3 {
+  margin: 0 0 25px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.transfer {
+  min-height: 65px;
+  border-top: 1px solid #d3d1ca;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background .2s ease;
+}
+
+.transfer:last-child {
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.transfer:hover {
+  background: #f1f0eb;
+}
+
+.transfer-photo {
+  width: 42px;
+  height: 42px;
+  background: #d7d5cf;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.transfer-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.transfer-player {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  min-width: 0;
+}
+
+.transfer-club-area {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.transfer-club {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.transfer-club img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+  display: block;
+  transition: transform .2s ease;
+}
+
+.transfer-club:hover img {
+  transform: scale(1.12);
+}
+
+.transfer-arrow {
+  font-size: 18px;
+  line-height: 1;
+  color: #777;
+  font-weight: 400;
+}
+
+.transfer-price {
+  min-width: 82px;
+  margin-left: 8px;
+  text-align: right;
+  font-size: 11px;
+  font-weight: 700;
+  color: #111;
+  white-space: nowrap;
+}
+
+.transfer-free {
+  color: #777;
+}
+
+
+/* ================================
+   LEGGENDE
+================================ */
+
+.legends-section {
+  padding: 85px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.legends-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 55px;
+}
+
+.legend {
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+  background: #d7d5cf;
+}
+
+.legend img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.legend::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(0, 0, 0, .8) 100%
+  );
+}
+
+.legend div {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend strong {
+  font-size: 15px;
+}
+
+.legend span {
+  font-size: 9px;
+  color: #ddd;
+  margin-top: 5px;
+}
+
+
+/* ================================
+   STORIA
+================================ */
+
+.history-section {
+  padding: 85px 60px;
+}
+
+.history-content {
+  margin-top: 55px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  padding: 40px 60px;
+  border-top: 1px solid #d3d1ca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+footer span {
+  font-size: 10px;
+  color: #888;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+  .players-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .legends-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trophies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transfers-grid {
+    gap: 40px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .site-header {
+    padding: 0 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero-content {
+    left: 25px;
+    bottom: 30px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding: 60px 25px;
+  }
+
+  .players-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player-card {
+    height: 210px;
+  }
+
+  .transfers-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .other-trophies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+}
+```
