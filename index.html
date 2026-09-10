@@ -423,11 +423,6 @@
 ================================================== */
 
 
-/*
-  La Home parte automaticamente
-  dalla data corrente.
-*/
-
 const today = new Date();
 
 
@@ -519,18 +514,15 @@ function formatDateForAPI(date) {
   const year =
     date.getFullYear();
 
-
   const month =
     String(
       date.getMonth() + 1
     ).padStart(2, "0");
 
-
   const day =
     String(
       date.getDate()
     ).padStart(2, "0");
-
 
   return `${year}-${month}-${day}`;
 
@@ -543,40 +535,32 @@ function updateDateUI() {
   const day =
     selectedDate.getDate();
 
-
   const month =
     selectedDate.getMonth();
-
 
   const year =
     selectedDate.getFullYear();
 
-
   matchDay.textContent =
     day;
 
-
   matchDate.innerHTML =
     `${months[month]}<br>${year}`;
-
 
   datePicker.value =
     formatDateForAPI(
       selectedDate
     );
 
-
   const todayString =
     formatDateForAPI(
       new Date()
     );
 
-
   const selectedString =
     formatDateForAPI(
       selectedDate
     );
-
 
   if (
     selectedString ===
@@ -600,12 +584,6 @@ function updateDateUI() {
 /* ==================================================
    COMPETITIONS
 ================================================== */
-
-/*
-  I nomi qui devono corrispondere
-  ESATTAMENTE a quelli restituiti
-  dal nostro backend football-data.org.
-*/
 
 const allowedCompetitions = {
 
@@ -682,20 +660,10 @@ const allowedCompetitions = {
    MATCH STATUS
 ================================================== */
 
-
 function getMatchDisplay(match) {
-
 
   const status =
     match.fixture.status.short;
-
-
-  /*
-    Stati live.
-
-    LIVE è quello restituito
-    dal nostro backend football-data.org.
-  */
 
   const liveStatuses = [
     "1H",
@@ -708,27 +676,13 @@ function getMatchDisplay(match) {
     "LIVE"
   ];
 
-
   if (
     liveStatuses.includes(
       status
     )
   ) {
 
-    /*
-      football-data.org
-      al momento non ci manda
-      il minuto trascorso nello
-      stesso formato di API-Football.
-
-      Quindi:
-      - HT → HT
-      - LIVE con minuto disponibile → minuto
-      - LIVE senza minuto → LIVE
-    */
-
     let liveText = "LIVE";
-
 
     if (
       status === "HT"
@@ -745,7 +699,6 @@ function getMatchDisplay(match) {
 
     }
 
-
     return {
 
       live: true,
@@ -755,7 +708,6 @@ function getMatchDisplay(match) {
     };
 
   }
-
 
 
   if (
@@ -775,7 +727,6 @@ function getMatchDisplay(match) {
   }
 
 
-
   if (status === "PST") {
 
     return {
@@ -787,7 +738,6 @@ function getMatchDisplay(match) {
     };
 
   }
-
 
 
   if (status === "CANC") {
@@ -803,12 +753,10 @@ function getMatchDisplay(match) {
   }
 
 
-
   const matchDate =
     new Date(
       match.fixture.date
     );
-
 
   return {
 
@@ -833,33 +781,25 @@ function getMatchDisplay(match) {
    RENDER MATCH
 ================================================== */
 
-
 function renderMatch(match) {
-
 
   const home =
     match.teams.home;
 
-
   const away =
     match.teams.away;
-
 
   const status =
     getMatchDisplay(match);
 
-
   const homeScore =
     match.goals.home;
-
 
   const awayScore =
     match.goals.away;
 
-
   const statusCode =
     match.fixture.status.short;
-
 
   const isFinished =
     [
@@ -870,10 +810,8 @@ function renderMatch(match) {
       statusCode
     );
 
-
   const isLive =
     status.live;
-
 
   const isFeatured =
     (
@@ -894,14 +832,12 @@ function renderMatch(match) {
         .includes("leipzig")
     );
 
-
   return `
 
     <div
       class="match
       ${isFeatured ? "featured" : ""}"
     >
-
 
       <div class="match-time">
 
@@ -920,7 +856,6 @@ function renderMatch(match) {
       </div>
 
 
-
       <div class="team home">
 
         <span class="team-name">
@@ -937,9 +872,7 @@ function renderMatch(match) {
       </div>
 
 
-
       <div class="versus">
-
 
         ${
           (
@@ -960,9 +893,7 @@ function renderMatch(match) {
           : "—"
         }
 
-
       </div>
-
 
 
       <div class="team away">
@@ -981,11 +912,9 @@ function renderMatch(match) {
       </div>
 
 
-
       <div class="match-arrow">
         →
       </div>
-
 
     </div>
 
@@ -999,17 +928,6 @@ function renderMatch(match) {
    AUTO REFRESH
 ================================================== */
 
-
-/*
-  Timer per l'aggiornamento automatico.
-
-  Se ci sono partite LIVE:
-  → controllo ogni 30 secondi.
-
-  Se non ci sono partite LIVE:
-  → controllo ogni 5 minuti.
-*/
-
 let refreshTimer = null;
 
 
@@ -1017,12 +935,6 @@ let refreshTimer = null;
 function scheduleAutoRefresh(
   fixtures
 ) {
-
-
-  /*
-    Cancella sempre
-    il timer precedente.
-  */
 
   if (refreshTimer) {
 
@@ -1034,11 +946,6 @@ function scheduleAutoRefresh(
 
   }
 
-
-  /*
-    Controlliamo se almeno
-    una partita è LIVE.
-  */
 
   const hasLiveMatch =
     fixtures.some(
@@ -1063,13 +970,6 @@ function scheduleAutoRefresh(
       }
     );
 
-
-  /*
-    30 secondi se c'è
-    una partita live.
-
-    5 minuti altrimenti.
-  */
 
   const refreshDelay =
     hasLiveMatch
@@ -1104,18 +1004,9 @@ function scheduleAutoRefresh(
    LOAD MATCHES
 ================================================== */
 
-
 async function loadMatches(
   isAutoRefresh = false
 ) {
-
-
-  /*
-    Durante un auto-refresh
-    NON mostriamo "Caricamento partite..."
-    perché sarebbe fastidioso vedere
-    la pagina svuotarsi ogni 30 secondi.
-  */
 
   if (!isAutoRefresh) {
 
@@ -1137,7 +1028,6 @@ async function loadMatches(
 
 
   try {
-
 
     const response =
       await fetch(
@@ -1172,11 +1062,6 @@ async function loadMatches(
     );
 
 
-    /*
-      Filtriamo le competizioni
-      che vogliamo mostrare.
-    */
-
     fixtures =
       fixtures.filter(
         match => {
@@ -1191,25 +1076,14 @@ async function loadMatches(
       );
 
 
-    /*
-      Aggiorniamo il timer
-      anche se non ci sono partite.
-    */
-
     scheduleAutoRefresh(
       fixtures
     );
 
 
-    /*
-      Nessuna partita.
-    */
-
-
     if (
       fixtures.length === 0
     ) {
-
 
       matchesContainer.innerHTML = `
 
@@ -1233,30 +1107,19 @@ async function loadMatches(
 
       `;
 
-
       return;
 
     }
 
 
-
-    /*
-      Raggruppiamo
-      per competizione.
-    */
-
-
     const groups = {};
-
 
 
     fixtures.forEach(
       match => {
 
-
         const leagueName =
           match.league.name;
-
 
         if (
           !groups[
@@ -1270,20 +1133,12 @@ async function loadMatches(
 
         }
 
-
         groups[
           leagueName
         ].push(match);
 
       }
     );
-
-
-
-    /*
-      Ordiniamo le
-      competizioni.
-    */
 
 
     const sortedGroups =
@@ -1308,9 +1163,7 @@ async function loadMatches(
         );
 
 
-
     let html = "";
-
 
 
     sortedGroups.forEach(
@@ -1321,16 +1174,10 @@ async function loadMatches(
         ]
       ) => {
 
-
         const competition =
           allowedCompetitions[
             leagueName
           ];
-
-
-        /*
-          Ordine cronologico
-        */
 
 
         matches.sort(
@@ -1350,32 +1197,26 @@ async function loadMatches(
         );
 
 
-
         const leagueLogo =
           matches[0]
             ?.league
             ?.logo;
 
 
-
         html += `
 
           <div class="competition">
-
 
             <div
               class="competition-header"
             >
 
-
               <div
                 class="competition-title"
               >
 
-
                 ${
                   leagueLogo
-
                     ? `
 
                       <img
@@ -1386,15 +1227,12 @@ async function loadMatches(
                       >
 
                     `
-
                     : ""
                 }
-
 
                 <span>
                   ${competition.name}
                 </span>
-
 
               </div>
 
@@ -1410,9 +1248,7 @@ async function loadMatches(
                 }
               </span>
 
-
             </div>
-
 
 
             <div
@@ -1429,7 +1265,6 @@ async function loadMatches(
 
             </div>
 
-
           </div>
 
         `;
@@ -1438,26 +1273,17 @@ async function loadMatches(
     );
 
 
-
     matchesContainer.innerHTML =
       html;
 
 
   } catch (error) {
 
-
     console.error(
       "ERRORE CARICAMENTO:",
       error
     );
 
-
-    /*
-      In caso di errore durante
-      un auto-refresh, non distruggiamo
-      una pagina che magari stava già
-      mostrando dati corretti.
-    */
 
     if (!isAutoRefresh) {
 
@@ -1483,11 +1309,6 @@ async function loadMatches(
 
     }
 
-
-    /*
-      Se è stato un auto-refresh,
-      riproviamo comunque dopo 30 secondi.
-    */
 
     if (isAutoRefresh) {
 
@@ -1524,11 +1345,9 @@ async function loadMatches(
    DATE BUTTONS
 ================================================== */
 
-
 prevDay.addEventListener(
   "click",
   () => {
-
 
     if (refreshTimer) {
 
@@ -1559,7 +1378,6 @@ nextDay.addEventListener(
   "click",
   () => {
 
-
     if (refreshTimer) {
 
       clearTimeout(
@@ -1588,7 +1406,6 @@ nextDay.addEventListener(
 datePicker.addEventListener(
   "change",
   () => {
-
 
     if (
       !datePicker.value
@@ -1641,7 +1458,6 @@ datePicker.addEventListener(
    SEARCH
 ================================================== */
 
-
 const searchInput =
   document.getElementById(
     "searchInput"
@@ -1661,38 +1477,477 @@ const searchResults =
 
 
 
+/*
+  DATABASE DI RICERCA
+
+  Tutti i giocatori della Juventus
+  2026/27 sono presenti qui.
+
+  Il link contiene anche l'ID della
+  relativa card in giocatori.html.
+*/
+
 const searchData = [
 
+  /* =========================
+     PORTIERI
+  ========================= */
 
   {
-    name: "Kenan Yildiz",
-
+    name: "Kamil Grabara",
     type: "GIOCATORE",
-
-    meta:
-      "Juventus · Turchia · 2005",
-
+    meta: "Juventus · Polonia · 1999",
     keywords: [
-      "yildiz",
-      "kenan",
-      "turchia",
-      "turkey",
-      "juventus"
+      "kamil",
+      "grabara",
+      "polonia",
+      "poland",
+      "juventus",
+      "juve"
     ],
+    link: "giocatori.html#kamil-grabara"
+  },
 
-    link:
-      "giocatori.html"
+  {
+    name: "Carlo Pinsoglio",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 1990",
+    keywords: [
+      "carlo",
+      "pinsoglio",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#carlo-pinsoglio"
+  },
+
+  {
+    name: "Guglielmo Vicario",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 1996",
+    keywords: [
+      "guglielmo",
+      "vicario",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#guglielmo-vicario"
   },
 
 
+  /* =========================
+     DIFENSORI
+  ========================= */
+
+  {
+    name: "Mehmet Zeki Çelik",
+    type: "GIOCATORE",
+    meta: "Juventus · Turchia · 1997",
+    keywords: [
+      "mehmet",
+      "zeki",
+      "celik",
+      "çelik",
+      "turchia",
+      "turkey",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#mehmet-zeki-celik"
+  },
+
+  {
+    name: "Gleison Bremer",
+    type: "GIOCATORE",
+    meta: "Juventus · Brasile · 1997",
+    keywords: [
+      "gleison",
+      "bremer",
+      "brasile",
+      "brazil",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#gleison-bremer"
+  },
+
+  {
+    name: "Federico Gatti",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 1998",
+    keywords: [
+      "federico",
+      "gatti",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#federico-gatti"
+  },
+
+  {
+    name: "Lloyd Kelly",
+    type: "GIOCATORE",
+    meta: "Juventus · Inghilterra · 1998",
+    keywords: [
+      "lloyd",
+      "kelly",
+      "inghilterra",
+      "england",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#lloyd-kelly"
+  },
+
+  {
+    name: "Pierre Kalulu",
+    type: "GIOCATORE",
+    meta: "Juventus · Francia · 2000",
+    keywords: [
+      "pierre",
+      "kalulu",
+      "francia",
+      "france",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#pierre-kalulu"
+  },
+
+  {
+    name: "Andrea Cambiaso",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 2000",
+    keywords: [
+      "andrea",
+      "cambiaso",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#andrea-cambiaso"
+  },
+
+  {
+    name: "Daniele Rugani",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 1994",
+    keywords: [
+      "daniele",
+      "rugani",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#daniele-rugani"
+  },
+
+  {
+    name: "Jhon Lucumí",
+    type: "GIOCATORE",
+    meta: "Juventus · Colombia · 1998",
+    keywords: [
+      "jhon",
+      "lucumi",
+      "lucumí",
+      "colombia",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#jhon-lucumi"
+  },
+
+  {
+    name: "Juan David Cabal",
+    type: "GIOCATORE",
+    meta: "Juventus · Colombia · 2001",
+    keywords: [
+      "juan",
+      "david",
+      "cabal",
+      "colombia",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#juan-david-cabal"
+  },
+
+
+  /* =========================
+     CENTROCAMPISTI
+  ========================= */
+
+  {
+    name: "Manuel Locatelli",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 1998",
+    keywords: [
+      "manuel",
+      "locatelli",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#manuel-locatelli"
+  },
+
+  {
+    name: "Teun Koopmeiners",
+    type: "GIOCATORE",
+    meta: "Juventus · Paesi Bassi · 1998",
+    keywords: [
+      "teun",
+      "koopmeiners",
+      "olanda",
+      "netherlands",
+      "paesi bassi",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#teun-koopmeiners"
+  },
+
+  {
+    name: "Douglas Luiz",
+    type: "GIOCATORE",
+    meta: "Juventus · Brasile · 1998",
+    keywords: [
+      "douglas",
+      "luiz",
+      "brasile",
+      "brazil",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#douglas-luiz"
+  },
+
+  {
+    name: "Kerim Alajbegović",
+    type: "GIOCATORE",
+    meta: "Juventus · Bosnia ed Erzegovina · 2003",
+    keywords: [
+      "kerim",
+      "alajbegovic",
+      "alajbegović",
+      "bosnia",
+      "bosnia ed erzegovina",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#kerim-alajbegovic"
+  },
+
+  {
+    name: "Khéphren Thuram",
+    type: "GIOCATORE",
+    meta: "Juventus · Francia · 2001",
+    keywords: [
+      "khephren",
+      "khéphren",
+      "thuram",
+      "francia",
+      "france",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#khephren-thuram"
+  },
+
+  {
+    name: "Weston McKennie",
+    type: "GIOCATORE",
+    meta: "Juventus · Stati Uniti · 1998",
+    keywords: [
+      "weston",
+      "mckennie",
+      "mc kennie",
+      "usa",
+      "america",
+      "stati uniti",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#weston-mckennie"
+  },
+
+  {
+    name: "Pape Matar Sarr",
+    type: "GIOCATORE",
+    meta: "Juventus · Senegal · 2002",
+    keywords: [
+      "pape",
+      "matar",
+      "sarr",
+      "senegal",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#pape-matar-sarr"
+  },
+
+  {
+    name: "Nicolas Ivan Gonzalez",
+    type: "GIOCATORE",
+    meta: "Juventus · Argentina · 1998",
+    keywords: [
+      "nicolas",
+      "ivan",
+      "gonzalez",
+      "gonzález",
+      "argentina",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#nicolas-gonzalez"
+  },
+
+
+  /* =========================
+     ATTACCANTI
+  ========================= */
+
+  {
+    name: "Francisco Conceição",
+    type: "GIOCATORE",
+    meta: "Juventus · Portogallo · 2002",
+    keywords: [
+      "francisco",
+      "conceicao",
+      "conceição",
+      "portogallo",
+      "portugal",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#francisco-conceicao"
+  },
+
+  {
+    name: "Randal Kolo Muani",
+    type: "GIOCATORE",
+    meta: "Juventus · Francia · 1998",
+    keywords: [
+      "randal",
+      "kolo",
+      "muani",
+      "kolo muani",
+      "francia",
+      "france",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#randal-kolo-muani"
+  },
+
+  {
+    name: "Kenan Yildiz",
+    type: "GIOCATORE",
+    meta: "Juventus · Turchia · 2005",
+    keywords: [
+      "kenan",
+      "yildiz",
+      "turchia",
+      "turkey",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#kenan-yildiz"
+  },
+
+  {
+    name: "Edon Zhegrova",
+    type: "GIOCATORE",
+    meta: "Juventus · Kosovo · 1999",
+    keywords: [
+      "edon",
+      "zhegrova",
+      "kosovo",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#edon-zhegrova"
+  },
+
+  {
+    name: "Jeremie Boga",
+    type: "GIOCATORE",
+    meta: "Juventus · Costa d'Avorio · 1997",
+    keywords: [
+      "jeremie",
+      "jérémie",
+      "boga",
+      "costa d'avorio",
+      "ivory coast",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#jeremie-boga"
+  },
+
+  {
+    name: "Arkadiusz Milik",
+    type: "GIOCATORE",
+    meta: "Juventus · Polonia · 1994",
+    keywords: [
+      "arkadiusz",
+      "milik",
+      "polonia",
+      "poland",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#arkadiusz-milik"
+  },
+
+  {
+    name: "Jeff Ekhator",
+    type: "GIOCATORE",
+    meta: "Juventus · Italia · 2006",
+    keywords: [
+      "jeff",
+      "ekhator",
+      "italia",
+      "italy",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#jeff-ekhator"
+  },
+
+  {
+    name: "Nick Woltemade",
+    type: "GIOCATORE",
+    meta: "Juventus · Germania · 2002",
+    keywords: [
+      "nick",
+      "woltemade",
+      "germania",
+      "germany",
+      "juventus",
+      "juve"
+    ],
+    link: "giocatori.html#nick-woltemade"
+  },
+
+
+  /* =========================
+     SQUADRE
+  ========================= */
+
   {
     name: "Juventus",
-
     type: "SQUADRA",
-
-    meta:
-      "Torino · Italia · 1897",
-
+    meta: "Torino · Italia · 1897",
     keywords: [
       "juventus",
       "juve",
@@ -1700,129 +1955,100 @@ const searchData = [
       "bianconeri",
       "torino"
     ],
-
-    link:
-      "juventus.html"
+    link: "juventus.html"
   },
 
+
+  /* =========================
+     NAZIONALI
+  ========================= */
 
   {
     name: "Turchia",
-
     type: "NAZIONALE",
-
-    meta:
-      "Nazionale turca",
-
+    meta: "Nazionale turca",
     keywords: [
       "turchia",
       "turkey",
-      "turkiye",
-      "yildiz",
-      "kenan"
+      "turkiye"
     ],
-
-    link:
-      "#"
+    link: "#"
   },
 
 
-  {
-    name:
-      "Francisco Conceição",
-
-    type:
-      "GIOCATORE",
-
-    meta:
-      "Juventus · Portogallo · 2002",
-
-    keywords: [
-      "conceicao",
-      "francisco",
-      "portogallo",
-      "juventus"
-    ],
-
-    link:
-      "giocatori.html"
-  },
-
+  /* =========================
+     COMPETIZIONI
+  ========================= */
 
   {
-    name:
-      "Edon Zhegrova",
-
-    type:
-      "GIOCATORE",
-
-    meta:
-      "Juventus · Kosovo · 1999",
-
-    keywords: [
-      "zhegrova",
-      "edon",
-      "kosovo",
-      "juventus"
-    ],
-
-    link:
-      "giocatori.html"
-  },
-
-
-  {
-    name:
-      "Serie A",
-
-    type:
-      "COMPETIZIONE",
-
-    meta:
-      "Italia",
-
+    name: "Serie A",
+    type: "COMPETIZIONE",
+    meta: "Italia",
     keywords: [
       "serie a",
       "italia",
       "calcio italiano"
     ],
-
-    link:
-      "competizioni.html"
+    link: "competizioni.html"
   },
 
-
   {
-    name:
-      "Champions League",
-
-    type:
-      "COMPETIZIONE",
-
-    meta:
-      "UEFA",
-
+    name: "Champions League",
+    type: "COMPETIZIONE",
+    meta: "UEFA",
     keywords: [
       "champions",
       "champions league",
       "uefa"
     ],
-
-    link:
-      "competizioni.html"
+    link: "competizioni.html"
   }
 
 ];
 
 
 
+/* ==================================================
+   SEARCH NORMALIZATION
+================================================== */
+
+/*
+  Permette di cercare anche senza accenti.
+
+  Esempio:
+
+  Conceição → conceicao
+  Çelik → celik
+  Khéphren → khephren
+  González → gonzalez
+*/
+
+function normalizeSearchText(
+  text
+) {
+
+  return text
+    .normalize("NFD")
+    .replace(
+      /[\u0300-\u036f]/g,
+      ""
+    )
+    .toLowerCase();
+
+}
+
+
+
+/* ==================================================
+   PERFORM SEARCH
+================================================== */
+
 function performSearch() {
 
-
   const query =
-    searchInput.value
-      .trim()
-      .toLowerCase();
+    normalizeSearchText(
+      searchInput.value.trim()
+    );
 
 
   if (!query) {
@@ -1838,11 +2064,9 @@ function performSearch() {
   }
 
 
-
   const results =
     searchData.filter(
       item => {
-
 
         const text = [
 
@@ -1853,11 +2077,12 @@ function performSearch() {
           ...item.keywords
 
         ]
-          .join(" ")
-          .toLowerCase();
+          .join(" ");
 
 
-        return text.includes(
+        return normalizeSearchText(
+          text
+        ).includes(
           query
         );
 
@@ -1865,11 +2090,9 @@ function performSearch() {
     );
 
 
-
   if (
     results.length === 0
   ) {
-
 
     searchResults.innerHTML = `
 
@@ -1895,7 +2118,6 @@ function performSearch() {
     return;
 
   }
-
 
 
   searchResults.innerHTML =
@@ -1960,7 +2182,6 @@ document.addEventListener(
   "click",
   event => {
 
-
     if (
       !event.target.closest(
         ".search-wrapper"
@@ -1980,7 +2201,6 @@ document.addEventListener(
 /* ==================================================
    START
 ================================================== */
-
 
 updateDateUI();
 
