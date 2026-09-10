@@ -595,73 +595,77 @@ function updateDateUI() {
    COMPETITIONS
 ================================================== */
 
+/*
+  I nomi qui devono corrispondere
+  ESATTAMENTE a quelli restituiti
+  dal nostro backend football-data.org.
+*/
 
 const allowedCompetitions = {
 
-
-  "UEFA Champions League": {
-    name: "UEFA Champions League",
+  "Champions League": {
+    name: "Champions League",
     order: 1
   },
-
 
   "Premier League": {
     name: "Premier League",
     order: 2
   },
 
-
   "Serie A": {
     name: "Serie A",
     order: 3
   },
-
 
   "La Liga": {
     name: "La Liga",
     order: 4
   },
 
-
   "Bundesliga": {
     name: "Bundesliga",
     order: 5
   },
-
 
   "Ligue 1": {
     name: "Ligue 1",
     order: 6
   },
 
-
-  "UEFA Europa League": {
-    name: "UEFA Europa League",
+  "Primeira Liga": {
+    name: "Primeira Liga",
     order: 7
   },
 
-
-  "UEFA Europa Conference League": {
-    name: "UEFA Conference League",
+  "Eredivisie": {
+    name: "Eredivisie",
     order: 8
   },
 
-
-  "Coppa Italia": {
-    name: "Coppa Italia",
+  "Europa League": {
+    name: "Europa League",
     order: 9
   },
 
-
-  "FA Cup": {
-    name: "FA Cup",
+  "Conference League": {
+    name: "Conference League",
     order: 10
   },
 
+  "Coppa Italia": {
+    name: "Coppa Italia",
+    order: 11
+  },
+
+  "FA Cup": {
+    name: "FA Cup",
+    order: 12
+  },
 
   "EFL Cup": {
     name: "EFL Cup",
-    order: 11
+    order: 13
   }
 
 };
@@ -1010,7 +1014,6 @@ async function loadMatches() {
       Filtriamo le competizioni
       che vogliamo mostrare.
     */
-
 
     fixtures =
       fixtures.filter(
