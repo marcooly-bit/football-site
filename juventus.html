@@ -4,39 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Juventus — Pages Of Football</title>
+  <title>Juventus · Pages Of Football</title>
 
   <link rel="stylesheet" href="juventus.css">
 </head>
 
 <body>
 
-<header class="site-header">
+  <!-- HEADER -->
 
-  <div class="logo">
-    PAGES OF FOOTBALL
-  </div>
+  <header class="site-header">
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="giocatori.html">Giocatori</a>
-    <a href="juventus.html" class="active">Squadre</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
-  </nav>
+    <div class="logo">
+      PAGES OF FOOTBALL
+    </div>
 
-  <button class="search-button">⌕</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="giocatori.html">Giocatori</a>
+      <a href="juventus.html" class="active">Squadre</a>
+      <a href="#">Competizioni</a>
+      <a href="#">Almanacco</a>
+    </nav>
 
-</header>
+    <button class="search-button">
+      ⌕
+    </button>
 
+  </header>
 
-<main>
 
   <!-- HERO -->
 
   <section class="hero">
 
     <div class="hero-image">
+
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
@@ -46,9 +49,19 @@
         </div>
 
         <div>
-          <div class="hero-kicker">ITALIA · SERIE A</div>
-          <h1>JUVENTUS</h1>
-          <p>Torino · Allianz Stadium</p>
+
+          <div class="hero-kicker">
+            ITALIA · SERIE A
+          </div>
+
+          <h1>
+            JUVENTUS
+          </h1>
+
+          <p>
+            Torino · Allianz Stadium
+          </p>
+
         </div>
 
       </div>
@@ -58,28 +71,29 @@
   </section>
 
 
-  <!-- CLUB INFO -->
+  <!-- CLUB INTRO -->
 
-  <section class="club-intro">
+  <section class="club-section">
 
     <div class="section-label">
       01 · IL CLUB
     </div>
 
-    <div class="club-intro-content">
+    <div class="club-content">
 
-      <div>
-        <h2>Juventus Football Club</h2>
-      </div>
+      <h2>
+        Una storia<br>
+        in bianconero.
+      </h2>
 
-      <div>
-        <p>
-          Fondata nel 1897 a Torino, la Juventus è uno dei club più
-          importanti e vincenti della storia del calcio italiano.
-          La sua storia attraversa più di un secolo di calcio,
-          generazioni di campioni e grandi successi nazionali e internazionali.
-        </p>
-      </div>
+      <p>
+        Fondata a Torino nel 1897, la Juventus è uno dei club più
+        importanti e vincenti della storia del calcio italiano.
+        Dalle prime vittorie nazionali fino ai grandi successi
+        internazionali, il club ha attraversato più di un secolo
+        di calcio costruendo una delle identità più riconoscibili
+        dello sport.
+      </p>
 
     </div>
 
@@ -88,37 +102,20 @@
 
   <!-- PALMARES -->
 
-  <section class="palmares">
+  <section class="palmares-section">
 
     <div class="section-label">
       02 · PALMARES
     </div>
-
-    <div class="palmares-header">
-
-      <div>
-        <h2>I trofei</h2>
-      </div>
-
-      <div>
-        <p>
-          I principali successi della Juventus nella sua storia.
-        </p>
-      </div>
-
-    </div>
-
-
-    <!-- TOP 4 -->
 
     <div class="trophy-grid">
 
       <div class="trophy-card">
 
         <img
+          class="trophy-image"
           src="images/trophies/scudetto.png"
           alt="Scudetto"
-          class="trophy-image"
         >
 
         <div class="trophy-info">
@@ -132,9 +129,9 @@
       <div class="trophy-card">
 
         <img
+          class="trophy-image"
           src="images/trophies/coppa-italia.png"
           alt="Coppa Italia"
-          class="trophy-image"
         >
 
         <div class="trophy-info">
@@ -148,9 +145,9 @@
       <div class="trophy-card">
 
         <img
+          class="trophy-image"
           src="images/trophies/supercoppa-italiana.png"
           alt="Supercoppa Italiana"
-          class="trophy-image"
         >
 
         <div class="trophy-info">
@@ -164,9 +161,9 @@
       <div class="trophy-card">
 
         <img
+          class="trophy-image"
           src="images/trophies/champions-league.png"
           alt="Champions League"
-          class="trophy-image"
         >
 
         <div class="trophy-info">
@@ -179,12 +176,11 @@
     </div>
 
 
-    <!-- OTHER TROPHIES -->
-
     <details class="other-trophies">
 
       <summary>
-        <span>＋</span> MOSTRA TUTTI I TROFEI
+        <span>＋</span>
+        ALTRI TROFEI
       </summary>
 
       <div class="other-trophies-list">
@@ -275,199 +271,333 @@
   <section class="squad-section">
 
     <div class="section-label">
-      03 · ROSA
-    </div>
-
-    <div class="squad-header">
-
-      <h2>Squadra 2026/27</h2>
-
-      <a href="giocatori.html">
-        Vedi rosa completa →
-      </a>
-
+      03 · ROSA 2026/27
     </div>
 
 
-    <div class="squad-list">
+    <!-- PORTIERI -->
 
-      <div class="squad-role">PORTIERI</div>
+    <div class="squad-group">
 
-      <div class="squad-player">
-        <span class="number">1</span>
-        <img src="images/players/kamil-grabara.png" alt="Kamil Grabara">
-        <span>Kamil Grabara</span>
+      <h3>PORTIERI</h3>
+
+      <div class="players-grid">
+
+        <a href="#" class="player-card">
+          <img src="images/players/kamil-grabara.png" alt="Kamil Grabara">
+          <span class="shirt-number">1</span>
+          <div class="player-card-info">
+            <strong>Kamil Grabara</strong>
+            <span>Portiere</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/carlo-pinsoglio.png" alt="Carlo Pinsoglio">
+          <span class="shirt-number">23</span>
+          <div class="player-card-info">
+            <strong>Carlo Pinsoglio</strong>
+            <span>Portiere</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/guglielmo-vicario.png" alt="Guglielmo Vicario">
+          <span class="shirt-number">25</span>
+          <div class="player-card-info">
+            <strong>Guglielmo Vicario</strong>
+            <span>Portiere</span>
+          </div>
+        </a>
+
       </div>
 
-      <div class="squad-player">
-        <span class="number">23</span>
-        <img src="images/players/carlo-pinsoglio.png" alt="Carlo Pinsoglio">
-        <span>Carlo Pinsoglio</span>
+    </div>
+
+
+    <!-- DIFENSORI -->
+
+    <div class="squad-group">
+
+      <h3>DIFENSORI</h3>
+
+      <div class="players-grid">
+
+        <a href="#" class="player-card">
+          <img src="images/players/mehmet-zeki-celik.png" alt="Zeki Çelik">
+          <span class="shirt-number">2</span>
+          <div class="player-card-info">
+            <strong>Zeki Çelik</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/gleison-bremer.png" alt="Bremer">
+          <span class="shirt-number">3</span>
+          <div class="player-card-info">
+            <strong>Bremer</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/federico-gatti.png" alt="Federico Gatti">
+          <span class="shirt-number">4</span>
+          <div class="player-card-info">
+            <strong>Federico Gatti</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/lloyd-kelly.png" alt="Lloyd Kelly">
+          <span class="shirt-number">6</span>
+          <div class="player-card-info">
+            <strong>Lloyd Kelly</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/pierre-kalulu.png" alt="Pierre Kalulu">
+          <span class="shirt-number">15</span>
+          <div class="player-card-info">
+            <strong>Pierre Kalulu</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/andrea-cambiaso.png" alt="Andrea Cambiaso">
+          <span class="shirt-number">20</span>
+          <div class="player-card-info">
+            <strong>Andrea Cambiaso</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/daniele-rugani.png" alt="Daniele Rugani">
+          <span class="shirt-number">24</span>
+          <div class="player-card-info">
+            <strong>Daniele Rugani</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/jhon-lucumi.png" alt="Jhon Lucumí">
+          <span class="shirt-number">26</span>
+          <div class="player-card-info">
+            <strong>Jhon Lucumí</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/juan-david-cabal.png" alt="Juan David Cabal">
+          <span class="shirt-number">32</span>
+          <div class="player-card-info">
+            <strong>Juan David Cabal</strong>
+            <span>Difensore</span>
+          </div>
+        </a>
+
       </div>
 
-      <div class="squad-player">
-        <span class="number">25</span>
-        <img src="images/players/guglielmo-vicario.png" alt="Guglielmo Vicario">
-        <span>Guglielmo Vicario</span>
+    </div>
+
+
+    <!-- CENTROCAMPISTI -->
+
+    <div class="squad-group">
+
+      <h3>CENTROCAMPISTI</h3>
+
+      <div class="players-grid">
+
+        <a href="#" class="player-card">
+          <img src="images/players/manuel-locatelli.png" alt="Manuel Locatelli">
+          <span class="shirt-number">5</span>
+          <div class="player-card-info">
+            <strong>Manuel Locatelli</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/teun-koopmeiners.png" alt="Teun Koopmeiners">
+          <span class="shirt-number">8</span>
+          <div class="player-card-info">
+            <strong>Teun Koopmeiners</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/douglas-luiz.png" alt="Douglas Luiz">
+          <span class="shirt-number">12</span>
+          <div class="player-card-info">
+            <strong>Douglas Luiz</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/kerim-alajbegovic.png" alt="Kerim Alajbegović">
+          <span class="shirt-number">17</span>
+          <div class="player-card-info">
+            <strong>Kerim Alajbegović</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/khephren-thuram.png" alt="Khéphren Thuram">
+          <span class="shirt-number">19</span>
+          <div class="player-card-info">
+            <strong>Khéphren Thuram</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/weston-mckennie.png" alt="Weston McKennie">
+          <span class="shirt-number">22</span>
+          <div class="player-card-info">
+            <strong>Weston McKennie</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/pape-matar-sarr.png" alt="Pape Matar Sarr">
+          <span class="shirt-number">29</span>
+          <div class="player-card-info">
+            <strong>Pape Matar Sarr</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/nicolas-gonzalez.png" alt="Nicolás González">
+          <span class="shirt-number">31</span>
+          <div class="player-card-info">
+            <strong>Nicolás González</strong>
+            <span>Centrocampista</span>
+          </div>
+        </a>
+
       </div>
 
-
-      <div class="squad-role">DIFENSORI</div>
-
-      <div class="squad-player">
-        <span class="number">2</span>
-        <img src="images/players/mehmet-zeki-celik.png" alt="Mehmet Zeki Çelik">
-        <span>Mehmet Zeki Çelik</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">3</span>
-        <img src="images/players/gleison-bremer.png" alt="Gleison Bremer">
-        <span>Gleison Bremer</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">4</span>
-        <img src="images/players/federico-gatti.png" alt="Federico Gatti">
-        <span>Federico Gatti</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">6</span>
-        <img src="images/players/lloyd-kelly.png" alt="Lloyd Kelly">
-        <span>Lloyd Kelly</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">15</span>
-        <img src="images/players/pierre-kalulu.png" alt="Pierre Kalulu">
-        <span>Pierre Kalulu</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">20</span>
-        <img src="images/players/andrea-cambiaso.png" alt="Andrea Cambiaso">
-        <span>Andrea Cambiaso</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">24</span>
-        <img src="images/players/daniele-rugani.png" alt="Daniele Rugani">
-        <span>Daniele Rugani</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">26</span>
-        <img src="images/players/jhon-lucumi.png" alt="Jhon Lucumí">
-        <span>Jhon Lucumí</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">32</span>
-        <img src="images/players/juan-david-cabal.png" alt="Juan David Cabal">
-        <span>Juan David Cabal</span>
-      </div>
+    </div>
 
 
-      <div class="squad-role">CENTROCAMPISTI</div>
+    <!-- ATTACCANTI -->
 
-      <div class="squad-player">
-        <span class="number">5</span>
-        <img src="images/players/manuel-locatelli.png" alt="Manuel Locatelli">
-        <span>Manuel Locatelli</span>
-      </div>
+    <div class="squad-group">
 
-      <div class="squad-player">
-        <span class="number">8</span>
-        <img src="images/players/teun-koopmeiners.png" alt="Teun Koopmeiners">
-        <span>Teun Koopmeiners</span>
-      </div>
+      <h3>ATTACCANTI</h3>
 
-      <div class="squad-player">
-        <span class="number">12</span>
-        <img src="images/players/douglas-luiz.png" alt="Douglas Luiz">
-        <span>Douglas Luiz</span>
-      </div>
+      <div class="players-grid">
 
-      <div class="squad-player">
-        <span class="number">17</span>
-        <img src="images/players/kerim-alajbegovic.png" alt="Kerim Alajbegović">
-        <span>Kerim Alajbegović</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">19</span>
-        <img src="images/players/khephren-thuram.png" alt="Khéphren Thuram">
-        <span>Khéphren Thuram</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">22</span>
-        <img src="images/players/weston-mckennie.png" alt="Weston McKennie">
-        <span>Weston McKennie</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">29</span>
-        <img src="images/players/pape-matar-sarr.png" alt="Pape Matar Sarr">
-        <span>Pape Matar Sarr</span>
-      </div>
-
-      <div class="squad-player">
-        <span class="number">31</span>
-        <img src="images/players/nicolas-gonzalez.png" alt="Nicolás González">
-        <span>Nicolás González</span>
-      </div>
+        <a href="#" class="player-card">
+          <img src="images/players/francisco-conceicao.png" alt="Francisco Conceição">
+          <span class="shirt-number">7</span>
+          <div class="player-card-info">
+            <strong>Francisco Conceição</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
 
 
-      <div class="squad-role">ATTACCANTI</div>
+        <a href="#" class="player-card">
+          <img src="images/players/randal-kolo-muani.png" alt="Randal Kolo Muani">
+          <span class="shirt-number">9</span>
+          <div class="player-card-info">
+            <strong>Randal Kolo Muani</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
 
-      <div class="squad-player">
-        <span class="number">7</span>
-        <img src="images/players/francisco-conceicao.png" alt="Francisco Conceição">
-        <span>Francisco Conceição</span>
-      </div>
 
-      <div class="squad-player">
-        <span class="number">9</span>
-        <img src="images/players/randal-kolo-muani.png" alt="Randal Kolo Muani">
-        <span>Randal Kolo Muani</span>
-      </div>
+        <a href="#" class="player-card">
+          <img src="images/players/kenan-yildiz.png" alt="Kenan Yildiz">
+          <span class="shirt-number">10</span>
+          <div class="player-card-info">
+            <strong>Kenan Yildiz</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
 
-      <div class="squad-player">
-        <span class="number">10</span>
-        <img src="images/players/kenan-yildiz.png" alt="Kenan Yildiz">
-        <span>Kenan Yildiz</span>
-      </div>
 
-      <div class="squad-player">
-        <span class="number">11</span>
-        <img src="images/players/edon-zhegrova.png" alt="Edon Zhegrova">
-        <span>Edon Zhegrova</span>
-      </div>
+        <a href="#" class="player-card">
+          <img src="images/players/edon-zhegrova.png" alt="Edon Zhegrova">
+          <span class="shirt-number">11</span>
+          <div class="player-card-info">
+            <strong>Edon Zhegrova</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
 
-      <div class="squad-player">
-        <span class="number">13</span>
-        <img src="images/players/jeremie-boga.png" alt="Jérémie Boga">
-        <span>Jérémie Boga</span>
-      </div>
 
-      <div class="squad-player">
-        <span class="number">14</span>
-        <img src="images/players/arkadiusz-milik.png" alt="Arkadiusz Milik">
-        <span>Arkadiusz Milik</span>
-      </div>
+        <a href="#" class="player-card">
+          <img src="images/players/jeremie-boga.png" alt="Jérémie Boga">
+          <span class="shirt-number">13</span>
+          <div class="player-card-info">
+            <strong>Jérémie Boga</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
 
-      <div class="squad-player">
-        <span class="number">18</span>
-        <img src="images/players/jeff-ekhator.png" alt="Jeff Ekhator">
-        <span>Jeff Ekhator</span>
-      </div>
 
-      <div class="squad-player">
-        <span class="number">27</span>
-        <img src="images/players/nick-woltemade.png" alt="Nick Woltemade">
-        <span>Nick Woltemade</span>
+        <a href="#" class="player-card">
+          <img src="images/players/arkadiusz-milik.png" alt="Arkadiusz Milik">
+          <span class="shirt-number">14</span>
+          <div class="player-card-info">
+            <strong>Arkadiusz Milik</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/jeff-ekhator.png" alt="Jeff Ekhator">
+          <span class="shirt-number">18</span>
+          <div class="player-card-info">
+            <strong>Jeff Ekhator</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
+
+
+        <a href="#" class="player-card">
+          <img src="images/players/nick-woltemade.png" alt="Nick Woltemade">
+          <span class="shirt-number">27</span>
+          <div class="player-card-info">
+            <strong>Nick Woltemade</strong>
+            <span>Attaccante</span>
+          </div>
+        </a>
+
       </div>
 
     </div>
@@ -485,21 +615,16 @@
 
     <div class="transfers-grid">
 
-
       <!-- IN -->
 
       <div class="transfer-column">
 
         <h3>IN</h3>
 
-
         <div class="transfer">
 
           <div class="transfer-photo">
-            <img
-              src="images/players/lois-openda.png"
-              alt="Loïs Openda"
-            >
+            <img src="images/players/lois-openda.png" alt="Loïs Openda">
           </div>
 
           <strong class="transfer-player">
@@ -507,6 +632,10 @@
           </strong>
 
           <div class="transfer-club-area">
+
+            <span class="transfer-arrow">
+              ←
+            </span>
 
             <a
               href="rb-leipzig.html"
@@ -518,8 +647,6 @@
                 alt="RB Leipzig"
               >
             </a>
-
-            <span class="transfer-arrow">←</span>
 
           </div>
 
@@ -545,18 +672,20 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              ←
+            </span>
+
             <a
               href="psg.html"
               class="transfer-club"
-              title="Paris Saint-Germain"
+              title="PSG"
             >
               <img
                 src="images/teams/psg.png"
-                alt="Paris Saint-Germain"
+                alt="PSG"
               >
             </a>
-
-            <span class="transfer-arrow">←</span>
 
           </div>
 
@@ -582,6 +711,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              ←
+            </span>
+
             <a
               href="bayer-leverkusen.html"
               class="transfer-club"
@@ -592,8 +725,6 @@
                 alt="Bayer Leverkusen"
               >
             </a>
-
-            <span class="transfer-arrow">←</span>
 
           </div>
 
@@ -619,6 +750,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              ←
+            </span>
+
             <a
               href="bologna.html"
               class="transfer-club"
@@ -629,8 +764,6 @@
                 alt="Bologna"
               >
             </a>
-
-            <span class="transfer-arrow">←</span>
 
           </div>
 
@@ -656,6 +789,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              ←
+            </span>
+
             <a
               href="genoa.html"
               class="transfer-club"
@@ -666,8 +803,6 @@
                 alt="Genoa"
               >
             </a>
-
-            <span class="transfer-arrow">←</span>
 
           </div>
 
@@ -686,7 +821,6 @@
 
         <h3>OUT</h3>
 
-
         <div class="transfer">
 
           <div class="transfer-photo">
@@ -702,6 +836,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              →
+            </span>
+
             <a
               href="marseille.html"
               class="transfer-club"
@@ -712,8 +850,6 @@
                 alt="Olympique Marseille"
               >
             </a>
-
-            <span class="transfer-arrow">→</span>
 
           </div>
 
@@ -739,6 +875,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              →
+            </span>
+
             <a
               href="besiktas.html"
               class="transfer-club"
@@ -749,8 +889,6 @@
                 alt="Beşiktaş"
               >
             </a>
-
-            <span class="transfer-arrow">→</span>
 
           </div>
 
@@ -776,6 +914,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              →
+            </span>
+
             <a
               href="bournemouth.html"
               class="transfer-club"
@@ -786,8 +928,6 @@
                 alt="Bournemouth"
               >
             </a>
-
-            <span class="transfer-arrow">→</span>
 
           </div>
 
@@ -813,6 +953,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              →
+            </span>
+
             <a
               href="besiktas.html"
               class="transfer-club"
@@ -823,8 +967,6 @@
                 alt="Beşiktaş"
               >
             </a>
-
-            <span class="transfer-arrow">→</span>
 
           </div>
 
@@ -850,6 +992,10 @@
 
           <div class="transfer-club-area">
 
+            <span class="transfer-arrow">
+              →
+            </span>
+
             <a
               href="fiorentina.html"
               class="transfer-club"
@@ -860,8 +1006,6 @@
                 alt="Fiorentina"
               >
             </a>
-
-            <span class="transfer-arrow">→</span>
 
           </div>
 
@@ -897,13 +1041,22 @@
           >
         </div>
 
-        <span class="legend-number">10</span>
+        <span class="legend-number">
+          01
+        </span>
 
-        <h3>Alessandro<br>Del Piero</h3>
+        <h3>
+          Alessandro<br>
+          Del Piero
+        </h3>
 
-        <p>188 gol · 705 presenze</p>
+        <p>
+          1993–2012
+        </p>
 
-        <b>→</b>
+        <b>
+          →
+        </b>
 
       </div>
 
@@ -917,13 +1070,22 @@
           >
         </div>
 
-        <span class="legend-number">01</span>
+        <span class="legend-number">
+          02
+        </span>
 
-        <h3>Gianluigi<br>Buffon</h3>
+        <h3>
+          Gianluigi<br>
+          Buffon
+        </h3>
 
-        <p>489 presenze · 10 trofei</p>
+        <p>
+          2001–2018 · 2019–2021
+        </p>
 
-        <b>→</b>
+        <b>
+          →
+        </b>
 
       </div>
 
@@ -937,13 +1099,22 @@
           >
         </div>
 
-        <span class="legend-number">10</span>
+        <span class="legend-number">
+          03
+        </span>
 
-        <h3>Michel<br>Platini</h3>
+        <h3>
+          Michel<br>
+          Platini
+        </h3>
 
-        <p>104 gol · 224 presenze</p>
+        <p>
+          1982–1987
+        </p>
 
-        <b>→</b>
+        <b>
+          →
+        </b>
 
       </div>
 
@@ -957,13 +1128,22 @@
           >
         </div>
 
-        <span class="legend-number">06</span>
+        <span class="legend-number">
+          04
+        </span>
 
-        <h3>Gaetano<br>Scirea</h3>
+        <h3>
+          Gaetano<br>
+          Scirea
+        </h3>
 
-        <p>552 presenze · 7 trofei</p>
+        <p>
+          1974–1988
+        </p>
 
-        <b>→</b>
+        <b>
+          →
+        </b>
 
       </div>
 
@@ -996,20 +1176,21 @@
 
   </section>
 
-</main>
 
+  <!-- FOOTER -->
 
-<footer>
+  <footer>
 
-  <div>
-    PAGES OF FOOTBALL
-  </div>
+    <div>
+      PAGES OF FOOTBALL
+    </div>
 
-  <span>
-    Football history, one page at a time.
-  </span>
+    <span>
+      Football history, one page at a time.
+    </span>
 
-</footer>
+  </footer>
+
 
 </body>
 </html>
