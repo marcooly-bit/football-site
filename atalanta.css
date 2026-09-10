@@ -1,1 +1,802 @@
+```css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f5f1;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+  height: 72px;
+  padding: 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d1ca;
+  background: #f6f5f1;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #111;
+  text-decoration: none;
+}
+
+.logo-mark {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #111;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.site-logo span:last-child {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  display: flex;
+  gap: 34px;
+}
+
+.main-nav a {
+  color: #777;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: color .2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #111;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-image {
+  position: relative;
+  min-height: 560px;
+  padding: 60px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.82),
+    rgba(0,0,0,.28) 65%,
+    rgba(0,0,0,.08)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 28px;
+}
+
+.club-crest {
+  width: 92px;
+  height: 92px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.95);
+  border: 1px solid rgba(255,255,255,.7);
+}
+
+.club-crest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-text {
+  max-width: 700px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,.68);
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 76px;
+  line-height: .9;
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+
+.hero-subtitle {
+  margin: 18px 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,.72);
+}
+
+
+/* =========================
+   GENERIC SECTIONS
+========================= */
+
+.section {
+  position: relative;
+  padding: 90px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.section-number {
+  position: absolute;
+  top: 92px;
+  left: 60px;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+.section-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-label {
+  margin: 0 0 12px;
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section h2 {
+  margin: 0 0 45px;
+  font-size: 46px;
+  line-height: .95;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+
+/* =========================
+   CLUB
+========================= */
+
+.club-grid {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 90px;
+}
+
+.club-grid > div:first-child p {
+  margin: 0;
+  max-width: 620px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.club-facts {
+  border-top: 1px solid #d3d1ca;
+}
+
+.fact {
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.fact span {
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.fact strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* =========================
+   TROPHIES
+========================= */
+
+.trophy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #d3d1ca;
+  border-left: 1px solid #d3d1ca;
+}
+
+.trophy-card {
+  min-height: 260px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #d3d1ca;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.trophy-image {
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trophy-image img {
+  max-width: 85px;
+  max-height: 115px;
+  object-fit: contain;
+}
+
+.trophy-card strong {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.trophy-card span {
+  margin-top: 8px;
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+
+/* =========================
+   SQUAD
+========================= */
+
+.section-heading-row {
+  margin-bottom: 45px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section-heading-row h2 {
+  margin-bottom: 0;
+}
+
+.season-tag {
+  padding: 9px 13px;
+  border: 1px solid #d3d1ca;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+}
+
+.position-group {
+  margin-bottom: 55px;
+}
+
+.position-group h3 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d3d1ca;
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.player-card {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background: #e8e6e0;
+  border: 1px solid #d3d1ca;
+}
+
+.player-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.player-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.82),
+    rgba(0,0,0,.08) 70%
+  );
+}
+
+.player-number {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  z-index: 2;
+  color: rgba(255,255,255,.82);
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.player-info {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+}
+
+.player-info strong {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.player-info span {
+  color: rgba(255,255,255,.65);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   COMPETITION BUTTON
+========================= */
+
+.competition-button {
+  margin-top: 10px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background .2s ease;
+}
+
+.competition-button:hover {
+  background: #164a73;
+}
+
+
+/* =========================
+   COACH
+========================= */
+
+.coach-card {
+  max-width: 760px;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  background: #e8e6e0;
+  border: 1px solid #d3d1ca;
+}
+
+.coach-card > img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.coach-info {
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coach-role {
+  margin-bottom: 15px;
+  color: #888;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.coach-info h3 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.coach-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   TRANSFERS
+========================= */
+
+.transfer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+.transfer-column h3 {
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #111;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.transfer-item {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.transfer-item strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.transfer-item span {
+  color: #888;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   LEGENDS
+========================= */
+
+.legends-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.legend-card {
+  position: relative;
+  height: 290px;
+  overflow: hidden;
+  background: #e8e6e0;
+  border: 1px solid #d3d1ca;
+}
+
+.legend-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.legend-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.8),
+    rgba(0,0,0,0) 65%
+  );
+}
+
+.legend-card div {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+}
+
+.legend-card strong {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.legend-card span {
+  color: rgba(255,255,255,.65);
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.history-grid p {
+  margin: 0 0 22px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d3d1ca;
+  background: #f6f5f1;
+}
+
+footer strong {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer span {
+  color: #888;
+  font-size: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .section-number {
+    position: static;
+    margin-bottom: 25px;
+  }
+
+  .player-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .legends-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .club-grid {
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .site-header {
+    padding: 0 25px;
+  }
+
+  .main-nav {
+    gap: 18px;
+  }
+
+  .main-nav a {
+    font-size: 9px;
+  }
+
+  .hero-image {
+    min-height: 500px;
+    padding: 35px;
+  }
+
+  .hero-text h1 {
+    font-size: 62px;
+  }
+
+  .section {
+    padding: 70px 35px;
+  }
+
+  .club-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .transfer-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  footer {
+    padding: 30px 35px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .site-header {
+    height: 65px;
+  }
+
+  .site-logo span:last-child {
+    display: none;
+  }
+
+  .main-nav {
+    gap: 14px;
+  }
+
+  .main-nav a {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .hero-image {
+    min-height: 440px;
+    padding: 25px;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .club-crest {
+    width: 72px;
+    height: 72px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .hero-subtitle {
+    font-size: 11px;
+  }
+
+  .section {
+    padding: 55px 25px;
+  }
+
+  .section h2 {
+    font-size: 38px;
+    margin-bottom: 35px;
+  }
+
+  .trophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .player-card {
+    height: 190px;
+  }
+
+  .player-info {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .player-info strong {
+    font-size: 12px;
+  }
+
+  .player-info span {
+    font-size: 8px;
+  }
+
+  .coach-card {
+    grid-template-columns: 1fr;
+  }
+
+  .coach-card > img {
+    height: 300px;
+  }
+
+  .coach-info {
+    padding: 28px;
+  }
+
+  .legends-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legend-card {
+    height: 240px;
+  }
+
+  footer {
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+```
 
