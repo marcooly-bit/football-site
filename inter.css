@@ -1,3 +1,4 @@
+```css
 * {
   box-sizing: border-box;
 }
@@ -269,6 +270,113 @@ nav a.active {
   border-bottom: 1px solid #d3d1ca;
 }
 
+
+/* COMPETITION BUTTON */
+
+.competition-button {
+  width: min(520px, 100%);
+  min-height: 88px;
+  margin: 34px 0 52px;
+  padding: 12px 14px 12px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  color: #111;
+  text-decoration: none;
+
+  background: #fff;
+  border: 1px solid #d3d1ca;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.competition-button:hover {
+  background: #eeece7;
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+
+/* LOGO */
+
+.competition-button-logo {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f6f5f1;
+  border: 1px solid #d3d1ca;
+
+  flex-shrink: 0;
+}
+
+.competition-button-logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+
+/* TEXT */
+
+.competition-button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.competition-button-content span {
+  color: #888;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.competition-button-content strong {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+}
+
+
+/* ARROW */
+
+.competition-button-arrow {
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d3d1ca;
+
+  font-size: 20px;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.competition-button:hover .competition-button-arrow {
+  background: #111;
+  color: white;
+  transform: translateX(3px);
+}
+
+
+/* POSITION TITLES */
+
 .position-title {
   margin-top: 50px;
   margin-bottom: 18px;
@@ -276,6 +384,9 @@ nav a.active {
   letter-spacing: 2px;
   color: #777;
 }
+
+
+/* PLAYER CARDS */
 
 .players-grid {
   display: grid;
@@ -615,6 +726,38 @@ footer span {
     padding: 60px 25px;
   }
 
+
+  /* COMPETITION BUTTON */
+
+  .competition-button {
+    width: 100%;
+    min-height: 76px;
+    margin-top: 28px;
+    margin-bottom: 42px;
+    gap: 12px;
+  }
+
+  .competition-button-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .competition-button-logo img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .competition-button-content strong {
+    font-size: 18px;
+  }
+
+  .competition-button-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+
   .players-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -640,3 +783,4 @@ footer span {
   }
 
 }
+```
