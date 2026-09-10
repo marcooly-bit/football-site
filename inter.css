@@ -468,6 +468,125 @@ nav a.active {
 }
 
 
+/* COACH */
+
+.coach-section {
+  padding: 85px 60px;
+  border-bottom: 1px solid #d3d1ca;
+}
+
+.coach-card {
+  width: min(760px, 100%);
+  min-height: 180px;
+
+  margin-top: 55px;
+
+  display: flex;
+  align-items: center;
+
+  background: #fff;
+  border: 1px solid #d3d1ca;
+
+  text-decoration: none;
+  color: #111;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.coach-card:hover {
+  background: #eeece7;
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+.coach-photo {
+  width: 180px;
+  height: 180px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #d7d5cf;
+}
+
+.coach-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+.coach-info {
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-kicker {
+  margin-bottom: 8px;
+
+  color: #888;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.coach-info strong {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -.8px;
+}
+
+.coach-info span {
+  margin-top: 8px;
+
+  color: #777;
+
+  font-size: 10px;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+.coach-arrow {
+  width: 42px;
+  height: 42px;
+
+  margin-left: auto;
+  margin-right: 24px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d3d1ca;
+
+  font-size: 20px;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.coach-card:hover .coach-arrow {
+  background: #111;
+  color: white;
+  transform: translateX(3px);
+}
+
+
 /* TRANSFERS */
 
 .transfers-section {
@@ -720,6 +839,7 @@ footer span {
   .club-section,
   .palmares-section,
   .squad-section,
+  .coach-section,
   .transfers-section,
   .legends-section,
   .history-section {
@@ -765,6 +885,34 @@ footer span {
   .player-card {
     height: 210px;
   }
+
+
+  /* COACH */
+
+  .coach-card {
+    min-height: 130px;
+  }
+
+  .coach-photo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .coach-info {
+    padding: 20px;
+  }
+
+  .coach-info strong {
+    font-size: 21px;
+  }
+
+  .coach-arrow {
+    width: 34px;
+    height: 34px;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+
 
   .transfers-grid {
     grid-template-columns: 1fr;
