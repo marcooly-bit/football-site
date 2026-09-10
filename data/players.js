@@ -10,7 +10,7 @@ const players = [
     team: "Juventus",
     number: 1,
     position: "Portiere",
-    image: "images/players/grabara.png"
+    image: "images/players/kamil-grabara.png"
   },
 
   {
@@ -18,7 +18,7 @@ const players = [
     team: "Juventus",
     number: 23,
     position: "Portiere",
-    image: "images/players/pinsoglio.png"
+    image: "images/players/carlo-pinsoglio.png"
   },
 
   {
@@ -26,7 +26,7 @@ const players = [
     team: "Juventus",
     number: 25,
     position: "Portiere",
-    image: "images/players/vicario.png"
+    image: "images/players/guglielmo-vicario.png"
   },
 
   {
@@ -59,11 +59,19 @@ const players = [
   // =========================
 
   {
+    name: "Zeki Çelik",
+    team: "Juventus",
+    number: 2,
+    position: "Difensore",
+    image: "images/players/mehmet-zeki-celik.png"
+  },
+
+  {
     name: "Bremer",
     team: "Juventus",
     number: 3,
     position: "Difensore",
-    image: "images/players/bremer.png"
+    image: "images/players/gleison-bremer.png"
   },
 
   {
@@ -71,7 +79,7 @@ const players = [
     team: "Juventus",
     number: 4,
     position: "Difensore",
-    image: "images/players/gatti.png"
+    image: "images/players/federico-gatti.png"
   },
 
   {
@@ -79,7 +87,7 @@ const players = [
     team: "Juventus",
     number: 6,
     position: "Difensore",
-    image: "images/players/kelly.png"
+    image: "images/players/lloyd-kelly.png"
   },
 
   {
@@ -87,7 +95,7 @@ const players = [
     team: "Juventus",
     number: 15,
     position: "Difensore",
-    image: "images/players/kalulu.png"
+    image: "images/players/pierre-kalulu.png"
   },
 
   {
@@ -95,7 +103,7 @@ const players = [
     team: "Juventus",
     number: 20,
     position: "Difensore",
-    image: "images/players/cambiaso.png"
+    image: "images/players/andrea-cambiaso.png"
   },
 
   {
@@ -103,7 +111,7 @@ const players = [
     team: "Juventus",
     number: 24,
     position: "Difensore",
-    image: "images/players/rugani.png"
+    image: "images/players/daniele-rugani.png"
   },
 
   {
@@ -111,7 +119,7 @@ const players = [
     team: "Juventus",
     number: 26,
     position: "Difensore",
-    image: "images/players/lucumi.png"
+    image: "images/players/jhon-lucumi.png"
   },
 
   {
@@ -119,15 +127,7 @@ const players = [
     team: "Juventus",
     number: 32,
     position: "Difensore",
-    image: "images/players/cabal.png"
-  },
-
-  {
-    name: "Zeki Çelik",
-    team: "Juventus",
-    number: 2,
-    position: "Difensore",
-    image: "images/players/celik.png"
+    image: "images/players/juan-david-cabal.png"
   },
 
   {
@@ -204,7 +204,7 @@ const players = [
     team: "Juventus",
     number: 5,
     position: "Centrocampista",
-    image: "images/players/locatelli.png"
+    image: "images/players/manuel-locatelli.png"
   },
 
   {
@@ -212,7 +212,7 @@ const players = [
     team: "Juventus",
     number: 8,
     position: "Centrocampista",
-    image: "images/players/koopmeiners.png"
+    image: "images/players/teun-koopmeiners.png"
   },
 
   {
@@ -228,7 +228,7 @@ const players = [
     team: "Juventus",
     number: 17,
     position: "Centrocampista",
-    image: "images/players/alajbegovic.png"
+    image: "images/players/kerim-alajbegovic.png"
   },
 
   {
@@ -236,7 +236,7 @@ const players = [
     team: "Juventus",
     number: 19,
     position: "Centrocampista",
-    image: "images/players/thuram-k.png"
+    image: "images/players/khephren-thuram.png"
   },
 
   {
@@ -244,7 +244,7 @@ const players = [
     team: "Juventus",
     number: 22,
     position: "Centrocampista",
-    image: "images/players/mckennie.png"
+    image: "images/players/weston-mckennie.png"
   },
 
   {
@@ -252,7 +252,7 @@ const players = [
     team: "Juventus",
     number: 29,
     position: "Centrocampista",
-    image: "images/players/sarr.png"
+    image: "images/players/pape-matar-sarr.png"
   },
 
   {
@@ -337,7 +337,7 @@ const players = [
     team: "Juventus",
     number: 7,
     position: "Attaccante",
-    image: "images/players/conceicao.png"
+    image: "images/players/francisco-conceicao.png"
   },
 
   {
@@ -345,7 +345,7 @@ const players = [
     team: "Juventus",
     number: 9,
     position: "Attaccante",
-    image: "images/players/kolo-muani.png"
+    image: "images/players/randal-kolo-muani.png"
   },
 
   {
@@ -353,7 +353,7 @@ const players = [
     team: "Juventus",
     number: 10,
     position: "Attaccante",
-    image: "images/players/yildiz.png"
+    image: "images/players/kenan-yildiz.png"
   },
 
   {
@@ -361,7 +361,7 @@ const players = [
     team: "Juventus",
     number: 11,
     position: "Attaccante",
-    image: "images/players/zhegrova.png"
+    image: "images/players/edon-zhegrova.png"
   },
 
   {
@@ -369,7 +369,7 @@ const players = [
     team: "Juventus",
     number: 13,
     position: "Attaccante",
-    image: "images/players/boga.png"
+    image: "images/players/jeremie-boga.png"
   },
 
   {
@@ -377,7 +377,7 @@ const players = [
     team: "Juventus",
     number: 14,
     position: "Attaccante",
-    image: "images/players/milik.png"
+    image: "images/players/arkadiusz-milik.png"
   },
 
   {
@@ -385,7 +385,7 @@ const players = [
     team: "Juventus",
     number: 18,
     position: "Attaccante",
-    image: "images/players/ekhator.png"
+    image: "images/players/jeff-ekhator.png"
   },
 
   {
@@ -393,7 +393,7 @@ const players = [
     team: "Juventus",
     number: 27,
     position: "Attaccante",
-    image: "images/players/woltemade.png"
+    image: "images/players/nick-woltemade.png"
   },
 
   {
@@ -438,4 +438,3 @@ const players = [
 
 ];
 ```
-
