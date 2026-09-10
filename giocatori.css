@@ -1,115 +1,120 @@
-/* =========================================
-   PLAYERS PAGE — PAGES OF FOOTBALL
-   ========================================= */
+```css
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f5f1;
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
-/* =========================================
-   HEADER
-   ========================================= */
+/* HEADER */
 
 .site-header {
+  height: 72px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 22px 6%;
-  border-bottom: 1px solid #e8e8e8;
-  background: #ffffff;
+  justify-content: space-between;
+  padding: 0 42px;
+  border-bottom: 1px solid #d3d1ca;
+  background: #f6f5f1;
 }
 
 .brand a {
-  color: #111111;
+  color: #111;
   text-decoration: none;
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .main-nav {
   display: flex;
-  gap: 30px;
+  gap: 34px;
 }
 
 .main-nav a {
-  color: #666666;
+  color: #777;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  transition: color 0.2s ease;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: color .2s ease;
 }
 
 .main-nav a:hover,
 .main-nav a.active {
-  color: #111111;
+  color: #111;
 }
 
 
-/* =========================================
-   HERO
-   ========================================= */
+/* HERO */
 
 .players-hero {
-  padding: 85px 6% 70px;
-  background: #f6f6f4;
+  padding: 90px 60px 75px;
+  border-bottom: 1px solid #d3d1ca;
 }
 
 .players-hero-content {
-  max-width: 900px;
+  max-width: 760px;
 }
 
 .eyebrow {
   display: block;
   margin-bottom: 18px;
-  font-size: 11px;
-  font-weight: 800;
+  color: #777;
+  font-size: 10px;
   letter-spacing: 2px;
-  color: #777777;
 }
 
 .players-hero h1 {
-  margin: 0;
-  font-size: clamp(52px, 7vw, 92px);
-  line-height: 0.95;
-  letter-spacing: -4px;
-  font-weight: 900;
-  color: #111111;
+  margin: 0 0 22px;
+  font-size: 58px;
+  line-height: .95;
+  font-weight: 500;
+  letter-spacing: -2px;
 }
 
 .players-hero p {
-  margin: 24px 0 0;
-  max-width: 550px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #666666;
+  max-width: 600px;
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 
-/* =========================================
-   TOOLBAR
-   ========================================= */
+/* TOOLBAR */
 
 .players-toolbar {
+  min-height: 105px;
+  padding: 22px 60px;
+
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 35px 6%;
-  border-bottom: 1px solid #e6e6e6;
-  background: #ffffff;
+
+  background: #111;
+  color: white;
 }
 
 .toolbar-label {
   display: block;
   margin-bottom: 7px;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 1.7px;
-  color: #999999;
+  color: #888;
+  font-size: 8px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 }
 
 .players-toolbar h2 {
   margin: 0;
-  font-size: 28px;
-  letter-spacing: -1px;
-  color: #111111;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: -.5px;
 }
 
 .toolbar-season {
@@ -117,423 +122,350 @@
 }
 
 .toolbar-season strong {
-  font-size: 15px;
-  color: #111111;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 
-/* =========================================
-   MAIN PLAYERS PAGE
-   ========================================= */
+/* PLAYERS PAGE */
 
 .players-page {
-  padding: 70px 6% 100px;
-  background: #ffffff;
+  padding: 0 60px 90px;
 }
 
 
-/* =========================================
-   TEAM SECTION
-   ========================================= */
+/* POSITION SECTION */
 
 .team-section {
-  margin-bottom: 90px;
+  padding: 75px 0 0;
 }
 
 .section-heading {
   display: flex;
   align-items: flex-start;
-  gap: 18px;
-  margin-bottom: 30px;
+  gap: 22px;
+  margin-bottom: 32px;
 }
 
 .section-number {
-  padding-top: 4px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #aaaaaa;
+  padding-top: 3px;
+  color: #999;
+  font-size: 10px;
+  letter-spacing: 1.5px;
 }
 
 .section-kicker {
   display: block;
-  margin-bottom: 5px;
-  font-size: 10px;
-  font-weight: 800;
+  margin-bottom: 7px;
+  color: #777;
+  font-size: 9px;
   letter-spacing: 1.8px;
-  color: #999999;
 }
 
 .section-heading h2 {
   margin: 0;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 1;
-  letter-spacing: -1.2px;
-  color: #111111;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 
 
-/* =========================================
-   PLAYERS GRID
-   ========================================= */
+/* PLAYERS LIST */
 
-.players-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+.players-list {
+  border-top: 1px solid #d3d1ca;
 }
 
 
-/* =========================================
-   PLAYER CARD
-   ========================================= */
+/* PLAYER ROW */
 
-.player-card {
-  position: relative;
-  display: block;
-  height: 250px;
-  overflow: hidden;
+.player-row {
+  min-height: 76px;
 
-  background: #171717;
+  display: flex;
+  align-items: center;
 
+  color: #111;
   text-decoration: none;
-  color: #ffffff;
 
-  border-radius: 3px;
+  border-bottom: 1px solid #d3d1ca;
 
   transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+    background .2s ease,
+    padding-left .2s ease;
 }
 
-.player-card:hover {
-  transform: translateY(-4px);
-
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0, 0.14);
+.player-row:hover {
+  background: #eeece7;
+  padding-left: 8px;
 }
 
 
-/* =========================================
-   PLAYER IMAGE
-   ========================================= */
+/* NUMBER */
 
-.player-card img {
-  position: absolute;
-  inset: 0;
+.player-row-number {
+  width: 55px;
+  flex-shrink: 0;
 
+  color: #888;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: left;
+}
+
+
+/* PHOTO */
+
+.player-row-photo {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+
+  background: #d7d5cf;
+  border: 1px solid #d3d1ca;
+}
+
+.player-row-photo img {
   width: 100%;
   height: 100%;
 
+  display: block;
+
   object-fit: cover;
   object-position: center top;
+}
+
+
+/* NAME */
+
+.player-row-name {
+  min-width: 0;
+  margin-left: 18px;
+}
+
+.player-row-name strong {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+
+/* TEAM */
+
+.player-row-team {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.player-row-team span {
+  color: #777;
+  font-size: 10px;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+
+/* ARROW */
+
+.player-row-arrow {
+  width: 42px;
+  height: 42px;
+
+  margin-left: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d3d1ca;
+
+  color: #111;
+  font-size: 17px;
 
   transition:
-    transform 0.45s ease;
+    background .2s ease,
+    color .2s ease,
+    transform .2s ease;
 }
 
-.player-card:hover img {
-  transform: scale(1.045);
-}
-
-
-/* =========================================
-   DARK GRADIENT
-   ========================================= */
-
-.player-card::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background:
-    linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.88) 0%,
-      rgba(0, 0, 0, 0.48) 35%,
-      rgba(0, 0, 0, 0.05) 72%,
-      rgba(0, 0, 0, 0) 100%
-    );
-
-  pointer-events: none;
+.player-row:hover .player-row-arrow {
+  background: #111;
+  color: white;
+  transform: translateX(3px);
 }
 
 
-/* =========================================
-   SHIRT NUMBER
-   ========================================= */
-
-.player-number {
-  position: absolute;
-
-  top: 8px;
-  right: 12px;
-
-  z-index: 2;
-
-  font-size: 74px;
-  line-height: 1;
-
-  font-weight: 900;
-
-  letter-spacing: -5px;
-
-  color: #ffffff;
-
-  pointer-events: none;
-}
-
-
-/* =========================================
-   PLAYER INFO
-   ========================================= */
-
-.player-card-info {
-  position: absolute;
-
-  left: 17px;
-  right: 17px;
-  bottom: 16px;
-
-  z-index: 3;
-}
-
-.player-card-info span {
-  display: block;
-
-  margin-bottom: 5px;
-
-  font-size: 9px;
-  font-weight: 800;
-
-  letter-spacing: 1.5px;
-
-  color: rgba(255, 255, 255, 0.68);
-}
-
-.player-card-info h3 {
-  margin: 0;
-
-  font-size: 19px;
-  line-height: 1.05;
-
-  letter-spacing: -0.5px;
-
-  font-weight: 800;
-
-  color: #ffffff;
-}
-
-
-/* =========================================
-   COACH
-   ========================================= */
-
-.coach-section {
-  margin-top: 20px;
-
-  padding: 30px;
-
-  background: #f5f5f3;
-
-  border-top: 1px solid #e4e4e4;
-}
-
-.coach-label span {
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 1.8px;
-  color: #999999;
-}
-
-.coach-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  margin-top: 15px;
-}
-
-.coach-content span {
-  display: block;
-
-  margin-bottom: 6px;
-
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-
-  color: #999999;
-}
-
-.coach-content h2 {
-  margin: 0;
-
-  font-size: 32px;
-  line-height: 1;
-
-  letter-spacing: -1.3px;
-
-  color: #111111;
-}
-
-.coach-number {
-  font-size: 13px;
-  font-weight: 700;
-  color: #999999;
-}
-
-
-/* =========================================
-   FOOTER
-   ========================================= */
+/* FOOTER */
 
 .site-footer {
+  padding: 40px 60px;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
-  padding: 28px 6%;
-
-  border-top: 1px solid #e6e6e6;
-
-  background: #ffffff;
+  border-top: 1px solid #d3d1ca;
+  background: #f6f5f1;
 }
 
 .footer-brand {
-  font-size: 15px;
-  font-weight: 800;
-  color: #111111;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .footer-text {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #999999;
+  color: #888;
+  font-size: 10px;
 }
 
 
-/* =========================================
-   TABLET
-   ========================================= */
-
-@media (max-width: 1000px) {
-
-  .players-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .player-card {
-    height: 235px;
-  }
-
-  .player-card-info h3 {
-    font-size: 18px;
-  }
-
-}
-
-
-/* =========================================
-   MOBILE
-   ========================================= */
+/* RESPONSIVE */
 
 @media (max-width: 700px) {
 
   .site-header {
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-start;
+    padding: 0 25px;
   }
 
   .main-nav {
-    width: 100%;
     gap: 18px;
-    flex-wrap: wrap;
   }
 
+  .main-nav a {
+    font-size: 9px;
+  }
+
+
   .players-hero {
-    padding: 60px 6% 50px;
+    padding: 65px 25px 55px;
   }
 
   .players-hero h1 {
-    font-size: 58px;
-    letter-spacing: -3px;
+    font-size: 42px;
   }
+
 
   .players-toolbar {
-    align-items: flex-start;
-    gap: 25px;
+    padding: 20px 25px;
   }
 
-  .toolbar-season {
-    text-align: left;
-  }
 
   .players-page {
-    padding-top: 55px;
+    padding: 0 25px 65px;
   }
 
-  .players-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
+
+  .team-section {
+    padding-top: 60px;
   }
 
-  .player-card {
-    height: 220px;
+
+  .section-heading {
+    gap: 15px;
   }
 
-  .player-number {
-    font-size: 62px;
-    top: 7px;
-    right: 9px;
+  .section-heading h2 {
+    font-size: 27px;
   }
 
-  .player-card-info {
-    left: 13px;
-    right: 13px;
-    bottom: 13px;
+
+  .player-row {
+    min-height: 68px;
   }
 
-  .player-card-info h3 {
-    font-size: 16px;
+
+  .player-row-number {
+    width: 38px;
+    font-size: 10px;
   }
 
-  .coach-content h2 {
-    font-size: 26px;
+
+  .player-row-photo {
+    width: 42px;
+    height: 42px;
   }
+
+
+  .player-row-name {
+    margin-left: 12px;
+  }
+
+  .player-row-name strong {
+    font-size: 13px;
+  }
+
+
+  .player-row-team {
+    display: none;
+  }
+
+
+  .player-row-arrow {
+    width: 34px;
+    height: 34px;
+
+    margin-left: auto;
+
+    font-size: 15px;
+  }
+
 
   .site-footer {
+    padding: 30px 25px;
+
     flex-direction: column;
     align-items: flex-start;
+
     gap: 10px;
   }
 
 }
 
 
-/* =========================================
-   SMALL PHONES
-   ========================================= */
+@media (max-width: 450px) {
 
-@media (max-width: 430px) {
-
-  .players-grid {
-    grid-template-columns: 1fr;
+  .main-nav {
+    gap: 12px;
   }
 
-  .player-card {
-    height: 240px;
+  .main-nav a {
+    font-size: 8px;
+    letter-spacing: 1px;
   }
 
-  .players-hero h1 {
-    font-size: 50px;
+
+  .player-row-number {
+    width: 30px;
   }
 
-  .section-heading h2 {
-    font-size: 26px;
+
+  .player-row-photo {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .player-row-name {
+    margin-left: 10px;
+  }
+
+  .player-row-name strong {
+    font-size: 12px;
+  }
+
+
+  .player-row-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
   }
 
 }
+```
