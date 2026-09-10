@@ -8,11 +8,19 @@ export default async function handler(req, res) {
       });
     }
 
+    const apiKey = process.env.API_FOOTBALL_KEY;
+
+    if (!apiKey) {
+      return res.status(500).json({
+        error: "Chiave API mancante nelle variabili d'ambiente"
+      });
+    }
+
     const response = await fetch(
       `https://v3.football.api-sports.io/fixtures?date=${date}&timezone=Europe/Rome`,
       {
         headers: {
-          "x-apisports-key": process.env.api_football_key
+          "x-apisports-key": apiKey
         }
       }
     );
