@@ -1,145 +1,168 @@
+```css
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f3f2ee;
+  background: #f6f5f1;
   color: #111;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .site-header {
   height: 72px;
-  padding: 0 55px;
+  padding: 0 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #d8d6d0;
-  background: #f3f2ee;
+  border-bottom: 1px solid #d3d1ca;
+  background: #f6f5f1;
 }
 
 .logo {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
 }
 
-.site-header nav {
+nav {
   display: flex;
-  gap: 35px;
+  gap: 34px;
 }
 
-.site-header nav a {
-  text-decoration: none;
+nav a {
   color: #777;
+  text-decoration: none;
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  transition: color .2s ease;
 }
 
-.site-header nav a.active {
+nav a:hover,
+nav a.active {
   color: #111;
 }
 
 .search-button {
-  border: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d3d1ca;
   background: transparent;
-  font-size: 24px;
+  color: #111;
+  font-size: 19px;
   cursor: pointer;
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: 100%;
+}
 
 .hero-image {
-  height: 340px;
+  min-height: 560px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
   background-image: url("images/stadium/juventus-stadium.jpg");
   background-size: cover;
   background-position: center;
-  background-color: #cfcfcf;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, .78),
-    rgba(0, 0, 0, .18)
+    to top,
+    rgba(0,0,0,.78),
+    rgba(0,0,0,.15)
   );
 }
 
 .hero-content {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 55px 60px;
   display: flex;
-  align-items: flex-end;
-  gap: 25px;
-  padding: 50px 60px;
+  align-items: center;
+  gap: 28px;
   color: white;
 }
 
 .juve-crest {
-  width: 76px;
-  height: 76px;
-  background: white;
+  width: 92px;
+  height: 92px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  background: rgba(255,255,255,.95);
+  border: 1px solid rgba(255,255,255,.5);
 }
 
 .juve-crest img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
 }
 
 .hero-kicker {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.7);
   font-size: 10px;
   letter-spacing: 2px;
-  margin-bottom: 8px;
 }
 
-.hero-content h1 {
+.hero h1 {
   margin: 0;
-  font-size: 58px;
-  line-height: .9;
+  font-size: 64px;
+  line-height: .95;
+  font-weight: 500;
   letter-spacing: -3px;
 }
 
-.hero-content p {
-  margin: 12px 0 0;
-  font-size: 12px;
-  color: #ddd;
+.hero p {
+  margin: 14px 0 0;
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
 }
 
 
-/* GENERAL */
+/* =========================
+   GENERIC SECTIONS
+========================= */
 
 .section-label {
-  font-size: 10px;
-  color: #999;
+  color: #777;
+  font-size: 9px;
   letter-spacing: 2px;
-  margin-bottom: 35px;
+  text-transform: uppercase;
 }
 
 
-/* CLUB INTRO */
+/* =========================
+   CLUB
+========================= */
 
 .club-section {
-  padding: 85px 60px;
+  padding: 90px 60px;
   border-bottom: 1px solid #d3d1ca;
 }
 
 .club-content {
+  max-width: 1050px;
+  margin-top: 42px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -147,89 +170,86 @@ body {
 
 .club-content h2 {
   margin: 0;
-  font-size: 42px;
+  font-size: 52px;
+  line-height: .98;
+  font-weight: 500;
   letter-spacing: -2px;
 }
 
 .club-content p {
   margin: 0;
-  max-width: 500px;
-  font-size: 14px;
-  line-height: 1.8;
   color: #666;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 
-/* PALMARES */
+/* =========================
+   PALMARES
+========================= */
 
 .palmares-section {
-  padding: 85px 60px;
+  padding: 80px 60px;
   border-bottom: 1px solid #d3d1ca;
 }
 
-
-/* MAIN TROPHIES */
-
 .trophy-grid {
+  margin-top: 38px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid #d3d1ca;
-  border-left: 1px solid #d3d1ca;
+  gap: 14px;
 }
 
 .trophy-card {
-  min-height: 180px;
+  min-height: 220px;
   padding: 25px;
-  border-right: 1px solid #d3d1ca;
-  border-bottom: 1px solid #d3d1ca;
   display: flex;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #d3d1ca;
+  background: #f6f5f1;
 }
 
 .trophy-image {
-  width: 55px;
-  height: 65px;
+  width: 75px;
+  height: 105px;
   object-fit: contain;
-  display: block;
-  flex-shrink: 0;
 }
 
 .trophy-info {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .trophy-info strong {
   font-size: 38px;
-  line-height: 1;
+  font-weight: 500;
   letter-spacing: -2px;
 }
 
 .trophy-info span {
-  margin-top: 8px;
+  color: #777;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #888;
 }
 
 
 /* OTHER TROPHIES */
 
 .other-trophies {
-  margin-top: 25px;
-  border-top: 1px solid #d3d1ca;
-  border-bottom: 1px solid #d3d1ca;
+  margin-top: 18px;
+  border: 1px solid #d3d1ca;
 }
 
 .other-trophies summary {
-  list-style: none;
+  padding: 20px 22px;
   cursor: pointer;
-  padding: 20px 0;
+  list-style: none;
   font-size: 10px;
-  letter-spacing: 2px;
-  color: #666;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
 
 .other-trophies summary::-webkit-details-marker {
@@ -237,80 +257,186 @@ body {
 }
 
 .other-trophies summary span {
+  margin-right: 10px;
   font-size: 15px;
-  margin-right: 8px;
-  color: #111;
-}
-
-.other-trophies[open] summary span {
-  display: inline-block;
-  transform: rotate(45deg);
 }
 
 .other-trophies-list {
+  padding: 0 22px 22px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  padding: 10px 0 30px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .other-trophy {
-  min-height: 90px;
-  border: 1px solid #d3d1ca;
+  min-height: 100px;
   padding: 15px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
+  border-top: 1px solid #d3d1ca;
 }
 
 .other-trophy img {
-  width: 40px;
-  height: 50px;
+  width: 42px;
+  height: 55px;
   object-fit: contain;
-  display: block;
-  flex-shrink: 0;
 }
 
 .other-trophy div {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .other-trophy strong {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .other-trophy span {
-  margin-top: 4px;
-  font-size: 10px;
   color: #777;
+  font-size: 9px;
 }
 
 
-/* SQUAD */
+/* =========================
+   SQUAD
+========================= */
 
 .squad-section {
-  padding: 85px 60px;
+  padding: 80px 60px;
   border-bottom: 1px solid #d3d1ca;
 }
 
-.squad-group {
-  margin-bottom: 55px;
+
+/* =========================
+   COMPETITION BUTTON
+========================= */
+
+.competition-button {
+  width: min(520px, 100%);
+  min-height: 88px;
+  margin: 34px 0 52px;
+  padding: 12px 14px 12px 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 17px;
+
+  color: #111;
+  text-decoration: none;
+
+  background: #fff;
+  border: 1px solid #d3d1ca;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
 }
 
-.squad-group:last-child {
-  margin-bottom: 0;
+.competition-button:hover {
+  background: #eeece7;
+  border-color: #111;
+  transform: translateY(-2px);
+}
+
+
+/* LOGO */
+
+.competition-button-logo {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f6f5f1;
+  border: 1px solid #d3d1ca;
+
+  flex-shrink: 0;
+}
+
+.competition-button-logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+
+/* TEXT */
+
+.competition-button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.competition-button-content span {
+  color: #888;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.competition-button-content strong {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+}
+
+
+/* ARROW */
+
+.competition-button-arrow {
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #d3d1ca;
+
+  font-size: 20px;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.competition-button:hover .competition-button-arrow {
+  background: #111;
+  color: white;
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   SQUAD GROUPS
+========================= */
+
+.squad-group {
+  margin-top: 55px;
 }
 
 .squad-group h3 {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d3d1ca;
+
   font-size: 10px;
-  color: #999;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
 }
 
 
-/* PLAYER GRID */
+/* =========================
+   PLAYER CARDS
+========================= */
 
 .players-grid {
   display: grid;
@@ -318,16 +444,16 @@ body {
   gap: 12px;
 }
 
-
-/* PLAYER CARD */
-
 .player-card {
   height: 230px;
   position: relative;
   overflow: hidden;
+
   display: block;
-  text-decoration: none;
+
   color: white;
+  text-decoration: none;
+
   background: #d7d5cf;
   border: 1px solid #d3d1ca;
 }
@@ -335,12 +461,16 @@ body {
 .player-card img {
   position: absolute;
   inset: 0;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   object-position: center top;
+
   display: block;
-  transition: transform 0.45s ease;
+
+  transition: transform .45s ease;
 }
 
 .player-card:hover img {
@@ -349,262 +479,250 @@ body {
 
 .player-card::after {
   content: "";
+
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,.02) 20%,
-    rgba(0,0,0,.08) 45%,
-    rgba(0,0,0,.78) 100%
+    to top,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,0)
   );
-  z-index: 1;
 }
 
 .shirt-number {
   position: absolute;
-  top: 18px;
-  left: 18px;
   z-index: 2;
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
+  top: 12px;
+  left: 12px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .player-card-info {
   position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
   z-index: 2;
+  left: 15px;
+  right: 15px;
+  bottom: 14px;
+
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
 .player-card-info strong {
-  font-size: 15px;
-  line-height: 1.05;
-  color: white;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .player-card-info span {
-  margin-top: 5px;
+  color: rgba(255,255,255,.65);
   font-size: 9px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #ddd;
 }
 
 
-/* TRANSFERS */
+/* =========================
+   TRANSFERS
+========================= */
 
 .transfers-section {
-  padding: 85px 60px;
+  padding: 80px 60px;
   border-bottom: 1px solid #d3d1ca;
 }
 
 .transfers-grid {
+  margin-top: 40px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 60px;
 }
 
 .transfer-column h3 {
-  margin: 0 0 25px;
-  font-size: 12px;
+  margin: 0 0 15px;
+
+  font-size: 10px;
   letter-spacing: 2px;
 }
 
 .transfer {
-  min-height: 65px;
-  border-top: 1px solid #d3d1ca;
-  display: flex;
+  min-height: 70px;
+  padding: 8px 0;
+
+  display: grid;
+  grid-template-columns: 52px 1fr 75px 85px;
   align-items: center;
-  gap: 15px;
-  transition: background .2s ease;
-}
+  gap: 12px;
 
-.transfer:last-child {
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.transfer:hover {
-  background: #f1f0eb;
+  border-top: 1px solid #d3d1ca;
 }
 
 .transfer-photo {
-  width: 42px;
-  height: 42px;
-  background: #d7d5cf;
-  position: relative;
+  width: 52px;
+  height: 52px;
   overflow: hidden;
-  flex-shrink: 0;
+  background: #ddd;
 }
 
 .transfer-photo img {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
-  object-position: center top;
 }
 
 .transfer-player {
   font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
-  min-width: 0;
 }
 
-
-/* CLUB LOGO + ARROW */
-
 .transfer-club-area {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 9px;
-  flex-shrink: 0;
+  gap: 7px;
+}
+
+.transfer-arrow {
+  color: #888;
+  font-size: 13px;
 }
 
 .transfer-club {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  text-decoration: none;
 }
 
 .transfer-club img {
   width: 27px;
   height: 27px;
   object-fit: contain;
-  display: block;
-  transition: transform .2s ease;
 }
-
-.transfer-club:hover img {
-  transform: scale(1.12);
-}
-
-.transfer-arrow {
-  font-size: 18px;
-  line-height: 1;
-  color: #777;
-  font-weight: 400;
-}
-
-
-/* PRICE */
 
 .transfer-price {
-  min-width: 82px;
-  margin-left: 8px;
   text-align: right;
-  font-size: 11px;
-  font-weight: 700;
-  color: #111;
-  white-space: nowrap;
+  font-size: 10px;
 }
 
 
-/* LEGENDS */
+/* =========================
+   LEGENDS
+========================= */
 
 .legends-section {
-  padding: 85px 60px;
+  padding: 80px 60px;
   border-bottom: 1px solid #d3d1ca;
 }
 
 .legends-grid {
+  margin-top: 40px;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 .legend-card {
-  min-height: 250px;
-  padding: 25px;
   position: relative;
+  min-height: 390px;
   overflow: hidden;
-  border: 1px solid #d3d1ca;
-  transition: .25s;
-}
 
-.legend-card:hover {
-  background: #111;
   color: white;
-  transform: translateY(-4px);
+  background: #222;
 }
 
 .legend-photo {
   position: absolute;
   inset: 0;
-  overflow: hidden;
-  z-index: 0;
 }
 
 .legend-photo img {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
-  object-position: center top;
 }
 
-.legend-photo::after {
+.legend-card::after {
   content: "";
+
   position: absolute;
   inset: 0;
+
   background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,.05) 20%,
-    rgba(0,0,0,.15) 45%,
-    rgba(0,0,0,.8) 100%
+    to top,
+    rgba(0,0,0,.9),
+    rgba(0,0,0,.05)
   );
 }
 
-.legend-card > *:not(.legend-photo) {
-  position: relative;
-  z-index: 1;
-}
-
 .legend-number {
-  color: #999;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+
   font-size: 10px;
   letter-spacing: 1px;
 }
 
 .legend-card h3 {
-  margin: 60px 0 12px;
-  font-size: 26px;
+  position: absolute;
+  z-index: 2;
+
+  left: 18px;
+  bottom: 53px;
+
+  margin: 0;
+
+  font-size: 27px;
   line-height: .95;
+  font-weight: 500;
   letter-spacing: -1px;
-  color: white;
 }
 
 .legend-card p {
+  position: absolute;
+  z-index: 2;
+
+  left: 18px;
+  bottom: 20px;
+
   margin: 0;
-  color: #ddd;
-  font-size: 11px;
+
+  color: rgba(255,255,255,.65);
+  font-size: 9px;
+  letter-spacing: 1px;
 }
 
 .legend-card b {
   position: absolute;
-  right: 25px;
-  bottom: 22px;
+  z-index: 2;
+
+  right: 18px;
+  bottom: 18px;
+
   font-size: 20px;
-  color: white;
 }
 
 
-/* HISTORY */
+/* =========================
+   HISTORY
+========================= */
 
 .history-section {
-  padding: 100px 60px;
+  padding: 90px 60px;
 }
 
 .history-content {
+  max-width: 1050px;
+  margin-top: 40px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -612,66 +730,56 @@ body {
 
 .history-content h2 {
   margin: 0;
-  font-size: 55px;
-  line-height: .95;
-  letter-spacing: -3px;
+
+  font-size: 52px;
+  line-height: .98;
+  font-weight: 500;
+  letter-spacing: -2px;
 }
 
 .history-content p {
-  max-width: 450px;
   margin: 0;
-  font-size: 15px;
-  line-height: 1.8;
+
   color: #666;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   padding: 40px 60px;
-  border-top: 1px solid #d3d1ca;
+
   display: flex;
+  align-items: center;
   justify-content: space-between;
+
+  border-top: 1px solid #d3d1ca;
+}
+
+footer div {
   font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+footer span {
   color: #888;
-  letter-spacing: 1px;
+  font-size: 10px;
 }
 
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
-  .site-header {
-    padding: 0 25px;
-  }
-
-  .site-header nav {
-    display: none;
-  }
-
-  .hero-content {
-    padding: 35px;
-  }
-
-  .hero-content h1 {
-    font-size: 44px;
-  }
-
-  .club-section,
-  .palmares-section,
-  .squad-section,
-  .transfers-section,
-  .legends-section,
-  .history-section {
-    padding: 60px 30px;
-  }
-
-  .club-content,
-  .history-content {
-    grid-template-columns: 1fr;
-    gap: 35px;
+  .players-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .trophy-grid {
@@ -679,38 +787,36 @@ footer {
   }
 
   .other-trophies-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .players-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .legends-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .transfers-grid {
-    grid-template-columns: 1fr;
+  .club-content,
+  .history-content {
     gap: 50px;
   }
-
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+
+  .site-header {
+    padding: 0 25px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  nav a {
+    font-size: 9px;
+  }
 
   .hero-content {
-    padding: 25px;
-  }
-
-  .hero-content h1 {
-    font-size: 36px;
-  }
-
-  .juve-crest {
-    width: 60px;
-    height: 60px;
+    padding: 45px 35px;
   }
 
   .club-section,
@@ -719,15 +825,119 @@ footer {
   .transfers-section,
   .legends-section,
   .history-section {
-    padding: 50px 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .club-content,
+  .history-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .transfers-grid {
+    gap: 30px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .site-header {
+    height: 65px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    gap: 14px;
+  }
+
+  nav a {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .hero-image {
+    min-height: 430px;
+  }
+
+  .hero-content {
+    padding: 30px 25px;
+    gap: 18px;
+  }
+
+  .juve-crest {
+    width: 68px;
+    height: 68px;
+    padding: 11px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+    letter-spacing: -2px;
+  }
+
+  .hero-kicker {
+    font-size: 8px;
+  }
+
+  .hero p {
+    font-size: 11px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding: 60px 25px;
+  }
+
+  .club-content h2,
+  .history-content h2 {
+    font-size: 40px;
   }
 
   .trophy-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .other-trophies-list {
     grid-template-columns: 1fr;
+  }
+
+  /* COMPETITION BUTTON */
+
+  .competition-button {
+    width: 100%;
+    min-height: 76px;
+    margin-top: 28px;
+    margin-bottom: 42px;
+    gap: 12px;
+  }
+
+  .competition-button-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .competition-button-logo img {
+    width: 37px;
+    height: 37px;
+  }
+
+  .competition-button-content strong {
+    font-size: 18px;
+  }
+
+  .competition-button-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
   }
 
   .players-grid {
@@ -738,46 +948,40 @@ footer {
     height: 210px;
   }
 
-  .legends-grid {
+  .transfers-grid {
     grid-template-columns: 1fr;
   }
 
   .transfer {
-    gap: 10px;
+    grid-template-columns: 45px 1fr 55px;
   }
 
   .transfer-photo {
-    width: 38px;
-    height: 38px;
-  }
-
-  .transfer-player {
-    font-size: 11px;
-  }
-
-  .transfer-club {
-    width: 27px;
-    height: 27px;
-  }
-
-  .transfer-club img {
-    width: 24px;
-    height: 24px;
-  }
-
-  .transfer-arrow {
-    font-size: 16px;
+    width: 45px;
+    height: 45px;
   }
 
   .transfer-price {
-    min-width: auto;
-    font-size: 10px;
+    display: none;
+  }
+
+  .legends-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .legend-card {
+    min-height: 300px;
+  }
+
+  .legend-card h3 {
+    font-size: 21px;
   }
 
   footer {
-    padding: 30px;
+    padding: 30px 25px;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
   }
-
 }
+```
