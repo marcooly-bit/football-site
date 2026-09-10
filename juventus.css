@@ -74,7 +74,7 @@ nav a.active {
   display: flex;
   align-items: flex-end;
 
-  background-image: url("images/stadium/inter-stadium.jpg");
+  background-image: url("images/stadium/juventus-stadium.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -104,7 +104,7 @@ nav a.active {
   color: white;
 }
 
-.inter-crest {
+.juve-crest {
   width: 92px;
   height: 92px;
   padding: 15px;
@@ -117,7 +117,7 @@ nav a.active {
   border: 1px solid rgba(255,255,255,.5);
 }
 
-.inter-crest img {
+.juve-crest img {
   width: 100%;
   height: 100%;
 
@@ -1103,7 +1103,7 @@ footer span {
     gap: 18px;
   }
 
-  .inter-crest {
+  .juve-crest {
     width: 68px;
     height: 68px;
     padding: 11px;
