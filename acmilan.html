@@ -1,642 +1,967 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #f6f5f1;
-  color: #111;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.site-header {
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 42px;
-  border-bottom: 1px solid #d3d1ca;
-  background: #f6f5f1;
-}
-
-.logo {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-nav {
-  display: flex;
-  gap: 34px;
-}
-
-nav a {
-  color: #777;
-  text-decoration: none;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-
-nav a:hover,
-nav a.active {
-  color: #111;
-}
-
-.search-button {
-  border: 0;
-  background: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #111;
-}
-
-
-/* HERO */
-
-.hero-image {
-  height: 340px;
-  position: relative;
-  overflow: hidden;
-  background-image: url("images/stadium/milan-stadium.jpg");
-  background-size: cover;
-  background-position: center;
-  background-color: #cfcfcf;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0,0,0,.65),
-    rgba(0,0,0,.18),
-    rgba(0,0,0,.05)
-  );
-}
-
-.hero-content {
-  position: absolute;
-  left: 60px;
-  bottom: 48px;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  color: white;
-}
-
-.club-crest {
-  width: 82px;
-  height: 82px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.club-crest img {
-  width: 78px;
-  height: 78px;
-  object-fit: contain;
-}
-
-.hero-kicker {
-  font-size: 10px;
-  letter-spacing: 2px;
-  margin-bottom: 8px;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: 48px;
-  line-height: .95;
-  letter-spacing: -1px;
-}
-
-.hero p {
-  margin: 10px 0 0;
-  font-size: 12px;
-  color: #ddd;
-}
-
-
-/* GENERALE */
-
-.section-label {
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: #777;
-}
-
-
-/* CLUB */
-
-.club-section {
-  padding: 85px 60px;
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.club-content {
-  max-width: 760px;
-  margin-top: 55px;
-}
-
-.club-content h2,
-.history-content h2 {
-  font-size: 42px;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: -1.5px;
-  margin: 0 0 28px;
-}
-
-.club-content p,
-.history-content p {
-  max-width: 600px;
-  margin: 0;
-  color: #666;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-
-/* PALMARES */
-
-.palmares-section {
-  padding: 85px 60px;
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.trophies-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 55px;
-  gap: 12px;
-}
-
-.trophy {
-  min-height: 190px;
-  border: 1px solid #d3d1ca;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #f1f0eb;
-}
-
-.trophy img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-bottom: 15px;
-}
-
-.trophy strong {
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.trophy span {
-  margin-top: 5px;
-  font-size: 9px;
-  letter-spacing: 1.5px;
-  color: #777;
-}
-
-.other-trophies {
-  margin-top: 12px;
-  border-top: 1px solid #d3d1ca;
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.other-trophies summary {
-  list-style: none;
-  cursor: pointer;
-  padding: 20px 0;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.other-trophies summary::-webkit-details-marker {
-  display: none;
-}
-
-.other-trophies summary span {
-  font-size: 18px;
-}
-
-.other-trophies-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  padding: 0 0 20px;
-}
-
-.other-trophy {
-  border: 1px solid #d3d1ca;
-  min-height: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.other-trophy img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.other-trophy strong {
-  font-size: 24px;
-}
-
-.other-trophy span {
-  font-size: 8px;
-  letter-spacing: 1px;
-  color: #777;
-  margin-top: 4px;
-}
-
-
-/* SQUAD */
-
-.squad-section {
-  padding: 85px 60px;
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.position-title {
-  margin-top: 50px;
-  margin-bottom: 18px;
-  font-size: 10px;
-  letter-spacing: 2px;
-  color: #777;
-}
-
-.players-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.player-card {
-  height: 230px;
-  position: relative;
-  overflow: hidden;
-  display: block;
-  text-decoration: none;
-  color: white;
-  background: #d7d5cf;
-  border: 1px solid #d3d1ca;
-}
-
-.player-card img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  transition: transform .45s ease;
-}
-
-.player-card:hover img {
-  transform: scale(1.04);
-}
-
-.player-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,.02) 20%,
-    rgba(0,0,0,.08) 45%,
-    rgba(0,0,0,.78) 100%
-  );
-  z-index: 1;
-}
-
-.shirt-number {
-  position: absolute;
-  top: 18px;
-  left: 18px;
-  z-index: 2;
-  font-size: 12px;
-  font-weight: 700;
-  color: white;
-}
-
-.player-card-info {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-}
-
-.player-card-info strong {
-  font-size: 15px;
-  line-height: 1.05;
-  color: white;
-}
-
-.player-card-info span {
-  margin-top: 5px;
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #ddd;
-}
-
-
-/* TRANSFERS */
-
-.transfers-section {
-  padding: 85px 60px;
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.transfers-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-  margin-top: 55px;
-}
-
-.transfer-column h3 {
-  margin: 0 0 25px;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
-.transfer {
-  min-height: 65px;
-  border-top: 1px solid #d3d1ca;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  transition: background .2s ease;
-}
-
-.transfer:last-child {
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.transfer:hover {
-  background: #f1f0eb;
-}
-
-.transfer-photo {
-  width: 42px;
-  height: 42px;
-  background: #d7d5cf;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.transfer-photo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.transfer-player {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
-  min-width: 0;
-}
-
-.transfer-club-area {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  flex-shrink: 0;
-}
-
-.transfer-club {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  text-decoration: none;
-}
-
-.transfer-club img {
-  width: 27px;
-  height: 27px;
-  object-fit: contain;
-  display: block;
-  transition: transform .2s ease;
-}
-
-.transfer-club:hover img {
-  transform: scale(1.12);
-}
-
-.transfer-arrow {
-  font-size: 18px;
-  line-height: 1;
-  color: #777;
-}
-
-.transfer-price {
-  min-width: 82px;
-  margin-left: 8px;
-  text-align: right;
-  font-size: 11px;
-  font-weight: 700;
-  color: #111;
-  white-space: nowrap;
-}
-
-.transfer-free {
-  color: #777;
-}
-
-
-/* LEGENDS */
-
-.legends-section {
-  padding: 85px 60px;
-  border-bottom: 1px solid #d3d1ca;
-}
-
-.legends-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-  margin-top: 55px;
-}
-
-.legend {
-  min-height: 300px;
-  position: relative;
-  overflow: hidden;
-  background: #d7d5cf;
-}
-
-.legend img {
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-
-.legend::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to bottom,
-    transparent 40%,
-    rgba(0,0,0,.8) 100%
-  );
-}
-
-.legend div {
-  position: absolute;
-  left: 18px;
-  bottom: 18px;
-  z-index: 2;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.legend strong {
-  font-size: 15px;
-}
-
-.legend span {
-  font-size: 9px;
-  color: #ddd;
-  margin-top: 5px;
-}
-
-
-/* HISTORY */
-
-.history-section {
-  padding: 85px 60px;
-}
-
-.history-content {
-  margin-top: 55px;
-}
-
-
-/* FOOTER */
-
-footer {
-  padding: 40px 60px;
-  border-top: 1px solid #d3d1ca;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer div {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-footer span {
-  font-size: 10px;
-  color: #888;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-
-  .players-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .legends-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .trophies-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .transfers-grid {
-    gap: 40px;
-  }
-
-}
-
-
-@media (max-width: 600px) {
-
-  .site-header {
-    padding: 0 20px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .hero-content {
-    left: 25px;
-    bottom: 30px;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .club-section,
-  .palmares-section,
-  .squad-section,
-  .transfers-section,
-  .legends-section,
-  .history-section {
-    padding: 60px 25px;
-  }
-
-  .players-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .player-card {
-    height: 210px;
-  }
-
-  .transfers-grid {
-    grid-template-columns: 1fr;
-    gap: 55px;
-  }
-
-  .other-trophies-grid {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    padding: 30px 25px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC Milan | Pages Of Football</title>
+  <link rel="stylesheet" href="milan.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="logo">
+    PAGES OF FOOTBALL
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="milan.html" class="active">Squadre</a>
+    <a href="#">Competizioni</a>
+    <a href="#">Almanacco</a>
+  </nav>
+
+  <button class="search-button">
+    ⌕
+  </button>
+
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-image">
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="club-crest">
+          <img src="images/teams/milan.png" alt="AC Milan">
+        </div>
+
+        <div>
+
+          <div class="hero-kicker">
+            ITALIA · SERIE A
+          </div>
+
+          <h1>AC MILAN</h1>
+
+          <p>Milano · Stadio Giuseppe Meazza</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INTRO -->
+
+  <section class="club-section">
+
+    <div class="section-label">
+      01 · IL CLUB
+    </div>
+
+    <div class="club-content">
+
+      <h2>
+        Rossonero<br>
+        da più di un secolo.
+      </h2>
+
+      <p>
+        Fondato nel 1899, il Milan è una delle società più importanti
+        della storia del calcio mondiale. Una tradizione costruita
+        attraverso generazioni di campioni, grandi allenatori e
+        alcune delle epoche più iconiche del calcio europeo.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PALMARES -->
+
+  <section class="palmares-section">
+
+    <div class="section-label">
+      02 · PALMARÈS
+    </div>
+
+    <div class="trophies-grid">
+
+      <div class="trophy">
+
+        <img src="images/trophies/scudetto.png" alt="Scudetto">
+
+        <strong>19</strong>
+
+        <span>SCUDETTI</span>
+
+      </div>
+
+
+      <div class="trophy">
+
+        <img src="images/trophies/coppa-italia.png" alt="Coppa Italia">
+
+        <strong>5</strong>
+
+        <span>COPPE ITALIA</span>
+
+      </div>
+
+
+      <div class="trophy">
+
+        <img src="images/trophies/supercoppa-italiana.png" alt="Supercoppa Italiana">
+
+        <strong>8</strong>
+
+        <span>SUPERCOPPE ITALIANE</span>
+
+      </div>
+
+
+      <div class="trophy">
+
+        <img src="images/trophies/champions-league.png" alt="Champions League">
+
+        <strong>7</strong>
+
+        <span>CHAMPIONS LEAGUE</span>
+
+      </div>
+
+    </div>
+
+
+    <details class="other-trophies">
+
+      <summary>
+        Altri trofei
+        <span>+</span>
+      </summary>
+
+      <div class="other-trophies-grid">
+
+        <div class="other-trophy">
+
+          <img src="images/trophies/coppa-delle-coppe.png" alt="Coppa delle Coppe">
+
+          <strong>2</strong>
+
+          <span>COPPE DELLE COPPE</span>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img src="images/trophies/supercoppa-uefa.png" alt="Supercoppa UEFA">
+
+          <strong>5</strong>
+
+          <span>SUPERCOPPE UEFA</span>
+
+        </div>
+
+
+        <div class="other-trophy">
+
+          <img src="images/trophies/coppa-intercontinentale.png" alt="Coppa Intercontinentale">
+
+          <strong>3</strong>
+
+          <span>COPPE INTERCONTINENTALI</span>
+
+        </div>
+
+      </div>
+
+    </details>
+
+  </section>
+
+
+  <!-- SQUADRA -->
+
+  <section class="squad-section">
+
+    <div class="section-label">
+      03 · ROSA 2026/27
+    </div>
+
+
+    <!-- PORTIERI -->
+
+    <div class="position-title">
+      PORTIERI
+    </div>
+
+    <div class="players-grid">
+
+      <a class="player-card" href="#">
+        <img src="images/players/mike-maignan.png" alt="Mike Maignan">
+        <span class="shirt-number">16</span>
+        <div class="player-card-info">
+          <strong>Mike Maignan</strong>
+          <span>Portiere</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/pietro-terracciano.png" alt="Pietro Terracciano">
+        <span class="shirt-number">1</span>
+        <div class="player-card-info">
+          <strong>Pietro Terracciano</strong>
+          <span>Portiere</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/lorenzo-torriani.png" alt="Lorenzo Torriani">
+        <span class="shirt-number">96</span>
+        <div class="player-card-info">
+          <strong>Lorenzo Torriani</strong>
+          <span>Portiere</span>
+        </div>
+      </a>
+
+    </div>
+
+
+    <!-- DIFENSORI -->
+
+    <div class="position-title">
+      DIFENSORI
+    </div>
+
+    <div class="players-grid">
+
+      <a class="player-card" href="#">
+        <img src="images/players/strahinja-pavlovic.png" alt="Strahinja Pavlović">
+        <span class="shirt-number">31</span>
+        <div class="player-card-info">
+          <strong>Strahinja Pavlović</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/koni-de-winter.png" alt="Koni De Winter">
+        <span class="shirt-number">5</span>
+        <div class="player-card-info">
+          <strong>Koni De Winter</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/fikayo-tomori.png" alt="Fikayo Tomori">
+        <span class="shirt-number">23</span>
+        <div class="player-card-info">
+          <strong>Fikayo Tomori</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/matteo-gabbia.png" alt="Matteo Gabbia">
+        <span class="shirt-number">46</span>
+        <div class="player-card-info">
+          <strong>Matteo Gabbia</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/david-odogu.png" alt="David Odogu">
+        <span class="shirt-number">27</span>
+        <div class="player-card-info">
+          <strong>David Odogu</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/davide-bartesaghi.png" alt="Davide Bartesaghi">
+        <span class="shirt-number">33</span>
+        <div class="player-card-info">
+          <strong>Davide Bartesaghi</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/pervis-estupinan.png" alt="Pervis Estupiñán">
+        <span class="shirt-number">2</span>
+        <div class="player-card-info">
+          <strong>Pervis Estupiñán</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/zachary-athekame.png" alt="Zachary Athekame">
+        <span class="shirt-number">24</span>
+        <div class="player-card-info">
+          <strong>Zachary Athekame</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/filippo-terracciano.png" alt="Filippo Terracciano">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Filippo Terracciano</strong>
+          <span>Difensore</span>
+        </div>
+      </a>
+
+    </div>
+
+
+    <!-- CENTROCAMPISTI -->
+
+    <div class="position-title">
+      CENTROCAMPISTI
+    </div>
+
+    <div class="players-grid">
+
+      <a class="player-card" href="#">
+        <img src="images/players/ardon-jashari.png" alt="Ardon Jashari">
+        <span class="shirt-number">30</span>
+        <div class="player-card-info">
+          <strong>Ardon Jashari</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/youssouf-fofana.png" alt="Youssouf Fofana">
+        <span class="shirt-number">19</span>
+        <div class="player-card-info">
+          <strong>Youssouf Fofana</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/samuele-ricci.png" alt="Samuele Ricci">
+        <span class="shirt-number">4</span>
+        <div class="player-card-info">
+          <strong>Samuele Ricci</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/ismael-bennacer.png" alt="Ismaël Bennacer">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Ismaël Bennacer</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/adrien-rabiot.png" alt="Adrien Rabiot">
+        <span class="shirt-number">12</span>
+        <div class="player-card-info">
+          <strong>Adrien Rabiot</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/yunus-musah.png" alt="Yunus Musah">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Yunus Musah</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/ruben-loftus-cheek.png" alt="Ruben Loftus-Cheek">
+        <span class="shirt-number">8</span>
+        <div class="player-card-info">
+          <strong>Ruben Loftus-Cheek</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/warren-bondo.png" alt="Warren Bondo">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Warren Bondo</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/christian-comotto.png" alt="Christian Comotto">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Christian Comotto</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/kevin-zeroli.png" alt="Kevin Zeroli">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Kevin Zeroli</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/alexis-saelemaekers.png" alt="Alexis Saelemaekers">
+        <span class="shirt-number">56</span>
+        <div class="player-card-info">
+          <strong>Alexis Saelemaekers</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/alphadjo-cisse.png" alt="Alphadjo Cissé">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Alphadjo Cissé</strong>
+          <span>Centrocampista</span>
+        </div>
+      </a>
+
+    </div>
+
+
+    <!-- ATTACCANTI -->
+
+    <div class="position-title">
+      ATTACCANTI
+    </div>
+
+    <div class="players-grid">
+
+      <a class="player-card" href="#">
+        <img src="images/players/rafael-leao.png" alt="Rafael Leão">
+        <span class="shirt-number">10</span>
+        <div class="player-card-info">
+          <strong>Rafael Leão</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/christian-pulisic.png" alt="Christian Pulisic">
+        <span class="shirt-number">11</span>
+        <div class="player-card-info">
+          <strong>Christian Pulisic</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/samuel-chukwueze.png" alt="Samuel Chukwueze">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Samuel Chukwueze</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/goncalo-ramos.png" alt="Gonçalo Ramos">
+        <span class="shirt-number">9</span>
+        <div class="player-card-info">
+          <strong>Gonçalo Ramos</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/christopher-nkunku.png" alt="Christopher Nkunku">
+        <span class="shirt-number">18</span>
+        <div class="player-card-info">
+          <strong>Christopher Nkunku</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/santiago-gimenez.png" alt="Santiago Gimenez">
+        <span class="shirt-number">7</span>
+        <div class="player-card-info">
+          <strong>Santiago Gimenez</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+
+      <a class="player-card" href="#">
+        <img src="images/players/francesco-camarda.png" alt="Francesco Camarda">
+        <span class="shirt-number">—</span>
+        <div class="player-card-info">
+          <strong>Francesco Camarda</strong>
+          <span>Attaccante</span>
+        </div>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRASFERIMENTI -->
+
+  <section class="transfers-section">
+
+    <div class="section-label">
+      04 · TRASFERIMENTI
+    </div>
+
+    <div class="transfers-grid">
+
+
+      <!-- IN -->
+
+      <div class="transfer-column">
+
+        <h3>IN</h3>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/goncalo-ramos.png" alt="Gonçalo Ramos">
+          </div>
+
+          <div class="transfer-player">
+            Gonçalo Ramos
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">←</span>
+
+            <a href="#" class="transfer-club" title="PSG">
+              <img src="images/teams/psg.png" alt="PSG">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €74M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/mario-gila.png" alt="Mario Gila">
+          </div>
+
+          <div class="transfer-player">
+            Mario Gila
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">←</span>
+
+            <a href="#" class="transfer-club" title="Lazio">
+              <img src="images/teams/lazio.png" alt="Lazio">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €30M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/francesco-camarda.png" alt="Francesco Camarda">
+          </div>
+
+          <div class="transfer-player">
+            Francesco Camarda
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">←</span>
+
+            <a href="#" class="transfer-club" title="Lecce">
+              <img src="images/teams/lecce.png" alt="Lecce">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €1,35M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/yunus-musah.png" alt="Yunus Musah">
+          </div>
+
+          <div class="transfer-player">
+            Yunus Musah
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">←</span>
+
+            <a href="#" class="transfer-club" title="Atalanta">
+              <img src="images/teams/atalanta.png" alt="Atalanta">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            Fine prestito
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/ismael-bennacer.png" alt="Ismaël Bennacer">
+          </div>
+
+          <div class="transfer-player">
+            Ismaël Bennacer
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">←</span>
+
+            <a href="#" class="transfer-club" title="Dinamo Zagabria">
+              <img src="images/teams/dinamo-zagabria.png" alt="Dinamo Zagabria">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            Fine prestito
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- OUT -->
+
+      <div class="transfer-column">
+
+        <h3>OUT</h3>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/alex-jimenez.png" alt="Álex Jiménez">
+          </div>
+
+          <div class="transfer-player">
+            Álex Jiménez
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">→</span>
+
+            <a href="#" class="transfer-club" title="Bournemouth">
+              <img src="images/teams/bournemouth.png" alt="Bournemouth">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €18,5M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/alvaro-morata.png" alt="Álvaro Morata">
+          </div>
+
+          <div class="transfer-player">
+            Álvaro Morata
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">→</span>
+
+            <a href="#" class="transfer-club" title="Como">
+              <img src="images/teams/como.png" alt="Como">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €12M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/lorenzo-colombo.png" alt="Lorenzo Colombo">
+          </div>
+
+          <div class="transfer-player">
+            Lorenzo Colombo
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">→</span>
+
+            <a href="#" class="transfer-club" title="Genoa">
+              <img src="images/teams/genoa.png" alt="Genoa">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €7M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/tommaso-pobega.png" alt="Tommaso Pobega">
+          </div>
+
+          <div class="transfer-player">
+            Tommaso Pobega
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">→</span>
+
+            <a href="#" class="transfer-club" title="Bologna">
+              <img src="images/teams/bologna.png" alt="Bologna">
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            €7M
+          </div>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/luka-modric.png" alt="Luka Modrić">
+          </div>
+
+          <div class="transfer-player">
+            Luka Modrić
+          </div>
+
+          <div class="transfer-club-area">
+
+            <span class="transfer-arrow">→</span>
+
+            <a href="#" class="transfer-club" title="Svincolato">
+              <span class="transfer-free">—</span>
+            </a>
+
+          </div>
+
+          <div class="transfer-price">
+            Svincolato
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LEGENDS -->
+
+  <section class="legends-section">
+
+    <div class="section-label">
+      05 · LEGGENDE
+    </div>
+
+    <div class="legends-grid">
+
+      <div class="legend">
+
+        <img src="images/legends/paolo-maldini.jpg" alt="Paolo Maldini">
+
+        <div>
+          <strong>Paolo Maldini</strong>
+          <span>1984–2009</span>
+        </div>
+
+      </div>
+
+
+      <div class="legend">
+
+        <img src="images/legends/franco-baresi.jpg" alt="Franco Baresi">
+
+        <div>
+          <strong>Franco Baresi</strong>
+          <span>1977–1997</span>
+        </div>
+
+      </div>
+
+
+      <div class="legend">
+
+        <img src="images/legends/marco-van-basten.jpg" alt="Marco van Basten">
+
+        <div>
+          <strong>Marco van Basten</strong>
+          <span>1987–1995</span>
+        </div>
+
+      </div>
+
+
+      <div class="legend">
+
+        <img src="images/legends/kaka.jpg" alt="Kaká">
+
+        <div>
+          <strong>Kaká</strong>
+          <span>2003–2009 · 2013–2014</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STORIA -->
+
+  <section class="history-section">
+
+    <div class="section-label">
+      06 · STORIA
+    </div>
+
+    <div class="history-content">
+
+      <h2>
+        Un secolo<br>
+        di rossonero.
+      </h2>
+
+      <p>
+        Dalla nascita del club nel 1899 alle grandi squadre di
+        Sacchi, Capello e Ancelotti: la storia del Milan è una
+        successione di campioni, epoche e notti europee rimaste
+        nella memoria del calcio mondiale.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div>
+    PAGES OF FOOTBALL
+  </div>
+
+  <span>
+    Football history, one page at a time.
+  </span>
+
+</footer>
+
+</body>
+</html>
