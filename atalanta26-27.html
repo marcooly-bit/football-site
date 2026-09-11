@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Atalanta · Pages Of Football</title>
+  <title>Atalanta 2026/27 · Pages Of Football</title>
 
   <link rel="stylesheet" href="atalanta.css">
 </head>
@@ -216,6 +217,46 @@
   <span class="section-label">03 · ROSA 2026/27</span>
 
 
+  <!-- =========================
+       SEASON SELECTOR
+  ========================= -->
+
+  <div class="season-selector">
+
+    <label for="season-select">
+      STAGIONE
+    </label>
+
+    <select
+      id="season-select"
+      onchange="if(this.value) window.location.href=this.value;"
+    >
+
+      <option value="atalanta26-27.html" selected>
+        2026/27
+      </option>
+
+      <option value="atalanta25-26.html">
+        2025/26
+      </option>
+
+      <option value="atalanta24-25.html">
+        2024/25
+      </option>
+
+      <option value="atalanta23-24.html">
+        2023/24
+      </option>
+
+      <option value="atalanta22-23.html">
+        2022/23
+      </option>
+
+    </select>
+
+  </div>
+
+
   <a href="#" class="competition-button">
 
     <div class="competition-button-logo">
@@ -242,7 +283,9 @@
   </a>
 
 
-  <!-- PORTIERI -->
+  <!-- =========================
+       PORTIERI
+  ========================= -->
 
   <div class="squad-group">
 
@@ -251,58 +294,94 @@
     <div class="players-grid">
 
       <a href="#" class="player-card">
-        <img src="images/players/carnesecchi.png" alt="Marco Carnesecchi">
+
+        <img
+          src="images/players/carnesecchi.png"
+          alt="Marco Carnesecchi"
+        >
+
         <span class="shirt-number">29</span>
 
         <div class="player-card-info">
+
           <strong>
             Marco Carnesecchi
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Portiere</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/sportiello.png" alt="Marco Sportiello">
+
+        <img
+          src="images/players/sportiello.png"
+          alt="Marco Sportiello"
+        >
+
         <span class="shirt-number">57</span>
 
         <div class="player-card-info">
+
           <strong>
             Marco Sportiello
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Portiere</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/rossi.png" alt="Francesco Rossi">
+
+        <img
+          src="images/players/rossi.png"
+          alt="Francesco Rossi"
+        >
+
         <span class="shirt-number">31</span>
 
         <div class="player-card-info">
+
           <strong>
             Francesco Rossi
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Portiere</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/pompei.png" alt="Thomas Pompei">
+
+        <img
+          src="images/players/pompei.png"
+          alt="Thomas Pompei"
+        >
+
         <span class="shirt-number">22</span>
 
         <div class="player-card-info">
+
           <strong>
             Thomas Pompei
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Portiere</span>
+
         </div>
+
       </a>
 
     </div>
@@ -310,7 +389,9 @@
   </div>
 
 
-  <!-- DIFENSORI -->
+  <!-- =========================
+       DIFENSORI
+  ========================= -->
 
   <div class="squad-group">
 
@@ -319,128 +400,209 @@
     <div class="players-grid">
 
       <a href="#" class="player-card">
-        <img src="images/players/scalvini.png" alt="Giorgio Scalvini">
+
+        <img
+          src="images/players/scalvini.png"
+          alt="Giorgio Scalvini"
+        >
+
         <span class="shirt-number">42</span>
 
         <div class="player-card-info">
+
           <strong>
             Giorgio Scalvini
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/hien.png" alt="Isak Hien">
+
+        <img
+          src="images/players/hien.png"
+          alt="Isak Hien"
+        >
+
         <span class="shirt-number">4</span>
 
         <div class="player-card-info">
+
           <strong>
             Isak Hien
             <img src="images/flags/sweden.png" alt="Svezia">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/kossounou.png" alt="Odilon Kossounou">
+
+        <img
+          src="images/players/kossounou.png"
+          alt="Odilon Kossounou"
+        >
+
         <span class="shirt-number">3</span>
 
         <div class="player-card-info">
+
           <strong>
             Odilon Kossounou
             <img src="images/flags/ivory-coast.png" alt="Costa d'Avorio">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/kolasinac.png" alt="Sead Kolašinac">
+
+        <img
+          src="images/players/kolasinac.png"
+          alt="Sead Kolašinac"
+        >
+
         <span class="shirt-number">23</span>
 
         <div class="player-card-info">
+
           <strong>
             Sead Kolašinac
             <img src="images/flags/bosnia.png" alt="Bosnia-Erzegovina">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/kristensen.png" alt="Thomas Kristensen">
+
+        <img
+          src="images/players/kristensen.png"
+          alt="Thomas Kristensen"
+        >
+
         <span class="shirt-number">31</span>
 
         <div class="player-card-info">
+
           <strong>
             Thomas Kristensen
             <img src="images/flags/denmark.png" alt="Danimarca">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/bellanova.png" alt="Raoul Bellanova">
+
+        <img
+          src="images/players/bellanova.png"
+          alt="Raoul Bellanova"
+        >
+
         <span class="shirt-number">16</span>
 
         <div class="player-card-info">
+
           <strong>
             Raoul Bellanova
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/bernasconi.png" alt="Lorenzo Bernasconi">
+
+        <img
+          src="images/players/bernasconi.png"
+          alt="Lorenzo Bernasconi"
+        >
+
         <span class="shirt-number">47</span>
 
         <div class="player-card-info">
+
           <strong>
             Lorenzo Bernasconi
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/zappacosta.png" alt="Davide Zappacosta">
+
+        <img
+          src="images/players/zappacosta.png"
+          alt="Davide Zappacosta"
+        >
+
         <span class="shirt-number">77</span>
 
         <div class="player-card-info">
+
           <strong>
             Davide Zappacosta
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/obric.png" alt="Relja Obrić">
+
+        <img
+          src="images/players/obric.png"
+          alt="Relja Obrić"
+        >
+
         <span class="shirt-number">40</span>
 
         <div class="player-card-info">
+
           <strong>
             Relja Obrić
             <img src="images/flags/serbia.png" alt="Serbia">
           </strong>
+
           <span>Difensore</span>
+
         </div>
+
       </a>
 
     </div>
@@ -448,7 +610,9 @@
   </div>
 
 
-  <!-- CENTROCAMPISTI -->
+  <!-- =========================
+       CENTROCAMPISTI
+  ========================= -->
 
   <div class="squad-group">
 
@@ -457,100 +621,186 @@
     <div class="players-grid">
 
       <a href="#" class="player-card">
-        <img src="images/players/ederson.png" alt="Éderson">
+
+        <img
+          src="images/players/ederson.png"
+          alt="Éderson"
+        >
+
         <span class="shirt-number">13</span>
 
         <div class="player-card-info">
+
           <strong>
             Éderson
             <img src="images/flags/brazil.png" alt="Brasile">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/pasalic.png" alt="Mario Pašalić">
+
+        <img
+          src="images/players/pasalic.png"
+          alt="Mario Pašalić"
+        >
+
         <span class="shirt-number">8</span>
 
         <div class="player-card-info">
+
           <strong>
             Mario Pašalić
             <img src="images/flags/croatia.png" alt="Croazia">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/kessie.png" alt="Franck Kessié">
+
+        <img
+          src="images/players/kessie.png"
+          alt="Franck Kessié"
+        >
+
         <span class="shirt-number">19</span>
 
         <div class="player-card-info">
+
           <strong>
             Franck Kessié
             <img src="images/flags/ivory-coast.png" alt="Costa d'Avorio">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/elmas.png" alt="Eljif Elmas">
+
+        <img
+          src="images/players/elmas.png"
+          alt="Eljif Elmas"
+        >
+
         <span class="shirt-number">99</span>
 
         <div class="player-card-info">
+
           <strong>
             Eljif Elmas
             <img src="images/flags/north-macedonia.png" alt="Macedonia del Nord">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/gaetano.png" alt="Gianluca Gaetano">
+
+        <img
+          src="images/players/gaetano.png"
+          alt="Gianluca Gaetano"
+        >
+
         <span class="shirt-number">70</span>
 
         <div class="player-card-info">
+
           <strong>
             Gianluca Gaetano
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/samardzic.png" alt="Lazar Samardžić">
+
+        <img
+          src="images/players/samardzic.png"
+          alt="Lazar Samardžić"
+        >
+
         <span class="shirt-number">10</span>
 
         <div class="player-card-info">
+
           <strong>
             Lazar Samardžić
             <img src="images/flags/serbia.png" alt="Serbia">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/zalewski.png" alt="Nicola Zalewski">
+
+        <img
+          src="images/players/zalewski.png"
+          alt="Nicola Zalewski"
+        >
+
         <span class="shirt-number">59</span>
 
         <div class="player-card-info">
+
           <strong>
             Nicola Zalewski
             <img src="images/flags/poland.png" alt="Polonia">
           </strong>
+
           <span>Centrocampista</span>
+
         </div>
+
+      </a>
+
+
+      <a href="#" class="player-card">
+
+        <img
+          src="images/players/levak.png"
+          alt="Sergej Levak"
+        >
+
+        <span class="shirt-number">46</span>
+
+        <div class="player-card-info">
+
+          <strong>
+            Sergej Levak
+            <img src="images/flags/croatia.png" alt="Croazia">
+          </strong>
+
+          <span>Centrocampista</span>
+
+        </div>
+
       </a>
 
     </div>
@@ -558,7 +808,9 @@
   </div>
 
 
-  <!-- ATTACCANTI -->
+  <!-- =========================
+       ATTACCANTI
+  ========================= -->
 
   <div class="squad-group">
 
@@ -567,86 +819,163 @@
     <div class="players-grid">
 
       <a href="#" class="player-card">
-        <img src="images/players/deketelaere.png" alt="Charles De Ketelaere">
+
+        <img
+          src="images/players/deketelaere.png"
+          alt="Charles De Ketelaere"
+        >
+
         <span class="shirt-number">17</span>
 
         <div class="player-card-info">
+
           <strong>
             Charles De Ketelaere
             <img src="images/flags/belgium.png" alt="Belgio">
           </strong>
+
           <span>Attaccante</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/scamacca.png" alt="Gianluca Scamacca">
+
+        <img
+          src="images/players/scamacca.png"
+          alt="Gianluca Scamacca"
+        >
+
         <span class="shirt-number">9</span>
 
         <div class="player-card-info">
+
           <strong>
             Gianluca Scamacca
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Attaccante</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/krstovic.png" alt="Nikola Krstović">
+
+        <img
+          src="images/players/krstovic.png"
+          alt="Nikola Krstović"
+        >
+
         <span class="shirt-number">90</span>
 
         <div class="player-card-info">
+
           <strong>
             Nikola Krstović
             <img src="images/flags/montenegro.png" alt="Montenegro">
           </strong>
+
           <span>Attaccante</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/raspadori.png" alt="Giacomo Raspadori">
+
+        <img
+          src="images/players/raspadori.png"
+          alt="Giacomo Raspadori"
+        >
+
         <span class="shirt-number">18</span>
 
         <div class="player-card-info">
+
           <strong>
             Giacomo Raspadori
             <img src="images/flags/italy.png" alt="Italia">
           </strong>
+
           <span>Attaccante</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/rowe.png" alt="Jonathan Rowe">
+
+        <img
+          src="images/players/rowe.png"
+          alt="Jonathan Rowe"
+        >
+
         <span class="shirt-number">11</span>
 
         <div class="player-card-info">
+
           <strong>
             Jonathan Rowe
             <img src="images/flags/england.png" alt="Inghilterra">
           </strong>
+
           <span>Attaccante</span>
+
         </div>
+
       </a>
 
 
       <a href="#" class="player-card">
-        <img src="images/players/sulemana-kamaldeen.png" alt="Kamaldeen Sulemana">
+
+        <img
+          src="images/players/sulemana-kamaldeen.png"
+          alt="Kamaldeen Sulemana"
+        >
+
         <span class="shirt-number">7</span>
 
         <div class="player-card-info">
+
           <strong>
             Kamaldeen Sulemana
             <img src="images/flags/ghana.png" alt="Ghana">
           </strong>
+
           <span>Attaccante</span>
+
         </div>
+
+      </a>
+
+
+      <a href="#" class="player-card">
+
+        <img
+          src="images/players/raspadori.png"
+          alt="Giacomo Raspadori"
+        >
+
+        <span class="shirt-number">18</span>
+
+        <div class="player-card-info">
+
+          <strong>
+            Giacomo Raspadori
+            <img src="images/flags/italy.png" alt="Italia">
+          </strong>
+
+          <span>Attaccante</span>
+
+        </div>
+
       </a>
 
     </div>
@@ -728,7 +1057,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/gaetano.png" alt="Gianluca Gaetano">
+          <img
+            src="images/players/gaetano.png"
+            alt="Gianluca Gaetano"
+          >
         </div>
 
         <span class="transfer-player">
@@ -740,7 +1072,10 @@
           <span class="transfer-arrow">←</span>
 
           <div class="transfer-club">
-            <img src="images/teams/cagliari.png" alt="Cagliari">
+            <img
+              src="images/teams/cagliari.png"
+              alt="Cagliari"
+            >
           </div>
 
         </div>
@@ -753,7 +1088,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/kristensen.png" alt="Thomas Kristensen">
+          <img
+            src="images/players/kristensen.png"
+            alt="Thomas Kristensen"
+          >
         </div>
 
         <span class="transfer-player">
@@ -765,7 +1103,10 @@
           <span class="transfer-arrow">←</span>
 
           <div class="transfer-club">
-            <img src="images/teams/udinese.png" alt="Udinese">
+            <img
+              src="images/teams/udinese.png"
+              alt="Udinese"
+            >
           </div>
 
         </div>
@@ -778,7 +1119,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/elmas.png" alt="Eljif Elmas">
+          <img
+            src="images/players/elmas.png"
+            alt="Eljif Elmas"
+          >
         </div>
 
         <span class="transfer-player">
@@ -790,7 +1134,10 @@
           <span class="transfer-arrow">←</span>
 
           <div class="transfer-club">
-            <img src="images/teams/rb-leipzig.png" alt="RB Leipzig">
+            <img
+              src="images/teams/rb-leipzig.png"
+              alt="RB Leipzig"
+            >
           </div>
 
         </div>
@@ -803,7 +1150,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/kessie.png" alt="Franck Kessié">
+          <img
+            src="images/players/kessie.png"
+            alt="Franck Kessié"
+          >
         </div>
 
         <span class="transfer-player">
@@ -815,7 +1165,10 @@
           <span class="transfer-arrow">←</span>
 
           <div class="transfer-club">
-            <img src="images/teams/placeholder.png" alt="">
+            <img
+              src="images/teams/placeholder.png"
+              alt=""
+            >
           </div>
 
         </div>
@@ -828,7 +1181,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/rowe.png" alt="Jonathan Rowe">
+          <img
+            src="images/players/rowe.png"
+            alt="Jonathan Rowe"
+          >
         </div>
 
         <span class="transfer-player">
@@ -840,7 +1196,10 @@
           <span class="transfer-arrow">←</span>
 
           <div class="transfer-club">
-            <img src="images/teams/bologna.png" alt="Bologna">
+            <img
+              src="images/teams/bologna.png"
+              alt="Bologna"
+            >
           </div>
 
         </div>
@@ -862,7 +1221,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/palestra.png" alt="Marco Palestra">
+          <img
+            src="images/players/palestra.png"
+            alt="Marco Palestra"
+          >
         </div>
 
         <span class="transfer-player">
@@ -874,7 +1236,10 @@
           <span class="transfer-arrow">→</span>
 
           <div class="transfer-club">
-            <img src="images/teams/chelsea.png" alt="Chelsea">
+            <img
+              src="images/teams/chelsea.png"
+              alt="Chelsea"
+            >
           </div>
 
         </div>
@@ -887,7 +1252,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/brescianini.png" alt="Marco Brescianini">
+          <img
+            src="images/players/brescianini.png"
+            alt="Marco Brescianini"
+          >
         </div>
 
         <span class="transfer-player">
@@ -899,7 +1267,10 @@
           <span class="transfer-arrow">→</span>
 
           <div class="transfer-club">
-            <img src="images/teams/fiorentina.png" alt="Fiorentina">
+            <img
+              src="images/teams/fiorentina.png"
+              alt="Fiorentina"
+            >
           </div>
 
         </div>
@@ -912,7 +1283,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/djimsiti.png" alt="Berat Djimsiti">
+          <img
+            src="images/players/djimsiti.png"
+            alt="Berat Djimsiti"
+          >
         </div>
 
         <span class="transfer-player">
@@ -924,7 +1298,10 @@
           <span class="transfer-arrow">→</span>
 
           <div class="transfer-club">
-            <img src="images/teams/placeholder.png" alt="">
+            <img
+              src="images/teams/placeholder.png"
+              alt=""
+            >
           </div>
 
         </div>
@@ -937,7 +1314,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/maldini.png" alt="Daniel Maldini">
+          <img
+            src="images/players/maldini.png"
+            alt="Daniel Maldini"
+          >
         </div>
 
         <span class="transfer-player">
@@ -949,32 +1329,10 @@
           <span class="transfer-arrow">→</span>
 
           <div class="transfer-club">
-            <img src="images/teams/cagliari.png" alt="Cagliari">
-          </div>
-
-        </div>
-
-        <span class="transfer-price">Trasferito</span>
-
-      </div>
-
-
-      <div class="transfer">
-
-        <div class="transfer-photo">
-          <img src="images/players/elbilal.png" alt="El Bilal Touré">
-        </div>
-
-        <span class="transfer-player">
-          El Bilal Touré
-        </span>
-
-        <div class="transfer-club-area">
-
-          <span class="transfer-arrow">→</span>
-
-          <div class="transfer-club">
-            <img src="images/teams/parma.png" alt="Parma">
+            <img
+              src="images/teams/cagliari.png"
+              alt="Cagliari"
+            >
           </div>
 
         </div>
@@ -987,7 +1345,41 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="images/players/deroon.png" alt="Marten de Roon">
+          <img
+            src="images/players/elbilal.png"
+            alt="El Bilal Touré"
+          >
+        </div>
+
+        <span class="transfer-player">
+          El Bilal Touré
+        </span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">→</span>
+
+          <div class="transfer-club">
+            <img
+              src="images/teams/parma.png"
+              alt="Parma"
+            >
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Prestito</span>
+
+      </div>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
+          <img
+            src="images/players/deroon.png"
+            alt="Marten de Roon"
+          >
         </div>
 
         <span class="transfer-player">
@@ -999,7 +1391,10 @@
           <span class="transfer-arrow">→</span>
 
           <div class="transfer-club">
-            <img src="images/teams/roma.png" alt="Roma">
+            <img
+              src="images/teams/roma.png"
+              alt="Roma"
+            >
           </div>
 
         </div>
@@ -1028,7 +1423,10 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/papu-gomez.jpg" alt="Papu Gómez">
+        <img
+          src="images/legends/papu-gomez.jpg"
+          alt="Papu Gómez"
+        >
       </div>
 
       <span class="legend-number">01</span>
@@ -1045,7 +1443,10 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/ilicic.jpg" alt="Josip Iličić">
+        <img
+          src="images/legends/ilicic.jpg"
+          alt="Josip Iličić"
+        >
       </div>
 
       <span class="legend-number">02</span>
@@ -1062,7 +1463,10 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/zapata.jpg" alt="Duván Zapata">
+        <img
+          src="images/legends/zapata.jpg"
+          alt="Duván Zapata"
+        >
       </div>
 
       <span class="legend-number">03</span>
@@ -1079,14 +1483,17 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/gasp.jpg" alt="Gianpiero Gasperini">
+        <img
+          src="images/legends/gasp.jpg"
+          alt="Gian Piero Gasperini"
+        >
       </div>
 
       <span class="legend-number">04</span>
 
-      <h3>Gianpiero<br>Gasperini</h3>
+      <h3>Gian Piero<br>Gasperini</h3>
 
-      <p>ATALANTA · 2016-2025</p>
+      <p>ATALANTA · 2016–2025</p>
 
       <b>7</b>
 
@@ -1146,5 +1553,7 @@
 
 </footer>
 
+
 </body>
 </html>
+```
