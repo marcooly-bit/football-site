@@ -25,6 +25,11 @@ body {
 
   border-bottom: 1px solid #d3d1ca;
   background: #f6f5f1;
+
+  /* STICKY NAVBAR */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -360,6 +365,79 @@ nav a.active {
 
 
 /* =========================
+   SEASON SELECTOR
+========================= */
+
+.section-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section-heading-row h2 {
+  margin: 8px 0 0;
+
+  font-size: 52px;
+  line-height: .98;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.season-selector {
+  min-width: 170px;
+  min-height: 64px;
+  padding: 10px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+
+  background: #fff;
+  border: 1px solid #d3d1ca;
+
+  color: #111;
+
+  cursor: pointer;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease;
+}
+
+.season-selector:hover {
+  background: #eeece7;
+  border-color: #111;
+}
+
+.season-selector span:first-child {
+  color: #888;
+
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.season-selector strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.season-arrow {
+  color: #777;
+
+  font-size: 17px;
+
+  transition: transform .2s ease;
+}
+
+.season-selector:hover .season-arrow {
+  transform: translateY(2px);
+}
+
+
+/* =========================
    COMPETITION BUTTON
 ========================= */
 
@@ -483,6 +561,32 @@ nav a.active {
 
 
 /* =========================
+   NEW POSITION GROUPS
+========================= */
+
+.position-group {
+  margin-top: 55px;
+}
+
+.position-group h3 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #d3d1ca;
+
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+
+/* =========================
    PLAYER CARDS
 ========================= */
 
@@ -586,6 +690,49 @@ nav a.active {
 }
 
 .player-card-info > span {
+  color: rgba(255,255,255,.65);
+
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   NEW PLAYER INFO
+========================= */
+
+.player-number {
+  position: absolute;
+  z-index: 2;
+
+  top: 12px;
+  left: 12px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.player-info {
+  position: absolute;
+  z-index: 2;
+
+  left: 15px;
+  right: 15px;
+  bottom: 14px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-info strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.player-info span {
   color: rgba(255,255,255,.65);
 
   font-size: 9px;
@@ -1015,7 +1162,31 @@ footer span {
 
 @media (max-width: 1000px) {
 
-  .players-grid {
+  .site-header {
+    padding: 0 25px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .hero-content {
+    padding: 45px 35px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .coach-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .players-grid,
+  .player-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -1027,5 +1198,244 @@ footer span {
     grid-template-columns: repeat(2, 1fr);
   }
 
- 
+  .legends-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .club-content,
+  .history-content {
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .site-header {
+    height: 64px;
+    padding: 0 18px;
+  }
+
+  .logo {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .search-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero-image {
+    min-height: 430px;
+  }
+
+  .hero-content {
+    padding: 30px 22px;
+    gap: 18px;
+  }
+
+  .team-crest {
+    width: 70px;
+    height: 70px;
+    padding: 11px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+    font-size: 11px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .coach-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding: 60px 22px;
+  }
+
+  .club-content,
+  .history-content {
+    margin-top: 30px;
+
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .club-content h2,
+  .history-content h2 {
+    font-size: 40px;
+  }
+
+  .club-content p,
+  .history-content p {
+    font-size: 14px;
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .section-heading-row h2 {
+    font-size: 40px;
+  }
+
+  .season-selector {
+    width: 100%;
+  }
+
+  .players-grid,
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player-card {
+    height: 210px;
+  }
+
+  .trophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .other-trophies-list {
+    grid-template-columns: 1fr;
+  }
+
+  .legends-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .coach-card {
+    min-height: 140px;
+  }
+
+  .coach-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .coach-info {
+    padding: 20px;
+  }
+
+  .coach-info strong {
+    font-size: 22px;
+  }
+
+  .coach-arrow {
+    display: none;
+  }
+
+  .transfers-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .transfer {
+    grid-template-columns: 44px 1fr 55px;
+    gap: 8px;
+  }
+
+  .transfer-photo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .transfer-club-area {
+    display: none;
+  }
+
+  .transfer-price {
+    font-size: 9px;
+  }
+
+  footer {
+    padding: 30px 22px;
+
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-content {
+    align-items: flex-end;
+  }
+
+  .team-crest {
+    width: 60px;
+    height: 60px;
+    padding: 9px;
+  }
+
+  .players-grid,
+  .player-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .player-card {
+    height: 190px;
+  }
+
+  .player-card-info,
+  .player-info {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .player-card-info strong,
+  .player-info strong {
+    font-size: 12px;
+  }
+
+  .shirt-number,
+  .player-number {
+    top: 9px;
+    left: 9px;
+
+    font-size: 20px;
+  }
+
+  .legend-card {
+    min-height: 300px;
+  }
+
+  .legend-card h3 {
+    left: 13px;
+    bottom: 43px;
+
+    font-size: 21px;
+  }
+
+  .legend-card p {
+    left: 13px;
+    bottom: 14px;
+  }
+
+  .legend-card b {
+    right: 13px;
+    bottom: 13px;
+  }
+}
 ```
