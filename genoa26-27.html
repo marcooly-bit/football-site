@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -9,1033 +9,1144 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="team.css">
+
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
+<header class="site-header">
 
-    <div class="logo">
-      <a href="index.html">Pages Of Football</a>
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
+  </nav>
+
+<button class="search-button">⌕</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-image"
+       style="background-image: url('images/stadium/genoa-stadium.jpg');">
+
+```
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+  <div class="team-crest">
+    <img src="images/teams/genoa.png" alt="Genoa">
+  </div>
+
+  <div>
+    <div class="hero-kicker">GENOVA · ITALIA</div>
+    <h1>Genoa</h1>
+    <p>La storia, la rosa e i protagonisti del Grifone.</p>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- CLUB -->
+
+<section class="club-section">
+
+<span class="section-label">01 · IL CLUB</span>
+
+  <div class="club-content">
+
+```
+<h2>
+  La prima.<br>
+  La più antica.<br>
+  Una storia rossoblù.
+</h2>
+
+<p>
+  Fondato il 7 settembre 1893 presso il Consolato Britannico di Genova,
+  il Genoa Cricket and Football Club è il più antico club calcistico
+  italiano ancora in attività.
+</p>
+
+<p>
+  Il Grifone è stato il primo campione d'Italia nel 1898 e ha costruito
+  una delle storie più longeve del calcio italiano, conquistando nove
+  titoli nazionali e una Coppa Italia.
+</p>
+```
+
+  </div>
+
+</section>
+
+<!-- PALMARES -->
+
+<section class="palmares-section">
+
+<span class="section-label">02 · PALMARES</span>
+
+  <div class="trophy-grid">
+
+```
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/serie-a.png"
+    alt="Campionato Italiano"
+    class="trophy-image">
+
+  <div class="trophy-info">
+    <strong>9</strong>
+    <span>Campionato Italiano</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/coppa-italia.png"
+    alt="Coppa Italia"
+    class="trophy-image">
+
+  <div class="trophy-info">
+    <strong>1</strong>
+    <span>Coppa Italia</span>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- SQUAD -->
+
+<section class="squad-section">
+
+  <div class="section-heading-row">
+
+```
+<div>
+  <p class="section-label">Rosa 2026/27</p>
+  <h2>La squadra</h2>
+</div>
+
+<button class="season-selector" type="button">
+  <span>STAGIONI</span>
+  <strong>2026/27</strong>
+  <span class="season-arrow">⌄</span>
+</button>
+```
+
+  </div>
+
+  <a href="#" class="competition-button">
+
+```
+<div class="competition-button-logo">
+  <img
+    src="images/competitions/serie-a.png"
+    alt="Serie A">
+</div>
+
+<div class="competition-button-content">
+  <span>COMPETIZIONE</span>
+  <strong>Serie A</strong>
+</div>
+
+<div class="competition-button-arrow">→</div>
+```
+
+  </a>
+
+  <!-- PORTIERI -->
+
+  <div class="position-group">
+
+```
+<h3>Portieri</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">1</div>
+    <img src="images/players/justin-bijlow.png" alt="Justin Bijlow">
+    <div class="player-info">
+      <strong>Justin Bijlow</strong>
+      <span>🇳🇱 Paesi Bassi</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">39</div>
+    <img src="images/players/daniele-sommariva.png" alt="Daniele Sommariva">
+    <div class="player-info">
+      <strong>Daniele Sommariva</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">99</div>
+    <img src="images/players/franz-stolz.png" alt="Franz Stolz">
+    <div class="player-info">
+      <strong>Franz Stolz</strong>
+      <span>🇦🇹 Austria</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- DIFENSORI -->
+
+  <div class="position-group">
+
+```
+<h3>Difensori</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">27</div>
+    <img src="images/players/alessandro-marcandalli.png" alt="Alessandro Marcandalli">
+    <div class="player-info">
+      <strong>Alessandro Marcandalli</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">31</div>
+    <img src="images/players/david-puczka.png" alt="David Puczka">
+    <div class="player-info">
+      <strong>David Puczka</strong>
+      <span>🇦🇹 Austria</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">22</div>
+    <img src="images/players/johan-vasquez.png" alt="Johan Vásquez">
+    <div class="player-info">
+      <strong>Johan Vásquez</strong>
+      <span>🇲🇽 Messico</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">3</div>
+    <img src="images/players/kingsley-ehizibue.png" alt="Kingsley Ehizibue">
+    <div class="player-info">
+      <strong>Kingsley Ehizibue</strong>
+      <span>🇳🇱 Paesi Bassi</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">5</div>
+    <img src="images/players/leo-ostigard.png" alt="Leo Østigård">
+    <div class="player-info">
+      <strong>Leo Østigård</strong>
+      <span>🇳🇴 Norvegia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">14</div>
+    <img src="images/players/lukas-klisys.png" alt="Lukas Klisys">
+    <div class="player-info">
+      <strong>Lukas Klisys</strong>
+      <span>🇱🇹 Lituania</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">74</div>
+    <img src="images/players/mamedi-doucoure.png" alt="Mamedi Doucouré">
+    <div class="player-info">
+      <strong>Mamedi Doucouré</strong>
+      <span>🇫🇷 Francia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">85</div>
+    <img src="images/players/marcelo-vaz.png" alt="Marcelo Vaz">
+    <div class="player-info">
+      <strong>Marcelo Vaz</strong>
+      <span>🇬🇼 Guinea-Bissau</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">2</div>
+    <img src="images/players/mario-mitaj.png" alt="Mario Mitaj">
+    <div class="player-info">
+      <strong>Mario Mitaj</strong>
+      <span>🇦🇱 Albania</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">34</div>
+    <img src="images/players/sebastian-otoa.png" alt="Sebastian Otoa">
+    <div class="player-info">
+      <strong>Sebastian Otoa</strong>
+      <span>🇩🇰 Danimarca</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">20</div>
+    <img src="images/players/stefano-sabelli.png" alt="Stefano Sabelli">
+    <div class="player-info">
+      <strong>Stefano Sabelli</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- CENTROCAMPISTI -->
+
+  <div class="position-group">
+
+```
+<h3>Centrocampisti</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">4</div>
+    <img src="images/players/alexsandro-amorim.png" alt="Alexsandro Amorim">
+    <div class="player-info">
+      <strong>Alexsandro Amorim</strong>
+      <span>🇧🇷 Brasile</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">11</div>
+    <img src="images/players/franz-meichtry.png" alt="Franz-Ethan Meichtry">
+    <div class="player-info">
+      <strong>Franz-Ethan Meichtry</strong>
+      <span>🇨🇭 Svizzera</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">25</div>
+    <img src="images/players/hamed-traore.png" alt="Hamed Traorè">
+    <div class="player-info">
+      <strong>Hamed Traorè</strong>
+      <span>🇨🇮 Costa d'Avorio</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">77</div>
+    <img src="images/players/mikael-ellertsson.png" alt="Mikael Egill Ellertsson">
+    <div class="player-info">
+      <strong>Mikael Egill Ellertsson</strong>
+      <span>🇮🇸 Islanda</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">97</div>
+    <img src="images/players/djibril-sow.png" alt="Djibril Sow">
+    <div class="player-info">
+      <strong>Djibril Sow</strong>
+      <span>🇨🇭 Svizzera</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">32</div>
+    <img src="images/players/morten-frendrup.png" alt="Morten Frendrup">
+    <div class="player-info">
+      <strong>Morten Frendrup</strong>
+      <span>🇩🇰 Danimarca</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">71</div>
+    <img src="images/players/samuel-wiafe.png" alt="Samuel Wiafe">
+    <div class="player-info">
+      <strong>Samuel Wiafe</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- ATTACCANTI -->
+
+  <div class="position-group">
+
+```
+<h3>Attaccanti</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">80</div>
+    <img src="images/players/adam-zulevic.png" alt="Adam Žulevič">
+    <div class="player-info">
+      <strong>Adam Žulevič</strong>
+      <span>🇸🇰 Slovacchia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">17</div>
+    <img src="images/players/elias-havel.png" alt="Elias Havel">
+    <div class="player-info">
+      <strong>Elias Havel</strong>
+      <span>🇦🇹 Austria</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">29</div>
+    <img src="images/players/lorenzo-colombo.png" alt="Lorenzo Colombo">
+    <div class="player-info">
+      <strong>Lorenzo Colombo</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">76</div>
+    <img src="images/players/lorenzo-venturino.png" alt="Lorenzo Venturino">
+    <div class="player-info">
+      <strong>Lorenzo Venturino</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">18</div>
+    <img src="images/players/milutin-osmajic.png" alt="Milutin Osmajić">
+    <div class="player-info">
+      <strong>Milutin Osmajić</strong>
+      <span>🇲🇪 Montenegro</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">21</div>
+    <img src="images/players/robinho-junior.png" alt="Robinho Júnior">
+    <div class="player-info">
+      <strong>Robinho Júnior</strong>
+      <span>🇧🇷 Brasile</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">92</div>
+    <img src="images/players/stephan-el-shaarawy.png" alt="Stephan El Shaarawy">
+    <div class="player-info">
+      <strong>Stephan El Shaarawy</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">8</div>
+    <img src="images/players/tommaso-baldanzi.png" alt="Tommaso Baldanzi">
+    <div class="player-info">
+      <strong>Tommaso Baldanzi</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">9</div>
+    <img src="images/players/vitinha.png" alt="Vitinha">
+    <div class="player-info">
+      <strong>Vitinha</strong>
+      <span>🇵🇹 Portogallo</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">10</div>
+    <img src="images/players/messias.png" alt="Junior Messias">
+    <div class="player-info">
+      <strong>Junior Messias</strong>
+      <span>🇧🇷 Brasile</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">19</div>
+    <img src="images/players/xheto-nuredini.png" alt="Xheto Joi Nuredini">
+    <div class="player-info">
+      <strong>Xheto Joi Nuredini</strong>
+      <span>🇦🇱 Albania</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ALLENATORE -->
+
+<section class="coach-section">
+
+<span class="section-label">04 · ALLENATORE</span>
+
+  <a href="#" class="coach-card">
+
+```
+<div class="coach-photo">
+  <img
+    src="images/coaches/daniele-de-rossi.png"
+    alt="Daniele De Rossi">
+</div>
+
+<div class="coach-info">
+
+  <span class="coach-kicker">ALLENATORE</span>
+
+  <strong>Daniele De Rossi</strong>
+
+  <div class="coach-nationality">
+    <span>🇮🇹</span>
+    <span>Italia</span>
+  </div>
+
+  <span class="coach-club">
+    Genoa · 2026/27
+  </span>
+
+</div>
+
+<div class="coach-arrow">→</div>
+```
+
+  </a>
+
+</section>
+
+<!-- TRASFERIMENTI -->
+
+<section class="transfers-section">
+
+<span class="section-label">05 · TRASFERIMENTI</span>
+
+  <div class="transfers-grid">
+
+```
+<!-- IN -->
+
+<div class="transfer-column">
+
+  <h3>IN</h3>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/djibril-sow.png" alt="Djibril Sow">
     </div>
 
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="giocatori.html">Giocatori</a>
-      <a href="squadre.html" class="active">Squadre</a>
-      <a href="competizioni.html">Competizioni</a>
-      <a href="almanacco.html">Almanacco</a>
-    </nav>
+    <span class="transfer-player">Djibril Sow</span>
 
-    <button class="search-button" aria-label="Cerca">
-      <span></span>
-      <span></span>
-    </button>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
 
-  </header>
-
-
-  <!-- HERO -->
-  <section class="team-hero">
-
-    <div
-      class="hero-image"
-      style="background-image: url('images/stadium/genoa-stadium.jpg');"
-    >
-
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content">
-
-        <div class="team-crest">
-          <img src="images/teams/genoa.png" alt="Genoa">
-        </div>
-
-        <div class="hero-text">
-          <span class="team-country">Italia</span>
-          <h1>Genoa</h1>
-          <p>Stagione 2026/27</p>
-        </div>
-
+      <div class="transfer-club">
+        <img src="images/teams/sevilla.png" alt="Siviglia">
       </div>
-
     </div>
 
-  </section>
+    <span class="transfer-price">€8,5M</span>
 
+  </div>
 
-  <main class="team-page">
 
+  <div class="transfer">
 
-    <!-- CLUB -->
-    <section class="team-section club-section">
-
-      <div class="section-heading">
-        <span class="section-number">01</span>
-        <h2>Il club</h2>
-      </div>
-
-      <div class="club-intro">
-
-        <div>
-
-          <h3>Genoa Cricket and Football Club</h3>
-
-          <p>
-            Fondato il 7 settembre 1893 presso il Consolato Britannico
-            di Genova, il Genoa è il club calcistico più antico d'Italia
-            ancora attivo.
-          </p>
-
-          <p>
-            Il Grifone è stato protagonista dei primi decenni del calcio
-            italiano, conquistando nove campionati nazionali tra il 1898
-            e il 1924. Il suo ultimo Scudetto arrivò nella stagione
-            1923/24.
-          </p>
-
-          <p>
-            La storia rossoblù attraversa più di un secolo di calcio:
-            dalle prime sfide del football italiano alla Coppa Italia
-            del 1937, dalla grande squadra degli anni Novanta fino
-            al ritorno stabile in Serie A nell'epoca moderna.
-          </p>
-
-        </div>
-
-        <div class="club-details">
-
-          <div class="detail-item">
-            <span>Fondazione</span>
-            <strong>1893</strong>
-          </div>
-
-          <div class="detail-item">
-            <span>Stadio</span>
-            <strong>Luigi Ferraris</strong>
-          </div>
-
-          <div class="detail-item">
-            <span>Città</span>
-            <strong>Genova</strong>
-          </div>
-
-          <div class="detail-item">
-            <span>Colori</span>
-            <strong>Rosso e blu</strong>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PALMARES -->
-    <section class="team-section">
-
-      <div class="section-heading">
-        <span class="section-number">02</span>
-        <h2>Palmarès</h2>
-      </div>
-
-      <div class="trophies-grid">
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>9</strong>
-          <span>Serie A</span>
-          <small>1897/98 · 1923/24</small>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>1</strong>
-          <span>Coppa Italia</span>
-          <small>1936/37</small>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>2</strong>
-          <span>Coppa delle Alpi</span>
-          <small>1962 · 1964</small>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>1</strong>
-          <span>Coppa Anglo-Italiana</span>
-          <small>1996</small>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ROSA -->
-    <section class="team-section">
-
-      <div class="section-heading">
-        <span class="section-number">03</span>
-        <h2>Rosa 2026/27</h2>
-      </div>
-
-
-      <!-- PORTIERI -->
-      <div class="players-category">
-
-        <h3>Portieri</h3>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">1</div>
-            <img src="images/players/bijlow.jpg" alt="Justin Bijlow">
-            <div class="player-info">
-              <strong>Justin Bijlow</strong>
-              <span>Paesi Bassi</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">39</div>
-            <img src="images/players/sommariva.jpg" alt="Daniele Sommariva">
-            <div class="player-info">
-              <strong>Daniele Sommariva</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">99</div>
-            <img src="images/players/stolz.jpg" alt="Franz Stolz">
-            <div class="player-info">
-              <strong>Franz Stolz</strong>
-              <span>Austria</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-
-      <!-- DIFENSORI -->
-      <div class="players-category">
-
-        <h3>Difensori</h3>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">3</div>
-            <img src="images/players/ehizibue.jpg" alt="Kingsley Ehizibue">
-            <div class="player-info">
-              <strong>Kingsley Ehizibue</strong>
-              <span>Paesi Bassi</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">16</div>
-            <img src="images/players/drameh.jpg" alt="Cody Drameh">
-            <div class="player-info">
-              <strong>Cody Drameh</strong>
-              <span>Inghilterra</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">2</div>
-            <img src="images/players/mitaj.jpg" alt="Mario Mitaj">
-            <div class="player-info">
-              <strong>Mario Mitaj</strong>
-              <span>Albania</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">5</div>
-            <img src="images/players/ostigard.jpg" alt="Leo Østigård">
-            <div class="player-info">
-              <strong>Leo Østigård</strong>
-              <span>Norvegia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">22</div>
-            <img src="images/players/vasquez.jpg" alt="Johan Vásquez">
-            <div class="player-info">
-              <strong>Johan Vásquez</strong>
-              <span>Messico · Capitano</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">27</div>
-            <img src="images/players/marcandalli.jpg" alt="Alessandro Marcandalli">
-            <div class="player-info">
-              <strong>Alessandro Marcandalli</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">20</div>
-            <img src="images/players/sabelli.jpg" alt="Stefano Sabelli">
-            <div class="player-info">
-              <strong>Stefano Sabelli</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">31</div>
-            <img src="images/players/puczka.jpg" alt="David Puczka">
-            <div class="player-info">
-              <strong>David Puczka</strong>
-              <span>Austria</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">34</div>
-            <img src="images/players/otoa.jpg" alt="Sebastian Otoa">
-            <div class="player-info">
-              <strong>Sebastian Otoa</strong>
-              <span>Danimarca</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">74</div>
-            <img src="images/players/doucoure.jpg" alt="Mamedi Doucouré">
-            <div class="player-info">
-              <strong>Mamedi Doucouré</strong>
-              <span>Francia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">85</div>
-            <img src="images/players/marcelo-vaz.jpg" alt="Marcelo Vaz">
-            <div class="player-info">
-              <strong>Marcelo Vaz</strong>
-              <span>Brasile</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">14</div>
-            <img src="images/players/klisys.jpg" alt="Lukas Klisys">
-            <div class="player-info">
-              <strong>Lukas Klisys</strong>
-              <span>Lituania</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-
-      <!-- CENTROCAMPISTI -->
-      <div class="players-category">
-
-        <h3>Centrocampisti</h3>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">4</div>
-            <img src="images/players/amorim.jpg" alt="Alexsandro Amorim">
-            <div class="player-info">
-              <strong>Alexsandro Amorim</strong>
-              <span>Brasile</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">8</div>
-            <img src="images/players/baldanzi.jpg" alt="Tommaso Baldanzi">
-            <div class="player-info">
-              <strong>Tommaso Baldanzi</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">77</div>
-            <img src="images/players/ellertsson.jpg" alt="Mikael Egill Ellertsson">
-            <div class="player-info">
-              <strong>Mikael Egill Ellertsson</strong>
-              <span>Islanda</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">32</div>
-            <img src="images/players/frendrup.jpg" alt="Morten Frendrup">
-            <div class="player-info">
-              <strong>Morten Frendrup</strong>
-              <span>Danimarca</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">11</div>
-            <img src="images/players/meichtry.jpg" alt="Franz-Ethan Meichtry">
-            <div class="player-info">
-              <strong>Franz-Ethan Meichtry</strong>
-              <span>Svizzera</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">10</div>
-            <img src="images/players/messias.jpg" alt="Junior Messias">
-            <div class="player-info">
-              <strong>Junior Messias</strong>
-              <span>Brasile</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">97</div>
-            <img src="images/players/sow.jpg" alt="Djibril Sow">
-            <div class="player-info">
-              <strong>Djibril Sow</strong>
-              <span>Svizzera</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">25</div>
-            <img src="images/players/traore.jpg" alt="Hamed Junior Traorè">
-            <div class="player-info">
-              <strong>Hamed Junior Traorè</strong>
-              <span>Costa d'Avorio</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">71</div>
-            <img src="images/players/wiafe.jpg" alt="Samuel Wiafe">
-            <div class="player-info">
-              <strong>Samuel Wiafe</strong>
-              <span>Ghana</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">76</div>
-            <img src="images/players/venturino.jpg" alt="Lorenzo Venturino">
-            <div class="player-info">
-              <strong>Lorenzo Venturino</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-
-      <!-- ATTACCANTI -->
-      <div class="players-category">
-
-        <h3>Attaccanti</h3>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">29</div>
-            <img src="images/players/colombo.jpg" alt="Lorenzo Colombo">
-            <div class="player-info">
-              <strong>Lorenzo Colombo</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">92</div>
-            <img src="images/players/el-shaarawy.jpg" alt="Stephan El Shaarawy">
-            <div class="player-info">
-              <strong>Stephan El Shaarawy</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">17</div>
-            <img src="images/players/havel.jpg" alt="Elias Havel">
-            <div class="player-info">
-              <strong>Elias Havel</strong>
-              <span>Austria</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">18</div>
-            <img src="images/players/osmajic.jpg" alt="Milutin Osmajić">
-            <div class="player-info">
-              <strong>Milutin Osmajić</strong>
-              <span>Montenegro</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">9</div>
-            <img src="images/players/vitinha.jpg" alt="Vítor Oliveira">
-            <div class="player-info">
-              <strong>Vítor Oliveira</strong>
-              <span>Portogallo</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">19</div>
-            <img src="images/players/nuredini.jpg" alt="Joi Nuredini">
-            <div class="player-info">
-              <strong>Joi Nuredini</strong>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">80</div>
-            <img src="images/players/zulevic.jpg" alt="Adam Zulevic">
-            <div class="player-info">
-              <strong>Adam Zulevic</strong>
-              <span>Slovacchia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">—</div>
-            <img src="images/players/robinho-junior.jpg" alt="Robinho Junior">
-            <div class="player-info">
-              <strong>Robinho Junior</strong>
-              <span>Brasile</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ALLENATORE -->
-    <section class="team-section">
-
-      <div class="section-heading">
-        <span class="section-number">04</span>
-        <h2>Allenatore</h2>
-      </div>
-
-      <div class="coach-card">
-
-        <img
-          src="images/coaches/daniele-de-rossi.jpg"
-          alt="Daniele De Rossi"
-        >
-
-        <div class="coach-info">
-          <span>Allenatore</span>
-          <h3>Daniele De Rossi</h3>
-          <p>Genoa · 2026–</p>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- MERCATO -->
-    <section class="team-section">
-
-      <div class="section-heading">
-        <span class="section-number">05</span>
-        <h2>Mercato</h2>
-      </div>
-
-      <div class="transfer-columns">
-
-
-        <!-- ENTRATE -->
-        <div class="transfer-column">
-
-          <h3>Entrate</h3>
-
-          <div class="transfer-list">
-
-            <div class="transfer-item">
-              <strong>Lorenzo Colombo</strong>
-              <span>Milan · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Tommaso Baldanzi</strong>
-              <span>Roma · prestito con obbligo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Djibril Sow</strong>
-              <span>Siviglia · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Milutin Osmajić</strong>
-              <span>Preston · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Cody Drameh</strong>
-              <span>Hull City · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Mario Mitaj</strong>
-              <span>Al-Ittihad · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Hamed Junior Traorè</strong>
-              <span>Marseille · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>David Puczka</strong>
-              <span>Juventus · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Franz-Ethan Meichtry</strong>
-              <span>Thun · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Samuel Wiafe</strong>
-              <span>Modena · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Elias Havel</strong>
-              <span>Hartberg · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Marcelo Vaz</strong>
-              <span>Varesina · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Robinho Junior</strong>
-              <span>Santos · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Kingsley Ehizibue</strong>
-              <span>Svincolato · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Stephan El Shaarawy</strong>
-              <span>Svincolato · definitivo</span>
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- USCITE -->
-        <div class="transfer-column">
-
-          <h3>Uscite</h3>
-
-          <div class="transfer-list">
-
-            <div class="transfer-item">
-              <strong>Jeff Ekhator</strong>
-              <span>Juventus · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Gabriele Calvani</strong>
-              <span>Frosinone · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Seydou Fini</strong>
-              <span>Frosinone · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Patrizio Masini</strong>
-              <span>Frosinone · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Alessandro Vogliacco</strong>
-              <span>Cremonese · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Alan Matturro</strong>
-              <span>Shakhtar Donetsk · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Brooke Norton-Cuffy</strong>
-              <span>Hull City · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Aarón Martín</strong>
-              <span>Racing Santander · definitivo</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Ruslan Malinovskyi</strong>
-              <span>Trabzonspor · fine contratto</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Caleb Ekuban</strong>
-              <span>Svincolato</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Nicola Leali</strong>
-              <span>Hellas Verona · fine contratto</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>David Ankeye</strong>
-              <span>Železničar Pančevo · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Alessandro Debenedetti</strong>
-              <span>Cesena · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Hugo Cuenca</strong>
-              <span>Celta Vigo · prestito</span>
-            </div>
-
-            <div class="transfer-item">
-              <strong>Chec Bebel Doumbia</strong>
-              <span>Rapid Bucarest · prestito</span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- LEGGENDE -->
-    <section class="team-section">
-
-      <div class="section-heading">
-        <span class="section-number">06</span>
-        <h2>Leggende</h2>
-      </div>
-
-      <div class="legend-grid">
-
-
-        <article class="legend-card">
-
-          <img
-            src="images/legends/gianluca-signorini.jpg"
-            alt="Gianluca Signorini"
-          >
-
-          <div>
-            <span>Difensore</span>
-            <h3>Gianluca Signorini</h3>
-
-            <p>
-              Capitano e simbolo del Genoa degli anni Ottanta e Novanta.
-              Signorini guidò il Grifone nella storica avventura europea
-              del 1990/91.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="legend-card">
-
-          <img
-            src="images/legends/diego-milito.jpg"
-            alt="Diego Milito"
-          >
-
-          <div>
-            <span>Attaccante</span>
-            <h3>Diego Milito</h3>
-
-            <p>
-              Arrivato a Genova nel 2004 e tornato nel 2008, il Principe
-              fu il simbolo della squadra che conquistò un incredibile
-              quinto posto nel 2008/09 e la qualificazione in Europa.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="legend-card">
-
-          <img
-            src="images/legends/tomas-skuhravy.jpg"
-            alt="Tomáš Skuhravý"
-          >
-
-          <div>
-            <span>Attaccante</span>
-            <h3>Tomáš Skuhravý</h3>
-
-            <p>
-              Il gigante ceco della squadra che conquistò la semifinale
-              di Coppa UEFA nel 1991. La sua coppia con Aguilera è rimasta
-              nella memoria del popolo rossoblù.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="legend-card">
-
-          <img
-            src="images/legends/oscar-aguilera.jpg"
-            alt="Oscar Aguilera"
-          >
-
-          <div>
-            <span>Attaccante</span>
-            <h3>Oscar Aguilera</h3>
-
-            <p>
-              Tecnica, velocità e gol al fianco di Skuhravý. Aguilera
-              fu uno dei protagonisti del Genoa di Osvaldo Bagnoli
-              che arrivò tra le prime quattro d'Europa.
-            </p>
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- STORIA -->
-    <section class="team-section">
-
-      <div class="section-heading">
-        <span class="section-number">07</span>
-        <h2>Momenti di storia</h2>
-      </div>
-
-      <div class="history-timeline">
-
-
-        <article class="history-item">
-
-          <span class="history-year">1893</span>
-
-          <div>
-            <h3>Nasce il Genoa</h3>
-
-            <p>
-              Il 7 settembre 1893 nasce presso il Consolato Britannico
-              di Genova il Genoa Cricket and Football Club, il più antico
-              club calcistico italiano ancora attivo.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">1898</span>
-
-          <div>
-            <h3>Il primo Scudetto</h3>
-
-            <p>
-              A Torino il Genoa conquista il primo campionato italiano
-              della storia, battendo l'Internazionale Torino nella finale.
-              È l'inizio della prima grande dinastia del calcio italiano.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">1903</span>
-
-          <div>
-            <h3>Il primo viaggio internazionale</h3>
-
-            <p>
-              Il Genoa affronta il Football Vélo Club Nice a Genova
-              e pochi mesi dopo gioca la prima trasferta internazionale
-              di una squadra italiana, proprio a Nizza.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">1923–24</span>
-
-          <div>
-            <h3>Il nono Scudetto</h3>
-
-            <p>
-              Il Genoa conquista il nono titolo nazionale della propria
-              storia, l'ultimo fino a oggi. La squadra di De Prà,
-              De Vecchi, Burlando, Catto e Santamaria chiude un'epoca
-              irripetibile.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">1937</span>
-
-          <div>
-            <h3>La Coppa Italia</h3>
-
-            <p>
-              Il Genova 1893 conquista la prima e unica Coppa Italia
-              della propria storia. In finale a Firenze arriva la vittoria
-              per 1-0 sulla Roma grazie al gol di Luigi Torti.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">1991</span>
-
-          <div>
-            <h3>La notte europea</h3>
-
-            <p>
-              Il Genoa di Osvaldo Bagnoli raggiunge la semifinale
-              di Coppa UEFA dopo aver eliminato anche il Liverpool
-              nei quarti di finale. È una delle più grandi imprese
-              europee nella storia del club.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">2009</span>
-
-          <div>
-            <h3>Il Genoa torna in Europa</h3>
-
-            <p>
-              La squadra di Gian Piero Gasperini chiude la Serie A
-              al quinto posto e conquista la qualificazione alla
-              Coppa UEFA/Europa League. Milito e Thiago Motta sono
-              tra i protagonisti di una stagione memorabile.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">2023</span>
-
-          <div>
-            <h3>Il ritorno in Serie A</h3>
-
-            <p>
-              Il Genoa conquista la promozione dalla Serie B con Alberto
-              Gilardino in panchina e torna nella massima serie dopo
-              una sola stagione cadetta.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="history-item">
-
-          <span class="history-year">2026</span>
-
-          <div>
-            <h3>Una nuova era</h3>
-
-            <p>
-              Daniele De Rossi guida il Genoa nella quarta stagione
-              consecutiva in Serie A. La squadra riparte con una rosa
-              rinnovata e con l'obiettivo di consolidarsi nuovamente
-              nel massimo campionato.
-            </p>
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-
-    <div>
-      <strong>Pages Of Football</strong>
-      <span>Football, history &amp; stories.</span>
+    <div class="transfer-photo">
+      <img src="images/players/tommaso-baldanzi.png" alt="Tommaso Baldanzi">
     </div>
 
-    <div>
-      <span>Genoa · 2026/27</span>
+    <span class="transfer-player">Tommaso Baldanzi</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/roma.png" alt="Roma">
+      </div>
     </div>
 
-  </footer>
+    <span class="transfer-price">Riscatto</span>
 
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/lorenzo-colombo.png" alt="Lorenzo Colombo">
+    </div>
+
+    <span class="transfer-player">Lorenzo Colombo</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/milan.png" alt="Milan">
+      </div>
+    </div>
+
+    <span class="transfer-price">Riscatto</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/hamed-traore.png" alt="Hamed Traorè">
+    </div>
+
+    <span class="transfer-player">Hamed Traorè</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/marseille.png" alt="Marsiglia">
+      </div>
+    </div>
+
+    <span class="transfer-price">Prestito</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/mario-mitaj.png" alt="Mario Mitaj">
+    </div>
+
+    <span class="transfer-player">Mario Mitaj</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/al-ittihad.png" alt="Al-Ittihad">
+      </div>
+    </div>
+
+    <span class="transfer-price">Prestito</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/milutin-osmajic.png" alt="Milutin Osmajić">
+    </div>
+
+    <span class="transfer-player">Milutin Osmajić</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/preston.png" alt="Preston">
+      </div>
+    </div>
+
+    <span class="transfer-price">Trasferimento</span>
+
+  </div>
+
+</div>
+
+
+<!-- OUT -->
+
+<div class="transfer-column">
+
+  <h3>OUT</h3>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/jeff-ekhator.png" alt="Jeff Ekhator">
+    </div>
+
+    <span class="transfer-player">Jeff Ekhator</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/juventus.png" alt="Juventus">
+      </div>
+    </div>
+
+    <span class="transfer-price">Trasferimento</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/patrizio-masini.png" alt="Patrizio Masini">
+    </div>
+
+    <span class="transfer-player">Patrizio Masini</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/frosinone.png" alt="Frosinone">
+      </div>
+    </div>
+
+    <span class="transfer-price">Prestito</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/gabriele-calvani.png" alt="Gabriele Calvani">
+    </div>
+
+    <span class="transfer-player">Gabriele Calvani</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/frosinone.png" alt="Frosinone">
+      </div>
+    </div>
+
+    <span class="transfer-price">Prestito</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/alan-vogliacco.png" alt="Alan Vogliacco">
+    </div>
+
+    <span class="transfer-player">Alan Vogliacco</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/cremonese.png" alt="Cremonese">
+      </div>
+    </div>
+
+    <span class="transfer-price">Trasferimento</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/ruslan-malinovskyi.png" alt="Ruslan Malinovskyi">
+    </div>
+
+    <span class="transfer-player">Ruslan Malinovskyi</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/trabzonspor.png" alt="Trabzonspor">
+      </div>
+    </div>
+
+    <span class="transfer-price">Svincolato</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img src="images/players/caleb-ekuban.png" alt="Caleb Ekuban">
+    </div>
+
+    <span class="transfer-player">Caleb Ekuban</span>
+
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img src="images/teams/placeholder.png" alt="">
+      </div>
+    </div>
+
+    <span class="transfer-price">Svincolato</span>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- LEGGENDE -->
+
+<section class="legends-section">
+
+<span class="section-label">06 · LEGGENDE</span>
+
+  <div class="legends-grid">
+
+```
+<div class="legend-card">
+
+  <div class="legend-photo">
+    <img
+      src="images/legends/gianluca-signorini.jpg"
+      alt="Gianluca Signorini">
+  </div>
+
+  <span class="legend-number">01</span>
+
+  <h3>
+    Gianluca<br>
+    Signorini
+  </h3>
+
+  <p>GENOA · 1988–1995</p>
+
+  <b>6</b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+    <img
+      src="images/legends/tomas-skuhravy.jpg"
+      alt="Tomáš Skuhravý">
+  </div>
+
+  <span class="legend-number">02</span>
+
+  <h3>
+    Tomáš<br>
+    Skuhravý
+  </h3>
+
+  <p>GENOA · 1990–1994</p>
+
+  <b>9</b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+    <img
+      src="images/legends/carlos-aguilera.jpg"
+      alt="Carlos Aguilera">
+  </div>
+
+  <span class="legend-number">03</span>
+
+  <h3>
+    Carlos<br>
+    Aguilera
+  </h3>
+
+  <p>GENOA · 1991–1994</p>
+
+  <b>10</b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+    <img
+      src="images/legends/domenico-criscito.jpg"
+      alt="Domenico Criscito">
+  </div>
+
+  <span class="legend-number">04</span>
+
+  <h3>
+    Domenico<br>
+    Criscito
+  </h3>
+
+  <p>GENOA · 2003–2023</p>
+
+  <b>4</b>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- STORIA -->
+
+<section class="history-section">
+
+<span class="section-label">07 · STORIA</span>
+
+  <div class="history-content">
+
+```
+<h2>
+  Dalle origini<br>
+  del calcio<br>
+  alla Genova rossoblù.
+</h2>
+
+
+<div class="history-item">
+
+  <span>1893</span>
+
+  <div>
+    <h3>Nasce il Genoa</h3>
+
+    <p>
+      Il 7 settembre il Genoa Cricket and Athletic Club viene fondato
+      presso il Consolato Britannico di Genova.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>1898</span>
+
+  <div>
+    <h3>Il primo Scudetto</h3>
+
+    <p>
+      Il Genoa conquista il primo campionato nazionale della storia
+      del calcio italiano al Velodromo Umberto I di Torino.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>1898–1904</span>
+
+  <div>
+    <h3>L'era dei pionieri</h3>
+
+    <p>
+      Il Grifone domina i primi anni del calcio italiano conquistando
+      sei titoli nei primi sette campionati.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>1924</span>
+
+  <div>
+    <h3>Il nono Scudetto</h3>
+
+    <p>
+      Il Genoa conquista il suo nono e ultimo titolo nazionale,
+      chiudendo il grande ciclo della prima epoca rossoblù.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>1937</span>
+
+  <div>
+    <h3>La Coppa Italia</h3>
+
+    <p>
+      Il Genova 1893 supera la Roma in finale a Firenze e conquista
+      la prima e finora unica Coppa Italia della propria storia.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>1991–92</span>
+
+  <div>
+    <h3>Il Grifone d'Europa</h3>
+
+    <p>
+      Il Genoa raggiunge una storica semifinale di Coppa UEFA,
+      eliminando Liverpool e Steaua Bucarest nel percorso europeo.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>2008–09</span>
+
+  <div>
+    <h3>Il ritorno in alto</h3>
+
+    <p>
+      Una grande stagione porta il Genoa al quinto posto in Serie A
+      e alla qualificazione europea.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>2023</span>
+
+  <div>
+    <h3>Criscito e l'ultimo capitolo</h3>
+
+    <p>
+      Dopo essere stato una delle bandiere del club per oltre un decennio,
+      Domenico Criscito torna al Genoa per l'ultima parte della sua carriera.
+    </p>
+  </div>
+
+</div>
+
+
+<div class="history-item">
+
+  <span>2026</span>
+
+  <div>
+    <h3>De Rossi e il nuovo Genoa</h3>
+
+    <p>
+      Il Genoa affronta la stagione 2026/27 con Daniele De Rossi
+      confermato sulla panchina rossoblù.
+    </p>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div>PAGES OF FOOTBALL</div>
+
+  <span>
+    © 2026 · Football, history & stories
+  </span>
+
+</footer>
 
 </body>
 </html>
