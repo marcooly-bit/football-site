@@ -1,0 +1,1023 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Napoli · Pages Of Football</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="team.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="logo">
+      <a href="index.html">Pages Of Football</a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="giocatori.html">Giocatori</a>
+      <a href="squadre.html" class="active">Squadre</a>
+      <a href="competizioni.html">Competizioni</a>
+      <a href="almanacco.html">Almanacco</a>
+    </nav>
+
+    <button class="search-button">⌕</button>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="team-hero">
+
+    <div
+      class="hero-image"
+      style="background-image: url('images/stadium/napoli-stadium.jpg');"
+    >
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="team-crest">
+          <img
+            src="images/teams/napoli.png"
+            alt="Napoli"
+          >
+        </div>
+
+        <div class="team-title">
+
+          <span class="competition-label">
+            Serie A · 2026/27
+          </span>
+
+          <h1>Napoli</h1>
+
+          <p>Napoli, Italia · Stadio Diego Armando Maradona</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MAIN -->
+  <main class="team-page">
+
+
+    <!-- INTRO -->
+    <section class="team-intro">
+
+      <div class="section-heading">
+        <span>01</span>
+        <h2>Il Napoli</h2>
+      </div>
+
+      <div class="team-intro-content">
+
+        <p>
+          Fondato nel 1926, il Napoli è il principale club calcistico della
+          città partenopea e una delle società più importanti della storia
+          del calcio italiano. La squadra veste l'azzurro e gioca le proprie
+          partite allo Stadio Diego Armando Maradona, nel quartiere di Fuorigrotta.
+        </p>
+
+        <p>
+          La storia del club è profondamente legata alla città: dagli anni di
+          Maradona e del primo Scudetto fino alla rinascita del XXI secolo,
+          il Napoli ha costruito una delle identità più riconoscibili del calcio
+          europeo. Nel 2026/27 affronta la stagione del Centenario, con una
+          rosa costruita per difendere il titolo e competere in Champions League.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- PALMARES -->
+    <section class="palmares-section">
+
+      <div class="section-heading">
+        <span>02</span>
+        <h2>Palmarès</h2>
+      </div>
+
+      <div class="trophy-grid">
+
+        <div class="trophy-card">
+          <div class="trophy-icon">🏆</div>
+          <strong>4</strong>
+          <span>Serie A</span>
+        </div>
+
+        <div class="trophy-card">
+          <div class="trophy-icon">🏆</div>
+          <strong>6</strong>
+          <span>Coppa Italia</span>
+        </div>
+
+        <div class="trophy-card">
+          <div class="trophy-icon">🏆</div>
+          <strong>3</strong>
+          <span>Supercoppa Italiana</span>
+        </div>
+
+        <div class="trophy-card">
+          <div class="trophy-icon">🏆</div>
+          <strong>1</strong>
+          <span>Coppa UEFA</span>
+        </div>
+
+      </div>
+
+      <div class="palmares-note">
+        <span>Scudetti</span>
+        <strong>1986/87 · 1989/90 · 2022/23 · 2025/26</strong>
+      </div>
+
+    </section>
+
+
+    <!-- ROSA -->
+    <section class="players-section">
+
+      <div class="section-heading">
+        <span>03</span>
+        <h2>Rosa 2026/27</h2>
+      </div>
+
+
+      <!-- PORTIERI -->
+      <div class="position-group">
+
+        <div class="position-title">
+          <span>Portieri</span>
+          <small>04</small>
+        </div>
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">1</div>
+            <div class="player-photo">
+              <img src="images/players/alex-meret.jpg" alt="Alex Meret">
+            </div>
+            <div class="player-info">
+              <h3>Alex Meret</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">14</div>
+            <div class="player-photo">
+              <img src="images/players/nikita-contini.jpg" alt="Nikita Contini">
+            </div>
+            <div class="player-info">
+              <h3>Nikita Contini</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">32</div>
+            <div class="player-photo">
+              <img src="images/players/vanja-milinkovic-savic.jpg" alt="Vanja Milinković-Savić">
+            </div>
+            <div class="player-info">
+              <h3>Vanja Milinković-Savić</h3>
+              <span>Serbia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">12</div>
+            <div class="player-photo">
+              <img src="images/players/claudio-pugliese.jpg" alt="Claudio Pugliese">
+            </div>
+            <div class="player-info">
+              <h3>Claudio Pugliese</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- DIFENSORI -->
+      <div class="position-group">
+
+        <div class="position-title">
+          <span>Difensori</span>
+          <small>10</small>
+        </div>
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">2</div>
+            <div class="player-photo">
+              <img src="images/players/costantino-favasuli.jpg" alt="Costantino Favasuli">
+            </div>
+            <div class="player-info">
+              <h3>Costantino Favasuli</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">4</div>
+            <div class="player-photo">
+              <img src="images/players/alessandro-buongiorno.jpg" alt="Alessandro Buongiorno">
+            </div>
+            <div class="player-info">
+              <h3>Alessandro Buongiorno</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">5</div>
+            <div class="player-photo">
+              <img src="images/players/benoit-badiashile.jpg" alt="Benoît Badiashile">
+            </div>
+            <div class="player-info">
+              <h3>Benoît Badiashile</h3>
+              <span>Francia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">13</div>
+            <div class="player-photo">
+              <img src="images/players/amir-rrahmani.jpg" alt="Amir Rrahmani">
+            </div>
+            <div class="player-info">
+              <h3>Amir Rrahmani</h3>
+              <span>Kosovo</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">16</div>
+            <div class="player-photo">
+              <img src="images/players/rafa-marin.jpg" alt="Rafa Marín">
+            </div>
+            <div class="player-info">
+              <h3>Rafa Marín</h3>
+              <span>Spagna</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">17</div>
+            <div class="player-photo">
+              <img src="images/players/mathias-olivera.jpg" alt="Mathías Olivera">
+            </div>
+            <div class="player-info">
+              <h3>Mathías Olivera</h3>
+              <span>Uruguay</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">22</div>
+            <div class="player-photo">
+              <img src="images/players/giovanni-di-lorenzo.jpg" alt="Giovanni Di Lorenzo">
+            </div>
+            <div class="player-info">
+              <h3>Giovanni Di Lorenzo</h3>
+              <span>Italia · Capitano</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">31</div>
+            <div class="player-photo">
+              <img src="images/players/sam-beukema.jpg" alt="Sam Beukema">
+            </div>
+            <div class="player-info">
+              <h3>Sam Beukema</h3>
+              <span>Paesi Bassi</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">35</div>
+            <div class="player-photo">
+              <img src="images/players/luca-marianucci.jpg" alt="Luca Marianucci">
+            </div>
+            <div class="player-info">
+              <h3>Luca Marianucci</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">37</div>
+            <div class="player-photo">
+              <img src="images/players/leonardo-spinazzola.jpg" alt="Leonardo Spinazzola">
+            </div>
+            <div class="player-info">
+              <h3>Leonardo Spinazzola</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- CENTROCAMPISTI -->
+      <div class="position-group">
+
+        <div class="position-title">
+          <span>Centrocampisti</span>
+          <small>06</small>
+        </div>
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">6</div>
+            <div class="player-photo">
+              <img src="images/players/billy-gilmour.jpg" alt="Billy Gilmour">
+            </div>
+            <div class="player-info">
+              <h3>Billy Gilmour</h3>
+              <span>Scozia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">8</div>
+            <div class="player-photo">
+              <img src="images/players/scott-mctominay.jpg" alt="Scott McTominay">
+            </div>
+            <div class="player-info">
+              <h3>Scott McTominay</h3>
+              <span>Scozia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">11</div>
+            <div class="player-photo">
+              <img src="images/players/kevin-de-bruyne.jpg" alt="Kevin De Bruyne">
+            </div>
+            <div class="player-info">
+              <h3>Kevin De Bruyne</h3>
+              <span>Belgio</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">68</div>
+            <div class="player-photo">
+              <img src="images/players/stanislav-lobotka.jpg" alt="Stanislav Lobotka">
+            </div>
+            <div class="player-info">
+              <h3>Stanislav Lobotka</h3>
+              <span>Slovacchia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">99</div>
+            <div class="player-photo">
+              <img src="images/players/zambo-anguissa.jpg" alt="André-Frank Zambo Anguissa">
+            </div>
+            <div class="player-info">
+              <h3>Zambo Anguissa</h3>
+              <span>Camerun</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">26</div>
+            <div class="player-photo">
+              <img src="images/players/antonio-vergara.jpg" alt="Antonio Vergara">
+            </div>
+            <div class="player-info">
+              <h3>Antonio Vergara</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- ATTACCANTI -->
+      <div class="position-group">
+
+        <div class="position-title">
+          <span>Attaccanti</span>
+          <small>07</small>
+        </div>
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">7</div>
+            <div class="player-photo">
+              <img src="images/players/david-neres.jpg" alt="David Neres">
+            </div>
+            <div class="player-info">
+              <h3>David Neres</h3>
+              <span>Brasile</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">19</div>
+            <div class="player-photo">
+              <img src="images/players/rasmus-hojlund.jpg" alt="Rasmus Højlund">
+            </div>
+            <div class="player-info">
+              <h3>Rasmus Højlund</h3>
+              <span>Danimarca</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">20</div>
+            <div class="player-photo">
+              <img src="images/players/lorenzo-lucca.jpg" alt="Lorenzo Lucca">
+            </div>
+            <div class="player-info">
+              <h3>Lorenzo Lucca</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">21</div>
+            <div class="player-photo">
+              <img src="images/players/matteo-politano.jpg" alt="Matteo Politano">
+            </div>
+            <div class="player-info">
+              <h3>Matteo Politano</h3>
+              <span>Italia</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">23</div>
+            <div class="player-photo">
+              <img src="images/players/giovane.jpg" alt="Giovane">
+            </div>
+            <div class="player-info">
+              <h3>Giovane</h3>
+              <span>Brasile</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">27</div>
+            <div class="player-photo">
+              <img src="images/players/alisson-santos.jpg" alt="Alisson Santos">
+            </div>
+            <div class="player-info">
+              <h3>Alisson Santos</h3>
+              <span>Brasile</span>
+            </div>
+          </article>
+
+          <article class="player-card">
+            <div class="player-number">70</div>
+            <div class="player-photo">
+              <img src="images/players/noa-lang.jpg" alt="Noa Lang">
+            </div>
+            <div class="player-info">
+              <h3>Noa Lang</h3>
+              <span>Paesi Bassi</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ALLENATORE -->
+    <section class="coach-section">
+
+      <div class="section-heading">
+        <span>04</span>
+        <h2>Allenatore</h2>
+      </div>
+
+      <div class="coach-card">
+
+        <div class="coach-photo">
+          <img
+            src="images/coaches/massimiliano-allegri.jpg"
+            alt="Massimiliano Allegri"
+          >
+        </div>
+
+        <div class="coach-info">
+
+          <span class="coach-label">Allenatore</span>
+
+          <h3>Massimiliano Allegri</h3>
+
+          <p>
+            Italia · 1967
+          </p>
+
+          <div class="coach-description">
+            Tornato sulla panchina del Napoli nell'estate 2026, Allegri
+            affronta la stagione del Centenario con l'obiettivo di difendere
+            lo Scudetto conquistato nella stagione precedente e competere
+            nuovamente ai massimi livelli europei.
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- MERCATO -->
+    <section class="transfers-section">
+
+      <div class="section-heading">
+        <span>05</span>
+        <h2>Mercato 2026/27</h2>
+      </div>
+
+      <div class="transfer-grid">
+
+
+        <!-- ARRIVI -->
+        <div class="transfer-column arrivals">
+
+          <div class="transfer-heading">
+            <span>↑</span>
+            <h3>Arrivi</h3>
+          </div>
+
+          <ul>
+
+            <li>
+              <strong>Kevin De Bruyne</strong>
+              <span>Manchester City · svincolato</span>
+            </li>
+
+            <li>
+              <strong>Rasmus Højlund</strong>
+              <span>Manchester United · riscatto</span>
+            </li>
+
+            <li>
+              <strong>Lorenzo Lucca</strong>
+              <span>Udinese · riscatto</span>
+            </li>
+
+            <li>
+              <strong>Alisson Santos</strong>
+              <span>Sporting CP · riscatto</span>
+            </li>
+
+            <li>
+              <strong>Costantino Favasuli</strong>
+              <span>Catanzaro · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Sam Beukema</strong>
+              <span>Bologna · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Benoît Badiashile</strong>
+              <span>Chelsea · prestito</span>
+            </li>
+
+            <li>
+              <strong>Noa Lang</strong>
+              <span>Galatasaray · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Rafa Marín</strong>
+              <span>Villarreal · riscatto</span>
+            </li>
+
+            <li>
+              <strong>Giovane</strong>
+              <span>Hellas Verona · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Antonio Vergara</strong>
+              <span>Reggiana · rientro</span>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <!-- PARTENZE -->
+        <div class="transfer-column departures">
+
+          <div class="transfer-heading">
+            <span>↓</span>
+            <h3>Partenze</h3>
+          </div>
+
+          <ul>
+
+            <li>
+              <strong>Romelu Lukaku</strong>
+              <span>Fenerbahçe · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Giovanni Simeone</strong>
+              <span>Torino · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Giacomo Raspadori</strong>
+              <span>Roma · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Juan Jesus</strong>
+              <span>Venezia · svincolato</span>
+            </li>
+
+            <li>
+              <strong>Jens Cajuste</strong>
+              <span>Málaga · prestito</span>
+            </li>
+
+            <li>
+              <strong>Jesper Lindstrøm</strong>
+              <span>Red Bull Salzburg · prestito</span>
+            </li>
+
+            <li>
+              <strong>Michael Folorunsho</strong>
+              <span>Monza · prestito</span>
+            </li>
+
+            <li>
+              <strong>Pasquale Mazzocchi</strong>
+              <span>Venezia · prestito</span>
+            </li>
+
+            <li>
+              <strong>Nosa Obaretin</strong>
+              <span>Lorient · prestito</span>
+            </li>
+
+            <li>
+              <strong>Walid Cheddira</strong>
+              <span>Avellino · definitivo</span>
+            </li>
+
+            <li>
+              <strong>Christian Garofalo</strong>
+              <span>Dolomiti Bellunesi · prestito</span>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEGENDS -->
+    <section class="legends-section">
+
+      <div class="section-heading">
+        <span>06</span>
+        <h2>Leggende</h2>
+      </div>
+
+      <div class="legends-grid">
+
+
+        <article class="legend-card">
+
+          <div class="legend-photo">
+            <img
+              src="images/legends/diego-armando-maradona.jpg"
+              alt="Diego Armando Maradona"
+            >
+          </div>
+
+          <div class="legend-info">
+            <span>1984 — 1991</span>
+            <h3>Diego Armando Maradona</h3>
+            <p>
+              Il simbolo eterno del Napoli. Con lui gli azzurri conquistarono
+              i primi due Scudetti della propria storia, una Coppa Italia,
+              una Supercoppa Italiana e la Coppa UEFA.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="legend-card">
+
+          <div class="legend-photo">
+            <img
+              src="images/legends/antonio-careca.jpg"
+              alt="Careca"
+            >
+          </div>
+
+          <div class="legend-info">
+            <span>1987 — 1993</span>
+            <h3>Careca</h3>
+            <p>
+              Il grande centravanti brasiliano della squadra del secondo
+              Scudetto, protagonista del celebre tridente con Maradona
+              e Bruno Giordano.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="legend-card">
+
+          <div class="legend-photo">
+            <img
+              src="images/legends/lorenzo-insigne.jpg"
+              alt="Lorenzo Insigne"
+            >
+          </div>
+
+          <div class="legend-info">
+            <span>2009 — 2022</span>
+            <h3>Lorenzo Insigne</h3>
+            <p>
+              Cresciuto nel settore giovanile azzurro, è diventato capitano
+              e simbolo della generazione che ha riportato il Napoli
+              stabilmente ai vertici del calcio italiano.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="legend-card">
+
+          <div class="legend-photo">
+            <img
+              src="images/legends/dries-mertens.jpg"
+              alt="Dries Mertens"
+            >
+          </div>
+
+          <div class="legend-info">
+            <span>2013 — 2022</span>
+            <h3>Dries Mertens</h3>
+            <p>
+              Il miglior marcatore della storia del Napoli, diventato
+              napoletano d'adozione durante nove stagioni in azzurro.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- STORIA -->
+    <section class="history-section">
+
+      <div class="section-heading">
+        <span>07</span>
+        <h2>La storia</h2>
+      </div>
+
+      <div class="history-timeline">
+
+
+        <div class="history-item">
+
+          <span class="history-year">1926</span>
+
+          <div class="history-content">
+            <h3>Nasce l'AC Napoli</h3>
+            <p>
+              Giorgio Ascarelli fonda l'Associazione Calcio Napoli,
+              dando vita alla società che diventerà il principale club
+              calcistico della città.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">1962</span>
+
+          <div class="history-content">
+            <h3>La prima Coppa Italia</h3>
+            <p>
+              Il Napoli conquista la prima Coppa Italia della propria storia,
+              diventando la prima squadra italiana a vincere il trofeo
+              pur militando in Serie B.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">1984</span>
+
+          <div class="history-content">
+            <h3>Arriva Maradona</h3>
+            <p>
+              Diego Armando Maradona viene acquistato dal Barcellona.
+              Il suo arrivo cambia per sempre la storia del club e della città.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">1987</span>
+
+          <div class="history-content">
+            <h3>Il primo Scudetto</h3>
+            <p>
+              Il Napoli conquista il primo campionato italiano della propria
+              storia, completando anche la doppietta con la Coppa Italia.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">1989</span>
+
+          <div class="history-content">
+            <h3>La Coppa UEFA</h3>
+            <p>
+              Il Napoli supera lo Stoccarda nella doppia finale e conquista
+              il primo grande trofeo europeo della propria storia.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">1990</span>
+
+          <div class="history-content">
+            <h3>Il secondo Scudetto</h3>
+            <p>
+              Gli azzurri conquistano il secondo titolo nazionale,
+              precedendo il Milan al termine di una delle stagioni
+              più celebri nella storia del calcio italiano.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2004</span>
+
+          <div class="history-content">
+            <h3>La rinascita</h3>
+            <p>
+              Dopo il fallimento del 2004 nasce la Napoli Soccer,
+              successivamente tornata alla denominazione SSC Napoli.
+              Il club riparte dalla Serie C.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2012</span>
+
+          <div class="history-content">
+            <h3>La Coppa Italia contro la Juventus</h3>
+            <p>
+              Il Napoli torna a vincere un trofeo nazionale battendo
+              la Juventus nella finale di Coppa Italia allo Stadio Olimpico.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2020</span>
+
+          <div class="history-content">
+            <h3>La Coppa ai rigori</h3>
+            <p>
+              Il Napoli conquista la sesta Coppa Italia della propria storia
+              battendo la Juventus ai calci di rigore nella finale di Roma.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2023</span>
+
+          <div class="history-content">
+            <h3>Il terzo Scudetto</h3>
+            <p>
+              Dopo 33 anni di attesa, il Napoli torna campione d'Italia.
+              La squadra di Luciano Spalletti domina il campionato e chiude
+              una stagione entrata nella storia della città.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2026</span>
+
+          <div class="history-content">
+            <h3>Il quarto Scudetto e il Centenario</h3>
+            <p>
+              Il Napoli conquista il quarto campionato italiano della propria
+              storia e si prepara alla stagione del Centenario con Massimiliano
+              Allegri in panchina e Kevin De Bruyne come uno dei simboli
+              della nuova generazione azzurra.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-logo">
+      Pages Of Football
+    </div>
+
+    <p>
+      Football, remembered.
+    </p>
+
+  </footer>
+
+
+</body>
+</html>
+```
