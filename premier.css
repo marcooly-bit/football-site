@@ -1,46 +1,53 @@
 ```css
-/* =========================================================
-   PAGES OF FOOTBALL · PREMIER LEAGUE THEME
-   Base: team.css
-   Colori:
-   Sfondo → #3D195B
-   Testo → #00FF85
-   ========================================================= */
+/* =========================================
+   PREMIER LEAGUE THEME
+   Pages Of Football
+   ========================================= */
 
 :root {
   --premier-purple: #3D195B;
   --premier-green: #00FF85;
 }
 
-/* =========================================================
-   SFONDO GENERALE
-   ========================================================= */
+
+/* =========================================
+   BASE
+   ========================================= */
+
+html,
+body {
+  background: var(--premier-purple) !important;
+}
 
 body {
-  background: var(--premier-purple);
+  color: var(--premier-green);
 }
 
 
-/* =========================================================
+/* =========================================
    HEADER
-   ========================================================= */
+   ========================================= */
 
 .site-header {
-  background: var(--premier-purple);
-  border-color: var(--premier-green);
-}
-
-.site-header .brand strong {
-  color: var(--premier-green);
+  background: var(--premier-purple) !important;
+  border-bottom-color: var(--premier-green) !important;
 }
 
 .site-header nav a {
   color: var(--premier-green);
 }
 
-.site-header nav a:hover,
 .site-header nav a.active {
   color: var(--premier-green);
+}
+
+.brand {
+  color: var(--premier-green);
+}
+
+.logo {
+  background: var(--premier-green);
+  color: var(--premier-purple);
 }
 
 .search-button {
@@ -49,85 +56,98 @@ body {
 }
 
 
-/* =========================================================
-   SEZIONI SU SFONDO
-   ========================================================= */
+/* =========================================
+   HERO
+   ========================================= */
 
-.club-section,
-.palmares-section,
-.squad-section,
-.coach-section,
-.transfers-section,
-.legends-section,
-.history-section {
+/*
+   Il hero rimane quello di team.css.
+   Non cambiamo colori né testi sopra l'immagine.
+*/
+
+.hero {
   background: var(--premier-purple);
+}
+
+
+/* =========================================
+   CLUB
+   ========================================= */
+
+.club-section {
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+}
+
+.club-section .section-label {
+  color: var(--premier-green);
+}
+
+.club-content h2 {
+  color: var(--premier-green);
+}
+
+.club-content p {
   color: var(--premier-green);
 }
 
 
-/* =========================================================
-   TITOLI / LABEL DELLE SEZIONI
-   Solo testo che si trova direttamente sullo sfondo
-   ========================================================= */
-
-.section-label {
-  color: var(--premier-green);
-}
-
-.club-content h2,
-.history-content h2 {
-  color: var(--premier-green);
-}
-
-.club-content p,
-.history-content p {
-  color: var(--premier-green);
-}
-
-.section-heading-row h2 {
-  color: var(--premier-green);
-}
-
-
-/* =========================================================
+/* =========================================
    PALMARES
-   ========================================================= */
+   ========================================= */
 
-.trophy-card {
-  background: var(--premier-purple);
-  border-color: var(--premier-green);
-}
-
-.trophy-info strong,
-.trophy-info span {
+.palmares-section {
+  background: var(--premier-purple) !important;
   color: var(--premier-green);
 }
 
-.other-trophies {
-  border-color: var(--premier-green);
-  color: var(--premier-green);
-}
-
-.other-trophies summary {
-  color: var(--premier-green);
-}
-
-.other-trophy {
-  border-color: var(--premier-green);
-}
-
-.other-trophy strong,
-.other-trophy span {
+.palmares-section .section-label {
   color: var(--premier-green);
 }
 
 
-/* =========================================================
+/*
+   Le trophy-card restano gestite da team.css.
+   Non coloriamo i testi delle card.
+*/
+
+.palmares-section .other-trophies {
+  color: var(--premier-green);
+}
+
+.palmares-section .other-trophies summary {
+  color: var(--premier-green);
+}
+
+.palmares-section .other-trophies-list {
+  color: var(--premier-green);
+}
+
+
+/* =========================================
+   SQUAD
+   ========================================= */
+
+.squad-section {
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+}
+
+.squad-section .section-label {
+  color: var(--premier-green);
+}
+
+.squad-section .section-heading-row h2 {
+  color: var(--premier-green);
+}
+
+
+/* =========================================
    STAGIONI
-   ========================================================= */
+   ========================================= */
 
 .season-selector {
-  background: var(--premier-purple);
+  background: transparent;
   border-color: var(--premier-green);
   color: var(--premier-green);
 }
@@ -137,105 +157,154 @@ body {
   color: var(--premier-green);
 }
 
+.season-arrow {
+  color: var(--premier-green);
+}
 
-/* =========================================================
-   COMPETIZIONE
-   ========================================================= */
+
+/* =========================================
+   COMPETITION BUTTON
+   ========================================= */
 
 .competition-button {
   background: var(--premier-green);
-  border-color: var(--premier-green);
   color: var(--premier-purple);
+  border-color: var(--premier-green);
 }
 
 .competition-button-content span,
-.competition-button-content strong,
+.competition-button-content strong {
+  color: var(--premier-purple);
+}
+
 .competition-button-arrow {
   color: var(--premier-purple);
 }
 
 
-/* =========================================================
-   GRUPPI DI POSIZIONE
-   ========================================================= */
+/* =========================================
+   POSITION GROUPS
+   ========================================= */
 
 .position-group h3 {
   color: var(--premier-green);
 }
 
 
-/* =========================================================
-   IMPORTANTE:
-   PLAYER CARD NON VIENE TOCCATA.
-   
-   I nomi dei giocatori, nazionalità, numeri e testi
-   rimangono quelli definiti da team.css.
-   ========================================================= */
+/*
+   IMPORTANT:
+   player-card NON viene modificata.
+
+   Quindi:
+   - sfondo card = team.css
+   - nome giocatore = team.css
+   - nazionalità = team.css
+   - foto = team.css
+*/
 
 
-/* =========================================================
-   ALLENATORE
-   ========================================================= */
+/* =========================================
+   COACH
+   ========================================= */
 
-.coach-card {
-  background: var(--premier-purple);
-  border-color: var(--premier-green);
+.coach-section {
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+}
+
+.coach-section .section-label {
+  color: var(--premier-green);
 }
 
 
-/* =========================================================
-   TRASFERIMENTI
-   ========================================================= */
+/*
+   Il coach-card rimane quello di team.css.
+   Nessun recolor dei testi sopra la card.
+*/
+
+
+/* =========================================
+   TRANSFERS
+   ========================================= */
+
+.transfers-section {
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+}
+
+.transfers-section .section-label {
+  color: var(--premier-green);
+}
 
 .transfer-column h3 {
   color: var(--premier-green);
 }
 
-.transfer {
-  border-color: var(--premier-green);
-}
-
-
-/* =========================================================
-   LEGGENDE
-   ========================================================= */
 
 /*
-   Le legend-card NON vengono colorate.
-   Le foto e i testi associati rimangono quelli di team.css.
+   Le singole transfer-card restano gestite
+   da team.css.
 */
+
+
+/* =========================================
+   LEGENDS
+   ========================================= */
+
+.legends-section {
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+}
 
 .legends-section .section-label {
   color: var(--premier-green);
 }
 
 
-/* =========================================================
+/*
+   IMPORTANTE:
+   legend-card NON viene modificata.
+
+   Quindi il nome del giocatore e gli altri
+   elementi sopra la foto/card rimangono
+   quelli definiti da team.css.
+*/
+
+
+/* =========================================
+   HISTORY
+   ========================================= */
+
+.history-section {
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+}
+
+.history-section .section-label {
+  color: var(--premier-green);
+}
+
+.history-content h2 {
+  color: var(--premier-green);
+}
+
+.history-content p {
+  color: var(--premier-green);
+}
+
+
+/* =========================================
    FOOTER
-   ========================================================= */
+   ========================================= */
 
 footer {
-  background: var(--premier-purple);
-  border-color: var(--premier-green);
+  background: var(--premier-purple) !important;
+  color: var(--premier-green);
+  border-top-color: var(--premier-green);
 }
 
 footer div,
 footer span {
   color: var(--premier-green);
-}
-
-
-/* =========================================================
-   BORDI GENERALI
-   ========================================================= */
-
-.club-section,
-.palmares-section,
-.squad-section,
-.coach-section,
-.transfers-section,
-.legends-section,
-.history-section {
-  border-color: var(--premier-green);
 }
 ```
