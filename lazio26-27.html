@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -9,1069 +9,1538 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="team.css">
+
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
+<header class="site-header">
 
-    <div class="logo">
-      <a href="index.html">Pages Of Football</a>
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
+  </nav>
+
+<button class="search-button">⌕</button>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-image"
+       style="background-image: url('images/stadium/lazio-stadium.jpg');">
+
+```
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+  <div class="team-crest">
+    <img src="images/teams/lazio.png" alt="Lazio">
+  </div>
+
+  <div>
+
+    <div class="hero-kicker">
+      ROMA · ITALIA
     </div>
 
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="giocatori.html">Giocatori</a>
-      <a href="squadre.html" class="active">Squadre</a>
-      <a href="competizioni.html">Competizioni</a>
-      <a href="almanacco.html">Almanacco</a>
-    </nav>
-
-    <button class="search-button">⌕</button>
-
-  </header>
-
-
-  <!-- HERO -->
-  <section class="team-hero">
-
-    <div
-      class="hero-image"
-      style="background-image: url('images/stadium/lazio-stadium.jpg');"
-    >
-
-      <div class="hero-overlay"></div>
-
-      <div class="hero-content">
-
-        <div class="team-crest">
-          <img
-            src="images/teams/lazio.png"
-            alt="Lazio"
-          >
-        </div>
-
-        <div class="team-title">
-
-          <span class="competition-label">
-            Serie A · 2026/27
-          </span>
-
-          <h1>Lazio</h1>
-
-          <p>Roma, Italia · Stadio Olimpico</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TEAM INTRO -->
-  <main class="team-page">
-
-    <section class="team-intro">
-
-      <div class="section-heading">
-        <span>01</span>
-        <h2>La Lazio</h2>
-      </div>
-
-      <div class="team-intro-content">
-
-        <p>
-          Fondata a Roma nel 1900, la Società Sportiva Lazio è una delle realtà
-          storiche del calcio italiano. I biancocelesti hanno costruito la propria
-          identità attorno all'aquila, ai colori celeste e bianco e allo Stadio Olimpico,
-          casa della squadra dal 1953.
-        </p>
-
-        <p>
-          La storia laziale attraversa epoche molto diverse: dal primo Scudetto
-          conquistato nel 1974 alla grande squadra della fine degli anni Novanta,
-          capace di vincere Coppa delle Coppe, Supercoppa UEFA e Scudetto nel giro
-          di pochi anni.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- PALMARES -->
-    <section class="palmares-section">
-
-      <div class="section-heading">
-        <span>02</span>
-        <h2>Palmarès</h2>
-      </div>
-
-      <div class="trophy-grid">
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>2</strong>
-          <span>Serie A</span>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>7</strong>
-          <span>Coppa Italia</span>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>5</strong>
-          <span>Supercoppa Italiana</span>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>1</strong>
-          <span>Coppa delle Coppe</span>
-        </div>
-
-        <div class="trophy-card">
-          <div class="trophy-icon">🏆</div>
-          <strong>1</strong>
-          <span>Supercoppa UEFA</span>
-        </div>
-
-      </div>
-
-      <div class="palmares-note">
-        <span>Scudetti</span>
-        <strong>1973/74 · 1999/00</strong>
-      </div>
-
-    </section>
-
-
-    <!-- ROSA -->
-    <section class="players-section">
-
-      <div class="section-heading">
-        <span>03</span>
-        <h2>Rosa 2026/27</h2>
-      </div>
-
-      <!-- PORTIERI -->
-      <div class="position-group">
-
-        <div class="position-title">
-          <span>Portieri</span>
-          <small>04</small>
-        </div>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">35</div>
-            <div class="player-photo">
-              <img src="images/players/christos-mandas.jpg" alt="Christos Mandas">
-            </div>
-            <div class="player-info">
-              <h3>Christos Mandas</h3>
-              <span>Grecia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">40</div>
-            <div class="player-photo">
-              <img src="images/players/edoardo-motta.jpg" alt="Edoardo Motta">
-            </div>
-            <div class="player-info">
-              <h3>Edoardo Motta</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">47</div>
-            <div class="player-photo">
-              <img src="images/players/davide-renzetti.jpg" alt="Davide Renzetti">
-            </div>
-            <div class="player-info">
-              <h3>Davide Renzetti</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">55</div>
-            <div class="player-photo">
-              <img src="images/players/alessio-furlanetto.jpg" alt="Alessio Furlanetto">
-            </div>
-            <div class="player-info">
-              <h3>Alessio Furlanetto</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-
-      <!-- DIFENSORI -->
-      <div class="position-group">
-
-        <div class="position-title">
-          <span>Difensori</span>
-          <small>16</small>
-        </div>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">2</div>
-            <div class="player-photo">
-              <img src="images/players/diogo-leite.jpg" alt="Diogo Leite">
-            </div>
-            <div class="player-info">
-              <h3>Diogo Leite</h3>
-              <span>Portogallo</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">3</div>
-            <div class="player-photo">
-              <img src="images/players/luca-pellegrini.jpg" alt="Luca Pellegrini">
-            </div>
-            <div class="player-info">
-              <h3>Luca Pellegrini</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">4</div>
-            <div class="player-photo">
-              <img src="images/players/patric.jpg" alt="Patric">
-            </div>
-            <div class="player-info">
-              <h3>Patric</h3>
-              <span>Spagna</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">5</div>
-            <div class="player-photo">
-              <img src="images/players/danilho-doekhi.jpg" alt="Danilho Doekhi">
-            </div>
-            <div class="player-info">
-              <h3>Danilho Doekhi</h3>
-              <span>Paesi Bassi</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">13</div>
-            <div class="player-photo">
-              <img src="images/players/alessio-romagnoli.jpg" alt="Alessio Romagnoli">
-            </div>
-            <div class="player-info">
-              <h3>Alessio Romagnoli</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">15</div>
-            <div class="player-photo">
-              <img src="images/players/romano-floriani-mussolini.jpg" alt="Romano Floriani Mussolini">
-            </div>
-            <div class="player-info">
-              <h3>Romano Floriani Mussolini</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">17</div>
-            <div class="player-photo">
-              <img src="images/players/nuno-tavares.jpg" alt="Nuno Tavares">
-            </div>
-            <div class="player-info">
-              <h3>Nuno Tavares</h3>
-              <span>Portogallo</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">23</div>
-            <div class="player-photo">
-              <img src="images/players/alfonso-pedraza.jpg" alt="Alfonso Pedraza">
-            </div>
-            <div class="player-info">
-              <h3>Alfonso Pedraza</h3>
-              <span>Spagna</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">25</div>
-            <div class="player-photo">
-              <img src="images/players/oliver-provstgaard.jpg" alt="Oliver Provstgaard">
-            </div>
-            <div class="player-info">
-              <h3>Oliver Provstgaard</h3>
-              <span>Danimarca</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">29</div>
-            <div class="player-photo">
-              <img src="images/players/manuel-lazzari.jpg" alt="Manuel Lazzari">
-            </div>
-            <div class="player-info">
-              <h3>Manuel Lazzari</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">33</div>
-            <div class="player-photo">
-              <img src="images/players/ricardo-bordon.jpg" alt="Ricardo Bordon">
-            </div>
-            <div class="player-info">
-              <h3>Ricardo Bordon</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">37</div>
-            <div class="player-photo">
-              <img src="images/players/josip-sutalo.jpg" alt="Josip Šutalo">
-            </div>
-            <div class="player-info">
-              <h3>Josip Šutalo</h3>
-              <span>Croazia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">76</div>
-            <div class="player-photo">
-              <img src="images/players/filipe-bordon.jpg" alt="Filipe Bordon">
-            </div>
-            <div class="player-info">
-              <h3>Filipe Bordon</h3>
-              <span>Brasile</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">77</div>
-            <div class="player-photo">
-              <img src="images/players/adam-marusic.jpg" alt="Adam Marušić">
-            </div>
-            <div class="player-info">
-              <h3>Adam Marušić</h3>
-              <span>Montenegro</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">—</div>
-            <div class="player-photo">
-              <img src="images/players/ricardo-bordon.jpg" alt="Ricardo Bordon">
-            </div>
-            <div class="player-info">
-              <h3>Ricardo Bordon</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-
-      <!-- CENTROCAMPISTI -->
-      <div class="position-group">
-
-        <div class="position-title">
-          <span>Centrocampisti</span>
-          <small>11</small>
-        </div>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">6</div>
-            <div class="player-photo">
-              <img src="images/players/nicolo-rovella.jpg" alt="Nicolò Rovella">
-            </div>
-            <div class="player-info">
-              <h3>Nicolò Rovella</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">7</div>
-            <div class="player-photo">
-              <img src="images/players/fisayo-dele-bashiru.jpg" alt="Fisayo Dele-Bashiru">
-            </div>
-            <div class="player-info">
-              <h3>Fisayo Dele-Bashiru</h3>
-              <span>Nigeria</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">8</div>
-            <div class="player-photo">
-              <img src="images/players/bruno-galassi.jpg" alt="Bruno Galassi">
-            </div>
-            <div class="player-info">
-              <h3>Bruno Galassi</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">16</div>
-            <div class="player-photo">
-              <img src="images/players/davide-frattesi.jpg" alt="Davide Frattesi">
-            </div>
-            <div class="player-info">
-              <h3>Davide Frattesi</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">21</div>
-            <div class="player-photo">
-              <img src="images/players/reda-belahyane.jpg" alt="Reda Belahyane">
-            </div>
-            <div class="player-info">
-              <h3>Reda Belahyane</h3>
-              <span>Marocco</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">24</div>
-            <div class="player-photo">
-              <img src="images/players/kenneth-taylor.jpg" alt="Kenneth Taylor">
-            </div>
-            <div class="player-info">
-              <h3>Kenneth Taylor</h3>
-              <span>Paesi Bassi</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">28</div>
-            <div class="player-photo">
-              <img src="images/players/adrian-przyborek.jpg" alt="Adrian Przyborek">
-            </div>
-            <div class="player-info">
-              <h3>Adrian Przyborek</h3>
-              <span>Polonia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">32</div>
-            <div class="player-photo">
-              <img src="images/players/danilo-cataldi.jpg" alt="Danilo Cataldi">
-            </div>
-            <div class="player-info">
-              <h3>Danilo Cataldi</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">71</div>
-            <div class="player-photo">
-              <img src="images/players/valerio-farcomeni.jpg" alt="Valerio Farcomeni">
-            </div>
-            <div class="player-info">
-              <h3>Valerio Farcomeni</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">10</div>
-            <div class="player-photo">
-              <img src="images/players/mattia-zaccagni.jpg" alt="Mattia Zaccagni">
-            </div>
-            <div class="player-info">
-              <h3>Mattia Zaccagni</h3>
-              <span>Italia · Capitano</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">29</div>
-            <div class="player-photo">
-              <img src="images/players/manuel-lazzari.jpg" alt="Manuel Lazzari">
-            </div>
-            <div class="player-info">
-              <h3>Manuel Lazzari</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-
-      <!-- ATTACCANTI -->
-      <div class="position-group">
-
-        <div class="position-title">
-          <span>Attaccanti</span>
-          <small>06</small>
-        </div>
-
-        <div class="players-grid">
-
-          <article class="player-card">
-            <div class="player-number">9</div>
-            <div class="player-photo">
-              <img src="images/players/andrea-pinamonti.jpg" alt="Andrea Pinamonti">
-            </div>
-            <div class="player-info">
-              <h3>Andrea Pinamonti</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">11</div>
-            <div class="player-photo">
-              <img src="images/players/gustav-isaksen.jpg" alt="Gustav Isaksen">
-            </div>
-            <div class="player-info">
-              <h3>Gustav Isaksen</h3>
-              <span>Danimarca</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">14</div>
-            <div class="player-photo">
-              <img src="images/players/tijjani-noslin.jpg" alt="Tijjani Noslin">
-            </div>
-            <div class="player-info">
-              <h3>Tijjani Noslin</h3>
-              <span>Paesi Bassi</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">22</div>
-            <div class="player-photo">
-              <img src="images/players/matteo-cancellieri.jpg" alt="Matteo Cancellieri">
-            </div>
-            <div class="player-info">
-              <h3>Matteo Cancellieri</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">63</div>
-            <div class="player-photo">
-              <img src="images/players/federico-serra.jpg" alt="Federico Serra">
-            </div>
-            <div class="player-info">
-              <h3>Federico Serra</h3>
-              <span>Italia</span>
-            </div>
-          </article>
-
-          <article class="player-card">
-            <div class="player-number">80</div>
-            <div class="player-photo">
-              <img src="images/players/albert-gudmundsson.jpg" alt="Albert Guðmundsson">
-            </div>
-            <div class="player-info">
-              <h3>Albert Guðmundsson</h3>
-              <span>Islanda</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ALLENATORE -->
-    <section class="coach-section">
-
-      <div class="section-heading">
-        <span>04</span>
-        <h2>Allenatore</h2>
-      </div>
-
-      <div class="coach-card">
-
-        <div class="coach-photo">
-          <img
-            src="images/coaches/gennaro-gattuso.jpg"
-            alt="Gennaro Gattuso"
-          >
-        </div>
-
-        <div class="coach-info">
-
-          <span class="coach-label">Allenatore</span>
-
-          <h3>Gennaro Gattuso</h3>
-
-          <p>
-            Italia · 1978
-          </p>
-
-          <div class="coach-description">
-            Ex centrocampista del Milan e della Nazionale italiana,
-            Gattuso arriva sulla panchina biancoceleste per guidare
-            la Lazio nella stagione 2026/27.
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- MERCATO -->
-    <section class="transfers-section">
-
-      <div class="section-heading">
-        <span>05</span>
-        <h2>Mercato 2026/27</h2>
-      </div>
-
-      <div class="transfer-grid">
-
-        <div class="transfer-column arrivals">
-
-          <div class="transfer-heading">
-            <span>↑</span>
-            <h3>Arrivi</h3>
-          </div>
-
-          <ul>
-
-            <li>
-              <strong>Diogo Leite</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Danilho Doekhi</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Alfonso Pedraza</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Josip Šutalo</strong>
-              <span>Ajax · prestito</span>
-            </li>
-
-            <li>
-              <strong>Davide Frattesi</strong>
-              <span>Inter · prestito</span>
-            </li>
-
-            <li>
-              <strong>Bruno Galassi</strong>
-              <span>Real Madrid</span>
-            </li>
-
-            <li>
-              <strong>Albert Guðmundsson</strong>
-              <span>Fiorentina · prestito</span>
-            </li>
-
-            <li>
-              <strong>Andrea Pinamonti</strong>
-              <span>Sassuolo</span>
-            </li>
-
-            <li>
-              <strong>Chrīstos Mandas</strong>
-              <span>Fine prestito</span>
-            </li>
-
-            <li>
-              <strong>Romano Floriani Mussolini</strong>
-              <span>Fine prestito</span>
-            </li>
-
-            <li>
-              <strong>Boulaye Dia</strong>
-              <span>Salernitana · riscatto</span>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <div class="transfer-column departures">
-
-          <div class="transfer-heading">
-            <span>↓</span>
-            <h3>Partenze</h3>
-          </div>
-
-          <ul>
-
-            <li>
-              <strong>Ivan Provedel</strong>
-              <span>Inter</span>
-            </li>
-
-            <li>
-              <strong>Mario Gila</strong>
-              <span>Milan</span>
-            </li>
-
-            <li>
-              <strong>Samuel Gigot</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Elseid Hysaj</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Toma Bašić</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Boulaye Dia</strong>
-              <span>Rennes</span>
-            </li>
-
-            <li>
-              <strong>Daniel Maldini</strong>
-              <span>Atalanta · fine prestito</span>
-            </li>
-
-            <li>
-              <strong>Pedro</strong>
-              <span>Svincolato</span>
-            </li>
-
-            <li>
-              <strong>Petar Ratkov</strong>
-              <span>Levante</span>
-            </li>
-
-            <li>
-              <strong>Alessio Romagnoli</strong>
-              <span>Al-Sadd</span>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- LEGENDS -->
-    <section class="legends-section">
-
-      <div class="section-heading">
-        <span>06</span>
-        <h2>Leggende</h2>
-      </div>
-
-      <div class="legends-grid">
-
-        <article class="legend-card">
-
-          <div class="legend-photo">
-            <img
-              src="images/legends/giorgio-chinaglia.jpg"
-              alt="Giorgio Chinaglia"
-            >
-          </div>
-
-          <div class="legend-info">
-            <span>1969 — 1976</span>
-            <h3>Giorgio Chinaglia</h3>
-            <p>
-              Il simbolo della Lazio campione d'Italia nel 1974,
-              trascinatore della squadra di Maestrelli.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="legend-card">
-
-          <div class="legend-photo">
-            <img
-              src="images/legends/alessandro-nesta.jpg"
-              alt="Alessandro Nesta"
-            >
-          </div>
-
-          <div class="legend-info">
-            <span>1993 — 2002</span>
-            <h3>Alessandro Nesta</h3>
-            <p>
-              Capitano e leader della grande Lazio di fine anni Novanta,
-              campione d'Italia nel 2000.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="legend-card">
-
-          <div class="legend-photo">
-            <img
-              src="images/legends/giuseppe-signori.jpg"
-              alt="Giuseppe Signori"
-            >
-          </div>
-
-          <div class="legend-info">
-            <span>1992 — 1997</span>
-            <h3>Giuseppe Signori</h3>
-            <p>
-              Uno dei più grandi bomber della storia biancoceleste,
-              tre volte capocannoniere della Serie A.
-            </p>
-          </div>
-
-        </article>
-
-
-        <article class="legend-card">
-
-          <div class="legend-photo">
-            <img
-              src="images/legends/ciro-immobile.jpg"
-              alt="Ciro Immobile"
-            >
-          </div>
-
-          <div class="legend-info">
-            <span>2016 — 2024</span>
-            <h3>Ciro Immobile</h3>
-            <p>
-              Capocannoniere storico della Lazio e protagonista
-              di una delle epoche più prolifiche del club.
-            </p>
-          </div>
-
-        </article>
-
-      </div>
-
-    </section>
-
-
-    <!-- STORIA -->
-    <section class="history-section">
-
-      <div class="section-heading">
-        <span>07</span>
-        <h2>La storia</h2>
-      </div>
-
-      <div class="history-timeline">
-
-        <div class="history-item">
-
-          <span class="history-year">1900</span>
-
-          <div class="history-content">
-            <h3>Nasce la Lazio</h3>
-            <p>
-              Il 9 gennaio nasce a Roma la Società Podistica Lazio,
-              destinata a diventare una delle società sportive più importanti
-              della capitale e del calcio italiano.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">1958</span>
-
-          <div class="history-content">
-            <h3>Il primo trofeo</h3>
-            <p>
-              La Lazio conquista la prima Coppa Italia della propria storia,
-              superando la Fiorentina nella finale.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">1974</span>
-
-          <div class="history-content">
-            <h3>Il primo Scudetto</h3>
-            <p>
-              La squadra di Tommaso Maestrelli conquista il primo campionato
-              italiano della storia biancoceleste, con Giorgio Chinaglia
-              come simbolo di quella squadra.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">1998</span>
-
-          <div class="history-content">
-            <h3>La nuova grande Lazio</h3>
-            <p>
-              La Lazio torna protagonista ai vertici del calcio italiano:
-              arriva la Coppa Italia e la finale di Coppa UEFA.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">1999</span>
-
-          <div class="history-content">
-            <h3>La notte europea</h3>
-            <p>
-              I biancocelesti vincono la Coppa delle Coppe contro il Maiorca
-              e, pochi mesi dopo, la Supercoppa UEFA contro il Manchester United.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">2000</span>
-
-          <div class="history-content">
-            <h3>Il secondo Scudetto</h3>
-            <p>
-              La Lazio completa una stagione storica: vince Scudetto,
-              Coppa Italia e Supercoppa Italiana, entrando definitivamente
-              nella storia del club.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">2013</span>
-
-          <div class="history-content">
-            <h3>La Coppa nel derby</h3>
-            <p>
-              La Lazio conquista la Coppa Italia battendo la Roma in una
-              finale storica disputata allo Stadio Olimpico.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">2019</span>
-
-          <div class="history-content">
-            <h3>Ancora Coppa Italia</h3>
-            <p>
-              I biancocelesti conquistano la settima Coppa Italia,
-              battendo l'Atalanta nella finale di Roma.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="history-item">
-
-          <span class="history-year">2026</span>
-
-          <div class="history-content">
-            <h3>L'era Gattuso</h3>
-            <p>
-              Dopo una nuova rivoluzione della rosa, la Lazio affida la
-              panchina a Gennaro Gattuso per aprire un nuovo capitolo
-              della propria storia.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-
-    <div class="footer-logo">
-      Pages Of Football
-    </div>
+    <h1>Lazio</h1>
 
     <p>
-      Football, remembered.
+      La storia, la rosa e i protagonisti dei biancocelesti.
     </p>
 
-  </footer>
+  </div>
 
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- CLUB -->
+
+<section class="club-section">
+
+  <span class="section-label">
+    01 · IL CLUB
+  </span>
+
+  <div class="club-content">
+
+```
+<h2>
+  Una città.<br>
+  Un'aquila.<br>
+  Una storia.
+</h2>
+
+<p>
+  Fondata nel 1900, la Società Sportiva Lazio è una delle grandi
+  protagoniste della storia del calcio italiano. I biancocelesti
+  hanno costruito la propria identità tra tradizione romana,
+  grandi campioni e una storia ricca di successi nazionali ed europei.
+</p>
+
+<p>
+  Il primo grande trionfo arrivò nel 1958 con la prima Coppa Italia.
+  Sedici anni più tardi, nel 1974, arrivò il primo Scudetto.
+  Negli anni Novanta la Lazio visse una delle epoche più importanti
+  della propria storia, conquistando trofei italiani ed europei
+  e tornando campione d'Italia nel 2000.
+</p>
+```
+
+  </div>
+
+</section>
+
+<!-- PALMARES -->
+
+<section class="palmares-section">
+
+  <span class="section-label">
+    02 · PALMARES
+  </span>
+
+  <div class="trophy-grid">
+
+```
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/serie-a.png"
+    alt="Serie A"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>2</strong>
+    <span>Serie A</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/coppa-italia.png"
+    alt="Coppa Italia"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>7</strong>
+    <span>Coppa Italia</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/supercoppa-italiana.png"
+    alt="Supercoppa Italiana"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>5</strong>
+    <span>Supercoppa Italiana</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/cup-winners-cup.png"
+    alt="Coppa delle Coppe"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>1</strong>
+    <span>Coppa delle Coppe</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/uefa-super-cup.png"
+    alt="Supercoppa UEFA"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>1</strong>
+    <span>Supercoppa UEFA</span>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- SQUAD -->
+
+<section class="squad-section">
+
+  <div class="section-heading-row">
+
+```
+<div>
+
+  <p class="section-label">
+    Rosa 2026/27
+  </p>
+
+  <h2>
+    La squadra
+  </h2>
+
+</div>
+
+
+<button class="season-selector" type="button">
+
+  <span>
+    STAGIONI
+  </span>
+
+  <strong>
+    2026/27
+  </strong>
+
+  <span class="season-arrow">
+    ⌄
+  </span>
+
+</button>
+```
+
+  </div>
+
+  <a href="#" class="competition-button">
+
+```
+<div class="competition-button-logo">
+  <img
+    src="images/competitions/serie-a.png"
+    alt="Serie A"
+  >
+</div>
+
+<div class="competition-button-content">
+
+  <span>
+    COMPETIZIONE
+  </span>
+
+  <strong>
+    Serie A
+  </strong>
+
+</div>
+
+<div class="competition-button-arrow">
+  →
+</div>
+```
+
+  </a>
+
+  <!-- PORTIERI -->
+
+  <div class="position-group">
+
+```
+<h3>
+  Portieri
+</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+
+    <div class="player-number">
+      55
+    </div>
+
+    <img
+      src="images/players/furlanetto.png"
+      alt="Alessio Furlanetto"
+    >
+
+    <div class="player-info">
+
+      <strong>
+        Alessio Furlanetto
+      </strong>
+
+      <span>
+        🇮🇹 Italia
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">
+      35
+    </div>
+
+    <img
+      src="images/players/christos-mandas.png"
+      alt="Christos Mandas"
+    >
+
+    <div class="player-info">
+
+      <strong>
+        Christos Mandas
+      </strong>
+
+      <span>
+        🇬🇷 Grecia
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">
+      47
+    </div>
+
+    <img
+      src="images/players/davide-renz.png"
+      alt="Davide Renzetti"
+    >
+
+    <div class="player-info">
+
+      <strong>
+        Davide Renzetti
+      </strong>
+
+      <span>
+        🇮🇹 Italia
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">
+      40
+    </div>
+
+    <img
+      src="images/players/edoardo-motta.png"
+      alt="Edoardo Motta"
+    >
+
+    <div class="player-info">
+
+      <strong>
+        Edoardo Motta
+      </strong>
+
+      <span>
+        🇮🇹 Italia
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- DIFENSORI -->
+
+  <div class="position-group">
+
+```
+<h3>
+  Difensori
+</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">77</div>
+    <img src="images/players/adam-marusic.png" alt="Adam Marušić">
+    <div class="player-info">
+      <strong>Adam Marušić</strong>
+      <span>🇲🇪 Montenegro</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">23</div>
+    <img src="images/players/alfonso-pedraza.png" alt="Alfonso Pedraza">
+    <div class="player-info">
+      <strong>Alfonso Pedraza</strong>
+      <span>🇪🇸 Spagna</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">5</div>
+    <img src="images/players/danilho-doekhi.png" alt="Danilho Doekhi">
+    <div class="player-info">
+      <strong>Danilho Doekhi</strong>
+      <span>🇳🇱 Paesi Bassi</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">76</div>
+    <img src="images/players/filipe-bordon.png" alt="Filipe Bordon">
+    <div class="player-info">
+      <strong>Filipe Bordon</strong>
+      <span>🇧🇷 Brasile</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">37</div>
+    <img src="images/players/josip-sutalo.png" alt="Josip Šutalo">
+    <div class="player-info">
+      <strong>Josip Šutalo</strong>
+      <span>🇭🇷 Croazia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">3</div>
+    <img src="images/players/luca-pellegrini.png" alt="Luca Pellegrini">
+    <div class="player-info">
+      <strong>Luca Pellegrini</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- CENTROCAMPISTI -->
+
+  <div class="position-group">
+
+```
+<h3>
+  Centrocampisti
+</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">28</div>
+    <img src="images/players/adrian-przyborek.png" alt="Adrian Przyborek">
+    <div class="player-info">
+      <strong>Adrian Przyborek</strong>
+      <span>🇵🇱 Polonia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">8</div>
+    <img src="images/players/bruno-galassi.png" alt="Bruno Galassi">
+    <div class="player-info">
+      <strong>Bruno Galassi</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">32</div>
+    <img src="images/players/danilo-cataldi.png" alt="Danilo Cataldi">
+    <div class="player-info">
+      <strong>Danilo Cataldi</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">16</div>
+    <img src="images/players/davide-frattesi.png" alt="Davide Frattesi">
+    <div class="player-info">
+      <strong>Davide Frattesi</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">24</div>
+    <img src="images/players/kenneth-taylor.png" alt="Kenneth Taylor">
+    <div class="player-info">
+      <strong>Kenneth Taylor</strong>
+      <span>🇳🇱 Paesi Bassi</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">6</div>
+    <img src="images/players/nicolo-rovella.png" alt="Nicolò Rovella">
+    <div class="player-info">
+      <strong>Nicolò Rovella</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">7</div>
+    <img src="images/players/fisayo-dele-bashiru.png" alt="Fisayo Dele-Bashiru">
+    <div class="player-info">
+      <strong>Fisayo Dele-Bashiru</strong>
+      <span>🇳🇬 Nigeria</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">21</div>
+    <img src="images/players/reda-belahyane.png" alt="Reda Belahyane">
+    <div class="player-info">
+      <strong>Reda Belahyane</strong>
+      <span>🇲🇦 Marocco</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">71</div>
+    <img src="images/players/valerio-farcomeni.png" alt="Valerio Farcomeni">
+    <div class="player-info">
+      <strong>Valerio Farcomeni</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+  <!-- ATTACCANTI -->
+
+  <div class="position-group">
+
+```
+<h3>
+  Attaccanti
+</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">80</div>
+    <img src="images/players/albert-gudmundsson.png" alt="Albert Guðmundsson">
+    <div class="player-info">
+      <strong>Albert Guðmundsson</strong>
+      <span>🇮🇸 Islanda</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">9</div>
+    <img src="images/players/andrea-pinamonti.png" alt="Andrea Pinamonti">
+    <div class="player-info">
+      <strong>Andrea Pinamonti</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">63</div>
+    <img src="images/players/federico-serra.png" alt="Federico Serra">
+    <div class="player-info">
+      <strong>Federico Serra</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">11</div>
+    <img src="images/players/gustav-isaksen.png" alt="Gustav Isaksen">
+    <div class="player-info">
+      <strong>Gustav Isaksen</strong>
+      <span>🇩🇰 Danimarca</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">22</div>
+    <img src="images/players/matteo-cancellieri.png" alt="Matteo Cancellieri">
+    <div class="player-info">
+      <strong>Matteo Cancellieri</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">10</div>
+    <img src="images/players/mattia-zaccagni.png" alt="Mattia Zaccagni">
+    <div class="player-info">
+      <strong>Mattia Zaccagni</strong>
+      <span>🇮🇹 Italia</span>
+    </div>
+  </div>
+
+
+  <div class="player-card">
+    <div class="player-number">14</div>
+    <img src="images/players/tijjani-noslin.png" alt="Tijjani Noslin">
+    <div class="player-info">
+      <strong>Tijjani Noslin</strong>
+      <span>🇳🇱 Paesi Bassi</span>
+    </div>
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- ALLENATORE -->
+
+<section class="coach-section">
+
+  <span class="section-label">
+    04 · ALLENATORE
+  </span>
+
+  <a href="#" class="coach-card">
+
+```
+<div class="coach-photo">
+
+  <img
+    src="images/coaches/gennaro-gattuso.png"
+    alt="Gennaro Gattuso"
+  >
+
+</div>
+
+
+<div class="coach-info">
+
+  <span class="coach-kicker">
+    ALLENATORE
+  </span>
+
+  <strong>
+    Gennaro Gattuso
+  </strong>
+
+  <div class="coach-nationality">
+
+    <span>
+      🇮🇹
+    </span>
+
+    <span>
+      Italia
+    </span>
+
+  </div>
+
+  <span class="coach-club">
+    Lazio · 2026/27
+  </span>
+
+</div>
+
+
+<div class="coach-arrow">
+  →
+</div>
+```
+
+  </a>
+
+</section>
+
+<!-- TRASFERIMENTI -->
+
+<section class="transfers-section">
+
+  <span class="section-label">
+    05 · TRASFERIMENTI
+  </span>
+
+  <div class="transfers-grid">
+
+```
+<!-- IN -->
+
+<div class="transfer-column">
+
+  <h3>
+    IN
+  </h3>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/alfonso-pedraza.png"
+        alt="Alfonso Pedraza"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Alfonso Pedraza
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        ←
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/villarreal.png"
+          alt="Villarreal"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Fine contratto
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/danilho-doekhi.png"
+        alt="Danilho Doekhi"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Danilho Doekhi
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        ←
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/union-berlin.png"
+          alt="Union Berlin"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Fine contratto
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/davide-frattesi.png"
+        alt="Davide Frattesi"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Davide Frattesi
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        ←
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/inter.png"
+          alt="Inter"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Prestito
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/josip-sutalo.png"
+        alt="Josip Šutalo"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Josip Šutalo
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        ←
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/ajax.png"
+          alt="Ajax"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Prestito
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/andrea-pinamonti.png"
+        alt="Andrea Pinamonti"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Andrea Pinamonti
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        ←
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/sassuolo.png"
+          alt="Sassuolo"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Definitivo
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/albert-gudmundsson.png"
+        alt="Albert Guðmundsson"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Albert Guðmundsson
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        ←
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/fiorentina.png"
+          alt="Fiorentina"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Prestito
+    </span>
+
+  </div>
+
+</div>
+
+
+<!-- OUT -->
+
+<div class="transfer-column">
+
+  <h3>
+    OUT
+  </h3>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/mario-gila.png"
+        alt="Mario Gila"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Mario Gila
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        →
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/milan.png"
+          alt="Milan"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Definitivo
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/ivan-provedel.png"
+        alt="Ivan Provedel"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Ivan Provedel
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        →
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/inter.png"
+          alt="Inter"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Definitivo
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/alessio-romagnoli.png"
+        alt="Alessio Romagnoli"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Alessio Romagnoli
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        →
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/al-sadd.png"
+          alt="Al-Sadd"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Fine contratto
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/pedro.png"
+        alt="Pedro"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Pedro
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        →
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/placeholder.png"
+          alt="Club"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Fine contratto
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/daniel-maldini.png"
+        alt="Daniel Maldini"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Daniel Maldini
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        →
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/atalanta.png"
+          alt="Atalanta"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Fine prestito
+    </span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/boulaye-dia.png"
+        alt="Boulaye Dia"
+      >
+    </div>
+
+    <span class="transfer-player">
+      Boulaye Dia
+    </span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">
+        →
+      </span>
+
+      <div class="transfer-club">
+
+        <img
+          src="images/teams/rennes.png"
+          alt="Rennes"
+        >
+
+      </div>
+
+    </div>
+
+    <span class="transfer-price">
+      Definitivo
+    </span>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- LEGGENDE -->
+
+<section class="legends-section">
+
+  <span class="section-label">
+    06 · LEGGENDE
+  </span>
+
+  <div class="legends-grid">
+
+```
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/silvio-piola.jpg"
+      alt="Silvio Piola"
+    >
+
+  </div>
+
+  <span class="legend-number">
+    01
+  </span>
+
+  <h3>
+    Silvio<br>Piola
+  </h3>
+
+  <p>
+    LAZIO · 1934–1943
+  </p>
+
+  <b>
+    9
+  </b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/giorgio-chinaglia.jpg"
+      alt="Giorgio Chinaglia"
+    >
+
+  </div>
+
+  <span class="legend-number">
+    02
+  </span>
+
+  <h3>
+    Giorgio<br>Chinaglia
+  </h3>
+
+  <p>
+    LAZIO · 1969–1976
+  </p>
+
+  <b>
+    9
+  </b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/stefan-radu.jpg"
+      alt="Stefan Radu"
+    >
+
+  </div>
+
+  <span class="legend-number">
+    03
+  </span>
+
+  <h3>
+    Stefan<br>Radu
+  </h3>
+
+  <p>
+    LAZIO · 2008–2023
+  </p>
+
+  <b>
+    26
+  </b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/ciro-immobile.jpg"
+      alt="Ciro Immobile"
+    >
+
+  </div>
+
+  <span class="legend-number">
+    04
+  </span>
+
+  <h3>
+    Ciro<br>Immobile
+  </h3>
+
+  <p>
+    LAZIO · 2016–2024
+  </p>
+
+  <b>
+    17
+  </b>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- STORIA -->
+
+<section class="history-section">
+
+  <span class="section-label">
+    07 · STORIA
+  </span>
+
+  <div class="history-content">
+
+```
+<h2>
+  Dall'Aquila<br>
+  al tetto<br>
+  d'Italia.
+</h2>
+
+
+<div class="history-timeline">
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      1900
+    </span>
+
+    <div>
+      <h3>
+        La nascita
+      </h3>
+
+      <p>
+        Il 9 gennaio nasce la Società Sportiva Lazio,
+        destinata a diventare uno dei simboli sportivi
+        più importanti della capitale.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      1958
+    </span>
+
+    <div>
+      <h3>
+        La prima Coppa Italia
+      </h3>
+
+      <p>
+        La Lazio conquista il primo grande trofeo
+        della propria storia, vincendo la Coppa Italia.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      1974
+    </span>
+
+    <div>
+      <h3>
+        Il primo Scudetto
+      </h3>
+
+      <p>
+        La squadra guidata da Tommaso Maestrelli,
+        con Giorgio Chinaglia protagonista, conquista
+        il primo campionato italiano della storia laziale.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      1998
+      – 2000
+    </span>
+
+    <div>
+      <h3>
+        L'epoca d'oro
+      </h3>
+
+      <p>
+        Con Sven-Göran Eriksson in panchina e una rosa
+        ricca di campioni, la Lazio conquista Coppa Italia,
+        Coppa delle Coppe, Supercoppa UEFA e Supercoppa Italiana.
+        Nel 2000 arriva anche il secondo Scudetto.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      2009
+    </span>
+
+    <div>
+      <h3>
+        La Coppa Italia
+      </h3>
+
+      <p>
+        La Lazio torna a conquistare un trofeo nazionale,
+        battendo la Sampdoria ai rigori nella finale
+        disputata allo Stadio Olimpico.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      2013
+    </span>
+
+    <div>
+      <h3>
+        Il derby più importante
+      </h3>
+
+      <p>
+        Il 26 maggio la Lazio batte la Roma nella finale
+        di Coppa Italia e conquista il sesto trofeo
+        nazionale della propria storia.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      2019
+    </span>
+
+    <div>
+      <h3>
+        Un altro doppio trionfo
+      </h3>
+
+      <p>
+        La Lazio conquista la Coppa Italia contro l'Atalanta
+        e pochi mesi dopo aggiunge la quinta Supercoppa Italiana
+        alla propria bacheca.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="history-item">
+
+    <span class="history-year">
+      2026
+    </span>
+
+    <div>
+      <h3>
+        Una nuova era
+      </h3>
+
+      <p>
+        Gennaro Gattuso prende la guida della Lazio
+        per la stagione 2026/27, inaugurando un nuovo capitolo
+        della storia biancoceleste.
+      </p>
+    </div>
+
+  </div>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div>
+    PAGES OF FOOTBALL
+  </div>
+
+  <span>
+    © 2026 · Football, history & stories
+  </span>
+
+</footer>
 
 </body>
 </html>
-```
