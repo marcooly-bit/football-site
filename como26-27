@@ -1,0 +1,1103 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Como · Pages Of Football</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="team.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <div class="site-logo">
+      <a href="index.html">PAGES OF FOOTBALL</a>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="giocatori.html">Giocatori</a>
+      <a href="squadre.html" class="active">Squadre</a>
+      <a href="competizioni.html">Competizioni</a>
+      <a href="almanacco.html">Almanacco</a>
+    </nav>
+
+    <button class="search-button" aria-label="Cerca">
+      <span></span>
+      <span></span>
+    </button>
+
+  </header>
+
+
+  <!-- HERO -->
+  <section class="team-hero">
+
+    <div
+      class="hero-image"
+      style="background-image: url('images/stadium/como-stadium.jpg');"
+    >
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="team-crest">
+          <img
+            src="images/teams/como.png"
+            alt="Como 1907"
+          >
+        </div>
+
+        <div class="hero-text">
+
+          <span class="hero-kicker">
+            ITALIA · SERIE A · 2026/27
+          </span>
+
+          <h1>Como</h1>
+
+          <p>
+            Como 1907
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <main class="team-page">
+
+
+    <!-- CLUB -->
+    <section class="team-section club-section">
+
+      <div class="section-heading">
+        <span class="section-number">01</span>
+
+        <div>
+          <span class="section-kicker">IL CLUB</span>
+          <h2>Una storia sul lago.</h2>
+        </div>
+      </div>
+
+      <div class="club-content">
+
+        <div class="club-description">
+
+          <p class="club-lead">
+            Fondato nel 1907 sulle rive del Lago di Como, il club
+            lombardo ha attraversato oltre un secolo di storia tra
+            Serie A, Serie B e periodi di ricostruzione.
+          </p>
+
+          <p>
+            Il ritorno in Serie A nel 2024 ha aperto una nuova era.
+            Dopo una prima stagione di assestamento, il Como ha
+            conquistato nel 2025/26 uno storico quarto posto,
+            guadagnandosi la prima qualificazione della propria storia
+            alla UEFA Champions League.
+          </p>
+
+        </div>
+
+        <div class="club-facts">
+
+          <div class="fact">
+            <span>Fondazione</span>
+            <strong>1907</strong>
+          </div>
+
+          <div class="fact">
+            <span>Città</span>
+            <strong>Como</strong>
+          </div>
+
+          <div class="fact">
+            <span>Stadio</span>
+            <strong>Giuseppe Sinigaglia</strong>
+          </div>
+
+          <div class="fact">
+            <span>Serie A</span>
+            <strong>2026/27</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PALMARES -->
+    <section class="team-section palmares-section">
+
+      <div class="section-heading">
+        <span class="section-number">02</span>
+
+        <div>
+          <span class="section-kicker">PALMARÈS</span>
+          <h2>I trofei.</h2>
+        </div>
+      </div>
+
+
+      <div class="trophies-grid">
+
+        <div class="trophy-card">
+          <span class="trophy-number">3</span>
+          <span class="trophy-name">Serie B</span>
+        </div>
+
+        <div class="trophy-card">
+          <span class="trophy-number">1</span>
+          <span class="trophy-name">Coppa Italia Serie C</span>
+        </div>
+
+        <div class="trophy-card">
+          <span class="trophy-number">1</span>
+          <span class="trophy-name">Coppa Italia Serie D</span>
+        </div>
+
+      </div>
+
+
+      <div class="other-trophies">
+
+        <span class="other-trophies-label">
+          ALTRI TRAGUARDI
+        </span>
+
+        <div class="other-trophy-row">
+          <strong>2025/26</strong>
+          <span>4º posto in Serie A · qualificazione alla Champions League</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ROSA -->
+    <section class="team-section squad-section">
+
+      <div class="section-heading">
+
+        <span class="section-number">03</span>
+
+        <div>
+          <span class="section-kicker">ROSA</span>
+          <h2>Como 2026/27.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="competition-selector">
+
+        <a href="#" class="competition-button active">
+          <span>Serie A</span>
+          <small>2026/27</small>
+        </a>
+
+        <a href="#" class="competition-button">
+          <span>Champions League</span>
+          <small>2026/27</small>
+        </a>
+
+      </div>
+
+
+      <!-- PORTIERI -->
+      <div class="squad-group">
+
+        <div class="squad-group-header">
+          <h3>Portieri</h3>
+          <span>03</span>
+        </div>
+
+
+        <div class="players-grid">
+
+          <article class="player-card">
+
+            <div class="player-number">1</div>
+
+            <img
+              src="images/players/jean-butez.jpg"
+              alt="Jean Butez"
+            >
+
+            <div class="player-info">
+              <span class="player-position">POR</span>
+              <h4>Jean Butez</h4>
+              <div class="player-meta">
+                <span>🇫🇷</span>
+                <span>Francia</span>
+              </div>
+            </div>
+
+          </article>
+
+
+          <article class="player-card">
+
+            <div class="player-number">22</div>
+
+            <img
+              src="images/players/mauro-vigorito.jpg"
+              alt="Mauro Vigorito"
+            >
+
+            <div class="player-info">
+              <span class="player-position">POR</span>
+              <h4>Mauro Vigorito</h4>
+              <div class="player-meta">
+                <span>🇮🇹</span>
+                <span>Italia</span>
+              </div>
+            </div>
+
+          </article>
+
+
+          <article class="player-card">
+
+            <div class="player-number">97</div>
+
+            <img
+              src="images/players/robert-sanchez.jpg"
+              alt="Robert Sánchez"
+            >
+
+            <div class="player-info">
+              <span class="player-position">POR</span>
+              <h4>Robert Sánchez</h4>
+              <div class="player-meta">
+                <span>🇪🇸</span>
+                <span>Spagna</span>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- DIFENSORI -->
+      <div class="squad-group">
+
+        <div class="squad-group-header">
+          <h3>Difensori</h3>
+          <span>10</span>
+        </div>
+
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">53</div>
+            <img src="images/players/willy-kambwala.jpg" alt="Willy Kambwala">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Willy Kambwala</h4>
+              <div class="player-meta">
+                <span>🇫🇷</span>
+                <span>Francia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">99</div>
+            <img src="images/players/trevoh-chalobah.jpg" alt="Trevoh Chalobah">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Trevoh Chalobah</h4>
+              <div class="player-meta">
+                <span>🇬🇧</span>
+                <span>Inghilterra</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">27</div>
+            <img src="images/players/yan-couto.jpg" alt="Yan Couto">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Yan Couto</h4>
+              <div class="player-meta">
+                <span>🇧🇷</span>
+                <span>Brasile</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">16</div>
+            <img src="images/players/kaiki-bruno.jpg" alt="Kaiki Bruno">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Kaiki Bruno</h4>
+              <div class="player-meta">
+                <span>🇧🇷</span>
+                <span>Brasile</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">4</div>
+            <img src="images/players/jacobo-ramon.jpg" alt="Jacobo Ramón">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Jacobo Ramón</h4>
+              <div class="player-meta">
+                <span>🇪🇸</span>
+                <span>Spagna</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">3</div>
+            <img src="images/players/alex-valle.jpg" alt="Álex Valle">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Álex Valle</h4>
+              <div class="player-meta">
+                <span>🇪🇸</span>
+                <span>Spagna</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">28</div>
+            <img src="images/players/ivan-smolcic.jpg" alt="Ivan Smolčić">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Ivan Smolčić</h4>
+              <div class="player-meta">
+                <span>🇭🇷</span>
+                <span>Croazia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">2</div>
+            <img src="images/players/marc-oliver-kempf.jpg" alt="Marc-Oliver Kempf">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Marc-Oliver Kempf</h4>
+              <div class="player-meta">
+                <span>🇩🇪</span>
+                <span>Germania</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">18</div>
+            <img src="images/players/edoardo-goldaniga.jpg" alt="Edoardo Goldaniga">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Edoardo Goldaniga</h4>
+              <div class="player-meta">
+                <span>🇮🇹</span>
+                <span>Italia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">13</div>
+            <img src="images/players/alberto-dossena.jpg" alt="Alberto Dossena">
+            <div class="player-info">
+              <span class="player-position">DIF</span>
+              <h4>Alberto Dossena</h4>
+              <div class="player-meta">
+                <span>🇮🇹</span>
+                <span>Italia</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- CENTROCAMPISTI -->
+      <div class="squad-group">
+
+        <div class="squad-group-header">
+          <h3>Centrocampisti</h3>
+          <span>10</span>
+        </div>
+
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">21</div>
+            <img src="images/players/samuele-ricci.jpg" alt="Samuele Ricci">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Samuele Ricci</h4>
+              <div class="player-meta">
+                <span>🇮🇹</span>
+                <span>Italia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">30</div>
+            <img src="images/players/mattia-liberali.jpg" alt="Mattia Liberali">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Mattia Liberali</h4>
+              <div class="player-meta">
+                <span>🇮🇹</span>
+                <span>Italia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">6</div>
+            <img src="images/players/luis-milla.jpg" alt="Luis Milla">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Luis Milla</h4>
+              <div class="player-meta">
+                <span>🇪🇸</span>
+                <span>Spagna</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">20</div>
+            <img src="images/players/martin-baturina.jpg" alt="Martin Baturina">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Martin Baturina</h4>
+              <div class="player-meta">
+                <span>🇭🇷</span>
+                <span>Croazia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">7</div>
+            <img src="images/players/lucas-da-cunha.jpg" alt="Lucas Da Cunha">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Lucas Da Cunha</h4>
+              <div class="player-meta">
+                <span>🇫🇷</span>
+                <span>Francia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">10</div>
+            <img src="images/players/nico-paz.jpg" alt="Nicolás Paz">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Nicolás Paz</h4>
+              <div class="player-meta">
+                <span>🇦🇷</span>
+                <span>Argentina</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">8</div>
+            <img src="images/players/maxence-caqueret.jpg" alt="Maxence Caqueret">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Maxence Caqueret</h4>
+              <div class="player-meta">
+                <span>🇫🇷</span>
+                <span>Francia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">5</div>
+            <img src="images/players/maximo-perrone.jpg" alt="Máximo Perrone">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Máximo Perrone</h4>
+              <div class="player-meta">
+                <span>🇦🇷</span>
+                <span>Argentina</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">15</div>
+            <img src="images/players/adrian-lahdo.jpg" alt="Adrian Lahdo">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Adrian Lahdo</h4>
+              <div class="player-meta">
+                <span>🇸🇪</span>
+                <span>Svezia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">42</div>
+            <img src="images/players/jayden-addai.jpg" alt="Jayden Addai">
+            <div class="player-info">
+              <span class="player-position">CEN</span>
+              <h4>Jayden Addai</h4>
+              <div class="player-meta">
+                <span>🇳🇱</span>
+                <span>Paesi Bassi</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+
+      <!-- ATTACCANTI -->
+      <div class="squad-group">
+
+        <div class="squad-group-header">
+          <h3>Attaccanti</h3>
+          <span>05</span>
+        </div>
+
+
+        <div class="players-grid">
+
+          <article class="player-card">
+            <div class="player-number">90</div>
+            <img src="images/players/moise-kean.jpg" alt="Moise Kean">
+            <div class="player-info">
+              <span class="player-position">ATT</span>
+              <h4>Moise Kean</h4>
+              <div class="player-meta">
+                <span>🇮🇹</span>
+                <span>Italia</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">42</div>
+            <img src="images/players/jayden-addai.jpg" alt="Jayden Addai">
+            <div class="player-info">
+              <span class="player-position">ATT</span>
+              <h4>Jayden Addai</h4>
+              <div class="player-meta">
+                <span>🇳🇱</span>
+                <span>Paesi Bassi</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">17</div>
+            <img src="images/players/jesus-rodriguez.jpg" alt="Jesús Rodríguez">
+            <div class="player-info">
+              <span class="player-position">ATT</span>
+              <h4>Jesús Rodríguez</h4>
+              <div class="player-meta">
+                <span>🇪🇸</span>
+                <span>Spagna</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">11</div>
+            <img src="images/players/assane-diao.jpg" alt="Assane Diao">
+            <div class="player-info">
+              <span class="player-position">ATT</span>
+              <h4>Assane Diao</h4>
+              <div class="player-meta">
+                <span>🇸🇳</span>
+                <span>Senegal</span>
+              </div>
+            </div>
+          </article>
+
+
+          <article class="player-card">
+            <div class="player-number">9</div>
+            <img src="images/players/anastasios-douvikas.jpg" alt="Anastasios Douvikas">
+            <div class="player-info">
+              <span class="player-position">ATT</span>
+              <h4>Anastasios Douvikas</h4>
+              <div class="player-meta">
+                <span>🇬🇷</span>
+                <span>Grecia</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ALLENATORE -->
+    <section class="team-section coach-section">
+
+      <div class="section-heading">
+
+        <span class="section-number">04</span>
+
+        <div>
+          <span class="section-kicker">PANCA</span>
+          <h2>Il tecnico.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="coach-card">
+
+        <img
+          src="images/coaches/cesc-fabregas.jpg"
+          alt="Cesc Fàbregas"
+        >
+
+        <div class="coach-info">
+
+          <span class="coach-role">
+            ALLENATORE
+          </span>
+
+          <h3>Cesc Fàbregas</h3>
+
+          <p>
+            Spagna · 1987
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRASFERIMENTI -->
+    <section class="team-section transfers-section">
+
+      <div class="section-heading">
+
+        <span class="section-number">05</span>
+
+        <div>
+          <span class="section-kicker">MERCATO</span>
+          <h2>Estate 2026.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="transfers-grid">
+
+        <!-- ARRIVI -->
+        <div class="transfer-column">
+
+          <div class="transfer-heading">
+            <span>ARRIVI</span>
+            <strong>+</strong>
+          </div>
+
+          <div class="transfer-list">
+
+            <div class="transfer-row">
+              <strong>Trevoh Chalobah</strong>
+              <span>Chelsea</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Willy Kambwala</strong>
+              <span>Villarreal</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Yan Couto</strong>
+              <span>Borussia Dortmund</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Kaiki Bruno</strong>
+              <span>Cruzeiro</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Jacobo Ramón</strong>
+              <span>Real Madrid</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Álex Valle</strong>
+              <span>Como 1907</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Samuele Ricci</strong>
+              <span>Torino</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Mattia Liberali</strong>
+              <span>Milan</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Luis Milla</strong>
+              <span>Getafe</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Martin Baturina</strong>
+              <span>Dinamo Zagabria</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Moise Kean</strong>
+              <span>Fiorentina</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Adrian Lahdo</strong>
+              <span>Hammarby</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Jayden Addai</strong>
+              <span>PSV</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- PARTENZE -->
+        <div class="transfer-column">
+
+          <div class="transfer-heading">
+            <span>PARTENZE</span>
+            <strong>−</strong>
+          </div>
+
+          <div class="transfer-list">
+
+            <div class="transfer-row">
+              <strong>Patrick Cutrone</strong>
+              <span>Monza</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Yannik Engelhardt</strong>
+              <span>Freiburg</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Stefan Posch</strong>
+              <span>Mainz</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Mërgim Vojvoda</strong>
+              <span>Torino</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Alessandro Gabrielloni</strong>
+              <span>Palermo</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Ignace Van der Brempt</strong>
+              <span>Red Bull Salzburg</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Iván Azón</strong>
+              <span>Getafe</span>
+            </div>
+
+            <div class="transfer-row">
+              <strong>Nicolas Kühn</strong>
+              <span>Borussia M'gladbach</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEGGENDE -->
+    <section class="team-section legends-section">
+
+      <div class="section-heading">
+
+        <span class="section-number">06</span>
+
+        <div>
+          <span class="section-kicker">ALMANACCO</span>
+          <h2>Le leggende.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="legends-grid">
+
+        <article class="legend-card">
+
+          <img
+            src="images/legends/aldo-zambrano.jpg"
+            alt="Giocatore storico del Como"
+          >
+
+          <div class="legend-info">
+            <span>STORIA</span>
+            <h3>Giuseppe Terragni</h3>
+            <p>
+              Una delle figure simboliche della città e del territorio lariano.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="legend-card">
+
+          <img
+            src="images/legends/stefano-borgonovo.jpg"
+            alt="Stefano Borgonovo"
+          >
+
+          <div class="legend-info">
+            <span>1981–1986</span>
+            <h3>Stefano Borgonovo</h3>
+            <p>
+              Uno degli attaccanti più importanti della storia del Como.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="legend-card">
+
+          <img
+            src="images/legends/aldo-serena.jpg"
+            alt="Aldo Serena"
+          >
+
+          <div class="legend-info">
+            <span>1979–1982</span>
+            <h3>Aldo Serena</h3>
+            <p>
+              Cresciuto nel settore giovanile lariano, prima di diventare
+              protagonista del calcio italiano.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="legend-card">
+
+          <img
+            src="images/legends/alessandro-gabrielloni.jpg"
+            alt="Alessandro Gabrielloni"
+          >
+
+          <div class="legend-info">
+            <span>2018–2026</span>
+            <h3>Alessandro Gabrielloni</h3>
+            <p>
+              Il simbolo della rinascita del Como e della scalata
+              dalla Serie D alla Serie A.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- STORIA -->
+    <section class="team-section history-section">
+
+      <div class="section-heading">
+
+        <span class="section-number">07</span>
+
+        <div>
+          <span class="section-kicker">STORIA</span>
+          <h2>Dal lago all'Europa.</h2>
+        </div>
+
+      </div>
+
+
+      <div class="history-timeline">
+
+        <div class="history-item">
+
+          <span class="history-year">1907</span>
+
+          <div>
+            <h3>Nasce il Como</h3>
+            <p>
+              Il club viene fondato sulle rive del Lago di Como.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">1949</span>
+
+          <div>
+            <h3>La prima Serie A</h3>
+            <p>
+              Il Como conquista per la prima volta la promozione
+              nella massima serie italiana.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2002</span>
+
+          <div>
+            <h3>Il ritorno in Serie A</h3>
+            <p>
+              Dopo un lungo periodo lontano dal massimo campionato,
+              il Como torna in Serie A.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2024</span>
+
+          <div>
+            <h3>La rinascita</h3>
+            <p>
+              Dopo 21 anni di attesa, il Como torna in Serie A
+              e apre una nuova fase della propria storia.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="history-item">
+
+          <span class="history-year">2026</span>
+
+          <div>
+            <h3>La prima Champions League</h3>
+            <p>
+              Il quarto posto in Serie A 2025/26 porta il Como
+              per la prima volta nella sua storia in UEFA Champions League.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-logo">
+      PAGES OF FOOTBALL
+    </div>
+
+    <div class="footer-team">
+      Como · 2026/27
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
+```
