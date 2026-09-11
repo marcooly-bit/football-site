@@ -1,0 +1,241 @@
+```css
+/* =========================================================
+   PAGES OF FOOTBALL · PREMIER LEAGUE THEME
+   Base: team.css
+   Colori:
+   Sfondo → #3D195B
+   Testo → #00FF85
+   ========================================================= */
+
+:root {
+  --premier-purple: #3D195B;
+  --premier-green: #00FF85;
+}
+
+/* =========================================================
+   SFONDO GENERALE
+   ========================================================= */
+
+body {
+  background: var(--premier-purple);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  background: var(--premier-purple);
+  border-color: var(--premier-green);
+}
+
+.site-header .brand strong {
+  color: var(--premier-green);
+}
+
+.site-header nav a {
+  color: var(--premier-green);
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: var(--premier-green);
+}
+
+.search-button {
+  color: var(--premier-green);
+  border-color: var(--premier-green);
+}
+
+
+/* =========================================================
+   SEZIONI SU SFONDO
+   ========================================================= */
+
+.club-section,
+.palmares-section,
+.squad-section,
+.coach-section,
+.transfers-section,
+.legends-section,
+.history-section {
+  background: var(--premier-purple);
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   TITOLI / LABEL DELLE SEZIONI
+   Solo testo che si trova direttamente sullo sfondo
+   ========================================================= */
+
+.section-label {
+  color: var(--premier-green);
+}
+
+.club-content h2,
+.history-content h2 {
+  color: var(--premier-green);
+}
+
+.club-content p,
+.history-content p {
+  color: var(--premier-green);
+}
+
+.section-heading-row h2 {
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   PALMARES
+   ========================================================= */
+
+.trophy-card {
+  background: var(--premier-purple);
+  border-color: var(--premier-green);
+}
+
+.trophy-info strong,
+.trophy-info span {
+  color: var(--premier-green);
+}
+
+.other-trophies {
+  border-color: var(--premier-green);
+  color: var(--premier-green);
+}
+
+.other-trophies summary {
+  color: var(--premier-green);
+}
+
+.other-trophy {
+  border-color: var(--premier-green);
+}
+
+.other-trophy strong,
+.other-trophy span {
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   STAGIONI
+   ========================================================= */
+
+.season-selector {
+  background: var(--premier-purple);
+  border-color: var(--premier-green);
+  color: var(--premier-green);
+}
+
+.season-selector span,
+.season-selector strong {
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   COMPETIZIONE
+   ========================================================= */
+
+.competition-button {
+  background: var(--premier-green);
+  border-color: var(--premier-green);
+  color: var(--premier-purple);
+}
+
+.competition-button-content span,
+.competition-button-content strong,
+.competition-button-arrow {
+  color: var(--premier-purple);
+}
+
+
+/* =========================================================
+   GRUPPI DI POSIZIONE
+   ========================================================= */
+
+.position-group h3 {
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   IMPORTANTE:
+   PLAYER CARD NON VIENE TOCCATA.
+   
+   I nomi dei giocatori, nazionalità, numeri e testi
+   rimangono quelli definiti da team.css.
+   ========================================================= */
+
+
+/* =========================================================
+   ALLENATORE
+   ========================================================= */
+
+.coach-card {
+  background: var(--premier-purple);
+  border-color: var(--premier-green);
+}
+
+
+/* =========================================================
+   TRASFERIMENTI
+   ========================================================= */
+
+.transfer-column h3 {
+  color: var(--premier-green);
+}
+
+.transfer {
+  border-color: var(--premier-green);
+}
+
+
+/* =========================================================
+   LEGGENDE
+   ========================================================= */
+
+/*
+   Le legend-card NON vengono colorate.
+   Le foto e i testi associati rimangono quelli di team.css.
+*/
+
+.legends-section .section-label {
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  background: var(--premier-purple);
+  border-color: var(--premier-green);
+}
+
+footer div,
+footer span {
+  color: var(--premier-green);
+}
+
+
+/* =========================================================
+   BORDI GENERALI
+   ========================================================= */
+
+.club-section,
+.palmares-section,
+.squad-section,
+.coach-section,
+.transfers-section,
+.legends-section,
+.history-section {
+  border-color: var(--premier-green);
+}
+```
