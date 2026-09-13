@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -14,743 +15,959 @@
 
 <header class="site-header">
 
-  <div class="brand">
-    <div class="brand-mark">P</div>
-    <div class="brand-name">PAGES OF FOOTBALL</div>
-  </div>
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
 
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#" class="active">Squadre</a>
-    <a href="#">Giocatori</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
   </nav>
 
-  <button class="search-button">⌕</button>
+<button class="search-button">⌕</button>
 
 </header>
 
-<main>
+<!-- =========================
+     HERO
+========================= -->
 
-  <!-- HERO -->
-  <section class="hero">
+<section class="hero">
 
-    <div class="hero-image"
-         style="background-image: url('images/stadium/mkm-stadium.jpg');">
-    </div>
+  <div
+    class="hero-image"
+    style="background-image: url('images/stadium/mkm-stadium.jpg');"
+  >
 
-    <div class="hero-overlay"></div>
+<div class="hero-overlay"></div>
 
-    <div class="hero-content">
+<div class="hero-content">
 
-      <img src="images/teams/hull-city.png"
-           alt="Hull City"
-           class="hero-crest">
+  <div class="team-crest">
+    <img src="images/teams/hull-city.png" alt="Hull City">
+  </div>
 
-      <div class="hero-kicker">HULL · EAST YORKSHIRE · 1904</div>
+  <div>
+    <div class="hero-kicker">HULL CITY · INGHILTERRA</div>
 
-      <h1>HULL CITY</h1>
+    <h1>Hull City</h1>
 
-      <p>
-        The Tigers. Una città, un'identità e un ritorno in Premier League
-        costruito contro ogni previsione.
-      </p>
+    <p>La storia, la rosa e i protagonisti dei Tigers.</p>
+  </div>
 
-    </div>
-
-  </section>
-
-
-  <!-- CLUB -->
-  <section class="section club-section">
-
-    <div class="section-label">IL CLUB</div>
-
-    <div class="club-content">
-
-      <h2>
-        Dall'ombra della Championship<br>
-        fino alla luce della Premier.
-      </h2>
-
-      <p>
-        Fondato nel 1904, l'Hull City è il principale club calcistico della
-        città di Hull, nello Yorkshire orientale. Per gran parte della propria
-        storia ha vissuto tra le divisioni inferiori del calcio inglese,
-        costruendo però una delle identità più riconoscibili del Paese grazie
-        ai colori ambra e neri e al soprannome "The Tigers".
-        <br><br>
-        Il primo grande salto arrivò nel 2008, con la storica promozione in
-        Premier League. Da allora il club ha conosciuto promozioni, retrocessioni
-        e difficoltà finanziarie, fino alla sorprendente cavalcata del 2025/26:
-        dopo essere stato considerato tra i candidati alla retrocessione,
-        l'Hull ha conquistato i playoff e battuto il Middlesbrough nella finale
-        di Wembley, tornando nella massima serie.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- PALMARES -->
-  <section class="section palmares-section">
-
-    <div class="section-label">PALMARÈS</div>
-
-    <div class="trophy-grid">
-
-      <div class="trophy-card">
-        <img src="images/trophies/championship.png"
-             alt="Championship">
-        <h3>Championship Play-Off</h3>
-        <span>2007/08 · 2015/16 · 2025/26</span>
-      </div>
-
-      <div class="trophy-card">
-        <img src="images/trophies/league-one.png"
-             alt="League One">
-        <h3>League One</h3>
-        <span>2020/21</span>
-      </div>
-
-      <div class="trophy-card">
-        <img src="images/trophies/third-division.png"
-             alt="Third Division">
-        <h3>Third Division</h3>
-        <span>1965/66</span>
-      </div>
-
-      <div class="trophy-card">
-        <img src="images/trophies/third-division-north.png"
-             alt="Third Division North">
-        <h3>Third Division North</h3>
-        <span>1932/33 · 1948/49</span>
-      </div>
-
-    </div>
-
-    <details class="other-trophies">
-
-      <summary>Altri piazzamenti e traguardi</summary>
-
-      <div class="other-trophies-list">
-
-        <div>
-          <strong>Championship</strong>
-          <span>2º posto · 2012/13</span>
-        </div>
-
-        <div>
-          <strong>FA Cup</strong>
-          <span>Finalista · 2013/14</span>
-        </div>
-
-        <div>
-          <strong>Associate Members' Cup</strong>
-          <span>Finalista · 1983/84</span>
-        </div>
-
-        <div>
-          <strong>Watney Cup</strong>
-          <span>Finalista · 1973</span>
-        </div>
-
-      </div>
-
-    </details>
-
-  </section>
-
-
-  <!-- SQUAD -->
-  <section class="section squad-section">
-
-    <div class="section-heading-row">
-
-      <div class="section-label">ROSA</div>
-
-      <div class="season-selector">
-        <button class="active">2026/27</button>
-        <button>2025/26</button>
-        <button>2024/25</button>
-      </div>
-
-    </div>
-
-
-    <div class="competition-selector">
-
-      <button class="competition-button active">
-        <img src="images/competitions/premier-league.png"
-             alt="Premier League">
-        Premier League
-      </button>
-
-    </div>
-
-
-    <!-- PORTIERI -->
-    <div class="squad-group">
-
-      <h3>Portieri</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/jack-butland.png" alt="Jack Butland">
-          <span class="player-number">1</span>
-          <h4>Jack Butland</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/dillon-phillips.png" alt="Dillon Phillips">
-          <span class="player-number">12</span>
-          <h4>Dillon Phillips</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/konstantinos-tzolakis.png" alt="Konstantinos Tzolakis">
-          <span class="player-number">19</span>
-          <h4>Konstantinos Tzolakis</h4>
-          <p>Grecia</p>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- DIFENSORI -->
-    <div class="squad-group">
-
-      <h3>Difensori</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/lewie-coyle.png" alt="Lewie Coyle">
-          <span class="player-number">2</span>
-          <h4>Lewie Coyle</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/ryan-giles.png" alt="Ryan Giles">
-          <span class="player-number">3</span>
-          <h4>Ryan Giles</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/charlie-hughes.png" alt="Charlie Hughes">
-          <span class="player-number">4</span>
-          <h4>Charlie Hughes</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/semi-ajayi.png" alt="Semi Ajayi">
-          <span class="player-number">6</span>
-          <h4>Semi Ajayi</h4>
-          <p>Nigeria</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/john-egan.png" alt="John Egan">
-          <span class="player-number">15</span>
-          <h4>John Egan</h4>
-          <p>Irlanda</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/paddy-mcnair.png" alt="Paddy McNair">
-          <span class="player-number">17</span>
-          <h4>Paddy McNair</h4>
-          <p>Irlanda del Nord</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/brooke-norton-cuffy.png" alt="Brooke Norton-Cuffy">
-          <span class="player-number">18</span>
-          <h4>Brooke Norton-Cuffy</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/lucas-herrington.png" alt="Lucas Herrington">
-          <span class="player-number">22</span>
-          <h4>Lucas Herrington</h4>
-          <p>Stati Uniti</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/matt-targett.png" alt="Matt Targett">
-          <span class="player-number">23</span>
-          <h4>Matt Targett</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/nobel-mendy.png" alt="Nobel Mendy">
-          <span class="player-number">32</span>
-          <h4>Nobel Mendy</h4>
-          <p>Senegal</p>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- CENTROCAMPISTI -->
-    <div class="squad-group">
-
-      <h3>Centrocampisti</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/hidemasa-morita.png" alt="Hidemasa Morita">
-          <span class="player-number">5</span>
-          <h4>Hidemasa Morita</h4>
-          <p>Giappone</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/sorba-thomas.png" alt="Sorba Thomas">
-          <span class="player-number">7</span>
-          <h4>Sorba Thomas</h4>
-          <p>Galles</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/elliot-matazo.png" alt="Elliot Matazo">
-          <span class="player-number">8</span>
-          <h4>Elliot Matazo</h4>
-          <p>Belgio</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/mohamed-belloumi.png" alt="Mohamed Belloumi">
-          <span class="player-number">10</span>
-          <h4>Mohamed Belloumi</h4>
-          <p>Algeria</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/jens-hjerto-dahl.png" alt="Jens Hjertø-Dahl">
-          <span class="player-number">14</span>
-          <h4>Jens Hjertø-Dahl</h4>
-          <p>Norvegia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/oscar-zambrano.png" alt="Óscar Zambrano">
-          <span class="player-number">20</span>
-          <h4>Óscar Zambrano</h4>
-          <p>Ecuador</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/elliot-stroud.png" alt="Elliot Stroud">
-          <span class="player-number">21</span>
-          <h4>Elliot Stroud</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/darko-gyabi.png" alt="Darko Gyabi">
-          <span class="player-number">24</span>
-          <h4>Darko Gyabi</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/matt-crooks.png" alt="Matt Crooks">
-          <span class="player-number">25</span>
-          <h4>Matt Crooks</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/kieran-dowell.png" alt="Kieran Dowell">
-          <span class="player-number">26</span>
-          <h4>Kieran Dowell</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/regan-slater.png" alt="Regan Slater">
-          <span class="player-number">27</span>
-          <h4>Regan Slater</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/lucas-gourna-douath.png" alt="Lucas Gourna-Douath">
-          <span class="player-number">29</span>
-          <h4>Lucas Gourna-Douath</h4>
-          <p>Francia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/abdulkadir-omur.png" alt="Abdülkadir Ömür">
-          <span class="player-number">33</span>
-          <h4>Abdülkadir Ömür</h4>
-          <p>Turchia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/christos-mouzakitis.png" alt="Christos Mouzakitis">
-          <span class="player-number">36</span>
-          <h4>Christos Mouzakitis</h4>
-          <p>Grecia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/tim-iroegbunam.png" alt="Tim Iroegbunam">
-          <span class="player-number">42</span>
-          <h4>Tim Iroegbunam</h4>
-          <p>Inghilterra</p>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- ATTACCANTI -->
-    <div class="squad-group">
-
-      <h3>Attaccanti</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/oli-mcburnie.png" alt="Oli McBurnie">
-          <span class="player-number">9</span>
-          <h4>Oli McBurnie</h4>
-          <p>Scotland</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/joe-gelhardt.png" alt="Joe Gelhardt">
-          <span class="player-number">11</span>
-          <h4>Joe Gelhardt</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/tyrell-sellars-fleming.png" alt="Tyrell Sellars-Fleming">
-          <span class="player-number">16</span>
-          <h4>Tyrell Sellars-Fleming</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/mohamed-ali-cho.png" alt="Mohamed-Ali Cho">
-          <span class="player-number">50</span>
-          <h4>Mohamed-Ali Cho</h4>
-          <p>Francia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/david-akintola.png" alt="David Akintola">
-          <span class="player-number">30</span>
-          <h4>David Akintola</h4>
-          <p>Nigeria</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/robinio-vaz.png" alt="Robinio Vaz">
-          <span class="player-number">47</span>
-          <h4>Robinio Vaz</h4>
-          <p>Portogallo</p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- COACH -->
-  <section class="section coach-section">
-
-    <div class="section-label">ALLENATORE</div>
-
-    <div class="coach-card">
-
-      <img src="images/coaches/sergej-jakirovic.png"
-           alt="Sergej Jakirovic">
-
-      <div class="coach-info">
-
-        <span>HEAD COACH</span>
-
-        <h2>Sergej Jakirovic</h2>
-
-        <p>
-          Croato. Alla guida dell'Hull City dal 2025, ha riportato i Tigers
-          in Premier League dopo una sorprendente vittoria nei playoff della
-          Championship 2025/26.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- TRANSFERS -->
-  <section class="section transfers-section">
-
-    <div class="section-label">MERCATO 2026/27</div>
-
-    <div class="transfers-grid">
-
-      <div class="transfer-column">
-
-        <h3>Arrivi</h3>
-
-        <div class="transfer-list">
-
-          <div class="transfer-card">
-            <strong>Jack Butland</strong>
-            <span>Rangers</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Konstantinos Tzolakis</strong>
-            <span>Olympiacos</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Nobel Mendy</strong>
-            <span>Rayo Vallecano</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Hidemasa Morita</strong>
-            <span>Sporting CP</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Matt Targett</strong>
-            <span>Newcastle United</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Mohamed-Ali Cho</strong>
-            <span>Nice</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Oli McBurnie</strong>
-            <span>Las Palmas</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Christos Mouzakitis</strong>
-            <span>Olympiacos</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Brooke Norton-Cuffy</strong>
-            <span>Genoa</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Tim Iroegbunam</strong>
-            <span>Everton</span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="transfer-column">
-
-        <h3>Partenze</h3>
-
-        <div class="transfer-list">
-
-          <div class="transfer-card">
-            <strong>Ivor Pandur</strong>
-            <span>Rangers</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Cody Drameh</strong>
-            <span>Genoa</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Enis Destan</strong>
-            <span>Konyaspor</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Abu Kamara</strong>
-            <span>Portsmouth</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Kasey Palmer</strong>
-            <span>Luton Town</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Kyle Joseph</strong>
-            <span>Middlesbrough</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Akin Famewo</strong>
-            <span>Bolton Wanderers</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Liam Millar</strong>
-            <span>Birmingham City · prestito</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Matty Jacob</strong>
-            <span>Newport County · prestito</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Mason Burstow</strong>
-            <span>Sheffield Wednesday · prestito</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- LEGENDS -->
-  <section class="section legends-section">
-
-    <div class="section-label">LEGGENDE</div>
-
-    <div class="legend-grid">
-
-      <div class="legend-card">
-        <img src="images/legends/dean-windass.jpg"
-             alt="Dean Windass">
-        <div class="legend-info">
-          <h3>Dean Windass</h3>
-          <p>L'eroe della promozione in Premier League del 2008.</p>
-        </div>
-      </div>
-
-      <div class="legend-card">
-        <img src="images/legends/ian-ashbee.jpg"
-             alt="Ian Ashbee">
-        <div class="legend-info">
-          <h3>Ian Ashbee</h3>
-          <p>Capitano simbolo dell'Hull City tra Championship e Premier League.</p>
-        </div>
-      </div>
-
-      <div class="legend-card">
-        <img src="images/legends/chris-chilton.jpg"
-             alt="Chris Chilton">
-        <div class="legend-info">
-          <h3>Chris Chilton</h3>
-          <p>Uno dei più grandi attaccanti nella storia dei Tigers.</p>
-        </div>
-      </div>
-
-      <div class="legend-card">
-        <img src="images/legends/andy-dawson.jpg"
-             alt="Andy Dawson">
-        <div class="legend-info">
-          <h3>Andy Dawson</h3>
-          <p>Terzino, capitano e protagonista dell'ascesa del club negli anni 2000.</p>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- HISTORY -->
-  <section class="section history-section">
-
-    <div class="section-label">STORIA</div>
-
-    <div class="history-content">
-
-      <h2>
-        Un club abituato<br>
-        a ricominciare.
-      </h2>
-
-      <p>
-        L'Hull City nasce nel 1904 e per decenni rimane lontano dai riflettori
-        del calcio inglese di vertice. La prima grande affermazione arriva
-        nella prima metà del Novecento, con i titoli della Third Division North
-        nel 1932/33 e nel 1948/49.
-        <br><br>
-        Dopo il titolo di Third Division del 1965/66, il club attraversa
-        lunghi periodi nelle categorie inferiori. La trasformazione più
-        importante arriva nel nuovo millennio: nel 2008 i Tigers raggiungono
-        per la prima volta la Premier League, un'impresa resa ancora più
-        memorabile dalla vittoria nei playoff di Championship.
-        <br><br>
-        Nel 2014 l'Hull raggiunge la finale di FA Cup, mentre negli anni
-        successivi alterna Premier League e Championship. Nel 2020/21 arriva
-        il titolo di League One. La storia recente culmina nel 2025/26, quando
-        l'Hull supera nuovamente i playoff e conquista una terza promozione
-        attraverso Wembley.
-        <br><br>
-    
-      </p>
-
-    </div>
-
-  </section>
-
-</main>
-
-
-<!-- FOOTER -->
-<footer class="site-footer">
-
-  <div class="brand">
-
-    <div class="brand-mark">P</div>
-
-    <div class="brand-name">
-      PAGES OF FOOTBALL
-    </div>
+</div>
 
   </div>
 
-  <div class="footer-links">
-    <a href="#">Home</a>
-    <a href="#">Squadre</a>
-    <a href="#">Giocatori</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
+</section>
+
+<!-- =========================
+     CLUB
+========================= -->
+
+<section class="club-section">
+
+<span class="section-label">01 · IL CLUB</span>
+
+  <div class="club-content">
+
+<h2>
+  Dallo Yorkshire.<br>
+  Al grande calcio.<br>
+  Sempre Tigers.
+</h2>
+
+<p>
+  Fondato nel 1904, l'Hull City è il principale club calcistico di Kingston upon Hull.
+  I Tigers hanno costruito la propria storia attraverso decenni nelle categorie inferiori,
+  prima di arrivare per la prima volta in Premier League nel 2008. Il club gioca al
+  MKM Stadium, inaugurato nel 2002 dopo il trasferimento dallo storico Boothferry Park.
+</p>
+
+<p>
+  Dopo anni di alti e bassi, Hull ha vissuto una nuova rinascita nella seconda metà
+  degli anni 2010 e negli anni 2020. La promozione in Premier League del 2026,
+  ottenuta vincendo i play-off del Championship, ha riportato i Tigers nel massimo
+  campionato inglese.
+</p>
+
   </div>
 
-  <p>© 2026 Pages Of Football</p>
+</section>
+
+<!-- =========================
+     PALMARES
+========================= -->
+
+<section class="palmares-section">
+
+<span class="section-label">02 · PALMARES</span>
+
+  <div class="trophy-grid">
+
+<div class="trophy-card">
+
+  <div class="trophy-image">
+    <img src="images/trophies/third-division-north.png" alt="Third Division North">
+  </div>
+
+  <div class="trophy-info">
+    <span>THIRD DIVISION NORTH</span>
+    <strong>2</strong>
+    <p>1932/33 · 1948/49</p>
+  </div>
+
+</div>
+
+<div class="trophy-card">
+
+  <div class="trophy-image">
+    <img src="images/trophies/third-division.png" alt="Third Division">
+  </div>
+
+  <div class="trophy-info">
+    <span>THIRD DIVISION</span>
+    <strong>1</strong>
+    <p>1965/66</p>
+  </div>
+
+</div>
+
+<div class="trophy-card">
+
+  <div class="trophy-image">
+    <img src="images/trophies/league-one.png" alt="League One">
+  </div>
+
+  <div class="trophy-info">
+    <span>LEAGUE ONE</span>
+    <strong>1</strong>
+    <p>2020/21</p>
+  </div>
+
+</div>
+
+<div class="trophy-card">
+
+  <div class="trophy-image">
+    <img src="images/trophies/play-off.png" alt="Play-Off">
+  </div>
+
+  <div class="trophy-info">
+    <span>PLAY-OFF</span>
+    <strong>3</strong>
+    <p>2008 · 2016 · 2026</p>
+  </div>
+
+</div>
+
+  </div>
+
+  <details class="other-trophies">
+
+<summary>
+  <span>＋</span>
+  ALTRI TROFEI
+</summary>
+
+<div class="other-trophies-list">
+
+  <div>
+    <strong>FA Cup</strong>
+    <span>Finalista · 2013/14</span>
+  </div>
+
+  <div>
+    <strong>Championship</strong>
+    <span>Secondo posto · 2012/13</span>
+  </div>
+
+  <div>
+    <strong>League One</strong>
+    <span>Secondo posto · 2004/05</span>
+  </div>
+
+  <div>
+    <strong>Third Division</strong>
+    <span>Secondo posto · 1958/59</span>
+  </div>
+
+  <div>
+    <strong>Third Division / Fourth Division</strong>
+    <span>Secondo posto · 1982/83 · 2003/04</span>
+  </div>
+
+</div>
+
+  </details>
+
+</section>
+
+<!-- =========================
+     SQUAD
+========================= -->
+
+<section class="squad-section">
+
+  <div class="section-heading-row">
+
+<div>
+
+  <p class="section-label">Rosa 2026/27</p>
+
+  <h2>La squadra</h2>
+
+</div>
+
+<button class="season-selector" type="button">
+
+  <span>STAGIONI</span>
+
+  <strong>2026/27</strong>
+
+  <span class="season-arrow">⌄</span>
+
+</button>
+
+  </div>
+
+  <!-- COMPETITION -->
+
+  <a href="#" class="competition-button">
+
+<div class="competition-button-logo">
+  <img src="images/competitions/premier-league.png" alt="Premier League">
+</div>
+
+<div class="competition-button-content">
+  <span>COMPETIZIONE</span>
+  <strong>Premier League</strong>
+</div>
+
+<div class="competition-button-arrow">→</div>
+
+  </a>
+
+  <!-- =========================
+       PORTIERI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Portieri</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">01</div>
+    <img src="images/players/jack-butland.png" alt="Jack Butland">
+    <div class="player-info">
+      <strong>Jack Butland</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">12</div>
+    <img src="images/players/dillon-phillips.png" alt="Dillon Phillips">
+    <div class="player-info">
+      <strong>Dillon Phillips</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">19</div>
+    <img src="images/players/konstantinos-tzolakis.png" alt="Konstantinos Tzolakis">
+    <div class="player-info">
+      <strong>Konstantinos Tzolakis</strong>
+      <span>🇬🇷 Grecia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">55</div>
+    <img src="images/players/archie-howard.png" alt="Archie Howard">
+    <div class="player-info">
+      <strong>Archie Howard</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       DIFENSORI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Difensori</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">02</div>
+    <img src="images/players/lewie-coyle.png" alt="Lewie Coyle">
+    <div class="player-info">
+      <strong>Lewie Coyle</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">03</div>
+    <img src="images/players/ryan-giles.png" alt="Ryan Giles">
+    <div class="player-info">
+      <strong>Ryan Giles</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">04</div>
+    <img src="images/players/charlie-hughes.png" alt="Charlie Hughes">
+    <div class="player-info">
+      <strong>Charlie Hughes</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">06</div>
+    <img src="images/players/semi-ajayi.png" alt="Semi Ajayi">
+    <div class="player-info">
+      <strong>Semi Ajayi</strong>
+      <span>🇳🇬 Nigeria</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">15</div>
+    <img src="images/players/john-egan.png" alt="John Egan">
+    <div class="player-info">
+      <strong>John Egan</strong>
+      <span>🇮🇪 Irlanda</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">17</div>
+    <img src="images/players/paddy-mcnair.png" alt="Paddy McNair">
+    <div class="player-info">
+      <strong>Paddy McNair</strong>
+      <span>🇬🇧 Irlanda del Nord</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">18</div>
+    <img src="images/players/brooke-norton-cuffy.png" alt="Brooke Norton-Cuffy">
+    <div class="player-info">
+      <strong>Brooke Norton-Cuffy</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">22</div>
+    <img src="images/players/lucas-herrington.png" alt="Lucas Herrington">
+    <div class="player-info">
+      <strong>Lucas Herrington</strong>
+      <span>🇦🇺 Australia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">23</div>
+    <img src="images/players/matt-targett.png" alt="Matt Targett">
+    <div class="player-info">
+      <strong>Matt Targett</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">32</div>
+    <img src="images/players/nobel-mendy.png" alt="Nobel Mendy">
+    <div class="player-info">
+      <strong>Nobel Mendy</strong>
+      <span>🇸🇳 Senegal</span>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       CENTROCAMPISTI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Centrocampisti</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">05</div>
+    <img src="images/players/hidemasa-morita.png" alt="Hidemasa Morita">
+    <div class="player-info">
+      <strong>Hidemasa Morita</strong>
+      <span>🇯🇵 Giappone</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">08</div>
+    <img src="images/players/eliot-matazo.png" alt="Eliot Matazo">
+    <div class="player-info">
+      <strong>Eliot Matazo</strong>
+      <span>🇧🇪 Belgio</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">14</div>
+    <img src="images/players/jens-hjerto-dahl.png" alt="Jens Hjertø-Dahl">
+    <div class="player-info">
+      <strong>Jens Hjertø-Dahl</strong>
+      <span>🇳🇴 Norvegia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">20</div>
+    <img src="images/players/oscar-zambrano.png" alt="Óscar Zambrano">
+    <div class="player-info">
+      <strong>Óscar Zambrano</strong>
+      <span>🇪🇨 Ecuador</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">21</div>
+    <img src="images/players/elliot-stroud.png" alt="Elliot Stroud">
+    <div class="player-info">
+      <strong>Elliot Stroud</strong>
+      <span>🇸🇪 Svezia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">24</div>
+    <img src="images/players/darko-gyabi.png" alt="Darko Gyabi">
+    <div class="player-info">
+      <strong>Darko Gyabi</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">25</div>
+    <img src="images/players/matt-crooks.png" alt="Matt Crooks">
+    <div class="player-info">
+      <strong>Matt Crooks</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">26</div>
+    <img src="images/players/kieran-dowell.png" alt="Kieran Dowell">
+    <div class="player-info">
+      <strong>Kieran Dowell</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">27</div>
+    <img src="images/players/regan-slater.png" alt="Regan Slater">
+    <div class="player-info">
+      <strong>Regan Slater</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">29</div>
+    <img src="images/players/lucas-gourna-douath.png" alt="Lucas Gourna-Douath">
+    <div class="player-info">
+      <strong>Lucas Gourna-Douath</strong>
+      <span>🇫🇷 Francia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">30</div>
+    <img src="images/players/david-akintola.png" alt="David Akintola">
+    <div class="player-info">
+      <strong>David Akintola</strong>
+      <span>🇳🇬 Nigeria</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">33</div>
+    <img src="images/players/abdulkadir-omur.png" alt="Abdülkadir Ömür">
+    <div class="player-info">
+      <strong>Abdülkadir Ömür</strong>
+      <span>🇹🇷 Turchia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">36</div>
+    <img src="images/players/christos-mouzakitis.png" alt="Christos Mouzakitis">
+    <div class="player-info">
+      <strong>Christos Mouzakitis</strong>
+      <span>🇬🇷 Grecia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">42</div>
+    <img src="images/players/tim-iroegbunam.png" alt="Tim Iroegbunam">
+    <div class="player-info">
+      <strong>Tim Iroegbunam</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       ATTACCANTI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Attaccanti</h3>
+
+<div class="player-grid">
+
+  <div class="player-card">
+    <div class="player-number">07</div>
+    <img src="images/players/sorba-thomas.png" alt="Sorba Thomas">
+    <div class="player-info">
+      <strong>Sorba Thomas</strong>
+      <span>🏴 Galles</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">09</div>
+    <img src="images/players/oliver-mcburnie.png" alt="Oliver McBurnie">
+    <div class="player-info">
+      <strong>Oliver McBurnie</strong>
+      <span>🏴 Scozia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">10</div>
+    <img src="images/players/mohamed-belloumi.png" alt="Mohamed Belloumi">
+    <div class="player-info">
+      <strong>Mohamed Belloumi</strong>
+      <span>🇩🇿 Algeria</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">11</div>
+    <img src="images/players/joe-gelhardt.png" alt="Joe Gelhardt">
+    <div class="player-info">
+      <strong>Joe Gelhardt</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">28</div>
+    <img src="images/players/ilyas-ansah.png" alt="Ilyas Ansah">
+    <div class="player-info">
+      <strong>Ilyas Ansah</strong>
+      <span>🇩🇪 Germania</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">47</div>
+    <img src="images/players/robinio-vaz.png" alt="Robinio Vaz">
+    <div class="player-info">
+      <strong>Robinio Vaz</strong>
+      <span>🇫🇷 Francia</span>
+    </div>
+  </div>
+
+  <div class="player-card">
+    <div class="player-number">50</div>
+    <img src="images/players/mohamed-ali-cho.png" alt="Mohamed-Ali Cho">
+    <div class="player-info">
+      <strong>Mohamed-Ali Cho</strong>
+      <span>🇫🇷 Francia</span>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     ALLENATORE
+========================= -->
+
+<section class="coach-section">
+
+<span class="section-label">04 · ALLENATORE</span>
+
+  <a href="#" class="coach-card">
+
+<div class="coach-photo">
+  <img src="images/coaches/sergej-jakirovic.png" alt="Sergej Jakirović">
+</div>
+
+<div class="coach-info">
+  <span class="coach-kicker">ALLENATORE</span>
+  <strong>Sergej Jakirović</strong>
+  <div class="coach-nationality">
+    <span>Bosnia ed Erzegovina</span>
+  </div>
+  <span class="coach-club">
+    Hull City · 2026/27
+  </span>
+</div>
+
+<div class="coach-arrow">→</div>
+
+  </a>
+
+</section>
+
+<!-- =========================
+     TRASFERIMENTI
+========================= -->
+
+<section class="transfers-section">
+
+<span class="section-label">05 · TRASFERIMENTI</span>
+
+  <div class="transfers-grid">
+
+<!-- IN -->
+
+<div class="transfer-column">
+
+  <h3>IN</h3>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/konstantinos-tzolakis.png" alt="Konstantinos Tzolakis">
+    </div>
+    <span class="transfer-player">Konstantinos Tzolakis</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+      <div class="transfer-club">
+        <img src="images/teams/olympiacos.png" alt="Olympiacos">
+      </div>
+    </div>
+    <span class="transfer-price">£20m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/nobel-mendy.png" alt="Nobel Mendy">
+    </div>
+    <span class="transfer-player">Nobel Mendy</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+      <div class="transfer-club">
+        <img src="images/teams/rayo-vallecano.png" alt="Rayo Vallecano">
+      </div>
+    </div>
+    <span class="transfer-price">£20m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/ilyas-ansah.png" alt="Ilyas Ansah">
+    </div>
+    <span class="transfer-player">Ilyas Ansah</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+      <div class="transfer-club">
+        <img src="images/teams/union-berlin.png" alt="Union Berlin">
+      </div>
+    </div>
+    <span class="transfer-price">£21m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/tim-iroegbunam.png" alt="Tim Iroegbunam">
+    </div>
+    <span class="transfer-player">Tim Iroegbunam</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+      <div class="transfer-club">
+        <img src="images/teams/everton.png" alt="Everton">
+      </div>
+    </div>
+    <span class="transfer-price">£13m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/mohamed-ali-cho.png" alt="Mohamed-Ali Cho">
+    </div>
+    <span class="transfer-player">Mohamed-Ali Cho</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+      <div class="transfer-club">
+        <img src="images/teams/nice.png" alt="Nice">
+      </div>
+    </div>
+    <span class="transfer-price">£15.4m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/brooke-norton-cuffy.png" alt="Brooke Norton-Cuffy">
+    </div>
+    <span class="transfer-player">Brooke Norton-Cuffy</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">←</span>
+      <div class="transfer-club">
+        <img src="images/teams/genoa.png" alt="Genoa">
+      </div>
+    </div>
+    <span class="transfer-price">£12m</span>
+  </div>
+
+</div>
+
+<!-- OUT -->
+
+<div class="transfer-column">
+
+  <h3>OUT</h3>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/ivor-pandur.png" alt="Ivor Pandur">
+    </div>
+    <span class="transfer-player">Ivor Pandur</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+      <div class="transfer-club">
+        <img src="images/teams/rangers.png" alt="Rangers">
+      </div>
+    </div>
+    <span class="transfer-price">£6m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/kyle-joseph.png" alt="Kyle Joseph">
+    </div>
+    <span class="transfer-player">Kyle Joseph</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+      <div class="transfer-club">
+        <img src="images/teams/middlesbrough.png" alt="Middlesbrough">
+      </div>
+    </div>
+    <span class="transfer-price">£4m</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/kasey-palmer.png" alt="Kasey Palmer">
+    </div>
+    <span class="transfer-player">Kasey Palmer</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+      <div class="transfer-club">
+        <img src="images/teams/luton.png" alt="Luton Town">
+      </div>
+    </div>
+    <span class="transfer-price">£500k</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/akin-famewo.png" alt="Akin Famewo">
+    </div>
+    <span class="transfer-player">Akin Famewo</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+      <div class="transfer-club">
+        <img src="images/teams/bolton.png" alt="Bolton Wanderers">
+      </div>
+    </div>
+    <span class="transfer-price">ND</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/liam-millar.png" alt="Liam Millar">
+    </div>
+    <span class="transfer-player">Liam Millar</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+      <div class="transfer-club">
+        <img src="images/teams/birmingham.png" alt="Birmingham City">
+      </div>
+    </div>
+    <span class="transfer-price">Prestito</span>
+  </div>
+
+  <div class="transfer">
+    <div class="transfer-photo">
+      <img src="images/players/harry-vaughan.png" alt="Harry Vaughan">
+    </div>
+    <span class="transfer-player">Harry Vaughan</span>
+    <div class="transfer-club-area">
+      <span class="transfer-arrow">→</span>
+      <div class="transfer-club">
+        <img src="images/teams/bohemians.png" alt="Bohemians">
+      </div>
+    </div>
+    <span class="transfer-price">Svincolato</span>
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     LEGGENDE
+========================= -->
+
+<section class="legends-section">
+
+<span class="section-label">06 · LEGGENDE</span>
+
+  <div class="legends-grid">
+
+<div class="legend-card">
+  <div class="legend-photo">
+    <img src="images/legends/andy-davidson.jpg" alt="Andy Davidson">
+  </div>
+  <span class="legend-number">01</span>
+  <h3>Andy<br>Davidson</h3>
+  <p>HULL CITY · 1952–1967</p>
+  <b>579 PRESENZE</b>
+</div>
+
+<div class="legend-card">
+  <div class="legend-photo">
+    <img src="images/legends/chris-chilton.jpg" alt="Chris Chilton">
+  </div>
+  <span class="legend-number">02</span>
+  <h3>Chris<br>Chilton</h3>
+  <p>HULL CITY · 1953–1970</p>
+  <b>222 GOL</b>
+</div>
+
+<div class="legend-card">
+  <div class="legend-photo">
+    <img src="images/legends/ian-ashbee.jpg" alt="Ian Ashbee">
+  </div>
+  <span class="legend-number">03</span>
+  <h3>Ian<br>Ashbee</h3>
+  <p>HULL CITY · 2002–2011</p>
+  <b>261 PRESENZE</b>
+</div>
+
+<div class="legend-card">
+  <div class="legend-photo">
+    <img src="images/legends/dean-windass.jpg" alt="Dean Windass">
+  </div>
+  <span class="legend-number">04</span>
+  <h3>Dean<br>Windass</h3>
+  <p>HULL CITY · 1991–2008</p>
+  <b>89 GOL</b>
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     STORIA
+========================= -->
+
+<section class="history-section">
+
+<span class="section-label">07 · STORIA</span>
+
+  <div class="history-content">
+
+<h2>
+  Una tigre<br>
+  nata nel 1904.
+</h2>
+
+<p>
+  L'Hull City nasce nel 1904 a Kingston upon Hull e nel 1905 entra nella Football League.
+  Per i primi decenni della propria storia il club vive soprattutto nelle categorie inferiori,
+  fino alla prima grande affermazione del 1932/33, quando i Tigers conquistano la Third
+  Division North e ottengono la prima promozione della loro storia.
+</p>
+
+<p>
+  Dopo la Seconda guerra mondiale arriva un'altra stagione simbolo. Nel 1948/49,
+  con la leggenda Raich Carter come player-manager, Hull vince nuovamente la Third
+  Division North. Negli anni Sessanta il club torna protagonista: nel 1965/66 conquista
+  la Third Division grazie a una squadra che comprende giocatori come Andy Davidson,
+  Chris Chilton, Ken Houghton e Ken Wagstaff.
+</p>
+
+<p>
+  Dopo un lungo periodo di difficoltà, gli anni Duemila cambiano definitivamente la
+  dimensione del club. Nel 2004 arriva la promozione in League One e appena quattro
+  anni dopo, nel 2008, Hull raggiunge per la prima volta la Premier League. È una delle
+  pagine più importanti della storia dei Tigers: Dean Windass segna contro il Bristol City
+  nella finale play-off di Wembley e porta il club nel massimo campionato.
+</p>
+
+<p>
+  Nel 2014 Hull raggiunge la prima finale di FA Cup della propria storia, perdendo contro
+  l'Arsenal. Nel 2016 torna in Premier League attraverso i play-off, mentre nel 2021
+  conquista la League One. Nel 2026 arriva un'altra promozione attraverso i play-off del
+  Championship, questa volta contro il Middlesbrough.
+</p>
+
+</p>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div>PAGES OF FOOTBALL</div>
+
+<span>© 2026 · Football, history & stories</span>
 
 </footer>
 
