@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -14,1078 +13,716 @@
 <body>
 
 <header class="site-header">
-  <div class="brand">
-    <div class="brand-mark">P</div>
-    <span>PAGES OF FOOTBALL</span>
-  </div>
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
 
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#" class="active">Squadre</a>
-    <a href="#">Giocatori</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
   </nav>
 
-  <button class="search-btn">⌕</button>
+  <button class="search-button">⌕</button>
 </header>
 
 
-<!-- HERO -->
-
 <section class="hero">
-
-  <div
-    class="hero-image"
-    style="background-image: url('images/stadium/selhurst-park.jpg');">
-  </div>
-
+  <div class="hero-image" style="background-image: url('images/stadium/selhurst-park.jpg');"></div>
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
+    <img src="images/teams/crystal-palace.png" alt="Crystal Palace" class="team-crest">
 
-    <img
-      src="images/teams/crystal-palace.png"
-      alt="Crystal Palace"
-      class="hero-crest">
-
-    <div class="hero-kicker">LONDON · ENGLAND</div>
-
-    <h1>Crystal Palace</h1>
-
-    <p>The Eagles</p>
-
+    <div>
+      <span class="hero-kicker">Premier League · London</span>
+      <h1>Crystal Palace</h1>
+      <p>Tradizione, identità e una storia costruita nel sud di Londra.</p>
+    </div>
   </div>
-
 </section>
 
 
-<!-- CLUB -->
-
-<section class="section club-section">
-
-  <div class="section-label">IL CLUB</div>
+<section class="club-section">
+  <div class="section-label">01 · IL CLUB</div>
 
   <div class="club-content">
+    <div>
+      <h2>Crystal Palace F.C.</h2>
+    </div>
 
-    <h2>
-      DAL 1861.<br>
-      DA SEMPRE A<br>
-      SELHURST PARK.
-    </h2>
+    <div>
+      <p>
+        Fondato nel 1905, il Crystal Palace è uno dei club più riconoscibili
+        del calcio londinese. Gli Eagles giocano a Selhurst Park, nel cuore
+        di South London, dove il rapporto con i propri tifosi è diventato
+        parte fondamentale dell'identità del club.
+      </p>
 
-    <p>
-      Il Crystal Palace affonda le proprie radici nel 1861, quando una squadra
-      amatoriale iniziò a giocare nei pressi del Crystal Palace di Londra.
-      Il club professionistico venne formalmente fondato nel 1905 e oggi
-      riconosce il 1861 come anno delle proprie origini, una data che compare
-      anche sullo stemma.
-    </p>
-
-    <p>
-      Dopo decenni trascorsi tra le prime due divisioni inglesi, il Palace ha
-      trovato una propria dimensione stabile in Premier League. Il punto di
-      svolta della storia recente è arrivato nel 2025: la prima FA Cup della
-      storia del club, seguita pochi mesi dopo dalla UEFA Conference League,
-      ha trasformato gli Eagles in una squadra capace finalmente di mettere
-      trofei importanti nella propria bacheca.
-    </p>
-
+      <p>
+        Dopo decenni trascorsi tra prima e seconda divisione, il Palace ha
+        costruito la propria storia moderna attorno alla continuità in
+        Premier League, alla crescita di giovani talenti e a una tifoseria
+        particolarmente legata al club.
+      </p>
+    </div>
   </div>
-
 </section>
 
 
-<!-- PALMARES -->
-
-<section class="section palmares-section">
-
-  <div class="section-label">PALMARÈS</div>
+<section class="palmares-section">
+  <div class="section-label">02 · PALMARÈS</div>
 
   <div class="trophy-grid">
 
     <div class="trophy-card">
-      <img
-        src="images/trophies/fa-cup.png"
-        alt="FA Cup">
-      <div class="trophy-count">1</div>
-      <div class="trophy-name">FA Cup</div>
-      <div class="trophy-years">2024/25</div>
+      <img src="images/trophies/fa-cup.png" alt="FA Cup">
+      <span>FA Cup</span>
+      <strong>1</strong>
+      <small>2024/25</small>
     </div>
 
     <div class="trophy-card">
-      <img
-        src="images/trophies/community-shield.png"
-        alt="Community Shield">
-      <div class="trophy-count">1</div>
-      <div class="trophy-name">Community Shield</div>
-      <div class="trophy-years">2025</div>
+      <img src="images/trophies/community-shield.png" alt="FA Community Shield">
+      <span>Community Shield</span>
+      <strong>1</strong>
+      <small>2025</small>
     </div>
 
     <div class="trophy-card">
-      <img
-        src="images/trophies/conference-league.png"
-        alt="UEFA Conference League">
-      <div class="trophy-count">1</div>
-      <div class="trophy-name">UEFA Conference League</div>
-      <div class="trophy-years">2025/26</div>
+      <img src="images/trophies/conference-league.png" alt="UEFA Conference League">
+      <span>UEFA Conference League</span>
+      <strong>1</strong>
+      <small>2025/26</small>
     </div>
 
     <div class="trophy-card">
-      <img
-        src="images/trophies/full-members-cup.png"
-        alt="Full Members' Cup">
-      <div class="trophy-count">1</div>
-      <div class="trophy-name">Full Members' Cup</div>
-      <div class="trophy-years">1990/91</div>
+      <img src="images/trophies/championship.png" alt="Second Division">
+      <span>Second Division</span>
+      <strong>3</strong>
+      <small>1978/79 · 1993/94 · 2012/13</small>
     </div>
 
   </div>
 
   <details class="other-trophies">
-    <summary>Altri successi</summary>
+    <summary>Altri trofei e piazzamenti</summary>
 
     <div class="other-trophies-list">
-
       <div>
-        <strong>1920/21</strong>
-        <span>Division Three South</span>
+        <strong>Second Division playoff</strong>
+        <span>1988/89 · 1996/97 · 2009/10</span>
       </div>
 
       <div>
-        <strong>1978/79</strong>
-        <span>Second Division</span>
+        <strong>Full Members' Cup</strong>
+        <span>1988/89</span>
       </div>
 
       <div>
-        <strong>1993/94</strong>
-        <span>First Division</span>
+        <strong>London Challenge Cup</strong>
+        <span>1913/14</span>
       </div>
 
       <div>
-        <strong>1996/97</strong>
-        <span>Division One · Play-off</span>
+        <strong>FA Cup</strong>
+        <span>Finalista 1989/90 · 2015/16</span>
       </div>
-
-      <div>
-        <strong>2003/04</strong>
-        <span>First Division · Play-off</span>
-      </div>
-
-      <div>
-        <strong>2012/13</strong>
-        <span>Championship · Play-off</span>
-      </div>
-
     </div>
-
   </details>
-
 </section>
 
 
-<!-- SQUAD -->
-
-<section class="section squad-section">
-
+<section class="squad-section">
   <div class="section-heading-row">
-
-    <div class="section-label">ROSA</div>
-
-    <div class="season-selector">
-      <button class="active">2026/27</button>
-      <button>2025/26</button>
-      <button>2024/25</button>
+    <div>
+      <div class="section-label">03 · ROSA</div>
+      <h2>Prima squadra</h2>
     </div>
 
-  </div>
+    <div class="season-selector">
+      <span>Stagione</span>
+      <strong>2026/27⌄</strong>
+    </div>
 
-  <div class="competition-selector">
-
-    <button class="active">
-      <img
-        src="images/competitions/premier-league.png"
-        alt="Premier League">
+    <button class="competition-button">
       Premier League
     </button>
-
   </div>
 
 
-  <!-- PORTIERI -->
-
-  <div class="squad-group">
-
+  <div class="position-group">
     <h3>Portieri</h3>
 
     <div class="player-grid">
 
       <div class="player-card">
-        <img
-          src="images/players/dean-henderson.png"
-          alt="Dean Henderson">
         <div class="player-number">1</div>
-        <h4>Dean Henderson</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/dean-henderson.png" alt="Dean Henderson">
+        <div class="player-info">
+          <strong>Dean Henderson</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/remi-matthews.png"
-          alt="Remi Matthews">
         <div class="player-number">31</div>
-        <h4>Remi Matthews</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/remi-matthews.png" alt="Remi Matthews">
+        <div class="player-info">
+          <strong>Remi Matthews</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/walter-benitez.png"
-          alt="Walter Benítez">
         <div class="player-number">44</div>
-        <h4>Walter Benítez</h4>
-        <p>Argentina</p>
+        <img src="images/players/walter-benitez.png" alt="Walter Benítez">
+        <div class="player-info">
+          <strong>Walter Benítez</strong>
+          <span>Argentina</span>
+        </div>
       </div>
 
     </div>
-
   </div>
 
 
-  <!-- DIFENSORI -->
-
-  <div class="squad-group">
-
+  <div class="position-group">
     <h3>Difensori</h3>
 
     <div class="player-grid">
 
       <div class="player-card">
-        <img
-          src="images/players/tyrick-mitchell.png"
-          alt="Tyrick Mitchell">
         <div class="player-number">3</div>
-        <h4>Tyrick Mitchell</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/tyrick-mitchell.png" alt="Tyrick Mitchell">
+        <div class="player-info">
+          <strong>Tyrick Mitchell</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/chadi-riad.png"
-          alt="Chadi Riad">
         <div class="player-number">4</div>
-        <h4>Chadi Riad</h4>
-        <p>Marocco</p>
+        <img src="images/players/chadi-riad.png" alt="Chadi Riad">
+        <div class="player-info">
+          <strong>Chadi Riad</strong>
+          <span>Marocco</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/axel-disasi.png"
-          alt="Axel Disasi">
         <div class="player-number">5</div>
-        <h4>Axel Disasi</h4>
-        <p>Francia</p>
+        <img src="images/players/axel-disasi.png" alt="Axel Disasi">
+        <div class="player-info">
+          <strong>Axel Disasi</strong>
+          <span>Francia</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/jaydee-canvot.png"
-          alt="Jaydee Canvot">
         <div class="player-number">6</div>
-        <h4>Jaydee Canvot</h4>
-        <p>Francia</p>
+        <img src="images/players/jaydee-canvot.png" alt="Jaydee Canvot">
+        <div class="player-info">
+          <strong>Jaydee Canvot</strong>
+          <span>Francia</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/takehiro-tomiyasu.png"
-          alt="Takehiro Tomiyasu">
         <div class="player-number">17</div>
-        <h4>Takehiro Tomiyasu</h4>
-        <p>Giappone</p>
+        <img src="images/players/takehiro-tomiyasu.png" alt="Takehiro Tomiyasu">
+        <div class="player-info">
+          <strong>Takehiro Tomiyasu</strong>
+          <span>Giappone</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/honest-ahanor.png"
-          alt="Honest Ahanor">
         <div class="player-number">21</div>
-        <h4>Honest Ahanor</h4>
-        <p>Italia</p>
+        <img src="images/players/honest-ahanor.png" alt="Honest Ahanor">
+        <div class="player-info">
+          <strong>Honest Ahanor</strong>
+          <span>Italia</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/anan-khalaili.png"
-          alt="Anan Khalaili">
-        <div class="player-number">25</div>
-        <h4>Anan Khalaili</h4>
-        <p>Israele</p>
-      </div>
-
-      <div class="player-card">
-        <img
-          src="images/players/chris-richards.png"
-          alt="Chris Richards">
         <div class="player-number">26</div>
-        <h4>Chris Richards</h4>
-        <p>Stati Uniti</p>
+        <img src="images/players/chris-richards.png" alt="Chris Richards">
+        <div class="player-info">
+          <strong>Chris Richards</strong>
+          <span>Stati Uniti</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/oscar-mingueza.png"
-          alt="Óscar Mingueza">
         <div class="player-number">30</div>
-        <h4>Óscar Mingueza</h4>
-        <p>Spagna</p>
+        <img src="images/players/oscar-mingueza.png" alt="Óscar Mingueza">
+        <div class="player-info">
+          <strong>Óscar Mingueza</strong>
+          <span>Spagna</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/ben-chilwell.png"
-          alt="Ben Chilwell">
         <div class="player-number">33</div>
-        <h4>Ben Chilwell</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/ben-chilwell.png" alt="Ben Chilwell">
+        <div class="player-info">
+          <strong>Ben Chilwell</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
     </div>
-
   </div>
 
 
-  <!-- CENTROCAMPISTI -->
-
-  <div class="squad-group">
-
+  <div class="position-group">
     <h3>Centrocampisti</h3>
 
     <div class="player-grid">
 
       <div class="player-card">
-        <img
-          src="images/players/ismaila-sarr.png"
-          alt="Ismaïla Sarr">
         <div class="player-number">7</div>
-        <h4>Ismaïla Sarr</h4>
-        <p>Senegal</p>
+        <img src="images/players/ismaila-sarr.png" alt="Ismaïla Sarr">
+        <div class="player-info">
+          <strong>Ismaïla Sarr</strong>
+          <span>Senegal</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/jefferson-lerma.png"
-          alt="Jefferson Lerma">
         <div class="player-number">8</div>
-        <h4>Jefferson Lerma</h4>
-        <p>Colombia</p>
+        <img src="images/players/jefferson-lerma.png" alt="Jefferson Lerma">
+        <div class="player-info">
+          <strong>Jefferson Lerma</strong>
+          <span>Colombia</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/yeremy-pino.png"
-          alt="Yéremy Pino">
         <div class="player-number">10</div>
-        <h4>Yéremy Pino</h4>
-        <p>Spagna</p>
+        <img src="images/players/yeremy-pino.png" alt="Yéremy Pino">
+        <div class="player-info">
+          <strong>Yéremy Pino</strong>
+          <span>Spagna</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/dwight-mcneil.png"
-          alt="Dwight McNeil">
         <div class="player-number">11</div>
-        <h4>Dwight McNeil</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/dwight-mcneil.png" alt="Dwight McNeil">
+        <div class="player-info">
+          <strong>Dwight McNeil</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/zavier-gozo.png"
-          alt="Zavier Gozo">
         <div class="player-number">12</div>
-        <h4>Zavier Gozo</h4>
-        <p>Stati Uniti</p>
+        <img src="images/players/zavier-gozo.png" alt="Zavier Gozo">
+        <div class="player-info">
+          <strong>Zavier Gozo</strong>
+          <span>Stati Uniti</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/daichi-kamada.png"
-          alt="Daichi Kamada">
         <div class="player-number">18</div>
-        <h4>Daichi Kamada</h4>
-        <p>Giappone</p>
+        <img src="images/players/daichi-kamada.png" alt="Daichi Kamada">
+        <div class="player-info">
+          <strong>Daichi Kamada</strong>
+          <span>Giappone</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/will-hughes.png"
-          alt="Will Hughes">
         <div class="player-number">19</div>
-        <h4>Will Hughes</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/will-hughes.png" alt="Will Hughes">
+        <div class="player-info">
+          <strong>Will Hughes</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/adam-wharton.png"
-          alt="Adam Wharton">
         <div class="player-number">20</div>
-        <h4>Adam Wharton</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/adam-wharton.png" alt="Adam Wharton">
+        <div class="player-info">
+          <strong>Adam Wharton</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/quinten-timber.png"
-          alt="Quinten Timber">
         <div class="player-number">23</div>
-        <h4>Quinten Timber</h4>
-        <p>Paesi Bassi</p>
+        <img src="images/players/quinten-timber.png" alt="Quinten Timber">
+        <div class="player-info">
+          <strong>Quinten Timber</strong>
+          <span>Paesi Bassi</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/dario-osorio.png"
-          alt="Darío Osorio">
         <div class="player-number">24</div>
-        <h4>Darío Osorio</h4>
-        <p>Cile</p>
+        <img src="images/players/dario-osorio.png" alt="Darío Osorio">
+        <div class="player-info">
+          <strong>Darío Osorio</strong>
+          <span>Cile</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/cheick-doucoure.png"
-          alt="Cheick Doucouré">
+        <div class="player-number">25</div>
+        <img src="images/players/anan-khalaili.png" alt="Anan Khalaili">
+        <div class="player-info">
+          <strong>Anan Khalaili</strong>
+          <span>Israele</span>
+        </div>
+      </div>
+
+      <div class="player-card">
         <div class="player-number">28</div>
-        <h4>Cheick Doucouré</h4>
-        <p>Mali</p>
+        <img src="images/players/cheick-doucoure.png" alt="Cheick Doucouré">
+        <div class="player-info">
+          <strong>Cheick Doucouré</strong>
+          <span>Mali</span>
+        </div>
       </div>
 
     </div>
-
   </div>
 
 
-  <!-- ATTACCANTI -->
-
-  <div class="squad-group">
-
+  <div class="position-group">
     <h3>Attaccanti</h3>
 
     <div class="player-grid">
 
       <div class="player-card">
-        <img
-          src="images/players/eddie-nketiah.png"
-          alt="Eddie Nketiah">
         <div class="player-number">9</div>
-        <h4>Eddie Nketiah</h4>
-        <p>Inghilterra</p>
+        <img src="images/players/eddie-nketiah.png" alt="Eddie Nketiah">
+        <div class="player-info">
+          <strong>Eddie Nketiah</strong>
+          <span>Inghilterra</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/jean-philippe-mateta.png"
-          alt="Jean-Philippe Mateta">
         <div class="player-number">14</div>
-        <h4>Jean-Philippe Mateta</h4>
-        <p>Francia</p>
+        <img src="images/players/jean-philippe-mateta.png" alt="Jean-Philippe Mateta">
+        <div class="player-info">
+          <strong>Jean-Philippe Mateta</strong>
+          <span>Francia</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/jorgen-strand-larsen.png"
-          alt="Jørgen Strand Larsen">
         <div class="player-number">22</div>
-        <h4>Jørgen Strand Larsen</h4>
-        <p>Norvegia</p>
+        <img src="images/players/jorgen-strand-larsen.png" alt="Jørgen Strand Larsen">
+        <div class="player-info">
+          <strong>Jørgen Strand Larsen</strong>
+          <span>Norvegia</span>
+        </div>
       </div>
 
       <div class="player-card">
-        <img
-          src="images/players/evann-guessand.png"
-          alt="Evann Guessand">
         <div class="player-number">29</div>
-        <h4>Evann Guessand</h4>
-        <p>Ivory Coast</p>
+        <img src="images/players/evann-guessand.png" alt="Evann Guessand">
+        <div class="player-info">
+          <strong>Evann Guessand</strong>
+          <span>Costa d'Avorio</span>
+        </div>
       </div>
 
     </div>
-
   </div>
 
 </section>
 
 
-<!-- COACH -->
-
-<section class="section coach-section">
-
-  <div class="section-label">ALLENATORE</div>
+<section class="coach-section">
+  <div class="section-label">04 · ALLENATORE</div>
 
   <div class="coach-card">
 
-    <img
-      src="images/coaches/pierre-sage.png"
-      alt="Pierre Sage">
+    <img src="images/coaches/pierre-sage.png" alt="Pierre Sage" class="coach-photo">
 
     <div class="coach-info">
-
-      <span>HEAD COACH</span>
-
-      <h3>Pierre Sage</h3>
-
-      <p>Francia</p>
-
+      <span class="coach-kicker">Head Coach</span>
+      <h2>Pierre Sage</h2>
+      <span class="coach-nationality">Francia</span>
+      <span class="coach-club">Crystal Palace · 2026–</span>
     </div>
 
-  </div>
+    <div class="coach-arrow">→</div>
 
+  </div>
 </section>
 
 
-<!-- TRANSFERS -->
-
-<section class="section transfers-section">
-
-  <div class="section-label">CALCIOMERCATO</div>
+<section class="transfers-section">
+  <div class="section-label">05 · MERCATO</div>
 
   <div class="transfers-grid">
 
-    <!-- ARRIVI -->
-
     <div class="transfer-column">
+      <h3>IN</h3>
 
-      <h3>Arrivi</h3>
-
-      <div class="transfer-list">
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/dwight-mcneil.png"
-            alt="Dwight McNeil">
-
-          <div class="transfer-info">
-            <h4>Dwight McNeil</h4>
-            <p>Everton</p>
-          </div>
-
-          <strong>£22m</strong>
-
+      <div class="transfer">
+        <img src="images/players/dwight-mcneil.png" alt="Dwight McNeil" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Dwight McNeil</strong>
+          <span>Everton</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/anan-khalaili.png"
-            alt="Anan Khalaili">
-
-          <div class="transfer-info">
-            <h4>Anan Khalaili</h4>
-            <p>Union Saint-Gilloise</p>
-          </div>
-
-          <strong>£21m</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">←</span>
+          <span class="transfer-club">Everton</span>
+          <span class="transfer-price">£22m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/quinten-timber.png"
-            alt="Quinten Timber">
-
-          <div class="transfer-info">
-            <h4>Quinten Timber</h4>
-            <p>Marseille</p>
-          </div>
-
-          <strong>£17m</strong>
-
+      <div class="transfer">
+        <img src="images/players/anan-khalaili.png" alt="Anan Khalaili" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Anan Khalaili</strong>
+          <span>Union SG</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/zavier-gozo.png"
-            alt="Zavier Gozo">
-
-          <div class="transfer-info">
-            <h4>Zavier Gozo</h4>
-            <p>Real Salt Lake</p>
-          </div>
-
-          <strong>£11m</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">←</span>
+          <span class="transfer-club">Union Saint-Gilloise</span>
+          <span class="transfer-price">£21m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/oscar-mingueza.png"
-            alt="Óscar Mingueza">
-
-          <div class="transfer-info">
-            <h4>Óscar Mingueza</h4>
-            <p>Celta Vigo</p>
-          </div>
-
-          <strong>Free</strong>
-
+      <div class="transfer">
+        <img src="images/players/quinten-timber.png" alt="Quinten Timber" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Quinten Timber</strong>
+          <span>Marseille</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/takehiro-tomiyasu.png"
-            alt="Takehiro Tomiyasu">
-
-          <div class="transfer-info">
-            <h4>Takehiro Tomiyasu</h4>
-            <p>Ajax</p>
-          </div>
-
-          <strong>Free</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">←</span>
+          <span class="transfer-club">Marseille</span>
+          <span class="transfer-price">£17m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/axel-disasi.png"
-            alt="Axel Disasi">
-
-          <div class="transfer-info">
-            <h4>Axel Disasi</h4>
-            <p>Chelsea</p>
-          </div>
-
-          <strong>Loan</strong>
-
+      <div class="transfer">
+        <img src="images/players/zavier-gozo.png" alt="Zavier Gozo" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Zavier Gozo</strong>
+          <span>Real Salt Lake</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/evann-guessand.png"
-            alt="Evann Guessand">
-
-          <div class="transfer-info">
-            <h4>Evann Guessand</h4>
-            <p>Aston Villa</p>
-          </div>
-
-          <strong>Loan</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">←</span>
+          <span class="transfer-club">Real Salt Lake</span>
+          <span class="transfer-price">£11m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/honest-ahanor.png"
-            alt="Honest Ahanor">
-
-          <div class="transfer-info">
-            <h4>Honest Ahanor</h4>
-            <p>Atalanta</p>
-          </div>
-
-          <strong>Loan</strong>
-
+      <div class="transfer">
+        <img src="images/players/takehiro-tomiyasu.png" alt="Takehiro Tomiyasu" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Takehiro Tomiyasu</strong>
+          <span>Ajax</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/dario-osorio.png"
-            alt="Darío Osorio">
-
-          <div class="transfer-info">
-            <h4>Darío Osorio</h4>
-            <p>Midtjylland</p>
-          </div>
-
-          <strong>Loan</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">←</span>
+          <span class="transfer-club">Ajax</span>
+          <span class="transfer-price">Free</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/ben-chilwell.png"
-            alt="Ben Chilwell">
-
-          <div class="transfer-info">
-            <h4>Ben Chilwell</h4>
-            <p>Strasbourg</p>
-          </div>
-
-          <strong>Undisclosed</strong>
-
+      <div class="transfer">
+        <img src="images/players/oscar-mingueza.png" alt="Óscar Mingueza" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Óscar Mingueza</strong>
+          <span>Celta Vigo</span>
         </div>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">←</span>
+          <span class="transfer-club">Celta Vigo</span>
+          <span class="transfer-price">Free</span>
+        </div>
       </div>
 
     </div>
 
 
-    <!-- PARTENZE -->
-
     <div class="transfer-column">
+      <h3>OUT</h3>
 
-      <h3>Partenze</h3>
-
-      <div class="transfer-list">
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/maxence-lacroix.png"
-            alt="Maxence Lacroix">
-
-          <div class="transfer-info">
-            <h4>Maxence Lacroix</h4>
-            <p>Chelsea</p>
-          </div>
-
-          <strong>£52m</strong>
-
+      <div class="transfer">
+        <img src="images/players/maxence-lacroix.png" alt="Maxence Lacroix" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Maxence Lacroix</strong>
+          <span>Chelsea</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/daniel-munoz.png"
-            alt="Daniel Muñoz">
-
-          <div class="transfer-info">
-            <h4>Daniel Muñoz</h4>
-            <p>Nottingham Forest</p>
-          </div>
-
-          <strong>£22m</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">→</span>
+          <span class="transfer-club">Chelsea</span>
+          <span class="transfer-price">£52m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/brennan-johnson.png"
-            alt="Brennan Johnson">
-
-          <div class="transfer-info">
-            <h4>Brennan Johnson</h4>
-            <p>Everton</p>
-          </div>
-
-          <strong>£22m</strong>
-
+      <div class="transfer">
+        <img src="images/players/daniel-munoz.png" alt="Daniel Muñoz" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Daniel Muñoz</strong>
+          <span>Nottingham Forest</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/justin-devenny.png"
-            alt="Justin Devenny">
-
-          <div class="transfer-info">
-            <h4>Justin Devenny</h4>
-            <p>Stoke City</p>
-          </div>
-
-          <strong>£5m</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">→</span>
+          <span class="transfer-club">Nottingham Forest</span>
+          <span class="transfer-price">£22m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/danny-imray.png"
-            alt="Danny Imray">
-
-          <div class="transfer-info">
-            <h4>Danny Imray</h4>
-            <p>Wrexham</p>
-          </div>
-
-          <strong>£5m</strong>
-
+      <div class="transfer">
+        <img src="images/players/brennan-johnson.png" alt="Brennan Johnson" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Brennan Johnson</strong>
+          <span>Everton</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/david-ozoh.png"
-            alt="David Ozoh">
-
-          <div class="transfer-info">
-            <h4>David Ozoh</h4>
-            <p>Derby County</p>
-          </div>
-
-          <strong>£4m</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">→</span>
+          <span class="transfer-club">Everton</span>
+          <span class="transfer-price">£22m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/borna-sosa.png"
-            alt="Borna Sosa">
-
-          <div class="transfer-info">
-            <h4>Borna Sosa</h4>
-            <p>Köln</p>
-          </div>
-
-          <strong>Loan</strong>
-
+      <div class="transfer">
+        <img src="images/players/justin-devenny.png" alt="Justin Devenny" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Justin Devenny</strong>
+          <span>Stoke City</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/romain-esse.png"
-            alt="Romain Esse">
-
-          <div class="transfer-info">
-            <h4>Romain Esse</h4>
-            <p>Millwall</p>
-          </div>
-
-          <strong>Loan</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">→</span>
+          <span class="transfer-club">Stoke City</span>
+          <span class="transfer-price">£5m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/jesurun-rak-sakyi.png"
-            alt="Jesurun Rak-Sakyi">
-
-          <div class="transfer-info">
-            <h4>Jesurun Rak-Sakyi</h4>
-            <p>Kasımpaşa</p>
-          </div>
-
-          <strong>Loan</strong>
-
+      <div class="transfer">
+        <img src="images/players/danny-imray.png" alt="Danny Imray" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>Danny Imray</strong>
+          <span>Wrexham</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/matheus-franca.png"
-            alt="Matheus França">
-
-          <div class="transfer-info">
-            <h4>Matheus França</h4>
-            <p>Alverca</p>
-          </div>
-
-          <strong>Loan</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">→</span>
+          <span class="transfer-club">Wrexham</span>
+          <span class="transfer-price">£5m</span>
         </div>
+      </div>
 
-        <div class="transfer-card">
-
-          <img
-            src="images/players/rio-cardines.png"
-            alt="Rio Cardines">
-
-          <div class="transfer-info">
-            <h4>Rio Cardines</h4>
-            <p>Bristol City</p>
-          </div>
-
-          <strong>Loan</strong>
-
+      <div class="transfer">
+        <img src="images/players/david-ozoh.png" alt="David Ozoh" class="transfer-photo">
+        <div class="transfer-player">
+          <strong>David Ozoh</strong>
+          <span>Derby County</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/joe-whitworth.png"
-            alt="Joe Whitworth">
-
-          <div class="transfer-info">
-            <h4>Joe Whitworth</h4>
-            <p>Wigan Athletic</p>
-          </div>
-
-          <strong>Undisclosed</strong>
-
+        <div class="transfer-club-area">
+          <span class="transfer-arrow">→</span>
+          <span class="transfer-club">Derby County</span>
+          <span class="transfer-price">£4m</span>
         </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/owen-goodman.png"
-            alt="Owen Goodman">
-
-          <div class="transfer-info">
-            <h4>Owen Goodman</h4>
-            <p>Dundee</p>
-          </div>
-
-          <strong>Loan</strong>
-
-        </div>
-
-        <div class="transfer-card">
-
-          <img
-            src="images/players/jackson-izquierdo.png"
-            alt="Jackson Izquierdo">
-
-          <div class="transfer-info">
-            <h4>Jackson Izquierdo</h4>
-            <p>Crawley Town</p>
-          </div>
-
-          <strong>Free</strong>
-
-        </div>
-
       </div>
 
     </div>
 
   </div>
-
 </section>
 
 
-<!-- LEGENDS -->
-
-<section class="section legends-section">
-
-  <div class="section-label">LEGGENDE</div>
+<section class="legends-section">
+  <div class="section-label">06 · LEGGENDE</div>
 
   <div class="legends-grid">
 
     <div class="legend-card">
-
-      <img
-        src="images/legends/mark-albrighton.jpg"
-        alt="Mark Bright">
-
-      <div class="legend-info">
-        <h3>Mark Bright</h3>
-        <p>1986–1992</p>
-      </div>
-
+      <img src="images/legends/ian-wright.jpg" alt="Ian Wright" class="legend-photo">
+      <span class="legend-number">01</span>
+      <h3>Ian Wright</h3>
+      <p>L'idolo che trasformò Selhurst Park in una vetrina per il talento offensivo.</p>
+      <b>1991–1998</b>
     </div>
 
     <div class="legend-card">
-
-      <img
-        src="images/legends/ian-wright.jpg"
-        alt="Ian Wright">
-
-      <div class="legend-info">
-        <h3>Ian Wright</h3>
-        <p>1985–1991</p>
-      </div>
-
+      <img src="images/legends/mark-bright.jpg" alt="Mark Bright" class="legend-photo">
+      <span class="legend-number">02</span>
+      <h3>Mark Bright</h3>
+      <p>Attaccante simbolo del Palace tra gli anni Ottanta e Novanta.</p>
+      <b>1986–1992</b>
     </div>
 
     <div class="legend-card">
-
-      <img
-        src="images/legends/geoff-thomas.jpg"
-        alt="Geoff Thomas">
-
-      <div class="legend-info">
-        <h3>Geoff Thomas</h3>
-        <p>1987–1993</p>
-      </div>
-
+      <img src="images/legends/wilfried-zaha.jpg" alt="Wilfried Zaha" class="legend-photo">
+      <span class="legend-number">03</span>
+      <h3>Wilfried Zaha</h3>
+      <p>Il volto della generazione moderna e uno dei più grandi talenti mai prodotti dal club.</p>
+      <b>2010–2023</b>
     </div>
 
     <div class="legend-card">
-
-      <img
-        src="images/legends/wilfried-zaha.jpg"
-        alt="Wilfried Zaha">
-
-      <div class="legend-info">
-        <h3>Wilfried Zaha</h3>
-        <p>2010–2023</p>
-      </div>
-
+      <img src="images/legends/geoff-thomas.jpg" alt="Geoff Thomas" class="legend-photo">
+      <span class="legend-number">04</span>
+      <h3>Geoff Thomas</h3>
+      <p>Capitano della squadra che raggiunse la finale di FA Cup nel 1990.</p>
+      <b>1987–1993</b>
     </div>
 
   </div>
-
 </section>
 
 
-<!-- HISTORY -->
-
-<section class="section history-section">
-
-  <div class="section-label">STORIA</div>
+<section class="history-section">
+  <div class="section-label">07 · STORIA</div>
 
   <div class="history-content">
 
-    <h2>
-      UNA STORIA<br>
-      LUNGA PIÙ DI UN<br>
-      SECOLO.
-    </h2>
+    <h2>Dal Crystal Palace Exhibition al cuore di South London</h2>
 
     <p>
-      Il Crystal Palace è uno dei club più particolari del calcio inglese.
-      La sua storia affonda le radici nel 1861, quando il primo Crystal Palace
-      Football Club giocava all'interno dell'area del celebre Crystal Palace.
-      Il legame storico è talmente forte che il club moderno considera il 1861
-      come il proprio anno di origine.
+      Il Crystal Palace Football Club nacque nel 1905, prendendo il nome
+      dall'imponente Crystal Palace Exhibition Building. Dopo i primi anni
+      trascorsi tra le categorie inferiori, il club iniziò a costruire una
+      propria identità nel calcio londinese.
     </p>
 
     <p>
-      Il Palace professionistico nacque nel 1905 e nel 1924 si trasferì a
-      Selhurst Park, che sarebbe diventato la sua casa per oltre un secolo.
-      Per gran parte della propria storia gli Eagles hanno oscillato tra
-      prima e seconda divisione, arrivando per la prima volta nella massima
-      serie nel 1969.
+      Gli anni Ottanta portarono il Palace alla ribalta nazionale. Nel 1990
+      arrivò una storica finale di FA Cup contro il Manchester United, ripetuta
+      dopo il replay, mentre la generazione guidata da Ian Wright e Mark Bright
+      divenne una delle più riconoscibili della storia del club.
     </p>
 
     <p>
-      La svolta definitiva è arrivata nel 2025. Dopo due finali di FA Cup
-      perse contro il Manchester United, il Palace ha finalmente conquistato
-      il trofeo battendo il Manchester City a Wembley. Un anno dopo è arrivato
-      anche il primo titolo europeo: la vittoria per 1–0 sul Rayo Vallecano
-      nella finale di Conference League ha aperto il capitolo internazionale
-      della storia degli Eagles.
+      Dopo numerosi passaggi tra Premier League e seconda divisione, il club
+      raggiunse la stabilità nella massima serie a partire dal 2013. La finale
+      di FA Cup del 2016, persa contro il Manchester United, fu un altro
+      momento simbolico di una squadra ormai stabilmente presente nell'élite.
+    </p>
+
+    <p>
+      La consacrazione arrivò nella seconda metà degli anni Venti: il Palace
+      conquistò la FA Cup 2024/25 e, nella stagione successiva, aggiunse alla
+      propria bacheca un trofeo europeo, trasformando una lunga storia di
+      attese in una nuova era per gli Eagles.
     </p>
 
   </div>
-
 </section>
 
 
-<!-- FOOTER -->
-
-<footer class="site-footer">
-
-  <div class="brand">
-    <div class="brand-mark">P</div>
-    <span>PAGES OF FOOTBALL</span>
-  </div>
-
-  <div class="footer-links">
-    <a href="#">Home</a>
-    <a href="#">Squadre</a>
-    <a href="#">Giocatori</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
-  </div>
-
-  <p>© 2026 Pages Of Football</p>
-
+<footer>
+  <div>PAGES OF FOOTBALL</div>
+  <span>© 2026 · Football, history & stories</span>
 </footer>
 
 </body>
