@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -14,584 +15,1402 @@
 
 <header class="site-header">
 
-  <div class="brand">
-    <div class="brand-mark">P</div>
-    <div class="brand-name">PAGES OF FOOTBALL</div>
-  </div>
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
 
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#" class="active">Squadre</a>
-    <a href="#">Giocatori</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
   </nav>
 
-  <button class="search-button">⌕</button>
+<button class="search-button">⌕</button>
 
 </header>
 
-<main>
+<!-- =========================
+     HERO
+========================= -->
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-image" style="background-image: url('images/stadium/craven-cottage.jpg');"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <img src="images/teams/fulham.png" alt="Fulham" class="hero-crest">
-      <div class="hero-kicker">LONDON · CRAVEN COTTAGE · 1879</div>
-      <h1>FULHAM</h1>
-      <p>The Cottagers. Il club più antico del calcio professionistico londinese, tra tradizione, Craven Cottage e una nuova era.</p>
-    </div>
-  </section>
+<section class="hero">
 
-  <!-- CLUB -->
-  <section class="section club-section">
-    <div class="section-label">IL CLUB</div>
-    <div class="club-content">
-      <h2>
-        Una casa sul Tamigi.<br>
-        Una storia lunga quasi 150 anni.
-      </h2>
-      <p>
-        Fondato nel 1879, il Fulham è il più antico club professionistico di
-        Londra. La sua identità è inseparabile da Craven Cottage, la storica
-        casa sulle rive del Tamigi che accoglie i Cottagers dal 1896.
-        <br><br>
-        Dopo decenni trascorsi tra le diverse categorie del calcio inglese,
-        il Fulham ha vissuto una delle sue epoche più importanti nel nuovo
-        millennio, raggiungendo stabilmente la Premier League e arrivando fino
-        alla finale di Europa League nel 2010. Nel 2026 è iniziata una nuova
-        era: Álvaro Arbeloa ha raccolto l'eredità di Marco Silva, portando a
-        Craven Cottage una nuova identità tattica e una rosa ringiovanita.
-      </p>
-    </div>
-  </section>
+  <div
+    class="hero-image"
+    style="background-image: url('images/stadium/craven-cottage.jpg');"
+  >
 
-  <!-- PALMARES -->
-  <section class="section palmares-section">
-    <div class="section-label">PALMARÈS</div>
+<div class="hero-overlay"></div>
 
-    <div class="trophy-grid">
+<div class="hero-content">
 
-      <div class="trophy-card">
-        <img src="images/trophies/championship.png" alt="Championship">
-        <h3>Second Division / Championship</h3>
-        <span>1948/49 · 2000/01 · 2021/22</span>
-      </div>
-
-      <div class="trophy-card">
-        <img src="images/trophies/league-one.png" alt="Third Division">
-        <h3>Third Division</h3>
-        <span>1931/32 · 1998/99</span>
-      </div>
-
-      <div class="trophy-card">
-        <img src="images/trophies/intertoto-cup.png" alt="UEFA Intertoto Cup">
-        <h3>UEFA Intertoto Cup</h3>
-        <span>2002</span>
-      </div>
-
-      <div class="trophy-card">
-        <img src="images/trophies/southern-league.png" alt="Southern League">
-        <h3>Southern League</h3>
-        <span>1905/06 · 1906/07</span>
-      </div>
-
-    </div>
-
-    <details class="other-trophies">
-      <summary>Altri piazzamenti e trofei</summary>
-
-      <div class="other-trophies-list">
-
-        <div>
-          <strong>Premier League</strong>
-          <span>7º posto · 2008/09</span>
-        </div>
-
-        <div>
-          <strong>UEFA Europa League</strong>
-          <span>Finalista · 2009/10</span>
-        </div>
-
-        <div>
-          <strong>FA Cup</strong>
-          <span>Finalista · 1974/75</span>
-        </div>
-
-        <div>
-          <strong>Play-Off Championship</strong>
-          <span>Vincitore · 2017/18 · 2019/20</span>
-        </div>
-
-      </div>
-    </details>
-
-  </section>
-
-  <!-- SQUAD -->
-  <section class="section squad-section">
-
-    <div class="section-heading-row">
-      <div class="section-label">ROSA</div>
-
-      <div class="season-selector">
-        <button class="active">2026/27</button>
-        <button>2025/26</button>
-        <button>2024/25</button>
-      </div>
-    </div>
-
-    <div class="competition-selector">
-      <button class="competition-button active">
-        <img src="images/competitions/premier-league.png" alt="Premier League">
-        Premier League
-      </button>
-    </div>
-
-    <!-- PORTIERI -->
-    <div class="squad-group">
-      <h3>Portieri</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/bernd-leno.png" alt="Bernd Leno">
-          <span class="player-number">1</span>
-          <h4>Bernd Leno</h4>
-          <p>Germania</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/benjamin-lecomte.png" alt="Benjamin Lecomte">
-          <span class="player-number">23</span>
-          <h4>Benjamin Lecomte</h4>
-          <p>Francia</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- DIFENSORI -->
-    <div class="squad-group">
-      <h3>Difensori</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/kenny-tete.png" alt="Kenny Tete">
-          <span class="player-number">2</span>
-          <h4>Kenny Tete</h4>
-          <p>Paesi Bassi</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/calvin-bassey.png" alt="Calvin Bassey">
-          <span class="player-number">3</span>
-          <h4>Calvin Bassey</h4>
-          <p>Nigeria</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/jorge-cuenca.png" alt="Jorge Cuenca">
-          <span class="player-number">4</span>
-          <h4>Jorge Cuenca</h4>
-          <p>Spagna</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/joachim-andersen.png" alt="Joachim Andersen">
-          <span class="player-number">5</span>
-          <h4>Joachim Andersen</h4>
-          <p>Danimarca</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/timothy-castagne.png" alt="Timothy Castagne">
-          <span class="player-number">21</span>
-          <h4>Timothy Castagne</h4>
-          <p>Belgio</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/david-affengruber.png" alt="David Affengruber">
-          <span class="player-number">22</span>
-          <h4>David Affengruber</h4>
-          <p>Austria</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/ryan-sessegnon.png" alt="Ryan Sessegnon">
-          <span class="player-number">30</span>
-          <h4>Ryan Sessegnon</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/antonee-robinson.png" alt="Antonee Robinson">
-          <span class="player-number">33</span>
-          <h4>Antonee Robinson</h4>
-          <p>Stati Uniti</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/luc-de-fougerolles.png" alt="Luc De Fougerolles">
-          <span class="player-number">44</span>
-          <h4>Luc De Fougerolles</h4>
-          <p>Canada</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- CENTROCAMPISTI -->
-    <div class="squad-group">
-      <h3>Centrocampisti</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/harrison-reed.png" alt="Harrison Reed">
-          <span class="player-number">6</span>
-          <h4>Harrison Reed</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/cesar-palacios.png" alt="César Palacios">
-          <span class="player-number">8</span>
-          <h4>César Palacios</h4>
-          <p>Spagna</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/tom-cairney.png" alt="Tom Cairney">
-          <span class="player-number">10</span>
-          <h4>Tom Cairney</h4>
-          <p>Scotland</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/oscar-bobb.png" alt="Oscar Bobb">
-          <span class="player-number">14</span>
-          <h4>Oscar Bobb</h4>
-          <p>Norvegia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/hugo-larsson.png" alt="Hugo Larsson">
-          <span class="player-number">15</span>
-          <h4>Hugo Larsson</h4>
-          <p>Svezia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/sander-berge.png" alt="Sander Berge">
-          <span class="player-number">16</span>
-          <h4>Sander Berge</h4>
-          <p>Norvegia</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/alex-iwobi.png" alt="Alex Iwobi">
-          <span class="player-number">17</span>
-          <h4>Alex Iwobi</h4>
-          <p>Nigeria</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/shea-charles.png" alt="Shea Charles">
-          <span class="player-number">19</span>
-          <h4>Shea Charles</h4>
-          <p>Irlanda del Nord</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/manuel-angel.png" alt="Manuel Ángel">
-          <span class="player-number">20</span>
-          <h4>Manuel Ángel</h4>
-          <p>Spagna</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/josh-king.png" alt="Josh King">
-          <span class="player-number">24</span>
-          <h4>Josh King</h4>
-          <p>Inghilterra</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/emile-smith-rowe.png" alt="Emile Smith Rowe">
-          <span class="player-number">32</span>
-          <h4>Emile Smith Rowe</h4>
-          <p>Inghilterra</p>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- ATTACCANTI -->
-    <div class="squad-group">
-      <h3>Attaccanti</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-          <img src="images/players/gonzalo-garcia.png" alt="Gonzalo García">
-          <span class="player-number">7</span>
-          <h4>Gonzalo García</h4>
-          <p>Spagna</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/rodrigo-muniz.png" alt="Rodrigo Muniz">
-          <span class="player-number">9</span>
-          <h4>Rodrigo Muniz</h4>
-          <p>Brasile</p>
-        </div>
-
-        <div class="player-card">
-          <img src="images/players/kevin.png" alt="Kevin">
-          <span class="player-number">11</span>
-          <h4>Kevin</h4>
-          <p>Brasile</p>
-        </div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- COACH -->
-  <section class="section coach-section">
-
-    <div class="section-label">ALLENATORE</div>
-
-    <div class="coach-card">
-
-      <img src="images/coaches/alvaro-arbeloa.png" alt="Álvaro Arbeloa">
-
-      <div class="coach-info">
-        <span>HEAD COACH</span>
-
-        <h2>Álvaro Arbeloa</h2>
-
-        <p>
-          Spagnolo. Ex difensore di Real Madrid, Liverpool e West Ham,
-          campione del mondo con la Spagna nel 2010. Nel 2026 ha assunto
-          la guida del Fulham dopo l'esperienza nel settore giovanile
-          e nella prima squadra del Real Madrid.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- TRANSFERS -->
-  <section class="section transfers-section">
-
-    <div class="section-label">MERCATO 2026/27</div>
-
-    <div class="transfers-grid">
-
-      <div class="transfer-column">
-
-        <h3>Arrivi</h3>
-
-        <div class="transfer-list">
-
-          <div class="transfer-card">
-            <strong>Gonzalo García</strong>
-            <span>Real Madrid</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Oscar Bobb</strong>
-            <span>Manchester City</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Hugo Larsson</strong>
-            <span>Eintracht Frankfurt</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Shea Charles</strong>
-            <span>Southampton</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Manuel Ángel</strong>
-            <span>Real Madrid</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>David Affengruber</strong>
-            <span>Sturm Graz</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="transfer-column">
-
-        <h3>Partenze</h3>
-
-        <div class="transfer-list">
-
-          <div class="transfer-card">
-            <strong>Marco Silva</strong>
-            <span>Fine contratto</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Andreas Pereira</strong>
-            <span>Club Brugge</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Harry Wilson</strong>
-            <span>Burnley</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Adama Traoré</strong>
-            <span>Fine contratto</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Willian</strong>
-            <span>Fine contratto</span>
-          </div>
-
-          <div class="transfer-card">
-            <strong>Raúl Jiménez</strong>
-            <span>Fine contratto</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- LEGENDS -->
-  <section class="section legends-section">
-
-    <div class="section-label">LEGGENDE</div>
-
-    <div class="legend-grid">
-
-      <div class="legend-card">
-        <img src="images/legends/johnny-haynes.jpg" alt="Johnny Haynes">
-        <div class="legend-info">
-          <h3>Johnny Haynes</h3>
-          <p>Mr. Fulham. Il più grande simbolo nella storia del club.</p>
-        </div>
-      </div>
-
-      <div class="legend-card">
-        <img src="images/legends/george-cohen.jpg" alt="George Cohen">
-        <div class="legend-info">
-          <h3>George Cohen</h3>
-          <p>Campione del mondo con l'Inghilterra nel 1966 e bandiera del Fulham.</p>
-        </div>
-      </div>
-
-      <div class="legend-card">
-        <img src="images/legends/gordon-davies.jpg" alt="Gordon Davies">
-        <div class="legend-info">
-          <h3>Gordon Davies</h3>
-          <p>Uno degli attaccanti più prolifici della storia dei Cottagers.</p>
-        </div>
-      </div>
-
-      <div class="legend-card">
-        <img src="images/legends/louis-saha.jpg" alt="Louis Saha">
-        <div class="legend-info">
-          <h3>Louis Saha</h3>
-          <p>Il bomber della promozione del 2001 e protagonista dell'ascesa del Fulham.</p>
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- HISTORY -->
-  <section class="section history-section">
-
-    <div class="section-label">STORIA</div>
-
-    <div class="history-content">
-
-      <h2>
-        Una storia londinese<br>
-        scritta sul Tamigi.
-      </h2>
-
-      <p>
-        Il Fulham nasce nel 1879 da una squadra legata alla Fulham St Andrew's
-        Church. Dopo i primi successi nel calcio amatoriale, il club diventa
-        professionistico nel 1898 e nel 1896 si trasferisce definitivamente
-        a Craven Cottage, che ancora oggi rappresenta il cuore dell'identità
-        biancorossa.
-        <br><br>
-        Nel 1905/06 e nel 1906/07 arrivano i primi grandi titoli nella Southern
-        League. Nel 1907 il Fulham entra nella Football League e, dopo decenni
-        trascorsi tra la seconda e la terza divisione, conquista finalmente
-        la promozione in First Division nel 1949.
-        <br><br>
-        Gli anni Sessanta vedono una delle squadre più talentuose della storia
-        del club, guidata da Johnny Haynes e George Cohen. Nel 1975 il Fulham
-        raggiunge per la prima volta la finale di FA Cup, persa contro il West
-        Ham.
-        <br><br>
-        Dopo un periodo drammatico negli anni Ottanta e Novanta, culminato con
-        il rischio di scomparire nel 1987, il club risale rapidamente la
-        piramide sotto la proprietà di Mohamed Al-Fayed. Jean Tigana conduce
-        il Fulham in Premier League nel 2001 e nel 2002 arriva la UEFA Intertoto
-        Cup.
-        <br><br>
-        L'apice arriva con Roy Hodgson: nel 2009 il Fulham chiude settimo in
-        Premier League e l'anno successivo compie una storica cavalcata europea,
-        eliminando Juventus, Wolfsburg e Shakhtar Donetsk prima della finale
-        di Europa League persa contro l'Atlético Madrid.
-        <br><br>
-        Nel 2021/22, sotto Marco Silva, il Fulham conquista nuovamente il
-        Championship con una stagione da record. Nel 2026, dopo cinque anni
-        sulla panchina dei Cottagers, Silva lascia il posto ad Álvaro Arbeloa,
-        aprendo un nuovo capitolo della storia del club.
-      </p>
-
-    </div>
-
-  </section>
-
-</main>
-
-<!-- FOOTER -->
-<footer class="site-footer">
-
-  <div class="brand">
-    <div class="brand-mark">P</div>
-    <div class="brand-name">PAGES OF FOOTBALL</div>
+  <div class="team-crest">
+    <img src="images/teams/fulham.png" alt="Fulham">
   </div>
 
-  <div class="footer-links">
-    <a href="#">Home</a>
-    <a href="#">Squadre</a>
-    <a href="#">Giocatori</a>
-    <a href="#">Competizioni</a>
-    <a href="#">Almanacco</a>
+  <div>
+    <div class="hero-kicker">FULHAM · INGHILTERRA</div>
+
+    <h1>Fulham</h1>
+
+    <p>La storia, la rosa e i protagonisti dei Cottagers.</p>
   </div>
 
-  <p>© 2026 Pages Of Football</p>
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     CLUB
+========================= -->
+
+<section class="club-section">
+
+<span class="section-label">01 · IL CLUB</span>
+
+  <div class="club-content">
+
+<h2>
+  Dal Tamigi.<br>
+  A Londra.<br>
+  Sempre Fulham.
+</h2>
+
+<p>
+  Fondato nel 1879, il Fulham è il più antico club professionistico di
+  Londra. La sua casa è Craven Cottage, lo storico stadio sulle rive
+  del Tamigi che dal 1896 rappresenta il cuore dell'identità dei Cottagers.
+  <br><br>
+  Dopo decenni trascorsi tra le diverse categorie del calcio inglese,
+  il Fulham ha vissuto una delle proprie epoche più importanti nel nuovo
+  millennio, raggiungendo stabilmente la Premier League e arrivando fino
+  alla finale di Europa League nel 2010.
+  <br><br>
+  Oggi il Fulham apre un nuovo capitolo della propria storia con Álvaro
+  Arbeloa in panchina e una rosa profondamente rinnovata, costruita attorno
+  a giovani talenti provenienti anche dal Real Madrid.
+</p>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     PALMARES
+========================= -->
+
+<section class="palmares-section">
+
+<span class="section-label">02 · PALMARES</span>
+
+  <div class="trophy-grid">
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/championship.png"
+    alt="Championship"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>3</strong>
+    <span>Second Division / Championship</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/league-one.png"
+    alt="Third Division"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>2</strong>
+    <span>Third Division</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/intertoto-cup.png"
+    alt="UEFA Intertoto Cup"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>1</strong>
+    <span>UEFA Intertoto Cup</span>
+  </div>
+
+</div>
+
+
+<div class="trophy-card">
+
+  <img
+    src="images/trophies/southern-league.png"
+    alt="Southern League"
+    class="trophy-image"
+  >
+
+  <div class="trophy-info">
+    <strong>2</strong>
+    <span>Southern League</span>
+  </div>
+
+</div>
+
+  </div>
+
+  <details class="other-trophies">
+
+<summary>
+  <span>＋</span>
+  ALTRI TROFEI
+</summary>
+
+<div class="other-trophies-list">
+
+  <div class="other-trophy">
+
+    <img
+      src="images/trophies/playoff.png"
+      alt="Championship Play-Off"
+    >
+
+    <div>
+      <strong>2</strong>
+      <span>Championship Play-Off</span>
+    </div>
+
+  </div>
+
+
+  <div class="other-trophy">
+
+    <img
+      src="images/trophies/fa-cup.png"
+      alt="FA Cup"
+    >
+
+    <div>
+      <strong>0</strong>
+      <span>FA Cup</span>
+    </div>
+
+  </div>
+
+
+  <div class="other-trophy">
+
+    <img
+      src="images/trophies/europa-league.png"
+      alt="Europa League"
+    >
+
+    <div>
+      <strong>0</strong>
+      <span>Europa League</span>
+    </div>
+
+  </div>
+
+
+  <div class="other-trophy">
+
+    <img
+      src="images/trophies/uefa-super-cup.png"
+      alt="UEFA Super Cup"
+    >
+
+    <div>
+      <strong>0</strong>
+      <span>UEFA Super Cup</span>
+    </div>
+
+  </div>
+
+</div>
+
+  </details>
+
+</section>
+
+<!-- =========================
+     SQUAD
+========================= -->
+
+<section class="squad-section">
+
+  <div class="section-heading-row">
+
+<div>
+
+  <p class="section-label">Rosa 2026/27</p>
+
+  <h2>La squadra</h2>
+
+</div>
+
+<button class="season-selector" type="button">
+
+  <span>STAGIONI</span>
+
+  <strong>2026/27</strong>
+
+  <span class="season-arrow">⌄</span>
+
+</button>
+
+  </div>
+
+  <!-- COMPETITION -->
+
+  <a href="#" class="competition-button">
+
+<div class="competition-button-logo">
+
+  <img
+    src="images/competitions/premier-league.png"
+    alt="Premier League"
+  >
+
+</div>
+
+<div class="competition-button-content">
+
+  <span>COMPETIZIONE</span>
+
+  <strong>Premier League</strong>
+
+</div>
+
+<div class="competition-button-arrow">→</div>
+
+  </a>
+
+  <!-- =========================
+       PORTIERI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Portieri</h3>
+
+<div class="player-grid">
+
+
+  <div class="player-card">
+
+    <div class="player-number">1</div>
+
+    <img
+      src="images/players/bernd-leno.png"
+      alt="Bernd Leno"
+    >
+
+    <div class="player-info">
+      <strong>Bernd Leno</strong>
+      <span>🇩🇪 Germania</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">23</div>
+
+    <img
+      src="images/players/benjamin-lecomte.png"
+      alt="Benjamin Lecomte"
+    >
+
+    <div class="player-info">
+      <strong>Benjamin Lecomte</strong>
+      <span>🇫🇷 Francia</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">36</div>
+
+    <img
+      src="images/players/alex-borto.png"
+      alt="Alex Borto"
+    >
+
+    <div class="player-info">
+      <strong>Alex Borto</strong>
+      <span>🇺🇸 Stati Uniti</span>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       DIFENSORI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Difensori</h3>
+
+<div class="player-grid">
+
+
+  <div class="player-card">
+
+    <div class="player-number">2</div>
+
+    <img
+      src="images/players/kenny-tete.png"
+      alt="Kenny Tete"
+    >
+
+    <div class="player-info">
+      <strong>Kenny Tete</strong>
+      <span>🇳🇱 Paesi Bassi</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">3</div>
+
+    <img
+      src="images/players/calvin-bassey.png"
+      alt="Calvin Bassey"
+    >
+
+    <div class="player-info">
+      <strong>Calvin Bassey</strong>
+      <span>🇳🇬 Nigeria</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">4</div>
+
+    <img
+      src="images/players/jorge-cuenca.png"
+      alt="Jorge Cuenca"
+    >
+
+    <div class="player-info">
+      <strong>Jorge Cuenca</strong>
+      <span>🇪🇸 Spagna</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">5</div>
+
+    <img
+      src="images/players/joachim-andersen.png"
+      alt="Joachim Andersen"
+    >
+
+    <div class="player-info">
+      <strong>Joachim Andersen</strong>
+      <span>🇩🇰 Danimarca</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">21</div>
+
+    <img
+      src="images/players/timothy-castagne.png"
+      alt="Timothy Castagne"
+    >
+
+    <div class="player-info">
+      <strong>Timothy Castagne</strong>
+      <span>🇧🇪 Belgio</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">22</div>
+
+    <img
+      src="images/players/david-affengruber.png"
+      alt="David Affengruber"
+    >
+
+    <div class="player-info">
+      <strong>David Affengruber</strong>
+      <span>🇦🇹 Austria</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">33</div>
+
+    <img
+      src="images/players/antonee-robinson.png"
+      alt="Antonee Robinson"
+    >
+
+    <div class="player-info">
+      <strong>Antonee Robinson</strong>
+      <span>🇺🇸 Stati Uniti</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">44</div>
+
+    <img
+      src="images/players/luc-de-fougerolles.png"
+      alt="Luc De Fougerolles"
+    >
+
+    <div class="player-info">
+      <strong>Luc De Fougerolles</strong>
+      <span>🇨🇦 Canada</span>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       CENTROCAMPISTI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Centrocampisti</h3>
+
+<div class="player-grid">
+
+
+  <div class="player-card">
+
+    <div class="player-number">6</div>
+
+    <img
+      src="images/players/harrison-reed.png"
+      alt="Harrison Reed"
+    >
+
+    <div class="player-info">
+      <strong>Harrison Reed</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">8</div>
+
+    <img
+      src="images/players/cesar-palacios.png"
+      alt="César Palacios"
+    >
+
+    <div class="player-info">
+      <strong>César Palacios</strong>
+      <span>🇪🇸 Spagna</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">10</div>
+
+    <img
+      src="images/players/tom-cairney.png"
+      alt="Tom Cairney"
+    >
+
+    <div class="player-info">
+      <strong>Tom Cairney</strong>
+      <span>🏴 Scozia</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">14</div>
+
+    <img
+      src="images/players/oscar-bobb.png"
+      alt="Oscar Bobb"
+    >
+
+    <div class="player-info">
+      <strong>Oscar Bobb</strong>
+      <span>🇳🇴 Norvegia</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">15</div>
+
+    <img
+      src="images/players/hugo-larsson.png"
+      alt="Hugo Larsson"
+    >
+
+    <div class="player-info">
+      <strong>Hugo Larsson</strong>
+      <span>🇸🇪 Svezia</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">16</div>
+
+    <img
+      src="images/players/sander-berge.png"
+      alt="Sander Berge"
+    >
+
+    <div class="player-info">
+      <strong>Sander Berge</strong>
+      <span>🇳🇴 Norvegia</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">19</div>
+
+    <img
+      src="images/players/shea-charles.png"
+      alt="Shea Charles"
+    >
+
+    <div class="player-info">
+      <strong>Shea Charles</strong>
+      <span>🇬🇧 Irlanda del Nord</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">20</div>
+
+    <img
+      src="images/players/manuel-angel.png"
+      alt="Manuel Ángel"
+    >
+
+    <div class="player-info">
+      <strong>Manuel Ángel</strong>
+      <span>🇪🇸 Spagna</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">24</div>
+
+    <img
+      src="images/players/josh-king.png"
+      alt="Josh King"
+    >
+
+    <div class="player-info">
+      <strong>Josh King</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">30</div>
+
+    <img
+      src="images/players/ryan-sessegnon.png"
+      alt="Ryan Sessegnon"
+    >
+
+    <div class="player-info">
+      <strong>Ryan Sessegnon</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">32</div>
+
+    <img
+      src="images/players/emile-smith-rowe.png"
+      alt="Emile Smith Rowe"
+    >
+
+    <div class="player-info">
+      <strong>Emile Smith Rowe</strong>
+      <span>🏴 Inghilterra</span>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+  <!-- =========================
+       ATTACCANTI
+  ========================= -->
+
+  <div class="position-group">
+
+<h3>Attaccanti</h3>
+
+<div class="player-grid">
+
+
+  <div class="player-card">
+
+    <div class="player-number">7</div>
+
+    <img
+      src="images/players/gonzalo-garcia.png"
+      alt="Gonzalo García"
+    >
+
+    <div class="player-info">
+      <strong>Gonzalo García</strong>
+      <span>🇪🇸 Spagna</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">9</div>
+
+    <img
+      src="images/players/rodrigo-muniz.png"
+      alt="Rodrigo Muniz"
+    >
+
+    <div class="player-info">
+      <strong>Rodrigo Muniz</strong>
+      <span>🇧🇷 Brasile</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">11</div>
+
+    <img
+      src="images/players/kevin.png"
+      alt="Kevin"
+    >
+
+    <div class="player-info">
+      <strong>Kevin</strong>
+      <span>🇧🇷 Brasile</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">17</div>
+
+    <img
+      src="images/players/alex-iwobi.png"
+      alt="Alex Iwobi"
+    >
+
+    <div class="player-info">
+      <strong>Alex Iwobi</strong>
+      <span>🇳🇬 Nigeria</span>
+    </div>
+
+  </div>
+
+
+  <div class="player-card">
+
+    <div class="player-number">18</div>
+
+    <img
+      src="images/players/jonah-kusi-asare.png"
+      alt="Jonah Kusi-Asare"
+    >
+
+    <div class="player-info">
+      <strong>Jonah Kusi-Asare</strong>
+      <span>🇸🇪 Svezia</span>
+    </div>
+
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     ALLENATORE
+========================= -->
+
+<section class="coach-section">
+
+<span class="section-label">04 · ALLENATORE</span>
+
+  <a href="#" class="coach-card">
+
+<div class="coach-photo">
+
+  <img
+    src="images/coaches/alvaro-arbeloa.png"
+    alt="Álvaro Arbeloa"
+  >
+
+</div>
+
+<div class="coach-info">
+
+  <span class="coach-kicker">ALLENATORE</span>
+
+  <strong>Álvaro Arbeloa</strong>
+
+  <div class="coach-nationality">
+    <span>Spagna</span>
+  </div>
+
+  <span class="coach-club">
+    Fulham · 2026/27
+  </span>
+
+</div>
+
+<div class="coach-arrow">→</div>
+
+  </a>
+
+</section>
+
+<!-- =========================
+     TRASFERIMENTI
+========================= -->
+
+<section class="transfers-section">
+
+<span class="section-label">05 · TRASFERIMENTI</span>
+
+  <div class="transfers-grid">
+
+<!-- IN -->
+
+<div class="transfer-column">
+
+  <h3>IN</h3>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/gonzalo-garcia.png"
+        alt="Gonzalo García"
+      >
+    </div>
+
+    <span class="transfer-player">Gonzalo García</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/real-madrid.png"
+          alt="Real Madrid"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€40m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/cesar-palacios.png"
+        alt="César Palacios"
+      >
+    </div>
+
+    <span class="transfer-player">César Palacios</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/real-madrid.png"
+          alt="Real Madrid"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€10m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/shea-charles.png"
+        alt="Shea Charles"
+      >
+    </div>
+
+    <span class="transfer-player">Shea Charles</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/southampton.png"
+          alt="Southampton"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€30m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/jonah-kusi-asare.png"
+        alt="Jonah Kusi-Asare"
+      >
+    </div>
+
+    <span class="transfer-player">Jonah Kusi-Asare</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/bayern-munich.png"
+          alt="Bayern Munich"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€6m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/david-affengruber.png"
+        alt="David Affengruber"
+      >
+    </div>
+
+    <span class="transfer-player">David Affengruber</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/elche.png"
+          alt="Elche"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€12m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/hugo-larsson.png"
+        alt="Hugo Larsson"
+      >
+    </div>
+
+    <span class="transfer-player">Hugo Larsson</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">←</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/eintracht-frankfurt.png"
+          alt="Eintracht Frankfurt"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">Prestito</span>
+
+  </div>
+
+</div>
+
+
+<!-- OUT -->
+
+<div class="transfer-column">
+
+  <h3>OUT</h3>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/raul-jimenez.png"
+        alt="Raúl Jiménez"
+      >
+    </div>
+
+    <span class="transfer-player">Raúl Jiménez</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/wolverhampton.png"
+          alt="Wolverhampton"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">Svincolato</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/harry-wilson.png"
+        alt="Harry Wilson"
+      >
+    </div>
+
+    <span class="transfer-player">Harry Wilson</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/leeds.png"
+          alt="Leeds United"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">Svincolato</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/issa-diop.png"
+        alt="Issa Diop"
+      >
+    </div>
+
+    <span class="transfer-player">Issa Diop</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/ipswich-town.png"
+          alt="Ipswich Town"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€10m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/sasa-lukic.png"
+        alt="Saša Lukić"
+      >
+    </div>
+
+    <span class="transfer-player">Saša Lukić</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/ipswich-town.png"
+          alt="Ipswich Town"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">€10m</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/steven-benda.png"
+        alt="Steven Benda"
+      >
+    </div>
+
+    <span class="transfer-player">Steven Benda</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/nottingham-forest.png"
+          alt="Nottingham Forest"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">Svincolato</span>
+
+  </div>
+
+
+  <div class="transfer">
+
+    <div class="transfer-photo">
+      <img
+        src="images/players/luc-de-fougerolles.png"
+        alt="Luc De Fougerolles"
+      >
+    </div>
+
+    <span class="transfer-player">Luc De Fougerolles</span>
+
+    <div class="transfer-club-area">
+
+      <span class="transfer-arrow">→</span>
+
+      <div class="transfer-club">
+        <img
+          src="images/teams/real-salt-lake.png"
+          alt="Real Salt Lake"
+        >
+      </div>
+
+    </div>
+
+    <span class="transfer-price">Prestito</span>
+
+  </div>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     LEGGENDE
+========================= -->
+
+<section class="legends-section">
+
+<span class="section-label">06 · LEGGENDE</span>
+
+  <div class="legends-grid">
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/johnny-haynes.jpg"
+      alt="Johnny Haynes"
+    >
+
+  </div>
+
+  <span class="legend-number">01</span>
+
+  <h3>Johnny<br>Haynes</h3>
+
+  <p>FULHAM · 1952–1970</p>
+
+  <b>658</b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/george-cohen.jpg"
+      alt="George Cohen"
+    >
+
+  </div>
+
+  <span class="legend-number">02</span>
+
+  <h3>George<br>Cohen</h3>
+
+  <p>FULHAM · 1956–1969</p>
+
+  <b>459</b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/gordon-davies.jpg"
+      alt="Gordon Davies"
+    >
+
+  </div>
+
+  <span class="legend-number">03</span>
+
+  <h3>Gordon<br>Davies</h3>
+
+  <p>FULHAM · 1978–1984</p>
+
+  <b>277</b>
+
+</div>
+
+
+<div class="legend-card">
+
+  <div class="legend-photo">
+
+    <img
+      src="images/legends/louis-saha.jpg"
+      alt="Louis Saha"
+    >
+
+  </div>
+
+  <span class="legend-number">04</span>
+
+  <h3>Louis<br>Saha</h3>
+
+  <p>FULHAM · 2000–2004</p>
+
+  <b>141</b>
+
+</div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     STORIA
+========================= -->
+
+<section class="history-section">
+
+<span class="section-label">07 · STORIA</span>
+
+  <div class="history-content">
+
+<h2>
+  Da Craven Cottage<br>
+  alla<br>
+  gloria europea.
+</h2>
+
+<p>
+  Il Fulham Football Club nasce nel 1879 da una squadra legata alla
+  Fulham St Andrew's Church. Dopo i primi successi nel calcio amatoriale,
+  il club diventa professionistico nel 1898 e nel 1896 si trasferisce
+  a Craven Cottage, sulle rive del Tamigi, costruendo un legame con
+  lo stadio che dura ancora oggi.
+  <br><br>
+  Dopo l'ingresso nella Football League nel 1907, il Fulham conquista
+  finalmente la promozione nella massima serie nel 1949, vincendo
+  la Second Division. Gli anni Cinquanta e Sessanta vedono protagonista
+  una generazione guidata da Johnny Haynes e George Cohen, destinata
+  a diventare parte integrante della storia del calcio inglese.
+  <br><br>
+  Nel 1975 il Fulham raggiunge per la prima volta la finale di FA Cup.
+  La squadra, allora in Second Division, elimina diverse avversarie
+  nel corso di un'incredibile cavalcata prima di arrendersi per 2-0
+  al West Ham a Wembley.
+  <br><br>
+  Dopo anni difficili, il club risale rapidamente nel calcio inglese
+  tra la fine degli anni Novanta e l'inizio degli anni Duemila.
+  Nel 2000/01 Jean Tigana guida il Fulham al titolo di Division One,
+  riportando i Cottagers nella massima serie dopo 33 anni.
+  <br><br>
+  Nel 2002 il club conquista la UEFA Intertoto Cup battendo il Bologna
+  in finale. La vera consacrazione europea arriva però con Roy Hodgson:
+  nel 2008/09 il Fulham chiude settimo in Premier League e nella stagione
+  successiva compie una delle più belle cavalcate europee della propria
+  storia.
+  <br><br>
+  Shakhtar Donetsk, Juventus, Wolfsburg e Amburgo cadono una dopo l'altra,
+  portando il Fulham fino alla finale di Europa League del 2010. A
+  Amburgo, contro l'Atlético Madrid, i Cottagers resistono fino ai
+  tempi supplementari prima del gol decisivo di Diego Forlán.
+  <br><br>
+  Dopo diversi cambi di categoria, Marco Silva riporta il Fulham in
+  Premier League nel 2021/22 conquistando il Championship con una
+  stagione da record. Il portoghese lascia il club nell'estate 2026
+  dopo cinque anni, aprendo la porta ad Álvaro Arbeloa.
+  <br><br>
+  
+</p>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div>PAGES OF FOOTBALL</div>
+
+<span>© 2026 · Football, history & stories</span>
 
 </footer>
 
