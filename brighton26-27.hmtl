@@ -1,1146 +1,928 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Brighton & Hove Albion | Pages Of Football</title>
+  <title>Brighton & Hove Albion · Pages Of Football</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="premier.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="premier.css">
 </head>
 
-<body>
+<body class="team-brighton">
 
-<header class="main-header">
+<!-- ================= HEADER ================= -->
 
-    <div class="logo">
-        <a href="index.html">PAGES OF FOOTBALL</a>
-    </div>
+<header class="site-header">
 
-    <nav class="main-nav">
-        <a href="index.html">Home</a>
-        <a href="teams.html">Squadre</a>
-        <a href="players.html">Giocatori</a>
-        <a href="stories.html">Storie</a>
-    </nav>
+  <div class="brand">
+    <div class="brand-mark">P</div>
+    <span>PAGES OF FOOTBALL</span>
+  </div>
 
-    <div class="header-search">
-        <a href="#">⌕</a>
-    </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="teams.html" class="active">Squadre</a>
+    <a href="players.html">Giocatori</a>
+    <a href="competitions.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
+  </nav>
+
+  <button class="search-button">⌕</button>
 
 </header>
 
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 
-<section class="team-hero"
-    style="background-image: url('images/stadium/american-express-stadium.jpg');">
+<section class="hero">
 
-    <div class="hero-overlay"></div>
+  <div
+    class="hero-image"
+    style="background-image: url('images/stadium/amex-stadium.jpg');">
+  </div>
 
-    <div class="team-hero-content">
+  <div class="hero-overlay"></div>
 
-        <div class="team-crest">
-            <img src="images/teams/brighton.png" alt="Brighton & Hove Albion">
-        </div>
+  <div class="hero-content">
 
-        <div class="team-hero-text">
+    <img
+      src="images/teams/brighton.png"
+      alt="Brighton & Hove Albion"
+      class="hero-crest">
 
-            <span class="team-kicker">
-                BRIGHTON & HOVE ALBION · INGHILTERRA
-            </span>
+    <div class="hero-text">
 
-            <h1>Brighton & Hove Albion</h1>
+      <span class="hero-kicker">
+        Premier League · Inghilterra
+      </span>
 
-            <p>
-                La storia, la rosa e i protagonisti dei Seagulls.
-            </p>
+      <h1>Brighton & Hove Albion</h1>
 
-        </div>
+      <p>
+        The Seagulls · 1901
+      </p>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<main class="team-page">
+<!-- ================= CLUB ================= -->
 
+<section class="section club-section">
 
-<!-- CLUB -->
+  <span class="section-label">Il club</span>
 
-<section class="team-section club-section">
+  <div class="club-content">
 
-    <div class="section-heading">
-        <span>01</span>
-        <h2>Il Club</h2>
-    </div>
+    <h2>
+      Una storia di cadute,<br>
+      risalite e idee.<br>
+      Sempre più in alto.
+    </h2>
 
-    <div class="club-content">
+    <p>
+      Fondato nel 1901, il Brighton & Hove Albion ha trascorso gran parte
+      della propria storia lontano dai riflettori del calcio inglese.
+      Dalla vecchia Goldstone Ground alla crescita moderna all'Amex,
+      il club ha attraversato categorie, crisi finanziarie e momenti
+      di rinascita.
 
-        <div class="club-text">
+      <br><br>
 
-            <p>
-                Fondato nel 1901, il Brighton & Hove Albion è il principale
-                club calcistico della costa meridionale inglese. Per gran parte
-                della propria storia il club ha vissuto nelle categorie
-                inferiori, diventando però uno dei simboli sportivi della
-                città di Brighton.
-            </p>
+      Negli ultimi anni i Seagulls hanno però costruito uno dei progetti
+      più interessanti d'Inghilterra. Scouting internazionale, valorizzazione
+      dei giovani e una precisa identità di gioco hanno trasformato il
+      Brighton in una presenza stabile della Premier League e, nel 2023,
+      in una squadra capace di raggiungere per la prima volta l'Europa.
+    </p>
 
-            <p>
-                Dopo decenni trascorsi tra Football League e Divisioni
-                inferiori, il Brighton ha iniziato una trasformazione radicale
-                nel XXI secolo. La promozione in Championship nel 2004 e
-                soprattutto quella in Premier League nel 2017 hanno aperto
-                una nuova era nella storia del club.
-            </p>
-
-            <p>
-                Negli ultimi anni il Brighton si è imposto come uno dei club
-                più innovativi d'Inghilterra, grazie a scouting internazionale,
-                analisi dei dati e valorizzazione dei giovani talenti. Il
-                modello costruito sulla costa del Sussex ha portato il club
-                anche sul palcoscenico europeo.
-            </p>
-
-        </div>
-
-        <div class="club-info">
-
-            <div class="info-box">
-                <span>Fondazione</span>
-                <strong>1901</strong>
-            </div>
-
-            <div class="info-box">
-                <span>Città</span>
-                <strong>Brighton & Hove</strong>
-            </div>
-
-            <div class="info-box">
-                <span>Stadio</span>
-                <strong>American Express Stadium</strong>
-            </div>
-
-            <div class="info-box">
-                <span>Soprannome</span>
-                <strong>The Seagulls</strong>
-            </div>
-
-        </div>
-
-    </div>
+  </div>
 
 </section>
 
 
-<!-- PALMARES -->
+<!-- ================= PALMARES ================= -->
 
-<section class="team-section honours-section">
+<section class="section palmares-section">
 
-    <div class="section-heading">
-        <span>02</span>
-        <h2>Palmarès</h2>
-    </div>
+  <span class="section-label">Palmarès</span>
 
-    <div class="trophy-grid">
+  <div class="trophy-grid">
 
-        <div class="trophy-card">
+    <div class="trophy-card">
 
-            <img src="images/trophies/charity-shield.png"
-                 alt="FA Charity Shield">
+      <img
+        src="images/trophies/community-shield.png"
+        alt="FA Charity Shield">
 
-            <div class="trophy-info">
-                <strong>1</strong>
-                <span>FA Charity Shield</span>
-                <small>1910</small>
-            </div>
-
-        </div>
-
-
-        <div class="trophy-card">
-
-            <img src="images/trophies/league-one.png"
-                 alt="League One">
-
-            <div class="trophy-info">
-                <strong>1</strong>
-                <span>League One</span>
-                <small>2010/11</small>
-            </div>
-
-        </div>
-
-
-        <div class="trophy-card">
-
-            <img src="images/trophies/league-two.png"
-                 alt="League Two">
-
-            <div class="trophy-info">
-                <strong>1</strong>
-                <span>Division Two</span>
-                <small>2001/02</small>
-            </div>
-
-        </div>
-
-
-        <div class="trophy-card">
-
-            <img src="images/trophies/league-two.png"
-                 alt="Division Three">
-
-            <div class="trophy-info">
-                <strong>1</strong>
-                <span>Division Three</span>
-                <small>2000/01</small>
-            </div>
-
-        </div>
+      <div>
+        <strong>1</strong>
+        <span>FA Charity Shield</span>
+      </div>
 
     </div>
 
 
-    <div class="other-trophies">
+    <div class="trophy-card">
 
-        <h3>Altri trofei</h3>
+      <img
+        src="images/trophies/league-one.png"
+        alt="Titoli di terza serie">
 
-        <div class="other-trophy-list">
-
-            <div class="other-trophy">
-                <strong>1</strong>
-                <span>Division Three South</span>
-                <small>1957/58</small>
-            </div>
-
-            <div class="other-trophy">
-                <strong>1</strong>
-                <span>Division Four</span>
-                <small>1964/65</small>
-            </div>
-
-        </div>
+      <div>
+        <strong>3</strong>
+        <span>Terza serie</span>
+      </div>
 
     </div>
+
+
+    <div class="trophy-card">
+
+      <img
+        src="images/trophies/league-two.png"
+        alt="Titoli di quarta serie">
+
+      <div>
+        <strong>2</strong>
+        <span>Quarta serie</span>
+      </div>
+
+    </div>
+
+
+    <div class="trophy-card">
+
+      <img
+        src="images/trophies/southern-league.png"
+        alt="Southern League">
+
+      <div>
+        <strong>1</strong>
+        <span>Southern League</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <details class="other-trophies">
+
+    <summary>Altri risultati e piazzamenti</summary>
+
+    <div class="other-trophies-list">
+
+      <div>
+        <strong>1</strong>
+        <span>FA Cup · Finalista 1982/83</span>
+      </div>
+
+      <div>
+        <strong>2</strong>
+        <span>Second Division / Championship · Secondo posto</span>
+      </div>
+
+      <div>
+        <strong>1</strong>
+        <span>Europa League · Ottavi di finale 2023/24</span>
+      </div>
+
+    </div>
+
+  </details>
 
 </section>
 
 
-<!-- SQUAD -->
+<!-- ================= ROSA ================= -->
 
-<section class="team-section squad-section">
+<section class="section squad-section">
 
-    <div class="section-heading">
-        <span>03</span>
-        <h2>Rosa</h2>
+  <div class="section-heading-row">
+
+    <div>
+      <span class="section-label">Rosa 2026/27</span>
+      <h2>La squadra</h2>
     </div>
-
 
     <div class="season-selector">
 
-        <button class="season-active">
-            2026/27
-        </button>
-
-        <button>
-            2025/26
-        </button>
-
-        <button>
-            2024/25
-        </button>
+      <button class="active">2026/27</button>
+      <button>2025/26</button>
+      <button>2024/25</button>
 
     </div>
 
-
-    <div class="competition-buttons">
-
-        <a href="#" class="competition-button">
-
-            <img src="images/competitions/premier-league.png"
-                 alt="Premier League">
-
-            <span>Premier League</span>
-
-        </a>
-
-    </div>
+  </div>
 
 
-    <!-- PORTIERI -->
+  <div class="competition-selector">
 
-    <div class="squad-group">
+    <button class="competition-button active">
 
-        <h3>Portieri</h3>
+      <img
+        src="images/competitions/premier-league.png"
+        alt="Premier League">
 
-        <div class="players-grid">
+      Premier League
 
-            <div class="player-card">
-                <img src="images/players/bart-verbruggen.png"
-                     alt="Bart Verbruggen">
-                <div class="player-number">1</div>
-                <div class="player-info">
-                    <strong>Bart Verbruggen</strong>
-                    <span>🇳🇱 Paesi Bassi</span>
-                </div>
-            </div>
+    </button>
+
+  </div>
 
 
-            <div class="player-card">
-                <img src="images/players/jason-steele.png"
-                     alt="Jason Steele">
-                <div class="player-number">23</div>
-                <div class="player-info">
-                    <strong>Jason Steele</strong>
-                    <span>🏴 Inghilterra</span>
-                </div>
-            </div>
+  <!-- PORTIERI -->
 
+  <div class="squad-group">
 
-            <div class="player-card">
-                <img src="images/players/tom-mcgill.png"
-                     alt="Tom McGill">
-                <div class="player-number">38</div>
-                <div class="player-info">
-                    <strong>Tom McGill</strong>
-                    <span>🇨🇦 Canada</span>
-                </div>
-            </div>
+    <h3>Portieri</h3>
 
-        </div>
+    <div class="player-grid">
+
+      <div class="player-card">
+        <img src="images/players/bart-verbruggen.png" alt="Bart Verbruggen">
+        <span class="player-number">1</span>
+        <h4>Bart Verbruggen</h4>
+        <p>🇳🇱 Paesi Bassi</p>
+      </div>
+
+      <div class="player-card">
+        <img src="images/players/jason-steele.png" alt="Jason Steele">
+        <span class="player-number">23</span>
+        <h4>Jason Steele</h4>
+        <p>🏴 Inghilterra</p>
+      </div>
+
+      <div class="player-card">
+        <img src="images/players/tom-mcgill.png" alt="Tom McGill">
+        <span class="player-number">38</span>
+        <h4>Tom McGill</h4>
+        <p>🏴 Inghilterra</p>
+      </div>
 
     </div>
 
-
-    <!-- DIFENSORI -->
-
-    <div class="squad-group">
-
-        <h3>Difensori</h3>
-
-        <div class="players-grid">
-
-            <div class="player-card">
-                <img src="images/players/jaouen-hadjam.png"
-                     alt="Jaouen Hadjam">
-                <div class="player-number">3</div>
-                <div class="player-info">
-                    <strong>Jaouen Hadjam</strong>
-                    <span>🇩🇿 Algeria</span>
-                </div>
-            </div>
+  </div>
 
 
-            <div class="player-card">
-                <img src="images/players/pascal-struijk.png"
-                     alt="Pascal Struijk">
-                <div class="player-number">4</div>
-                <div class="player-info">
-                    <strong>Pascal Struijk</strong>
-                    <span>🇳🇱 Paesi Bassi</span>
-                </div>
-            </div>
+  <!-- DIFENSORI -->
 
+  <div class="squad-group">
 
-            <div class="player-card">
-                <img src="images/players/lewis-dunk.png"
-                     alt="Lewis Dunk">
-                <div class="player-number">5</div>
-                <div class="player-info">
-                    <strong>Lewis Dunk</strong>
-                    <span>🏴 Inghilterra</span>
-                </div>
-            </div>
+    <h3>Difensori</h3>
 
+    <div class="player-grid">
 
-            <div class="player-card">
-                <img src="images/players/olivier-boscagli.png"
-                     alt="Olivier Boscagli">
-                <div class="player-number">21</div>
-                <div class="player-info">
-                    <strong>Olivier Boscagli</strong>
-                    <span>🇫🇷 Francia</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/igor-julio.png" alt="Igor Julio">
+        <span class="player-number">3</span>
+        <h4>Igor Julio</h4>
+        <p>🇧🇷 Brasile</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/pascal-struijk.png" alt="Pascal Struijk">
+        <span class="player-number">4</span>
+        <h4>Pascal Struijk</h4>
+        <p>🇳🇱 Paesi Bassi</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/ferdi-kadioglu.png"
-                     alt="Ferdi Kadioglu">
-                <div class="player-number">24</div>
-                <div class="player-info">
-                    <strong>Ferdi Kadioglu</strong>
-                    <span>🇹🇷 Turchia</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/lewis-dunk.png" alt="Lewis Dunk">
+        <span class="player-number">5</span>
+        <h4>Lewis Dunk</h4>
+        <p>🏴 Inghilterra</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/eiran-cashin.png" alt="Eiran Cashin">
+        <span class="player-number">16</span>
+        <h4>Eiran Cashin</h4>
+        <p>🇮🇪 Irlanda</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/maxim-de-cuyper.png"
-                     alt="Maxim De Cuyper">
-                <div class="player-number">29</div>
-                <div class="player-info">
-                    <strong>Maxim De Cuyper</strong>
-                    <span>🇧🇪 Belgio</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/joao-costinha.png" alt="João Costinha">
+        <span class="player-number">20</span>
+        <h4>João Costinha</h4>
+        <p>🇵🇹 Portogallo</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/olivier-boscagli.png" alt="Olivier Boscagli">
+        <span class="player-number">21</span>
+        <h4>Olivier Boscagli</h4>
+        <p>🇫🇷 Francia</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/michael-svoboda.png"
-                     alt="Michael Svoboda">
-                <div class="player-number">30</div>
-                <div class="player-info">
-                    <strong>Michael Svoboda</strong>
-                    <span>🇦🇹 Austria</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/ferdi-kadioglu.png" alt="Ferdi Kadioglu">
+        <span class="player-number">24</span>
+        <h4>Ferdi Kadioglu</h4>
+        <p>🇹🇷 Turchia</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/maxim-de-cuyper.png" alt="Maxim De Cuyper">
+        <span class="player-number">29</span>
+        <h4>Maxim De Cuyper</h4>
+        <p>🇧🇪 Belgio</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/luka-vuskovic.png"
-                     alt="Luka Vuskovic">
-                <div class="player-number">44</div>
-                <div class="player-info">
-                    <strong>Luka Vuskovic</strong>
-                    <span>🇭🇷 Croazia</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/michael-svoboda.png" alt="Michael Svoboda">
+        <span class="player-number">30</span>
+        <h4>Michael Svoboda</h4>
+        <p>🇦🇹 Austria</p>
+      </div>
 
-        </div>
+      <div class="player-card">
+        <img src="images/players/luka-vuskovic.png" alt="Luka Vuskovic">
+        <span class="player-number">44</span>
+        <h4>Luka Vuskovic</h4>
+        <p>🇭🇷 Croazia</p>
+      </div>
+
+      <div class="player-card">
+        <img src="images/players/jaouen-hadjam.png" alt="Jaouen Hadjam">
+        <span class="player-number">—</span>
+        <h4>Jaouen Hadjam</h4>
+        <p>🇩🇿 Algeria</p>
+      </div>
 
     </div>
 
-
-    <!-- CENTROCAMPISTI -->
-
-    <div class="squad-group">
-
-        <h3>Centrocampisti</h3>
-
-        <div class="players-grid">
-
-            <div class="player-card">
-                <img src="images/players/jack-hinshelwood.png"
-                     alt="Jack Hinshelwood">
-                <div class="player-number">8</div>
-                <div class="player-info">
-                    <strong>Jack Hinshelwood</strong>
-                    <span>🏴 Inghilterra</span>
-                </div>
-            </div>
+  </div>
 
 
-            <div class="player-card">
-                <img src="images/players/pascal-gross.png"
-                     alt="Pascal Groß">
-                <div class="player-number">13</div>
-                <div class="player-info">
-                    <strong>Pascal Groß</strong>
-                    <span>🇩🇪 Germania</span>
-                </div>
-            </div>
+  <!-- CENTROCAMPISTI -->
 
+  <div class="squad-group">
 
-            <div class="player-card">
-                <img src="images/players/chema-andres.png"
-                     alt="Chema Andrés">
-                <div class="player-number">14</div>
-                <div class="player-info">
-                    <strong>Chema Andrés</strong>
-                    <span>🇪🇸 Spagna</span>
-                </div>
-            </div>
+    <h3>Centrocampisti</h3>
 
+    <div class="player-grid">
 
-            <div class="player-card">
-                <img src="images/players/carlos-baleba.png"
-                     alt="Carlos Baleba">
-                <div class="player-number">17</div>
-                <div class="player-info">
-                    <strong>Carlos Baleba</strong>
-                    <span>🇨🇲 Camerun</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/jack-hinshelwood.png" alt="Jack Hinshelwood">
+        <span class="player-number">8</span>
+        <h4>Jack Hinshelwood</h4>
+        <p>🏴 Inghilterra</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/pascal-gross.png" alt="Pascal Gross">
+        <span class="player-number">13</span>
+        <h4>Pascal Gross</h4>
+        <p>🇩🇪 Germania</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/joao-costinha.png"
-                     alt="João Costinha">
-                <div class="player-number">20</div>
-                <div class="player-info">
-                    <strong>João Costinha</strong>
-                    <span>🇵🇹 Portogallo</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/carlos-baleba.png" alt="Carlos Baleba">
+        <span class="player-number">17</span>
+        <h4>Carlos Baleba</h4>
+        <p>🇨🇲 Camerun</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/diego-gomez.png" alt="Diego Gomez">
+        <span class="player-number">25</span>
+        <h4>Diego Gomez</h4>
+        <p>🇵🇾 Paraguay</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/diego-gomez.png"
-                     alt="Diego Gómez">
-                <div class="player-number">25</div>
-                <div class="player-info">
-                    <strong>Diego Gómez</strong>
-                    <span>🇵🇾 Paraguay</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/yasin-ayari.png" alt="Yasin Ayari">
+        <span class="player-number">26</span>
+        <h4>Yasin Ayari</h4>
+        <p>🇸🇪 Svezia</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/mats-wieffer.png" alt="Mats Wieffer">
+        <span class="player-number">27</span>
+        <h4>Mats Wieffer</h4>
+        <p>🇳🇱 Paesi Bassi</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/yasin-ayari.png"
-                     alt="Yasin Ayari">
-                <div class="player-number">26</div>
-                <div class="player-info">
-                    <strong>Yasin Ayari</strong>
-                    <span>🇸🇪 Svezia</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/matt-oriley.png" alt="Matt O'Riley">
+        <span class="player-number">33</span>
+        <h4>Matt O'Riley</h4>
+        <p>🇮🇪 Irlanda</p>
+      </div>
 
-
-            <div class="player-card">
-                <img src="images/players/mats-wieffer.png"
-                     alt="Mats Wieffer">
-                <div class="player-number">27</div>
-                <div class="player-info">
-                    <strong>Mats Wieffer</strong>
-                    <span>🇳🇱 Paesi Bassi</span>
-                </div>
-            </div>
-
-
-            <div class="player-card">
-                <img src="images/players/matt-oriley.png"
-                     alt="Matt O'Riley">
-                <div class="player-number">33</div>
-                <div class="player-info">
-                    <strong>Matt O'Riley</strong>
-                    <span>🇩🇰 Danimarca</span>
-                </div>
-            </div>
-
-
-            <div class="player-card">
-                <img src="images/players/malick-yalcouye.png"
-                     alt="Malick Yalcouyé">
-                <div class="player-number">35</div>
-                <div class="player-info">
-                    <strong>Malick Yalcouyé</strong>
-                    <span>🇲🇱 Mali</span>
-                </div>
-            </div>
-
-
-            <div class="player-card">
-                <img src="images/players/femi-azeez.png"
-                     alt="Femi Azeez">
-                <div class="player-number">39</div>
-                <div class="player-info">
-                    <strong>Femi Azeez</strong>
-                    <span>🇳🇬 Nigeria</span>
-                </div>
-            </div>
-
-        </div>
+      <div class="player-card">
+        <img src="images/players/malick-yalcouye.png" alt="Malick Yalcouye">
+        <span class="player-number">35</span>
+        <h4>Malick Yalcouye</h4>
+        <p>🇨🇮 Costa d'Avorio</p>
+      </div>
 
     </div>
 
-
-    <!-- ATTACCANTI -->
-
-    <div class="squad-group">
-
-        <h3>Attaccanti</h3>
-
-        <div class="players-grid">
-
-            <div class="player-card">
-                <img src="images/players/kaoru-mitoma.png"
-                     alt="Kaoru Mitoma">
-                <div class="player-number">7</div>
-                <div class="player-info">
-                    <strong>Kaoru Mitoma</strong>
-                    <span>🇯🇵 Giappone</span>
-                </div>
-            </div>
+  </div>
 
 
-            <div class="player-card">
-                <img src="images/players/stefanos-tzimas.png"
-                     alt="Stefanos Tzimas">
-                <div class="player-number">9</div>
-                <div class="player-info">
-                    <strong>Stefanos Tzimas</strong>
-                    <span>🇬🇷 Grecia</span>
-                </div>
-            </div>
+  <!-- ATTACCANTI -->
 
+  <div class="squad-group">
 
-            <div class="player-card">
-                <img src="images/players/georginio-rutter.png"
-                     alt="Georginio Rutter">
-                <div class="player-number">10</div>
-                <div class="player-info">
-                    <strong>Georginio Rutter</strong>
-                    <span>🇫🇷 Francia</span>
-                </div>
-            </div>
+    <h3>Attaccanti</h3>
 
+    <div class="player-grid">
 
-            <div class="player-card">
-                <img src="images/players/yankuba-minteh.png"
-                     alt="Yankuba Minteh">
-                <div class="player-number">11</div>
-                <div class="player-info">
-                    <strong>Yankuba Minteh</strong>
-                    <span>🇬🇲 Gambia</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/kaoru-mitoma.png" alt="Kaoru Mitoma">
+        <span class="player-number">7</span>
+        <h4>Kaoru Mitoma</h4>
+        <p>🇯🇵 Giappone</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/stefanos-tzimas.png" alt="Stefanos Tzimas">
+        <span class="player-number">9</span>
+        <h4>Stefanos Tzimas</h4>
+        <p>🇬🇷 Grecia</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/promise-david.png"
-                     alt="Promise David">
-                <div class="player-number">12</div>
-                <div class="player-info">
-                    <strong>Promise David</strong>
-                    <span>🇨🇦 Canada</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/georginio-rutter.png" alt="Georginio Rutter">
+        <span class="player-number">10</span>
+        <h4>Georginio Rutter</h4>
+        <p>🇫🇷 Francia</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/yankuba-minteh.png" alt="Yankuba Minteh">
+        <span class="player-number">11</span>
+        <h4>Yankuba Minteh</h4>
+        <p>🇬🇲 Gambia</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/ibrahim-osman.png"
-                     alt="Ibrahim Osman">
-                <div class="player-number">15</div>
-                <div class="player-info">
-                    <strong>Ibrahim Osman</strong>
-                    <span>🇬🇭 Ghana</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/promise-david.png" alt="Promise David">
+        <span class="player-number">12</span>
+        <h4>Promise David</h4>
+        <p>🇨🇦 Canada</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/ibrahim-osman.png" alt="Ibrahim Osman">
+        <span class="player-number">15</span>
+        <h4>Ibrahim Osman</h4>
+        <p>🇬🇭 Ghana</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/charalampos-kostoulas.png"
-                     alt="Charalampos Kostoulas">
-                <div class="player-number">19</div>
-                <div class="player-info">
-                    <strong>Charalampos Kostoulas</strong>
-                    <span>🇬🇷 Grecia</span>
-                </div>
-            </div>
+      <div class="player-card">
+        <img src="images/players/charalampos-kostoulas.png" alt="Charalampos Kostoulas">
+        <span class="player-number">19</span>
+        <h4>Charalampos Kostoulas</h4>
+        <p>🇬🇷 Grecia</p>
+      </div>
 
+      <div class="player-card">
+        <img src="images/players/evan-ferguson.png" alt="Evan Ferguson">
+        <span class="player-number">28</span>
+        <h4>Evan Ferguson</h4>
+        <p>🇮🇪 Irlanda</p>
+      </div>
 
-            <div class="player-card">
-                <img src="images/players/evan-ferguson.png"
-                     alt="Evan Ferguson">
-                <div class="player-number">28</div>
-                <div class="player-info">
-                    <strong>Evan Ferguson</strong>
-                    <span>🇮🇪 Irlanda</span>
-                </div>
-            </div>
-
-
-            <div class="player-card">
-                <img src="images/players/zadok-yohanna.png"
-                     alt="Zadok Yohanna">
-                <div class="player-number">36</div>
-                <div class="player-info">
-                    <strong>Zadok Yohanna</strong>
-                    <span>🇳🇬 Nigeria</span>
-                </div>
-            </div>
-
-        </div>
+      <div class="player-card">
+        <img src="images/players/zadok-yohanna.png" alt="Zadok Yohanna">
+        <span class="player-number">36</span>
+        <h4>Zadok Yohanna</h4>
+        <p>🇳🇬 Nigeria</p>
+      </div>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<!-- COACH -->
+<!-- ================= ALLENATORE ================= -->
 
-<section class="team-section coach-section">
+<section class="section coach-section">
 
-    <div class="section-heading">
-        <span>04</span>
-        <h2>Allenatore</h2>
-    </div>
+  <span class="section-label">Allenatore</span>
 
-    <div class="coach-card">
+  <div class="coach-card">
 
-        <div class="coach-image">
-            <img src="images/coaches/fabian-hurzeler.png"
-                 alt="Fabian Hürzeler">
-        </div>
+    <img
+      src="images/coaches/fabian-hurzeler.png"
+      alt="Fabian Hurzeler">
 
-        <div class="coach-info">
+    <div class="coach-info">
 
-            <span>HEAD COACH</span>
+      <span>Head Coach</span>
 
-            <h3>Fabian Hürzeler</h3>
+      <h2>Fabian Hurzeler</h2>
 
-            <p>
-                🇩🇪 Germania
-            </p>
-
-            <div class="coach-description">
-
-                <p>
-                    Fabian Hürzeler guida il Brighton nella stagione 2026/27,
-                    alla sua terza stagione sulla panchina dei Seagulls.
-                    Arrivato in Inghilterra dopo l'esperienza al St. Pauli,
-                    ha costruito una squadra riconoscibile per possesso palla,
-                    intensità e valorizzazione dei giovani talenti.
-                </p>
-
-            </div>
-
-        </div>
+      <p>
+        Germania · 1993
+      </p>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<!-- TRANSFERS -->
+<!-- ================= TRASFERIMENTI ================= -->
 
-<section class="team-section transfers-section">
+<section class="section transfers-section">
 
-    <div class="section-heading">
-        <span>05</span>
-        <h2>Trasferimenti</h2>
-    </div>
+  <span class="section-label">Mercato 2026/27</span>
 
-
-    <div class="transfers-columns">
-
-        <!-- IN -->
-
-        <div class="transfer-column">
-
-            <h3 class="transfer-title in">
-                <span>IN</span>
-                Arrivi
-            </h3>
+  <div class="transfers-grid">
 
 
-            <div class="transfer-list">
+    <!-- ARRIVI -->
 
-                <div class="transfer-item">
+    <div class="transfer-column">
 
-                    <img src="images/players/luka-vuskovic.png"
-                         alt="Luka Vuskovic">
+      <h2>Arrivi</h2>
 
-                    <div class="transfer-player">
-                        <strong>Luka Vuskovic</strong>
-                        <span>Tottenham</span>
-                    </div>
+      <div class="transfer-list">
 
-                    <div class="transfer-fee">
-                        £50m
-                    </div>
+        <div class="transfer-card">
 
-                </div>
+          <img
+            src="images/players/luka-vuskovic.png"
+            alt="Luka Vuskovic">
 
+          <div>
+            <h4>Luka Vuskovic</h4>
+            <p>Tottenham → Brighton</p>
+          </div>
 
-                <div class="transfer-item">
-
-                    <img src="images/players/zadok-yohanna.png"
-                         alt="Zadok Yohanna">
-
-                    <div class="transfer-player">
-                        <strong>Zadok Yohanna</strong>
-                        <span>AIK</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £21.5m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/pascal-struijk.png"
-                         alt="Pascal Struijk">
-
-                    <div class="transfer-player">
-                        <strong>Pascal Struijk</strong>
-                        <span>Leeds United</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £18m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/femi-azeez.png"
-                         alt="Femi Azeez">
-
-                    <div class="transfer-player">
-                        <strong>Femi Azeez</strong>
-                        <span>Millwall</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £15m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/chema-andres.png"
-                         alt="Chema Andrés">
-
-                    <div class="transfer-player">
-                        <strong>Chema Andrés</strong>
-                        <span>VfB Stuttgart</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £15m
-                    </div>
-
-                </div>
-
-            </div>
+          <strong>Trasferimento</strong>
 
         </div>
 
 
-        <!-- OUT -->
+        <div class="transfer-card">
 
-        <div class="transfer-column">
+          <img
+            src="images/players/pascal-struijk.png"
+            alt="Pascal Struijk">
 
-            <h3 class="transfer-title out">
-                <span>OUT</span>
-                Partenze
-            </h3>
+          <div>
+            <h4>Pascal Struijk</h4>
+            <p>Leeds United → Brighton</p>
+          </div>
 
-
-            <div class="transfer-list">
-
-                <div class="transfer-item">
-
-                    <img src="images/players/carlos-baleba.png"
-                         alt="Carlos Baleba">
-
-                    <div class="transfer-player">
-                        <strong>Carlos Baleba</strong>
-                        <span>Manchester United</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £70m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/jan-paul-van-hecke.png"
-                         alt="Jan Paul van Hecke">
-
-                    <div class="transfer-player">
-                        <strong>Jan Paul van Hecke</strong>
-                        <span>Tottenham</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £52m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/carl-rushworth.png"
-                         alt="Carl Rushworth">
-
-                    <div class="transfer-player">
-                        <strong>Carl Rushworth</strong>
-                        <span>Coventry City</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £22.5m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/diego-coppola.png"
-                         alt="Diego Coppola">
-
-                    <div class="transfer-player">
-                        <strong>Diego Coppola</strong>
-                        <span>Paris FC</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £17m
-                    </div>
-
-                </div>
-
-
-                <div class="transfer-item">
-
-                    <img src="images/players/danny-welbeck.png"
-                         alt="Danny Welbeck">
-
-                    <div class="transfer-player">
-                        <strong>Danny Welbeck</strong>
-                        <span>Chelsea</span>
-                    </div>
-
-                    <div class="transfer-fee">
-                        £5m
-                    </div>
-
-                </div>
-
-            </div>
+          <strong>Trasferimento</strong>
 
         </div>
 
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/michael-svoboda.png"
+            alt="Michael Svoboda">
+
+          <div>
+            <h4>Michael Svoboda</h4>
+            <p>Venezia → Brighton</p>
+          </div>
+
+          <strong>Trasferimento</strong>
+
+        </div>
+
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/joao-costinha.png"
+            alt="João Costinha">
+
+          <div>
+            <h4>João Costinha</h4>
+            <p>Olympiacos → Brighton</p>
+          </div>
+
+          <strong>Trasferimento</strong>
+
+        </div>
+
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/promise-david.png"
+            alt="Promise David">
+
+          <div>
+            <h4>Promise David</h4>
+            <p>Union Saint-Gilloise → Brighton</p>
+          </div>
+
+          <strong>Prestito</strong>
+
+        </div>
+
+      </div>
+
     </div>
+
+
+    <!-- PARTENZE -->
+
+    <div class="transfer-column">
+
+      <h2>Partenze</h2>
+
+      <div class="transfer-list">
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/danny-welbeck.png"
+            alt="Danny Welbeck">
+
+          <div>
+            <h4>Danny Welbeck</h4>
+            <p>Brighton → Chelsea</p>
+          </div>
+
+          <strong>Trasferimento</strong>
+
+        </div>
+
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/jan-paul-van-hecke.png"
+            alt="Jan Paul van Hecke">
+
+          <div>
+            <h4>Jan Paul van Hecke</h4>
+            <p>Brighton → Tottenham</p>
+          </div>
+
+          <strong>Trasferimento</strong>
+
+        </div>
+
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/joel-veltman.png"
+            alt="Joel Veltman">
+
+          <div>
+            <h4>Joel Veltman</h4>
+            <p>Brighton → West Ham</p>
+          </div>
+
+          <strong>Svincolato</strong>
+
+        </div>
+
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/adam-webster.png"
+            alt="Adam Webster">
+
+          <div>
+            <h4>Adam Webster</h4>
+            <p>Brighton → Svincolato</p>
+          </div>
+
+          <strong>Svincolato</strong>
+
+        </div>
+
+
+        <div class="transfer-card">
+
+          <img
+            src="images/players/solly-march.png"
+            alt="Solly March">
+
+          <div>
+            <h4>Solly March</h4>
+            <p>Brighton → Svincolato</p>
+          </div>
+
+          <strong>Svincolato</strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- LEGENDS -->
+<!-- ================= LEGGENDE ================= -->
 
-<section class="team-section legends-section">
+<section class="section legends-section">
 
-    <div class="section-heading">
-        <span>06</span>
-        <h2>Leggende</h2>
+  <span class="section-label">Leggende</span>
+
+  <div class="legends-grid">
+
+    <div class="legend-card">
+
+      <img
+        src="images/legends/peter-ward.jpg"
+        alt="Peter Ward">
+
+      <div>
+        <span>1970s · 1980s</span>
+        <h3>Peter Ward</h3>
+        <p>
+          Uno dei più grandi bomber della storia dell'Albion,
+          protagonista della squadra che raggiunse la First Division.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="legend-card">
+
+      <img
+        src="images/legends/steve-foster.jpg"
+        alt="Steve Foster">
+
+      <div>
+        <span>1970s · 1980s</span>
+        <h3>Steve Foster</h3>
+        <p>
+          Capitano della squadra del 1983 e simbolo della storica
+          cavalcata fino alla finale di FA Cup.
+        </p>
+      </div>
+
     </div>
 
 
-    <div class="legends-grid">
+    <div class="legend-card">
 
-        <div class="legend-card">
+      <img
+        src="images/legends/bobby-zamora.jpg"
+        alt="Bobby Zamora">
 
-            <img src="images/legends/tug-wilson.jpg"
-                 alt="Tug Wilson">
-
-            <div class="legend-overlay">
-
-                <span>566 PRESENZE</span>
-
-                <h3>Tug Wilson</h3>
-
-                <p>
-                    Il giocatore con più presenze nella storia del Brighton,
-                    protagonista del club tra gli anni Venti e Trenta.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="legend-card">
-
-            <img src="images/legends/lewis-dunk.jpg"
-                 alt="Lewis Dunk">
-
-            <div class="legend-overlay">
-
-                <span>500+ PRESENZE</span>
-
-                <h3>Lewis Dunk</h3>
-
-                <p>
-                    Capitano, simbolo e leader della generazione che ha portato
-                    il Brighton dalla Championship fino all'Europa.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="legend-card">
-
-            <img src="images/legends/peter-ward.jpg"
-                 alt="Peter Ward">
-
-            <div class="legend-overlay">
-
-                <span>95 GOL</span>
-
-                <h3>Peter Ward</h3>
-
-                <p>
-                    Una delle prime grandi icone offensive del Brighton e
-                    protagonista della storica ascesa degli anni Settanta.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="legend-card">
-
-            <img src="images/legends/bobby-zamora.jpg"
-                 alt="Bobby Zamora">
-
-            <div class="legend-overlay">
-
-                <span>90 GOL</span>
-
-                <h3>Bobby Zamora</h3>
-
-                <p>
-                    L'attaccante simbolo della rinascita del club nei primi
-                    anni Duemila e protagonista di due epoche dell'Albion.
-                </p>
-
-            </div>
-
-        </div>
+      <div>
+        <span>2000s · 2010s</span>
+        <h3>Bobby Zamora</h3>
+        <p>
+          108 presenze e 51 gol in due periodi con il Brighton,
+          protagonista della rinascita del club nelle categorie inferiori.
+        </p>
+      </div>
 
     </div>
+
+
+    <div class="legend-card">
+
+      <img
+        src="images/legends/glenn-murray.jpg"
+        alt="Glenn Murray">
+
+      <div>
+        <span>2000s · 2010s</span>
+        <h3>Glenn Murray</h3>
+        <p>
+          Uno dei più grandi marcatori nella storia del club,
+          protagonista della promozione in Premier League e del ritorno
+          dell'Albion ai vertici del calcio inglese.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- HISTORY -->
+<!-- ================= STORIA ================= -->
 
-<section class="team-section history-section">
+<section class="section history-section">
 
-    <div class="section-heading">
-        <span>07</span>
-        <h2>Storia</h2>
-    </div>
+  <span class="section-label">Storia</span>
 
+  <div class="history-content">
 
-    <div class="history-content">
+    <h2>
+      Dalla costa del Sussex<br>
+      alla Premier League.<br>
+      Una scalata lunga 125 anni.
+    </h2>
 
-        <div class="history-title">
+    <p>
 
-            <span>BRIGHTON & HOVE ALBION</span>
+      Il Brighton & Hove Albion nasce nel 1901 e, nei suoi primi anni,
+      costruisce la propria storia nel calcio del sud dell'Inghilterra.
+      Nel 1909/10 arriva il primo grande trionfo: il Brighton vince la
+      Southern League e conquista poi la FA Charity Shield battendo
+      l'Aston Villa a Stamford Bridge.
 
-            <h2>
-                Dalla<br>
-                Division<br>
-                Four all'Europa.
-            </h2>
+      <br><br>
 
-        </div>
+      Nel 1920 il club entra nella Football League come membro fondatore
+      della Third Division South. Per decenni l'Albion vive soprattutto
+      tra seconda e terza serie, prima di conquistare nel 1958 la
+      promozione in Second Division.
 
+      <br><br>
 
-        <div class="history-text">
+      Il 1963 segna invece una nuova caduta fino alla quarta divisione,
+      ma appena due anni più tardi il Brighton vince il campionato e
+      torna verso le categorie superiori.
 
-            <p>
-                Il Brighton & Hove Albion nasce nel 1901 e nel 1920 diventa
-                membro fondatore della nuova Third Division della Football
-                League. Nei primi decenni il club rimane lontano dai grandi
-                palcoscenici, costruendo lentamente la propria identità nel
-                calcio inglese.
-            </p>
+      <br><br>
 
-            <p>
-                Il primo grande trofeo arriva nel 1910. Dopo aver conquistato
-                la Southern Football League, il Brighton affronta l'Aston Villa,
-                campione d'Inghilterra, nel Charity Shield e vince 1-0 a
-                Stamford Bridge. È ancora oggi l'unico grande trofeo nazionale
-                conquistato dal club.
-            </p>
+      Negli anni Settanta arriva la vera svolta. Nel 1979 il Brighton
+      conquista per la prima volta la promozione nella First Division.
+      La permanenza in massima serie dura quattro stagioni e culmina
+      nel 1983 con la più grande notte di coppa della storia del club:
+      la finale di FA Cup contro il Manchester United.
 
-            <p>
-                Dopo la Seconda guerra mondiale il Brighton attraversa diverse
-                categorie. Nel 1958 conquista la Division Three South e nel
-                1965 torna a vincere un campionato, questa volta in Division
-                Four. Gli anni Settanta segnano però l'inizio della vera
-                trasformazione.
-            </p>
+      <br><br>
 
-            <p>
-                Con giocatori come Peter Ward e Brian Horton, il Brighton
-                raggiunge la First Division per la prima volta nel 1979.
-                Quattro anni più tardi arriva anche la finale di FA Cup contro
-                il Manchester United, persa dopo il replay.
-            </p>
+      Il Brighton perde la finale nel replay, ma quella squadra entra
+      per sempre nella memoria dei tifosi. Nei decenni successivi,
+      tuttavia, il club attraversa una delle fasi più difficili della
+      propria storia, arrivando a rischiare la propria sopravvivenza
+      e dovendo abbandonare lo storico Goldstone Ground.
 
-            <p>
-                Gli anni Novanta sono invece un periodo drammatico. Il club
-                rischia seriamente di scomparire e abbandona il Goldstone
-                Ground, giocando per un periodo lontano dalla propria città.
-                La rinascita arriva con la costruzione del nuovo stadio e con
-                una nuova generazione guidata anche da Bobby Zamora.
-            </p>
+      <br><br>
 
-            <p>
-                Tra il 2001 e il 2011 il Brighton conquista tre promozioni,
-                passando dalla quarta serie alla Championship e poi
-                stabilizzandosi nel secondo livello. Nel 2017, sotto la guida
-                di Chris Hughton, arriva finalmente la promozione in Premier
-                League.
-            </p>
+      La rinascita comincia a Withdean Stadium e prosegue con l'arrivo
+      all'Amex. Nel 2011 il Brighton conquista la League One e nel 2017
+      raggiunge finalmente la Premier League.
 
-            <p>
-                Da allora il Brighton si trasforma in una delle realtà più
-                innovative del calcio inglese. Il lavoro di scouting e
-                valorizzazione dei talenti porta in riva al mare giocatori
-                destinati ai grandi club europei, mentre il Brighton conquista
-                anche la prima storica qualificazione europea.
-            </p>
+      <br><br>
 
-            <p>
-                Nel 2026 il club celebra i suoi 125 anni di storia e affronta
-                la stagione 2026/27 con Fabian Hürzeler in panchina e una nuova
-                generazione di talenti pronta a proseguire il percorso dei
-                Seagulls.
-            </p>
+      Da allora il club ha cambiato status. La filosofia basata su
+      scouting internazionale, giovani talenti e valorizzazione dei
+      giocatori ha portato il Brighton fino alla qualificazione europea
+      nel 2023, con la prima storica partecipazione in Europa League.
 
-        </div>
+      <br><br>
 
-    </div>
+    </p>
+
+  </div>
 
 </section>
 
 
-</main>
+<!-- ================= FOOTER ================= -->
 
+<footer class="site-footer">
 
-<!-- FOOTER -->
+  <div class="footer-brand">
 
-<footer class="main-footer">
+    <div class="brand-mark">P</div>
 
-    <div class="footer-logo">
-        PAGES OF FOOTBALL
+    <div>
+      <strong>PAGES OF FOOTBALL</strong>
+      <span>Football, told through its pages.</span>
     </div>
 
-    <div class="footer-text">
-        Football history, one page at a time.
-    </div>
+  </div>
 
-    <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="teams.html">Squadre</a>
-        <a href="players.html">Giocatori</a>
-        <a href="stories.html">Storie</a>
-    </div>
+
+  <div class="footer-links">
+
+    <a href="index.html">Home</a>
+    <a href="teams.html">Squadre</a>
+    <a href="players.html">Giocatori</a>
+    <a href="competitions.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
+
+  </div>
+
+
+  <div class="footer-copy">
+    © 2026 Pages Of Football
+  </div>
 
 </footer>
 
