@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Real Madrid · Pages Of Football</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="liga.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+
+    <a href="index.html" class="brand">
+      <span class="brand-mark">P</span>
+      <span class="brand-name">PAGES OF FOOTBALL</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="squadre.html" class="active">Squadre</a>
+      <a href="giocatori.html">Giocatori</a>
+      <a href="storie.html">Storie</a>
+    </nav>
+
+    <div class="header-search">
+      <input type="text" placeholder="Cerca...">
+      <span>⌕</span>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- LEAGUE SIDEBAR -->
+
+<aside class="league-sidebar">
+
+  <a href="athletic-bilbao.html" class="league-team-link">
+    <img src="images/logos/athletic-bilbao.png" alt="Athletic Club">
+  </a>
+
+  <a href="atletico-madrid.html" class="league-team-link">
+    <img src="images/logos/atletico-madrid.png" alt="Atlético Madrid">
+  </a>
+
+  <a href="barcelona.html" class="league-team-link">
+    <img src="images/logos/barcelona.png" alt="Barcelona">
+  </a>
+
+  <a href="celta-vigo.html" class="league-team-link">
+    <img src="images/logos/celta-vigo.png" alt="Celta Vigo">
+  </a>
+
+  <a href="alaves.html" class="league-team-link">
+    <img src="images/logos/alaves.png" alt="Alavés">
+  </a>
+
+  <a href="elche.html" class="league-team-link">
+    <img src="images/logos/elche.png" alt="Elche">
+  </a>
+
+  <a href="espanyol.html" class="league-team-link">
+    <img src="images/logos/espanyol.png" alt="Espanyol">
+  </a>
+
+  <a href="getafe.html" class="league-team-link">
+    <img src="images/logos/getafe.png" alt="Getafe">
+  </a>
+
+  <a href="levante.html" class="league-team-link">
+    <img src="images/logos/levante.png" alt="Levante">
+  </a>
+
+  <a href="malaga.html" class="league-team-link">
+    <img src="images/logos/malaga.png" alt="Málaga">
+  </a>
+
+  <a href="racing-santander.html" class="league-team-link">
+    <img src="images/logos/racing-santander.png" alt="Racing Santander">
+  </a>
+
+  <a href="rayo-vallecano.html" class="league-team-link">
+    <img src="images/logos/rayo-vallecano.png" alt="Rayo Vallecano">
+  </a>
+
+  <a href="deportivo.html" class="league-team-link">
+    <img src="images/logos/deportivo.png" alt="Deportivo">
+  </a>
+
+  <a href="real-betis.html" class="league-team-link">
+    <img src="images/logos/real-betis.png" alt="Real Betis">
+  </a>
+
+  <a href="real-madrid.html" class="league-team-link active">
+    <img src="images/logos/real-madrid.png" alt="Real Madrid">
+  </a>
+
+  <a href="real-sociedad.html" class="league-team-link">
+    <img src="images/logos/real-sociedad.png" alt="Real Sociedad">
+  </a>
+
+  <a href="sevilla.html" class="league-team-link">
+    <img src="images/logos/sevilla.png" alt="Sevilla">
+  </a>
+
+  <a href="valencia.html" class="league-team-link">
+    <img src="images/logos/valencia.png" alt="Valencia">
+  </a>
+
+  <a href="villarreal.html" class="league-team-link">
+    <img src="images/logos/villarreal.png" alt="Villarreal">
+  </a>
+
+  <a href="osasuna.html" class="league-team-link">
+    <img src="images/logos/osasuna.png" alt="Osasuna">
+  </a>
+
+</aside>
+
+
+<main>
+
+
+  <!-- HERO -->
+
+  <section class="team-hero"
+    style="background-image:
+    linear-gradient(rgba(0,0,0,.48), rgba(0,0,0,.58)),
+    url('images/stadium/santiago-bernabeu.jpg');">
+
+    <div class="team-hero-content">
+
+      <div class="hero-label">LA LIGA · 2026/27</div>
+
+      <h1>Real Madrid</h1>
+
+      <p>Madrid · Santiago Bernabéu</p>
+
+    </div>
+
+  </section>
+
+
+  <!-- CLUB -->
+
+  <section class="team-section club-section">
+
+    <div class="section-heading">
+      <span>01</span>
+      <h2>Il club</h2>
+    </div>
+
+    <div class="club-grid">
+
+      <div class="club-crest">
+        <img src="images/teams/real-madrid.png" alt="Real Madrid">
+      </div>
+
+      <div class="club-text">
+
+        <p class="eyebrow">REAL MADRID CLUB DE FÚTBOL</p>
+
+        <h3>Il club più titolato nella storia della Coppa dei Campioni.</h3>
+
+        <p>
+          Fondato nel 1902, il Real Madrid è diventato uno dei simboli
+          assoluti del calcio mondiale. La sua storia è inseparabile dal
+          Santiago Bernabéu, dalle grandi generazioni di campioni e da una
+          tradizione europea senza eguali.
+        </p>
+
+        <p>
+          Da Di Stéfano a Cristiano Ronaldo, passando per Zidane, Raúl,
+          Roberto Carlos, Modrić e tante altre leggende, il Real Madrid
+          ha costruito la propria identità attraverso epoche diverse,
+          mantenendo sempre la stessa ambizione: vincere.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PALMARES -->
+
+  <section class="team-section">
+
+    <div class="section-heading">
+      <span>02</span>
+      <h2>Palmarès</h2>
+    </div>
+
+    <div class="trophy-grid">
+
+      <div class="trophy-card">
+        <img src="images/trophies/champions-league.png" alt="Champions League">
+        <strong>15</strong>
+        <span>Champions League</span>
+      </div>
+
+      <div class="trophy-card">
+        <img src="images/trophies/laliga.png" alt="La Liga">
+        <strong>36</strong>
+        <span>La Liga</span>
+      </div>
+
+      <div class="trophy-card">
+        <img src="images/trophies/copa-del-rey.png" alt="Copa del Rey">
+        <strong>20</strong>
+        <span>Coppe del Re</span>
+      </div>
+
+      <div class="trophy-card">
+        <img src="images/trophies/club-world-cup.png" alt="Mondiale per Club">
+        <strong>9</strong>
+        <span>Mondiali per Club</span>
+      </div>
+
+      <div class="trophy-card">
+        <img src="images/trophies/european-super-cup.png" alt="Supercoppa UEFA">
+        <strong>6</strong>
+        <span>Supercoppe UEFA</span>
+      </div>
+
+      <div class="trophy-card">
+        <img src="images/trophies/spanish-super-cup.png" alt="Supercoppa di Spagna">
+        <strong>13</strong>
+        <span>Supercoppe di Spagna</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SQUAD -->
+
+  <section class="team-section squad-section">
+
+    <div class="section-heading">
+      <span>03</span>
+      <h2>Rosa</h2>
+    </div>
+
+    <div class="season-bar">
+
+      <div class="season-selector">
+        <button class="season-button">2026/27 ▾</button>
+      </div>
+
+      <button class="competition-button">
+        La Liga
+      </button>
+
+    </div>
+
+
+    <!-- PORTIERI -->
+
+    <div class="position-group">
+
+      <div class="position-title">
+        <span>01</span>
+        <h3>Portieri</h3>
+      </div>
+
+      <div class="players-grid">
+
+        <article class="player-card">
+          <div class="player-number">1</div>
+          <div class="player-photo">
+            <img src="images/players/courtois.png" alt="Thibaut Courtois">
+          </div>
+          <div class="player-info">
+            <h4>Thibaut Courtois</h4>
+            <span>Belgio · POR</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">13</div>
+          <div class="player-photo">
+            <img src="images/players/lunin.png" alt="Andriy Lunin">
+          </div>
+          <div class="player-info">
+            <h4>Andriy Lunin</h4>
+            <span>Ucraina · POR</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <!-- DIFENSORI -->
+
+    <div class="position-group">
+
+      <div class="position-title">
+        <span>02</span>
+        <h3>Difensori</h3>
+      </div>
+
+      <div class="players-grid">
+
+        <article class="player-card">
+          <div class="player-number">2</div>
+          <div class="player-photo">
+            <img src="images/players/asencio.png" alt="Raúl Asencio">
+          </div>
+          <div class="player-info">
+            <h4>Raúl Asencio</h4>
+            <span>Spagna · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">3</div>
+          <div class="player-photo">
+            <img src="images/players/militao.png" alt="Éder Militão">
+          </div>
+          <div class="player-info">
+            <h4>Éder Militão</h4>
+            <span>Brasile · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">4</div>
+          <div class="player-photo">
+            <img src="images/players/huijsen.png" alt="Dean Huijsen">
+          </div>
+          <div class="player-info">
+            <h4>Dean Huijsen</h4>
+            <span>Spagna · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">12</div>
+          <div class="player-photo">
+            <img src="images/players/trent.png" alt="Trent Alexander-Arnold">
+          </div>
+          <div class="player-info">
+            <h4>Trent Alexander-Arnold</h4>
+            <span>Inghilterra · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">16</div>
+          <div class="player-photo">
+            <img src="images/players/konate.png" alt="Ibrahima Konaté">
+          </div>
+          <div class="player-info">
+            <h4>Ibrahima Konaté</h4>
+            <span>Francia · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">17</div>
+          <div class="player-photo">
+            <img src="images/players/cucurella.png" alt="Marc Cucurella">
+          </div>
+          <div class="player-info">
+            <h4>Marc Cucurella</h4>
+            <span>Spagna · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">18</div>
+          <div class="player-photo">
+            <img src="images/players/carreras.png" alt="Álvaro Carreras">
+          </div>
+          <div class="player-info">
+            <h4>Álvaro Carreras</h4>
+            <span>Spagna · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">22</div>
+          <div class="player-photo">
+            <img src="images/players/rudiger.png" alt="Antonio Rüdiger">
+          </div>
+          <div class="player-info">
+            <h4>Antonio Rüdiger</h4>
+            <span>Germania · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">23</div>
+          <div class="player-photo">
+            <img src="images/players/mendy.png" alt="Ferland Mendy">
+          </div>
+          <div class="player-info">
+            <h4>Ferland Mendy</h4>
+            <span>Francia · DIF</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">24</div>
+          <div class="player-photo">
+            <img src="images/players/dumfries.png" alt="Denzel Dumfries">
+          </div>
+          <div class="player-info">
+            <h4>Denzel Dumfries</h4>
+            <span>Paesi Bassi · DIF</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <!-- CENTROCAMPISTI -->
+
+    <div class="position-group">
+
+      <div class="position-title">
+        <span>03</span>
+        <h3>Centrocampisti</h3>
+      </div>
+
+      <div class="players-grid">
+
+        <article class="player-card">
+          <div class="player-number">5</div>
+          <div class="player-photo">
+            <img src="images/players/bellingham.png" alt="Jude Bellingham">
+          </div>
+          <div class="player-info">
+            <h4>Jude Bellingham</h4>
+            <span>Inghilterra · CEN</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">6</div>
+          <div class="player-photo">
+            <img src="images/players/camavinga.png" alt="Eduardo Camavinga">
+          </div>
+          <div class="player-info">
+            <h4>Eduardo Camavinga</h4>
+            <span>Francia · CEN</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">8</div>
+          <div class="player-photo">
+            <img src="images/players/valverde.png" alt="Federico Valverde">
+          </div>
+          <div class="player-info">
+            <h4>Federico Valverde</h4>
+            <span>Uruguay · CEN</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">14</div>
+          <div class="player-photo">
+            <img src="images/players/tchouameni.png" alt="Aurélien Tchouaméni">
+          </div>
+          <div class="player-info">
+            <h4>Aurélien Tchouaméni</h4>
+            <span>Francia · CEN</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">15</div>
+          <div class="player-photo">
+            <img src="images/players/arda-guler.png" alt="Arda Güler">
+          </div>
+          <div class="player-info">
+            <h4>Arda Güler</h4>
+            <span>Turchia · CEN</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">20</div>
+          <div class="player-photo">
+            <img src="images/players/bernardo-silva.png" alt="Bernardo Silva">
+          </div>
+          <div class="player-info">
+            <h4>Bernardo Silva</h4>
+            <span>Portogallo · CEN</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">27</div>
+          <div class="player-photo">
+            <img src="images/players/thiago.png" alt="Thiago">
+          </div>
+          <div class="player-info">
+            <h4>Thiago</h4>
+            <span>Spagna · CEN</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <!-- ATTACCANTI -->
+
+    <div class="position-group">
+
+      <div class="position-title">
+        <span>04</span>
+        <h3>Attaccanti</h3>
+      </div>
+
+      <div class="players-grid">
+
+        <article class="player-card">
+          <div class="player-number">7</div>
+          <div class="player-photo">
+            <img src="images/players/vinicius.png" alt="Vinícius Júnior">
+          </div>
+          <div class="player-info">
+            <h4>Vinícius Júnior</h4>
+            <span>Brasile · ATT</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">9</div>
+          <div class="player-photo">
+            <img src="images/players/endrick.png" alt="Endrick">
+          </div>
+          <div class="player-info">
+            <h4>Endrick</h4>
+            <span>Brasile · ATT</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">10</div>
+          <div class="player-photo">
+            <img src="images/players/mbappe.png" alt="Kylian Mbappé">
+          </div>
+          <div class="player-info">
+            <h4>Kylian Mbappé</h4>
+            <span>Francia · ATT</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">11</div>
+          <div class="player-photo">
+            <img src="images/players/rodrygo.png" alt="Rodrygo">
+          </div>
+          <div class="player-info">
+            <h4>Rodrygo</h4>
+            <span>Brasile · ATT</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">19</div>
+          <div class="player-photo">
+            <img src="images/players/carlos-espi.png" alt="Carlos Espí">
+          </div>
+          <div class="player-info">
+            <h4>Carlos Espí</h4>
+            <span>Spagna · ATT</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">21</div>
+          <div class="player-photo">
+            <img src="images/players/brahim.png" alt="Brahim Díaz">
+          </div>
+          <div class="player-info">
+            <h4>Brahim Díaz</h4>
+            <span>Marocco · ATT</span>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-number">25</div>
+          <div class="player-photo">
+            <img src="images/players/diomande.png" alt="Yan Diomande">
+          </div>
+          <div class="player-info">
+            <h4>Yan Diomande</h4>
+            <span>Guinea · ATT</span>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- COACH -->
+
+  <section class="team-section coach-section">
+
+    <div class="section-heading">
+      <span>04</span>
+      <h2>Allenatore</h2>
+    </div>
+
+    <div class="coach-card">
+
+      <div class="coach-photo">
+        <img src="images/coaches/jose-mourinho.png" alt="José Mourinho">
+      </div>
+
+      <div class="coach-info">
+        <span class="eyebrow">ALLENATORE</span>
+        <h3>José Mourinho</h3>
+        <p>Portogallo · 2026–</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRANSFERS -->
+
+  <section class="team-section transfers-section">
+
+    <div class="section-heading">
+      <span>05</span>
+      <h2>Trasferimenti</h2>
+    </div>
+
+    <div class="transfer-grid">
+
+      <!-- IN -->
+
+      <div class="transfer-column">
+
+        <div class="transfer-heading">
+          <span>IN</span>
+          <h3>Arrivi</h3>
+        </div>
+
+        <div class="transfer-list">
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Marc Cucurella</strong>
+              <span>Chelsea</span>
+            </div>
+            <div class="transfer-fee">€55M</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Denzel Dumfries</strong>
+              <span>Inter</span>
+            </div>
+            <div class="transfer-fee">€20M</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Ibrahima Konaté</strong>
+              <span>Liverpool</span>
+            </div>
+            <div class="transfer-fee">Gratis</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Bernardo Silva</strong>
+              <span>Manchester City</span>
+            </div>
+            <div class="transfer-fee">Gratis</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Carlos Espí</strong>
+              <span>Levante</span>
+            </div>
+            <div class="transfer-fee">€25M</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Yan Diomande</strong>
+              <span>RB Leipzig</span>
+            </div>
+            <div class="transfer-fee">€125M</div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- OUT -->
+
+      <div class="transfer-column">
+
+        <div class="transfer-heading">
+          <span>OUT</span>
+          <h3>Partenze</h3>
+        </div>
+
+        <div class="transfer-list">
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Gonzalo García</strong>
+              <span>Fulham</span>
+            </div>
+            <div class="transfer-fee">€40M</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Nico Paz</strong>
+              <span>Como</span>
+            </div>
+            <div class="transfer-fee">€60M</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Víctor Muñoz</strong>
+              <span>Osasuna</span>
+            </div>
+            <div class="transfer-fee">€12M</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>Fran García</strong>
+              <span>Real Betis</span>
+            </div>
+            <div class="transfer-fee">—</div>
+          </div>
+
+          <div class="transfer-row">
+            <div class="transfer-player">
+              <strong>David Alaba</strong>
+              <span>—</span>
+            </div>
+            <div class="transfer-fee">Fine contratto</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LEGENDS -->
+
+  <section class="team-section legends-section">
+
+    <div class="section-heading">
+      <span>06</span>
+      <h2>Leggende</h2>
+    </div>
+
+    <div class="legends-grid">
+
+      <article class="legend-card">
+        <div class="legend-number">01</div>
+        <div class="legend-photo">
+          <img src="images/legends/di-stefano.png" alt="Alfredo Di Stéfano">
+        </div>
+        <div class="legend-info">
+          <h3>Alfredo Di Stéfano</h3>
+          <span>REAL MADRID · 1953–1964</span>
+        </div>
+      </article>
+
+      <article class="legend-card">
+        <div class="legend-number">02</div>
+        <div class="legend-photo">
+          <img src="images/legends/cristiano-ronaldo.png" alt="Cristiano Ronaldo">
+        </div>
+        <div class="legend-info">
+          <h3>Cristiano Ronaldo</h3>
+          <span>REAL MADRID · 2009–2018</span>
+        </div>
+      </article>
+
+      <article class="legend-card">
+        <div class="legend-number">03</div>
+        <div class="legend-photo">
+          <img src="images/legends/raul.png" alt="Raúl">
+        </div>
+        <div class="legend-info">
+          <h3>Raúl</h3>
+          <span>REAL MADRID · 1994–2010</span>
+        </div>
+      </article>
+
+      <article class="legend-card">
+        <div class="legend-number">04</div>
+        <div class="legend-photo">
+          <img src="images/legends/zidane.png" alt="Zinedine Zidane">
+        </div>
+        <div class="legend-info">
+          <h3>Zinedine Zidane</h3>
+          <span>REAL MADRID · 2001–2006</span>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- HISTORY -->
+
+  <section class="team-section history-section">
+
+    <div class="section-heading">
+      <span>07</span>
+      <h2>Storia</h2>
+    </div>
+
+    <div class="history-content">
+
+      <div class="history-year">
+        <span>1902</span>
+      </div>
+
+      <div class="history-text">
+
+        <h3>Dalle origini alla leggenda europea</h3>
+
+        <p>
+          Il Madrid Foot Ball Club nasce ufficialmente nel 1902.
+          Nel corso del XX secolo il club costruisce progressivamente
+          la propria identità, fino a diventare protagonista assoluto
+          del calcio spagnolo ed europeo.
+        </p>
+
+        <p>
+          La prima grande epoca arriva negli anni Cinquanta, quando
+          Alfredo Di Stéfano guida il Real Madrid alla conquista delle
+          prime cinque Coppe dei Campioni consecutive.
+        </p>
+
+        <p>
+          Decenni dopo arriveranno altre generazioni leggendarie:
+          dagli anni Novanta di Raúl e Roberto Carlos alla squadra
+          dei Galácticos, fino alla straordinaria era di Cristiano
+          Ronaldo e alle quattro Champions vinte tra il 2014 e il 2018.
+        </p>
+
+        <p>
+          Nel 2022 arriva la quattordicesima Coppa dei Campioni.
+          Nel 2024, a Wembley contro il Borussia Dortmund, il Real
+          conquista la <strong>Decimoquinta</strong>, consolidando
+          ulteriormente il proprio primato nella competizione.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer id="sgg3oy">
+  <div>PAGES OF FOOTBALL</div>
+  <span>© 2026 · Football, history & stories</span>
+</footer>
+
+</body>
+</html>
