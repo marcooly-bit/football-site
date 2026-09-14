@@ -13,6 +13,7 @@
 <body>
 
 <header class="site-header">
+
   <a href="index.html" class="brand">
     <div class="logo">P</div>
     <strong>PAGES OF FOOTBALL</strong>
@@ -27,8 +28,12 @@
   </nav>
 
   <button class="search-button">⌕</button>
+
 </header>
 
+  <!-- =========================
+LEAGUE SIDEBAR · LA LIGA
+========================= -->
 
 <aside class="league-sidebar">
 
@@ -56,8 +61,8 @@
     <img src="images/logos/celta-vigo.png" alt="Celta Vigo">
   </a>
 
-  <a href="deportivo-la-coruna26-27.html" class="league-team-link" title="Deportivo La Coruña">
-    <img src="images/logos/deportivo-la-coruna.png" alt="Deportivo La Coruña">
+  <a href="deportivo26-27.html" class="league-team-link" title="Deportivo La Coruña">
+    <img src="images/logos/deportivo.png" alt="Deportivo La Coruña">
   </a>
 
   <a href="elche26-27.html" class="league-team-link" title="Elche">
@@ -100,8 +105,8 @@
     <img src="images/logos/racing-santander.png" alt="Racing Santander">
   </a>
 
-  <a href="sevilla26-27.html" class="league-team-link" title="Sevilla">
-    <img src="images/logos/sevilla.png" alt="Sevilla">
+  <a href="sevilla26-27.html" class="league-team-link" title="Siviglia">
+    <img src="images/logos/sevilla.png" alt="Siviglia">
   </a>
 
   <a href="valencia26-27.html" class="league-team-link" title="Valencia">
@@ -114,1188 +119,1404 @@
 
 </aside>
 
+<!-- =========================
+     HERO
+========================= -->
 
-<main>
+<section class="hero">
 
-  <!-- HERO -->
-
-  <section class="hero">
-
-    <div
-      class="hero-image"
-      style="background-image: url('images/stadium/abanca-balaidos.jpg');">
-    </div>
+  <div
+    class="hero-image"
+    style="background-image: url('images/stadium/abanca-balaidos.jpg');"
+  >
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
 
+      <div class="team-crest">
+        <img src="images/teams/celta-vigo.png" alt="Celta Vigo">
+      </div>
+
+      <div>
+        <div class="hero-kicker">VIGO · SPAGNA</div>
+
+        <h1>Celta Vigo</h1>
+
+        <p>La storia, la rosa e i protagonisti del club galiziano.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CLUB
+========================= -->
+
+<section class="club-section">
+
+  <span class="section-label">01 · IL CLUB</span>
+
+  <div class="club-content">
+
+    <h2>
+      Una città.<br>
+      Un club.<br>
+      Un'identità.
+    </h2>
+
+    <p>
+      Fondato nel 1923 dalla fusione tra Real Vigo Sporting e Real Fortuna,
+      il Celta è diventato uno dei simboli sportivi della Galizia. Dalle
+      tribune dell'Abanca Balaídos sono passate generazioni di giocatori
+      capaci di costruire una delle identità più riconoscibili del calcio
+      spagnolo.
+      <br><br>
+      La storia europea del club ha vissuto il suo momento più importante
+      nel 2000, quando il Celta conquistò la Coppa Intertoto UEFA battendo
+      lo Zenit San Pietroburgo in finale. Negli ultimi anni il club ha
+      continuato a valorizzare il proprio settore giovanile e nel 2025
+      è tornato in Europa dopo otto anni di assenza. :contentReference[oaicite:1]{index=1}
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PALMARES
+========================= -->
+
+<section class="palmares-section">
+
+  <span class="section-label">02 · PALMARES</span>
+
+  <div class="trophy-grid">
+
+    <div class="trophy-card">
+
       <img
-        src="images/teams/celta-vigo.png"
-        alt="Celta Vigo"
-        class="team-crest">
+        src="images/trophies/intertoto.png"
+        alt="Coppa Intertoto UEFA"
+        class="trophy-image"
+      >
 
-      <span class="hero-kicker">LA LIGA · 2026/27</span>
-
-      <h1>Celta Vigo</h1>
-
-      <p>Vigo · Galicia · Spagna</p>
-
-    </div>
-
-  </section>
-
-
-  <!-- CLUB -->
-
-  <section class="club-section">
-
-    <span class="section-label">IL CLUB</span>
-
-    <div class="club-content">
-
-      <div>
-
-        <h2>Real Club Celta de Vigo</h2>
-
-        <p>
-          Fondato nel 1923, il Celta è il grande club calcistico di Vigo
-          e una delle realtà più identitarie della Galizia. La sua storia
-          è legata ad Abanca Balaídos, ai colori celesti e a una forte
-          tradizione di valorizzazione dei giocatori cresciuti in casa.
-        </p>
-
-        <p>
-          Il momento più importante della storia internazionale del club
-          arrivò nel 2000, quando il Celta conquistò la Coppa Intertoto UEFA,
-          il primo trofeo europeo ufficiale vinto da una squadra galiziana.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PALMARES -->
-
-  <section class="palmares-section">
-
-    <span class="section-label">PALMARÈS</span>
-
-    <div class="trophy-grid">
-
-      <div class="trophy-card">
-
-        <img
-          src="images/trophies/intertoto.png"
-          alt="Coppa Intertoto UEFA">
-
-        <div class="trophy-info">
-          <strong>1</strong>
-          <span>Coppa Intertoto UEFA</span>
-        </div>
-
-      </div>
-
-
-      <div class="trophy-card">
-
-        <img
-          src="images/trophies/segunda-division.png"
-          alt="Segunda División">
-
-        <div class="trophy-info">
-          <strong>3</strong>
-          <span>Segunda División</span>
-        </div>
-
-      </div>
-
-
-      <div class="trophy-card">
-
-        <img
-          src="images/trophies/segunda-b.png"
-          alt="Segunda División B">
-
-        <div class="trophy-info">
-          <strong>1</strong>
-          <span>Segunda División B</span>
-        </div>
-
-      </div>
-
-
-      <div class="trophy-card">
-
-        <img
-          src="images/trophies/tercera-division.png"
-          alt="Tercera División">
-
-        <div class="trophy-info">
-          <strong>1</strong>
-          <span>Tercera División</span>
-        </div>
-
+      <div class="trophy-info">
+        <strong>1</strong>
+        <span>Coppa Intertoto UEFA</span>
       </div>
 
     </div>
 
 
-    <details class="other-trophies">
+    <div class="trophy-card">
 
-      <summary>Altri trofei</summary>
+      <img
+        src="images/trophies/segunda-division.png"
+        alt="Segunda División"
+        class="trophy-image"
+      >
 
-      <div class="other-trophies-list">
+      <div class="trophy-info">
+        <strong>3</strong>
+        <span>Segunda División</span>
+      </div>
 
-        <span>
+    </div>
+
+
+    <div class="trophy-card">
+
+      <img
+        src="images/trophies/segunda-b.png"
+        alt="Segunda División B"
+        class="trophy-image"
+      >
+
+      <div class="trophy-info">
+        <strong>1</strong>
+        <span>Segunda División B</span>
+      </div>
+
+    </div>
+
+
+    <div class="trophy-card">
+
+      <img
+        src="images/trophies/tercera-division.png"
+        alt="Tercera División"
+        class="trophy-image"
+      >
+
+      <div class="trophy-info">
+        <strong>1</strong>
+        <span>Tercera División</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <details class="other-trophies">
+
+    <summary>
+      <span>＋</span>
+      ALTRI TROFEI
+    </summary>
+
+    <div class="other-trophies-list">
+
+      <div class="other-trophy">
+
+        <img
+          src="images/trophies/galician-championship.png"
+          alt="Campionato di Galizia"
+        >
+
+        <div>
           <strong>6</strong>
-          Campeonato de Galicia
-        </span>
+          <span>Campionato di Galizia</span>
+        </div>
 
-        <span>
+      </div>
+
+
+      <div class="other-trophy">
+
+        <img
+          src="images/trophies/asturian-galician-championship.png"
+          alt="Campionato Asturiano-Galiziano"
+        >
+
+        <div>
           <strong>1</strong>
-          Campeonato Astur-Gallego
-        </span>
-
-        <span>
-          <strong>2</strong>
-          Coppa Xunta de Galicia
-        </span>
+          <span>Campionato Asturiano-Galiziano</span>
+        </div>
 
       </div>
 
-    </details>
 
-  </section>
+      <div class="other-trophy">
 
+        <img
+          src="images/trophies/copa-galicia.png"
+          alt="Copa Galicia"
+        >
 
-  <!-- ROSA -->
+        <div>
+          <strong>1</strong>
+          <span>Copa Galicia</span>
+        </div>
 
-  <section class="squad-section">
-
-    <div class="section-heading-row">
-
-      <div>
-        <span class="section-label">ROSA</span>
-        <h2>Celta Vigo · 2026/27</h2>
       </div>
 
-      <div class="season-selector">
-        <button class="active">2026/27</button>
+
+      <div class="other-trophy">
+
+        <img
+          src="images/trophies/copa-xunta-galicia.png"
+          alt="Copa Xunta de Galicia"
+        >
+
+        <div>
+          <strong>1</strong>
+          <span>Copa Xunta de Galicia</span>
+        </div>
+
       </div>
 
     </div>
 
+  </details>
 
-    <div class="competition-button">
+</section>
+
+
+<!-- =========================
+     SQUAD
+========================= -->
+
+<section class="squad-section">
+
+  <div class="section-heading-row">
+
+    <div>
+
+      <p class="section-label">Rosa 2026/27</p>
+
+      <h2>La squadra</h2>
+
+    </div>
+
+    <button class="season-selector" type="button">
+
+      <span>STAGIONI</span>
+
+      <strong>2026/27</strong>
+
+      <span class="season-arrow">⌄</span>
+
+    </button>
+
+  </div>
+
+
+  <!-- COMPETITION -->
+
+  <a href="#" class="competition-button">
+
+    <div class="competition-button-logo">
+
       <img
         src="images/competitions/laliga.png"
-        alt="La Liga">
-      <span>La Liga</span>
+        alt="La Liga"
+      >
+
     </div>
 
+    <div class="competition-button-content">
 
-    <!-- PORTIERI -->
+      <span>COMPETIZIONE</span>
 
-    <div class="position-group">
+      <strong>La Liga</strong>
 
-      <h3>Portieri</h3>
+    </div>
 
-      <div class="player-grid">
+    <div class="competition-button-arrow">→</div>
 
-        <div class="player-card">
+  </a>
 
-          <span class="player-number">1</span>
 
+  <!-- =========================
+       PORTIERI
+  ========================= -->
+
+  <div class="position-group">
+
+    <h3>Portieri</h3>
+
+    <div class="player-grid">
+
+
+      <div class="player-card">
+
+        <div class="player-number">1</div>
+
+        <img
+          src="images/players/altay-bayindir.png"
+          alt="Altay Bayındır"
+        >
+
+        <div class="player-info">
+          <strong>Altay Bayındır</strong>
+          <span>🇹🇷 Turchia</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">13</div>
+
+        <img
+          src="images/players/andrei-radu.png"
+          alt="Andrei Radu"
+        >
+
+        <div class="player-info">
+          <strong>Andrei Radu</strong>
+          <span>🇷🇴 Romania</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">25</div>
+
+        <img
+          src="images/players/ivan-villar.png"
+          alt="Iván Villar"
+        >
+
+        <div class="player-info">
+          <strong>Iván Villar</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       DIFENSORI
+  ========================= -->
+
+  <div class="position-group">
+
+    <h3>Difensori</h3>
+
+    <div class="player-grid">
+
+
+      <div class="player-card">
+
+        <div class="player-number">2</div>
+
+        <img
+          src="images/players/carl-starfelt.png"
+          alt="Carl Starfelt"
+        >
+
+        <div class="player-info">
+          <strong>Carl Starfelt</strong>
+          <span>🇸🇪 Svezia</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">3</div>
+
+        <img
+          src="images/players/marcos-alonso.png"
+          alt="Marcos Alonso"
+        >
+
+        <div class="player-info">
+          <strong>Marcos Alonso</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">4</div>
+
+        <img
+          src="images/players/abdoulaye-faye.png"
+          alt="Abdoulaye Faye"
+        >
+
+        <div class="player-info">
+          <strong>Abdoulaye Faye</strong>
+          <span>🇸🇳 Senegal</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">5</div>
+
+        <img
+          src="images/players/sergio-carreira.png"
+          alt="Sergio Carreira"
+        >
+
+        <div class="player-info">
+          <strong>Sergio Carreira</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">15</div>
+
+        <img
+          src="images/players/alvaro-nunez.png"
+          alt="Álvaro Núñez"
+        >
+
+        <div class="player-info">
+          <strong>Álvaro Núñez</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">17</div>
+
+        <img
+          src="images/players/javi-rueda.png"
+          alt="Javi Rueda"
+        >
+
+        <div class="player-info">
+          <strong>Javi Rueda</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">18</div>
+
+        <img
+          src="images/players/yoel-lago.png"
+          alt="Yoel Lago"
+        >
+
+        <div class="player-info">
+          <strong>Yoel Lago</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">20</div>
+
+        <img
+          src="images/players/javi-rodriguez.png"
+          alt="Javi Rodríguez"
+        >
+
+        <div class="player-info">
+          <strong>Javi Rodríguez</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">21</div>
+
+        <img
+          src="images/players/sebastian-caceres.png"
+          alt="Sebastián Cáceres"
+        >
+
+        <div class="player-info">
+          <strong>Sebastián Cáceres</strong>
+          <span>🇺🇾 Uruguay</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">22</div>
+
+        <img
+          src="images/players/javi-galan.png"
+          alt="Javi Galán"
+        >
+
+        <div class="player-info">
+          <strong>Javi Galán</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       CENTROCAMPISTI
+  ========================= -->
+
+  <div class="position-group">
+
+    <h3>Centrocampisti</h3>
+
+    <div class="player-grid">
+
+
+      <div class="player-card">
+
+        <div class="player-number">6</div>
+
+        <img
+          src="images/players/ilaix-moriba.png"
+          alt="Ilaix Moriba"
+        >
+
+        <div class="player-info">
+          <strong>Ilaix Moriba</strong>
+          <span>🇬🇳 Guinea</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">8</div>
+
+        <img
+          src="images/players/miguel-roman.png"
+          alt="Miguel Román"
+        >
+
+        <div class="player-info">
+          <strong>Miguel Román</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">14</div>
+
+        <img
+          src="images/players/aleix-febas.png"
+          alt="Aleix Febas"
+        >
+
+        <div class="player-info">
+          <strong>Aleix Febas</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">29</div>
+
+        <img
+          src="images/players/stefan-bajcetic.png"
+          alt="Stefan Bajcetic"
+        >
+
+        <div class="player-info">
+          <strong>Stefan Bajcetic</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">28</div>
+
+        <img
+          src="images/players/andres-antanon.png"
+          alt="Andrés Antañón"
+        >
+
+        <div class="player-info">
+          <strong>Andrés Antañón</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       ATTACCANTI
+  ========================= -->
+
+  <div class="position-group">
+
+    <h3>Attaccanti</h3>
+
+    <div class="player-grid">
+
+
+      <div class="player-card">
+
+        <div class="player-number">7</div>
+
+        <img
+          src="images/players/borja-iglesias.png"
+          alt="Borja Iglesias"
+        >
+
+        <div class="player-info">
+          <strong>Borja Iglesias</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">9</div>
+
+        <img
+          src="images/players/ferran-jutgla.png"
+          alt="Ferran Jutglà"
+        >
+
+        <div class="player-info">
+          <strong>Ferran Jutglà</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">10</div>
+
+        <img
+          src="images/players/iago-aspas.png"
+          alt="Iago Aspas"
+        >
+
+        <div class="player-info">
+          <strong>Iago Aspas</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">11</div>
+
+        <img
+          src="images/players/pablo-duran.png"
+          alt="Pablo Durán"
+        >
+
+        <div class="player-info">
+          <strong>Pablo Durán</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">16</div>
+
+        <img
+          src="images/players/hugo-gonzalez.png"
+          alt="Hugo González"
+        >
+
+        <div class="player-info">
+          <strong>Hugo González</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">19</div>
+
+        <img
+          src="images/players/williot-swedberg.png"
+          alt="Williot Swedberg"
+        >
+
+        <div class="player-info">
+          <strong>Williot Swedberg</strong>
+          <span>🇸🇪 Svezia</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">23</div>
+
+        <img
+          src="images/players/hugo-alvarez.png"
+          alt="Hugo Álvarez"
+        >
+
+        <div class="player-info">
+          <strong>Hugo Álvarez</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">24</div>
+
+        <img
+          src="images/players/couhaib-driouech.png"
+          alt="Couhaib Driouech"
+        >
+
+        <div class="player-info">
+          <strong>Couhaib Driouech</strong>
+          <span>🇲🇦 Marocco</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">30</div>
+
+        <img
+          src="images/players/hugo-burcio.png"
+          alt="Hugo Burcio"
+        >
+
+        <div class="player-info">
+          <strong>Hugo Burcio</strong>
+          <span>🇪🇸 Spagna</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">39</div>
+
+        <img
+          src="images/players/jones-el-abdellaoui.png"
+          alt="Jones El-Abdellaoui"
+        >
+
+        <div class="player-info">
+          <strong>Jones El-Abdellaoui</strong>
+          <span>🇳🇴 Norvegia</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ALLENATORE
+========================= -->
+
+<section class="coach-section">
+
+  <span class="section-label">04 · ALLENATORE</span>
+
+  <a href="#" class="coach-card">
+
+    <div class="coach-photo">
+
+      <img
+        src="images/coaches/claudio-giraldez.png"
+        alt="Claudio Giráldez"
+      >
+
+    </div>
+
+    <div class="coach-info">
+
+      <span class="coach-kicker">ALLENATORE</span>
+
+      <strong>Claudio Giráldez</strong>
+
+      <div class="coach-nationality">
+        <span>Spagna</span>
+      </div>
+
+      <span class="coach-club">
+        Celta Vigo · 2026/27
+      </span>
+
+    </div>
+
+    <div class="coach-arrow">→</div>
+
+  </a>
+
+</section>
+
+
+<!-- =========================
+     TRASFERIMENTI
+========================= -->
+
+<section class="transfers-section">
+
+  <span class="section-label">05 · TRASFERIMENTI</span>
+
+  <div class="transfers-grid">
+
+
+    <!-- IN -->
+
+    <div class="transfer-column">
+
+      <h3>IN</h3>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/altay-bayindir.png"
-            alt="Altay Bayindir">
-
-          <div class="player-info">
-            <strong>Altay Bayindir</strong>
-            <span>Portiere</span>
-          </div>
-
+            alt="Altay Bayındır"
+          >
         </div>
 
+        <span class="transfer-player">Altay Bayındır</span>
 
-        <div class="player-card">
-
-          <span class="player-number">13</span>
-
-          <img
-            src="images/players/radu.png"
-            alt="Radu">
-
-          <div class="player-info">
-            <strong>Radu</strong>
-            <span>Portiere</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">25</span>
-
-          <img
-            src="images/players/ivan-villar.png"
-            alt="Iván Villar">
-
-          <div class="player-info">
-            <strong>Iván Villar</strong>
-            <span>Portiere</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- DIFENSORI -->
-
-    <div class="position-group">
-
-      <h3>Difensori</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-
-          <span class="player-number">2</span>
-
-          <img
-            src="images/players/carl-starfelt.png"
-            alt="Carl Starfelt">
-
-          <div class="player-info">
-            <strong>Carl Starfelt</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">3</span>
-
-          <img
-            src="images/players/marcos-alonso.png"
-            alt="Marcos Alonso">
-
-          <div class="player-info">
-            <strong>Marcos Alonso</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">4</span>
-
-          <img
-            src="images/players/faye.png"
-            alt="Abdoulaye Faye">
-
-          <div class="player-info">
-            <strong>Faye</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">5</span>
-
-          <img
-            src="images/players/sergio-carreira.png"
-            alt="Sergio Carreira">
-
-          <div class="player-info">
-            <strong>Sergio Carreira</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">15</span>
-
-          <img
-            src="images/players/alvaro-nunez.png"
-            alt="Álvaro Núñez">
-
-          <div class="player-info">
-            <strong>Álvaro Núñez</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">17</span>
-
-          <img
-            src="images/players/javi-rueda.png"
-            alt="Javi Rueda">
-
-          <div class="player-info">
-            <strong>Javi Rueda</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">18</span>
-
-          <img
-            src="images/players/yoel-lago.png"
-            alt="Yoel Lago">
-
-          <div class="player-info">
-            <strong>Yoel Lago</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">20</span>
-
-          <img
-            src="images/players/javi-rodriguez.png"
-            alt="Javi Rodríguez">
-
-          <div class="player-info">
-            <strong>Javi Rodríguez</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">21</span>
-
-          <img
-            src="images/players/sebastian-caceres.png"
-            alt="Sebastián Cáceres">
-
-          <div class="player-info">
-            <strong>Sebastián Cáceres</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">22</span>
-
-          <img
-            src="images/players/javi-galan.png"
-            alt="Javi Galán">
-
-          <div class="player-info">
-            <strong>Javi Galán</strong>
-            <span>Difensore</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- CENTROCAMPISTI -->
-
-    <div class="position-group">
-
-      <h3>Centrocampisti</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-
-          <span class="player-number">6</span>
-
-          <img
-            src="images/players/ilaix-moriba.png"
-            alt="Ilaix Moriba">
-
-          <div class="player-info">
-            <strong>Ilaix Moriba</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">8</span>
-
-          <img
-            src="images/players/miguel-roman.png"
-            alt="Miguel Román">
-
-          <div class="player-info">
-            <strong>Miguel Román</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">14</span>
-
-          <img
-            src="images/players/aleix-febas.png"
-            alt="Aleix Febas">
-
-          <div class="player-info">
-            <strong>Aleix Febas</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">16</span>
-
-          <img
-            src="images/players/hugo-gonzalez.png"
-            alt="Hugo González">
-
-          <div class="player-info">
-            <strong>Hugo González</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">19</span>
-
-          <img
-            src="images/players/williot-swedberg.png"
-            alt="Williot Swedberg">
-
-          <div class="player-info">
-            <strong>Williot Swedberg</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">24</span>
-
-          <img
-            src="images/players/driouech.png"
-            alt="Couhaib Driouech">
-
-          <div class="player-info">
-            <strong>Driouech</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">28</span>
-
-          <img
-            src="images/players/andres-antanon.png"
-            alt="Andrés Antañón">
-
-          <div class="player-info">
-            <strong>Andrés Antañón</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">29</span>
-
-          <img
-            src="images/players/stefan-bajcetic.png"
-            alt="Stefan Bajcetic">
-
-          <div class="player-info">
-            <strong>Bajcetic</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">30</span>
-
-          <img
-            src="images/players/hugo-burcio.png"
-            alt="Hugo Burcio">
-
-          <div class="player-info">
-            <strong>Hugo Burcio</strong>
-            <span>Centrocampista</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- ATTACCANTI -->
-
-    <div class="position-group">
-
-      <h3>Attaccanti</h3>
-
-      <div class="player-grid">
-
-        <div class="player-card">
-
-          <span class="player-number">7</span>
-
-          <img
-            src="images/players/borja-iglesias.png"
-            alt="Borja Iglesias">
-
-          <div class="player-info">
-            <strong>Borja Iglesias</strong>
-            <span>Attaccante</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">9</span>
-
-          <img
-            src="images/players/ferran-jutgla.png"
-            alt="Ferran Jutglà">
-
-          <div class="player-info">
-            <strong>Ferran Jutglà</strong>
-            <span>Attaccante</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">10</span>
-
-          <img
-            src="images/players/iago-aspas.png"
-            alt="Iago Aspas">
-
-          <div class="player-info">
-            <strong>Iago Aspas</strong>
-            <span>Attaccante</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">11</span>
-
-          <img
-            src="images/players/pablo-duran.png"
-            alt="Pablo Durán">
-
-          <div class="player-info">
-            <strong>Pablo Durán</strong>
-            <span>Attaccante</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">23</span>
-
-          <img
-            src="images/players/hugo-alvarez.png"
-            alt="Hugo Álvarez">
-
-          <div class="player-info">
-            <strong>Hugo Álvarez</strong>
-            <span>Attaccante</span>
-          </div>
-
-        </div>
-
-
-        <div class="player-card">
-
-          <span class="player-number">39</span>
-
-          <img
-            src="images/players/jones-el-abdellaoui.png"
-            alt="Jones El-Abdellaoui">
-
-          <div class="player-info">
-            <strong>Jones El-Abdellaoui</strong>
-            <span>Attaccante</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- COACH -->
-
-  <section class="coach-section">
-
-    <span class="section-label">ALLENATORE</span>
-
-    <div class="coach-card">
-
-      <div class="coach-photo">
-        <img
-          src="images/coaches/claudio-giraldez.png"
-          alt="Claudio Giráldez">
-      </div>
-
-      <div class="coach-info">
-
-        <span class="coach-kicker">ALLENATORE · SPAGNA</span>
-
-        <strong>Claudio Giráldez</strong>
-
-        <span class="coach-nationality">Spagna</span>
-
-        <span class="coach-club">Celta Vigo · 2026/27</span>
-
-      </div>
-
-      <span class="coach-arrow">→</span>
-
-    </div>
-
-  </section>
-
-
-  <!-- TRASFERIMENTI -->
-
-  <section class="transfers-section">
-
-    <div class="section-heading-row">
-
-      <div>
-        <span class="section-label">MERCATO</span>
-        <h2>Trasferimenti · 2026/27</h2>
-      </div>
-
-    </div>
-
-
-    <div class="transfers-grid">
-
-      <!-- IN -->
-
-      <div class="transfer-column">
-
-        <h3>IN</h3>
-
-
-        <div class="transfer">
-
-          <img
-            src="images/players/javi-galan.png"
-            alt="Javi Galán">
-
-          <div class="transfer-player">
-            <strong>Javi Galán</strong>
-            <span>Osasuna</span>
-          </div>
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">←</span>
 
-          <img
-            src="images/logos/osasuna.png"
-            alt="Osasuna">
-
-          <span class="transfer-price">Svincolato</span>
-
-        </div>
-
-
-        <div class="transfer">
-
-          <img
-            src="images/players/aleix-febas.png"
-            alt="Aleix Febas">
-
-          <div class="transfer-player">
-            <strong>Aleix Febas</strong>
-            <span>Elche</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/manchester-united.png"
+              alt="Manchester United"
+            >
           </div>
 
-          <span class="transfer-arrow">←</span>
-
-          <img
-            src="images/logos/elche.png"
-            alt="Elche">
-
-          <span class="transfer-price">Svincolato</span>
-
         </div>
 
+        <span class="transfer-price">Prestito</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/abdoulaye-faye.png"
-            alt="Abdoulaye Faye">
+            alt="Abdoulaye Faye"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Abdoulaye Faye</strong>
-            <span>Bayer Leverkusen</span>
-          </div>
+        <span class="transfer-player">Abdoulaye Faye</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">←</span>
 
-          <img
-            src="images/logos/bayer-leverkusen.png"
-            alt="Bayer Leverkusen">
-
-          <span class="transfer-price">Prestito</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/bayer-leverkusen.png"
+              alt="Bayer Leverkusen"
+            >
+          </div>
 
         </div>
 
+        <span class="transfer-price">Prestito</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
-            src="images/players/altay-bayindir.png"
-            alt="Altay Bayindir">
+            src="images/players/couhaib-driouech.png"
+            alt="Couhaib Driouech"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Altay Bayindir</strong>
-            <span>Manchester United</span>
-          </div>
+        <span class="transfer-player">Couhaib Driouech</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">←</span>
 
-          <img
-            src="images/logos/manchester-united.png"
-            alt="Manchester United">
-
-          <span class="transfer-price">Prestito</span>
-
-        </div>
-
-
-        <div class="transfer">
-
-          <img
-            src="images/players/stefan-bajcetic.png"
-            alt="Stefan Bajcetic">
-
-          <div class="transfer-player">
-            <strong>Stefan Bajcetic</strong>
-            <span>Liverpool</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/psv.png"
+              alt="PSV"
+            >
           </div>
 
-          <span class="transfer-arrow">←</span>
-
-          <img
-            src="images/logos/liverpool.png"
-            alt="Liverpool">
-
-          <span class="transfer-price">Prestito</span>
-
         </div>
 
+        <span class="transfer-price">€7m</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/sebastian-caceres.png"
-            alt="Sebastián Cáceres">
+            alt="Sebastián Cáceres"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Sebastián Cáceres</strong>
-            <span>América</span>
-          </div>
+        <span class="transfer-player">Sebastián Cáceres</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">←</span>
 
-          <img
-            src="images/logos/america.png"
-            alt="América">
-
-          <span class="transfer-price">€5M</span>
-
-        </div>
-
-
-        <div class="transfer">
-
-          <img
-            src="images/players/driouech.png"
-            alt="Couhaib Driouech">
-
-          <div class="transfer-player">
-            <strong>Couhaib Driouech</strong>
-            <span>PSV</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/america.png"
+              alt="Club América"
+            >
           </div>
 
-          <span class="transfer-arrow">←</span>
-
-          <img
-            src="images/logos/psv.png"
-            alt="PSV">
-
-          <span class="transfer-price">€7M</span>
-
         </div>
+
+        <span class="transfer-price">€5m</span>
 
       </div>
 
 
-      <!-- OUT -->
+      <div class="transfer">
 
-      <div class="transfer-column">
+        <div class="transfer-photo">
+          <img
+            src="images/players/javi-galan.png"
+            alt="Javi Galán"
+          >
+        </div>
 
-        <h3>OUT</h3>
+        <span class="transfer-player">Javi Galán</span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">←</span>
+
+          <div class="transfer-club">
+            <img
+              src="images/teams/osasuna.png"
+              alt="Osasuna"
+            >
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Svincolato</span>
+
+      </div>
 
 
-        <div class="transfer">
+      <div class="transfer">
 
+        <div class="transfer-photo">
+          <img
+            src="images/players/aleix-febas.png"
+            alt="Aleix Febas"
+          >
+        </div>
+
+        <span class="transfer-player">Aleix Febas</span>
+
+        <div class="transfer-club-area">
+
+          <span class="transfer-arrow">←</span>
+
+          <div class="transfer-club">
+            <img
+              src="images/teams/elche.png"
+              alt="Elche"
+            >
+          </div>
+
+        </div>
+
+        <span class="transfer-price">Svincolato</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- OUT -->
+
+    <div class="transfer-column">
+
+      <h3>OUT</h3>
+
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/oscar-mingueza.png"
-            alt="Óscar Mingueza">
+            alt="Óscar Mingueza"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Óscar Mingueza</strong>
-            <span>Crystal Palace</span>
-          </div>
+        <span class="transfer-player">Óscar Mingueza</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">→</span>
 
-          <img
-            src="images/logos/crystal-palace.png"
-            alt="Crystal Palace">
-
-          <span class="transfer-price">Svincolato</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/crystal-palace.png"
+              alt="Crystal Palace"
+            >
+          </div>
 
         </div>
 
+        <span class="transfer-price">Svincolato</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/hugo-sotelo.png"
-            alt="Hugo Sotelo">
+            alt="Hugo Sotelo"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Hugo Sotelo</strong>
-            <span>Levante</span>
-          </div>
+        <span class="transfer-player">Hugo Sotelo</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">→</span>
 
-          <img
-            src="images/logos/levante.png"
-            alt="Levante">
-
-          <span class="transfer-price">Prestito</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/levante.png"
+              alt="Levante"
+            >
+          </div>
 
         </div>
 
+        <span class="transfer-price">Prestito</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/franco-cervi.png"
-            alt="Franco Cervi">
+            alt="Franco Cervi"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Franco Cervi</strong>
-            <span>Rosario Central</span>
-          </div>
+        <span class="transfer-player">Franco Cervi</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">→</span>
 
-          <img
-            src="images/logos/rosario-central.png"
-            alt="Rosario Central">
-
-          <span class="transfer-price">Svincolato</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/rosario-central.png"
+              alt="Rosario Central"
+            >
+          </div>
 
         </div>
 
+        <span class="transfer-price">Svincolato</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/mihailo-ristic.png"
-            alt="Mihailo Ristic">
+            alt="Mihailo Ristić"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Mihailo Ristic</strong>
-            <span>Stella Rossa</span>
-          </div>
+        <span class="transfer-player">Mihailo Ristić</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">→</span>
 
-          <img
-            src="images/logos/stella-rossa.png"
-            alt="Stella Rossa">
-
-          <span class="transfer-price">Svincolato</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/crvena-zvezda.png"
+              alt="Crvena zvezda"
+            >
+          </div>
 
         </div>
 
+        <span class="transfer-price">Svincolato</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/unai-nunez.png"
-            alt="Unai Núñez">
+            alt="Unai Núñez"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Unai Núñez</strong>
-            <span>Espanyol</span>
-          </div>
+        <span class="transfer-player">Unai Núñez</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">→</span>
 
-          <img
-            src="images/logos/espanyol.png"
-            alt="Espanyol">
-
-          <span class="transfer-price">Prestito</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/espanyol.png"
+              alt="Espanyol"
+            >
+          </div>
 
         </div>
 
+        <span class="transfer-price">Prestito</span>
 
-        <div class="transfer">
+      </div>
 
+
+      <div class="transfer">
+
+        <div class="transfer-photo">
           <img
             src="images/players/carlos-dominguez.png"
-            alt="Carlos Domínguez">
+            alt="Carlos Domínguez"
+          >
+        </div>
 
-          <div class="transfer-player">
-            <strong>Carlos Domínguez</strong>
-            <span>Oviedo</span>
-          </div>
+        <span class="transfer-player">Carlos Domínguez</span>
+
+        <div class="transfer-club-area">
 
           <span class="transfer-arrow">→</span>
 
-          <img
-            src="images/logos/oviedo.png"
-            alt="Oviedo">
-
-          <span class="transfer-price">Prestito</span>
+          <div class="transfer-club">
+            <img
+              src="images/teams/real-oviedo.png"
+              alt="Real Oviedo"
+            >
+          </div>
 
         </div>
+
+        <span class="transfer-price">Prestito</span>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- LEGENDS -->
+<!-- =========================
+     LEGGENDE
+========================= -->
 
-  <section class="legends-section">
+<section class="legends-section">
 
-    <span class="section-label">LEGGENDE</span>
+  <span class="section-label">06 · LEGGENDE</span>
 
-    <div class="legends-grid">
+  <div class="legends-grid">
 
 
-      <div class="legend-card">
+    <div class="legend-card">
 
-        <div class="legend-photo">
+      <div class="legend-photo">
 
-          <img
-            src="images/legends/iago-aspas.jpg"
-            alt="Iago Aspas">
-
-        </div>
-
-        <span class="legend-number">10</span>
-
-        <h3>Iago Aspas</h3>
-
-        <p>Celta · 2008–2013, 2015–2026</p>
-
-        <b>Il volto del Celta moderno</b>
+        <img
+          src="images/legends/iago-aspas.jpg"
+          alt="Iago Aspas"
+        >
 
       </div>
 
+      <span class="legend-number">01</span>
 
-      <div class="legend-card">
+      <h3>Iago<br>Aspas</h3>
 
-        <div class="legend-photo">
+      <p>CELTA · 2008–2013<br>2015–2026</p>
 
-          <img
-            src="images/legends/manuel-hermoso.jpg"
-            alt="Manuel Hermoso">
-
-        </div>
-
-        <span class="legend-number">9</span>
-
-        <h3>Manuel Hermoso</h3>
-
-        <p>Celta · anni '30</p>
-
-        <b>Una delle prime grandi figure celesti</b>
-
-      </div>
-
-
-      <div class="legend-card">
-
-        <div class="legend-photo">
-
-          <img
-            src="images/legends/mostovoi.jpg"
-            alt="Alexander Mostovoi">
-
-        </div>
-
-        <span class="legend-number">10</span>
-
-        <h3>Alexander Mostovoi</h3>
-
-        <p>Celta · 1996–2004</p>
-
-        <b>Il genio della generazione europea</b>
-
-      </div>
-
-
-      <div class="legend-card">
-
-        <div class="legend-photo">
-
-          <img
-            src="images/legends/kinocho.jpg"
-            alt="Quinocho">
-
-        </div>
-
-        <span class="legend-number">4</span>
-
-        <h3>Quinocho</h3>
-
-        <p>Celta · 1969–1981</p>
-
-        <b>Una figura eterna nella storia del club</b>
-
-      </div>
-
+      <b>10</b>
 
     </div>
 
-  </section>
 
+    <div class="legend-card">
 
-  <!-- HISTORY -->
+      <div class="legend-photo">
 
-  <section class="history-section">
+        <img
+          src="images/legends/alexander-mostovoi.jpg"
+          alt="Alexander Mostovoi"
+        >
 
-    <span class="section-label">STORIA</span>
+      </div>
 
-    <div class="history-content">
+      <span class="legend-number">02</span>
 
-      <h2>Una storia celeste</h2>
+      <h3>Alexander<br>Mostovoi</h3>
 
-      <p>
-        Nato nel 1923 dalla fusione tra Real Vigo Sporting e Real Club
-        Fortuna de Vigo, il Celta ha costruito la propria identità tra
-        la Galizia e il calcio spagnolo. Dopo i primi successi regionali,
-        il club conquistò la Segunda División nel 1935/36 e raggiunse
-        la massima categoria nel 1939.
-      </p>
+      <p>CELTA · 1996–2004</p>
 
-      <p>
-        Gli anni Novanta e l'inizio del nuovo millennio rappresentarono
-        una delle epoche più spettacolari della storia celeste. Il Celta
-        tornò stabilmente in Europa e nel 2000 conquistò la Coppa Intertoto
-        UEFA, battendo lo Zenit San Pietroburgo in finale.
-      </p>
-
-      <p>
-        Nel 2016/17 arrivò una nuova pagina europea memorabile: il Celta
-        raggiunse le semifinali di Europa League e della Copa del Rey.
-        Negli anni successivi il club ha continuato a puntare sulla propria
-        cantera e su una forte identità galiziana, tornando in Europa nel
-        2025 sotto la guida di Claudio Giráldez.
-      </p>
+      <b>10</b>
 
     </div>
 
-  </section>
+
+    <div class="legend-card">
+
+      <div class="legend-photo">
+
+        <img
+          src="images/legends/valery-karpin.jpg"
+          alt="Valery Karpin"
+        >
+
+      </div>
+
+      <span class="legend-number">03</span>
+
+      <h3>Valery<br>Karpin</h3>
+
+      <p>CELTA · 1997–2002</p>
+
+      <b>8</b>
+
+    </div>
 
 
-</main>
+    <div class="legend-card">
 
+      <div class="legend-photo">
+
+        <img
+          src="images/legends/hugo-mallo.jpg"
+          alt="Hugo Mallo"
+        >
+
+      </div>
+
+      <span class="legend-number">04</span>
+
+      <h3>Hugo<br>Mallo</h3>
+
+      <p>CELTA · 2009–2023</p>
+
+      <b>2</b>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     STORIA
+========================= -->
+
+<section class="history-section">
+
+  <span class="section-label">07 · STORIA</span>
+
+  <div class="history-content">
+
+    <h2>
+      Da Vigo<br>
+      all'Europa<br>
+      del Celta.
+    </h2>
+
+    <p>
+      Il Real Club Celta nasce nel 1923 dalla fusione tra Real Vigo Sporting
+      e Real Fortuna, raccogliendo l'eredità del calcio cittadino e
+      trasformandosi rapidamente nel principale simbolo sportivo di Vigo.
+      <br><br>
+      Dopo aver conquistato diversi titoli regionali nelle prime stagioni,
+      il Celta costruisce la propria storia nazionale attraverso tre
+      campionati di Segunda División, conquistati nel 1935/36, 1981/82
+      e 1991/92. Il club ha inoltre raggiunto tre finali di Copa del Rey,
+      senza però riuscire ancora a conquistare il trofeo.
+      <br><br>
+      La grande svolta arriva negli anni Novanta. Con giocatori come
+      Alexander Mostovoi, Valery Karpin e una generazione conosciuta come
+      l'EuroCelta, il club diventa una presenza stabile nelle competizioni
+      europee. Nel 2000 arriva il primo grande trofeo internazionale:
+      la Coppa Intertoto UEFA, conquistata contro lo Zenit San Pietroburgo.
+    
+      <br><br>
+      Nel 2003/04 il Celta raggiunge per la prima volta la Champions League
+      dopo aver chiuso la Liga al quarto posto. Più recentemente, dopo anni
+      di consolidamento nella massima serie, il club è tornato in Europa
+      nel 2025, otto anni dopo la precedente esperienza continentale.
+    
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
+
   <div>PAGES OF FOOTBALL</div>
+
   <span>© 2026 · Football, history & stories</span>
+
 </footer>
+
 
 </body>
 </html>
