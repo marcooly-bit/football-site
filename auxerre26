@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AJ Auxerre · Pages Of Football</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="equipe.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">
+    <div class="logo">P</div>
+    <strong>PAGES OF FOOTBALL</strong>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="squadre.html" class="active">Squadre</a>
+    <a href="giocatori.html">Giocatori</a>
+    <a href="competizioni.html">Competizioni</a>
+    <a href="almanacco.html">Almanacco</a>
+  </nav>
+
+  <button class="search-button">⌕</button>
+</header>
+
+
+<main class="team-page">
+
+  <aside class="league-sidebar">
+
+    <div class="league-sidebar-title">
+      <span>LIGUE 1</span>
+      <strong>2026/27</strong>
+    </div>
+
+    <div class="league-teams">
+
+      <a href="angers26-27.html" class="league-team-link" title="Angers">
+        <img src="images/logos/angers.png" alt="Angers">
+      </a>
+
+      <a href="auxerre26-27.html" class="league-team-link active" title="Auxerre">
+        <img src="images/logos/auxerre.png" alt="Auxerre">
+      </a>
+
+      <a href="brest26-27.html" class="league-team-link" title="Brest">
+        <img src="images/logos/brest.png" alt="Brest">
+      </a>
+
+      <a href="le-havre26-27.html" class="league-team-link" title="Le Havre">
+        <img src="images/logos/le-havre.png" alt="Le Havre">
+      </a>
+
+      <a href="le-mans26-27.html" class="league-team-link" title="Le Mans">
+        <img src="images/logos/le-mans.png" alt="Le Mans">
+      </a>
+
+      <a href="lens26-27.html" class="league-team-link" title="Lens">
+        <img src="images/logos/lens.png" alt="Lens">
+      </a>
+
+      <a href="lille26-27.html" class="league-team-link" title="Lille">
+        <img src="images/logos/lille.png" alt="Lille">
+      </a>
+
+      <a href="lyon26-27.html" class="league-team-link" title="Lyon">
+        <img src="images/logos/lyon.png" alt="Lyon">
+      </a>
+
+      <a href="lorient26-27.html" class="league-team-link" title="Lorient">
+        <img src="images/logos/lorient.png" alt="Lorient">
+      </a>
+
+      <a href="marseille26-27.html" class="league-team-link" title="Marseille">
+        <img src="images/logos/marseille.png" alt="Marseille">
+      </a>
+
+      <a href="monaco26-27.html" class="league-team-link" title="Monaco">
+        <img src="images/logos/monaco.png" alt="Monaco">
+      </a>
+
+      <a href="nice26-27.html" class="league-team-link" title="Nice">
+        <img src="images/logos/nice.png" alt="Nice">
+      </a>
+
+      <a href="paris-fc26-27.html" class="league-team-link" title="Paris FC">
+        <img src="images/logos/paris-fc.png" alt="Paris FC">
+      </a>
+
+      <a href="psg26-27.html" class="league-team-link" title="Paris Saint-Germain">
+        <img src="images/logos/psg.png" alt="Paris Saint-Germain">
+      </a>
+
+      <a href="rennes26-27.html" class="league-team-link" title="Rennes">
+        <img src="images/logos/rennes.png" alt="Rennes">
+      </a>
+
+      <a href="strasbourg26-27.html" class="league-team-link" title="Strasbourg">
+        <img src="images/logos/strasbourg.png" alt="Strasbourg">
+      </a>
+
+      <a href="toulouse26-27.html" class="league-team-link" title="Toulouse">
+        <img src="images/logos/toulouse.png" alt="Toulouse">
+      </a>
+
+      <a href="troyes26-27.html" class="league-team-link" title="Troyes">
+        <img src="images/logos/troyes.png" alt="Troyes">
+      </a>
+
+    </div>
+
+  </aside>
+
+
+  <section class="hero">
+    <div class="hero-image" style="background-image: url('images/stadium/stade-abbe-deschamps.jpg');">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+
+        <div class="team-crest">
+          <img src="images/teams/auxerre.png" alt="AJ Auxerre">
+        </div>
+
+        <div>
+          <div class="hero-kicker">AUXERRE · FRANCIA</div>
+
+          <h1>AJ Auxerre</h1>
+
+          <p>
+            1905 · Stade de l'Abbé-Deschamps
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="club-section">
+
+    <span class="section-label">01 · IL CLUB</span>
+
+    <div class="club-content">
+
+      <h2>
+        Una storia costruita<br>
+        sulla formazione
+      </h2>
+
+      <p>
+        Fondata nel 1905 dall'abbé Ernest-Théodore Deschamps, l'AJ Auxerre è uno dei club più riconoscibili del calcio francese. La sua storia è profondamente legata alla formazione e alla figura di Guy Roux, capace di accompagnare il club dalle divisioni regionali fino ai vertici del calcio nazionale ed europeo.
+        <br><br>
+        L'AJA ha conquistato il suo unico titolo di campione di Francia nel 1996, completando in quella stagione uno storico double con la Coupe de France. Il club ha vinto la coppa nazionale quattro volte e ha raggiunto le semifinali della Coppa UEFA nel 1993 e i quarti di finale della Champions League nel 1997.
+        <br><br>
+        Dopo una lunga parentesi lontano dall'élite, Auxerre è tornata in Ligue 1 nel 2022 e ha conquistato immediatamente il titolo di Ligue 2 nel 2024. Nel 2026/27 riparte con Will Still in panchina e una rosa profondamente rinnovata.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="trophies-section">
+
+    <span class="section-label">02 · PALMARÈS</span>
+
+    <div class="trophies-grid">
+
+      <div class="trophy-card">
+        <div class="trophy-icon">🏆</div>
+        <span>LIGUE 1</span>
+        <strong>1</strong>
+        <small>1996</small>
+      </div>
+
+      <div class="trophy-card">
+        <div class="trophy-icon">🏆</div>
+        <span>COUPE DE FRANCE</span>
+        <strong>4</strong>
+        <small>1994 · 1996 · 2003 · 2005</small>
+      </div>
+
+      <div class="trophy-card">
+        <div class="trophy-icon">🏆</div>
+        <span>UEFA CHAMPIONS LEAGUE</span>
+        <strong>0</strong>
+        <small>—</small>
+      </div>
+
+      <div class="trophy-card">
+        <div class="trophy-icon">🏆</div>
+        <span>TROPHÉE DES CHAMPIONS</span>
+        <strong>0</strong>
+        <small>—</small>
+      </div>
+
+    </div>
+
+
+    <details class="other-trophies">
+
+      <summary>
+        <span>ALTRI TROFEI</span>
+        <strong>+</strong>
+      </summary>
+
+      <div class="other-trophies-content">
+
+        <div>
+          <span>LIGUE 2</span>
+          <strong>2</strong>
+          <small>1980 · 2024</small>
+        </div>
+
+        <div>
+          <span>UEFA INTERTOTO CUP</span>
+          <strong>2</strong>
+          <small>1997 · 2006</small>
+        </div>
+
+        <div>
+          <span>COUPE GAMBARDELLA</span>
+          <strong>7</strong>
+          <small>1982 · 1985 · 1986 · 1993 · 1999 · 2000 · 2014</small>
+        </div>
+
+      </div>
+
+    </details>
+
+  </section>
+
+
+  <section class="squad-section">
+
+    <div class="section-heading-row">
+
+      <div>
+        <span class="section-label">03 · ROSA</span>
+        <h2>Prima squadra</h2>
+      </div>
+
+      <button class="season-selector" type="button">
+        <span>STAGIONI</span>
+        <strong>2026/27</strong>
+        <span class="season-arrow">⌄</span>
+      </button>
+
+    </div>
+
+
+    <a href="ligue-1.html" class="competition-button">
+
+      <div class="competition-button-logo">
+        <img src="images/competitions/ligue-1.png" alt="Ligue 1">
+      </div>
+
+      <div class="competition-button-content">
+        <span>COMPETIZIONE</span>
+        <strong>Ligue 1</strong>
+      </div>
+
+      <div class="competition-button-arrow">→</div>
+
+    </a>
+
+
+    <div class="position-group">
+
+      <h3>Portieri</h3>
+
+      <div class="players-grid">
+
+        <div class="player-card">
+          <div class="player-number">1</div>
+          <img src="images/players/paul-nardi.png" alt="Paul Nardi">
+          <div class="player-info">
+            <strong><a href="paul-nardi.html">Paul Nardi</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">23</div>
+          <img src="images/players/mamadou-diop.png" alt="Mamadou Diop">
+          <div class="player-info">
+            <strong><a href="mamadou-diop.html">Mamadou Diop</a></strong>
+            <span>🇲🇷 Mauritania</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">37</div>
+          <img src="images/players/louis-mezerette.png" alt="Louis Mezerette">
+          <div class="player-info">
+            <strong><a href="louis-mezerette.html">Louis Mezerette</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="position-group">
+
+      <h3>Difensori</h3>
+
+      <div class="players-grid">
+
+        <div class="player-card">
+          <div class="player-number">4</div>
+          <img src="images/players/francisco-sierralta.png" alt="Francisco Sierralta">
+          <div class="player-info">
+            <strong><a href="francisco-sierralta.html">Francisco Sierralta</a></strong>
+            <span>🇨🇱 Cile</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">4</div>
+          <img src="images/players/axel-tuanzebe.png" alt="Axel Tuanzebe">
+          <div class="player-info">
+            <strong><a href="axel-tuanzebe.html">Axel Tuanzebe</a></strong>
+            <span>🇬🇧 Inghilterra</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">13</div>
+          <img src="images/players/telli-siwe.png" alt="Telli Siwe">
+          <div class="player-info">
+            <strong><a href="telli-siwe.html">Telli Siwe</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">15</div>
+          <img src="images/players/christ-makosso.png" alt="Christ Makosso">
+          <div class="player-info">
+            <strong><a href="christ-makosso.html">Christ Makosso</a></strong>
+            <span>🇨🇬 Congo</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">20</div>
+          <img src="images/players/sinaly-diomande.png" alt="Sinaly Diomandé">
+          <div class="player-info">
+            <strong><a href="sinaly-diomande.html">Sinaly Diomandé</a></strong>
+            <span>🇨🇮 Costa d'Avorio</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">22</div>
+          <img src="images/players/fredrik-oppegard.png" alt="Fredrik Oppegård">
+          <div class="player-info">
+            <strong><a href="fredrik-oppegard.html">Fredrik Oppegård</a></strong>
+            <span>🇳🇴 Norvegia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">24</div>
+          <img src="images/players/bryan-okoh.png" alt="Bryan Okoh">
+          <div class="player-info">
+            <strong><a href="bryan-okoh.html">Bryan Okoh</a></strong>
+            <span>🇨🇭 Svizzera</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">27</div>
+          <img src="images/players/lamine-sy.png" alt="Lamine Sy">
+          <div class="player-info">
+            <strong><a href="lamine-sy.html">Lamine Sy</a></strong>
+            <span>🇲🇷 Mauritania</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">29</div>
+          <img src="images/players/marvin-senaya.png" alt="Marvin Senaya">
+          <div class="player-info">
+            <strong><a href="marvin-senaya.html">Marvin Senaya</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">32</div>
+          <img src="images/players/rayan-mandengue.png" alt="Rayan Mandengue">
+          <div class="player-info">
+            <strong><a href="rayan-mandengue.html">Rayan Mandengue</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">35</div>
+          <img src="images/players/elikya-legros.png" alt="Elikya Legros">
+          <div class="player-info">
+            <strong><a href="elikya-legros.html">Elikya Legros</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">38</div>
+          <img src="images/players/alvin-petit-dol.png" alt="Alvin Petit Dol">
+          <div class="player-info">
+            <strong><a href="alvin-petit-dol.html">Alvin Petit Dol</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">43</div>
+          <img src="images/players/mohamed-coulibaly.png" alt="Mohamed Coulibaly">
+          <div class="player-info">
+            <strong><a href="mohamed-coulibaly.html">Mohamed Coulibaly</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">92</div>
+          <img src="images/players/clement-akpa.png" alt="Clément Akpa">
+          <div class="player-info">
+            <strong><a href="clement-akpa.html">Clément Akpa</a></strong>
+            <span>🇨🇮 Costa d'Avorio</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">93</div>
+          <img src="images/players/sekou-fofana.png" alt="Sékou Fofana">
+          <div class="player-info">
+            <strong><a href="sekou-fofana.html">Sékou Fofana</a></strong>
+            <span>🇨🇮 Costa d'Avorio</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="position-group">
+
+      <h3>Centrocampisti</h3>
+
+      <div class="players-grid">
+
+        <div class="player-card">
+          <div class="player-number">5</div>
+          <img src="images/players/kevin-danois.png" alt="Kévin Danois">
+          <div class="player-info">
+            <strong><a href="kevin-danois.html">Kévin Danois</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">6</div>
+          <img src="images/players/assane-diousse.png" alt="Assane Dioussé">
+          <div class="player-info">
+            <strong><a href="assane-diousse.html">Assane Dioussé</a></strong>
+            <span>🇸🇳 Senegal</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">8</div>
+          <img src="images/players/naouirou-ahamada.png" alt="Naouirou Ahamada">
+          <div class="player-info">
+            <strong><a href="naouirou-ahamada.html">Naouirou Ahamada</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">17</div>
+          <img src="images/players/pierre-ekwah.png" alt="Pierre Ekwah">
+          <div class="player-info">
+            <strong><a href="pierre-ekwah.html">Pierre Ekwah</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">28</div>
+          <img src="images/players/romain-faivre.png" alt="Romain Faivre">
+          <div class="player-info">
+            <strong><a href="romain-faivre.html">Romain Faivre</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">34</div>
+          <img src="images/players/lamfia-dioubate.png" alt="Lamfia Dioubaté">
+          <div class="player-info">
+            <strong><a href="lamfia-dioubate.html">Lamfia Dioubaté</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">36</div>
+          <img src="images/players/tidiane-devernois.png" alt="Tidiane Devernois">
+          <div class="player-info">
+            <strong><a href="tidiane-devernois.html">Tidiane Devernois</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">41</div>
+          <img src="images/players/yvan-zaddy.png" alt="Yvan Zaddy">
+          <div class="player-info">
+            <strong><a href="yvan-zaddy.html">Yvan Zaddy</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">46</div>
+          <img src="images/players/arthur-piedfort.png" alt="Arthur Piedfort">
+          <div class="player-info">
+            <strong><a href="arthur-piedfort.html">Arthur Piedfort</a></strong>
+            <span>🇧🇪 Belgio</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">77</div>
+          <img src="images/players/aristide-zossou.png" alt="Aristide Zossou">
+          <div class="player-info">
+            <strong><a href="aristide-zossou.html">Aristide Zossou</a></strong>
+            <span>🇨🇮 Costa d'Avorio</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="position-group">
+
+      <h3>Attaccanti</h3>
+
+      <div class="players-grid">
+
+        <div class="player-card">
+          <div class="player-number">3</div>
+          <img src="images/players/remy-labeau-lascary.png" alt="Rémy Labeau-Lascary">
+          <div class="player-info">
+            <strong><a href="remy-labeau-lascary.html">Rémy Labeau-Lascary</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">7</div>
+          <img src="images/players/josue-casimir.png" alt="Josué Casimir">
+          <div class="player-info">
+            <strong><a href="josue-casimir.html">Josué Casimir</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">9</div>
+          <img src="images/players/cameron-archer.png" alt="Cameron Archer">
+          <div class="player-info">
+            <strong><a href="cameron-archer.html">Cameron Archer</a></strong>
+            <span>🇬🇧 Inghilterra</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">19</div>
+          <img src="images/players/danny-namaso.png" alt="Danny Namaso">
+          <div class="player-info">
+            <strong><a href="danny-namaso.html">Danny Namaso</a></strong>
+            <span>🇨🇲 Camerun</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">31</div>
+          <img src="images/players/ryan-rodin.png" alt="Ryan Rodin">
+          <div class="player-info">
+            <strong><a href="ryan-rodin.html">Ryan Rodin</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">44</div>
+          <img src="images/players/mamoudou-cissokho.png" alt="Mamoudou Cissokho">
+          <div class="player-info">
+            <strong><a href="mamoudou-cissokho.html">Mamoudou Cissokho</a></strong>
+            <span>🇫🇷 Francia</span>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <div class="player-number">49</div>
+          <img src="images/players/xiangxin-wei.png" alt="Xiangxin Wei">
+          <div class="player-info">
+            <strong><a href="xiangxin-wei.html">Xiangxin Wei</a></strong>
+            <span>🇨🇳 Cina</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="coach-section">
+
+    <span class="section-label">04 · ALLENATORE</span>
+
+    <a href="will-still.html" class="coach-card">
+
+      <div class="coach-photo">
+        <img src="images/coaches/will-still.png" alt="Will Still">
+      </div>
+
+      <div class="coach-info">
+
+        <span class="coach-kicker">ALLENATORE</span>
+
+        <strong>Will Still</strong>
+
+        <div class="coach-nationality">
+          <span>🇧🇪 Belgio</span>
+        </div>
+
+        <span class="coach-club">AJ Auxerre · 2026/27</span>
+
+      </div>
+
+      <div class="coach-arrow">→</div>
+
+    </a>
+
+  </section>
+
+
+  <section class="transfers-section">
+
+    <span class="section-label">05 · TRASFERIMENTI</span>
+
+    <div class="transfers-grid">
+
+      <div class="transfer-column">
+
+        <div class="transfer-column-header">
+          <span>IN</span>
+          <strong>ARRIVI</strong>
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/arthur-piedfort.png" alt="Arthur Piedfort">
+          </div>
+
+          <span class="transfer-player">
+            <a href="arthur-piedfort.html">Arthur Piedfort</a>
+          </span>
+
+          <div class="transfer-club-area">
+            <span class="transfer-arrow">←</span>
+            <div class="transfer-club">
+              <img src="images/teams/westerlo.png" alt="Westerlo">
+            </div>
+          </div>
+
+          <span class="transfer-price">€5,5M</span>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/danny-namaso.png" alt="Danny Namaso">
+          </div>
+
+          <span class="transfer-player">
+            <a href="danny-namaso.html">Danny Namaso</a>
+          </span>
+
+          <div class="transfer-club-area">
+            <span class="transfer-arrow">←</span>
+            <div class="transfer-club">
+              <img src="images/teams/porto.png" alt="FC Porto">
+            </div>
+          </div>
+
+          <span class="transfer-price">€5M</span>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/christ-makosso.png" alt="Christ Makosso">
+          </div>
+
+          <span class="transfer-player">
+            <a href="christ-makosso.html">Christ Makosso</a>
+          </span>
+
+          <div class="transfer-club-area">
+            <span class="transfer-arrow">←</span>
+            <div class="transfer-club">
+              <img src="images/teams/luton.png" alt="Luton Town">
+            </div>
+          </div>
+
+          <span class="transfer-price">€2,3M</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="transfer-column">
+
+        <div class="transfer-column-header">
+          <span>OUT</span>
+          <strong>PARTENZE</strong>
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/lassine-sinayoko.png" alt="Lassine Sinayoko">
+          </div>
+
+          <span class="transfer-player">
+            <a href="lassine-sinayoko.html">Lassine Sinayoko</a>
+          </span>
+
+          <div class="transfer-club-area">
+            <span class="transfer-arrow">→</span>
+            <div class="transfer-club">
+              <img src="images/teams/paris-fc.png" alt="Paris FC">
+            </div>
+          </div>
+
+          <span class="transfer-price">€8M</span>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/paul-joly.png" alt="Paul Joly">
+          </div>
+
+          <span class="transfer-player">
+            <a href="paul-joly.html">Paul Joly</a>
+          </span>
+
+          <div class="transfer-club-area">
+            <span class="transfer-arrow">→</span>
+            <div class="transfer-club">
+              <img src="images/teams/kaiserslautern.png" alt="Kaiserslautern">
+            </div>
+          </div>
+
+          <span class="transfer-price">€1,25M</span>
+
+        </div>
+
+
+        <div class="transfer">
+
+          <div class="transfer-photo">
+            <img src="images/players/elisha-owusu.png" alt="Elisha Owusu">
+          </div>
+
+          <span class="transfer-player">
+            <a href="elisha-owusu.html">Elisha Owusu</a>
+          </span>
+
+          <div class="transfer-club-area">
+            <span class="transfer-arrow">→</span>
+            <div class="transfer-club">
+              <img src="images/teams/erzurumspor.png" alt="Erzurumspor">
+            </div>
+          </div>
+
+          <span class="transfer-price">€1M</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="legends-section">
+
+    <span class="section-label">06 · LEGGENDE</span>
+
+    <div class="legends-grid">
+
+      <div class="legend-card">
+
+        <div class="legend-photo">
+          <img src="images/legends/guy-roux.jpg" alt="Guy Roux">
+        </div>
+
+        <span class="legend-number">01</span>
+
+        <h3>
+          <a href="guy-roux.html">
+            Guy<br>Roux
+          </a>
+        </h3>
+
+        <p>AJA · 1961–2000</p>
+
+        <b>—</b>
+
+      </div>
+
+
+      <div class="legend-card">
+
+        <div class="legend-photo">
+          <img src="images/legends/djibril-cisse.jpg" alt="Djibril Cissé">
+        </div>
+
+        <span class="legend-number">02</span>
+
+        <h3>
+          <a href="djibril-cisse.html">
+            Djibril<br>Cissé
+          </a>
+        </h3>
+
+        <p>AJA · 1999–2004</p>
+
+        <b>9</b>
+
+      </div>
+
+
+      <div class="legend-card">
+
+        <div class="legend-photo">
+          <img src="images/legends/eric-cantona.jpg" alt="Éric Cantona">
+        </div>
+
+        <span class="legend-number">03</span>
+
+        <h3>
+          <a href="eric-cantona.html">
+            Éric<br>Cantona
+          </a>
+        </h3>
+
+        <p>AJA · 1983–1985</p>
+
+        <b>9</b>
+
+      </div>
+
+
+      <div class="legend-card">
+
+        <div class="legend-photo">
+          <img src="images/legends/philippe-mexes.jpg" alt="Philippe Mexès">
+        </div>
+
+        <span class="legend-number">04</span>
+
+        <h3>
+          <a href="philippe-mexes.html">
+            Philippe<br>Mexès
+          </a>
+        </h3>
+
+        <p>AJA · 1999–2004</p>
+
+        <b>5</b>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="history-section">
+
+    <span class="section-label">07 · STORIA</span>
+
+    <div class="history-content">
+
+      <h2>
+        Dalla formazione<br>
+        all'Europa
+      </h2>
+
+      <p>
+        L'AJ Auxerre nasce nel 1905 per iniziativa dell'abbé Ernest Deschamps. Per decenni rimane legata al calcio regionale, fino alla svolta rappresentata da Guy Roux, arrivato alla guida della squadra nel 1961.
+        <br><br>
+        Nel 1970 l'AJA conquista la Division d'Honneur della Borgogna e raggiunge la terza divisione. Nel 1974 arriva la promozione in Division 2 e cinque anni più tardi il club disputa per la prima volta la finale di Coupe de France. Nel 1980 conquista la Division 2 e approda per la prima volta nella massima serie.
+        <br><br>
+        Gli anni Ottanta e Novanta trasformano Auxerre in una presenza stabile del calcio francese. Nel 1984 arriva il primo podio in campionato, mentre nel 1993 il club raggiunge le semifinali della Coppa UEFA dopo una memorabile sfida contro il Borussia Dortmund.
+        <br><br>
+        Il momento più alto arriva nella stagione 1995/96: l'AJA conquista il primo e unico titolo di campione di Francia della propria storia e completa il double vincendo anche la Coupe de France.
+        <br><br>
+        Nel 1997 arriva lo storico quarto di finale di Champions League. Il club continua a produrre talento attraverso il proprio centro di formazione, da Éric Cantona a Djibril Cissé, passando per Basile Boli, Philippe Mexès, Bacary Sagna e molti altri.
+        <br><br>
+        Dopo 32 stagioni consecutive in Ligue 1, il ciclo si interrompe nel 2012. Il ritorno nell'élite arriva nel 2022 attraverso i playoff e i barrage, mentre nel 2024 l'AJA conquista nuovamente la Ligue 2.
+        <br><br>
+        Nel 2026/27 il club apre un nuovo capitolo con Will Still in panchina, continuando a puntare su una combinazione di giovani del vivaio, nuovi talenti e giocatori di esperienza.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <div>PAGES OF FOOTBALL</div>
+  <span>© 2026 · Football, history & stories</span>
+</footer>
+
+</body>
+</html>
