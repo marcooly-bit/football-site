@@ -759,6 +759,8 @@ nav a.active {
   top: 12px;
   left: 12px;
 
+  color: #FF007F;
+
   font-size: 24px;
   font-weight: 500;
   line-height: 1;
@@ -817,6 +819,8 @@ nav a.active {
 
   top: 12px;
   left: 12px;
+
+  color: #FF007F;
 
   font-size: 24px;
   font-weight: 500;
