@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -759,9 +761,10 @@ nav a.active {
   top: 12px;
   left: 12px;
 
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: .85;
 
   color: #FF4B44;
 }
@@ -820,9 +823,10 @@ nav a.active {
   top: 12px;
   left: 12px;
 
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: .85;
 
   color: #FF4B44;
 }
@@ -1538,7 +1542,10 @@ footer span {
     top: 9px;
     left: 9px;
 
-    font-size: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: .85;
 
     color: #FF4B44;
   }
