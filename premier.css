@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@800&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -69,87 +71,6 @@ nav a.active {
   font-size: 19px;
 
   cursor: pointer;
-}
-
-
-/* =========================
-   LEAGUE SIDEBAR
-========================= */
-
-.league-sidebar {
-  position: fixed;
-
-  top: 90px;
-  right: 18px;
-
-  width: 68px;
-  max-height: calc(100vh - 108px);
-
-  padding: 8px;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: 5px;
-
-  background: rgba(255,255,255,.96);
-
-  border: 1px solid rgba(255,255,255,.75);
-
-  overflow-y: auto;
-
-  z-index: 900;
-}
-
-.league-team-link {
-  width: 50px;
-  height: 50px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: transparent;
-  border: 1px solid transparent;
-
-  text-decoration: none;
-
-  transition:
-    background .2s ease,
-    border-color .2s ease,
-    transform .2s ease;
-}
-
-.league-team-link img {
-  width: 42px;
-  height: 42px;
-
-  display: block;
-
-  object-fit: contain;
-
-  transition: transform .2s ease;
-}
-
-.league-team-link:hover {
-  background: #f1f0ec;
-  border-color: #d3d1ca;
-
-  transform: translateX(-2px);
-}
-
-.league-team-link:hover img {
-  transform: scale(1.08);
-}
-
-.league-team-link.active {
-  background: #eeece7;
-  border-color: #111;
-}
-
-.league-team-link.active img {
-  transform: scale(1.05);
 }
 
 
@@ -752,16 +673,21 @@ nav a.active {
   );
 }
 
-.shirt-number {
+.shirt-number,
+.player-number {
   position: absolute;
   z-index: 2;
 
-  top: 12px;
+  top: 10px;
   left: 12px;
 
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1;
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: .8;
+  letter-spacing: -0.5px;
+
+  color: #00FF85;
 }
 
 .player-card-info {
@@ -811,17 +737,7 @@ nav a.active {
    NEW PLAYER INFO
 ========================= */
 
-.player-number {
-  position: absolute;
-  z-index: 2;
 
-  top: 12px;
-  left: 12px;
-
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1;
-}
 
 .player-info {
   position: absolute;
@@ -1278,10 +1194,6 @@ footer span {
 
 @media (max-width: 1000px) {
 
-  .league-sidebar {
-    display: none;
-  }
-
   .site-header {
     padding: 0 25px;
   }
@@ -1531,10 +1443,16 @@ footer span {
 
   .shirt-number,
   .player-number {
-    top: 9px;
+    top: 8px;
     left: 9px;
 
-    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: .8;
+    letter-spacing: -0.3px;
+
+    color: #00FF85;
   }
 
   .legend-card {
@@ -1558,3 +1476,4 @@ footer span {
     bottom: 13px;
   }
 }
+```
