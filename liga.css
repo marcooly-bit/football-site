@@ -758,13 +758,14 @@ nav a.active {
   position: absolute;
   z-index: 2;
 
-  top: 12px;
+  top: 10px;
   left: 12px;
 
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 800;
-  line-height: .85;
+  line-height: .8;
+  letter-spacing: -0.5px;
 
   color: #FF4B44;
 }
@@ -820,13 +821,14 @@ nav a.active {
   position: absolute;
   z-index: 2;
 
-  top: 12px;
+  top: 10px;
   left: 12px;
 
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 800;
-  line-height: .85;
+  line-height: .8;
+  letter-spacing: -0.5px;
 
   color: #FF4B44;
 }
@@ -1539,13 +1541,14 @@ footer span {
 
   .shirt-number,
   .player-number {
-    top: 9px;
+    top: 8px;
     left: 9px;
 
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 800;
-    line-height: .85;
+    line-height: .8;
+    letter-spacing: -0.3px;
 
     color: #FF4B44;
   }
