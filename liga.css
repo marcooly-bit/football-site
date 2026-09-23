@@ -762,6 +762,8 @@ nav a.active {
   font-size: 24px;
   font-weight: 500;
   line-height: 1;
+
+  color: #FF4B44;
 }
 
 .player-card-info {
@@ -821,6 +823,8 @@ nav a.active {
   font-size: 24px;
   font-weight: 500;
   line-height: 1;
+
+  color: #FF4B44;
 }
 
 .player-info {
@@ -1535,6 +1539,8 @@ footer span {
     left: 9px;
 
     font-size: 20px;
+
+    color: #FF4B44;
   }
 
   .legend-card {
