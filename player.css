@@ -1,0 +1,592 @@
+/* =========================================================
+   PLAYER PAGE
+   Pages Of Football
+   ========================================================= */
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.player-page {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 5vw 100px;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.player-hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 58% 42%;
+  min-height: 650px;
+  overflow: hidden;
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+  background: #f4f3ef;
+}
+
+
+/* =========================================================
+   GIANT NUMBER
+   ========================================================= */
+
+.player-number {
+  position: absolute;
+  z-index: 1;
+
+  left: 5%;
+  bottom: -25px;
+
+  font-size: clamp(430px, 46vw, 680px);
+  line-height: 0.72;
+
+  font-weight: 800;
+  letter-spacing: -0.09em;
+
+  color: #121212;
+  opacity: 0.075;
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* =========================================================
+   PLAYER IMAGE
+   ========================================================= */
+
+.player-hero-image {
+  position: relative;
+  z-index: 2;
+
+  height: 650px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.player-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center bottom;
+
+  display: block;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.player-hero-content {
+  position: relative;
+  z-index: 3;
+
+  padding: 55px 55px 55px 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  border-left: 1px solid #121212;
+}
+
+.player-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+.player-hero h1 {
+  font-size: clamp(55px, 7vw, 105px);
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+
+  margin: 0 0 30px;
+
+  font-weight: 700;
+}
+
+.player-role {
+  font-size: 12px;
+  letter-spacing: 0.13em;
+  font-weight: 600;
+
+  margin-bottom: 12px;
+}
+
+.player-club {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+
+  text-decoration: none;
+  color: #121212;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.player-details,
+.player-honours,
+.player-stats,
+.player-career,
+.player-matches,
+.player-story {
+  border-bottom: 1px solid #121212;
+  padding: 55px 0;
+}
+
+.section-label {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   PROFILE
+   ========================================================= */
+
+.player-details-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+}
+
+.detail-item {
+  min-height: 125px;
+
+  padding: 25px 20px;
+
+  border-right: 1px solid #121212;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-item:last-child {
+  border-right: none;
+}
+
+.detail-label {
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  opacity: 0.65;
+}
+
+.detail-item strong {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   HONOURS
+   ========================================================= */
+
+.honours-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+}
+
+.honour {
+  min-height: 150px;
+
+  padding: 22px;
+
+  border-right: 1px solid #121212;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.honour:last-child {
+  border-right: none;
+}
+
+.honour-year {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  opacity: 0.6;
+}
+
+.honour strong {
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.honour span:last-child {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  opacity: 0.65;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+.stats-header h2 {
+  font-size: 42px;
+  line-height: 1;
+
+  margin: 0;
+
+  letter-spacing: -0.04em;
+}
+
+.season-selector {
+  border: 1px solid #121212;
+
+  padding: 12px 17px;
+
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.season-selector span {
+  margin-left: 15px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+}
+
+.stat {
+  min-height: 150px;
+
+  padding: 25px;
+
+  border-right: 1px solid #121212;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat:last-child {
+  border-right: none;
+}
+
+.stat span {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  opacity: 0.6;
+}
+
+.stat strong {
+  font-size: 55px;
+  line-height: 1;
+
+  letter-spacing: -0.05em;
+}
+
+
+/* =========================================================
+   CAREER
+   ========================================================= */
+
+.career-table {
+  border-top: 1px solid #121212;
+}
+
+.career-row {
+  display: grid;
+  grid-template-columns:
+    1fr
+    1.5fr
+    1.5fr
+    0.5fr
+    0.5fr
+    0.5fr;
+
+  min-height: 65px;
+
+  align-items: center;
+
+  border-bottom: 1px solid #121212;
+}
+
+.career-row span {
+  font-size: 11px;
+  padding: 0 15px;
+}
+
+.career-head {
+  min-height: 42px;
+}
+
+.career-head span {
+  font-size: 8px;
+  letter-spacing: 0.13em;
+  opacity: 0.6;
+}
+
+
+/* =========================================================
+   MATCHES
+   ========================================================= */
+
+.matches-empty {
+  min-height: 150px;
+
+  border-top: 1px solid #121212;
+  border-bottom: 1px solid #121212;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 30px;
+}
+
+.matches-empty span {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  opacity: 0.6;
+}
+
+.matches-empty strong {
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   STORY
+   ========================================================= */
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  border-top: 1px solid #121212;
+
+  padding-top: 45px;
+}
+
+.story-title span {
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  opacity: 0.6;
+}
+
+.story-title h2 {
+  font-size: clamp(35px, 4vw, 60px);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.045em;
+
+  margin: 20px 0 0;
+
+  font-weight: 500;
+}
+
+.story-text {
+  max-width: 550px;
+}
+
+.story-text p {
+  font-size: 16px;
+  line-height: 1.65;
+
+  margin: 0 0 22px;
+}
+
+.story-link {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  color: #121212;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  border-bottom: 1px solid #121212;
+
+  padding-bottom: 5px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .player-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .player-hero-image {
+    height: 600px;
+  }
+
+  .player-hero-content {
+    border-left: none;
+    border-top: 1px solid #121212;
+
+    min-height: 400px;
+
+    padding: 45px;
+  }
+
+  .player-number {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 500px;
+  }
+
+  .player-details-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .detail-item:nth-child(3) {
+    border-right: none;
+  }
+
+  .detail-item:nth-child(-n+3) {
+    border-bottom: 1px solid #121212;
+  }
+
+  .honours-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .honour:nth-child(3) {
+    border-right: none;
+  }
+
+  .honour:nth-child(-n+3) {
+    border-bottom: 1px solid #121212;
+  }
+
+  .story-content {
+    gap: 40px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .player-page {
+    padding: 25px 20px 70px;
+  }
+
+  .player-hero-image {
+    height: 500px;
+  }
+
+  .player-hero-content {
+    padding: 40px 30px;
+  }
+
+  .player-number {
+    font-size: 400px;
+    bottom: -5px;
+  }
+
+  .player-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .detail-item {
+    border-right: 1px solid #121212;
+  }
+
+  .detail-item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .detail-item:nth-child(3) {
+    border-right: 1px solid #121212;
+  }
+
+  .honours-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .honour {
+    border-right: none;
+    border-bottom: 1px solid #121212;
+  }
+
+  .honour:last-child {
+    border-bottom: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat:nth-child(2) {
+    border-right: none;
+  }
+
+  .stat:nth-child(-n+2) {
+    border-bottom: 1px solid #121212;
+  }
+
+  .career-table {
+    overflow-x: auto;
+  }
+
+  .career-row {
+    min-width: 700px;
+  }
+
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+}
