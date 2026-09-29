@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,60 +12,56 @@
 
 <body>
 
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
+
+  <div class="season-label">2026/27</div>
+</header>
+
 <main class="player-page">
 
 
-  <!-- =====================================================
+  <!-- =========================================================
        HERO
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-hero juventus">
-
-
-    <!-- PHOTO -->
+  <section class="player-hero">
 
     <div class="player-hero-photo">
-
       <div class="player-number">1</div>
-
       <img
-        src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656963/f_webp/players/grabara.png"
-        alt="Kamil Grabara">
-
+        src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/v1789656963/players/grabara.png"
+        alt="Kamil Grabara"
+      >
     </div>
-
-
-    <!-- MAIN INFO -->
 
     <div class="player-hero-main">
 
-      <div class="player-eyebrow">
-        JUVENTUS · 2026/27
-      </div>
+      <div class="player-eyebrow">JUVENTUS</div>
 
-      <h1>Kamil<br>Grabara</h1>
+      <h1>KAMIL GRABARA</h1>
 
-      <div class="player-role">
-        PORTIERE
-      </div>
-
+      <div class="player-role">PORTIERE</div>
 
       <a href="juventus26-27.html" class="player-club">
-
-        <img
-          src="images/teams/juventus.png"
-          alt="Juventus">
-
+        <img src="images/teams/juventus.png" alt="Juventus">
         <span>JUVENTUS</span>
-
       </a>
-
 
       <div class="player-data">
 
         <div class="data-item">
-          <span>NATO</span>
-          <strong>08.01.1999</strong>
+          <span>DATA DI NASCITA</span>
+          <strong>8 GEN 1999</strong>
         </div>
 
         <div class="data-item">
@@ -75,18 +70,15 @@
         </div>
 
         <div class="data-item">
-          <span>ALTEZZA</span>
-          <strong>1.95 M</strong>
-        </div>
-
-        <div class="data-item">
           <span>NAZIONALITÀ</span>
-          <strong>🇵🇱 POLONIA</strong>
+          <strong class="nationalities">
+            <span>🇵🇱 POLONIA</span>
+          </strong>
         </div>
 
         <div class="data-item">
-          <span>RUOLO</span>
-          <strong>PORTIERE</strong>
+          <span>ALTEZZA</span>
+          <strong>195 CM</strong>
         </div>
 
         <div class="data-item">
@@ -94,12 +86,14 @@
           <strong>DESTRO</strong>
         </div>
 
+        <div class="data-item">
+          <span>AL JUVENTUS DAL</span>
+          <strong>2026</strong>
+        </div>
+
       </div>
 
     </div>
-
-
-    <!-- PITCH -->
 
     <div class="player-position">
 
@@ -114,11 +108,10 @@
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
-
-        <div
+        <span
           class="pitch-player preferred goalkeeper"
-          title="Portiere">
-        </div>
+          title="Portiere"
+        ></span>
 
       </div>
 
@@ -127,113 +120,70 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        PALMARES
-       ===================================================== -->
+       ========================================================= -->
 
   <section class="player-honours">
 
-    <a href="#" class="honour-item">
-
-      <div class="honour-logo">
-        SL
-      </div>
-
+    <a href="#" class="honour-item" title="Superligaen">
+      <span class="honour-logo">SL</span>
       <strong>2</strong>
-
     </a>
 
-
-    <a href="#" class="honour-item">
-
-      <div class="honour-logo">
-        DC
-      </div>
-
+    <a href="#" class="honour-item" title="DBU Pokalen">
+      <span class="honour-logo">DP</span>
       <strong>1</strong>
-
     </a>
 
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        STATISTICHE
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        01
-      </div>
+      <span class="section-number">02</span>
 
       <div>
-
-        <span class="section-label">
-          STAGIONE
-        </span>
-
-        <h2>Statistiche</h2>
-
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
       <select class="season-selector">
-
         <option>2026/27</option>
-        <option>2025/26</option>
-
       </select>
 
     </div>
 
-
     <div class="stats-grid">
 
       <div class="stat-box">
-
         <span class="stat-icon">🏟️</span>
-
-        <strong>0</strong>
-
+        <strong>1</strong>
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <span class="stat-icon">🧤</span>
-
-        <strong>0</strong>
-
-        <small>CLEAN SHEET</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <span class="stat-icon">🛑</span>
-
-        <strong>0</strong>
-
-        <small>SALVATAGGI</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <span class="stat-icon">⏱</span>
-
-        <strong>0</strong>
-
+        <span class="stat-icon">⏱️</span>
+        <strong>90</strong>
         <small>MINUTI</small>
+      </div>
 
+      <div class="stat-box">
+        <span class="stat-icon">🧤</span>
+        <strong>1</strong>
+        <small>CLEAN SHEET</small>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-icon">🛑</span>
+        <strong>3</strong>
+        <small>PARATE</small>
       </div>
 
     </div>
@@ -241,52 +191,40 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        CARRIERA
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        02
-      </div>
+      <span class="section-number">03</span>
 
       <div>
-
-        <span class="section-label">
-          PERCORSO
-        </span>
-
-        <h2>Carriera</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
       </div>
 
     </div>
 
-
     <div class="career-list">
 
 
-      <!-- =================================================
-           2026/27 · JUVENTUS
-           ================================================= -->
+      <!-- 2026/27 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <span class="career-year">2026/27</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
             <a href="juventus26-27.html">
               JUVENTUS
@@ -296,104 +234,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE A</span>
-
             <strong>0</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>EUROPA LEAGUE</span>
-
-            <strong>0</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2025/26 · WOLFSBURG
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2025/26
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/wolfsburg.png"
-              alt="Wolfsburg">
-
-            <a href="wolfsburg25-26.html">
-              WOLFSBURG
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>BUNDESLIGA</span>
-
-            <strong>34</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DFB-POKAL</span>
-
             <strong>1</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -401,26 +262,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2024/25 · WOLFSBURG
-           ================================================= -->
+      <!-- 2025/26 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2025/26</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/wolfsburg.png"
-              alt="Wolfsburg">
+              alt="Wolfsburg"
+            >
 
-            <a href="wolfsburg24-25.html">
+            <a href="#">
               WOLFSBURG
             </a>
 
@@ -428,247 +285,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>BUNDESLIGA</span>
-
-            <strong>29</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DFB-POKAL</span>
-
-            <strong>3</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2023/24 · COPENAGHEN
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2023/24
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/copenhagen.png"
-              alt="Copenaghen">
-
-            <a href="copenhagen23-24.html">
-              COPENAGHEN
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DANISH SUPERLIGA</span>
-
-            <strong>31</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>CHAMPIONS LEAGUE</span>
-
-            <strong>8</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2022/23 · COPENAGHEN
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2022/23
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/copenhagen.png"
-              alt="Copenaghen">
-
-            <a href="copenhagen22-23.html">
-              COPENAGHEN
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DANISH SUPERLIGA</span>
-
-            <strong>23</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DBU POKALEN</span>
-
-            <strong>5</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>CHAMPIONS LEAGUE</span>
-
-            <strong>4</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2021/22 · COPENAGHEN
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2021/22
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/copenhagen.png"
-              alt="Copenaghen">
-
-            <a href="copenhagen21-22.html">
-              COPENAGHEN
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DANISH SUPERLIGA</span>
-
             <strong>32</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>CONFERENCE LEAGUE</span>
-
-            <strong>6</strong>
+            <span>DFB-POKAL</span>
+            <strong>1</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -676,26 +313,247 @@
       </div>
 
 
-
-      <!-- =================================================
-           2020/21 · AGF
-           ================================================= -->
+      <!-- 2024/25 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
+          <span class="career-year">2024/25</span>
+
+          <div class="career-club">
+
+            <img
+              src="images/teams/wolfsburg.png"
+              alt="Wolfsburg"
+            >
+
+            <a href="#">
+              WOLFSBURG
+            </a>
+
           </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>BUNDESLIGA</span>
+            <strong>29</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-POKAL</span>
+            <strong>3</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2023/24 -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <span class="career-year">2023/24</span>
+
+          <div class="career-club">
+
+            <img
+              src="images/teams/copenhagen.png"
+              alt="FC Copenhagen"
+            >
+
+            <a href="#">
+              FC COPENHAGEN
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>SUPERLIGAEN</span>
+            <strong>32</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DBU POKALEN</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>CHAMPIONS LEAGUE</span>
+            <strong>8</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EUROPA CONFERENCE LEAGUE</span>
+            <strong>6</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2022/23 -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <span class="career-year">2022/23</span>
+
+          <div class="career-club">
+
+            <img
+              src="images/teams/copenhagen.png"
+              alt="FC Copenhagen"
+            >
+
+            <a href="#">
+              FC COPENHAGEN
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>SUPERLIGAEN</span>
+            <strong>23</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DBU POKALEN</span>
+            <strong>5</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>CHAMPIONS LEAGUE</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2021/22 -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <span class="career-year">2021/22</span>
+
+          <div class="career-club">
+
+            <img
+              src="images/teams/copenhagen.png"
+              alt="FC Copenhagen"
+            >
+
+            <a href="#">
+              FC COPENHAGEN
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>SUPERLIGAEN</span>
+            <strong>32</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EUROPA CONFERENCE LEAGUE</span>
+            <strong>12</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2020/21 -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <span class="career-year">2020/21</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/agf.png"
-              alt="AGF">
+              alt="AGF"
+            >
 
-            <a href="agf20-21.html">
+            <a href="#">
               AGF
             </a>
 
@@ -703,27 +561,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>DANISH SUPERLIGA</span>
-
+            <span>SUPERLIGAEN</span>
             <strong>29</strong>
             <strong>0</strong>
             <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>DBU POKALEN</span>
+            <strong>5</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -731,26 +589,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2019/20 · HUDDERSFIELD
-           ================================================= -->
+      <!-- 2019/20 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2019/20
-          </div>
+          <span class="career-year">2019/20</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/huddersfield.png"
-              alt="Huddersfield Town">
+              alt="Huddersfield Town"
+            >
 
-            <a href="huddersfield19-20.html">
+            <a href="#">
               HUDDERSFIELD TOWN
             </a>
 
@@ -758,27 +612,20 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>CHAMPIONSHIP</span>
-
             <strong>28</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -786,26 +633,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2018/19 · AGF
-           ================================================= -->
+      <!-- 2018/19 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2018/19
-          </div>
+          <span class="career-year">2018/19</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/agf.png"
-              alt="AGF">
+              alt="AGF"
+            >
 
-            <a href="agf18-19.html">
+            <a href="#">
               AGF
             </a>
 
@@ -813,27 +656,20 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>DANISH SUPERLIGA</span>
-
+            <span>SUPERLIGAEN</span>
             <strong>16</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -841,81 +677,21 @@
       </div>
 
 
-
-      <!-- =================================================
-           2017/18 · LIVERPOOL
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2017/18
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/liverpool.png"
-              alt="Liverpool">
-
-            <a href="liverpool17-18.html">
-              LIVERPOOL
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>PREMIER LEAGUE</span>
-
-            <strong>0</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           NAZIONALE
-           ================================================= -->
+      <!-- NAZIONALE -->
 
       <div class="career-national">
 
         <div class="career-national-header">
 
-          <div class="career-national-label">
+          <span class="career-national-label">
             NAZIONALE
-          </div>
+          </span>
 
           <div class="career-national-team">
 
-            <span class="national-flag">
-              🇵🇱
-            </span>
+            <span class="national-flag">🇵🇱</span>
 
-            <a href="polonia.html">
+            <a href="#">
               POLONIA
             </a>
 
@@ -927,28 +703,18 @@
 
         </div>
 
-
         <div class="career-national-stats">
 
           <div class="national-stat">
-
-            <span>🏟️</span>
-
-            <strong>5</strong>
-
+            <span class="stat-icon">🏟️</span>
+            <strong>6</strong>
             <small>PRESENZE</small>
-
           </div>
 
-
           <div class="national-stat">
-
-            <span>⚽</span>
-
+            <span class="stat-icon">⚽</span>
             <strong>0</strong>
-
             <small>GOL</small>
-
           </div>
 
         </div>
@@ -960,145 +726,108 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        PARTITE
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        03
-      </div>
+      <span class="section-number">04</span>
 
       <div>
-
-        <span class="section-label">
-          ARCHIVIO
-        </span>
-
-        <h2>Partite</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
 
-
     <div class="archive-placeholder">
-      ARCHIVIO PARTITE · IN ARRIVO
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        STORIA
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        04
-      </div>
+      <span class="section-number">05</span>
 
       <div>
-
-        <span class="section-label">
-          PROFILO
-        </span>
-
-        <h2>La sua storia</h2>
-
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
 
-
     <div class="story-content">
-
 
       <div class="story-intro">
 
-        <span>
-          DA CHORZÓW A TORINO
-        </span>
+        <span class="player-name">KAMIL GRABARA</span>
 
         <h3>
-          Il portiere polacco che ha costruito la propria carriera in Scandinavia.
+          Dalla Polonia alla Juventus, passando per Danimarca e Germania
         </h3>
 
       </div>
 
-
       <div class="story-text">
 
         <p>
-          Kamil Grabara nasce l'8 gennaio 1999 a Ruda Śląska,
-          in Polonia, e cresce nel settore giovanile del Ruch
-          Chorzów. Nel 2016, ancora giovanissimo, arriva la
-          chiamata del Liverpool, che lo inserisce nel proprio
-          percorso giovanile.
+          Kamil Grabara nasce a Ruda Śląska, in Polonia, l'8 gennaio
+          1999. Cresce nel settore giovanile del Ruch Chorzów prima
+          di trasferirsi giovanissimo in Inghilterra, dove nel 2016
+          entra nel settore giovanile del Liverpool.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Per trovare continuità nel calcio professionistico
-          deve però uscire dall'Inghilterra. Il primo prestito
-          arriva all'AGF in Danimarca nella stagione 2018/19.
-          L'esperienza gli permette di affacciarsi stabilmente
-          al calcio dei grandi.
+        <p>
+          L'esperienza inglese porta ai primi prestiti nel calcio
+          professionistico. Con Aarhus e Huddersfield Town trova
+          spazio e soprattutto continuità, iniziando a costruire
+          quella personalità che diventerà uno dei tratti distintivi
+          del suo gioco tra i pali.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Dopo un'altra stagione all'AGF e una parentesi in
-          Championship con l'Huddersfield Town, Grabara torna
-          in Danimarca. Nel 2021 il Copenaghen lo acquista
-          definitivamente dal Liverpool.
+        <p>
+          Nel gennaio 2021 arriva al Copenaghen. In Danimarca Grabara
+          trova la definitiva consacrazione: conquista due campionati
+          danesi e una Coppa di Danimarca, diventando anche protagonista
+          nelle competizioni europee e disputando la Champions League.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          A Copenaghen arriva la consacrazione. Vince due
-          campionati danesi, nel 2021/22 e nel 2022/23, oltre
-          alla Coppa di Danimarca nel 2022/23. Con il club
-          debutta anche in Champions League e diventa uno dei
-          protagonisti della squadra.
+        <p>
+          Nell'estate del 2024 si trasferisce al Wolfsburg. In
+          Bundesliga diventa immediatamente il portiere titolare,
+          raccogliendo 63 presenze nel campionato tedesco prima
+          dell'arrivo alla Juventus.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Le sue prestazioni attirano il Wolfsburg, che lo
-          acquista nell'estate 2024. In Bundesliga Grabara
-          diventa immediatamente il titolare e colleziona
-          63 presenze di campionato in due stagioni.
+        <p>
+          Nell'agosto 2026 approda in prestito a Torino. Il suo
+          debutto europeo contro il NEC Nijmegen è perfetto: 90 minuti,
+          tre parate e porta inviolata. Pochi giorni dopo, però,
+          un infortunio al ginocchio destro durante un allenamento
+          porta alla diagnosi della lesione del legamento crociato
+          anteriore.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nell'agosto 2026 arriva la chiamata della Juventus.
-          Grabara passa in bianconero in prestito fino al
-          30 giugno 2027 e indossa la maglia numero 1.
+        <p>
+          Con la Polonia ha raggiunto la nazionale maggiore nel 2022,
+          costruendo parallelamente il proprio percorso internazionale
+          mentre continua a inseguire il ritorno in campo con la
+          maglia bianconera.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          L'avventura italiana però si interrompe quasi subito:
-          nel settembre 2026 subisce una lesione del legamento
-          crociato anteriore del ginocchio destro e viene
-          sottoposto a intervento chirurgico. Il recupero
-          diventa così parte integrante della sua storia
-          bianconera.
-        </p>
-
-
-        <a href="#" class="story-link">
-          LEGGI LA STORIA COMPLETA →
+        <a href="storie.html" class="story-link">
+          SCOPRI ALTRE STORIE →
         </a>
 
       </div>
@@ -1108,25 +837,16 @@
   </section>
 
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-
-  <footer class="site-footer">
-
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
-
-    <div class="footer-copy">
-      PLAYER ARCHIVE
-    </div>
-
-  </footer>
-
-
 </main>
+
+
+<footer class="site-footer">
+
+  <div class="footer-brand">PAGES OF FOOTBALL</div>
+
+  <div class="footer-copy">FOOTBALL · HISTORY · STORIES</div>
+
+</footer>
 
 </body>
 </html>
