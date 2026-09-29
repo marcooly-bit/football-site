@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,60 +12,59 @@
 
 <body>
 
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
+
+  <div class="season-label">2026/27</div>
+</header>
+
 <main class="player-page">
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        HERO
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-hero juventus">
-
-
-    <!-- PHOTO -->
+  <section class="player-hero">
 
     <div class="player-hero-photo">
-
       <div class="player-number">27</div>
 
       <img
         src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656864/players/woltemade.png"
-        alt="Nick Woltemade">
-
+        alt="Nick Woltemade"
+      >
     </div>
-
-
-    <!-- MAIN INFO -->
 
     <div class="player-hero-main">
 
-      <div class="player-eyebrow">
-        JUVENTUS · 2026/27
-      </div>
+      <div class="player-eyebrow">JUVENTUS FC</div>
 
-      <h1>Nick<br>Woltemade</h1>
+      <h1>NICK WOLTEMADE</h1>
 
-      <div class="player-role">
-        ATTACCANTE
-      </div>
-
+      <div class="player-role">ATTACCANTE · PUNTA</div>
 
       <a href="juventus26-27.html" class="player-club">
-
         <img
           src="images/teams/juventus.png"
-          alt="Juventus">
-
-        <span>JUVENTUS</span>
-
+          alt="Juventus"
+        >
+        <span>JUVENTUS FC</span>
       </a>
-
 
       <div class="player-data">
 
         <div class="data-item">
-          <span>NATO</span>
-          <strong>14.02.2002</strong>
+          <span>DATA DI NASCITA</span>
+          <strong>14 FEB 2002</strong>
         </div>
 
         <div class="data-item">
@@ -75,18 +73,15 @@
         </div>
 
         <div class="data-item">
-          <span>ALTEZZA</span>
-          <strong>1.98 M</strong>
-        </div>
-
-        <div class="data-item">
           <span>NAZIONALITÀ</span>
-          <strong>🇩🇪 GERMANIA</strong>
+          <strong class="nationalities">
+            <span>🇩🇪 GERMANIA</span>
+          </strong>
         </div>
 
         <div class="data-item">
-          <span>RUOLO</span>
-          <strong>ATTACCANTE</strong>
+          <span>ALTEZZA</span>
+          <strong>198 CM</strong>
         </div>
 
         <div class="data-item">
@@ -94,12 +89,14 @@
           <strong>DESTRO</strong>
         </div>
 
+        <div class="data-item">
+          <span>ALLA JUVENTUS DAL</span>
+          <strong>2026</strong>
+        </div>
+
       </div>
 
     </div>
-
-
-    <!-- PITCH -->
 
     <div class="player-position">
 
@@ -114,17 +111,15 @@
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
-
-        <div
-          class="pitch-player preferred striker"
-          title="Punta">
-        </div>
-
-
-        <div
+        <span
           class="pitch-player secondary attacking-mid"
           title="Trequartista">
-        </div>
+        </span>
+
+        <span
+          class="pitch-player preferred striker"
+          title="Punta">
+        </span>
 
       </div>
 
@@ -133,102 +128,65 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        PALMARES
-       ===================================================== -->
+       ========================================================= -->
 
   <section class="player-honours">
 
-    <a href="dfb-pokal.html" class="honour-item">
-
-      <div class="honour-logo">
-        DFB
-      </div>
-
+    <a href="#" class="honour-item" title="DFB-Pokal">
+      <span class="honour-logo">DP</span>
       <strong>1</strong>
-
     </a>
 
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        STATISTICHE
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        01
-      </div>
+      <span class="section-number">02</span>
 
       <div>
-
-        <span class="section-label">
-          STAGIONE
-        </span>
-
-        <h2>Statistiche</h2>
-
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
       <select class="season-selector">
-
         <option>2026/27</option>
-        <option>2025/26</option>
-
       </select>
 
     </div>
 
-
     <div class="stats-grid">
 
       <div class="stat-box">
-
-        <span class="stat-icon">🏟️</span>
-
+        <div class="stat-icon">🏟️</div>
         <strong>4</strong>
-
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <span class="stat-icon">⚽</span>
-
-        <strong>1</strong>
-
-        <small>GOL</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <span class="stat-icon">👟</span>
-
-        <strong>0</strong>
-
-        <small>ASSIST</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <span class="stat-icon">⏱</span>
-
-        <strong>—</strong>
-
+        <div class="stat-icon">⏱️</div>
+        <strong>131</strong>
         <small>MINUTI</small>
+      </div>
 
+      <div class="stat-box">
+        <div class="stat-icon">⚽</div>
+        <strong>0</strong>
+        <small>GOL</small>
+      </div>
+
+      <div class="stat-box">
+        <div class="stat-icon">👟</div>
+        <strong>0</strong>
+        <small>ASSIST</small>
       </div>
 
     </div>
@@ -236,93 +194,65 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        CARRIERA
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        02
-      </div>
+      <span class="section-number">03</span>
 
       <div>
-
-        <span class="section-label">
-          PERCORSO
-        </span>
-
-        <h2>Carriera</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
       </div>
 
     </div>
 
-
     <div class="career-list">
 
 
-      <!-- =================================================
-           2026/27 · JUVENTUS
-           ================================================= -->
+      <!-- 2026/27 JUVENTUS -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <div class="career-year">2026/27</div>
 
           <div class="career-club">
-
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
-
-            <a href="juventus26-27.html">
-              JUVENTUS
-            </a>
-
+              alt="Juventus"
+            >
+            <a href="juventus26-27.html">JUVENTUS</a>
           </div>
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>SERIE A</span>
-
+            <span>Serie A</span>
             <strong>3</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>EUROPA LEAGUE</span>
-
-            <strong>1</strong>
+            <span>Europa League</span>
             <strong>1</strong>
             <strong>0</strong>
-
+            <strong>0</strong>
           </div>
 
         </div>
@@ -330,296 +260,59 @@
       </div>
 
 
-
-      <!-- =================================================
-           2025/26 · NEWCASTLE
-           ================================================= -->
+      <!-- 2025/26 NEWCASTLE -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2025/26
-          </div>
+          <div class="career-year">2025/26</div>
 
           <div class="career-club">
-
             <img
               src="images/teams/newcastle.png"
-              alt="Newcastle United">
-
-            <a href="newcastle25-26.html">
-              NEWCASTLE UNITED
-            </a>
-
+              alt="Newcastle United"
+            >
+            <a href="newcastle26-27.html">NEWCASTLE UNITED</a>
           </div>
 
         </div>
-
 
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
-
 
           <div class="career-row">
-
-            <span>PREMIER LEAGUE</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
+            <span>Premier League</span>
+            <strong>33</strong>
+            <strong>8</strong>
+            <strong>3</strong>
           </div>
-
 
           <div class="career-row">
-
-            <span>CHAMPIONS LEAGUE</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>FA CUP</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>LEAGUE CUP</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2024/25 · STOCCARDA
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2024/25
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/stuttgart.png"
-              alt="Stoccarda">
-
-            <a href="stuttgart24-25.html">
-              STOCCARDA
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>BUNDESLIGA</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DFB-POKAL</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>CHAMPIONS LEAGUE</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2023/24 · WERDER BREMA
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2023/24
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/werder-bremen.png"
-              alt="Werder Brema">
-
-            <a href="werder-brema23-24.html">
-              WERDER BREMA
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>BUNDESLIGA</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DFB-POKAL</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2022/23 · ELVERSBERG
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2022/23
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/elversberg.png"
-              alt="Elversberg">
-
-            <a href="elversberg22-23.html">
-              ELVERSBERG
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>3. LIGA</span>
-
-            <strong>31</strong>
+            <span>Champions League</span>
             <strong>10</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>DFB-POKAL</span>
-
             <strong>1</strong>
             <strong>0</strong>
-            <strong>—</strong>
+          </div>
 
+          <div class="career-row">
+            <span>FA Cup</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EFL Cup</span>
+            <strong>7</strong>
+            <strong>2</strong>
+            <strong>1</strong>
           </div>
 
         </div>
@@ -627,54 +320,38 @@
       </div>
 
 
-
-      <!-- =================================================
-           WERDER BREMA · PRIME STAGIONI
-           ================================================= -->
+      <!-- 2025/26 STUTTGART -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2021/22
-          </div>
+          <div class="career-year">2025/26</div>
 
           <div class="career-club">
-
             <img
-              src="images/teams/werder-bremen.png"
-              alt="Werder Brema">
-
-            <a href="werder-brema21-22.html">
-              WERDER BREMA
-            </a>
-
+              src="images/teams/stoccarda.png"
+              alt="Stoccarda"
+            >
+            <a href="stoccarda26-27.html">STOCCARDA</a>
           </div>
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>2. BUNDESLIGA</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
+            <span>Bundesliga</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -682,50 +359,45 @@
       </div>
 
 
+      <!-- 2024/25 STUTTGART -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
-          </div>
+          <div class="career-year">2024/25</div>
 
           <div class="career-club">
-
             <img
-              src="images/teams/werder-bremen.png"
-              alt="Werder Brema">
-
-            <a href="werder-brema20-21.html">
-              WERDER BREMA
-            </a>
-
+              src="images/teams/stoccarda.png"
+              alt="Stoccarda"
+            >
+            <a href="stoccarda26-27.html">STOCCARDA</a>
           </div>
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
+          <div class="career-row">
+            <span>Bundesliga</span>
+            <strong>28</strong>
+            <strong>12</strong>
+            <strong>2</strong>
+          </div>
 
           <div class="career-row">
-
-            <span>BUNDESLIGA</span>
-
-            <strong>—</strong>
-            <strong>—</strong>
-            <strong>—</strong>
-
+            <span>DFB-Pokal</span>
+            <strong>5</strong>
+            <strong>5</strong>
+            <strong>1</strong>
           </div>
 
         </div>
@@ -733,10 +405,198 @@
       </div>
 
 
+      <!-- 2023/24 WERDER BREMEN -->
 
-      <!-- =================================================
-           NAZIONALE
-           ================================================= -->
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <div class="career-year">2023/24</div>
+
+          <div class="career-club">
+            <img
+              src="images/teams/werder-brema.png"
+              alt="Werder Brema"
+            >
+            <a href="werder-brema26-27.html">WERDER BREMA</a>
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Bundesliga</span>
+            <strong>22</strong>
+            <strong>2</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>2. Bundesliga</span>
+            <strong>6</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2022/23 ELVERSBERG -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <div class="career-year">2022/23</div>
+
+          <div class="career-club">
+            <img
+              src="images/teams/elversberg.png"
+              alt="Elversberg"
+            >
+            <a href="elversberg26-27.html">ELVERSBERG</a>
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>3. Liga</span>
+            <strong>30</strong>
+            <strong>10</strong>
+            <strong>5</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2021/22 WERDER BREMEN -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <div class="career-year">2021/22</div>
+
+          <div class="career-club">
+            <img
+              src="images/teams/werder-brema.png"
+              alt="Werder Brema"
+            >
+            <a href="werder-brema26-27.html">WERDER BREMA</a>
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>2. Bundesliga</span>
+            <strong>14</strong>
+            <strong>0</strong>
+            <strong>1</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2020/21 WERDER BREMEN -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <div class="career-year">2020/21</div>
+
+          <div class="career-club">
+            <img
+              src="images/teams/werder-brema.png"
+              alt="Werder Brema"
+            >
+            <a href="werder-brema26-27.html">WERDER BREMA</a>
+          </div>
+
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Bundesliga</span>
+            <strong>20</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>2</strong>
+            <strong>1</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- NAZIONALE -->
 
       <div class="career-national">
 
@@ -748,11 +608,9 @@
 
           <div class="career-national-team">
 
-            <span class="national-flag">
-              🇩🇪
-            </span>
+            <span class="national-flag">🇩🇪</span>
 
-            <a href="germania.html">
+            <a href="#">
               GERMANIA
             </a>
 
@@ -764,28 +622,18 @@
 
         </div>
 
-
         <div class="career-national-stats">
 
           <div class="national-stat">
-
-            <span>🏟️</span>
-
+            <div class="stat-icon">🏟️</div>
             <strong>12</strong>
-
             <small>PRESENZE</small>
-
           </div>
 
-
           <div class="national-stat">
-
-            <span>⚽</span>
-
+            <div class="stat-icon">⚽</div>
             <strong>4</strong>
-
             <small>GOL</small>
-
           </div>
 
         </div>
@@ -797,130 +645,97 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        PARTITE
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        03
-      </div>
+      <span class="section-number">04</span>
 
       <div>
-
-        <span class="section-label">
-          ARCHIVIO
-        </span>
-
-        <h2>Partite</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
 
-
     <div class="archive-placeholder">
-      ARCHIVIO PARTITE · IN ARRIVO
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        STORIA
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        04
-      </div>
+      <span class="section-number">05</span>
 
       <div>
-
-        <span class="section-label">
-          PROFILO
-        </span>
-
-        <h2>La sua storia</h2>
-
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
 
-
     <div class="story-content">
-
 
       <div class="story-intro">
 
-        <span>
-          DA BREMA A TORINO
-        </span>
+        <span class="player-name">NICK WOLTEMADE</span>
 
-        <h3>
-          Un gigante con la tecnica di un trequartista.
-        </h3>
+        <h3>DAL WERDER ALLA CONSACRAZIONE, FINO ALLA JUVENTUS</h3>
 
       </div>
-
 
       <div class="story-text">
 
         <p>
-          Nick Woltemade è nato a Brema nel febbraio 2002
-          ed è cresciuto nel settore giovanile del Werder
-          Brema, il club della sua città. A quasi due metri
-          di altezza, il suo fisico è il primo elemento che
-          colpisce, ma non racconta da solo il suo modo di
-          giocare.
+          Nato a Brema nel 2002, Nick Woltemade cresce nel settore giovanile
+          del Werder Brema, il club della sua città. Dopo la formazione nelle
+          giovanili, debutta in prima squadra nel 2020, iniziando il percorso
+          che lo porterà a diventare uno dei giovani attaccanti tedeschi più
+          interessanti della sua generazione.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nel 2022 arriva il prestito all'Elversberg. Con
-          10 gol in 31 presenze contribuisce alla promozione
-          del club in 2. Bundesliga e torna al Werder con
-          una nuova dimensione nel proprio percorso.
+        <p>
+          Nella stagione 2022/23 viene mandato in prestito all'Elversberg,
+          dove trova continuità e contribuisce alla promozione del club dalla
+          3. Liga. L'esperienza gli permette di accumulare minuti e responsabilità
+          prima del ritorno a Brema.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nell'estate 2024 passa allo Stoccarda. È il momento
-          della consacrazione: 18 gol in 36 presenze e la
-          conquista della Coppa di Germania. Le prestazioni
-          attirano il Newcastle, che lo porta in Premier League
-          nell'estate 2025.
+        <p>
+          Nel 2024 passa allo Stoccarda. È qui che arriva la definitiva
+          consacrazione: nella stagione 2024/25 realizza 12 gol in Bundesliga
+          e chiude l'annata con 17 reti e 3 assist in tutte le competizioni,
+          contribuendo alla vittoria della DFB-Pokal. :contentReference[oaicite:1]{index=1}
         </p>
 
-
-        <p style="margin-top: 25px;">
-          In Inghilterra raccoglie complessivamente 53 presenze,
-          11 gol e 6 assist con i Magpies. Nel settembre 2026
-          arriva la chiamata della Juventus: Woltemade passa
-          in bianconero in prestito fino al 30 giugno 2027.
+        <p>
+          Le prestazioni con lo Stoccarda attirano l'attenzione del Newcastle
+          United. In Inghilterra disputa una stagione da protagonista, chiudendo
+          la sua esperienza con 53 presenze, 11 gol e 6 assist complessivi.
+          :contentReference[oaicite:2]{index=2}
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nel frattempo diventa anche una presenza stabile
-          nella Germania maggiore. Il suo profilo resta
-          particolare: un attaccante di 1,98 metri capace
-          di giocare da centravanti, proteggere il pallone,
-          partecipare alla costruzione e muoversi anche
-          qualche metro più indietro.
+        <p>
+          Nel settembre 2026 arriva in Italia: la Juventus lo preleva dal
+          Newcastle con la formula del prestito fino al 30 giugno 2027.
+          A Torino indossa la maglia numero 27 e inizia un nuovo capitolo della
+          propria carriera. :contentReference[oaicite:3]{index=3}
         </p>
-
 
         <a href="#" class="story-link">
-          LEGGI LA STORIA COMPLETA →
+          APPROFONDISCI LA SUA STORIA →
         </a>
 
       </div>
@@ -929,26 +744,20 @@
 
   </section>
 
-
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-
-  <footer class="site-footer">
-
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
-
-    <div class="footer-copy">
-      PLAYER ARCHIVE
-    </div>
-
-  </footer>
-
-
 </main>
+
+
+<footer class="site-footer">
+
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
+
+  <div class="footer-copy">
+    FOOTBALL · HISTORY · STORIES
+  </div>
+
+</footer>
 
 </body>
 </html>
