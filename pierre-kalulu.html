@@ -10,53 +10,71 @@
   <link rel="stylesheet" href="player.css">
 </head>
 
-<body class="player-page">
+<body>
 
-  <!-- =========================================================
-       HERO
-       ========================================================= -->
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
 
-  <section class="player-hero juventus">
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
+
+  <div class="season-label">2026/27</div>
+</header>
+
+
+
+<main class="player-page">
+
+  <!-- HERO -->
+
+  <section class="player-hero">
 
     <div class="player-hero-photo">
 
       <div class="player-number">15</div>
 
       <img
-        src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656828/players/kalulu.png"
-        alt="Pierre Kalulu">
+        src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/players/kalulu.png"
+        alt="Pierre Kalulu"
+      >
 
     </div>
+
 
 
     <div class="player-hero-main">
 
       <div class="player-eyebrow">
-        JUVENTUS · 2026/27
+        JUVENTUS
       </div>
 
-      <h1>Pierre<br>Kalulu</h1>
+      <h1>PIERRE KALULU</h1>
 
       <div class="player-role">
-        DIFENSORE
+        DIFENSORE · CENTRALE
       </div>
 
-      <a href="#" class="player-club">
-
+      <a href="juventus26-27.html" class="player-club">
         <img
           src="images/teams/juventus.png"
-          alt="Juventus">
-
+          alt="Juventus"
+        >
         <span>JUVENTUS</span>
-
       </a>
+
 
 
       <div class="player-data">
 
         <div class="data-item">
           <span>DATA DI NASCITA</span>
-          <strong>05.06.2000</strong>
+          <strong>5 GIU 2000</strong>
         </div>
 
         <div class="data-item">
@@ -66,17 +84,24 @@
 
         <div class="data-item">
           <span>NAZIONALITÀ</span>
-          <strong>Francia</strong>
+          <strong class="nationalities">
+            <span>🇫🇷 FRANCIA</span>
+          </strong>
         </div>
 
         <div class="data-item">
           <span>ALTEZZA</span>
-          <strong>1.79 m</strong>
+          <strong>179 CM</strong>
         </div>
 
         <div class="data-item">
           <span>PIEDE</span>
-          <strong>Destro</strong>
+          <strong>DESTRO</strong>
+        </div>
+
+        <div class="data-item">
+          <span>ALLA JUVENTUS DAL</span>
+          <strong>2024</strong>
         </div>
 
       </div>
@@ -84,9 +109,8 @@
     </div>
 
 
-    <!-- =========================================================
-         POSIZIONE
-         ========================================================= -->
+
+    <!-- POSIZIONI -->
 
     <div class="player-position">
 
@@ -94,30 +118,22 @@
 
         <div class="pitch-halfway"></div>
         <div class="pitch-circle"></div>
-
         <div class="pitch-box pitch-box-top"></div>
         <div class="pitch-box pitch-box-bottom"></div>
-
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
+        <!-- DIFENSORE CENTRALE · RUOLO PREFERITO -->
+        <span
+          class="pitch-player preferred center-back-right"
+          title="Difensore centrale"
+        ></span>
 
-        <!-- RUOLO PRINCIPALE -->
-
-        <div
-          class="pitch-player preferred right-back"
-          title="Terzino destro">
-          15
-        </div>
-
-
-        <!-- RUOLO SECONDARIO -->
-
-        <div
-          class="pitch-player secondary center-back-right"
-          title="Difensore centrale">
-          15
-        </div>
+        <!-- TERZINO DESTRO -->
+        <span
+          class="pitch-player secondary right-back"
+          title="Terzino destro"
+        ></span>
 
       </div>
 
@@ -126,49 +142,31 @@
   </section>
 
 
-  <!-- =========================================================
-       PALMARES
-       ========================================================= -->
+
+  <!-- PALMARES -->
 
   <section class="player-honours">
 
-    <div class="honour-item">
-
-      <div class="honour-logo">
-
-        <img
-          src="images/trophies/scudetto.png"
-          alt="Scudetto">
-
-      </div>
-
+    <a href="#" class="honour-item" title="Serie A">
+      <span class="honour-logo">SA</span>
       <strong>1</strong>
-
-      <span>SCUDETTO</span>
-
-    </div>
+    </a>
 
   </section>
 
 
-  <!-- =========================================================
-       STATISTICHE STAGIONALI
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- STATISTICHE -->
+
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        01
-      </div>
+      <span class="section-number">02</span>
 
       <div>
-        <div class="section-label">
-          STAGIONE
-        </div>
-
-        <h2>STATISTICHE<br>STAGIONALI</h2>
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
       <select class="season-selector">
@@ -176,65 +174,36 @@
         <option>2025/26</option>
         <option>2024/25</option>
         <option>2023/24</option>
-        <option>2022/23</option>
-        <option>2021/22</option>
-        <option>2020/21</option>
       </select>
 
     </div>
 
 
+
     <div class="stats-grid">
 
       <div class="stat-box">
-
-        <div class="stat-icon">
-          ◎
-        </div>
-
+        <span class="stat-icon">🏟️</span>
         <strong>6</strong>
-
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <div class="stat-icon">
-          ◷
-        </div>
-
-        <strong>540</strong>
-
-        <small>MINUTI</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <div class="stat-icon">
-          ⚽
-        </div>
-
+        <span class="stat-icon">⚽</span>
         <strong>0</strong>
-
         <small>GOL</small>
-
       </div>
 
+      <div class="stat-box">
+        <span class="stat-icon">👟</span>
+        <strong>0</strong>
+        <small>ASSIST</small>
+      </div>
 
       <div class="stat-box">
-
-        <div class="stat-icon">
-          ↗
-        </div>
-
-        <strong>0</strong>
-
-        <small>ASSIST</small>
-
+        <span class="stat-icon">⏱</span>
+        <strong>545</strong>
+        <small>MINUTI</small>
       </div>
 
     </div>
@@ -242,51 +211,44 @@
   </section>
 
 
-  <!-- =========================================================
-       CARRIERA
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- CARRIERA -->
+
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        02
-      </div>
+      <span class="section-number">03</span>
 
       <div>
-        <div class="section-label">
-          ARCHIVIO
-        </div>
-
+        <span class="section-label">ARCHIVIO</span>
         <h2>CARRIERA</h2>
       </div>
 
     </div>
 
 
+
     <div class="career-list">
 
 
-      <!-- =====================================================
-           2026/27 · JUVENTUS
-           ===================================================== -->
+
+      <!-- 2026/27 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <span class="career-year">2026/27</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
-            <a href="#">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -295,29 +257,28 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>5</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>5</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Europa League</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -325,25 +286,23 @@
       </div>
 
 
-      <!-- =====================================================
-           2025/26 · JUVENTUS
-           ===================================================== -->
+
+      <!-- 2025/26 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2025/26
-          </div>
+          <span class="career-year">2025/26</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
-            <a href="#">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -352,37 +311,35 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>37</span>
-            <span>2</span>
-            <span>4</span>
+            <strong>37</strong>
+            <strong>2</strong>
+            <strong>4</strong>
           </div>
-
-
-          <div class="career-row">
-            <span>Champions League</span>
-            <span>10</span>
-            <span>0</span>
-            <span>1</span>
-          </div>
-
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Champions League</span>
+            <strong>10</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -390,25 +347,23 @@
       </div>
 
 
-      <!-- =====================================================
-           2024/25 · JUVENTUS
-           ===================================================== -->
+
+      <!-- 2024/25 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2024/25</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
-            <a href="#">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -417,53 +372,49 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>29</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>29</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
-
-
-          <div class="career-row">
-            <span>Champions League</span>
-            <span>8</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
+          <div class="career-row">
+            <span>Champions League</span>
+            <strong>8</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
 
           <div class="career-row">
             <span>Supercoppa Italiana</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-            <span>Coppa del Mondo per Club</span>
-            <span>4</span>
-            <span>0</span>
-            <span>0</span>
+            <span>FIFA Club World Cup</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -471,23 +422,21 @@
       </div>
 
 
-      <!-- =====================================================
-           2023/24 · MILAN
-           ===================================================== -->
+
+      <!-- 2023/24 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2023/24
-          </div>
+          <span class="career-year">2023/24</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/milan.png"
-              alt="Milan">
+              alt="Milan"
+            >
 
             <a href="#">
               MILAN
@@ -498,37 +447,35 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>9</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>9</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Champions League</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Europa League</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -536,23 +483,21 @@
       </div>
 
 
-      <!-- =====================================================
-           2022/23 · MILAN
-           ===================================================== -->
+
+      <!-- 2022/23 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2022/23
-          </div>
+          <span class="career-year">2022/23</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/milan.png"
-              alt="Milan">
+              alt="Milan"
+            >
 
             <a href="#">
               MILAN
@@ -563,45 +508,42 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>34</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>34</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Champions League</span>
-            <span>10</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>10</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Supercoppa Italiana</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -609,23 +551,21 @@
       </div>
 
 
-      <!-- =====================================================
-           2021/22 · MILAN
-           ===================================================== -->
+
+      <!-- 2021/22 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2021/22
-          </div>
+          <span class="career-year">2021/22</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/milan.png"
-              alt="Milan">
+              alt="Milan"
+            >
 
             <a href="#">
               MILAN
@@ -636,37 +576,35 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>28</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>28</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Champions League</span>
-            <span>5</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>5</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>4</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -674,23 +612,21 @@
       </div>
 
 
-      <!-- =====================================================
-           2020/21 · MILAN
-           ===================================================== -->
+
+      <!-- 2020/21 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
-          </div>
+          <span class="career-year">2020/21</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/milan.png"
-              alt="Milan">
+              alt="Milan"
+            >
 
             <a href="#">
               MILAN
@@ -701,37 +637,35 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>13</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>13</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Europa League</span>
-            <span>4</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
-
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -739,26 +673,24 @@
       </div>
 
 
-      <!-- =====================================================
-           2019/20 · LYON II
-           ===================================================== -->
+
+      <!-- 2019/20 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2019/20
-          </div>
+          <span class="career-year">2019/20</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/lyon.png"
-              alt="Olympique Lyonnais">
+              alt="Lyon"
+            >
 
             <a href="#">
-              OLYMPIQUE LYONNAIS II
+              LYON B
             </a>
 
           </div>
@@ -766,21 +698,21 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
-
           <div class="career-row">
-            <span>Championnat National 2</span>
-            <span>19</span>
-            <span>0</span>
-            <span>0</span>
+            <span>National 2</span>
+            <strong>19</strong>
+            <strong>0</strong>
+            <strong>—</strong>
           </div>
 
         </div>
@@ -788,26 +720,24 @@
       </div>
 
 
-      <!-- =====================================================
-           2018/19 · LYON II
-           ===================================================== -->
+
+      <!-- 2018/19 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2018/19
-          </div>
+          <span class="career-year">2018/19</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/lyon.png"
-              alt="Olympique Lyonnais">
+              alt="Lyon"
+            >
 
             <a href="#">
-              OLYMPIQUE LYONNAIS II
+              LYON B
             </a>
 
           </div>
@@ -815,97 +745,66 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
-
 
           <div class="career-row">
-            <span>Championnat National 2</span>
-            <span>17</span>
-            <span>0</span>
-            <span>0</span>
+            <span>National 2</span>
+            <strong>17</strong>
+            <strong>0</strong>
+            <strong>—</strong>
           </div>
 
         </div>
 
       </div>
 
-
     </div>
 
-  </section>
 
 
-  <!-- =========================================================
-       NAZIONALE
-       ========================================================= -->
-
-  <section class="player-section">
-
-    <div class="section-heading">
-
-      <div class="section-number">
-        03
-      </div>
-
-      <div>
-        <div class="section-label">
-          NAZIONALE
-        </div>
-
-        <h2>FRANCIA</h2>
-      </div>
-
-    </div>
-
+    <!-- NAZIONALE -->
 
     <div class="career-national">
 
       <div class="career-national-header">
 
-        <div class="career-national-label">
-          NAZIONALE MAGGIORE
-        </div>
-
+        <span class="career-national-label">NAZIONALE</span>
 
         <div class="career-national-team">
 
-          <div class="national-flag">
-            🇫🇷
-          </div>
+          <span class="national-flag">🇫🇷</span>
 
-          <a href="#">
+          <a href="francia.html">
             FRANCIA
           </a>
 
-        </div>
+          <span class="national-period">2025–</span>
 
-
-        <div class="national-period">
-          2025 — OGGI
         </div>
 
       </div>
+
 
 
       <div class="career-national-stats">
 
         <div class="national-stat">
 
-          <span>◎</span>
+          <span>🏟️</span>
 
           <strong>3</strong>
 
           <small>PRESENZE</small>
 
         </div>
-
 
         <div class="national-stat">
 
@@ -924,107 +823,86 @@
   </section>
 
 
-  <!-- =========================================================
-       PARTITE
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- PARTITE -->
+
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        04
-      </div>
+      <span class="section-number">04</span>
 
       <div>
-        <div class="section-label">
-          ARCHIVIO
-        </div>
-
+        <span class="section-label">ARCHIVIO</span>
         <h2>PARTITE</h2>
       </div>
 
     </div>
 
-
     <div class="archive-placeholder">
-
-      PARTITE DEL GIOCATORE · ARCHIVIO IN ARRIVO
-
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
 
-  <!-- =========================================================
-       STORIA
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- STORIA -->
+
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        05
-      </div>
+      <span class="section-number">05</span>
 
       <div>
-        <div class="section-label">
-          STORIA
-        </div>
-
-        <h2>LA SUA<br>STORIA</h2>
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
 
 
+
     <div class="story-content">
 
-
       <div class="story-intro">
-
-        <span>01</span>
-
-        <h3>
-          DA LIONE<br>
-          A TORINO
-        </h3>
-
+        <span>PIERRE KALULU</span>
+        <h3>Dalla formazione al Lyon allo Scudetto con il Milan.</h3>
       </div>
-
 
       <div class="story-text">
 
         <p>
-          Nato a Lione il 5 giugno 2000, Pierre Kalulu cresce nel settore
-          giovanile dell'Olympique Lyonnais, costruendo il proprio percorso
-          tra le giovanili del club francese.
+          Nato a Lione il 5 giugno 2000, Pierre Kalulu cresce nel
+          settore giovanile dell'Olympique Lyonnais, completando
+          il proprio percorso nelle squadre giovanili e nella
+          seconda squadra del club francese.
         </p>
 
         <p>
-          Nell'estate del 2020 lascia la Francia e approda al Milan.
-          A San Siro trova progressivamente spazio grazie alla propria
-          duttilità: può giocare come terzino destro, ma anche al centro
-          della difesa.
+          Nel 2020 arriva al Milan e debutta rapidamente in Serie A.
+          La sua duttilità gli permette di giocare sia da difensore
+          centrale sia da terzino, diventando progressivamente una
+          presenza importante nella squadra rossonera.
         </p>
 
         <p>
-          La stagione 2021/22 rappresenta il primo grande traguardo della
-          sua carriera. Kalulu contribuisce alla conquista dello Scudetto
-          del Milan, affermandosi definitivamente nel calcio italiano.
+          La stagione 2021/22 rappresenta il momento della
+          consacrazione. Kalulu trova continuità nella difesa del
+          Milan e conquista lo Scudetto, il primo grande trofeo
+          della sua carriera.
         </p>
 
         <p>
-          Dopo quattro stagioni in rossonero, nel 2024 passa alla Juventus.
-          A Torino continua il proprio percorso come difensore polivalente,
-          con la fascia destra e il centro della difesa come principali
-          interpretazioni del suo ruolo.
+          Dopo quattro stagioni in rossonero, nell'estate 2024
+          passa alla Juventus in prestito. Le sue prestazioni
+          convincono il club bianconero a renderne definitivo
+          il trasferimento nel 2025.
         </p>
-
 
         <a href="#" class="story-link">
-          LEGGI LA STORIA COMPLETA →
+          LEGGI LA STORIA →
         </a>
 
       </div>
@@ -1033,22 +911,21 @@
 
   </section>
 
+</main>
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
 
-  <footer class="site-footer">
 
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
+<footer class="site-footer">
 
-    <div class="footer-copy">
-      © 2026 Pages Of Football
-    </div>
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
 
-  </footer>
+  <div class="footer-copy">
+    FOOTBALL · HISTORY · STORIES
+  </div>
+
+</footer>
 
 </body>
 </html>
