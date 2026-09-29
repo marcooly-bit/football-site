@@ -380,11 +380,98 @@
 }
 
 
-/* PUNTA */
+/* =========================================================
+   POSIZIONI
+   ========================================================= */
 
-.pitch-player.striker {
+/* PORTIERE */
+
+.pitch-player.goalkeeper {
   left: 50%;
-  top: 10%;
+  top: 88%;
+}
+
+
+/* DIFENSORE CENTRALE */
+
+.pitch-player.center-back-left {
+  left: 42%;
+  top: 70%;
+}
+
+.pitch-player.center-back-right {
+  left: 58%;
+  top: 70%;
+}
+
+
+/* TERZINO DESTRO */
+
+.pitch-player.right-back {
+  left: 82%;
+  top: 68%;
+}
+
+
+/* TERZINO SINISTRO */
+
+.pitch-player.left-back {
+  left: 18%;
+  top: 68%;
+}
+
+
+/* CENTROCAMPISTA DIFENSIVO
+   DAVANTI ALLA DIFESA */
+
+.pitch-player.defensive-midfielder {
+  left: 50%;
+  top: 58%;
+}
+
+
+/* CENTROCAMPISTA
+   CENTRO DEL CENTROCAMPO */
+
+.pitch-player.central-midfielder {
+  left: 50%;
+  top: 48%;
+}
+
+
+/* ESTERNO DESTRO
+   SULLA LINEA DI CENTROCAMPO */
+
+.pitch-player.right-midfielder {
+  left: 84%;
+  top: 50%;
+}
+
+
+/* ESTERNO SINISTRO
+   SULLA LINEA DI CENTROCAMPO */
+
+.pitch-player.left-midfielder {
+  left: 16%;
+  top: 50%;
+}
+
+
+/* ALA DESTRA
+   PIÙ ALTA */
+
+.pitch-player.right-winger {
+  left: 84%;
+  top: 27%;
+}
+
+
+/* ALA SINISTRA
+   PIÙ ALTA */
+
+.pitch-player.left-winger {
+  left: 16%;
+  top: 27%;
 }
 
 
@@ -396,21 +483,11 @@
 }
 
 
-/* ESTERNO DESTRO
-   SULLA LINEA DI CENTROCAMPO */
+/* PUNTA */
 
-.pitch-player.right-wing {
-  left: 84%;
-  top: 50%;
-}
-
-
-/* ALA DESTRA
-   RUOLO PREFERITO, PIÙ ALTA */
-
-.pitch-player.right-winger {
-  left: 84%;
-  top: 27%;
+.pitch-player.striker {
+  left: 50%;
+  top: 10%;
 }
 
 
