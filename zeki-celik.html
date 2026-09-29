@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -11,53 +10,63 @@
   <link rel="stylesheet" href="player.css">
 </head>
 
-<body class="player-page">
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
+
+  <div class="season-label">2026/27</div>
+</header>
+
+<main class="player-page">
+
 
   <!-- =========================================================
        HERO
        ========================================================= -->
 
-  <section class="player-hero juventus">
+  <section class="player-hero">
 
     <div class="player-hero-photo">
-
-      <div class="player-number">02</div>
+      <div class="player-number">2</div>
 
       <img
-        src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656740/players/celik.png"
-        alt="Zeki Çelik">
-
+        src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/v1789656740/players/celik.png"
+        alt="Zeki Çelik"
+      >
     </div>
 
 
     <div class="player-hero-main">
 
-      <div class="player-eyebrow">
-        JUVENTUS · 2026/27
-      </div>
+      <div class="player-eyebrow">JUVENTUS</div>
 
-      <h1>Zeki Çelik</h1>
+      <h1>ZEKI ÇELIK</h1>
 
       <div class="player-role">
-        Difensore
+        DIFENSORE · TERZINO DESTRO
       </div>
 
-      <div class="player-club">
-
-        <img
-          src="images/teams/juventus.png"
-          alt="Juventus">
-
-        <span>Juventus</span>
-
-      </div>
+      <a href="juventus26-27.html" class="player-club">
+        <img src="images/teams/juventus.png" alt="Juventus">
+        <span>JUVENTUS</span>
+      </a>
 
 
       <div class="player-data">
 
         <div class="data-item">
           <span>DATA DI NASCITA</span>
-          <strong>11.02.1997</strong>
+          <strong>11 FEB 1997</strong>
         </div>
 
         <div class="data-item">
@@ -66,25 +75,27 @@
         </div>
 
         <div class="data-item">
-          <span>ALTEZZA</span>
-          <strong>1.80 m</strong>
+          <span>NAZIONALITÀ</span>
+          <strong class="nationalities">
+            <span>🇹🇷 TURCHIA</span>
+          </strong>
         </div>
 
         <div class="data-item">
-          <span>NAZIONALITÀ</span>
-          <strong>Turchia</strong>
+          <span>ALTEZZA</span>
+          <strong>180 CM</strong>
         </div>
 
         <div class="data-item">
           <span>PIEDE</span>
-          <strong>Destro</strong>
+          <strong>DESTRO</strong>
         </div>
 
-      </div>
+        <div class="data-item">
+          <span>AL JUVENTUS DAL</span>
+          <strong>2026</strong>
+        </div>
 
-
-      <div class="nationalities">
-        <span>TUR</span>
       </div>
 
     </div>
@@ -95,7 +106,6 @@
       <div class="football-pitch">
 
         <div class="pitch-halfway"></div>
-
         <div class="pitch-circle"></div>
 
         <div class="pitch-box pitch-box-top"></div>
@@ -104,16 +114,20 @@
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
+        <span
+          class="pitch-player secondary left-back"
+          title="Terzino sinistro"
+        ></span>
 
-        <div
+        <span
+          class="pitch-player secondary right-wing"
+          title="Esterno destro"
+        ></span>
+
+        <span
           class="pitch-player preferred right-back"
-          title="Terzino destro">
-        </div>
-
-        <div
-          class="pitch-player secondary right-midfielder"
-          title="Esterno destro">
-        </div>
+          title="Terzino destro"
+        ></span>
 
       </div>
 
@@ -126,48 +140,17 @@
        PALMARES
        ========================================================= -->
 
-  <section class="player-section player-honours">
+  <section class="player-honours">
 
-    <div class="section-heading">
+    <a href="#" class="honour-item" title="Ligue 1">
+      <span class="honour-logo">L1</span>
+      <strong>1</strong>
+    </a>
 
-      <div class="section-number">01</div>
-
-      <div>
-        <div class="section-label">PALMARES</div>
-        <h2>Trofei</h2>
-      </div>
-
-    </div>
-
-
-    <div class="honours-list">
-
-      <a href="#" class="honour-item">
-
-        <div class="honour-logo">
-          <img
-            src="images/trophies/ligue-1.png"
-            alt="Ligue 1">
-        </div>
-
-        <strong>1</strong>
-
-      </a>
-
-
-      <a href="#" class="honour-item">
-
-        <div class="honour-logo">
-          <img
-            src="images/trophies/trophee-des-champions.png"
-            alt="Trophée des Champions">
-        </div>
-
-        <strong>1</strong>
-
-      </a>
-
-    </div>
+    <a href="#" class="honour-item" title="Trophée des Champions">
+      <span class="honour-logo">TDC</span>
+      <strong>1</strong>
+    </a>
 
   </section>
 
@@ -176,20 +159,20 @@
        STATISTICHE
        ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">02</div>
+      <span class="section-number">02</span>
 
       <div>
-        <div class="section-label">STATISTICHE</div>
-        <h2>Stagione 2026/27</h2>
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
-      <div class="season-selector">
-        2026/27
-      </div>
+      <select class="season-selector">
+        <option>2026/27</option>
+      </select>
 
     </div>
 
@@ -197,46 +180,27 @@
     <div class="stats-grid">
 
       <div class="stat-box">
-
-        <div class="stat-icon">▣</div>
-
-        <strong>5</strong>
-
+        <span class="stat-icon">🏟️</span>
+        <strong>6</strong>
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <div class="stat-icon">●</div>
-
-        <strong>0</strong>
-
-        <small>GOL</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <div class="stat-icon">↗</div>
-
-        <strong>1</strong>
-
-        <small>ASSIST</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <div class="stat-icon">◷</div>
-
-        <strong>427</strong>
-
+        <span class="stat-icon">⏱️</span>
+        <strong>515</strong>
         <small>MINUTI</small>
+      </div>
 
+      <div class="stat-box">
+        <span class="stat-icon">⚽</span>
+        <strong>1</strong>
+        <small>GOL</small>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-icon">👟</span>
+        <strong>1</strong>
+        <small>ASSIST</small>
       </div>
 
     </div>
@@ -248,15 +212,15 @@
        CARRIERA
        ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">03</div>
+      <span class="section-number">03</span>
 
       <div>
-        <div class="section-label">CARRIERA</div>
-        <h2>Club</h2>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
       </div>
 
     </div>
@@ -265,24 +229,23 @@
     <div class="career-list">
 
 
-      <!-- 2026/27 -->
+      <!-- 2026/27 · JUVENTUS -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <span class="career-year">2026/27</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
             <a href="juventus26-27.html">
-              Juventus
+              JUVENTUS
             </a>
 
           </div>
@@ -294,16 +257,23 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Serie A</span>
-            <span>5</span>
-            <span>0</span>
-            <span>1</span>
+            <span>SERIE A</span>
+            <strong>5</strong>
+            <strong>0</strong>
+            <strong>1</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EUROPA LEAGUE</span>
+            <strong>1</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -311,24 +281,23 @@
       </div>
 
 
-      <!-- 2025/26 -->
+      <!-- 2025/26 · ROMA -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2025/26
-          </div>
+          <span class="career-year">2025/26</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/roma.png"
-              alt="Roma">
+              alt="Roma"
+            >
 
             <a href="#">
-              Roma
+              ROMA
             </a>
 
           </div>
@@ -340,30 +309,30 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Serie A</span>
-            <span>34</span>
-            <span>1</span>
-            <span>2</span>
+            <span>SERIE A</span>
+            <strong>34</strong>
+            <strong>1</strong>
+            <strong>2</strong>
           </div>
 
           <div class="career-row">
-            <span>Europa League</span>
-            <span>10</span>
-            <span>0</span>
-            <span>2</span>
+            <span>EUROPA LEAGUE</span>
+            <strong>10</strong>
+            <strong>0</strong>
+            <strong>2</strong>
           </div>
 
           <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <span>COPPA ITALIA</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -371,24 +340,23 @@
       </div>
 
 
-      <!-- 2024/25 -->
+      <!-- 2024/25 · ROMA -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2024/25</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/roma.png"
-              alt="Roma">
+              alt="Roma"
+            >
 
             <a href="#">
-              Roma
+              ROMA
             </a>
 
           </div>
@@ -400,30 +368,30 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Serie A</span>
-            <span>31</span>
-            <span>0</span>
-            <span>2</span>
+            <span>SERIE A</span>
+            <strong>30</strong>
+            <strong>0</strong>
+            <strong>2</strong>
           </div>
 
           <div class="career-row">
-            <span>Europa League</span>
-            <span>10</span>
-            <span>1</span>
-            <span>1</span>
+            <span>EUROPA LEAGUE</span>
+            <strong>9</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <span>COPPA ITALIA</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -431,24 +399,23 @@
       </div>
 
 
-      <!-- 2023/24 -->
+      <!-- 2023/24 · ROMA -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2023/24
-          </div>
+          <span class="career-year">2023/24</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/roma.png"
-              alt="Roma">
+              alt="Roma"
+            >
 
             <a href="#">
-              Roma
+              ROMA
             </a>
 
           </div>
@@ -460,30 +427,30 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Serie A</span>
-            <span>17</span>
-            <span>0</span>
-            <span>0</span>
+            <span>SERIE A</span>
+            <strong>20</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>Europa League</span>
-            <span>11</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EUROPA LEAGUE</span>
+            <strong>11</strong>
+            <strong>0</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <span>COPPA ITALIA</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -491,24 +458,23 @@
       </div>
 
 
-      <!-- 2022/23 -->
+      <!-- 2022/23 · ROMA -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2022/23
-          </div>
+          <span class="career-year">2022/23</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/roma.png"
-              alt="Roma">
+              alt="Roma"
+            >
 
             <a href="#">
-              Roma
+              ROMA
             </a>
 
           </div>
@@ -520,30 +486,37 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Serie A</span>
-            <span>24</span>
-            <span>0</span>
-            <span>1</span>
+            <span>SERIE A</span>
+            <strong>17</strong>
+            <strong>1</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
-            <span>Europa League</span>
-            <span>8</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EUROPA LEAGUE</span>
+            <strong>9</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <span>CONFERENCE LEAGUE</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>COPPA ITALIA</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -551,24 +524,23 @@
       </div>
 
 
-      <!-- 2021/22 -->
+      <!-- 2021/22 · LILLE -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2021/22
-          </div>
+          <span class="career-year">2021/22</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/lille.png"
-              alt="Lille">
+              alt="Lille"
+            >
 
             <a href="#">
-              Lille
+              LILLE
             </a>
 
           </div>
@@ -580,23 +552,30 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Ligue 1</span>
-            <span>32</span>
-            <span>2</span>
-            <span>1</span>
+            <span>LIGUE 1</span>
+            <strong>32</strong>
+            <strong>1</strong>
+            <strong>2</strong>
           </div>
 
           <div class="career-row">
-            <span>Champions League</span>
-            <span>7</span>
-            <span>0</span>
-            <span>0</span>
+            <span>CHAMPIONS LEAGUE</span>
+            <strong>7</strong>
+            <strong>0</strong>
+            <strong>1</strong>
+          </div>
+
+          <div class="career-row">
+            <span>COUPE DE FRANCE</span>
+            <strong>1</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -604,24 +583,23 @@
       </div>
 
 
-      <!-- 2020/21 -->
+      <!-- 2020/21 · LILLE -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
-          </div>
+          <span class="career-year">2020/21</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/lille.png"
-              alt="Lille">
+              alt="Lille"
+            >
 
             <a href="#">
-              Lille
+              LILLE
             </a>
 
           </div>
@@ -633,23 +611,30 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Ligue 1</span>
-            <span>29</span>
-            <span>3</span>
-            <span>2</span>
+            <span>LIGUE 1</span>
+            <strong>29</strong>
+            <strong>3</strong>
+            <strong>2</strong>
           </div>
 
           <div class="career-row">
-            <span>Europa League</span>
-            <span>2</span>
-            <span>0</span>
-            <span>1</span>
+            <span>EUROPA LEAGUE</span>
+            <strong>4</strong>
+            <strong>1</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>COUPE DE FRANCE</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -657,24 +642,23 @@
       </div>
 
 
-      <!-- 2019/20 -->
+      <!-- 2019/20 · LILLE -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2019/20
-          </div>
+          <span class="career-year">2019/20</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/lille.png"
-              alt="Lille">
+              alt="Lille"
+            >
 
             <a href="#">
-              Lille
+              LILLE
             </a>
 
           </div>
@@ -686,23 +670,30 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Ligue 1</span>
-            <span>23</span>
-            <span>0</span>
-            <span>2</span>
+            <span>LIGUE 1</span>
+            <strong>23</strong>
+            <strong>0</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
-            <span>Champions League</span>
-            <span>6</span>
-            <span>0</span>
-            <span>0</span>
+            <span>CHAMPIONS LEAGUE</span>
+            <strong>6</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>COUPE DE FRANCE</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -710,24 +701,23 @@
       </div>
 
 
-      <!-- 2018/19 -->
+      <!-- 2018/19 · LILLE -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2018/19
-          </div>
+          <span class="career-year">2018/19</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/lille.png"
-              alt="Lille">
+              alt="Lille"
+            >
 
             <a href="#">
-              Lille
+              LILLE
             </a>
 
           </div>
@@ -739,62 +729,23 @@
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
-            <span>Ligue 1</span>
-            <span>34</span>
-            <span>1</span>
-            <span>5</span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- 2017/18 -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2017/18
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/istanbulspor.png"
-              alt="İstanbulspor">
-
-            <a href="#">
-              İstanbulspor
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>LIGUE 1</span>
+            <strong>34</strong>
+            <strong>1</strong>
+            <strong>5</strong>
           </div>
 
           <div class="career-row">
-            <span>1. Lig</span>
-            <span>33</span>
-            <span>3</span>
-            <span>0</span>
+            <span>COUPE DE FRANCE</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -802,167 +753,46 @@
       </div>
 
 
-      <!-- 2016/17 -->
+      <!-- NAZIONALE -->
 
-      <div class="career-season">
+      <div class="career-national">
 
-        <div class="career-season-header">
+        <div class="career-national-header">
 
-          <div class="career-year">
-            2016/17
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/istanbulspor.png"
-              alt="İstanbulspor">
-
-            <a href="#">
-              İstanbulspor
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
-          </div>
-
-          <div class="career-row">
-            <span>2. Lig</span>
-            <span>31</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- 2015/16 -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2015/16
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/bursa-nilufer.png"
-              alt="Bursa Nilüferspor">
-
-            <a href="#">
-              Bursa Nilüferspor
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
-          </div>
-
-          <div class="career-row">
-            <span>3. Lig</span>
-            <span>34</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================================================
-       NAZIONALE
-       ========================================================= -->
-
-  <section class="player-section">
-
-    <div class="section-heading">
-
-      <div class="section-number">04</div>
-
-      <div>
-        <div class="section-label">NAZIONALE</div>
-        <h2>Turchia</h2>
-      </div>
-
-    </div>
-
-
-    <div class="career-national">
-
-      <div class="career-national-header">
-
-        <div class="career-national-label">
-          NAZIONALE
-        </div>
-
-        <div class="career-national-team">
-
-          <div class="national-flag">
-            🇹🇷
-          </div>
-
-          <a href="#">
-            Turchia
-          </a>
-
-          <span class="national-period">
-            2018–
+          <span class="career-national-label">
+            NAZIONALE
           </span>
 
+          <div class="career-national-team">
+
+            <span class="national-flag">🇹🇷</span>
+
+            <a href="#">
+              TURCHIA
+            </a>
+
+            <span class="national-period">
+              2018–
+            </span>
+
+          </div>
+
         </div>
 
-      </div>
 
+        <div class="career-national-stats">
 
-      <div class="career-national-stats">
+          <div class="national-stat">
+            <span class="stat-icon">🏟️</span>
+            <strong>65</strong>
+            <small>PRESENZE</small>
+          </div>
 
-        <div class="national-stat">
-
-          <span>▣</span>
-
-          <strong>59</strong>
-
-          <small>PRESENZE</small>
-
-        </div>
-
-
-        <div class="national-stat">
-
-          <span>●</span>
-
-          <strong>3</strong>
-
-          <small>GOL</small>
+          <div class="national-stat">
+            <span class="stat-icon">⚽</span>
+            <strong>3</strong>
+            <small>GOL</small>
+          </div>
 
         </div>
 
@@ -977,22 +807,21 @@
        PARTITE
        ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">05</div>
+      <span class="section-number">04</span>
 
       <div>
-        <div class="section-label">PARTITE</div>
-        <h2>Le sue partite</h2>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
 
-
     <div class="archive-placeholder">
-      PROSSIMAMENTE
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
@@ -1002,15 +831,15 @@
        STORIA
        ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">06</div>
+      <span class="section-number">05</span>
 
       <div>
-        <div class="section-label">LA SUA STORIA</div>
-        <h2>Dalla Turchia alla Juventus</h2>
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
@@ -1020,11 +849,10 @@
 
       <div class="story-intro">
 
-        <span>IL PERCORSO</span>
+        <span class="player-name">ZEKI ÇELIK</span>
 
         <h3>
-          Dalle categorie turche alla Ligue 1,
-          fino alla Serie A.
+          Dalla Turchia alla Juventus, passando per Lille e Roma
         </h3>
 
       </div>
@@ -1033,35 +861,44 @@
       <div class="story-text">
 
         <p>
-          Nato a Yıldırım, nella provincia di Bursa, Zeki Çelik muove i primi
-          passi nel calcio professionistico nelle categorie inferiori turche.
-          Dopo l'esperienza con il Bursa Nilüferspor, si afferma
-          all'İstanbulspor.
+          Zeki Çelik nasce a Yıldırım, in Turchia, l'11 febbraio 1997.
+          Dopo la formazione nel calcio turco, si mette in evidenza
+          con l'Istanbulspor, guadagnandosi rapidamente un posto
+          importante sulla fascia destra.
         </p>
 
         <p>
-          Nel 2018 arriva il passaggio al Lille. In Francia Çelik diventa
-          rapidamente il titolare della fascia destra e affronta per la prima
-          volta stabilmente il calcio dei grandi campionati europei.
+          Nel 2018 arriva in Francia, al Lille. La sua prima stagione
+          in Ligue 1 lo consacra come uno dei giovani terzini più
+          interessanti del campionato e gli apre le porte della
+          nazionale turca.
         </p>
 
         <p>
-          La stagione 2020/21 rappresenta uno dei momenti più importanti del
-          suo percorso: il Lille conquista la Ligue 1 e Çelik contribuisce alla
-          stagione con 29 presenze di campionato.
+          A Lille costruisce la parte più importante della prima fase
+          della sua carriera. Nel 2020/21 contribuisce alla conquista
+          della Ligue 1 e della Supercoppa di Francia, prima di
+          misurarsi anche con la Champions League.
         </p>
 
         <p>
-          Nel 2022 arriva in Italia per trasferirsi alla Roma. Nella capitale
-          costruisce quattro stagioni di Serie A e competizioni europee,
-          raggiungendo nel 2025 le 100 presenze ufficiali con il club.
+          Nel 2022 si trasferisce alla Roma. In quattro stagioni
+          nella capitale italiana accumula una lunga esperienza in
+          Serie A e nelle competizioni europee, diventando anche
+          uno dei giocatori più esperti della nazionale turca.
         </p>
 
         <p>
-          Nell'estate 2026 arriva la Juventus. Il trasferimento porta a Torino
-          un giocatore con esperienza internazionale e oltre un centinaio di
-          partite disputate nel massimo campionato italiano.
+          Nell'estate del 2026 arriva il trasferimento alla Juventus.
+          Çelik approda a Torino con il numero 2 e con la possibilità
+          di aprire un nuovo capitolo della propria carriera,
+          mettendo a disposizione della squadra la sua duttilità
+          sulla fascia.
         </p>
+
+        <a href="storie.html" class="story-link">
+          SCOPRI ALTRE STORIE →
+        </a>
 
       </div>
 
@@ -1070,22 +907,20 @@
   </section>
 
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
+</main>
 
-  <footer class="site-footer">
 
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
+<footer class="site-footer">
 
-    <div class="footer-copy">
-      PLAYER ARCHIVE
-    </div>
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
 
-  </footer>
+  <div class="footer-copy">
+    FOOTBALL · HISTORY · STORIES
+  </div>
 
+</footer>
 
 </body>
 </html>
