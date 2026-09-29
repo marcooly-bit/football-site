@@ -20,15 +20,11 @@
   <nav class="main-nav">
     <a href="index.html">HOME</a>
     <a href="squadre.html">SQUADRE</a>
-    <a href="giocatori.html">GIOCATORI</a>
-    <a href="competizioni.html">COMPETIZIONI</a>
-    <a href="almanacco.html">ALMANACCO</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
   </nav>
 
-  <button class="search-btn" aria-label="Cerca">
-    <span></span>
-    <span></span>
-  </button>
+  <div class="season-label">2026/27</div>
 </header>
 
 
@@ -39,12 +35,14 @@
   <section class="player-hero">
 
     <div class="player-hero-photo">
+
       <div class="player-number">17</div>
 
       <img
-        src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/michael-olise.png"
+        src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1790242664/aleix-garcia.webp"
         alt="Michael Olise"
       >
+
     </div>
 
 
@@ -54,48 +52,45 @@
         FC BAYERN MÜNCHEN
       </div>
 
-      <h1>
-        MICHAEL<br>
-        OLISE
-      </h1>
+      <h1>MICHAEL OLISE</h1>
 
       <div class="player-role">
         ATTACCANTE · ALA DESTRA
       </div>
 
-      <a href="bayern-monaco26-27.html" class="player-current-club">
+      <a href="bayern-monaco26-27.html" class="player-club">
         FC BAYERN MÜNCHEN
       </a>
 
 
       <div class="player-data">
 
-        <div class="player-data-item">
+        <div class="data-item">
           <span>DATA DI NASCITA</span>
           <strong>12 DIC 2001</strong>
         </div>
 
-        <div class="player-data-item">
+        <div class="data-item">
           <span>ETÀ</span>
           <strong>24</strong>
         </div>
 
-        <div class="player-data-item">
+        <div class="data-item">
           <span>NAZIONALITÀ</span>
           <strong>FRANCIA</strong>
         </div>
 
-        <div class="player-data-item">
+        <div class="data-item">
           <span>ALTEZZA</span>
           <strong>180 CM</strong>
         </div>
 
-        <div class="player-data-item">
+        <div class="data-item">
           <span>PIEDE</span>
           <strong>SINISTRO</strong>
         </div>
 
-        <div class="player-data-item">
+        <div class="data-item">
           <span>AL BAYERN DAL</span>
           <strong>2024</strong>
         </div>
@@ -105,37 +100,43 @@
     </div>
 
 
-    <!-- MINI PITCH -->
+    <!-- POSIZIONI -->
 
     <div class="player-position">
 
-      <div class="position-label">
-        POSIZIONE
-      </div>
-
-      <div class="pitch">
+      <div class="football-pitch">
 
         <div class="pitch-halfway"></div>
-        <div class="pitch-center-circle"></div>
-        <div class="pitch-center-dot"></div>
-
+        <div class="pitch-circle"></div>
         <div class="pitch-box pitch-box-top"></div>
         <div class="pitch-box pitch-box-bottom"></div>
-
-        <div class="pitch-small-box pitch-small-box-top"></div>
-        <div class="pitch-small-box pitch-small-box-bottom"></div>
-
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
-        <div class="pitch-player attacker">
-          <span>17</span>
-        </div>
+        <!-- PUNTA -->
+        <span
+          class="pitch-player secondary striker"
+          title="Punta"
+        ></span>
 
-      </div>
+        <!-- TREQUARTISTA -->
+        <span
+          class="pitch-player secondary attacking-mid"
+          title="Trequartista"
+        ></span>
 
-      <div class="position-name">
-        ALA DESTRA
+        <!-- ESTERNO DESTRO -->
+        <span
+          class="pitch-player secondary right-wing"
+          title="Esterno destro"
+        ></span>
+
+        <!-- ALA DESTRA · RUOLO PREFERITO -->
+        <span
+          class="pitch-player preferred right-winger"
+          title="Ala destra"
+        ></span>
+
       </div>
 
     </div>
@@ -147,37 +148,25 @@
 
   <section class="player-honours">
 
-    <div class="honours-list">
+    <a href="#" class="honour-item" title="Bundesliga">
+      <span class="honour-logo">BL</span>
+      <strong>1</strong>
+    </a>
 
-      <a href="#" class="honour-item" title="Bundesliga">
-        <div class="honour-logo">
-          <span>BL</span>
-        </div>
-        <strong>1</strong>
-      </a>
+    <a href="#" class="honour-item" title="DFB-Pokal">
+      <span class="honour-logo">DFB</span>
+      <strong>1</strong>
+    </a>
 
-      <a href="#" class="honour-item" title="DFB-Pokal">
-        <div class="honour-logo">
-          <span>DFB</span>
-        </div>
-        <strong>1</strong>
-      </a>
+    <a href="#" class="honour-item" title="DFL-Supercup">
+      <span class="honour-logo">SC</span>
+      <strong>1</strong>
+    </a>
 
-      <a href="#" class="honour-item" title="DFL-Supercup">
-        <div class="honour-logo">
-          <span>SC</span>
-        </div>
-        <strong>1</strong>
-      </a>
-
-      <a href="#" class="honour-item" title="Medaglia d'argento olimpica">
-        <div class="honour-logo">
-          <span>OL</span>
-        </div>
-        <strong>1</strong>
-      </a>
-
-    </div>
+    <a href="#" class="honour-item" title="Medaglia d'argento olimpica">
+      <span class="honour-logo">OL</span>
+      <strong>1</strong>
+    </a>
 
   </section>
 
@@ -187,34 +176,48 @@
   <section class="player-section player-stats">
 
     <div class="section-heading">
-      <span>02</span>
-      <h2>STATISTICHE STAGIONALI</h2>
+
+      <span class="section-number">02</span>
+
+      <div>
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
+      </div>
+
+      <select class="season-selector">
+        <option selected>2026/27</option>
+        <option>2025/26</option>
+        <option>2024/25</option>
+        <option>2023/24</option>
+      </select>
+
     </div>
 
-    <div class="season-selector">
-      <span>2025/26</span>
-    </div>
 
     <div class="stats-grid">
 
-      <div class="stat-item">
-        <span>PRESENZE</span>
+      <div class="stat-box">
+        <span class="stat-icon">🏟️</span>
         <strong>—</strong>
+        <small>PRESENZE</small>
       </div>
 
-      <div class="stat-item">
-        <span>GOL</span>
+      <div class="stat-box">
+        <span class="stat-icon">⚽</span>
         <strong>—</strong>
+        <small>GOL</small>
       </div>
 
-      <div class="stat-item">
-        <span>ASSIST</span>
+      <div class="stat-box">
+        <span class="stat-icon">👟</span>
         <strong>—</strong>
+        <small>ASSIST</small>
       </div>
 
-      <div class="stat-item">
-        <span>MINUTI</span>
+      <div class="stat-box">
+        <span class="stat-icon">⏱</span>
         <strong>—</strong>
+        <small>MINUTI</small>
       </div>
 
     </div>
@@ -227,181 +230,429 @@
   <section class="player-section player-career">
 
     <div class="section-heading">
-      <span>03</span>
-      <h2>CARRIERA</h2>
+
+      <span class="section-number">03</span>
+
+      <div>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
+      </div>
+
     </div>
 
 
-    <div class="career-table">
-
-      <div class="career-header">
-        <span>STAGIONE</span>
-        <span>CLUB</span>
-        <span>COMPETIZIONE</span>
-        <span>P</span>
-        <span>G</span>
-        <span>A</span>
-      </div>
+    <div class="career-list">
 
 
-      <div class="career-row">
+      <!-- 2026/27 -->
 
-        <span class="career-season">
-          2025/26
-        </span>
+      <div class="career-season">
 
-        <div class="career-club">
+        <div class="career-season-header">
 
-          <img
-            src="images/teams/bayern-monaco.png"
-            alt="FC Bayern München"
-          >
+          <span class="career-year">2026/27</span>
 
-          <a href="bayern-monaco26-27.html">
-            FC BAYERN MÜNCHEN
-          </a>
+          <div class="career-club">
+
+            <img
+              src="images/teams/bayern-monaco.png"
+              alt="Bayern München"
+            >
+
+            <a href="bayern-monaco26-27.html">
+              BAYERN MÜNCHEN
+            </a>
+
+          </div>
 
         </div>
 
-        <span>Bundesliga</span>
-        <span>—</span>
-        <span>—</span>
-        <span>—</span>
 
-      </div>
+        <div class="career-competitions">
 
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
 
-      <div class="career-row">
+          <div class="career-row">
+            <span>Bundesliga</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
 
-        <span class="career-season">
-          2024/25
-        </span>
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
 
-        <div class="career-club">
-
-          <img
-            src="images/teams/bayern-monaco.png"
-            alt="FC Bayern München"
-          >
-
-          <a href="bayern-monaco26-27.html">
-            FC BAYERN MÜNCHEN
-          </a>
+          <div class="career-row">
+            <span>Champions League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
 
         </div>
-
-        <span>Bundesliga</span>
-        <span>30</span>
-        <span>15</span>
-        <span>—</span>
 
       </div>
 
 
-      <div class="career-row">
+      <!-- 2025/26 -->
 
-        <span class="career-season">
-          2023/24
-        </span>
+      <div class="career-season">
 
-        <div class="career-club">
+        <div class="career-season-header">
 
-          <img
-            src="images/teams/crystal-palace.png"
-            alt="Crystal Palace"
-          >
+          <span class="career-year">2025/26</span>
 
-          <a href="#">
-            CRYSTAL PALACE
-          </a>
+          <div class="career-club">
+
+            <img
+              src="images/teams/bayern-monaco.png"
+              alt="Bayern München"
+            >
+
+            <a href="bayern-monaco26-27.html">
+              BAYERN MÜNCHEN
+            </a>
+
+          </div>
 
         </div>
 
-        <span>Premier League</span>
-        <span>19</span>
-        <span>10</span>
-        <span>6</span>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Bundesliga</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Champions League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+        </div>
 
       </div>
 
 
-      <div class="career-row">
+      <!-- 2024/25 -->
 
-        <span class="career-season">
-          2022/23
-        </span>
+      <div class="career-season">
 
-        <div class="career-club">
+        <div class="career-season-header">
 
-          <img
-            src="images/teams/crystal-palace.png"
-            alt="Crystal Palace"
-          >
+          <span class="career-year">2024/25</span>
 
-          <a href="#">
-            CRYSTAL PALACE
-          </a>
+          <div class="career-club">
+
+            <img
+              src="images/teams/bayern-monaco.png"
+              alt="Bayern München"
+            >
+
+            <a href="bayern-monaco26-27.html">
+              BAYERN MÜNCHEN
+            </a>
+
+          </div>
 
         </div>
 
-        <span>Premier League</span>
-        <span>37</span>
-        <span>2</span>
-        <span>11</span>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Bundesliga</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>DFB-Pokal</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Champions League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+        </div>
 
       </div>
 
 
-      <div class="career-row">
+      <!-- 2023/24 -->
 
-        <span class="career-season">
-          2021/22
-        </span>
+      <div class="career-season">
 
-        <div class="career-club">
+        <div class="career-season-header">
 
-          <img
-            src="images/teams/crystal-palace.png"
-            alt="Crystal Palace"
-          >
+          <span class="career-year">2023/24</span>
 
-          <a href="#">
-            CRYSTAL PALACE
-          </a>
+          <div class="career-club">
+
+            <img
+              src="images/teams/crystal-palace.png"
+              alt="Crystal Palace"
+            >
+
+            <a href="#">
+              CRYSTAL PALACE
+            </a>
+
+          </div>
 
         </div>
 
-        <span>Premier League</span>
-        <span>26</span>
-        <span>2</span>
-        <span>5</span>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Premier League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>FA Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EFL Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+        </div>
 
       </div>
 
 
-      <div class="career-row">
+      <!-- 2022/23 -->
 
-        <span class="career-season">
-          2020/21
-        </span>
+      <div class="career-season">
 
-        <div class="career-club">
+        <div class="career-season-header">
 
-          <img
-            src="images/teams/reading.png"
-            alt="Reading"
-          >
+          <span class="career-year">2022/23</span>
 
-          <a href="#">
-            READING
-          </a>
+          <div class="career-club">
+
+            <img
+              src="images/teams/crystal-palace.png"
+              alt="Crystal Palace"
+            >
+
+            <a href="#">
+              CRYSTAL PALACE
+            </a>
+
+          </div>
 
         </div>
 
-        <span>Championship</span>
-        <span>7</span>
-        <span>0</span>
-        <span>0</span>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Premier League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>FA Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EFL Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2021/22 -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <span class="career-year">2021/22</span>
+
+          <div class="career-club">
+
+            <img
+              src="images/teams/crystal-palace.png"
+              alt="Crystal Palace"
+            >
+
+            <a href="#">
+              CRYSTAL PALACE
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Premier League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>FA Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EFL Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- 2020/21 -->
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+
+          <span class="career-year">2020/21</span>
+
+          <div class="career-club">
+
+            <img
+              src="images/teams/reading.png"
+              alt="Reading"
+            >
+
+            <a href="#">
+              READING
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Championship</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>FA Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EFL Cup</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
+          </div>
+
+        </div>
 
       </div>
 
@@ -415,12 +666,18 @@
   <section class="player-section player-matches">
 
     <div class="section-heading">
-      <span>04</span>
-      <h2>PARTITE</h2>
+
+      <span class="section-number">04</span>
+
+      <div>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
+      </div>
+
     </div>
 
-    <div class="matches-empty">
-      <span>ARCHIVIO IN COSTRUZIONE</span>
+    <div class="archive-placeholder">
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
@@ -431,36 +688,34 @@
   <section class="player-section player-story">
 
     <div class="section-heading">
-      <span>05</span>
-      <h2>LA SUA STORIA</h2>
+
+      <span class="section-number">05</span>
+
+      <div>
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
+      </div>
+
     </div>
+
 
     <div class="story-content">
 
-      <div class="story-title">
-        DA LONDRA A MONACO,
-        <em>CON IL SINISTRO COME FIRMA.</em>
+      <div class="story-intro">
+        <span>MICHAEL OLISE</span>
+        <h3>Il talento francese arrivato a Monaco.</h3>
       </div>
 
       <div class="story-text">
-
         <p>
-          Michael Olise ha costruito il proprio percorso tra Inghilterra,
-          Francia e Premier League prima di arrivare al Bayern München.
-          Un talento mancino capace di trasformare la fascia destra
-          nel proprio territorio.
-        </p>
-
-        <p>
-          La sua storia racconta un giocatore cresciuto lontano dai
-          percorsi più lineari, fino a conquistare uno dei palcoscenici
-          più importanti del calcio europeo.
+          La storia di Michael Olise è quella di un giocatore cresciuto
+          attraverso percorsi differenti, fino ad arrivare ai massimi
+          livelli del calcio europeo.
         </p>
 
         <a href="#" class="story-link">
           LEGGI LA STORIA →
         </a>
-
       </div>
 
     </div>
@@ -472,9 +727,11 @@
 
 <footer class="site-footer">
 
-  <div>PAGES OF FOOTBALL</div>
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
 
-  <div>
+  <div class="footer-copy">
     FOOTBALL · HISTORY · STORIES
   </div>
 
