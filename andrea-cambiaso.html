@@ -10,11 +10,33 @@
   <link rel="stylesheet" href="player.css">
 </head>
 
-<body class="player-page">
+<body>
 
-  <!-- =========================================================
+<header class="site-header">
+
+  <div class="site-brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
+
+  <nav class="site-nav">
+    <a href="index.html">HOME</a>
+    <a href="teams.html">SQUADRE</a>
+    <a href="players.html" class="active">GIOCATORI</a>
+    <a href="stories.html">STORIE</a>
+  </nav>
+
+  <div class="site-season">
+    2026/27
+  </div>
+
+</header>
+
+
+<main class="player-page">
+
+  <!-- =====================================================
        HERO
-       ========================================================= -->
+       ===================================================== -->
 
   <section class="player-hero juventus">
 
@@ -24,39 +46,30 @@
 
       <img
         src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/players/cambiaso.png"
-        alt="Andrea Cambiaso">
+        alt="Andrea Cambiaso"
+      >
 
     </div>
 
 
     <div class="player-hero-main">
 
-      <div class="player-eyebrow">
-        JUVENTUS · 2026/27
+      <div class="player-kicker">
+        JUVENTUS
       </div>
 
-      <h1>Andrea<br>Cambiaso</h1>
+      <h1>ANDREA<br>CAMBIASO</h1>
 
-      <div class="player-role">
+      <div class="player-position">
         DIFENSORE
       </div>
-
-      <a href="#" class="player-club">
-
-        <img
-          src="images/teams/juventus.png"
-          alt="Juventus">
-
-        <span>JUVENTUS</span>
-
-      </a>
 
 
       <div class="player-data">
 
         <div class="data-item">
           <span>DATA DI NASCITA</span>
-          <strong>20.02.2000</strong>
+          <strong>20 FEB 2000</strong>
         </div>
 
         <div class="data-item">
@@ -66,17 +79,24 @@
 
         <div class="data-item">
           <span>NAZIONALITÀ</span>
-          <strong>Italia</strong>
+          <strong class="nationalities">
+            <span>🇮🇹 ITALIA</span>
+          </strong>
         </div>
 
         <div class="data-item">
           <span>ALTEZZA</span>
-          <strong>1.82 m</strong>
+          <strong>182 CM</strong>
         </div>
 
         <div class="data-item">
           <span>PIEDE</span>
-          <strong>Sinistro</strong>
+          <strong>AMBIDESTRO</strong>
+        </div>
+
+        <div class="data-item">
+          <span>ALLA JUVENTUS DAL</span>
+          <strong>2023</strong>
         </div>
 
       </div>
@@ -84,11 +104,7 @@
     </div>
 
 
-    <!-- =========================================================
-         POSIZIONE
-         ========================================================= -->
-
-    <div class="player-position">
+    <div class="player-hero-pitch">
 
       <div class="football-pitch">
 
@@ -96,26 +112,21 @@
         <div class="pitch-circle"></div>
 
         <div class="pitch-box pitch-box-top"></div>
-        <div class="pitch-box pitch-box-bottom"></div>
-
         <div class="pitch-goal pitch-goal-top"></div>
+
+        <div class="pitch-box pitch-box-bottom"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
 
-        <!-- RUOLO PRINCIPALE -->
-
-        <div
-          class="pitch-player preferred left-back"
+        <span
+          class="pitch-player left-back preferred"
           title="Terzino sinistro">
-        </div>
+        </span>
 
-
-        <!-- RUOLO SECONDARIO -->
-
-        <div
-          class="pitch-player secondary right-back"
+        <span
+          class="pitch-player right-back secondary"
           title="Terzino destro">
-        </div>
+        </span>
 
       </div>
 
@@ -124,135 +135,73 @@
   </section>
 
 
-  <!-- =========================================================
+  <!-- =====================================================
        PALMARES
-       ========================================================= -->
+       ===================================================== -->
 
   <section class="player-honours">
 
-    <div class="honour-item">
-
-      <div class="honour-logo">
-
-        <img
-          src="images/trophies/scudetto.png"
-          alt="Serie B">
-
-      </div>
-
+    <a href="#" class="honour-item" title="Serie B">
+      <span class="honour-logo">B</span>
       <strong>1</strong>
+    </a>
 
-      <span>SERIE B</span>
-
-    </div>
-
-
-    <div class="honour-item">
-
-      <div class="honour-logo">
-
-        <img
-          src="images/trophies/coppa-italia.png"
-          alt="Coppa Italia">
-
-      </div>
-
+    <a href="#" class="honour-item" title="Coppa Italia">
+      <span class="honour-logo">CI</span>
       <strong>1</strong>
-
-      <span>COPPA ITALIA</span>
-
-    </div>
+    </a>
 
   </section>
 
 
-  <!-- =========================================================
+  <!-- =====================================================
        STATISTICHE STAGIONALI
-       ========================================================= -->
+       ===================================================== -->
 
-  <section class="player-section">
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        01
-      </div>
+      <span class="section-number">02</span>
 
       <div>
-        <div class="section-label">
-          STAGIONE
-        </div>
-
-        <h2>STATISTICHE<br>STAGIONALI</h2>
+        <span class="section-kicker">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
-      <select class="season-selector">
-        <option selected>2026/27</option>
-        <option>2025/26</option>
-        <option>2024/25</option>
-        <option>2023/24</option>
-        <option>2022/23</option>
-        <option>2021/22</option>
-        <option>2020/21</option>
-        <option>2019/20</option>
-        <option>2018/19</option>
-        <option>2017/18</option>
-      </select>
+    </div>
+
+
+    <div class="season-selector">
+
+      <span class="season-label active">2026/27</span>
+      <span class="season-label">2025/26</span>
+      <span class="season-label">2024/25</span>
+      <span class="season-label">2023/24</span>
 
     </div>
 
 
     <div class="stats-grid">
 
-      <div class="stat-box">
-
-        <div class="stat-icon">
-          ◎
-        </div>
-
+      <div class="stat-item">
+        <span>PRESENZE</span>
         <strong>2</strong>
-
-        <small>PRESENZE</small>
-
       </div>
 
+      <div class="stat-item">
+        <span>GOL</span>
+        <strong>0</strong>
+      </div>
 
-      <div class="stat-box">
+      <div class="stat-item">
+        <span>ASSIST</span>
+        <strong>0</strong>
+      </div>
 
-        <div class="stat-icon">
-          ◷
-        </div>
-
+      <div class="stat-item">
+        <span>MINUTI</span>
         <strong>31</strong>
-
-        <small>MINUTI</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <div class="stat-icon">
-          ⚽
-        </div>
-
-        <strong>0</strong>
-
-        <small>GOL</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <div class="stat-icon">
-          ↗
-        </div>
-
-        <strong>0</strong>
-
-        <small>ASSIST</small>
-
       </div>
 
     </div>
@@ -260,660 +209,383 @@
   </section>
 
 
-  <!-- =========================================================
+  <!-- =====================================================
        CARRIERA
-       ========================================================= -->
+       ===================================================== -->
 
-  <section class="player-section">
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        02
-      </div>
+      <span class="section-number">03</span>
 
       <div>
-        <div class="section-label">
-          ARCHIVIO
-        </div>
-
+        <span class="section-kicker">IL PERCORSO</span>
         <h2>CARRIERA</h2>
       </div>
 
     </div>
 
 
-    <div class="career-list">
+    <div class="career-table">
 
+      <!-- 2026/27 -->
 
-      <!-- =====================================================
-           2026/27 · JUVENTUS
-           ===================================================== -->
+      <div class="career-row career-current">
 
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2026/27
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/juventus.png"
-              alt="Juventus">
-
-            <a href="#">
-              JUVENTUS
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2026/27
         </div>
 
+        <div class="career-club">
+          <a href="juventus26-27.html">JUVENTUS</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE A</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>2</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>0</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie A</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>0</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2025/26 · JUVENTUS
-           ===================================================== -->
+      <!-- 2025/26 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2025/26
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/juventus.png"
-              alt="Juventus">
-
-            <a href="#">
-              JUVENTUS
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2025/26
         </div>
 
+        <div class="career-club">
+          <a href="juventus25-26.html">JUVENTUS</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE A</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>36</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>3</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie A</span>
-            <span>36</span>
-            <span>3</span>
-            <span>4</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Champions League</span>
-            <span>9</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>4</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2024/25 · JUVENTUS
-           ===================================================== -->
+      <!-- 2024/25 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2024/25
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/juventus.png"
-              alt="Juventus">
-
-            <a href="#">
-              JUVENTUS
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2024/25
         </div>
 
+        <div class="career-club">
+          <a href="juventus24-25.html">JUVENTUS</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE A</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>33</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>2</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie A</span>
-            <span>33</span>
-            <span>2</span>
-            <span>3</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Champions League</span>
-            <span>11</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Supercoppa Italiana</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>3</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2023/24 · JUVENTUS
-           ===================================================== -->
+      <!-- 2023/24 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2023/24
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/juventus.png"
-              alt="Juventus">
-
-            <a href="#">
-              JUVENTUS
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2023/24
         </div>
 
+        <div class="career-club">
+          <a href="juventus23-24.html">JUVENTUS</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE A</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>34</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>2</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie A</span>
-            <span>34</span>
-            <span>2</span>
-            <span>3</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>5</span>
-            <span>1</span>
-            <span>3</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>3</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2022/23 · BOLOGNA
-           ===================================================== -->
+      <!-- 2022/23 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2022/23
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/bologna.png"
-              alt="Bologna">
-
-            <a href="#">
-              BOLOGNA
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2022/23
         </div>
 
+        <div class="career-club">
+          <a href="bologna22-23.html">BOLOGNA</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE A</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>32</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>0</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie A</span>
-            <span>32</span>
-            <span>0</span>
-            <span>3</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>3</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2021/22 · GENOA
-           ===================================================== -->
+      <!-- 2021/22 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2021/22
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/genoa.png"
-              alt="Genoa">
-
-            <a href="#">
-              GENOA
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2021/22
         </div>
 
+        <div class="career-club">
+          <a href="genoa21-22.html">GENOA</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE A</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>26</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>1</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie A</span>
-            <span>26</span>
-            <span>1</span>
-            <span>4</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>4</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2020/21 · EMPOLI
-           ===================================================== -->
+      <!-- 2020/21 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2020/21
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/empoli.png"
-              alt="Empoli">
-
-            <a href="#">
-              EMPOLI
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2020/21
         </div>
 
+        <div class="career-club">
+          <a href="empoli20-21.html">EMPOLI</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE B</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>7</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>0</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie B</span>
-            <span>7</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>0</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2019/20 · ALESSANDRIA
-           ===================================================== -->
+      <!-- 2019/20 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2019/20
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/alessandria.png"
-              alt="Alessandria">
-
-            <a href="#">
-              ALESSANDRIA
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2019/20
         </div>
 
+        <div class="career-club">
+          <a href="alessandria19-20.html">ALESSANDRIA</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE C</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>17</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>0</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie C</span>
-            <span>17</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>0</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2018/19 · SAVONA
-           ===================================================== -->
+      <!-- 2018/19 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2018/19
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/savona.png"
-              alt="Savona">
-
-            <a href="#">
-              SAVONA
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2018/19
         </div>
 
+        <div class="career-club">
+          <a href="savona18-19.html">SAVONA</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE D</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>32</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>2</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie D</span>
-            <span>32</span>
-            <span>2</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Play-off</span>
-            <span>4</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>—</strong>
         </div>
 
       </div>
 
 
-      <!-- =====================================================
-           2017/18 · ALBISSOLA
-           ===================================================== -->
+      <!-- 2017/18 -->
 
-      <div class="career-season">
+      <div class="career-row">
 
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2017/18
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/albissola.png"
-              alt="Albissola">
-
-            <a href="#">
-              ALBISSOLA
-            </a>
-
-          </div>
-
+        <div class="career-season">
+          2017/18
         </div>
 
+        <div class="career-club">
+          <a href="albissola17-18.html">ALBISSOLA</a>
+        </div>
 
-        <div class="career-competitions">
+        <div class="career-competition">
+          <span>SERIE D</span>
+        </div>
 
-          <div class="career-columns">
-            <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>ASSIST</span>
-          </div>
+        <div class="career-stat">
+          <span>PG</span>
+          <strong>21</strong>
+        </div>
 
+        <div class="career-stat">
+          <span>G</span>
+          <strong>0</strong>
+        </div>
 
-          <div class="career-row">
-            <span>Serie D</span>
-            <span>21</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
-
-          <div class="career-row">
-            <span>Poule Scudetto</span>
-            <span>3</span>
-            <span>0</span>
-            <span>0</span>
-          </div>
-
+        <div class="career-stat">
+          <span>A</span>
+          <strong>—</strong>
         </div>
 
       </div>
-
 
     </div>
 
-  </section>
 
+    <!-- =====================================================
+         NAZIONALE
+         ===================================================== -->
 
-  <!-- =========================================================
-       NAZIONALE
-       ========================================================= -->
+    <div class="national-career">
 
-  <section class="player-section">
+      <div class="national-heading">
 
-    <div class="section-heading">
-
-      <div class="section-number">
-        03
-      </div>
-
-      <div>
-        <div class="section-label">
+        <span class="national-label">
           NAZIONALE
-        </div>
+        </span>
 
-        <h2>ITALIA</h2>
-      </div>
+        <div class="national-team">
 
-    </div>
-
-
-    <div class="career-national">
-
-      <div class="career-national-header">
-
-        <div class="career-national-label">
-          NAZIONALE MAGGIORE
-        </div>
-
-
-        <div class="career-national-team">
-
-          <div class="national-flag">
-            🇮🇹
-          </div>
+          <span class="national-flag">🇮🇹</span>
 
           <a href="#">
             ITALIA
@@ -921,35 +593,23 @@
 
         </div>
 
-
-        <div class="national-period">
-          2024 — OGGI
-        </div>
-
       </div>
 
 
-      <div class="career-national-stats">
+      <div class="national-row">
 
-        <div class="national-stat">
-
-          <span>◎</span>
-
-          <strong>19</strong>
-
-          <small>PRESENZE</small>
-
+        <div class="national-period">
+          2024–
         </div>
 
+        <div class="national-stat">
+          <span>PRESENZE</span>
+          <strong>19</strong>
+        </div>
 
         <div class="national-stat">
-
-          <span>⚽</span>
-
+          <span>GOL</span>
           <strong>3</strong>
-
-          <small>GOL</small>
-
         </div>
 
       </div>
@@ -959,56 +619,81 @@
   </section>
 
 
-  <!-- =========================================================
+  <!-- =====================================================
        PARTITE
-       ========================================================= -->
+       ===================================================== -->
 
-  <section class="player-section">
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        04
-      </div>
+      <span class="section-number">04</span>
 
       <div>
-        <div class="section-label">
-          ARCHIVIO
-        </div>
-
+        <span class="section-kicker">IN CAMPO</span>
         <h2>PARTITE</h2>
       </div>
 
     </div>
 
 
-    <div class="archive-placeholder">
+    <div class="matches-list">
 
-      PARTITE DEL GIOCATORE · ARCHIVIO IN ARRIVO
+      <div class="match-row">
+
+        <div class="match-date">
+          27 SET 2026
+        </div>
+
+        <div class="match-teams">
+          <span>JUVENTUS</span>
+          <strong>—</strong>
+          <span>PARMA</span>
+        </div>
+
+        <div class="match-result">
+          SERIE A
+        </div>
+
+      </div>
+
+
+      <div class="match-row">
+
+        <div class="match-date">
+          20 SET 2026
+        </div>
+
+        <div class="match-teams">
+          <span>FROSINONE</span>
+          <strong>—</strong>
+          <span>JUVENTUS</span>
+        </div>
+
+        <div class="match-result">
+          SERIE A
+        </div>
+
+      </div>
 
     </div>
 
   </section>
 
 
-  <!-- =========================================================
-       STORIA
-       ========================================================= -->
+  <!-- =====================================================
+       LA SUA STORIA
+       ===================================================== -->
 
-  <section class="player-section">
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        05
-      </div>
+      <span class="section-number">05</span>
 
       <div>
-        <div class="section-label">
-          STORIA
-        </div>
-
-        <h2>LA SUA<br>STORIA</h2>
+        <span class="section-kicker">OLTRE I NUMERI</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
@@ -1016,59 +701,51 @@
 
     <div class="story-content">
 
+      <div class="story-image">
 
-      <div class="story-intro">
-
-        <span>01</span>
-
-        <h3>
-          DA GENOVA<br>
-          A TORINO
-        </h3>
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/players/cambiaso.png"
+          alt="Andrea Cambiaso"
+        >
 
       </div>
 
 
       <div class="story-text">
 
+        <span class="story-kicker">
+          DALLE CATEGORIE ALLA JUVENTUS
+        </span>
+
+        <h3>
+          ANDREA CAMBIASO
+        </h3>
+
         <p>
-          Andrea Cambiaso nasce a Genova il 20 febbraio 2000. Il suo percorso
-          nel calcio parte dalla Liguria e passa attraverso Albissola e Savona,
-          prima delle esperienze in Serie C con l'Alessandria e in Serie B
-          con l'Empoli.
+          Nato a Genova il 20 febbraio 2000, Andrea Cambiaso
+          costruisce il proprio percorso partendo dalle categorie
+          inferiori del calcio italiano.
         </p>
 
         <p>
-          Dopo essere cresciuto nel settore giovanile del Genoa, nel 2021
-          debutta in Serie A con il club rossoblù. È una stagione importante:
-          Cambiaso si afferma come esterno capace di interpretare entrambe
-          le fasce, giocando sia come terzino sia come quinto di centrocampo.
+          Dopo le esperienze con Albissola e Savona arriva
+          all'Alessandria, quindi all'Empoli, prima del salto
+          definitivo verso la Serie A con il Genoa.
         </p>
 
         <p>
-          Nel 2022 la Juventus lo acquista dal Genoa e lo manda in prestito
-          al Bologna. Al Dall'Ara disputa una stagione da protagonista,
-          collezionando 32 presenze in Serie A e mostrando una crescente
-          capacità di incidere anche nella fase offensiva.
+          La stagione al Bologna nel 2022/23 rappresenta il passaggio
+          che lo porta alla Juventus. Nell'estate 2023 veste per la
+          prima volta la maglia bianconera e diventa progressivamente
+          una delle soluzioni più versatili della squadra.
         </p>
 
         <p>
-          Nell'estate del 2023 torna a Torino e inizia la sua esperienza
-          stabile in bianconero. La sua duttilità gli permette di giocare
-          sulla fascia sinistra, sulla destra e, in alcune situazioni,
-          di occupare posizioni più avanzate.
+          Terzino di fascia sinistra, ma utilizzabile anche a destra,
+          Cambiaso ha costruito il proprio gioco sulla capacità di
+          occupare zone diverse del campo e di partecipare alla
+          costruzione dell'azione.
         </p>
-
-        <p>
-          Con la Juventus conquista la Coppa Italia 2023/24, il primo grande
-          trofeo della sua esperienza a Torino. Nel frattempo arriva anche
-          la nazionale maggiore italiana, con l'esordio nel marzo 2024.
-        </p>
-
-
-        <a href="#" class="story-link">
-          LEGGI LA STORIA COMPLETA →
-        </a>
 
       </div>
 
@@ -1077,21 +754,20 @@
   </section>
 
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
+</main>
 
-  <footer class="site-footer">
 
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
+<footer class="site-footer">
 
-    <div class="footer-copy">
-      © 2026 Pages Of Football
-    </div>
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
 
-  </footer>
+  <div class="footer-copy">
+    FOOTBALL HISTORY · DATA · STORIES
+  </div>
+
+</footer>
 
 </body>
 </html>
