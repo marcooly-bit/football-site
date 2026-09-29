@@ -1,11 +1,22 @@
 /* =========================================================
-   PLAYER PAGE
+   PAGES OF FOOTBALL · PLAYER PAGE
    ========================================================= */
 
-.player-page {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
   background: #121212;
-  color: #f4f3ef;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.player-page {
   min-height: 100vh;
+  background: #121212;
+  color: #ffffff;
 }
 
 
@@ -14,13 +25,11 @@
    ========================================================= */
 
 .player-hero {
-  max-width: 1400px;
-  min-height: 520px;
-  margin: 0 auto;
-
+  position: relative;
   display: grid;
   grid-template-columns: 27% 48% 25%;
-
+  min-height: 520px;
+  overflow: hidden;
   background:
     linear-gradient(
       110deg,
@@ -29,351 +38,278 @@
       #35090e 72%,
       #170506 100%
     );
-
-  border-bottom: 1px solid rgba(244, 243, 239, 0.15);
 }
 
 
-/* PHOTO */
+/* =========================================================
+   HERO · FOTO
+   ========================================================= */
 
 .player-hero-photo {
   position: relative;
-  overflow: hidden;
-
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.player-hero-photo::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  font-size: 330px;
+  font-weight: 900;
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.035);
+  pointer-events: none;
+}
+
+.player-hero-number {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  z-index: 1;
+  font-size: 180px;
+  font-weight: 900;
+  line-height: 0.8;
+  color: rgba(255, 255, 255, 0.055);
+  pointer-events: none;
 }
 
 .player-hero-photo img {
   position: relative;
   z-index: 2;
-
-  width: 88%;
-  max-width: 360px;
-  height: auto;
-
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 90%;
   object-fit: contain;
   object-position: bottom center;
-
-  filter: saturate(0.96);
-}
-
-.player-number {
-  position: absolute;
-
-  left: 50%;
-  bottom: 15px;
-
-  transform: translateX(-50%);
-
-  font-size: clamp(180px, 20vw, 310px);
-  line-height: 0.8;
-  font-weight: 800;
-
-  color: rgba(244, 243, 239, 0.035);
-
-  letter-spacing: -0.08em;
-
-  z-index: 1;
-}
-
-
-/* MAIN INFO */
-
-.player-hero-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 60px 50px;
-}
-
-.player-eyebrow {
-  margin-bottom: 15px;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-
-  opacity: 0.55;
-}
-
-.player-hero-main h1 {
-  margin: 0;
-
-  font-size: clamp(48px, 5vw, 86px);
-  line-height: 0.92;
-
-  font-weight: 800;
-  letter-spacing: -0.055em;
-}
-
-.player-role {
-  margin-top: 22px;
-
-  font-size: 13px;
-  font-weight: 700;
-
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-
-  opacity: 0.8;
-}
-
-
-/* CLUB + CREST */
-
-.player-club {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  width: fit-content;
-
-  margin-top: 10px;
-
-  color: #f4f3ef;
-  text-decoration: none;
-
-  font-size: 12px;
-  font-weight: 700;
-
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-
-  border-bottom: 1px solid rgba(244, 243, 239, 0.4);
-
-  padding-bottom: 5px;
-}
-
-.player-club img {
-  width: 24px;
-  height: 24px;
-
-  object-fit: contain;
-}
-
-.player-club span {
-  display: block;
-}
-
-.player-club:hover {
-  border-color: #f4f3ef;
-}
-
-
-/* DATA */
-
-.player-data {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
-  margin-top: 48px;
-
-  border-top: 1px solid rgba(244, 243, 239, 0.15);
-  border-left: 1px solid rgba(244, 243, 239, 0.15);
-}
-
-.data-item {
-  min-height: 72px;
-
-  padding: 14px 16px;
-
-  border-right: 1px solid rgba(244, 243, 239, 0.15);
-  border-bottom: 1px solid rgba(244, 243, 239, 0.15);
-}
-
-.data-item span {
-  display: block;
-
-  margin-bottom: 7px;
-
-  font-size: 9px;
-  font-weight: 700;
-
-  letter-spacing: 0.13em;
-
-  opacity: 0.45;
-}
-
-.data-item strong {
-  font-size: 13px;
-  font-weight: 600;
-
-  letter-spacing: 0.02em;
-}
-
-
-/* DUAL NATIONALITY */
-
-.nationalities {
-  display: flex;
-  flex-direction: column;
-
-  gap: 4px;
-}
-
-.nationalities span {
-  display: block;
-
-  margin: 0;
-
-  font-size: 13px;
-
-  letter-spacing: 0.02em;
-
-  opacity: 1;
 }
 
 
 /* =========================================================
-   FOOTBALL PITCH
+   HERO · MAIN
    ========================================================= */
 
-.player-position {
+.player-hero-main {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.player-hero-label {
+  margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.player-hero-main h1 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 88px);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.055em;
+  text-transform: uppercase;
+}
+
+.player-role {
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+
+/* =========================================================
+   HERO · CLUB
+   ========================================================= */
+
+.player-current-club {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  margin-top: 24px;
+}
 
-  padding: 50px;
+.player-current-club img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.player-current-club a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.player-current-club a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   HERO · DATA
+   ========================================================= */
+
+.player-data {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 1px;
+  width: 100%;
+  max-width: 720px;
+  margin-top: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.player-data-item {
+  min-height: 72px;
+  padding: 13px 12px;
+  background: rgba(18, 18, 18, 0.45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-data-label {
+  margin-bottom: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+.player-data-value {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO · PITCH
+   ========================================================= */
+
+.player-position {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
 }
 
 .football-pitch {
   position: relative;
-
   width: 210px;
   height: 300px;
-
-  border: 1px solid rgba(244, 243, 239, 0.55);
-
+  border: 1px solid rgba(255, 255, 255, 0.55);
   background:
     linear-gradient(
-      90deg,
-      rgba(255,255,255,0.025) 50%,
-      rgba(255,255,255,0.045) 50%
+      to right,
+      rgba(255, 255, 255, 0.035) 0,
+      rgba(255, 255, 255, 0.035) 50%,
+      rgba(0, 0, 0, 0.025) 50%,
+      rgba(0, 0, 0, 0.025) 100%
     );
-
-  overflow: hidden;
+  box-shadow:
+    inset 0 0 0 999px rgba(0, 0, 0, 0.04);
 }
 
 
-/* MIDFIELD LINE */
+/* linea centrale */
 
-.pitch-halfway {
+.football-pitch::before {
+  content: "";
   position: absolute;
-
   left: 0;
-  right: 0;
   top: 50%;
-
+  width: 100%;
   height: 1px;
-
-  background: rgba(244, 243, 239, 0.45);
+  background: rgba(255, 255, 255, 0.55);
 }
 
 
-/* CENTER CIRCLE */
+/* cerchio centrale */
 
-.pitch-circle {
+.football-pitch::after {
+  content: "";
   position: absolute;
-
-  width: 66px;
-  height: 66px;
-
   left: 50%;
   top: 50%;
-
+  width: 58px;
+  height: 58px;
   transform: translate(-50%, -50%);
-
-  border: 1px solid rgba(244, 243, 239, 0.45);
-
+  border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 50%;
 }
 
 
-/* PENALTY BOXES */
+/* =========================================================
+   PITCH · AREA
+   ========================================================= */
 
-.pitch-box {
+.pitch-penalty-top,
+.pitch-penalty-bottom {
   position: absolute;
-
   left: 50%;
-
   width: 92px;
-  height: 42px;
-
+  height: 50px;
   transform: translateX(-50%);
-
-  border: 1px solid rgba(244, 243, 239, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.55);
 }
 
-.pitch-box-top {
+.pitch-penalty-top {
   top: 0;
-  border-top: none;
+  border-top: 0;
 }
 
-.pitch-box-bottom {
+.pitch-penalty-bottom {
   bottom: 0;
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 
-/* GOALS */
-
-.pitch-goal {
-  position: absolute;
-
-  left: 50%;
-
-  width: 38px;
-  height: 10px;
-
-  transform: translateX(-50%);
-
-  border: 1px solid rgba(244, 243, 239, 0.45);
-}
-
-.pitch-goal-top {
-  top: 0;
-}
-
-.pitch-goal-bottom {
-  bottom: 0;
-}
-
-
-/* PLAYER MARKERS */
+/* =========================================================
+   PITCH · PLAYER MARKERS
+   ========================================================= */
 
 .pitch-player {
   position: absolute;
-
-  width: 15px;
-  height: 15px;
-
-  border-radius: 50%;
-
-  transform: translate(-50%, -50%);
-
   z-index: 5;
-
+  width: 17px;
+  height: 17px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
   border: 2px solid #121212;
-
-  box-shadow: 0 0 0 3px rgba(18,18,18,0.2);
-
-  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3);
 }
-
-
-/* PREFERRED ROLE */
 
 .pitch-player.preferred {
   background: #55c878;
 }
-
-
-/* SECONDARY ROLES */
 
 .pitch-player.secondary {
   background: #e1a13c;
@@ -381,7 +317,7 @@
 
 
 /* =========================================================
-   POSIZIONI
+   PITCH · POSITIONS
    ========================================================= */
 
 /* PORTIERE */
@@ -421,8 +357,7 @@
 }
 
 
-/* CENTROCAMPISTA DIFENSIVO
-   DAVANTI ALLA DIFESA */
+/* CENTROCAMPISTA DIFENSIVO */
 
 .pitch-player.defensive-midfielder {
   left: 50%;
@@ -430,8 +365,7 @@
 }
 
 
-/* CENTROCAMPISTA
-   CENTRO DEL CENTROCAMPO */
+/* CENTROCAMPISTA */
 
 .pitch-player.central-midfielder {
   left: 50%;
@@ -439,8 +373,7 @@
 }
 
 
-/* ESTERNO DESTRO
-   SULLA LINEA DI CENTROCAMPO */
+/* ESTERNO DESTRO */
 
 .pitch-player.right-midfielder {
   left: 84%;
@@ -448,8 +381,7 @@
 }
 
 
-/* ESTERNO SINISTRO
-   SULLA LINEA DI CENTROCAMPO */
+/* ESTERNO SINISTRO */
 
 .pitch-player.left-midfielder {
   left: 16%;
@@ -457,8 +389,7 @@
 }
 
 
-/* ALA DESTRA
-   PIÙ ALTA */
+/* ALA DESTRA */
 
 .pitch-player.right-winger {
   left: 84%;
@@ -466,8 +397,7 @@
 }
 
 
-/* ALA SINISTRA
-   PIÙ ALTA */
+/* ALA SINISTRA */
 
 .pitch-player.left-winger {
   left: 16%;
@@ -492,139 +422,82 @@
 
 
 /* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.player-section {
+  padding: 80px 7%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.player-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.player-section-kicker {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+.player-section h2 {
+  margin: 5px 0 0;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
    PALMARES
    ========================================================= */
 
 .player-honours {
-  max-width: 900px;
-
-  margin: 0 auto;
-
-  min-height: 100px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 34px;
-
-  border-bottom: 1px solid rgba(244, 243, 239, 0.12);
+  flex-wrap: wrap;
+  gap: 26px;
+  padding: 24px 0;
 }
 
-.honour-item {
+.honour {
   display: flex;
   align-items: center;
-  gap: 9px;
-
-  color: #f4f3ef;
-  text-decoration: none;
+  gap: 10px;
 }
 
 .honour-logo {
-  width: 34px;
-  height: 34px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border: 1px solid rgba(244, 243, 239, 0.25);
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 50%;
-
-  font-size: 9px;
-  font-weight: 700;
-
-  transition: 0.2s ease;
+  font-size: 10px;
+  font-weight: 800;
 }
 
-.honour-item strong {
-  font-size: 14px;
-  font-weight: 700;
+.honour-count {
+  font-size: 18px;
+  font-weight: 800;
 }
 
-.honour-item:hover .honour-logo {
-  border-color: #f4f3ef;
+.honour a {
+  color: inherit;
+  text-decoration: none;
 }
 
-
-/* =========================================================
-   GENERIC SECTIONS
-   ========================================================= */
-
-.player-section {
-  max-width: 1200px;
-
-  margin: 0 auto;
-
-  padding: 100px 40px;
-
-  border-bottom: 1px solid rgba(244, 243, 239, 0.12);
-}
-
-.section-heading {
-  display: grid;
-
-  grid-template-columns: 55px 1fr auto;
-
-  align-items: end;
-
-  gap: 20px;
-
-  margin-bottom: 45px;
-}
-
-.section-number {
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 0.1em;
-
-  opacity: 0.35;
-}
-
-.section-label {
-  display: block;
-
-  margin-bottom: 7px;
-
-  font-size: 9px;
-  font-weight: 700;
-
-  letter-spacing: 0.15em;
-
-  opacity: 0.4;
-}
-
-.section-heading h2 {
-  margin: 0;
-
-  font-size: clamp(30px, 4vw, 50px);
-  line-height: 0.95;
-
-  letter-spacing: -0.04em;
-}
-
-
-/* =========================================================
-   SEASON SELECTOR
-   ========================================================= */
-
-.season-selector {
-  appearance: none;
-
-  background: transparent;
-
-  color: #f4f3ef;
-
-  border: 1px solid rgba(244, 243, 239, 0.25);
-
-  padding: 10px 34px 10px 13px;
-
-  font-family: inherit;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 0.08em;
+.honour a:hover {
+  text-decoration: underline;
 }
 
 
@@ -632,49 +505,35 @@
    STATS
    ========================================================= */
 
-.stats-grid {
+.player-stats {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
-  border-top: 1px solid rgba(244, 243, 239, 0.15);
-  border-left: 1px solid rgba(244, 243, 239, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.stat-box {
-  min-height: 150px;
-
-  padding: 25px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  border-right: 1px solid rgba(244, 243, 239, 0.15);
-  border-bottom: 1px solid rgba(244, 243, 239, 0.15);
+.player-stat {
+  padding: 30px 20px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.stat-icon {
-  font-size: 22px;
-  line-height: 1;
+.player-stat:last-child {
+  border-right: 0;
 }
 
-.stat-box strong {
+.player-stat-number {
   font-size: 42px;
+  font-weight: 800;
   line-height: 1;
-
-  font-weight: 700;
-
-  letter-spacing: -0.04em;
 }
 
-.stat-box small {
+.player-stat-label {
+  margin-top: 8px;
   font-size: 9px;
   font-weight: 700;
-
-  letter-spacing: 0.14em;
-
-  opacity: 0.4;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.45;
 }
 
 
@@ -682,262 +541,144 @@
    CAREER
    ========================================================= */
 
-.career-list {
-  border-top: 1px solid rgba(244, 243, 239, 0.15);
+.player-career {
+  width: 100%;
 }
-
-
-/* SEASON */
 
 .career-season {
-  border-bottom: 1px solid rgba(244, 243, 239, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-/* SEASON HEADER */
+.career-season:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
 .career-season-header {
   display: grid;
-
   grid-template-columns: 120px 1fr;
-
-  min-height: 90px;
-
+  gap: 25px;
+  padding: 24px 0;
   align-items: center;
-
-  border-bottom: 1px solid rgba(244, 243, 239, 0.08);
 }
 
 .career-year {
   font-size: 13px;
-  font-weight: 700;
-
-  letter-spacing: 0.04em;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .career-club {
   display: flex;
   align-items: center;
-
-  gap: 14px;
+  gap: 12px;
 }
 
 .career-club img {
   width: 30px;
   height: 30px;
-
   object-fit: contain;
 }
 
 .career-club a {
-  color: #f4f3ef;
+  color: #ffffff;
   text-decoration: none;
-
-  font-size: 13px;
-  font-weight: 700;
-
+  font-size: 14px;
+  font-weight: 800;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .career-club a:hover {
   text-decoration: underline;
 }
 
-
-/* COMPETITIONS */
-
 .career-competitions {
-  padding: 12px 0 16px 120px;
+  padding: 0 0 20px 145px;
 }
 
-.career-columns,
-.career-row {
+.career-competition {
   display: grid;
-
-  grid-template-columns: 1fr 60px 60px 60px;
-
-  align-items: center;
+  grid-template-columns: 1fr 80px 80px 80px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 12px;
 }
 
-.career-columns {
-  min-height: 34px;
+.career-competition-name {
+  opacity: 0.7;
+}
 
-  font-size: 8px;
+.career-stat {
+  text-align: center;
   font-weight: 700;
-
-  letter-spacing: 0.12em;
-
-  opacity: 0.35;
 }
 
-.career-columns span:not(:first-child) {
-  text-align: center;
-}
-
-.career-row {
-  min-height: 40px;
-
-  border-top: 1px solid rgba(244, 243, 239, 0.06);
-
-  font-size: 12px;
-}
-
-.career-row span {
-  opacity: 0.75;
-}
-
-.career-row strong {
-  text-align: center;
-
-  font-size: 12px;
-  font-weight: 500;
+.career-stat-header {
+  opacity: 0.4;
+  font-size: 10px;
 }
 
 
 /* =========================================================
-   NATIONAL TEAM
+   NAZIONALE
    ========================================================= */
 
-.career-national {
+.player-national-team {
   margin-top: 45px;
-
-  border-top: 1px solid rgba(244, 243, 239, 0.15);
-  border-bottom: 1px solid rgba(244, 243, 239, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-
-/* HEADER */
-
-.career-national-header {
-  min-height: 82px;
-
+.national-header {
   display: grid;
-  grid-template-columns: 120px 1fr;
-
+  grid-template-columns: 120px 1fr auto;
+  gap: 25px;
   align-items: center;
-
-  border-bottom: 1px solid rgba(244, 243, 239, 0.08);
+  padding: 25px 0;
 }
 
-.career-national-label {
-  font-size: 9px;
-  font-weight: 700;
-
-  letter-spacing: 0.14em;
-
-  opacity: 0.4;
+.national-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.45;
 }
 
-.career-national-team {
+.national-team {
   display: flex;
   align-items: center;
-
   gap: 12px;
 }
 
-.national-flag {
-  font-size: 24px;
-
-  line-height: 1;
+.national-team img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
-.career-national-team a {
-  color: #f4f3ef;
+.national-team a {
+  color: #ffffff;
   text-decoration: none;
-
-  font-size: 13px;
-  font-weight: 700;
-
+  font-size: 14px;
+  font-weight: 800;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.career-national-team a:hover {
+.national-team a:hover {
   text-decoration: underline;
 }
 
 .national-period {
-  margin-left: 4px;
-
   font-size: 12px;
-
-  opacity: 0.45;
+  opacity: 0.5;
 }
 
-
-/* NATIONAL STATS */
-
-.career-national-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.national-stat {
-  min-height: 105px;
-
-  padding: 20px;
-
-  display: grid;
-
-  grid-template-columns: 30px 1fr;
-  grid-template-rows: 1fr auto;
-
-  column-gap: 8px;
-
-  align-items: center;
-
-  border-right: 1px solid rgba(244, 243, 239, 0.08);
-}
-
-.national-stat:last-child {
-  border-right: none;
-}
-
-.national-stat span {
-  grid-row: 1 / 3;
-
-  font-size: 20px;
-}
-
-.national-stat strong {
-  align-self: end;
-
-  font-size: 30px;
-  line-height: 1;
-
-  font-weight: 700;
-}
-
-.national-stat small {
-  align-self: start;
-
-  margin-top: 5px;
-
-  font-size: 8px;
-  font-weight: 700;
-
-  letter-spacing: 0.12em;
-
-  opacity: 0.4;
-}
-
-
-/* =========================================================
-   MATCHES
-   ========================================================= */
-
-.archive-placeholder {
-  padding: 80px 20px;
-
-  border: 1px solid rgba(244, 243, 239, 0.12);
-
-  text-align: center;
-
-  font-size: 10px;
-  font-weight: 700;
-
-  letter-spacing: 0.15em;
-
-  opacity: 0.35;
+.national-stats {
+  display: flex;
+  gap: 30px;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 
@@ -945,106 +686,603 @@
    STORY
    ========================================================= */
 
-.story-content {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-
-  gap: 80px;
+.player-story {
+  max-width: 900px;
 }
 
-.story-intro span {
-  font-size: 9px;
-  font-weight: 700;
-
-  letter-spacing: 0.15em;
-
-  opacity: 0.4;
-}
-
-.story-intro h3 {
-  margin: 18px 0 0;
-
-  max-width: 500px;
-
-  font-size: clamp(30px, 4vw, 50px);
-
-  line-height: 1;
-
-  letter-spacing: -0.04em;
-}
-
-.story-text {
-  max-width: 500px;
-}
-
-.story-text p {
-  margin: 0;
-
-  font-family: Georgia, serif;
-
-  font-size: 19px;
-  line-height: 1.65;
-
-  color: rgba(244, 243, 239, 0.75);
-}
-
-.story-link {
-  display: inline-block;
-
-  margin-top: 35px;
-
-  color: #f4f3ef;
-  text-decoration: none;
-
+.player-story-kicker {
+  margin-bottom: 15px;
   font-size: 10px;
   font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.45;
+}
 
-  letter-spacing: 0.13em;
+.player-story h2 {
+  margin-bottom: 25px;
+}
 
-  border-bottom: 1px solid rgba(244, 243, 239, 0.4);
-
-  padding-bottom: 5px;
+.player-story p {
+  max-width: 760px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 
 /* =========================================================
-   FOOTER
+   CLUB HERO COLOURS
    ========================================================= */
 
-.site-footer {
-  background: #121212;
 
-  color: #f4f3ef;
+/* =========================================================
+   SERIE A
+   ========================================================= */
 
-  padding: 40px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-top: 1px solid rgba(244, 243, 239, 0.12);
+.player-hero.atalanta {
+  background: linear-gradient(110deg, #070b13 0%, #101d35 45%, #143b70 100%);
 }
 
-.footer-brand {
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: 0.1em;
+.player-hero.bologna {
+  background: linear-gradient(110deg, #080808 0%, #241015 45%, #9e1b32 100%);
 }
 
-.footer-copy {
-  font-size: 9px;
-  font-weight: 700;
+.player-hero.cagliari {
+  background: linear-gradient(110deg, #080808 0%, #191919 45%, #9b1725 100%);
+}
 
-  letter-spacing: 0.12em;
+.player-hero.como {
+  background: linear-gradient(110deg, #080808 0%, #10232c 45%, #2d7185 100%);
+}
 
-  opacity: 0.35;
+.player-hero.fiorentina {
+  background: linear-gradient(110deg, #080808 0%, #241035 45%, #5b2180 100%);
+}
+
+.player-hero.frosinone {
+  background: linear-gradient(110deg, #080808 0%, #162333 45%, #1c5a89 100%);
+}
+
+.player-hero.genoa {
+  background: linear-gradient(110deg, #080808 0%, #171717 45%, #8c1d2d 100%);
+}
+
+.player-hero.inter {
+  background: linear-gradient(110deg, #060b12 0%, #0a1b31 45%, #07529a 100%);
+}
+
+.player-hero.juventus {
+  background: linear-gradient(110deg, #080808 0%, #151515 38%, #5a3544 72%, #24151c 100%);
+}
+
+.player-hero.lazio {
+  background: linear-gradient(110deg, #080808 0%, #102631 45%, #6aa9c5 100%);
+}
+
+.player-hero.lecce {
+  background: linear-gradient(110deg, #080808 0%, #3a171c 45%, #a51625 100%);
+}
+
+.player-hero.milan {
+  background: linear-gradient(110deg, #080808 0%, #211010 45%, #8e1822 100%);
+}
+
+.player-hero.monza {
+  background: linear-gradient(110deg, #080808 0%, #291015 45%, #d31932 100%);
+}
+
+.player-hero.napoli {
+  background: linear-gradient(110deg, #080808 0%, #102936 45%, #1688c4 100%);
+}
+
+.player-hero.parma {
+  background: linear-gradient(110deg, #080808 0%, #201116 45%, #6d1729 100%);
+}
+
+.player-hero.roma {
+  background: linear-gradient(110deg, #080808 0%, #321415 45%, #a51920 100%);
+}
+
+.player-hero.sassuolo {
+  background: linear-gradient(110deg, #080808 0%, #102519 45%, #19844d 100%);
+}
+
+.player-hero.torino {
+  background: linear-gradient(110deg, #080808 0%, #251116 45%, #871a2d 100%);
+}
+
+.player-hero.udinese {
+  background: linear-gradient(110deg, #080808 0%, #202020 45%, #d6a629 100%);
+}
+
+.player-hero.venezia {
+  background: linear-gradient(110deg, #080808 0%, #25100e 45%, #a56b1f 100%);
 }
 
 
 /* =========================================================
-   RESPONSIVE
+   PREMIER LEAGUE
+   ========================================================= */
+
+.player-hero.arsenal {
+  background: linear-gradient(110deg, #080808 0%, #361018 45%, #d71920 100%);
+}
+
+.player-hero.aston-villa {
+  background: linear-gradient(110deg, #080808 0%, #251329 45%, #7a1d45 100%);
+}
+
+.player-hero.bournemouth {
+  background: linear-gradient(110deg, #080808 0%, #291014 45%, #c9142b 100%);
+}
+
+.player-hero.brentford {
+  background: linear-gradient(110deg, #080808 0%, #321113 45%, #d71920 100%);
+}
+
+.player-hero.brighton {
+  background: linear-gradient(110deg, #080808 0%, #0d2637 45%, #0057a8 100%);
+}
+
+.player-hero.chelsea {
+  background: linear-gradient(110deg, #080808 0%, #0d2344 45%, #034694 100%);
+}
+
+.player-hero.coventry {
+  background: linear-gradient(110deg, #080808 0%, #112c4a 45%, #65a8d1 100%);
+}
+
+.player-hero.crystal-palace {
+  background: linear-gradient(110deg, #080808 0%, #171d3c 45%, #1b458f 100%);
+}
+
+.player-hero.everton {
+  background: linear-gradient(110deg, #080808 0%, #0c1f43 45%, #003399 100%);
+}
+
+.player-hero.fulham {
+  background: linear-gradient(110deg, #080808 0%, #202020 45%, #eeeeee 100%);
+}
+
+.player-hero.hull-city {
+  background: linear-gradient(110deg, #080808 0%, #342512 45%, #e8a317 100%);
+}
+
+.player-hero.ipswich {
+  background: linear-gradient(110deg, #080808 0%, #0b2d4b 45%, #2c6eae 100%);
+}
+
+.player-hero.leeds {
+  background: linear-gradient(110deg, #080808 0%, #252525 45%, #f2f2f2 100%);
+}
+
+.player-hero.liverpool {
+  background: linear-gradient(110deg, #080808 0%, #351014 45%, #c8102e 100%);
+}
+
+.player-hero.manchester-city {
+  background: linear-gradient(110deg, #080808 0%, #102b3c 45%, #6cabdd 100%);
+}
+
+.player-hero.manchester-united {
+  background: linear-gradient(110deg, #080808 0%, #3a1014 45%, #da291c 100%);
+}
+
+.player-hero.newcastle {
+  background: linear-gradient(110deg, #080808 0%, #181818 45%, #555555 100%);
+}
+
+.player-hero.nottingham-forest {
+  background: linear-gradient(110deg, #080808 0%, #3a1014 45%, #e53233 100%);
+}
+
+.player-hero.sunderland {
+  background: linear-gradient(110deg, #080808 0%, #351014 45%, #e30613 100%);
+}
+
+.player-hero.tottenham {
+  background: linear-gradient(110deg, #080808 0%, #102338 45%, #132257 100%);
+}
+
+
+/* =========================================================
+   BUNDESLIGA
+   ========================================================= */
+
+.player-hero.augsburg {
+  background: linear-gradient(110deg, #080808 0%, #102d43 45%, #ba1622 100%);
+}
+
+.player-hero.union-berlin {
+  background: linear-gradient(110deg, #080808 0%, #351015 45%, #e30613 100%);
+}
+
+.player-hero.werder-bremen {
+  background: linear-gradient(110deg, #080808 0%, #092d27 45%, #1d9b7b 100%);
+}
+
+.player-hero.dortmund {
+  background: linear-gradient(110deg, #080808 0%, #302508 45%, #fdea00 100%);
+}
+
+.player-hero.elversberg {
+  background: linear-gradient(110deg, #080808 0%, #17202a 45%, #eeeeee 100%);
+}
+
+.player-hero.frankfurt {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e1000f 100%);
+}
+
+.player-hero.freiburg {
+  background: linear-gradient(110deg, #080808 0%, #2b1116 45%, #d80027 100%);
+}
+
+.player-hero.hamburg {
+  background: linear-gradient(110deg, #080808 0%, #10283b 45%, #1683c6 100%);
+}
+
+.player-hero.hoffenheim {
+  background: linear-gradient(110deg, #080808 0%, #102840 45%, #1b65a7 100%);
+}
+
+.player-hero.koln {
+  background: linear-gradient(110deg, #080808 0%, #351015 45%, #ed1c24 100%);
+}
+
+.player-hero.leipzig {
+  background: linear-gradient(110deg, #080808 0%, #2b1016 45%, #e2001a 100%);
+}
+
+.player-hero.leverkusen {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e32222 100%);
+}
+
+.player-hero.mainz {
+  background: linear-gradient(110deg, #080808 0%, #341014 45%, #c8102e 100%);
+}
+
+.player-hero.monchengladbach {
+  background: linear-gradient(110deg, #080808 0%, #0d2b20 45%, #00a651 100%);
+}
+
+.player-hero.bayern {
+  background: linear-gradient(110deg, #111111 0%, #171717 38%, #35090e 72%, #170506 100%);
+}
+
+.player-hero.paderborn {
+  background: linear-gradient(110deg, #080808 0%, #152337 45%, #0057a8 100%);
+}
+
+.player-hero.schalke {
+  background: linear-gradient(110deg, #080808 0%, #0d2946 45%, #005ca9 100%);
+}
+
+.player-hero.stuttgart {
+  background: linear-gradient(110deg, #080808 0%, #361012 45%, #e32222 100%);
+}
+
+
+/* =========================================================
+   LALIGA
+   ========================================================= */
+
+.player-hero.athletic-bilbao {
+  background: linear-gradient(110deg, #080808 0%, #351014 45%, #ee1c25 100%);
+}
+
+.player-hero.atletico-madrid {
+  background: linear-gradient(110deg, #080808 0%, #30121a 45%, #d71920 100%);
+}
+
+.player-hero.osasuna {
+  background: linear-gradient(110deg, #080808 0%, #301015 45%, #c8102e 100%);
+}
+
+.player-hero.celta {
+  background: linear-gradient(110deg, #080808 0%, #102b3c 45%, #8ac6e4 100%);
+}
+
+.player-hero.alaves {
+  background: linear-gradient(110deg, #080808 0%, #10283b 45%, #005ca9 100%);
+}
+
+.player-hero.elche {
+  background: linear-gradient(110deg, #080808 0%, #0d2d20 45%, #008c45 100%);
+}
+
+.player-hero.barcelona {
+  background: linear-gradient(110deg, #080808 0%, #201329 45%, #a50044 100%);
+}
+
+.player-hero.getafe {
+  background: linear-gradient(110deg, #080808 0%, #102b46 45%, #005999 100%);
+}
+
+.player-hero.levante {
+  background: linear-gradient(110deg, #080808 0%, #35101a 45%, #8b1e3f 100%);
+}
+
+.player-hero.malaga {
+  background: linear-gradient(110deg, #080808 0%, #102b3e 45%, #4c9bc9 100%);
+}
+
+.player-hero.racing-santander {
+  background: linear-gradient(110deg, #080808 0%, #102c23 45%, #008c45 100%);
+}
+
+.player-hero.rayo-vallecano {
+  background: linear-gradient(110deg, #080808 0%, #2f1014 45%, #e30613 100%);
+}
+
+.player-hero.deportivo-la-coruna {
+  background: linear-gradient(110deg, #080808 0%, #102b45 45%, #75b9df 100%);
+}
+
+.player-hero.espanyol {
+  background: linear-gradient(110deg, #080808 0%, #102b45 45%, #0072bc 100%);
+}
+
+.player-hero.real-betis {
+  background: linear-gradient(110deg, #080808 0%, #0c2c20 45%, #009b62 100%);
+}
+
+.player-hero.real-madrid {
+  background: linear-gradient(110deg, #080808 0%, #252525 45%, #d7d7d7 100%);
+}
+
+.player-hero.real-sociedad {
+  background: linear-gradient(110deg, #080808 0%, #10283c 45%, #0067a9 100%);
+}
+
+.player-hero.sevilla {
+  background: linear-gradient(110deg, #080808 0%, #341015 45%, #d71920 100%);
+}
+
+.player-hero.valencia {
+  background: linear-gradient(110deg, #080808 0%, #252525 45%, #e57200 100%);
+}
+
+.player-hero.villarreal {
+  background: linear-gradient(110deg, #080808 0%, #403207 45%, #ffe500 100%);
+}
+
+
+/* =========================================================
+   LIGUE 1
+   ========================================================= */
+
+.player-hero.monaco {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.lyon {
+  background: linear-gradient(110deg, #080808 0%, #252525 45%, #eeeeee 100%);
+}
+
+.player-hero.paris-fc {
+  background: linear-gradient(110deg, #080808 0%, #102a43 45%, #0057a8 100%);
+}
+
+.player-hero.lille {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.rennes {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.psg {
+  background: linear-gradient(110deg, #080808 0%, #101d38 45%, #004170 100%);
+}
+
+.player-hero.angers {
+  background: linear-gradient(110deg, #080808 0%, #10263a 45%, #d71920 100%);
+}
+
+.player-hero.strasbourg {
+  background: linear-gradient(110deg, #080808 0%, #10263c 45%, #005ca9 100%);
+}
+
+.player-hero.le-mans {
+  background: linear-gradient(110deg, #080808 0%, #351014 45%, #e30613 100%);
+}
+
+.player-hero.auxerre {
+  background: linear-gradient(110deg, #080808 0%, #102b45 45%, #0057a8 100%);
+}
+
+.player-hero.brest {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #ed1c24 100%);
+}
+
+.player-hero.lorient {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.toulouse {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #7b2cbf 100%);
+}
+
+.player-hero.nice {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.lens {
+  background: linear-gradient(110deg, #080808 0%, #4a2808 45%, #e30613 100%);
+}
+
+.player-hero.troyes {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #0072bc 100%);
+}
+
+.player-hero.marseille {
+  background: linear-gradient(110deg, #080808 0%, #102b38 45%, #2fa9df 100%);
+}
+
+.player-hero.le-havre {
+  background: linear-gradient(110deg, #080808 0%, #10243a 45%, #0b6cae 100%);
+}
+
+
+/* =========================================================
+   LIGA PORTUGAL
+   ========================================================= */
+
+.player-hero.academico {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.casa-pia {
+  background: linear-gradient(110deg, #080808 0%, #252525 45%, #eeeeee 100%);
+}
+
+.player-hero.nacional {
+  background: linear-gradient(110deg, #080808 0%, #10263c 45%, #ffffff 100%);
+}
+
+.player-hero.estoril {
+  background: linear-gradient(110deg, #080808 0%, #102b42 45%, #ffd100 100%);
+}
+
+.player-hero.estrela-amadora {
+  background: linear-gradient(110deg, #080808 0%, #301015 45%, #e30613 100%);
+}
+
+.player-hero.alverca {
+  background: linear-gradient(110deg, #080808 0%, #102a40 45%, #005ca9 100%);
+}
+
+.player-hero.arouca {
+  background: linear-gradient(110deg, #080808 0%, #102c22 45%, #008c45 100%);
+}
+
+.player-hero.famalicao {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #0057a8 100%);
+}
+
+.player-hero.porto {
+  background: linear-gradient(110deg, #080808 0%, #102a40 45%, #0057a8 100%);
+}
+
+.player-hero.gil-vicente {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.maritimo {
+  background: linear-gradient(110deg, #080808 0%, #10263c 45%, #008c45 100%);
+}
+
+.player-hero.moreirense {
+  background: linear-gradient(110deg, #080808 0%, #102b22 45%, #008c45 100%);
+}
+
+.player-hero.rio-ave {
+  background: linear-gradient(110deg, #080808 0%, #102b22 45%, #008c45 100%);
+}
+
+.player-hero.santa-clara {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.braga {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.benfica {
+  background: linear-gradient(110deg, #080808 0%, #351014 45%, #e30613 100%);
+}
+
+.player-hero.sporting {
+  background: linear-gradient(110deg, #080808 0%, #102d21 45%, #008c45 100%);
+}
+
+.player-hero.vitoria-guimaraes {
+  background: linear-gradient(110deg, #080808 0%, #252525 45%, #eeeeee 100%);
+}
+
+
+/* =========================================================
+   EREDIVISIE
+   ========================================================= */
+
+.player-hero.ado-den-haag {
+  background: linear-gradient(110deg, #080808 0%, #102c22 45%, #008c45 100%);
+}
+
+.player-hero.ajax {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #d2122e 100%);
+}
+
+.player-hero.az {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #d71920 100%);
+}
+
+.player-hero.excelsior {
+  background: linear-gradient(110deg, #080808 0%, #102b42 45%, #e30613 100%);
+}
+
+.player-hero.groningen {
+  background: linear-gradient(110deg, #080808 0%, #102d21 45%, #008c45 100%);
+}
+
+.player-hero.twente {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.utrecht {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.feyenoord {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.fortuna-sittard {
+  background: linear-gradient(110deg, #080808 0%, #102d21 45%, #f5d000 100%);
+}
+
+.player-hero.go-ahead-eagles {
+  background: linear-gradient(110deg, #080808 0%, #351014 45%, #e30613 100%);
+}
+
+.player-hero.nec-nijmegen {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.pec-zwolle {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #005ca9 100%);
+}
+
+.player-hero.psv {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.cambuur {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #ffd100 100%);
+}
+
+.player-hero.heerenveen {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #0057a8 100%);
+}
+
+.player-hero.sparta-rotterdam {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+.player-hero.telstar {
+  background: linear-gradient(110deg, #080808 0%, #102b43 45%, #eeeeee 100%);
+}
+
+.player-hero.willem-ii {
+  background: linear-gradient(110deg, #080808 0%, #321014 45%, #e30613 100%);
+}
+
+
+/* =========================================================
+   RESPONSIVE · 1100px
    ========================================================= */
 
 @media (max-width: 1100px) {
@@ -1054,159 +1292,161 @@
   }
 
   .player-hero-main {
-    padding: 40px 30px;
+    padding: 40px 20px;
   }
 
-  .player-position {
-    padding: 30px;
+  .player-hero-main h1 {
+    font-size: clamp(42px, 6vw, 70px);
   }
 
   .football-pitch {
-    width: 170px;
-    height: 250px;
+    width: 180px;
+    height: 270px;
   }
 
-  .player-data {
-    margin-top: 35px;
+  .player-section {
+    padding-left: 5%;
+    padding-right: 5%;
   }
-
 }
 
+
+/* =========================================================
+   RESPONSIVE · 800px
+   ========================================================= */
 
 @media (max-width: 800px) {
 
   .player-hero {
     grid-template-columns: 1fr;
-
     min-height: auto;
   }
 
   .player-hero-photo {
-    min-height: 330px;
-  }
-
-  .player-hero-photo img {
-    width: 55%;
+    min-height: 420px;
+    order: 1;
   }
 
   .player-hero-main {
-    padding: 45px 30px;
+    order: 2;
+    padding: 45px 25px;
   }
 
   .player-position {
-    min-height: 380px;
+    order: 3;
+    padding: 35px 25px 50px;
   }
 
-  .player-honours {
-    padding: 25px 20px;
-
-    gap: 20px;
-
-    flex-wrap: wrap;
+  .player-hero-main h1 {
+    font-size: clamp(48px, 12vw, 80px);
   }
 
-  .player-section {
-    padding: 75px 25px;
+  .player-data {
+    max-width: 600px;
   }
 
-  .stats-grid {
+  .player-stats {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .story-content {
-    grid-template-columns: 1fr;
-
-    gap: 45px;
+  .player-stat:nth-child(2) {
+    border-right: 0;
   }
 
+  .player-stat:nth-child(1),
+  .player-stat:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .career-season-header {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .career-competitions {
+    padding-left: 115px;
+  }
+
+  .career-competition {
+    grid-template-columns: 1fr 60px 60px 60px;
+  }
+
+  .national-header {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .national-stats {
+    grid-column: 2;
+  }
 }
 
 
+/* =========================================================
+   RESPONSIVE · 550px
+   ========================================================= */
+
 @media (max-width: 550px) {
 
-  .player-hero-main h1 {
-    font-size: 48px;
+  .player-hero-photo {
+    min-height: 350px;
+  }
+
+  .player-hero-number {
+    font-size: 130px;
   }
 
   .player-data {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .player-position {
-    min-height: 330px;
+  .player-data-item:last-child {
+    grid-column: span 2;
   }
 
-  .football-pitch {
-    width: 150px;
-    height: 220px;
+  .player-section {
+    padding: 55px 20px;
   }
 
-  .section-heading {
-    grid-template-columns: 35px 1fr;
-
-    align-items: start;
+  .player-section-header {
+    display: block;
   }
 
-  .season-selector {
-    grid-column: 2;
-
-    width: fit-content;
-  }
-
-  .stats-grid {
+  .player-stats {
     grid-template-columns: 1fr 1fr;
   }
 
-  .stat-box {
-    min-height: 125px;
-
-    padding: 18px;
+  .player-stat {
+    padding: 25px 12px;
   }
 
-  .stat-box strong {
-    font-size: 34px;
+  .player-stat-number {
+    font-size: 32px;
   }
 
   .career-season-header {
-    grid-template-columns: 85px 1fr;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .career-competitions {
-    padding-left: 85px;
+    padding-left: 0;
   }
 
-  .career-columns,
-  .career-row {
+  .career-competition {
     grid-template-columns: 1fr 45px 45px 45px;
-  }
-
-  .career-row {
     font-size: 11px;
   }
 
-  .career-national-header {
-    grid-template-columns: 85px 1fr;
-  }
-
-  .career-national-team {
-    gap: 8px;
-  }
-
-  .national-flag {
-    font-size: 21px;
-  }
-
-  .national-period {
-    font-size: 11px;
-  }
-
-  .site-footer {
-    padding: 30px 20px;
-
-    flex-direction: column;
-    align-items: flex-start;
-
+  .national-header {
+    grid-template-columns: 1fr;
     gap: 12px;
+  }
+
+  .national-stats {
+    grid-column: auto;
+  }
+
+  .player-story p {
+    font-size: 18px;
   }
 
 }
