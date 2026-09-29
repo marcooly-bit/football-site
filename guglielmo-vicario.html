@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,60 +12,56 @@
 
 <body>
 
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
+
+  <div class="season-label">2026/27</div>
+</header>
+
 <main class="player-page">
 
 
-  <!-- =====================================================
+  <!-- =========================================================
        HERO
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-hero juventus">
-
-
-    <!-- PHOTO -->
+  <section class="player-hero">
 
     <div class="player-hero-photo">
-
       <div class="player-number">25</div>
-
       <img
-        src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/v1789656934/players/vicario.png"
-        alt="Guglielmo Vicario">
-
+        src="https://res.cloudinary.com/vu7tcmgu/image/upload/f_webp/players/vicario.png"
+        alt="Guglielmo Vicario"
+      >
     </div>
-
-
-    <!-- MAIN INFO -->
 
     <div class="player-hero-main">
 
-      <div class="player-eyebrow">
-        JUVENTUS · 2026/27
-      </div>
+      <div class="player-eyebrow">JUVENTUS</div>
 
-      <h1>Guglielmo<br>Vicario</h1>
+      <h1>GUGLIELMO VICARIO</h1>
 
-      <div class="player-role">
-        PORTIERE
-      </div>
-
+      <div class="player-role">PORTIERE</div>
 
       <a href="juventus26-27.html" class="player-club">
-
-        <img
-          src="images/teams/juventus.png"
-          alt="Juventus">
-
+        <img src="images/teams/juventus.png" alt="Juventus">
         <span>JUVENTUS</span>
-
       </a>
-
 
       <div class="player-data">
 
         <div class="data-item">
-          <span>NATO</span>
-          <strong>07.10.1996</strong>
+          <span>DATA DI NASCITA</span>
+          <strong>7 OTT 1996</strong>
         </div>
 
         <div class="data-item">
@@ -75,18 +70,15 @@
         </div>
 
         <div class="data-item">
-          <span>ALTEZZA</span>
-          <strong>1.94 M</strong>
-        </div>
-
-        <div class="data-item">
           <span>NAZIONALITÀ</span>
-          <strong>🇮🇹 ITALIA</strong>
+          <strong class="nationalities">
+            <span>🇮🇹 ITALIA</span>
+          </strong>
         </div>
 
         <div class="data-item">
-          <span>RUOLO</span>
-          <strong>PORTIERE</strong>
+          <span>ALTEZZA</span>
+          <strong>194 CM</strong>
         </div>
 
         <div class="data-item">
@@ -94,12 +86,14 @@
           <strong>DESTRO</strong>
         </div>
 
+        <div class="data-item">
+          <span>AL JUVENTUS DAL</span>
+          <strong>2026</strong>
+        </div>
+
       </div>
 
     </div>
-
-
-    <!-- PITCH -->
 
     <div class="player-position">
 
@@ -114,11 +108,10 @@
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
-
-        <div
+        <span
           class="pitch-player preferred goalkeeper"
-          title="Portiere">
-        </div>
+          title="Portiere"
+        ></span>
 
       </div>
 
@@ -127,124 +120,70 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        PALMARES
-       ===================================================== -->
+       ========================================================= -->
 
   <section class="player-honours">
 
-    <a href="#" class="honour-item">
-
-      <div class="honour-logo">
-        EL
-      </div>
-
+    <a href="#" class="honour-item" title="UEFA Europa League">
+      <span class="honour-logo">UEL</span>
       <strong>1</strong>
-
     </a>
 
-
-    <a href="#" class="honour-item">
-
-      <div class="honour-logo">
-        JWC
-      </div>
-
+    <a href="#" class="honour-item" title="Coppa Italia Serie C">
+      <span class="honour-logo">CIS</span>
       <strong>1</strong>
-
-    </a>
-
-
-    <a href="#" class="honour-item">
-
-      <div class="honour-logo">
-        CI
-      </div>
-
-      <strong>1</strong>
-
     </a>
 
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        STATISTICHE
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        01
-      </div>
+      <span class="section-number">02</span>
 
       <div>
-
-        <span class="section-label">
-          STAGIONE
-        </span>
-
-        <h2>Statistiche</h2>
-
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
       <select class="season-selector">
-
         <option>2026/27</option>
-        <option>2025/26</option>
-
       </select>
 
     </div>
 
-
     <div class="stats-grid">
 
       <div class="stat-box">
-
         <span class="stat-icon">🏟️</span>
-
         <strong>5</strong>
-
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <span class="stat-icon">🧤</span>
-
-        <strong>2</strong>
-
-        <small>CLEAN SHEET</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <span class="stat-icon">🥅</span>
-
-        <strong>4</strong>
-
-        <small>GOL SUBITI</small>
-
-      </div>
-
-
-      <div class="stat-box">
-
-        <span class="stat-icon">⏱</span>
-
+        <span class="stat-icon">⏱️</span>
         <strong>449</strong>
-
         <small>MINUTI</small>
+      </div>
 
+      <div class="stat-box">
+        <span class="stat-icon">🧤</span>
+        <strong>2</strong>
+        <small>PORTA INVIOLATA</small>
+      </div>
+
+      <div class="stat-box">
+        <span class="stat-icon">🛑</span>
+        <strong>9</strong>
+        <small>PARATE</small>
       </div>
 
     </div>
@@ -252,52 +191,40 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        CARRIERA
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        02
-      </div>
+      <span class="section-number">03</span>
 
       <div>
-
-        <span class="section-label">
-          PERCORSO
-        </span>
-
-        <h2>Carriera</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
       </div>
 
     </div>
 
-
     <div class="career-list">
 
 
-      <!-- =================================================
-           2026/27 · JUVENTUS
-           ================================================= -->
+      <!-- 2026/27 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <span class="career-year">2026/27</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
             <a href="juventus26-27.html">
               JUVENTUS
@@ -307,38 +234,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE A</span>
-
             <strong>5</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>EUROPA LEAGUE</span>
-
             <strong>0</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -346,26 +262,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2025/26 · TOTTENHAM
-           ================================================= -->
+      <!-- 2025/26 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2025/26
-          </div>
+          <span class="career-year">2025/26</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/tottenham.png"
-              alt="Tottenham Hotspur">
+              alt="Tottenham Hotspur"
+            >
 
-            <a href="tottenham25-26.html">
+            <a href="#">
               TOTTENHAM HOTSPUR
             </a>
 
@@ -373,71 +285,41 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>PREMIER LEAGUE</span>
-
-            <strong>—</strong>
+            <strong>31</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-
             <span>CHAMPIONS LEAGUE</span>
-
-            <strong>—</strong>
+            <strong>10</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-
-            <span>EUROPA LEAGUE</span>
-
-            <strong>—</strong>
+            <span>UEFA SUPERCUP</span>
+            <strong>1</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-
             <span>FA CUP</span>
-
-            <strong>—</strong>
+            <strong>1</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>LEAGUE CUP</span>
-
-            <strong>—</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
           </div>
 
         </div>
@@ -445,26 +327,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2024/25 · TOTTENHAM
-           ================================================= -->
+      <!-- 2024/25 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2024/25</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/tottenham.png"
-              alt="Tottenham Hotspur">
+              alt="Tottenham Hotspur"
+            >
 
-            <a href="tottenham24-25.html">
+            <a href="#">
               TOTTENHAM HOTSPUR
             </a>
 
@@ -472,60 +350,41 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>PREMIER LEAGUE</span>
-
-            <strong>—</strong>
+            <strong>24</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-
             <span>EUROPA LEAGUE</span>
-
-            <strong>—</strong>
+            <strong>9</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-
             <span>FA CUP</span>
-
-            <strong>—</strong>
+            <strong>1</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
-
           <div class="career-row">
-
-            <span>LEAGUE CUP</span>
-
-            <strong>—</strong>
+            <span>EFL CUP</span>
+            <strong>2</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
         </div>
@@ -533,26 +392,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2023/24 · TOTTENHAM
-           ================================================= -->
+      <!-- 2023/24 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2023/24
-          </div>
+          <span class="career-year">2023/24</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/tottenham.png"
-              alt="Tottenham Hotspur">
+              alt="Tottenham Hotspur"
+            >
 
-            <a href="tottenham23-24.html">
+            <a href="#">
               TOTTENHAM HOTSPUR
             </a>
 
@@ -560,27 +415,34 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
+          <div class="career-row">
+            <span>PREMIER LEAGUE</span>
+            <strong>38</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
 
           <div class="career-row">
-
-            <span>PREMIER LEAGUE</span>
-
-            <strong>—</strong>
+            <span>FA CUP</span>
+            <strong>2</strong>
             <strong>0</strong>
-            <strong>—</strong>
+            <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>EFL CUP</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -588,26 +450,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2022/23 · EMPOLI
-           ================================================= -->
+      <!-- 2022/23 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2022/23
-          </div>
+          <span class="career-year">2022/23</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/empoli.png"
-              alt="Empoli">
+              alt="Empoli"
+            >
 
-            <a href="empoli22-23.html">
+            <a href="#">
               EMPOLI
             </a>
 
@@ -615,38 +473,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE A</span>
-
-            <strong>32</strong>
+            <strong>31</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>COPPA ITALIA</span>
-
-            <strong>—</strong>
+            <strong>1</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
         </div>
@@ -654,26 +501,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2021/22 · EMPOLI
-           ================================================= -->
+      <!-- 2021/22 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2021/22
-          </div>
+          <span class="career-year">2021/22</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/empoli.png"
-              alt="Empoli">
+              alt="Empoli"
+            >
 
-            <a href="empoli21-22.html">
+            <a href="#">
               EMPOLI
             </a>
 
@@ -681,27 +524,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
+          <div class="career-row">
+            <span>SERIE A</span>
+            <strong>38</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
 
           <div class="career-row">
-
-            <span>SERIE A</span>
-
-            <strong>—</strong>
+            <span>COPPA ITALIA</span>
+            <strong>1</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
         </div>
@@ -709,26 +552,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2020/21 · CAGLIARI
-           ================================================= -->
+      <!-- 2020/21 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
-          </div>
+          <span class="career-year">2020/21</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/cagliari.png"
-              alt="Cagliari">
+              alt="Cagliari"
+            >
 
-            <a href="cagliari20-21.html">
+            <a href="#">
               CAGLIARI
             </a>
 
@@ -736,38 +575,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE A</span>
-
-            <strong>3</strong>
+            <strong>4</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>COPPA ITALIA</span>
-
-            <strong>3</strong>
+            <strong>1</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -775,26 +603,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2019/20 · PERUGIA
-           ================================================= -->
+      <!-- 2019/20 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2019/20
-          </div>
+          <span class="career-year">2019/20</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/perugia.png"
-              alt="Perugia">
+              alt="Perugia"
+            >
 
-            <a href="perugia19-20.html">
+            <a href="#">
               PERUGIA
             </a>
 
@@ -802,38 +626,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE B</span>
-
-            <strong>37</strong>
+            <strong>38</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>COPPA ITALIA</span>
-
-            <strong>2</strong>
+            <strong>1</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
@@ -841,26 +654,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2018/19 · VENEZIA
-           ================================================= -->
+      <!-- 2018/19 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2018/19
-          </div>
+          <span class="career-year">2018/19</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/venezia.png"
-              alt="Venezia">
+              alt="Venezia"
+            >
 
-            <a href="venezia18-19.html">
+            <a href="#">
               VENEZIA
             </a>
 
@@ -868,27 +677,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE B</span>
-
-            <strong>34</strong>
+            <strong>38</strong>
             <strong>0</strong>
             <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>COPPA ITALIA</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -896,26 +705,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2017/18 · VENEZIA
-           ================================================= -->
+      <!-- 2017/18 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2017/18
-          </div>
+          <span class="career-year">2017/18</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/venezia.png"
-              alt="Venezia">
+              alt="Venezia"
+            >
 
-            <a href="venezia17-18.html">
+            <a href="#">
               VENEZIA
             </a>
 
@@ -923,82 +728,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>SERIE B</span>
-
-            <strong>7</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           2016/17 · VENEZIA
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2016/17
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/venezia.png"
-              alt="Venezia">
-
-            <a href="venezia16-17.html">
-              VENEZIA
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
-
-          <div class="career-row">
-
-            <span>LEGA PRO</span>
-
             <strong>3</strong>
             <strong>0</strong>
             <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>COPPA ITALIA</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -1006,26 +756,22 @@
       </div>
 
 
-
-      <!-- =================================================
-           2015/16 · VENEZIA
-           ================================================= -->
+      <!-- 2016/17 -->
 
       <div class="career-season">
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2015/16
-          </div>
+          <span class="career-year">2016/17</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/venezia.png"
-              alt="Venezia">
+              alt="Venezia"
+            >
 
-            <a href="venezia15-16.html">
+            <a href="#">
               VENEZIA
             </a>
 
@@ -1033,82 +779,27 @@
 
         </div>
 
-
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>LEGA PRO</span>
-
-            <strong>—</strong>
+            <strong>38</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- =================================================
-           CAGLIARI / UDINESE
-           ================================================= -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2014/15
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/udinese.png"
-              alt="Udinese">
-
-            <a href="udinese14-15.html">
-              UDINESE
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="career-competitions">
-
-          <div class="career-columns">
-
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
-
-          </div>
-
 
           <div class="career-row">
-
-            <span>SERIE A</span>
-
-            <strong>—</strong>
+            <span>COPPA ITALIA</span>
+            <strong>3</strong>
             <strong>0</strong>
-            <strong>—</strong>
-
+            <strong>0</strong>
           </div>
 
         </div>
@@ -1116,59 +807,44 @@
       </div>
 
 
-
-      <!-- =================================================
-           NAZIONALE
-           ================================================= -->
+      <!-- NAZIONALE -->
 
       <div class="career-national">
 
         <div class="career-national-header">
 
-          <div class="career-national-label">
+          <span class="career-national-label">
             NAZIONALE
-          </div>
+          </span>
 
           <div class="career-national-team">
 
-            <span class="national-flag">
-              🇮🇹
-            </span>
+            <span class="national-flag">🇮🇹</span>
 
-            <a href="italia.html">
+            <a href="#">
               ITALIA
             </a>
 
             <span class="national-period">
-              2024–
+              2022–
             </span>
 
           </div>
 
         </div>
 
-
         <div class="career-national-stats">
 
           <div class="national-stat">
-
-            <span>🏟️</span>
-
+            <span class="stat-icon">🏟️</span>
             <strong>5</strong>
-
             <small>PRESENZE</small>
-
           </div>
 
-
           <div class="national-stat">
-
-            <span>⚽</span>
-
+            <span class="stat-icon">⚽</span>
             <strong>0</strong>
-
             <small>GOL</small>
-
           </div>
 
         </div>
@@ -1180,133 +856,113 @@
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        PARTITE
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        03
-      </div>
+      <span class="section-number">04</span>
 
       <div>
-
-        <span class="section-label">
-          ARCHIVIO
-        </span>
-
-        <h2>Partite</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
 
-
     <div class="archive-placeholder">
-      ARCHIVIO PARTITE · IN ARRIVO
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
 
-
-  <!-- =====================================================
+  <!-- =========================================================
        STORIA
-       ===================================================== -->
+       ========================================================= -->
 
-  <section class="player-section">
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        04
-      </div>
+      <span class="section-number">05</span>
 
       <div>
-
-        <span class="section-label">
-          PROFILO
-        </span>
-
-        <h2>La sua storia</h2>
-
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
 
-
     <div class="story-content">
-
 
       <div class="story-intro">
 
-        <span>
-          DA UDINE A TORINO
-        </span>
+        <span class="player-name">GUGLIELMO VICARIO</span>
 
         <h3>
-          Dal calcio dilettantistico alla porta della Juventus.
+          Dalla Serie C alla Premier League, fino alla Juventus
         </h3>
 
       </div>
 
-
       <div class="story-text">
 
         <p>
-          Guglielmo Vicario nasce a Udine nel 1996 e cresce
-          nel settore giovanile dell'Udinese. Il suo percorso
-          verso il calcio professionistico è però tutt'altro
-          che immediato.
+          Guglielmo Vicario nasce a Udine il 7 ottobre 1996 e cresce
+          nel settore giovanile dell'Udinese. Dopo le prime esperienze
+          nel calcio professionistico, trova la sua occasione al
+          Venezia.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Dopo l'esperienza con l'Udinese, passa al Venezia,
-          dove costruisce progressivamente la propria carriera.
-          Con i lagunari conquista la Coppa Italia Serie C
-          nella stagione 2016/17 e vive gli anni della risalita
-          attraverso il calcio professionistico.
+        <p>
+          Con il club lagunare vive la stagione della promozione in
+          Serie B e inizia a costruire la propria reputazione. Dopo
+          l'esperienza a Perugia arriva il debutto in Serie A con il
+          Cagliari, prima del trasferimento all'Empoli.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nel 2019 arriva il prestito al Perugia, in Serie B.
-          Successivamente torna in Serie A con il Cagliari e
-          passa poi all'Empoli, dove si afferma definitivamente
-          come uno dei portieri più interessanti del campionato.
+        <p>
+          In Toscana Vicario compie il salto definitivo. Diventa
+          titolare e raccoglie 69 presenze in Serie A, imponendosi
+          come uno dei portieri italiani più interessanti della sua
+          generazione.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nell'estate 2023 arriva la svolta internazionale:
-          il Tottenham lo acquista dall'Empoli. In tre stagioni
-          colleziona 117 presenze con gli Spurs e diventa uno
-          dei protagonisti della squadra che conquista l'Europa
-          League 2024/25.
+        <p>
+          Nell'estate del 2023 arriva il trasferimento al Tottenham.
+          In Premier League diventa immediatamente il portiere
+          titolare e disputa una stagione da 38 presenze in campionato
+          nel suo primo anno in Inghilterra.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nell'estate 2026 torna in Italia. La Juventus lo prende
-          in prestito dal Tottenham per la stagione 2026/27,
-          affidandogli la maglia numero 25.
+        <p>
+          Nel 2024/25 conquista il primo grande trofeo internazionale
+          della sua carriera: l'Europa League con il Tottenham.
+          La stagione successiva continua a essere protagonista in
+          Premier League e in Champions League.
         </p>
 
-
-        <p style="margin-top: 25px;">
-          Nel frattempo arriva anche la Nazionale. Vicario
-          debutta con l'Italia nel 2024 e diventa parte del
-          gruppo azzurro nel ruolo di portiere.
+        <p>
+          Nell'agosto 2026 torna in Italia per una nuova sfida.
+          Il Tottenham lo cede in prestito alla Juventus fino al
+          30 giugno 2027 e Vicario indossa la maglia numero 25,
+          entrando nella rosa bianconera come uno dei portieri più
+          esperti del gruppo.
         </p>
 
+        <p>
+          Con la nazionale italiana ha esordito nel 2022 e ha
+          continuato a far parte del gruppo azzurro negli anni
+          successivi, affiancando il percorso internazionale alla
+          crescita nei club.
+        </p>
 
-        <a href="#" class="story-link">
-          LEGGI LA STORIA COMPLETA →
+        <a href="storie.html" class="story-link">
+          SCOPRI ALTRE STORIE →
         </a>
 
       </div>
@@ -1316,25 +972,15 @@
   </section>
 
 
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-
-  <footer class="site-footer">
-
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
-
-    <div class="footer-copy">
-      PLAYER ARCHIVE
-    </div>
-
-  </footer>
-
-
 </main>
+
+
+<footer class="site-footer">
+
+  <div class="footer-brand">PAGES OF FOOTBALL</div>
+  <div class="footer-copy">FOOTBALL · HISTORY · STORIES</div>
+
+</footer>
 
 </body>
 </html>
