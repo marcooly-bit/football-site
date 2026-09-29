@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -11,53 +10,71 @@
   <link rel="stylesheet" href="player.css">
 </head>
 
-<body class="player-page">
+<body>
 
-  <!-- =========================================================
-       HERO
-       ========================================================= -->
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
 
-  <section class="player-hero juventus">
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
+
+  <div class="season-label">2026/27</div>
+</header>
+
+
+
+<main class="player-page">
+
+  <!-- HERO -->
+
+  <section class="player-hero">
 
     <div class="player-hero-photo">
 
-      <div class="player-number">06</div>
+      <div class="player-number">6</div>
 
       <img
         src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656747/players/kelly.png"
-        alt="Lloyd Kelly">
+        alt="Lloyd Kelly"
+      >
 
     </div>
+
 
 
     <div class="player-hero-main">
 
       <div class="player-eyebrow">
-        JUVENTUS · 2026/27
+        JUVENTUS
       </div>
 
-      <h1>Lloyd Kelly</h1>
+      <h1>LLOYD KELLY</h1>
 
       <div class="player-role">
-        Difensore
+        DIFENSORE · CENTRALE
       </div>
 
-      <div class="player-club">
-
+      <a href="juventus26-27.html" class="player-club">
         <img
           src="images/teams/juventus.png"
-          alt="Juventus">
+          alt="Juventus"
+        >
+        <span>JUVENTUS</span>
+      </a>
 
-        <span>Juventus</span>
-
-      </div>
 
 
       <div class="player-data">
 
         <div class="data-item">
           <span>DATA DI NASCITA</span>
-          <strong>06.10.1998</strong>
+          <strong>6 OTT 1998</strong>
         </div>
 
         <div class="data-item">
@@ -66,54 +83,57 @@
         </div>
 
         <div class="data-item">
-          <span>ALTEZZA</span>
-          <strong>1.90 m</strong>
+          <span>NAZIONALITÀ</span>
+          <strong class="nationalities">
+            <span>🇬🇧 INGHILTERRA</span>
+          </strong>
         </div>
 
         <div class="data-item">
-          <span>NAZIONALITÀ</span>
-          <strong>Inghilterra</strong>
+          <span>ALTEZZA</span>
+          <strong>190 CM</strong>
         </div>
 
         <div class="data-item">
           <span>PIEDE</span>
-          <strong>Sinistro</strong>
+          <strong>SINISTRO</strong>
+        </div>
+
+        <div class="data-item">
+          <span>ALLA JUVENTUS DAL</span>
+          <strong>2025</strong>
         </div>
 
       </div>
 
-
-      <div class="nationalities">
-        <span>ENG</span>
-      </div>
-
     </div>
 
+
+
+    <!-- POSIZIONI -->
 
     <div class="player-position">
 
       <div class="football-pitch">
 
         <div class="pitch-halfway"></div>
-
         <div class="pitch-circle"></div>
-
         <div class="pitch-box pitch-box-top"></div>
         <div class="pitch-box pitch-box-bottom"></div>
-
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
-
-        <div
+        <!-- DIFENSORE CENTRALE · RUOLO PREFERITO -->
+        <span
           class="pitch-player preferred center-back-left"
-          title="Difensore centrale">
-        </div>
+          title="Difensore centrale"
+        ></span>
 
-        <div
+        <!-- TERZINO SINISTRO -->
+        <span
           class="pitch-player secondary left-back"
-          title="Terzino sinistro">
-        </div>
+          title="Terzino sinistro"
+        ></span>
 
       </div>
 
@@ -122,108 +142,63 @@
   </section>
 
 
-  <!-- =========================================================
-       PALMARES
-       ========================================================= -->
 
-  <section class="player-section player-honours">
+  <!-- PALMARES -->
 
-    <div class="section-heading">
-
-      <div class="section-number">01</div>
-
-      <div>
-        <div class="section-label">PALMARES</div>
-        <h2>Trofei</h2>
-      </div>
-
-    </div>
-
-
-    <div class="honours-list">
-
-      <a href="#" class="honour-item">
-
-        <div class="honour-logo">
-          <img
-            src="images/trophies/coppa-italia.png"
-            alt="Coppa Italia">
-        </div>
-
-        <strong>1</strong>
-
-      </a>
-
-    </div>
+  <section class="player-honours">
 
   </section>
 
 
-  <!-- =========================================================
-       STATISTICHE
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- STATISTICHE -->
+
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">02</div>
+      <span class="section-number">02</span>
 
       <div>
-        <div class="section-label">STATISTICHE</div>
-        <h2>Stagione 2026/27</h2>
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
-      <div class="season-selector">
-        2026/27
-      </div>
+      <select class="season-selector">
+        <option selected>2026/27</option>
+        <option>2025/26</option>
+        <option>2024/25</option>
+        <option>2023/24</option>
+      </select>
 
     </div>
+
 
 
     <div class="stats-grid">
 
       <div class="stat-box">
-
-        <div class="stat-icon">▣</div>
-
+        <span class="stat-icon">🏟️</span>
         <strong>4</strong>
-
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <div class="stat-icon">●</div>
-
+        <span class="stat-icon">⚽</span>
         <strong>0</strong>
-
         <small>GOL</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <div class="stat-icon">↗</div>
-
+        <span class="stat-icon">👟</span>
         <strong>0</strong>
-
         <small>ASSIST</small>
-
       </div>
 
-
       <div class="stat-box">
-
-        <div class="stat-icon">◷</div>
-
+        <span class="stat-icon">⏱</span>
         <strong>151</strong>
-
         <small>MINUTI</small>
-
       </div>
 
     </div>
@@ -231,25 +206,26 @@
   </section>
 
 
-  <!-- =========================================================
-       CARRIERA
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- CARRIERA -->
+
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">03</div>
+      <span class="section-number">03</span>
 
       <div>
-        <div class="section-label">CARRIERA</div>
-        <h2>Club</h2>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
       </div>
 
     </div>
 
 
+
     <div class="career-list">
+
 
 
       <!-- 2026/27 -->
@@ -258,18 +234,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <span class="career-year">2026/27</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
             <a href="juventus26-27.html">
-              Juventus
+              JUVENTUS
             </a>
 
           </div>
@@ -277,25 +252,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>4</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Europa League</span>
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2025/26 -->
@@ -304,18 +288,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2025/26
-          </div>
+          <span class="career-year">2025/26</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
-            <a href="juventus25-26.html">
-              Juventus
+            <a href="juventus26-27.html">
+              JUVENTUS
             </a>
 
           </div>
@@ -323,39 +306,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>33</span>
-            <span>1</span>
-            <span>1</span>
+            <strong>35</strong>
+            <strong>1</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
             <span>Champions League</span>
-            <span>9</span>
-            <span>1</span>
-            <span>1</span>
+            <strong>9</strong>
+            <strong>1</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2024/25 · JUVENTUS -->
@@ -364,18 +349,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2024/25</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/juventus.png"
-              alt="Juventus">
+              alt="Juventus"
+            >
 
-            <a href="juventus24-25.html">
-              Juventus
+            <a href="juventus26-27.html">
+              JUVENTUS
             </a>
 
           </div>
@@ -383,39 +367,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Serie A</span>
-            <span>12</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>12</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>Champions League</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>Coppa Italia</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2024/25 · NEWCASTLE -->
@@ -424,18 +410,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2024/25</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/newcastle.png"
-              alt="Newcastle United">
+              alt="Newcastle United"
+            >
 
             <a href="#">
-              Newcastle United
+              NEWCASTLE UNITED
             </a>
 
           </div>
@@ -443,39 +428,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Premier League</span>
-            <span>10</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>10</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>FA Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>3</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EFL Cup</span>
+            <strong>3</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2023/24 -->
@@ -484,18 +471,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2023/24
-          </div>
+          <span class="career-year">2023/24</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bournemouth.png"
-              alt="Bournemouth">
+              alt="Bournemouth"
+            >
 
             <a href="#">
-              Bournemouth
+              BOURNEMOUTH
             </a>
 
           </div>
@@ -503,39 +489,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Premier League</span>
-            <span>23</span>
-            <span>0</span>
-            <span>1</span>
+            <strong>23</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>FA Cup</span>
-            <span>1</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EFL Cup</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2022/23 -->
@@ -544,18 +532,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2022/23
-          </div>
+          <span class="career-year">2022/23</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bournemouth.png"
-              alt="Bournemouth">
+              alt="Bournemouth"
+            >
 
             <a href="#">
-              Bournemouth
+              BOURNEMOUTH
             </a>
 
           </div>
@@ -563,32 +550,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Premier League</span>
-            <span>23</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>23</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>FA Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2021/22 -->
@@ -597,18 +586,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2021/22
-          </div>
+          <span class="career-year">2021/22</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bournemouth.png"
-              alt="Bournemouth">
+              alt="Bournemouth"
+            >
 
             <a href="#">
-              Bournemouth
+              BOURNEMOUTH
             </a>
 
           </div>
@@ -616,32 +604,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Championship</span>
-            <span>41</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>41</strong>
+            <strong>1</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EFL Cup</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2020/21 -->
@@ -650,18 +640,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
-          </div>
+          <span class="career-year">2020/21</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bournemouth.png"
-              alt="Bournemouth">
+              alt="Bournemouth"
+            >
 
             <a href="#">
-              Bournemouth
+              BOURNEMOUTH
             </a>
 
           </div>
@@ -669,32 +658,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Championship</span>
-            <span>36</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>36</strong>
+            <strong>1</strong>
+            <strong>1</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <span>FA Cup</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>EFL Cup</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2019/20 -->
@@ -703,18 +701,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2019/20
-          </div>
+          <span class="career-year">2019/20</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bournemouth.png"
-              alt="Bournemouth">
+              alt="Bournemouth"
+            >
 
             <a href="#">
-              Bournemouth
+              BOURNEMOUTH
             </a>
 
           </div>
@@ -722,32 +719,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Premier League</span>
-            <span>8</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>8</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EFL Cup</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2018/19 -->
@@ -756,18 +755,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2018/19
-          </div>
+          <span class="career-year">2018/19</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bristol-city.png"
-              alt="Bristol City">
+              alt="Bristol City"
+            >
 
             <a href="#">
-              Bristol City
+              BRISTOL CITY
             </a>
 
           </div>
@@ -775,39 +773,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Championship</span>
-            <span>32</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>32</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>FA Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EFL Cup</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2017/18 -->
@@ -816,18 +816,17 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2017/18
-          </div>
+          <span class="career-year">2017/18</span>
 
           <div class="career-club">
 
             <img
               src="images/teams/bristol-city.png"
-              alt="Bristol City">
+              alt="Bristol City"
+            >
 
             <a href="#">
-              Bristol City
+              BRISTOL CITY
             </a>
 
           </div>
@@ -835,34 +834,35 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
             <span>COMPETIZIONE</span>
-            <span>PRES</span>
-            <span>GOL</span>
-            <span>AST</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
           </div>
 
           <div class="career-row">
             <span>Championship</span>
-            <span>11</span>
-            <span>1</span>
-            <span>0</span>
+            <strong>11</strong>
+            <strong>1</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
             <span>FA Cup</span>
-            <span>1</span>
-            <span>0</span>
-            <span>0</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
           <div class="career-row">
-            <span>League Cup</span>
-            <span>2</span>
-            <span>0</span>
-            <span>0</span>
+            <span>EFL Cup</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
@@ -871,59 +871,37 @@
 
     </div>
 
-  </section>
 
 
-  <!-- =========================================================
-       NAZIONALE
-       ========================================================= -->
-
-  <section class="player-section">
-
-    <div class="section-heading">
-
-      <div class="section-number">04</div>
-
-      <div>
-        <div class="section-label">NAZIONALE</div>
-        <h2>Inghilterra</h2>
-      </div>
-
-    </div>
-
+    <!-- NAZIONALE -->
 
     <div class="career-national">
 
       <div class="career-national-header">
 
-        <div class="career-national-label">
-          NAZIONALE
-        </div>
+        <span class="career-national-label">NAZIONALE</span>
 
         <div class="career-national-team">
 
-          <div class="national-flag">
-            🏴
-          </div>
+          <span class="national-flag">🏴</span>
 
-          <a href="#">
-            Inghilterra U21
+          <a href="inghilterra.html">
+            INGHILTERRA U21
           </a>
 
-          <span class="national-period">
-            2018–2021
-          </span>
+          <span class="national-period">2018–2021</span>
 
         </div>
 
       </div>
+
 
 
       <div class="career-national-stats">
 
         <div class="national-stat">
 
-          <span>▣</span>
+          <span>🏟️</span>
 
           <strong>10</strong>
 
@@ -931,10 +909,9 @@
 
         </div>
 
-
         <div class="national-stat">
 
-          <span>●</span>
+          <span>⚽</span>
 
           <strong>0</strong>
 
@@ -949,89 +926,87 @@
   </section>
 
 
-  <!-- =========================================================
-       PARTITE
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- PARTITE -->
+
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">05</div>
+      <span class="section-number">04</span>
 
       <div>
-        <div class="section-label">PARTITE</div>
-        <h2>Le sue partite</h2>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
 
-
     <div class="archive-placeholder">
-      PROSSIMAMENTE
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
 
-  <!-- =========================================================
-       STORIA
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- STORIA -->
+
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">06</div>
+      <span class="section-number">05</span>
 
       <div>
-        <div class="section-label">LA SUA STORIA</div>
-        <h2>Dal Bristol City alla Juventus</h2>
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
+
 
 
     <div class="story-content">
 
       <div class="story-intro">
-
-        <span>IL PERCORSO</span>
-
-        <h3>
-          Un difensore cresciuto tra Bristol,
-          Bournemouth e Premier League.
-        </h3>
-
+        <span>LLOYD KELLY</span>
+        <h3>Dalla scuola del Bristol City alla Juventus.</h3>
       </div>
-
 
       <div class="story-text">
 
         <p>
-          Nato a Bristol il 6 ottobre 1998, Lloyd Kelly cresce nel settore
-          giovanile del Bristol City e debutta in prima squadra nel 2017.
-          Difensore centrale capace di giocare anche sulla fascia sinistra,
-          costruisce il primo capitolo della sua carriera nel calcio inglese.
+          Nato a Bristol il 6 ottobre 1998, Lloyd Casius Kelly cresce
+          nel settore giovanile del Bristol City, il club della sua
+          città. Nel 2017 debutta in prima squadra, iniziando il proprio
+          percorso nel calcio professionistico.
         </p>
 
         <p>
-          Nel 2019 passa al Bournemouth, dove rimane per cinque stagioni
-          attraversando Championship e Premier League. Con il club raggiunge
-          quota 141 presenze ufficiali e realizza tre reti.
+          Nel 2019 passa al Bournemouth. Con i Cherries costruisce
+          gran parte della propria carriera, giocando sia come
+          difensore centrale sia come terzino sinistro e raggiungendo
+          quota 141 presenze con il club.
         </p>
 
         <p>
-          Nel 2024 arriva al Newcastle United. L'esperienza dura pochi mesi:
-          nel gennaio 2025 la Juventus lo porta a Torino, inizialmente in
-          prestito, prima di renderne definitivo l'acquisto.
+          Nell'estate 2024 si trasferisce al Newcastle United. Dopo
+          una prima parte di stagione al St James' Park, nel gennaio
+          2025 arriva alla Juventus in prestito.
         </p>
 
         <p>
-          A Torino Kelly trova un ambiente nel quale la sua duttilità diventa
-          una delle caratteristiche principali: può essere utilizzato da
-          centrale oppure come terzino sinistro.
+          Le sue prestazioni convincono il club bianconero a
+          trasformare il trasferimento in definitivo nell'estate
+          2025. A Torino Kelly diventa una delle alternative della
+          linea difensiva, portando fisicità, duttilità ed esperienza
+          nel ruolo di centrale e di terzino sinistro.
         </p>
+
+        <a href="#" class="story-link">
+          LEGGI LA STORIA →
+        </a>
 
       </div>
 
@@ -1039,23 +1014,21 @@
 
   </section>
 
+</main>
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
 
-  <footer class="site-footer">
 
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
+<footer class="site-footer">
 
-    <div class="footer-copy">
-      PLAYER ARCHIVE
-    </div>
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
 
-  </footer>
+  <div class="footer-copy">
+    FOOTBALL · HISTORY · STORIES
+  </div>
 
+</footer>
 
 </body>
 </html>
