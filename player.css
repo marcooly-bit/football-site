@@ -123,8 +123,13 @@
   opacity: 0.8;
 }
 
+
+/* CLUB + CREST */
+
 .player-club {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 
   width: fit-content;
 
@@ -140,7 +145,19 @@
   text-transform: uppercase;
 
   border-bottom: 1px solid rgba(244, 243, 239, 0.4);
-  padding-bottom: 3px;
+
+  padding-bottom: 5px;
+}
+
+.player-club img {
+  width: 24px;
+  height: 24px;
+
+  object-fit: contain;
+}
+
+.player-club span {
+  display: block;
 }
 
 .player-club:hover {
@@ -187,6 +204,28 @@
   font-weight: 600;
 
   letter-spacing: 0.02em;
+}
+
+
+/* DUAL NATIONALITY */
+
+.nationalities {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.nationalities span {
+  display: block;
+
+  margin: 0;
+
+  font-size: 13px;
+
+  letter-spacing: 0.02em;
+
+  opacity: 1;
 }
 
 
@@ -322,6 +361,8 @@
   border: 2px solid #121212;
 
   box-shadow: 0 0 0 3px rgba(18,18,18,0.2);
+
+  cursor: pointer;
 }
 
 
@@ -339,34 +380,37 @@
 }
 
 
-/* POSITION OF ROLES */
-
-
 /* PUNTA */
+
 .pitch-player.striker {
   left: 50%;
-  top: 12%;
+  top: 10%;
 }
 
 
 /* TREQUARTISTA */
+
 .pitch-player.attacking-mid {
   left: 50%;
-  top: 31%;
+  top: 30%;
 }
 
 
-/* ESTERNO DESTRO */
+/* ESTERNO DESTRO
+   SULLA LINEA DI CENTROCAMPO */
+
 .pitch-player.right-wing {
-  left: 78%;
-  top: 42%;
+  left: 84%;
+  top: 50%;
 }
 
 
-/* ALA DESTRA */
+/* ALA DESTRA
+   RUOLO PREFERITO, PIÙ ALTA */
+
 .pitch-player.right-winger {
   left: 84%;
-  top: 57%;
+  top: 27%;
 }
 
 
@@ -674,6 +718,133 @@
 
 
 /* =========================================================
+   NATIONAL TEAM
+   ========================================================= */
+
+.career-national {
+  margin-top: 45px;
+
+  border-top: 1px solid rgba(244, 243, 239, 0.15);
+  border-bottom: 1px solid rgba(244, 243, 239, 0.15);
+}
+
+
+/* HEADER */
+
+.career-national-header {
+  min-height: 82px;
+
+  display: grid;
+  grid-template-columns: 120px 1fr;
+
+  align-items: center;
+
+  border-bottom: 1px solid rgba(244, 243, 239, 0.08);
+}
+
+.career-national-label {
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  opacity: 0.4;
+}
+
+.career-national-team {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.national-flag {
+  font-size: 24px;
+
+  line-height: 1;
+}
+
+.career-national-team a {
+  color: #f4f3ef;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+.career-national-team a:hover {
+  text-decoration: underline;
+}
+
+.national-period {
+  margin-left: 4px;
+
+  font-size: 12px;
+
+  opacity: 0.45;
+}
+
+
+/* NATIONAL STATS */
+
+.career-national-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.national-stat {
+  min-height: 105px;
+
+  padding: 20px;
+
+  display: grid;
+
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 1fr auto;
+
+  column-gap: 8px;
+
+  align-items: center;
+
+  border-right: 1px solid rgba(244, 243, 239, 0.08);
+}
+
+.national-stat:last-child {
+  border-right: none;
+}
+
+.national-stat span {
+  grid-row: 1 / 3;
+
+  font-size: 20px;
+}
+
+.national-stat strong {
+  align-self: end;
+
+  font-size: 30px;
+  line-height: 1;
+
+  font-weight: 700;
+}
+
+.national-stat small {
+  align-self: start;
+
+  margin-top: 5px;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  opacity: 0.4;
+}
+
+
+/* =========================================================
    MATCHES
    ========================================================= */
 
@@ -933,6 +1104,22 @@
   }
 
   .career-row {
+    font-size: 11px;
+  }
+
+  .career-national-header {
+    grid-template-columns: 85px 1fr;
+  }
+
+  .career-national-team {
+    gap: 8px;
+  }
+
+  .national-flag {
+    font-size: 21px;
+  }
+
+  .national-period {
     font-size: 11px;
   }
 
