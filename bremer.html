@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -9,20 +8,32 @@
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="player.css">
-
 </head>
 
 <body>
 
-<div class="player-page">
+<header class="site-header">
+  <div class="brand">
+    <a href="index.html">PAGES OF FOOTBALL</a>
+  </div>
 
-  <!-- =========================================================
-       HERO
-       ========================================================= -->
+  <nav class="main-nav">
+    <a href="index.html">HOME</a>
+    <a href="squadre.html">SQUADRE</a>
+    <a href="giocatori.html" class="active">GIOCATORI</a>
+    <a href="storie.html">STORIE</a>
+  </nav>
 
-  <section class="player-hero juventus">
+  <div class="season-label">2026/27</div>
+</header>
 
-    <!-- PHOTO -->
+
+
+<main class="player-page">
+
+  <!-- HERO -->
+
+  <section class="player-hero">
 
     <div class="player-hero-photo">
 
@@ -36,91 +47,61 @@
     </div>
 
 
-    <!-- MAIN INFO -->
 
     <div class="player-hero-main">
 
       <div class="player-eyebrow">
-        JUVENTUS · 2026/27
+        JUVENTUS
       </div>
 
-      <h1>Gleison<br>Bremer</h1>
+      <h1>GLEISON BREMER</h1>
 
       <div class="player-role">
-        DIFENSORE CENTRALE
+        DIFENSORE · CENTRALE
       </div>
 
       <a href="juventus26-27.html" class="player-club">
-
         <img
           src="images/teams/juventus.png"
           alt="Juventus"
         >
-
         <span>JUVENTUS</span>
-
       </a>
 
 
-      <!-- DATA -->
 
       <div class="player-data">
 
         <div class="data-item">
-
           <span>DATA DI NASCITA</span>
-
-          <strong>18.03.1997</strong>
-
+          <strong>18 MAR 1997</strong>
         </div>
 
-
         <div class="data-item">
-
           <span>ETÀ</span>
-
           <strong>29</strong>
-
         </div>
 
-
         <div class="data-item">
-
-          <span>ALTEZZA</span>
-
-          <strong>1.88 m</strong>
-
-        </div>
-
-
-        <div class="data-item">
-
           <span>NAZIONALITÀ</span>
-
-          <div class="nationalities">
-
+          <strong class="nationalities">
             <span>🇧🇷 BRASILE</span>
-
-          </div>
-
+          </strong>
         </div>
 
-
         <div class="data-item">
-
-          <span>RUOLO</span>
-
-          <strong>DIFENSORE</strong>
-
+          <span>ALTEZZA</span>
+          <strong>188 CM</strong>
         </div>
 
-
         <div class="data-item">
-
           <span>PIEDE</span>
-
           <strong>DESTRO</strong>
+        </div>
 
+        <div class="data-item">
+          <span>ALLA JUVENTUS DAL</span>
+          <strong>2022</strong>
         </div>
 
       </div>
@@ -128,37 +109,25 @@
     </div>
 
 
-    <!-- PITCH -->
+
+    <!-- POSIZIONI -->
 
     <div class="player-position">
 
       <div class="football-pitch">
 
         <div class="pitch-halfway"></div>
-
         <div class="pitch-circle"></div>
-
         <div class="pitch-box pitch-box-top"></div>
         <div class="pitch-box pitch-box-bottom"></div>
-
         <div class="pitch-goal pitch-goal-top"></div>
         <div class="pitch-goal pitch-goal-bottom"></div>
 
-
-        <!-- PRIMARY POSITION -->
-
-        <div
-          class="pitch-player center-back-left preferred"
+        <!-- DIFENSORE CENTRALE · RUOLO PREFERITO -->
+        <span
+          class="pitch-player preferred center-back-right"
           title="Difensore centrale"
-        ></div>
-
-
-        <!-- SECONDARY POSITION -->
-
-        <div
-          class="pitch-player center-back-right secondary"
-          title="Difensore centrale"
-        ></div>
+        ></span>
 
       </div>
 
@@ -167,105 +136,68 @@
   </section>
 
 
-  <!-- =========================================================
-       PALMARES
-       ========================================================= -->
 
-  <div class="player-honours">
+  <!-- PALMARES -->
+
+  <section class="player-honours">
 
     <a href="#" class="honour-item" title="Coppa Italia">
-
-      <div class="honour-logo">
-
-        <img
-          src="images/trophies/coppa-italia.png"
-          alt="Coppa Italia"
-        >
-
-      </div>
-
+      <span class="honour-logo">CI</span>
       <strong>1</strong>
-
     </a>
 
-  </div>
+  </section>
 
 
-  <!-- =========================================================
-       STATISTICHE
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- STATISTICHE -->
+
+  <section class="player-section player-stats">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        01
-      </div>
+      <span class="section-number">02</span>
 
       <div>
-
-        <span class="section-label">
-          STAGIONE
-        </span>
-
-        <h2>Statistiche</h2>
-
+        <span class="section-label">STAGIONE</span>
+        <h2>STATISTICHE</h2>
       </div>
 
       <select class="season-selector">
-
-        <option>2026/27</option>
+        <option selected>2026/27</option>
         <option>2025/26</option>
-
+        <option>2024/25</option>
+        <option>2023/24</option>
       </select>
 
     </div>
 
 
+
     <div class="stats-grid">
 
       <div class="stat-box">
-
         <span class="stat-icon">🏟️</span>
-
         <strong>6</strong>
-
         <small>PRESENZE</small>
-
       </div>
 
-
       <div class="stat-box">
-
         <span class="stat-icon">⚽</span>
-
         <strong>2</strong>
-
         <small>GOL</small>
-
       </div>
 
-
       <div class="stat-box">
-
         <span class="stat-icon">👟</span>
-
         <strong>0</strong>
-
         <small>ASSIST</small>
-
       </div>
 
-
       <div class="stat-box">
-
         <span class="stat-icon">⏱</span>
-
         <strong>480</strong>
-
         <small>MINUTI</small>
-
       </div>
 
     </div>
@@ -273,32 +205,26 @@
   </section>
 
 
-  <!-- =========================================================
-       CARRIERA
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- CARRIERA -->
+
+  <section class="player-section player-career">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        02
-      </div>
+      <span class="section-number">03</span>
 
       <div>
-
-        <span class="section-label">
-          ARCHIVIO
-        </span>
-
-        <h2>Carriera</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
       </div>
 
     </div>
 
 
+
     <div class="career-list">
+
 
 
       <!-- 2026/27 -->
@@ -307,9 +233,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2026/27
-          </div>
+          <span class="career-year">2026/27</span>
 
           <div class="career-club">
 
@@ -327,40 +251,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>5</strong>
             <strong>2</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Europa League</span>
             <strong>1</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2025/26 -->
@@ -369,9 +287,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2025/26
-          </div>
+          <span class="career-year">2025/26</span>
 
           <div class="career-club">
 
@@ -380,7 +296,7 @@
               alt="Juventus"
             >
 
-            <a href="juventus25-26.html">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -389,40 +305,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>26</strong>
-            <strong>4</strong>
             <strong>3</strong>
-
+            <strong>4</strong>
           </div>
 
-
           <div class="career-row">
-
-            <span>Coppa Italia</span>
-            <strong>1</strong>
+            <span>Champions League</span>
+            <strong>4</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2024/25 -->
@@ -431,9 +341,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2024/25
-          </div>
+          <span class="career-year">2024/25</span>
 
           <div class="career-club">
 
@@ -442,7 +350,7 @@
               alt="Juventus"
             >
 
-            <a href="juventus24-25.html">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -451,30 +359,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>6</strong>
             <strong>0</strong>
             <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>Champions League</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2023/24 -->
@@ -483,9 +395,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2023/24
-          </div>
+          <span class="career-year">2023/24</span>
 
           <div class="career-club">
 
@@ -494,7 +404,7 @@
               alt="Juventus"
             >
 
-            <a href="juventus23-24.html">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -503,40 +413,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>36</strong>
             <strong>3</strong>
-            <strong>0</strong>
-
+            <strong>4</strong>
           </div>
 
-
           <div class="career-row">
-
             <span>Coppa Italia</span>
-            <strong>4</strong>
-            <strong>0</strong>
-            <strong>0</strong>
-
+            <strong>—</strong>
+            <strong>—</strong>
+            <strong>—</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2022/23 -->
@@ -545,9 +449,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2022/23
-          </div>
+          <span class="career-year">2022/23</span>
 
           <div class="career-club">
 
@@ -556,7 +458,7 @@
               alt="Juventus"
             >
 
-            <a href="juventus22-23.html">
+            <a href="juventus26-27.html">
               JUVENTUS
             </a>
 
@@ -565,40 +467,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>30</strong>
             <strong>4</strong>
-            <strong>1</strong>
-
+            <strong>3</strong>
           </div>
 
-
           <div class="career-row">
-
-            <span>Coppa Italia</span>
+            <span>Champions League</span>
             <strong>3</strong>
             <strong>1</strong>
             <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>Europa League</span>
+            <strong>7</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2021/22 -->
@@ -607,9 +510,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2021/22
-          </div>
+          <span class="career-year">2021/22</span>
 
           <div class="career-club">
 
@@ -618,7 +519,7 @@
               alt="Torino"
             >
 
-            <a href="torino21-22.html">
+            <a href="#">
               TORINO
             </a>
 
@@ -627,30 +528,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>33</strong>
             <strong>3</strong>
             <strong>0</strong>
+          </div>
 
+          <div class="career-row">
+            <span>Coppa Italia</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2020/21 -->
@@ -659,9 +564,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2020/21
-          </div>
+          <span class="career-year">2020/21</span>
 
           <div class="career-club">
 
@@ -670,7 +573,7 @@
               alt="Torino"
             >
 
-            <a href="torino20-21.html">
+            <a href="#">
               TORINO
             </a>
 
@@ -679,40 +582,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
             <strong>27</strong>
             <strong>3</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Coppa Italia</span>
             <strong>2</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2019/20 -->
@@ -721,9 +618,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2019/20
-          </div>
+          <span class="career-year">2019/20</span>
 
           <div class="career-club">
 
@@ -732,7 +627,7 @@
               alt="Torino"
             >
 
-            <a href="torino19-20.html">
+            <a href="#">
               TORINO
             </a>
 
@@ -741,40 +636,34 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
-            <strong>25</strong>
-            <strong>2</strong>
+            <strong>29</strong>
+            <strong>3</strong>
             <strong>0</strong>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Coppa Italia</span>
             <strong>2</strong>
-            <strong>2</strong>
             <strong>0</strong>
-
+            <strong>0</strong>
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2018/19 -->
@@ -783,9 +672,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2018/19
-          </div>
+          <span class="career-year">2018/19</span>
 
           <div class="career-club">
 
@@ -794,7 +681,7 @@
               alt="Torino"
             >
 
-            <a href="torino18-19.html">
+            <a href="#">
               TORINO
             </a>
 
@@ -803,40 +690,41 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
             <span>Serie A</span>
-            <strong>29</strong>
+            <strong>27</strong>
+            <strong>2</strong>
             <strong>0</strong>
-            <strong>0</strong>
-
           </div>
 
+          <div class="career-row">
+            <span>Europa League</span>
+            <strong>5</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
 
           <div class="career-row">
-
             <span>Coppa Italia</span>
             <strong>2</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
 
       </div>
+
 
 
       <!-- 2017/18 -->
@@ -845,9 +733,7 @@
 
         <div class="career-season-header">
 
-          <div class="career-year">
-            2017/18
-          </div>
+          <span class="career-year">2017/18</span>
 
           <div class="career-club">
 
@@ -856,7 +742,7 @@
               alt="Atlético Mineiro"
             >
 
-            <a href="atletico-mineiro17-18.html">
+            <a href="#">
               ATLÉTICO MINEIRO
             </a>
 
@@ -865,145 +751,88 @@
         </div>
 
 
+
         <div class="career-competitions">
 
           <div class="career-columns">
-
             <span>COMPETIZIONE</span>
             <span>🏟️</span>
             <span>⚽</span>
             <span>👟</span>
-
           </div>
 
-
           <div class="career-row">
-
-            <span>Campeonato Brasileiro</span>
+            <span>Serie A</span>
             <strong>4</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
+          <div class="career-row">
+            <span>Campeonato Mineiro</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
 
           <div class="career-row">
-
             <span>Copa do Brasil</span>
-            <strong>3</strong>
+            <strong>4</strong>
             <strong>0</strong>
             <strong>0</strong>
-
           </div>
 
         </div>
 
       </div>
 
-
-      <!-- 2016 -->
-
-      <div class="career-season">
-
-        <div class="career-season-header">
-
-          <div class="career-year">
-            2016
-          </div>
-
-          <div class="career-club">
-
-            <img
-              src="images/teams/sao-paulo.png"
-              alt="São Paulo"
-            >
-
-            <a href="sao-paulo.html">
-              SÃO PAULO
-            </a>
-
-          </div>
-
-        </div>
+    </div>
 
 
-        <div class="career-competitions">
 
-          <div class="career-columns">
+    <!-- NAZIONALE -->
 
-            <span>COMPETIZIONE</span>
-            <span>🏟️</span>
-            <span>⚽</span>
-            <span>👟</span>
+    <div class="career-national">
 
-          </div>
+      <div class="career-national-header">
 
+        <span class="career-national-label">NAZIONALE</span>
 
-          <div class="career-row">
+        <div class="career-national-team">
 
-            <span>Copa Paulista</span>
-            <strong>2</strong>
-            <strong>0</strong>
-            <strong>0</strong>
+          <span class="national-flag">🇧🇷</span>
 
-          </div>
+          <a href="brasile.html">
+            BRASILE
+          </a>
+
+          <span class="national-period">2022–</span>
 
         </div>
 
       </div>
 
 
-      <!-- NATIONAL TEAM -->
 
-      <div class="career-national">
+      <div class="career-national-stats">
 
-        <div class="career-national-header">
+        <div class="national-stat">
 
-          <div class="career-national-label">
-            NAZIONALE
-          </div>
+          <span>🏟️</span>
 
-          <div class="career-national-team">
+          <strong>6</strong>
 
-            <span class="national-flag">
-              🇧🇷
-            </span>
-
-            <a href="#">
-              BRASILE
-            </a>
-
-            <span class="national-period">
-              2022–
-            </span>
-
-          </div>
+          <small>PRESENZE</small>
 
         </div>
 
+        <div class="national-stat">
 
-        <div class="career-national-stats">
+          <span>⚽</span>
 
-          <div class="national-stat">
+          <strong>1</strong>
 
-            <span>🏟️</span>
-
-            <strong>8</strong>
-
-            <small>PRESENZE</small>
-
-          </div>
-
-
-          <div class="national-stat">
-
-            <span>⚽</span>
-
-            <strong>1</strong>
-
-            <small>GOL</small>
-
-          </div>
+          <small>GOL</small>
 
         </div>
 
@@ -1014,104 +843,84 @@
   </section>
 
 
-  <!-- =========================================================
-       PARTITE
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- PARTITE -->
+
+  <section class="player-section player-matches">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        03
-      </div>
+      <span class="section-number">04</span>
 
       <div>
-
-        <span class="section-label">
-          ARCHIVIO
-        </span>
-
-        <h2>Partite</h2>
-
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
-
 
     <div class="archive-placeholder">
-
-      LE PARTITE DI GLEISON BREMER SARANNO DISPONIBILI NELL'ARCHIVIO
-
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
 
-  <!-- =========================================================
-       STORIA
-       ========================================================= -->
 
-  <section class="player-section">
+  <!-- STORIA -->
+
+  <section class="player-section player-story">
 
     <div class="section-heading">
 
-      <div class="section-number">
-        04
-      </div>
+      <span class="section-number">05</span>
 
       <div>
-
-        <span class="section-label">
-          STORIA
-        </span>
-
-        <h2>La sua storia</h2>
-
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
       </div>
 
     </div>
+
 
 
     <div class="story-content">
 
       <div class="story-intro">
-
-        <span>
-          DA COARACI A TORINO
-        </span>
-
-        <h3>
-          Un difensore brasiliano diventato simbolo della retroguardia bianconera.
-        </h3>
-
+        <span>GLEISON BREMER</span>
+        <h3>Dal Brasile alla Juventus, passando per Torino.</h3>
       </div>
-
 
       <div class="story-text">
 
         <p>
-
-          Nato a Coaraci, nello stato brasiliano di Bahia, Gleison Bremer
-          si forma calcisticamente nel Desportivo Brasil e successivamente
-          entra nel settore giovanile del São Paulo. Nel 2017 arriva il
-          debutto tra i professionisti con l'Atlético Mineiro.
-
-          Nel 2018 approda in Italia al Torino, dove costruisce la propria
-          reputazione come difensore centrale. Quattro stagioni in granata
-          lo trasformano in uno dei difensori più riconoscibili della
-          Serie A, fino al riconoscimento di miglior difensore del
-          campionato 2021/22.
-
-          Nell'estate 2022 arriva il trasferimento alla Juventus. Da quel
-          momento Bremer diventa una presenza centrale nella difesa
-          bianconera, fino alla conquista della Coppa Italia 2023/24.
-
+          Nato il 18 marzo 1997 in Brasile, Gleison Bremer Silva
+          Nascimento muove i primi passi nel calcio professionistico
+          dopo la formazione nei settori giovanili di Desportivo Brasil
+          e San Paolo.
         </p>
 
+        <p>
+          Nel 2017 debutta con l'Atlético Mineiro. Un anno più tardi
+          arriva in Italia, al Torino, dove costruisce rapidamente la
+          propria reputazione come uno dei difensori centrali più
+          affidabili della Serie A.
+        </p>
+
+        <p>
+          La stagione 2021/22 rappresenta uno dei momenti più importanti
+          del suo percorso: Bremer viene premiato come miglior difensore
+          della Serie A e attira l'attenzione dei principali club europei.
+        </p>
+
+        <p>
+          Nell'estate 2022 passa alla Juventus. Con la maglia bianconera
+          diventa un punto di riferimento della difesa e conquista la
+          Coppa Italia 2023/24.
+        </p>
 
         <a href="#" class="story-link">
-          LEGGI LA STORIA COMPLETA →
+          LEGGI LA STORIA →
         </a>
 
       </div>
@@ -1120,24 +929,21 @@
 
   </section>
 
+</main>
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
 
-  <footer class="site-footer">
 
-    <div class="footer-brand">
-      PAGES OF FOOTBALL
-    </div>
+<footer class="site-footer">
 
-    <div class="footer-copy">
-      FOOTBALL · HISTORY · STORIES
-    </div>
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
 
-  </footer>
+  <div class="footer-copy">
+    FOOTBALL · HISTORY · STORIES
+  </div>
 
-</div>
+</footer>
 
 </body>
 </html>
