@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AS Roma · 2026/27 · Pages Of Football</title>
+  <title>AS Roma · Pages Of Football</title>
 
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="team.css">
+
 </head>
 
 <body>
@@ -30,9 +32,8 @@
 
 </header>
 
-
 <!-- =========================
-     LEAGUE SIDEBAR · SERIE A
+LEAGUE SIDEBAR · SERIE A
 ========================= -->
 
 <aside class="league-sidebar">
@@ -126,14 +127,20 @@
 
 <section class="hero">
 
-  <div class="hero-image">
+  <div
+    class="hero-image"
+    style="background-image: url('images/stadium/roma-stadium.jpg');"
+  >
 
     <div class="hero-overlay"></div>
 
     <div class="hero-content">
 
-      <div class="roma-crest">
-        <img src="images/teams/roma.png" alt="AS Roma">
+      <div class="team-crest">
+        <img
+          src="images/teams/roma.png"
+          alt="AS Roma"
+        >
       </div>
 
       <div>
@@ -163,7 +170,9 @@
 
 <section class="club-section">
 
-  <span class="section-label">01 · IL CLUB</span>
+  <span class="section-label">
+    01 · IL CLUB
+  </span>
 
   <div class="club-content">
 
@@ -181,6 +190,9 @@
       <br><br>
       Nel corso della sua storia la Roma ha conquistato tre campionati italiani,
       nove Coppe Italia, due Supercoppe Italiane e importanti trofei europei.
+      <br><br>
+      La Roma gioca le proprie partite casalinghe allo Stadio Olimpico,
+      storico impianto della capitale.
     </p>
 
   </div>
@@ -194,7 +206,9 @@
 
 <section class="palmares-section">
 
-  <span class="section-label">02 · PALMARES</span>
+  <span class="section-label">
+    02 · PALMARES
+  </span>
 
   <div class="trophy-grid">
 
@@ -345,51 +359,35 @@
 
 <section class="squad-section">
 
-  <span class="section-label">03 · ROSA 2026/27</span>
+  <div class="section-heading-row">
+
+    <div>
+
+      <p class="section-label">
+        Rosa 2026/27
+      </p>
+
+      <h2>
+        La squadra
+      </h2>
+
+    </div>
 
 
-  <!-- SEASON SELECTOR -->
+    <button
+      class="season-selector"
+      type="button"
+    >
 
-  <div class="season-selector">
+      <span>STAGIONI</span>
 
-    <span class="season-selector-label">STAGIONE</span>
+      <strong>2026/27</strong>
 
-    <details>
+      <span class="season-arrow">
+        ⌄
+      </span>
 
-      <summary>
-        <strong>2026/27</strong>
-        <span>⌄</span>
-      </summary>
-
-      <div class="season-dropdown">
-
-        <a href="asroma-2026-27.html" class="current">
-          2026/27
-        </a>
-
-        <a href="asroma-2025-26.html">
-          2025/26
-        </a>
-
-        <a href="asroma-2024-25.html">
-          2024/25
-        </a>
-
-        <a href="asroma-2023-24.html">
-          2023/24
-        </a>
-
-        <a href="asroma-2022-23.html">
-          2022/23
-        </a>
-
-        <a href="asroma-2021-22.html">
-          2021/22
-        </a>
-
-      </div>
-
-    </details>
+    </button>
 
   </div>
 
@@ -420,55 +418,46 @@
   </a>
 
 
-  <!-- PORTIERI -->
+  <!-- =========================
+       PORTIERI
+  ========================= -->
 
-  <div class="squad-group">
+  <div class="position-group">
 
-    <h3>PORTIERI</h3>
+    <h3>Portieri</h3>
 
-    <div class="players-grid">
+    <div class="player-grid">
+
 
       <div class="player-card">
+
+        <div class="player-number">99</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656675/players/svilar.png"
           alt="Mile Svilar"
         >
 
-        <span class="shirt-number">99</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="mile-svilar.html">Mile Svilar</a>
-            <img src="images/flags/belgium.png" alt="Belgio">
-          </strong>
-
-          <span>Portiere</span>
-
+        <div class="player-info">
+          <strong><a href="mile-svilar.html">Mile Svilar</a></strong>
+          <span>🇷🇸 Serbia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">95</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656951/players/gollini.png"
           alt="Pierluigi Gollini"
         >
 
-        <span class="shirt-number">95</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="pierluigi-gollini.html">Pierluigi Gollini</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Portiere</span>
-
+        <div class="player-info">
+          <strong><a href="pierluigi-gollini.html">Pierluigi Gollini</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
@@ -476,426 +465,303 @@
 
       <div class="player-card">
 
+        <div class="player-number">70</div>
+
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656841/players/de-marzi.jpg"
-          alt="Matteo De Marzi"
+          alt="Giorgio De Marzi"
         >
 
-        <span class="shirt-number">70</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="matteo-de-marzi.html">Matteo De Marzi</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Portiere</span>
-
+        <div class="player-info">
+          <strong><a href="giorgio-de-marzi.html">Giorgio De Marzi</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
+
 
     </div>
 
   </div>
 
 
-  <!-- DIFENSORI -->
+  <!-- =========================
+       DIFENSORI
+  ========================= -->
 
-  <div class="squad-group">
+  <div class="position-group">
 
-    <h3>DIFENSORI</h3>
+    <h3>Difensori</h3>
 
-    <div class="players-grid">
+    <div class="player-grid">
+
 
       <div class="player-card">
+
+        <div class="player-number">2</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789657001/players/rensch.png"
           alt="Devyne Rensch"
         >
 
-        <span class="shirt-number">2</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="devyne-rensch.html">Devyne Rensch</a>
-            <img src="images/flags/netherlands.png" alt="Paesi Bassi">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="devyne-rensch.html">Devyne Rensch</a></strong>
+          <span>🇳🇱 Paesi Bassi</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">3</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656710/players/koulierakis.jpg"
           alt="Konstantinos Koulierakis"
         >
 
-        <span class="shirt-number">3</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="konstantinos-koulierakis.html">Konstantinos Koulierakis</a>
-            <img src="images/flags/greece.png" alt="Grecia">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="konstantinos-koulierakis.html">Konstantinos Koulierakis</a></strong>
+          <span>🇬🇷 Grecia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">5</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656743/players/ndicka.png"
           alt="Evan Ndicka"
         >
 
-        <span class="shirt-number">5</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="evan-ndicka.html">Evan Ndicka</a>
-            <img src="images/flags/ivory-coast.png" alt="Costa d'Avorio">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="evan-ndicka.html">Evan Ndicka</a></strong>
+          <span>🇨🇮 Costa d'Avorio</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">22</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656825/players/hermoso.png"
           alt="Mario Hermoso"
         >
 
-        <span class="shirt-number">22</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="mario-hermoso.html">Mario Hermoso</a>
-            <img src="images/flags/spain.png" alt="Spagna">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="mario-hermoso.html">Mario Hermoso</a></strong>
+          <span>🇪🇸 Spagna</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">23</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789657025/players/mancini.jpg"
           alt="Gianluca Mancini"
         >
 
-        <span class="shirt-number">23</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="gianluca-mancini.html">Gianluca Mancini</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="gianluca-mancini.html">Gianluca Mancini</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">26</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656787/players/balerdi.jpg"
           alt="Leonardo Balerdi"
         >
 
-        <span class="shirt-number">26</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="leonardo-balerdi.html">Leonardo Balerdi</a>
-            <img src="images/flags/argentina.png" alt="Argentina">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="leonardo-balerdi.html">Leonardo Balerdi</a></strong>
+          <span>🇦🇷 Argentina</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">43</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656866/players/wesley.png"
           alt="Wesley"
         >
 
-        <span class="shirt-number">43</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="wesley.html">Wesley</a>
-            <img src="images/flags/brazil.png" alt="Brasile">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="wesley.html">Wesley</a></strong>
+          <span>🇧🇷 Brasile</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">77</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656817/players/lulli.jpg"
           alt="Emanuele Lulli"
         >
 
-        <span class="shirt-number">77</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="emanuele-lulli.html">Emanuele Lulli</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="emanuele-lulli.html">Emanuele Lulli</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">87</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789657043/players/ghilardi.png"
           alt="Daniele Ghilardi"
         >
 
-        <span class="shirt-number">87</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="daniele-ghilardi.html">Daniele Ghilardi</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="daniele-ghilardi.html">Daniele Ghilardi</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">20</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/molina.jpg"
           alt="Nahuel Molina"
         >
 
-        <span class="shirt-number">20</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="nahuel-molina.html">Nahuel Molina</a>
-            <img src="images/flags/argentina.png" alt="Argentina">
-          </strong>
-
-          <span>Difensore</span>
-
+        <div class="player-info">
+          <strong><a href="nahuel-molina.html">Nahuel Molina</a></strong>
+          <span>🇦🇷 Argentina</span>
         </div>
 
       </div>
+
 
     </div>
 
   </div>
 
 
-  <!-- CENTROCAMPISTI -->
+  <!-- =========================
+       CENTROCAMPISTI
+  ========================= -->
 
-  <div class="squad-group">
+  <div class="position-group">
 
-    <h3>CENTROCAMPISTI</h3>
+    <h3>Centrocampisti</h3>
 
-    <div class="players-grid">
+    <div class="player-grid">
+
 
       <div class="player-card">
+
+        <div class="player-number">4</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656869/players/cristante.png"
           alt="Bryan Cristante"
         >
 
-        <span class="shirt-number">4</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="bryan-cristante.html">Bryan Cristante</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Centrocampista</span>
-
+        <div class="player-info">
+          <strong><a href="bryan-cristante.html">Bryan Cristante</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">7</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656892/players/pellegrini.jpg"
           alt="Lorenzo Pellegrini"
         >
 
-        <span class="shirt-number">7</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="lorenzo-pellegrini.html">Lorenzo Pellegrini</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Centrocampista</span>
-
+        <div class="player-info">
+          <strong><a href="lorenzo-pellegrini.html">Lorenzo Pellegrini</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">15</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656862/players/de-roon.jpg"
           alt="Marten de Roon"
         >
 
-        <span class="shirt-number">15</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="marten-de-roon.html">Marten de Roon</a>
-            <img src="images/flags/netherlands.png" alt="Paesi Bassi">
-          </strong>
-
-          <span>Centrocampista</span>
-
+        <div class="player-info">
+          <strong><a href="marten-de-roon.html">Marten de Roon</a></strong>
+          <span>🇳🇱 Paesi Bassi</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">17</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789657060/players/kone.jpg"
           alt="Manu Koné"
         >
 
-        <span class="shirt-number">17</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="manu-kone.html">Manu Koné</a>
-            <img src="images/flags/france.png" alt="Francia">
-          </strong>
-
-          <span>Centrocampista</span>
-
+        <div class="player-info">
+          <strong><a href="manu-kone.html">Manu Koné</a></strong>
+          <span>🇫🇷 Francia</span>
         </div>
 
       </div>
 
 
       <div class="player-card">
+
+        <div class="player-number">61</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656684/players/pisilli.png"
           alt="Niccolò Pisilli"
         >
 
-        <span class="shirt-number">61</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="niccolo-pisilli.html">Niccolò Pisilli</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Centrocampista</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <!-- ATTACCANTI -->
-
-  <div class="squad-group">
-
-    <h3>ATTACCANTI</h3>
-
-    <div class="players-grid">
-
-      <div class="player-card">
-
-        <img
-          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/castro.jpg"
-          alt="Santiago Castro"
-        >
-
-        <span class="shirt-number">9</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="santiago-castro.html">Santiago Castro</a>
-            <img src="images/flags/argentina.png" alt="Argentina">
-          </strong>
-
-          <span>Attaccante</span>
-
+        <div class="player-info">
+          <strong><a href="niccolo-pisilli.html">Niccolò Pisilli</a></strong>
+          <span>🇮🇹 Italia</span>
         </div>
 
       </div>
@@ -903,117 +769,138 @@
 
       <div class="player-card">
 
-        <img
-          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656845/players/malen.png"
-          alt="Donyell Malen"
-        >
-
-        <span class="shirt-number">14</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="donyell-malen.html">Donyell Malen</a>
-            <img src="images/flags/netherlands.png" alt="Paesi Bassi">
-          </strong>
-
-          <span>Attaccante</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="player-card">
-
-        <img
-          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789657038/players/soule.png"
-          alt="Matías Soulé"
-        >
-
-        <span class="shirt-number">18</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="matias-soule.html">Matías Soulé</a>
-            <img src="images/flags/argentina.png" alt="Argentina">
-          </strong>
-
-          <span>Attaccante</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="player-card">
-
-        <img
-          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1790726046/paulo-dybala.png"
-          alt="Paulo Dybala"
-        >
-
-        <span class="shirt-number">21</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="paulo-dybala.html">Paulo Dybala</a>
-            <img src="images/flags/argentina.png" alt="Argentina">
-          </strong>
-
-          <span>Attaccante</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="player-card">
-
-        <img
-          src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/arena.png"
-          alt="Antonio Arena"
-        >
-
-        <span class="shirt-number">68</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="antonio-arena.html">Antonio Arena</a>
-            <img src="images/flags/italy.png" alt="Italia">
-          </strong>
-
-          <span>Attaccante</span>
-
-        </div>
-
-      </div>
-
-
-      <div class="player-card">
+        <div class="player-number">86</div>
 
         <img
           src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656711/players/mora.jpg"
           alt="Rodrigo Mora"
         >
 
-        <span class="shirt-number">86</span>
-
-        <div class="player-card-info">
-
-          <strong>
-            <a href="rodrigo-mora.html">Rodrigo Mora</a>
-            <img src="images/flags/portugal.png" alt="Portogallo">
-          </strong>
-
-          <span>Attaccante</span>
-
+        <div class="player-info">
+          <strong><a href="rodrigo-mora.html">Rodrigo Mora</a></strong>
+          <span>🇵🇹 Portogallo</span>
         </div>
 
       </div>
+
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       ATTACCANTI
+  ========================= -->
+
+  <div class="position-group">
+
+    <h3>Attaccanti</h3>
+
+    <div class="player-grid">
+
+
+      <div class="player-card">
+
+        <div class="player-number">9</div>
+
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/castro.jpg"
+          alt="Santiago Castro"
+        >
+
+        <div class="player-info">
+          <strong><a href="santiago-castro.html">Santiago Castro</a></strong>
+          <span>🇦🇷 Argentina</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">14</div>
+
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656845/players/malen.png"
+          alt="Donyell Malen"
+        >
+
+        <div class="player-info">
+          <strong><a href="donyell-malen.html">Donyell Malen</a></strong>
+          <span>🇳🇱 Paesi Bassi</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">18</div>
+
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789657038/players/soule.png"
+          alt="Matías Soulé"
+        >
+
+        <div class="player-info">
+          <strong><a href="matias-soule.html">Matías Soulé</a></strong>
+          <span>🇦🇷 Argentina</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">21</div>
+
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1790726046/paulo-dybala.png"
+          alt="Paulo Dybala"
+        >
+
+        <div class="player-info">
+          <strong><a href="paulo-dybala.html">Paulo Dybala</a></strong>
+          <span>🇦🇷 Argentina</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">68</div>
+
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/arena.png"
+          alt="Antonio Arena"
+        >
+
+        <div class="player-info">
+          <strong><a href="antonio-arena.html">Antonio Arena</a></strong>
+          <span>🇮🇹 Italia</span>
+        </div>
+
+      </div>
+
+
+      <div class="player-card">
+
+        <div class="player-number">86</div>
+
+        <img
+          src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656711/players/mora.jpg"
+          alt="Rodrigo Mora"
+        >
+
+        <div class="player-info">
+          <strong><a href="rodrigo-mora.html">Rodrigo Mora</a></strong>
+          <span>🇵🇹 Portogallo</span>
+        </div>
+
+      </div>
+
 
     </div>
 
@@ -1028,7 +915,9 @@
 
 <section class="coach-section">
 
-  <span class="section-label">04 · ALLENATORE</span>
+  <span class="section-label">
+    04 · ALLENATORE
+  </span>
 
   <a href="#" class="coach-card">
 
@@ -1041,11 +930,16 @@
 
     </div>
 
+
     <div class="coach-info">
 
-      <span class="coach-kicker">ALLENATORE</span>
+      <span class="coach-kicker">
+        ALLENATORE
+      </span>
 
-      <strong>Gian Piero Gasperini</strong>
+      <strong>
+        Gian Piero Gasperini
+      </strong>
 
       <div class="coach-nationality">
 
@@ -1054,7 +948,9 @@
           alt="Italia"
         >
 
-        <span>Italia</span>
+        <span>
+          Italia
+        </span>
 
       </div>
 
@@ -1063,6 +959,7 @@
       </span>
 
     </div>
+
 
     <div class="coach-arrow">
       →
@@ -1079,7 +976,9 @@
 
 <section class="transfers-section">
 
-  <span class="section-label">05 · TRASFERIMENTI</span>
+  <span class="section-label">
+    05 · TRASFERIMENTI
+  </span>
 
   <div class="transfers-grid">
 
@@ -1094,7 +993,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/castro.jpg" alt="Santiago Castro">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/castro.jpg"
+            alt="Santiago Castro"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1102,14 +1004,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">←</span>
+
+          <span class="transfer-arrow">
+            ←
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/bologna.png" alt="Bologna">
+            <img
+              src="images/teams/bologna.png"
+              alt="Bologna"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">€35M</span>
+        <span class="transfer-price">
+          €35M
+        </span>
 
       </div>
 
@@ -1117,7 +1028,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656845/players/malen.png" alt="Donyell Malen">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656845/players/malen.png"
+            alt="Donyell Malen"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1125,14 +1039,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">←</span>
+
+          <span class="transfer-arrow">
+            ←
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/borussia-dortmund.png" alt="Borussia Dortmund">
+            <img
+              src="images/teams/borussia-dortmund.png"
+              alt="Borussia Dortmund"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">€25M</span>
+        <span class="transfer-price">
+          €25M
+        </span>
 
       </div>
 
@@ -1140,7 +1063,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656711/players/mora.jpg" alt="Rodrigo Mora">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656711/players/mora.jpg"
+            alt="Rodrigo Mora"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1148,14 +1074,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">←</span>
+
+          <span class="transfer-arrow">
+            ←
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/placeholder.png" alt="">
+            <img
+              src="images/teams/porto.png"
+              alt="Porto"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">€25M</span>
+        <span class="transfer-price">
+          €25M
+        </span>
 
       </div>
 
@@ -1163,7 +1098,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656866/players/wesley.png" alt="Wesley">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656866/players/wesley.png"
+            alt="Wesley"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1171,14 +1109,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">←</span>
+
+          <span class="transfer-arrow">
+            ←
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/flamengo.png" alt="Flamengo">
+            <img
+              src="images/teams/flamengo.png"
+              alt="Flamengo"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">€25M</span>
+        <span class="transfer-price">
+          €25M
+        </span>
 
       </div>
 
@@ -1186,7 +1133,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/molina.jpg" alt="Nahuel Molina">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656795/players/molina.jpg"
+            alt="Nahuel Molina"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1194,14 +1144,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">←</span>
+
+          <span class="transfer-arrow">
+            ←
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/atletico-madrid.png" alt="Atlético Madrid">
+            <img
+              src="images/teams/atletico-madrid.png"
+              alt="Atlético Madrid"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">€13M</span>
+        <span class="transfer-price">
+          €13M
+        </span>
 
       </div>
 
@@ -1209,7 +1168,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656862/players/de-roon.jpg" alt="Marten de Roon">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1789656862/players/de-roon.jpg"
+            alt="Marten de Roon"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1217,14 +1179,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">←</span>
+
+          <span class="transfer-arrow">
+            ←
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/atalanta.png" alt="Atalanta">
+            <img
+              src="images/teams/atalanta.png"
+              alt="Atalanta"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">€1M</span>
+        <span class="transfer-price">
+          €1M
+        </span>
 
       </div>
 
@@ -1241,7 +1212,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/dovbyk.png" alt="Artem Dovbyk">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/dovbyk.png"
+            alt="Artem Dovbyk"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1249,14 +1223,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">→</span>
+
+          <span class="transfer-arrow">
+            →
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/placeholder.png" alt="">
+            <img
+              src="images/teams/placeholder.png"
+              alt=""
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">Prestito</span>
+        <span class="transfer-price">
+          Prestito
+        </span>
 
       </div>
 
@@ -1264,7 +1247,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/el-aynaoui.png" alt="Neil El Aynaoui">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/el-aynaoui.png"
+            alt="Neil El Aynaoui"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1272,14 +1258,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">→</span>
+
+          <span class="transfer-arrow">
+            →
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/rb-leipzig.png" alt="RB Leipzig">
+            <img
+              src="images/teams/rb-leipzig.png"
+              alt="RB Leipzig"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">Prestito</span>
+        <span class="transfer-price">
+          Prestito
+        </span>
 
       </div>
 
@@ -1287,7 +1282,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/robinio-vaz.png" alt="Robinio Vaz">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/robinio-vaz.png"
+            alt="Robinio Vaz"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1295,14 +1293,23 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">→</span>
+
+          <span class="transfer-arrow">
+            →
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/hull-city.png" alt="Hull City">
+            <img
+              src="images/teams/hull-city.png"
+              alt="Hull City"
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">Prestito</span>
+        <span class="transfer-price">
+          Prestito
+        </span>
 
       </div>
 
@@ -1310,7 +1317,10 @@
       <div class="transfer">
 
         <div class="transfer-photo">
-          <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/cherubini.png" alt="Luigi Cherubini">
+          <img
+            src="https://res.cloudinary.com/vu7tcmgu/image/upload/players/cherubini.png"
+            alt="Luigi Cherubini"
+          >
         </div>
 
         <span class="transfer-player">
@@ -1318,16 +1328,26 @@
         </span>
 
         <div class="transfer-club-area">
-          <span class="transfer-arrow">→</span>
+
+          <span class="transfer-arrow">
+            →
+          </span>
 
           <div class="transfer-club">
-            <img src="images/teams/placeholder.png" alt="">
+            <img
+              src="images/teams/placeholder.png"
+              alt=""
+            >
           </div>
+
         </div>
 
-        <span class="transfer-price">Prestito</span>
+        <span class="transfer-price">
+          Prestito
+        </span>
 
       </div>
+
 
     </div>
 
@@ -1342,23 +1362,38 @@
 
 <section class="legends-section">
 
-  <span class="section-label">06 · LEGGENDE</span>
+  <span class="section-label">
+    06 · LEGGENDE
+  </span>
 
   <div class="legends-grid">
 
+
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/totti.jpg" alt="Francesco Totti">
+        <img
+          src="images/legends/totti.jpg"
+          alt="Francesco Totti"
+        >
       </div>
 
-      <span class="legend-number">01</span>
+      <span class="legend-number">
+        01
+      </span>
 
-      <h3>Francesco<br>Totti</h3>
+      <h3>
+        Francesco<br>
+        Totti
+      </h3>
 
-      <p>ROMA · 1992–2017</p>
+      <p>
+        ROMA · 1992–2017
+      </p>
 
-      <b>10</b>
+      <b>
+        10
+      </b>
 
     </div>
 
@@ -1366,16 +1401,28 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/de-rossi.jpg" alt="Daniele De Rossi">
+        <img
+          src="images/legends/de-rossi.jpg"
+          alt="Daniele De Rossi"
+        >
       </div>
 
-      <span class="legend-number">02</span>
+      <span class="legend-number">
+        02
+      </span>
 
-      <h3>Daniele<br>De Rossi</h3>
+      <h3>
+        Daniele<br>
+        De Rossi
+      </h3>
 
-      <p>ROMA · 2001–2019</p>
+      <p>
+        ROMA · 2001–2019
+      </p>
 
-      <b>16</b>
+      <b>
+        16
+      </b>
 
     </div>
 
@@ -1383,16 +1430,28 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/bruno-conti.jpg" alt="Bruno Conti">
+        <img
+          src="images/legends/bruno-conti.jpg"
+          alt="Bruno Conti"
+        >
       </div>
 
-      <span class="legend-number">03</span>
+      <span class="legend-number">
+        03
+      </span>
 
-      <h3>Bruno<br>Conti</h3>
+      <h3>
+        Bruno<br>
+        Conti
+      </h3>
 
-      <p>ROMA · 1973–1979 · 1980–1991</p>
+      <p>
+        ROMA · 1973–1979 · 1980–1991
+      </p>
 
-      <b>7</b>
+      <b>
+        7
+      </b>
 
     </div>
 
@@ -1400,18 +1459,30 @@
     <div class="legend-card">
 
       <div class="legend-photo">
-        <img src="images/legends/aldair.jpg" alt="Aldair">
+        <img
+          src="images/legends/aldair.jpg"
+          alt="Aldair"
+        >
       </div>
 
-      <span class="legend-number">04</span>
+      <span class="legend-number">
+        04
+      </span>
 
-      <h3>Aldair</h3>
+      <h3>
+        Aldair
+      </h3>
 
-      <p>ROMA · 1990–2003</p>
+      <p>
+        ROMA · 1990–2003
+      </p>
 
-      <b>6</b>
+      <b>
+        6
+      </b>
 
     </div>
+
 
   </div>
 
@@ -1424,7 +1495,9 @@
 
 <section class="history-section">
 
-  <span class="section-label">07 · STORIA</span>
+  <span class="section-label">
+    07 · STORIA
+  </span>
 
   <div class="history-content">
 
@@ -1435,16 +1508,19 @@
     </h2>
 
     <p>
-      Dalla fondazione nel 1927 ai grandi protagonisti che hanno indossato
-      la maglia giallorossa, la storia della Roma è inseparabile da quella
-      della sua città.
+      Fondata nel 1927 dalla fusione di tre società della capitale, la Roma
+      è diventata nel corso del Novecento uno dei simboli sportivi più
+      riconoscibili della città.
       <br><br>
-      Il primo grande trionfo arrivò nel 1942, seguito dai campionati del
-      1983 e del 2001. Negli anni la Roma ha costruito una tradizione fatta
-      di grandi giocatori, allenatori e momenti rimasti nella memoria dei
-      suoi tifosi.
+      La storia giallorossa è legata a generazioni di grandi campioni, da
+      Amedeo Amadei a Bruno Conti, da Giuseppe Giannini a Daniele De Rossi,
+      fino a Francesco Totti e ai grandi protagonisti delle epoche più recenti.
       <br><br>
-      Nel 2022 il club ha conquistato la Conference League, primo trofeo
+      Il club ha conquistato tre campionati italiani, nove Coppe Italia e due
+      Supercoppe Italiane, costruendo una tradizione fatta di grandi squadre,
+      allenatori e momenti rimasti nella memoria dei suoi tifosi.
+      <br><br>
+      Nel 2022 la Roma ha conquistato la Conference League, il primo trofeo
       UEFA della propria storia.
     </p>
 
@@ -1459,11 +1535,16 @@
 
 <footer>
 
-  <div>PAGES OF FOOTBALL</div>
+  <div>
+    PAGES OF FOOTBALL
+  </div>
 
-  <span>© 2026 · Football, history & stories</span>
+  <span>
+    © 2026 · Football, history & stories
+  </span>
 
 </footer>
+
 
 </body>
 </html>
