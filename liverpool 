@@ -1,0 +1,337 @@
+import os
+import re
+import requests
+import cloudinary
+import cloudinary.uploader
+
+from dotenv import load_dotenv
+
+
+# =========================================================
+# CONFIGURAZIONE
+# =========================================================
+
+load_dotenv()
+
+cloudinary.config(
+    cloud_name=os.getenv("CLOUDINARY_CLOUD_NAME"),
+    api_key=os.getenv("CLOUDINARY_API_KEY"),
+    api_secret=os.getenv("CLOUDINARY_API_SECRET")
+)
+
+BASE_URL = "https://www.liverpoolfc.com"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0"
+}
+
+
+# =========================================================
+# ROSA LIVERPOOL 2026/27
+# =========================================================
+#
+# Usiamo gli slug dei profili ufficiali Liverpool.
+# Salah NON è incluso.
+#
+# =========================================================
+
+PLAYERS = [
+    "alisson-becker",
+    "giorgi-mamardashvili",
+    "freddie-woodman",
+    "vitezslav-jaros",
+
+    "joe-gomez",
+    "virgil-van-dijk",
+    "jeremy-jacquet",
+    "milos-kerkez",
+    "conor-bradley",
+    "kostas-tsimikas",
+    "jeremie-frimpong",
+    "ronald-araujo",
+    "luke-chambers",
+    "giovanni-leoni",
+
+    "wataru-endo",
+    "florian-wirtz",
+    "dominik-szoboszlai",
+    "alexis-mac-allister",
+    "ryan-gravenberch",
+    "james-mcconnell",
+    "trey-nyoni",
+
+    "cody-gakpo",
+    "federico-chiesa",
+    "hugo-ekitike",
+    "alexander-isak",
+    "victor-munoz",
+]
+
+
+# =========================================================
+# TROVA LE IMMAGINI DEL GIOCATORE
+# =========================================================
+
+def get_images(player_slug):
+
+    player_url = (
+        f"{BASE_URL}/team/first-team/player/{player_slug}"
+    )
+
+    print()
+    print("=" * 70)
+    print(player_slug)
+    print(player_url)
+
+    try:
+
+        response = requests.get(
+            player_url,
+            headers=HEADERS,
+            timeout=30
+        )
+
+    except Exception as e:
+
+        print("ERRORE CONNESSIONE:", e)
+
+        return None, None
+
+
+    print("HTTP:", response.status_code)
+
+    if response.status_code != 200:
+
+        return None, None
+
+
+    html = response.text
+
+    # Decodifica eventuali &amp;
+    html = html.replace("&amp;", "&")
+
+
+    # =====================================================
+    # CERCA TUTTI GLI URL CONTENTFUL
+    # =====================================================
+
+    urls = re.findall(
+        r'https://images\.ctfassets\.net/[^"\'<>\\\s]+',
+        html
+    )
+
+
+    normal = None
+    action = None
+
+
+    for url in urls:
+
+        clean_url = url.rstrip("\\").rstrip(",").rstrip(".")
+
+        lower_url = clean_url.lower()
+
+
+        # FOTO PROFILO
+        if "app-profile" in lower_url:
+
+            normal = clean_url
+
+
+        # FOTO ACTION
+        elif "action-shot" in lower_url:
+
+            action = clean_url
+
+
+    return normal, action
+
+
+# =========================================================
+# DOWNLOAD
+# =========================================================
+
+def download_image(url, filename):
+
+    try:
+
+        response = requests.get(
+            url,
+            headers=HEADERS,
+            timeout=30
+        )
+
+        response.raise_for_status()
+
+
+        with open(filename, "wb") as f:
+
+            f.write(response.content)
+
+
+        return True
+
+
+    except Exception as e:
+
+        print("Errore download:", e)
+
+        return False
+
+
+# =========================================================
+# UPLOAD CLOUDINARY
+# =========================================================
+
+def upload_cloudinary(filename, public_id):
+
+    try:
+
+        result = cloudinary.uploader.upload(
+            filename,
+            folder="players",
+            public_id=public_id,
+            overwrite=True,
+            resource_type="image"
+        )
+
+        return result.get("secure_url")
+
+
+    except Exception as e:
+
+        print("Errore Cloudinary:", e)
+
+        return None
+
+
+# =========================================================
+# MAIN
+# =========================================================
+
+print()
+print("=" * 70)
+print("LIVERPOOL 2026/27 → CLOUDINARY")
+print("=" * 70)
+
+print()
+print(f"Giocatori da controllare: {len(PLAYERS)}")
+
+
+success_normal = 0
+success_action = 0
+
+
+for slug in PLAYERS:
+
+    normal, action = get_images(slug)
+
+
+    # =====================================================
+    # NORMAL
+    # =====================================================
+
+    if normal:
+
+        print()
+        print("NORMAL TROVATA:")
+        print(normal)
+
+
+        filename = f"{slug}.webp"
+
+
+        if download_image(normal, filename):
+
+            print("Download normal OK")
+
+
+            cloudinary_url = upload_cloudinary(
+                filename,
+                slug
+            )
+
+
+            if cloudinary_url:
+
+                print("Cloudinary normal OK:")
+                print(cloudinary_url)
+
+                success_normal += 1
+
+
+            try:
+                os.remove(filename)
+            except:
+                pass
+
+    else:
+
+        print("NORMAL: NON TROVATA")
+
+
+    # =====================================================
+    # ACTION
+    # =====================================================
+
+    if action:
+
+        print()
+        print("ACTION TROVATA:")
+        print(action)
+
+
+        filename = f"{slug}-action.webp"
+
+
+        if download_image(action, filename):
+
+            print("Download action OK")
+
+
+            cloudinary_url = upload_cloudinary(
+                filename,
+                f"{slug}-action"
+            )
+
+
+            if cloudinary_url:
+
+                print("Cloudinary action OK:")
+                print(cloudinary_url)
+
+                success_action += 1
+
+
+            try:
+                os.remove(filename)
+            except:
+                pass
+
+    else:
+
+        print("ACTION: NON TROVATA")
+
+
+# =========================================================
+# RISULTATO
+# =========================================================
+
+print()
+print()
+print("=" * 70)
+print("RISULTATO FINALE")
+print("=" * 70)
+
+print()
+print(
+    f"Foto NORMAL caricate: {success_normal}/{len(PLAYERS)}"
+)
+
+print(
+    f"Foto ACTION caricate: {success_action}/{len(PLAYERS)}"
+)
+
+print()
+print("=" * 70)
+
