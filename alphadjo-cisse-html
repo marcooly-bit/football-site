@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Alphadjo Cissé · Pages Of Football</title>
+  <title>Alphadjo Cissè · Pages Of Football</title>
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="player.css">
@@ -13,7 +13,7 @@
 <body>
 
 <header class="site-header">
-  <div class="site-logo">
+  <div class="brand">
     <a href="index.html">PAGES OF FOOTBALL</a>
   </div>
 
@@ -31,236 +31,499 @@
 
   <section class="player-hero milan">
 
-    <div class="player-identity">
+    <div class="player-hero-photo">
       <div class="player-number">70</div>
-
-      <img
-        src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1790735513/alphadjo-cisse.webp"
-        alt="Alphadjo Cissé"
-        class="player-photo"
-      >
+      <img src="https://res.cloudinary.com/vu7tcmgu/image/upload/v1790735513/alphadjo-cisse.webp" alt="Alphadjo Cissè">
     </div>
 
-    <div class="player-main-info">
-      <p class="player-role">CENTROCAMPISTA</p>
-      <h1>Alphadjo Cissé</h1>
+    <div class="player-hero-main">
 
-      <a href="milan26-27.html" class="player-club">
-        <span>AC Milan</span>
+      <div class="player-eyebrow">AC MILAN</div>
+
+      <h1>ALPHADJO CISSÈ</h1>
+
+      <div class="player-role">CENTROCAMPISTA OFFENSIVO</div>
+
+      <a href="acmilan26-27.html" class="player-club">
+        <img src="images/teams/milan.png" alt="AC Milan">
+        <span>AC MILAN</span>
       </a>
 
-      <div class="player-details">
+      <div class="player-data">
 
-        <div class="detail-item">
-          <span class="detail-label">DATA DI NASCITA</span>
-          <span class="detail-value">25 ottobre 2006</span>
+        <div class="data-item">
+          <span>DATA DI NASCITA</span>
+          <strong>22 OTTOBRE 2006</strong>
         </div>
 
-        <div class="detail-item">
-          <span class="detail-label">ETÀ</span>
-          <span class="detail-value">19</span>
+        <div class="data-item">
+          <span>ETÀ</span>
+          <strong>19 ANNI</strong>
         </div>
 
-        <div class="detail-item">
-          <span class="detail-label">NAZIONALITÀ</span>
-          <span class="detail-value">🇮🇹 Italia</span>
+        <div class="data-item">
+          <span>NAZIONALITÀ</span>
+          <strong class="nationalities">
+            <span>🇮🇹 ITALIA</span>
+          </strong>
         </div>
 
-        <div class="detail-item">
-          <span class="detail-label">ALTEZZA</span>
-          <span class="detail-value">178 cm</span>
+        <div class="data-item">
+          <span>ALTEZZA</span>
+          <strong>178 CM</strong>
         </div>
 
-        <div class="detail-item">
-          <span class="detail-label">PIEDE</span>
-          <span class="detail-value">Destro</span>
+        <div class="data-item">
+          <span>PIEDE</span>
+          <strong>DESTRO</strong>
         </div>
 
-        <div class="detail-item">
-          <span class="detail-label">AL MILAN DAL</span>
-          <span class="detail-value">2025</span>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="player-pitch">
-      <div class="pitch">
-
-        <div class="pitch-player centre-midfielder">
-          <span>70</span>
-          <small>Cissé</small>
+        <div class="data-item">
+          <span>AL TEAM DAL</span>
+          <strong>2026</strong>
         </div>
 
       </div>
+
     </div>
 
-  </section>
+    <div class="player-position">
 
-  <section class="player-section honours-section">
+      <div class="football-pitch">
 
-    <div class="section-heading">
-      <span>PALMARÈS</span>
-      <h2>Trofei</h2>
-    </div>
+        <div class="pitch-halfway"></div>
+        <div class="pitch-circle"></div>
 
-    <div class="honours-grid">
+        <div class="pitch-box pitch-box-top"></div>
+        <div class="pitch-box pitch-box-bottom"></div>
 
-      <div class="honour-card">
-        <div class="honour-icon">—</div>
-        <div class="honour-info">
-          <strong>Nessun trofeo</strong>
-          <span>—</span>
-        </div>
+        <div class="pitch-goal pitch-goal-top"></div>
+        <div class="pitch-goal pitch-goal-bottom"></div>
+
+        <span class="pitch-player preferred attacking-mid"
+              title="Centrocampista offensivo"></span>
+
+        <span class="pitch-player secondary left-winger"
+              title="Esterno sinistro"></span>
+
       </div>
 
     </div>
 
   </section>
 
-  <section class="player-section stats-section">
+
+  <section class="player-honours">
+
+  </section>
+
+
+  <section class="player-section player-stats">
 
     <div class="section-heading">
-      <span>STAGIONE 2026/27</span>
-      <h2>Statistiche</h2>
+
+      <span class="section-number">02</span>
+
+      <div>
+        <span class="section-label">STAGIONE 2026/27</span>
+        <h2>STATISTICHE</h2>
+      </div>
+
+      <select class="season-selector">
+        <option selected>2026/27</option>
+        <option>2025/26</option>
+        <option>2024/25</option>
+        <option>2023/24</option>
+        <option>2022/23</option>
+        <option>2021/22</option>
+      </select>
+
     </div>
 
-    <div class="stats-table">
+    <div class="stats-grid">
 
-      <div class="stats-row stats-header">
-        <span>COMPETIZIONE</span>
-        <span>PRES</span>
-        <span>GOL</span>
-        <span>ASSIST</span>
-        <span>MIN</span>
+      <div class="stat-box">
+        <span class="stat-icon">🏟️</span>
+        <strong>5</strong>
+        <small>PRESENZE</small>
       </div>
 
-      <div class="stats-row">
-        <span>🇮🇹 Serie A</span>
-        <span>0</span>
-        <span>0</span>
-        <span>0</span>
-        <span>0</span>
+      <div class="stat-box">
+        <span class="stat-icon">⏱️</span>
+        <strong>343</strong>
+        <small>MINUTI</small>
       </div>
 
-      <div class="stats-row">
-        <span>🇪🇺 Europa League</span>
-        <span>0</span>
-        <span>0</span>
-        <span>0</span>
-        <span>0</span>
+      <div class="stat-box">
+        <span class="stat-icon">⚽</span>
+        <strong>2</strong>
+        <small>GOL</small>
       </div>
 
-      <div class="stats-row">
-        <span>🇮🇹 Coppa Italia</span>
-        <span>0</span>
-        <span>0</span>
-        <span>0</span>
-        <span>0</span>
+      <div class="stat-box">
+        <span class="stat-icon">👟</span>
+        <strong>0</strong>
+        <small>ASSIST</small>
       </div>
 
     </div>
 
   </section>
 
-  <section class="player-section career-section">
+
+  <section class="player-section player-career">
 
     <div class="section-heading">
-      <span>CARRIERA</span>
-      <h2>Archivio stagioni</h2>
+
+      <span class="section-number">03</span>
+
+      <div>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>CARRIERA</h2>
+      </div>
+
     </div>
 
-    <div class="career-table">
+    <div class="career-list">
 
-      <div class="career-row career-header">
-        <span>STAGIONE</span>
-        <span>SQUADRA</span>
-        <span>PRES</span>
-        <span>GOL</span>
+      <div class="career-season">
+
+        <div class="career-season-header">
+          <span class="career-year">2026/27</span>
+
+          <div class="career-club">
+            <img src="images/teams/milan.png" alt="AC Milan">
+            <a href="acmilan26-27.html">AC Milan</a>
+          </div>
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Serie A</span>
+            <strong>4</strong>
+            <strong>2</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Europa League</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Coppa Italia</span>
+            <strong>0</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="career-row">
-        <span>2026/27</span>
-        <span>AC Milan</span>
-        <span>0</span>
-        <span>0</span>
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+          <span class="career-year">2025/26</span>
+
+          <div class="career-club">
+            <img src="images/teams/catanzaro.png" alt="Catanzaro">
+            <a href="catanzaro26-27.html">Catanzaro</a>
+          </div>
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Serie B</span>
+            <strong>22</strong>
+            <strong>6</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Coppa Italia</span>
+            <strong>0</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="career-row">
-        <span>2025/26</span>
-        <span>AC Milan Futuro</span>
-        <span>—</span>
-        <span>—</span>
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+          <span class="career-year">2024/25</span>
+
+          <div class="career-club">
+            <img src="images/teams/verona.png" alt="Hellas Verona">
+            <a href="verona26-27.html">Hellas Verona</a>
+          </div>
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Serie A</span>
+            <strong>2</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Primavera 1</span>
+            <strong>8</strong>
+            <strong>1</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Coppa Italia</span>
+            <strong>0</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="career-row">
-        <span>2024/25</span>
-        <span>AC Milan Primavera</span>
-        <span>—</span>
-        <span>—</span>
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+          <span class="career-year">2023/24</span>
+
+          <div class="career-club">
+            <img src="images/teams/verona.png" alt="Hellas Verona">
+            <a href="verona26-27.html">Hellas Verona</a>
+          </div>
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Primavera 1</span>
+            <strong>30</strong>
+            <strong>16</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Serie A</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+          <div class="career-row">
+            <span>Coppa Italia</span>
+            <strong>1</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+          <span class="career-year">2022/23</span>
+
+          <div class="career-club">
+            <img src="images/teams/verona.png" alt="Hellas Verona">
+            <a href="verona26-27.html">Hellas Verona</a>
+          </div>
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Primavera 1</span>
+            <strong>22</strong>
+            <strong>4</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="career-season">
+
+        <div class="career-season-header">
+          <span class="career-year">2021/22</span>
+
+          <div class="career-club">
+            <img src="images/teams/verona.png" alt="Hellas Verona">
+            <a href="verona26-27.html">Hellas Verona</a>
+          </div>
+        </div>
+
+        <div class="career-competitions">
+
+          <div class="career-columns">
+            <span>COMPETIZIONE</span>
+            <span>🏟️</span>
+            <span>⚽</span>
+            <span>👟</span>
+          </div>
+
+          <div class="career-row">
+            <span>Primavera 1</span>
+            <strong>4</strong>
+            <strong>0</strong>
+            <strong>0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="career-national">
+
+        <div class="career-national-header">
+
+          <div>
+            <span class="career-national-label">NAZIONALE</span>
+
+            <div class="career-national-team">
+              <span>🇮🇹</span>
+              <strong>Italia U21</strong>
+            </div>
+          </div>
+
+          <span class="national-period">2025–</span>
+
+        </div>
+
+        <div class="career-national-stats">
+
+          <div class="national-stat">
+            <strong>2</strong>
+            <span>PRESENZE</span>
+          </div>
+
+          <div class="national-stat">
+            <strong>0</strong>
+            <span>GOL</span>
+          </div>
+
+        </div>
+
       </div>
 
     </div>
 
   </section>
 
-  <section class="player-section national-section">
+
+  <section class="player-section player-matches">
 
     <div class="section-heading">
-      <span>NAZIONALE</span>
-      <h2>Italia</h2>
-    </div>
 
-    <div class="national-card">
+      <span class="section-number">04</span>
 
-      <div class="national-flag">🇮🇹</div>
-
-      <div class="national-info">
-        <strong>Italia</strong>
-        <span>Settore giovanile</span>
+      <div>
+        <span class="section-label">ARCHIVIO</span>
+        <h2>PARTITE</h2>
       </div>
 
     </div>
 
-  </section>
-
-  <section class="player-section matches-section">
-
-    <div class="section-heading">
-      <span>PARTITE</span>
-      <h2>Ultime partite</h2>
-    </div>
-
-    <div class="matches-placeholder">
-      <span>Le partite del giocatore verranno aggiornate durante la stagione.</span>
+    <div class="archive-placeholder">
+      ARCHIVIO IN COSTRUZIONE
     </div>
 
   </section>
 
-  <section class="player-section story-section">
+
+  <section class="player-section player-story">
 
     <div class="section-heading">
-      <span>STORIA</span>
-      <h2>Alphadjo Cissé</h2>
+
+      <span class="section-number">05</span>
+
+      <div>
+        <span class="section-label">PROFILO</span>
+        <h2>LA SUA STORIA</h2>
+      </div>
+
     </div>
 
     <div class="story-content">
 
-      <p>
-        Alphadjo Cissé è un giovane centrocampista italiano cresciuto nel
-        settore giovanile del Milan.
-      </p>
+      <div class="story-intro">
+        <span>ALPHADJO CISSÈ</span>
+        <h3>DAL VIVAIO DEL VERONA AL PALCOSCENICO DEL MILAN</h3>
+      </div>
 
-      <p>
-        Dotato di buona tecnica e dinamismo, ha completato il proprio percorso
-        nelle giovanili rossonere prima di entrare nel gruppo della prima
-        squadra.
-      </p>
+      <div class="story-text">
 
-      <p>
-        Nella stagione 2026/27 fa parte della rosa del Milan, continuando il
-        proprio percorso di crescita nel calcio professionistico.
-      </p>
+        <p>Alphadjo Cissè nasce a Treviso nel 2006 e cresce calcisticamente tra il Giorgione e il settore giovanile dell'Hellas Verona, dove si mette in evidenza fin dalle categorie giovanili.</p>
+
+        <p>Con la Primavera del Verona vive la stagione della definitiva consacrazione nel 2023/24: segna 16 gol in campionato e nello stesso periodo arriva anche l'esordio in Serie A con la prima squadra.</p>
+
+        <p>Nella stagione successiva continua a dividersi tra Primavera e prima squadra, collezionando altre presenze in Serie A e maturando esperienza nel calcio professionistico.</p>
+
+        <p>Nell'estate 2025 passa in prestito al Catanzaro in Serie B. La stagione rappresenta un importante salto di livello: Cissè trova continuità, realizza 6 gol in 22 presenze di campionato e diventa uno dei giovani più interessanti della categoria.</p>
+
+        <p>Nel febbraio 2026 il Milan ne acquisisce a titolo definitivo il cartellino dall'Hellas Verona. Il centrocampista conclude la stagione al Catanzaro prima di rientrare a Milano per il nuovo progetto rossonero.</p>
+
+        <p>La stagione 2026/27 segna il suo ingresso stabile nella prima squadra del Milan. Debutta da titolare alla prima giornata contro il Torino e realizza subito il suo primo gol in Serie A con la maglia rossonera. Alla terza giornata va nuovamente a segno contro la Juventus, diventando uno dei protagonisti del primo mese della nuova stagione.</p>
+
+        <p>A livello internazionale ha vestito le maglie delle selezioni giovanili italiane fino all'Under 21, confermando il suo percorso con le nazionali azzurre.</p>
+
+        <a href="#" class="story-link">APPROFONDISCI LA STORIA DI ALPHADJO CISSÈ →</a>
+
+      </div>
 
     </div>
 
@@ -268,9 +531,17 @@
 
 </main>
 
+
 <footer class="site-footer">
-  <div class="footer-logo">PAGES OF FOOTBALL</div>
-  <div class="footer-copy">© 2026 Pages Of Football</div>
+
+  <div class="footer-brand">
+    PAGES OF FOOTBALL
+  </div>
+
+  <div class="footer-copy">
+    FOOTBALL · HISTORY · STORIES
+  </div>
+
 </footer>
 
 </body>
