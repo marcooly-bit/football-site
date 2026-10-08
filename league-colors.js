@@ -8,7 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const src = competitionLogo.getAttribute("src").toLowerCase();
 
   const leagues = {
-    "eredivisie.png": "eredivisie"
+    "liga-portugal.png": "liga-portugal",
+    "eredivisie.png": "eredivisie",
+    "super-lig.png": "super-lig",
+    "scottish-premiership.png": "scottish-premiership",
+    "jupiler-pro-league.png": "jupiler-pro-league",
+    "serie-b.png": "serie-b",
+    "segunda-division.png": "segunda-division",
+    "2-bundesliga.png": "2-bundesliga",
+    "ligue-2.png": "ligue-2"
   };
 
   for (const [logo, className] of Object.entries(leagues)) {
