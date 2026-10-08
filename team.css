@@ -1,1535 +1,1313 @@
+/* =========================================================
+   TEAM PAGE
+   ========================================================= */
+
+.team-page {
+  background: #121212;
+  color: #f4f3ef;
+  min-height: 100vh;
+}
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0080C8;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
 
-body {
-margin: 0;
-background: #0080C8;
-color: #ffffff;
-font-family: Arial, Helvetica, sans-serif;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-/* =========================
-HEADER
-========================= */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .site-header {
-height: 72px;
-padding: 0 42px;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-
-border-bottom: 1px solid #ffffff;
-background: #0080C8;
-
-position: sticky;
-top: 0;
-z-index: 1000;
+  background: #0080C8;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  z-index: 100;
 }
 
-.logo {
-font-size: 11px;
-font-weight: 700;
-letter-spacing: 2px;
-color: #ffffff;
+.site-header-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  min-height: 76px;
+  padding: 0 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
 }
 
-nav {
-display: flex;
-gap: 34px;
+.site-logo {
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
-nav a {
-color: rgba(255,255,255,.72);
-text-decoration: none;
-
-font-size: 11px;
-text-transform: uppercase;
-letter-spacing: 1.5px;
-
-transition: color .2s ease;
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
-nav a:hover,
-nav a.active {
-color: #ffffff;
+.site-nav a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
 }
 
-.search-button {
-width: 32px;
-height: 32px;
-
-border: 1px solid rgba(255,255,255,.7);
-background: transparent;
-
-color: #ffffff;
-font-size: 19px;
-
-cursor: pointer;
+.site-nav a:hover {
+  opacity: 0.7;
 }
 
-/* =========================
-LEAGUE SIDEBAR
-========================= */
+
+/* =========================================================
+   LEAGUE SIDEBAR
+   ========================================================= */
 
 .league-sidebar {
-position: fixed;
-
-top: 90px;
-right: 18px;
-
-width: 68px;
-max-height: calc(100vh - 108px);
-
-padding: 8px;
-
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 5px;
-
-background: rgba(255,255,255,.96);
-border: 1px solid rgba(255,255,255,.75);
-
-overflow-y: auto;
-
-z-index: 900;
+  background: #f4f4f4;
+  color: #111;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.league-team-link {
-width: 50px;
-height: 50px;
+.league-sidebar-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 14px 28px;
 
-display: flex;
-align-items: center;
-justify-content: center;
-
-background: transparent;
-border: 1px solid transparent;
-
-text-decoration: none;
-
-transition:
-background .2s ease,
-border-color .2s ease,
-transform .2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.league-team-link img {
-width: 42px;
-height: 42px;
-
-display: block;
-
-object-fit: contain;
-
-transition: transform .2s ease;
+.league-sidebar-title {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
-.league-team-link:hover {
-background: #f1f0ec;
-border-color: #d3d1ca;
-
-transform: translateX(-2px);
+.league-sidebar-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
-.league-team-link:hover img {
-transform: scale(1.08);
+.league-sidebar-links a {
+  color: #222;
+  font-size: 13px;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
 }
 
-.league-team-link.active {
-background: #eeece7;
-border-color: #111;
+.league-sidebar-links a:hover {
+  opacity: 0.55;
 }
 
-.league-team-link.active img {
-transform: scale(1.05);
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.team-hero {
+  position: relative;
+  max-width: 1500px;
+  min-height: 520px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+
+  overflow: hidden;
 }
 
-/* =========================
-HERO
-========================= */
+.team-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
 
-.hero {
-width: 100%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.20) 45%,
+      rgba(0, 0, 0, 0.68) 100%
+    );
+
+  z-index: 1;
 }
 
-.hero-image {
-min-height: 560px;
+.team-hero-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 
-position: relative;
-
-display: flex;
-align-items: flex-end;
-
-background-image: url("#");
-background-size: cover;
-background-position: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.hero-overlay {
-position: absolute;
-inset: 0;
-
-background: linear-gradient(
-to top,
-rgba(0,0,0,.78),
-rgba(0,0,0,.15)
-);
+.team-hero-left,
+.team-hero-center,
+.team-hero-right {
+  position: relative;
+  z-index: 2;
 }
 
-.hero-content {
-width: 100%;
-
-position: relative;
-z-index: 2;
-
-padding: 55px 60px;
-
-display: flex;
-align-items: center;
-gap: 28px;
-
-color: #ffffff;
+.team-hero-left {
+  padding: 35px;
 }
 
-.team-crest {
-width: 92px;
-height: 92px;
-padding: 15px;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-background: rgba(255,255,255,.95);
-border: 1px solid rgba(255,255,255,.5);
-
-flex-shrink: 0;
+.team-hero-center {
+  text-align: center;
+  padding: 35px;
 }
 
-.team-crest img {
-width: 100%;
-height: 100%;
-
-object-fit: contain;
+.team-hero-right {
+  padding: 35px;
 }
 
-.hero-kicker {
-margin-bottom: 10px;
-
-color: rgba(255,255,255,.7);
-
-font-size: 10px;
-letter-spacing: 2px;
+.team-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
-.hero h1 {
-margin: 0;
-
-font-size: 64px;
-line-height: .95;
-font-weight: 500;
-letter-spacing: -3px;
+.team-hero h1 {
+  margin: 20px 0 8px;
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -2px;
 }
 
-.hero p {
-margin: 14px 0 0;
-
-color: rgba(255,255,255,.72);
-
-font-size: 13px;
+.team-hero-subtitle {
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.85;
 }
 
-/* =========================
-GENERIC SECTIONS
-========================= */
-
-.section-label {
-color: #ffffff;
-
-font-size: 9px;
-letter-spacing: 2px;
-
-text-transform: uppercase;
+.team-country {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
-/* =========================
-CLUB
-========================= */
-
-.club-section {
-padding: 90px 60px;
-
-border-bottom: 1px solid #ffffff;
+.team-season-box {
+  text-align: right;
 }
 
-.club-content {
-max-width: 1050px;
-margin-top: 42px;
-
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 100px;
+.team-season-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  opacity: 0.7;
+  margin-bottom: 7px;
 }
 
-.club-content h2 {
-margin: 0;
-
-color: #ffffff;
-
-font-size: 52px;
-line-height: .98;
-font-weight: 500;
-letter-spacing: -2px;
+.team-season {
+  font-size: 34px;
+  font-weight: 900;
 }
 
-.club-content p {
-margin: 0;
 
-color: rgba(255,255,255,.82);
+/* =========================================================
+   GENERIC SECTIONS
+   ========================================================= */
 
-font-size: 15px;
-line-height: 1.75;
+.team-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 70px 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.32);
 }
 
-/* =========================
-PALMARES
-========================= */
+.team-section-title {
+  margin: 0 0 38px;
 
-.palmares-section {
-padding: 80px 60px;
-
-border-bottom: 1px solid #ffffff;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
 }
+
+.team-section-heading {
+  margin: 0 0 30px;
+
+  font-size: clamp(32px, 4vw, 58px);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -1.8px;
+}
+
+.team-section-intro {
+  max-width: 850px;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+
+/* =========================================================
+   CLUB
+   ========================================================= */
+
+.club-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.club-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.club-info {
+  max-width: 650px;
+}
+
+.club-info p {
+  margin: 0 0 18px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.club-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.club-meta-item {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.club-meta-label {
+  display: block;
+  margin-bottom: 7px;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.65;
+}
+
+.club-meta-value {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   PALMARES
+   ========================================================= */
 
 .trophy-grid {
-margin-top: 38px;
-
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .trophy-card {
-min-height: 220px;
-padding: 25px;
+  min-height: 190px;
+  padding: 25px;
 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-border: 1px solid #d3d1ca;
-background: #f6f5f1;
-
-color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.trophy-image {
-width: 75px;
-height: 105px;
-
-object-fit: contain;
+.trophy-icon {
+  font-size: 32px;
 }
 
-.trophy-info {
-display: flex;
-flex-direction: column;
-gap: 4px;
+.trophy-name {
+  font-size: 15px;
+  font-weight: 800;
 }
 
-.trophy-info strong {
-font-size: 38px;
-font-weight: 500;
-letter-spacing: -2px;
-color: #111;
+.trophy-count {
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 900;
 }
 
-.trophy-info span {
-color: #777;
 
-font-size: 10px;
-text-transform: uppercase;
-letter-spacing: 1px;
-}
-
-/* =========================
-OTHER TROPHIES
-========================= */
-
-.other-trophies {
-margin-top: 18px;
-
-border: 1px solid #ffffff;
-}
-
-.other-trophies summary {
-padding: 20px 22px;
-
-cursor: pointer;
-list-style: none;
-
-color: #ffffff;
-
-font-size: 10px;
-letter-spacing: 1.5px;
-font-weight: 700;
-}
-
-.other-trophies summary::-webkit-details-marker {
-display: none;
-}
-
-.other-trophies summary span {
-margin-right: 10px;
-
-font-size: 15px;
-}
-
-.other-trophies-list {
-padding: 0 22px 22px;
-
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-gap: 10px;
-}
-
-.other-trophy {
-min-height: 100px;
-padding: 15px;
-
-display: flex;
-align-items: center;
-gap: 14px;
-
-border-top: 1px solid rgba(255,255,255,.55);
-}
-
-.other-trophy img {
-width: 42px;
-height: 55px;
-
-object-fit: contain;
-}
-
-.other-trophy div {
-display: flex;
-flex-direction: column;
-gap: 4px;
-}
-
-.other-trophy strong {
-font-size: 20px;
-color: #ffffff;
-}
-
-.other-trophy span {
-color: rgba(255,255,255,.75);
-
-font-size: 9px;
-}
-
-/* =========================
-SQUAD
-========================= */
+/* =========================================================
+   SQUAD
+   ========================================================= */
 
 .squad-section {
-padding: 80px 60px;
-
-border-bottom: 1px solid #ffffff;
+  padding-bottom: 80px;
 }
-
-/* =========================
-SEASON SELECTOR
-========================= */
-
-.section-heading-row {
-display: flex;
-align-items: flex-end;
-justify-content: space-between;
-gap: 30px;
-}
-
-.section-heading-row h2 {
-margin: 8px 0 0;
-
-color: #ffffff;
-
-font-size: 52px;
-line-height: .98;
-font-weight: 500;
-letter-spacing: -2px;
-}
-
-.season-selector {
-min-width: 170px;
-min-height: 64px;
-padding: 10px 14px;
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 18px;
-
-background: #ffffff;
-border: 1px solid #ffffff;
-
-color: #111;
-
-cursor: pointer;
-
-transition:
-background .2s ease,
-border-color .2s ease;
-}
-
-.season-selector:hover {
-background: #eeece7;
-border-color: #111;
-}
-
-.season-selector span:first-child {
-color: #888;
-
-font-size: 8px;
-font-weight: 700;
-letter-spacing: 1.8px;
-}
-
-.season-selector strong {
-color: #111;
-
-font-size: 14px;
-font-weight: 700;
-}
-
-.season-arrow {
-color: #777;
-
-font-size: 17px;
-
-transition: transform .2s ease;
-}
-
-.season-selector:hover .season-arrow {
-transform: translateY(2px);
-}
-
-/* =========================
-COMPETITION BUTTON
-========================= */
-
-.competition-button {
-width: min(520px, 100%);
-min-height: 88px;
-
-margin: 34px 0 52px;
-padding: 12px 14px 12px 12px;
-
-display: flex;
-align-items: center;
-gap: 17px;
-
-color: #111;
-text-decoration: none;
-
-background: #ffffff;
-border: 1px solid #d3d1ca;
-
-transition:
-background .2s ease,
-border-color .2s ease,
-transform .2s ease;
-}
-
-.competition-button:hover {
-background: #eeece7;
-border-color: #111;
-
-transform: translateY(-2px);
-}
-
-.competition-button-logo {
-width: 62px;
-height: 62px;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-background: #f6f5f1;
-border: 1px solid #d3d1ca;
-
-flex-shrink: 0;
-}
-
-.competition-button-logo img {
-width: 44px;
-height: 44px;
-
-object-fit: contain;
-}
-
-.competition-button-content {
-display: flex;
-flex-direction: column;
-gap: 6px;
-}
-
-.competition-button-content span {
-color: #888;
-
-font-size: 8px;
-font-weight: 700;
-letter-spacing: 1.8px;
-}
-
-.competition-button-content strong {
-color: #111;
-
-font-size: 21px;
-font-weight: 700;
-letter-spacing: -.4px;
-}
-
-.competition-button-arrow {
-width: 42px;
-height: 42px;
-
-margin-left: auto;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-border: 1px solid #d3d1ca;
-
-color: #111;
-font-size: 20px;
-
-transition:
-background .2s ease,
-color .2s ease,
-transform .2s ease;
-}
-
-.competition-button:hover .competition-button-arrow {
-background: #111;
-color: #ffffff;
-
-transform: translateX(3px);
-}
-
-/* =========================
-SQUAD GROUPS
-========================= */
-
-.squad-group {
-margin-top: 55px;
-}
-
-.squad-group h3 {
-margin: 0 0 18px;
-padding-bottom: 12px;
-
-border-bottom: 1px solid #ffffff;
-
-color: #ffffff;
-
-font-size: 10px;
-letter-spacing: 1.8px;
-font-weight: 700;
-}
-
-/* =========================
-NEW POSITION GROUPS
-========================= */
 
 .position-group {
-margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .position-group h3 {
-margin: 0 0 18px;
-padding-bottom: 12px;
+  margin: 0 0 20px;
 
-border-bottom: 1px solid #ffffff;
-
-color: #ffffff;
-
-font-size: 10px;
-letter-spacing: 1.8px;
-font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
 }
 
 .player-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 12px;
-}
-
-/* =========================
-PLAYER CARDS
-========================= */
-
-.players-grid {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .player-card {
-height: 230px;
+  position: relative;
+  overflow: hidden;
 
-position: relative;
-overflow: hidden;
+  background: rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.24);
 
-display: block;
-
-color: white;
-text-decoration: none;
-
-background: #d7d5cf;
-border: 1px solid #d3d1ca;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
-.player-card > img {
-position: absolute;
-inset: 0;
-
-width: 100%;
-height: 100%;
-
-display: block;
-
-object-fit: cover;
-object-position: center top;
-
-transition: transform .45s ease;
+.player-card:hover {
+  transform: translateY(-4px);
+  background: rgba(0, 0, 0, 0.30);
 }
 
-.player-card:hover > img {
-transform: scale(1.04);
+.player-card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.08;
+  object-fit: cover;
 }
 
-.player-card::after {
-content: "";
-
-position: absolute;
-inset: 0;
-
-background: linear-gradient(
-to top,
-rgba(0,0,0,.85),
-rgba(0,0,0,0)
-);
+.player-card-content {
+  padding: 15px;
 }
-
-.shirt-number {
-position: absolute;
-z-index: 2;
-
-top: 12px;
-left: 12px;
-
-color: #ffffff;
-
-font-size: 24px;
-font-weight: 500;
-line-height: 1;
-}
-
-.player-card-info {
-position: absolute;
-z-index: 2;
-
-left: 15px;
-right: 15px;
-bottom: 14px;
-
-display: flex;
-flex-direction: column;
-gap: 4px;
-
-color: #ffffff;
-}
-
-.player-card-info strong {
-display: flex;
-align-items: center;
-gap: 7px;
-
-font-size: 14px;
-font-weight: 700;
-}
-
-.player-card-info strong img {
-width: 18px;
-height: 12px;
-
-display: block;
-flex-shrink: 0;
-
-object-fit: cover;
-
-border: 1px solid rgba(255,255,255,.35);
-}
-
-.player-card-info > span {
-color: rgba(255,255,255,.65);
-
-font-size: 9px;
-text-transform: uppercase;
-letter-spacing: 1px;
-}
-
-/* =========================
-NEW PLAYER INFO
-========================= */
 
 .player-number {
-position: absolute;
-z-index: 2;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 
-top: 12px;
-left: 12px;
+  width: 38px;
+  height: 38px;
 
-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-font-size: 24px;
-font-weight: 500;
-line-height: 1;
+  background: rgba(0, 0, 0, 0.75);
+
+  font-size: 15px;
+  font-weight: 900;
 }
 
-.player-info {
-position: absolute;
-z-index: 2;
+.player-name {
+  margin: 0;
 
-left: 15px;
-right: 15px;
-bottom: 14px;
-
-display: flex;
-flex-direction: column;
-gap: 4px;
-
-color: #ffffff;
+  font-size: 17px;
+  line-height: 1.05;
+  font-weight: 900;
 }
 
-.player-info strong {
-font-size: 14px;
-font-weight: 700;
+.player-position {
+  margin-top: 7px;
+
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  opacity: 0.65;
 }
 
-.player-info span {
-color: rgba(255,255,255,.65);
 
-font-size: 9px;
-text-transform: uppercase;
-letter-spacing: 1px;
+/* =========================================================
+   COACH
+   ========================================================= */
+
+.coach-layout {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 55px;
+  align-items: center;
 }
 
-/* =========================
-COACH
-========================= */
-
-.coach-section {
-padding: 85px 60px;
-
-border-bottom: 1px solid #ffffff;
+.coach-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
 }
 
-.coach-card {
-width: min(760px, 100%);
-min-height: 180px;
+.coach-info h3 {
+  margin: 0 0 8px;
 
-margin-top: 55px;
-
-display: flex;
-align-items: center;
-
-color: #111;
-text-decoration: none;
-
-background: #fff;
-border: 1px solid #d3d1ca;
-
-transition:
-background .2s ease,
-border-color .2s ease,
-transform .2s ease;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 0.95;
+  font-weight: 900;
 }
 
-.coach-card:hover {
-background: #eeece7;
-border-color: #111;
+.coach-role {
+  margin-bottom: 25px;
 
-transform: translateY(-2px);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.65;
 }
 
-.coach-photo {
-width: 180px;
-height: 180px;
+.coach-info p {
+  max-width: 700px;
 
-flex-shrink: 0;
-overflow: hidden;
-
-background: #d7d5cf;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.coach-photo img {
-width: 100%;
-height: 100%;
 
-display: block;
+/* =========================================================
+   TRANSFERS
+   ========================================================= */
 
-object-fit: cover;
-object-position: center top;
+.transfer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
 }
 
-.coach-info {
-padding: 30px;
-
-display: flex;
-flex-direction: column;
+.transfer-column {
+  border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
-.coach-kicker {
-margin-bottom: 8px;
+.transfer-column-title {
+  padding: 18px 20px;
 
-color: #888;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
-font-size: 8px;
-font-weight: 700;
-letter-spacing: 1.8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.coach-info strong {
-color: #111;
-
-font-size: 28px;
-line-height: 1;
-font-weight: 500;
-letter-spacing: -.8px;
+.transfer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.coach-nationality {
-margin-top: 10px;
+.transfer-item {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 15px;
+  align-items: center;
 
-display: flex;
-align-items: center;
-gap: 8px;
+  padding: 15px 20px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.coach-nationality img {
-width: 20px;
-height: 14px;
-
-display: block;
-
-object-fit: cover;
-
-border: 1px solid #d3d1ca;
+.transfer-item:last-child {
+  border-bottom: 0;
 }
 
-.coach-nationality span {
-margin: 0 !important;
-
-color: #555 !important;
-
-font-size: 10px !important;
-letter-spacing: .6px !important;
-
-text-transform: uppercase;
+.transfer-player-image {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
 }
 
-.coach-club {
-margin-top: 8px;
-
-color: #777;
-
-font-size: 10px;
-letter-spacing: .8px;
-
-text-transform: uppercase;
-}
-
-.coach-arrow {
-width: 42px;
-height: 42px;
-
-margin-left: auto;
-margin-right: 24px;
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-flex-shrink: 0;
-
-border: 1px solid #d3d1ca;
-
-color: #111;
-font-size: 20px;
-
-transition:
-background .2s ease,
-color .2s ease,
-transform .2s ease;
-}
-
-.coach-card:hover .coach-arrow {
-background: #111;
-color: white;
-
-transform: translateX(3px);
-}
-
-/* =========================
-TRANSFERS
-========================= */
-
-.transfers-section {
-padding: 80px 60px;
-
-border-bottom: 1px solid #ffffff;
-}
-
-.transfers-grid {
-margin-top: 40px;
-
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 60px;
-}
-
-.transfer-column h3 {
-margin: 0 0 15px;
-
-color: #ffffff;
-
-font-size: 10px;
-letter-spacing: 2px;
-}
-
-.transfer {
-min-height: 70px;
-padding: 8px 0;
-
-display: grid;
-grid-template-columns: 52px 1fr 75px 85px;
-align-items: center;
-gap: 12px;
-
-border-top: 1px solid rgba(255,255,255,.65);
-}
-
-.transfer-photo {
-width: 52px;
-height: 52px;
-
-overflow: hidden;
-
-background: #ddd;
-}
-
-.transfer-photo img {
-width: 100%;
-height: 100%;
-
-object-fit: cover;
-}
-
-.transfer-player {
-font-size: 12px;
-color: #ffffff;
-}
-
-.transfer-club-area {
-display: flex;
-align-items: center;
-gap: 7px;
-}
-
-.transfer-arrow {
-color: rgba(255,255,255,.8);
-
-font-size: 13px;
+.transfer-player-name {
+  font-size: 14px;
+  font-weight: 800;
 }
 
 .transfer-club {
-width: 32px;
-height: 32px;
+  margin-top: 4px;
 
-display: flex;
-align-items: center;
-justify-content: center;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  opacity: 0.6;
 }
 
-.transfer-club img {
-width: 27px;
-height: 27px;
-
-object-fit: contain;
+.transfer-fee {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: right;
 }
 
-.transfer-price {
-text-align: right;
 
-font-size: 10px;
-color: #ffffff;
-}
+/* =========================================================
+   LEGENDS
+   ========================================================= */
 
-/* =========================
-LEGENDS
-========================= */
-
-.legends-section {
-padding: 80px 60px;
-
-border-bottom: 1px solid #ffffff;
-}
-
-.legends-grid {
-margin-top: 40px;
-
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 14px;
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .legend-card {
-min-height: 390px;
+  position: relative;
+  overflow: hidden;
 
-position: relative;
-overflow: hidden;
-
-color: white;
-
-background: #222;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.legend-photo {
-position: absolute;
-inset: 0;
+.legend-image {
+  width: 100%;
+  aspect-ratio: 1 / 1.1;
+  object-fit: cover;
 }
 
-.legend-photo img {
-width: 100%;
-height: 100%;
-
-object-fit: cover;
-}
-
-.legend-card::after {
-content: "";
-
-position: absolute;
-inset: 0;
-
-background: linear-gradient(
-to top,
-rgba(0,0,0,.9),
-rgba(0,0,0,.05)
-);
+.legend-content {
+  padding: 15px;
 }
 
 .legend-number {
-position: absolute;
-z-index: 2;
+  font-size: 11px;
+  font-weight: 900;
+  opacity: 0.55;
+}
 
-top: 15px;
-left: 15px;
+.legend-name {
+  margin-top: 4px;
 
-font-size: 10px;
-letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 900;
 }
+
+.legend-years {
+  margin-top: 5px;
 
-.legend-card h3 {
-position: absolute;
-z-index: 2;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  opacity: 0.6;
+}
 
-left: 18px;
-bottom: 53px;
 
-margin: 0;
+/* =========================================================
+   HISTORY
+   ========================================================= */
 
-font-size: 27px;
-line-height: .95;
-font-weight: 500;
-letter-spacing: -1px;
+.history-layout {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 60px;
 }
-
-.legend-card p {
-position: absolute;
-z-index: 2;
 
-left: 18px;
-bottom: 20px;
+.history-year {
+  font-size: clamp(50px, 7vw, 100px);
+  line-height: 0.85;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
 
-margin: 0;
+.history-text {
+  max-width: 800px;
+}
 
-color: rgba(255,255,255,.65);
+.history-text p {
+  margin: 0 0 22px;
 
-font-size: 9px;
-letter-spacing: 1px;
+  font-size: 17px;
+  line-height: 1.8;
 }
 
-.legend-card b {
-position: absolute;
-z-index: 2;
 
-right: 18px;
-bottom: 18px;
+/* =========================================================
+   FOOTER
+   ========================================================= */
 
-font-size: 20px;
-}
+.site-footer {
+  max-width: 1500px;
+  margin: 0 auto;
 
-/* =========================
-HISTORY
-========================= */
+  padding: 50px 40px;
 
-.history-section {
-padding: 90px 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.32);
 }
 
-.history-content {
-max-width: 1050px;
-margin-top: 40px;
+.site-footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
 
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 100px;
+.site-footer-logo {
+  font-size: 20px;
+  font-weight: 900;
 }
 
-.history-content h2 {
-margin: 0;
+.site-footer-copy {
+  font-size: 11px;
+  opacity: 0.55;
+}
 
-color: #ffffff;
 
-font-size: 52px;
-line-height: .98;
-font-weight: 500;
-letter-spacing: -2px;
-}
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
 
-.history-content p {
-margin: 0;
+@media (max-width: 1100px) {
 
-color: rgba(255,255,255,.82);
+  .team-hero {
+    grid-template-columns: 20% 60% 20%;
+  }
 
-font-size: 15px;
-line-height: 1.75;
-}
+  .player-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 
-/* =========================
-FOOTER
-========================= */
+  .legend-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 
-footer {
-padding: 40px 60px;
+  .trophy-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
-display: flex;
-align-items: center;
-justify-content: space-between;
 
-border-top: 1px solid #ffffff;
-}
+@media (max-width: 800px) {
 
-footer div {
-font-size: 10px;
-font-weight: 700;
-letter-spacing: 2px;
-color: #ffffff;
-}
+  .site-header-inner {
+    min-height: auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-footer span {
-color: rgba(255,255,255,.75);
+  .site-nav {
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
 
-font-size: 10px;
-}
+  .league-sidebar-inner {
+    padding: 14px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-/* =========================
-RESPONSIVE
-========================= */
+  .team-hero {
+    min-height: 600px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
-@media (max-width: 1000px) {
+  .team-hero-left,
+  .team-hero-center,
+  .team-hero-right {
+    padding: 20px;
+  }
 
-/* LEAGUE SIDEBAR */
+  .team-hero-right {
+    text-align: center;
+  }
 
-.league-sidebar {
-display: none;
-}
+  .team-season-box {
+    text-align: center;
+  }
 
-.site-header {
-padding: 0 25px;
-}
+  .club-layout,
+  .coach-layout,
+  .history-layout,
+  .transfer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
-nav {
-gap: 20px;
-}
+  .legend-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 
-.hero-content {
-padding: 45px 35px;
-}
+  .team-section {
+    padding: 55px 20px;
+  }
 
-.club-section,
-.palmares-section,
-.squad-section,
-.coach-section,
-.transfers-section,
-.legends-section,
-.history-section {
-padding-left: 35px;
-padding-right: 35px;
+  .site-footer {
+    padding: 40px 20px;
+  }
+
+  .site-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.players-grid,
-.player-grid {
-grid-template-columns: repeat(3, 1fr);
-}
 
-.trophy-grid {
-grid-template-columns: repeat(2, 1fr);
-}
+@media (max-width: 560px) {
 
-.other-trophies-list {
-grid-template-columns: repeat(2, 1fr);
-}
+  .player-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-.legends-grid {
-grid-template-columns: repeat(2, 1fr);
-}
+  .legend-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .trophy-grid {
+    grid-template-columns: 1fr;
+  }
 
-.club-content,
-.history-content {
-gap: 50px;
-}
-}
+  .club-meta {
+    grid-template-columns: 1fr;
+  }
 
-@media (max-width: 700px) {
+  .team-logo {
+    width: 140px;
+    height: 140px;
+  }
 
-.site-header {
-height: 64px;
-padding: 0 18px;
-}
+  .team-hero h1 {
+    font-size: 42px;
+  }
+}
+
+
+/* =========================================================
+   LEAGUE COLOR SYSTEM
+   =========================================================
+   
+   IMPORTANTE:
+   Il CSS riconosce il campionato tramite la classe
+   presente nel <body> della pagina.
 
-.logo {
-font-size: 10px;
-letter-spacing: 1.5px;
-}
+   Esempio:
+   <body class="liga-portugal">
 
-nav {
-display: none;
-}
+   oppure:
+   <body class="eredivisie">
+
+   ========================================================= */
+
+
+/* =========================================================
+   DEFAULT VARIABLES
+   ========================================================= */
 
-.search-button {
-width: 30px;
-height: 30px;
-}
+:root {
+  --league-bg: #0080C8;
+  --league-bg-secondary: #006FAF;
+  --league-accent: #FFFFFF;
+  --league-accent-secondary: #FFFFFF;
+  --league-text: #FFFFFF;
+  --league-border: rgba(255, 255, 255, 0.30);
+  --league-card: rgba(0, 0, 0, 0.18);
+  --league-hover: rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================================================
+   LIGA PORTUGAL
+   Blu + Rosso + Bianco
+   ========================================================= */
 
-.hero-image {
-min-height: 430px;
-}
+body.liga-portugal {
+  --league-bg: #00235A;
+  --league-bg-secondary: #00183D;
+  --league-accent: #E10014;
+  --league-accent-secondary: #FFFFFF;
+  --league-text: #FFFFFF;
+  --league-border: rgba(255, 255, 255, 0.28);
+  --league-card: rgba(0, 0, 0, 0.20);
+  --league-hover: rgba(225, 0, 20, 0.18);
+}
+
+
+/* =========================================================
+   EREDIVISIE
+   Blu scuro + Rosso
+   ========================================================= */
 
-.hero-content {
-padding: 30px 22px;
-gap: 18px;
-}
+body.eredivisie {
+  --league-bg: #02216E;
+  --league-bg-secondary: #002F63;
+  --league-accent: #E5004D;
+  --league-accent-secondary: #FFFFFF;
+  --league-text: #FFFFFF;
+  --league-border: rgba(255, 255, 255, 0.28);
+  --league-card: rgba(0, 0, 0, 0.20);
+  --league-hover: rgba(229, 0, 77, 0.16);
+}
+
+
+/* =========================================================
+   SÜPER LIG
+   Oxford Blue + Rosso + Oro
+   ========================================================= */
+
+body.superlig {
+  --league-bg: #191F34;
+  --league-bg-secondary: #101522;
+  --league-accent: #D7B85B;
+  --league-accent-secondary: #F00515;
+  --league-text: #FFFFFF;
+  --league-border: rgba(215, 184, 91, 0.38);
+  --league-card: rgba(0, 0, 0, 0.25);
+  --league-hover: rgba(215, 184, 91, 0.13);
+}
+
+
+/* =========================================================
+   SCOTTISH PREMIERSHIP
+   Blu + Oro
+   ========================================================= */
+
+body.scottish-premiership {
+  --league-bg: #202956;
+  --league-bg-secondary: #171D40;
+  --league-accent: #D2A615;
+  --league-accent-secondary: #FFFFFF;
+  --league-text: #FFFFFF;
+  --league-border: rgba(210, 166, 21, 0.35);
+  --league-card: rgba(0, 0, 0, 0.22);
+  --league-hover: rgba(210, 166, 21, 0.14);
+}
+
+
+/* =========================================================
+   BELGIAN PRO LEAGUE
+   Nero + Bianco
+   ========================================================= */
+
+body.belgian-pro-league {
+  --league-bg: #0B0B0B;
+  --league-bg-secondary: #151515;
+  --league-accent: #FFFFFF;
+  --league-accent-secondary: #D9D9D9;
+  --league-text: #FFFFFF;
+  --league-border: rgba(255, 255, 255, 0.28);
+  --league-card: rgba(255, 255, 255, 0.05);
+  --league-hover: rgba(255, 255, 255, 0.10);
+}
+
+
+/* =========================================================
+   SERIE B
+   Verde + Verde chiaro + Rosso
+   ========================================================= */
 
-.team-crest {
-width: 70px;
-height: 70px;
-padding: 11px;
-}
+body.serie-b {
+  --league-bg: #073B22;
+  --league-bg-secondary: #0A5A31;
+  --league-accent: #7CB93F;
+  --league-accent-secondary: #E42332;
+  --league-text: #FFFFFF;
+  --league-border: rgba(124, 185, 63, 0.35);
+  --league-card: rgba(0, 0, 0, 0.20);
+  --league-hover: rgba(124, 185, 63, 0.14);
+}
+
 
-.hero h1 {
-font-size: 42px;
-letter-spacing: -2px;
+/* =========================================================
+   LIGA 2 / SEGUNDA
+   Nero + Rosso + Cyan
+   ========================================================= */
+
+body.liga2 {
+  --league-bg: #231F20;
+  --league-bg-secondary: #302B2C;
+  --league-accent: #00A3E0;
+  --league-accent-secondary: #EF4136;
+  --league-text: #FFFFFF;
+  --league-border: rgba(0, 163, 224, 0.35);
+  --league-card: rgba(0, 0, 0, 0.25);
+  --league-hover: rgba(0, 163, 224, 0.14);
 }
 
-.hero p {
-font-size: 11px;
-}
 
-.club-section,
-.palmares-section,
-.squad-section,
-.coach-section,
-.transfers-section,
-.legends-section,
-.history-section {
-padding: 60px 22px;
+/* =========================================================
+   2. BUNDESLIGA
+   Nero + Rosso
+   ========================================================= */
+
+body.bundesliga-2 {
+  --league-bg: #101010;
+  --league-bg-secondary: #1B1B1B;
+  --league-accent: #D71920;
+  --league-accent-secondary: #FFFFFF;
+  --league-text: #FFFFFF;
+  --league-border: rgba(215, 25, 32, 0.38);
+  --league-card: rgba(255, 255, 255, 0.04);
+  --league-hover: rgba(215, 25, 32, 0.15);
 }
 
-.club-content,
-.history-content {
-margin-top: 30px;
-grid-template-columns: 1fr;
-gap: 35px;
-}
 
-.club-content h2,
-.history-content h2 {
-font-size: 40px;
-}
+/* =========================================================
+   LIGUE 2
+   Navy + Turquoise + Verde
+   ========================================================= */
+
+body.ligue2 {
+  --league-bg: #091C3E;
+  --league-bg-secondary: #0D2852;
+  --league-accent: #16FFD0;
+  --league-accent-secondary: #8DC63F;
+  --league-text: #FFFFFF;
+  --league-border: rgba(22, 255, 208, 0.30);
+  --league-card: rgba(0, 0, 0, 0.22);
+  --league-hover: rgba(22, 255, 208, 0.12);
+}
+
+
+/* =========================================================
+   APPLY LEAGUE COLORS
+   ========================================================= */
+
+body.liga-portugal,
+body.eredivisie,
+body.superlig,
+body.scottish-premiership,
+body.belgian-pro-league,
+body.serie-b,
+body.liga2,
+body.bundesliga-2,
+body.ligue2 {
+  background: var(--league-bg);
+  color: var(--league-text);
+}
+
+
+/* HEADER */
+
+body.liga-portugal .site-header,
+body.eredivisie .site-header,
+body.superlig .site-header,
+body.scottish-premiership .site-header,
+body.belgian-pro-league .site-header,
+body.serie-b .site-header,
+body.liga2 .site-header,
+body.bundesliga-2 .site-header,
+body.ligue2 .site-header {
+  background: var(--league-bg);
+}
+
+
+/* HERO */
+
+body.liga-portugal .team-hero,
+body.eredivisie .team-hero,
+body.superlig .team-hero,
+body.scottish-premiership .team-hero,
+body.belgian-pro-league .team-hero,
+body.serie-b .team-hero,
+body.liga2 .team-hero,
+body.bundesliga-2 .team-hero,
+body.ligue2 .team-hero {
+  background: var(--league-bg-secondary);
+}
+
+
+/* SECTIONS */
+
+body.liga-portugal .team-section,
+body.eredivisie .team-section,
+body.superlig .team-section,
+body.scottish-premiership .team-section,
+body.belgian-pro-league .team-section,
+body.serie-b .team-section,
+body.liga2 .team-section,
+body.bundesliga-2 .team-section,
+body.ligue2 .team-section {
+  border-color: var(--league-border);
+}
+
+
+/* SECTION TITLES */
+
+body.liga-portugal .team-section-title,
+body.eredivisie .team-section-title,
+body.superlig .team-section-title,
+body.scottish-premiership .team-section-title,
+body.belgian-pro-league .team-section-title,
+body.serie-b .team-section-title,
+body.liga2 .team-section-title,
+body.bundesliga-2 .team-section-title,
+body.ligue2 .team-section-title {
+  color: var(--league-accent);
+}
+
+
+/* PLAYER CARDS */
+
+body.liga-portugal .player-card,
+body.eredivisie .player-card,
+body.superlig .player-card,
+body.scottish-premiership .player-card,
+body.belgian-pro-league .player-card,
+body.serie-b .player-card,
+body.liga2 .player-card,
+body.bundesliga-2 .player-card,
+body.ligue2 .player-card {
+  background: var(--league-card);
+  border-color: var(--league-border);
+}
+
+body.liga-portugal .player-card:hover,
+body.eredivisie .player-card:hover,
+body.superlig .player-card:hover,
+body.scottish-premiership .player-card:hover,
+body.belgian-pro-league .player-card:hover,
+body.serie-b .player-card:hover,
+body.liga2 .player-card:hover,
+body.bundesliga-2 .player-card:hover,
+body.ligue2 .player-card:hover {
+  background: var(--league-hover);
+}
+
+
+/* PLAYER NUMBER */
+
+body.liga-portugal .player-number,
+body.eredivisie .player-number,
+body.superlig .player-number,
+body.scottish-premiership .player-number,
+body.belgian-pro-league .player-number,
+body.serie-b .player-number,
+body.liga2 .player-number,
+body.bundesliga-2 .player-number,
+body.ligue2 .player-number {
+  background: var(--league-accent);
+  color: var(--league-bg);
+}
 
-.club-content p,
-.history-content p {
-font-size: 14px;
-}
 
-.section-heading-row {
-align-items: flex-start;
-flex-direction: column;
-gap: 22px;
-}
+/* TROPHIES */
 
-.section-heading-row h2 {
-font-size: 40px;
+body.liga-portugal .trophy-card,
+body.eredivisie .trophy-card,
+body.superlig .trophy-card,
+body.scottish-premiership .trophy-card,
+body.belgian-pro-league .trophy-card,
+body.serie-b .trophy-card,
+body.liga2 .trophy-card,
+body.bundesliga-2 .trophy-card,
+body.ligue2 .trophy-card {
+  border-color: var(--league-border);
 }
 
-.season-selector {
-width: 100%;
-}
 
-.players-grid,
-.player-grid {
-grid-template-columns: repeat(2, 1fr);
-}
+/* CLUB META */
 
-.player-card {
-height: 210px;
+body.liga-portugal .club-meta-item,
+body.eredivisie .club-meta-item,
+body.superlig .club-meta-item,
+body.scottish-premiership .club-meta-item,
+body.belgian-pro-league .club-meta-item,
+body.serie-b .club-meta-item,
+body.liga2 .club-meta-item,
+body.bundesliga-2 .club-meta-item,
+body.ligue2 .club-meta-item {
+  border-color: var(--league-border);
 }
 
-.trophy-grid {
-grid-template-columns: 1fr;
-}
 
-.other-trophies-list {
-grid-template-columns: 1fr;
-}
+/* TRANSFERS */
 
-.legends-grid {
-grid-template-columns: 1fr 1fr;
+body.liga-portugal .transfer-column,
+body.eredivisie .transfer-column,
+body.superlig .transfer-column,
+body.scottish-premiership .transfer-column,
+body.belgian-pro-league .transfer-column,
+body.serie-b .transfer-column,
+body.liga2 .transfer-column,
+body.bundesliga-2 .transfer-column,
+body.ligue2 .transfer-column {
+  border-color: var(--league-border);
 }
 
-.coach-card {
-min-height: 140px;
+body.liga-portugal .transfer-column-title,
+body.eredivisie .transfer-column-title,
+body.superlig .transfer-column-title,
+body.scottish-premiership .transfer-column-title,
+body.belgian-pro-league .transfer-column-title,
+body.serie-b .transfer-column-title,
+body.liga2 .transfer-column-title,
+body.bundesliga-2 .transfer-column-title,
+body.ligue2 .transfer-column-title {
+  color: var(--league-accent);
 }
 
-.coach-photo {
-width: 140px;
-height: 140px;
-}
 
-.coach-info {
-padding: 20px;
-}
+/* LEGENDS */
 
-.coach-info strong {
-font-size: 22px;
+body.liga-portugal .legend-card,
+body.eredivisie .legend-card,
+body.superlig .legend-card,
+body.scottish-premiership .legend-card,
+body.belgian-pro-league .legend-card,
+body.serie-b .legend-card,
+body.liga2 .legend-card,
+body.bundesliga-2 .legend-card,
+body.ligue2 .legend-card {
+  border-color: var(--league-border);
 }
 
-.coach-arrow {
-display: none;
-}
 
-.transfers-grid {
-grid-template-columns: 1fr;
-gap: 45px;
-}
+/* FOOTER */
 
-.transfer {
-grid-template-columns: 44px 1fr 55px;
-gap: 8px;
+body.liga-portugal .site-footer,
+body.eredivisie .site-footer,
+body.superlig .site-footer,
+body.scottish-premiership .site-footer,
+body.belgian-pro-league .site-footer,
+body.serie-b .site-footer,
+body.liga2 .site-footer,
+body.bundesliga-2 .site-footer,
+body.ligue2 .site-footer {
+  border-color: var(--league-border);
 }
 
-.transfer-photo {
-width: 44px;
-height: 44px;
-}
 
-.transfer-club-area {
-display: none;
-}
+/* =========================================================
+   LEAGUE-SPECIFIC ACCENTS
+   ========================================================= */
 
-.transfer-price {
-font-size: 9px;
-}
+/* Liga Portugal */
 
-footer {
-padding: 30px 22px;
-align-items: flex-start;
-flex-direction: column;
-gap: 10px;
+body.liga-portugal .team-season,
+body.liga-portugal .trophy-count,
+body.liga-portugal .history-year {
+  color: var(--league-accent);
 }
-}
 
-@media (max-width: 450px) {
 
-.hero h1 {
-font-size: 34px;
-}
+/* Eredivisie */
 
-.hero-content {
-align-items: flex-end;
+body.eredivisie .team-season,
+body.eredivisie .trophy-count,
+body.eredivisie .history-year {
+  color: var(--league-accent);
 }
 
-.team-crest {
-width: 60px;
-height: 60px;
-padding: 9px;
-}
 
-.players-grid,
-.player-grid {
-grid-template-columns: 1fr 1fr;
-gap: 8px;
-}
+/* Süper Lig */
 
-.player-card {
-height: 190px;
+body.superlig .team-season,
+body.superlig .trophy-count,
+body.superlig .history-year {
+  color: var(--league-accent);
 }
 
-.player-card-info,
-.player-info {
-left: 10px;
-right: 10px;
-bottom: 10px;
-}
 
-.player-card-info strong,
-.player-info strong {
-font-size: 12px;
+/* Scottish Premiership */
+
+body.scottish-premiership .team-season,
+body.scottish-premiership .trophy-count,
+body.scottish-premiership .history-year {
+  color: var(--league-accent);
 }
+
 
-.shirt-number,
-.player-number {
-top: 9px;
-left: 9px;
-font-size: 20px;
+/* Belgian Pro League */
+
+body.belgian-pro-league .team-season,
+body.belgian-pro-league .trophy-count,
+body.belgian-pro-league .history-year {
+  color: var(--league-accent);
 }
+
 
-.legend-card {
-min-height: 300px;
+/* Serie B */
+
+body.serie-b .team-season,
+body.serie-b .trophy-count,
+body.serie-b .history-year {
+  color: var(--league-accent);
 }
+
 
-.legend-card h3 {
-left: 13px;
-bottom: 43px;
-font-size: 21px;
+/* Liga 2 */
+
+body.liga2 .team-season,
+body.liga2 .trophy-count,
+body.liga2 .history-year {
+  color: var(--league-accent);
 }
+
 
-.legend-card p {
-left: 13px;
-bottom: 14px;
+/* Bundesliga 2 */
+
+body.bundesliga-2 .team-season,
+body.bundesliga-2 .trophy-count,
+body.bundesliga-2 .history-year {
+  color: var(--league-accent);
 }
+
 
-.legend-card b {
-right: 13px;
-bottom: 13px;
+/* Ligue 2 */
+
+body.ligue2 .team-season,
+body.ligue2 .trophy-count,
+body.ligue2 .history-year {
+  color: var(--league-accent);
 }
+
+
+/* =========================================================
+   MOBILE LEAGUE COLORS
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  body.liga-portugal .team-hero,
+  body.eredivisie .team-hero,
+  body.superlig .team-hero,
+  body.scottish-premiership .team-hero,
+  body.belgian-pro-league .team-hero,
+  body.serie-b .team-hero,
+  body.liga2 .team-hero,
+  body.bundesliga-2 .team-hero,
+  body.ligue2 .team-hero {
+    background: var(--league-bg-secondary);
+  }
 }
