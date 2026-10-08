@@ -1558,3 +1558,997 @@ footer span {
     bottom: 13px;
   }
 }
+
+/* =========================================================
+   LEAGUE COLORS
+   Pages Of Football - Dynamic league themes
+   ========================================================= */
+
+/* =========================================================
+   LIGA PORTUGAL
+   ========================================================= */
+
+body.liga-portugal {
+  background: #00235A;
+}
+
+body.liga-portugal .site-header {
+  background: #00235A;
+  border-bottom-color: #E10014;
+}
+
+body.liga-portugal .logo,
+body.liga-portugal nav a,
+body.liga-portugal .section-label,
+body.liga-portugal .club-content h2,
+body.liga-portugal .club-content p,
+body.liga-portugal .other-trophies summary,
+body.liga-portugal .other-trophy strong,
+body.liga-portugal .other-trophy span,
+body.liga-portugal .section-heading-row h2,
+body.liga-portugal .season-selector,
+body.liga-portugal .season-selector span:first-child,
+body.liga-portugal .season-selector strong,
+body.liga-portugal .season-arrow,
+body.liga-portugal .squad-group h3,
+body.liga-portugal .position-group h3,
+body.liga-portugal .coach-section .section-label,
+body.liga-portugal .transfers-section .section-label,
+body.liga-portugal .transfer-column h3,
+body.liga-portugal .transfer-player,
+body.liga-portugal .transfer-arrow,
+body.liga-portugal .transfer-price,
+body.liga-portugal .history-content h2,
+body.liga-portugal .history-content p,
+body.liga-portugal footer div,
+body.liga-portugal footer span {
+  color: #ffffff;
+}
+
+body.liga-portugal nav a:hover,
+body.liga-portugal nav a.active,
+body.liga-portugal .section-label,
+body.liga-portugal .transfer-arrow,
+body.liga-portugal .season-arrow {
+  color: #E10014;
+}
+
+body.liga-portugal .search-button,
+body.liga-portugal .season-selector {
+  border-color: #E10014;
+}
+
+body.liga-portugal .club-section,
+body.liga-portugal .palmares-section,
+body.liga-portugal .squad-section,
+body.liga-portugal .coach-section,
+body.liga-portugal .transfers-section,
+body.liga-portugal .legends-section,
+body.liga-portugal .other-trophies,
+body.liga-portugal .other-trophy,
+body.liga-portugal .squad-group h3,
+body.liga-portugal .position-group h3,
+body.liga-portugal .transfer,
+body.liga-portugal footer {
+  border-color: #E10014;
+}
+
+body.liga-portugal .season-selector:hover {
+  background: #E10014;
+  border-color: #E10014;
+}
+
+body.liga-portugal .season-selector:hover span,
+body.liga-portugal .season-selector:hover strong,
+body.liga-portugal .season-selector:hover .season-arrow {
+  color: #ffffff;
+}
+
+body.liga-portugal .competition-button {
+  background: #E10014;
+  border-color: #E10014;
+}
+
+body.liga-portugal .competition-button-content span,
+body.liga-portugal .competition-button-content strong,
+body.liga-portugal .competition-button-arrow {
+  color: #ffffff;
+}
+
+body.liga-portugal .competition-button-arrow {
+  border-color: #ffffff;
+}
+
+body.liga-portugal .competition-button:hover {
+  background: #00235A;
+  border-color: #E10014;
+}
+
+body.liga-portugal .competition-button:hover .competition-button-content span,
+body.liga-portugal .competition-button:hover .competition-button-content strong,
+body.liga-portugal .competition-button:hover .competition-button-arrow {
+  color: #ffffff;
+}
+
+body.liga-portugal .competition-button:hover .competition-button-arrow {
+  background: #E10014;
+  border-color: #ffffff;
+}
+
+
+/* =========================================================
+   EREDIVISIE
+   ========================================================= */
+
+body.eredivisie {
+  background: #02216E;
+}
+
+body.eredivisie .site-header {
+  background: #02216E;
+  border-bottom-color: #E5004D;
+}
+
+body.eredivisie .logo,
+body.eredivisie nav a,
+body.eredivisie .section-label,
+body.eredivisie .club-content h2,
+body.eredivisie .club-content p,
+body.eredivisie .other-trophies summary,
+body.eredivisie .other-trophy strong,
+body.eredivisie .other-trophy span,
+body.eredivisie .section-heading-row h2,
+body.eredivisie .season-selector,
+body.eredivisie .season-selector span:first-child,
+body.eredivisie .season-selector strong,
+body.eredivisie .season-arrow,
+body.eredivisie .squad-group h3,
+body.eredivisie .position-group h3,
+body.eredivisie .transfer-column h3,
+body.eredivisie .transfer-player,
+body.eredivisie .transfer-arrow,
+body.eredivisie .transfer-price,
+body.eredivisie .history-content h2,
+body.eredivisie .history-content p,
+body.eredivisie footer div,
+body.eredivisie footer span {
+  color: #ffffff;
+}
+
+body.eredivisie nav a:hover,
+body.eredivisie nav a.active,
+body.eredivisie .section-label,
+body.eredivisie .transfer-arrow,
+body.eredivisie .season-arrow {
+  color: #E5004D;
+}
+
+body.eredivisie .search-button,
+body.eredivisie .season-selector {
+  border-color: #E5004D;
+}
+
+body.eredivisie .club-section,
+body.eredivisie .palmares-section,
+body.eredivisie .squad-section,
+body.eredivisie .coach-section,
+body.eredivisie .transfers-section,
+body.eredivisie .legends-section,
+body.eredivisie .other-trophies,
+body.eredivisie .other-trophy,
+body.eredivisie .squad-group h3,
+body.eredivisie .position-group h3,
+body.eredivisie .transfer,
+body.eredivisie footer {
+  border-color: #E5004D;
+}
+
+body.eredivisie .season-selector:hover {
+  background: #E5004D;
+  border-color: #E5004D;
+}
+
+body.eredivisie .season-selector:hover span,
+body.eredivisie .season-selector:hover strong,
+body.eredivisie .season-selector:hover .season-arrow {
+  color: #ffffff;
+}
+
+body.eredivisie .competition-button {
+  background: #E5004D;
+  border-color: #E5004D;
+}
+
+body.eredivisie .competition-button-content span,
+body.eredivisie .competition-button-content strong,
+body.eredivisie .competition-button-arrow {
+  color: #ffffff;
+}
+
+body.eredivisie .competition-button-arrow {
+  border-color: #ffffff;
+}
+
+body.eredivisie .competition-button:hover {
+  background: #02216E;
+  border-color: #E5004D;
+}
+
+body.eredivisie .competition-button:hover .competition-button-content span,
+body.eredivisie .competition-button:hover .competition-button-content strong,
+body.eredivisie .competition-button:hover .competition-button-arrow {
+  color: #ffffff;
+}
+
+body.eredivisie .competition-button:hover .competition-button-arrow {
+  background: #E5004D;
+  border-color: #ffffff;
+}
+
+
+/* =========================================================
+   SUPER LIG
+   ========================================================= */
+
+body.super-lig {
+  background: #191F34;
+}
+
+body.super-lig .site-header {
+  background: #191F34;
+  border-bottom-color: #D7B85B;
+}
+
+body.super-lig .logo,
+body.super-lig nav a,
+body.super-lig .section-label,
+body.super-lig .club-content h2,
+body.super-lig .club-content p,
+body.super-lig .other-trophies summary,
+body.super-lig .other-trophy strong,
+body.super-lig .other-trophy span,
+body.super-lig .section-heading-row h2,
+body.super-lig .season-selector,
+body.super-lig .season-selector span:first-child,
+body.super-lig .season-selector strong,
+body.super-lig .season-arrow,
+body.super-lig .squad-group h3,
+body.super-lig .position-group h3,
+body.super-lig .transfer-column h3,
+body.super-lig .transfer-player,
+body.super-lig .transfer-arrow,
+body.super-lig .transfer-price,
+body.super-lig .history-content h2,
+body.super-lig .history-content p,
+body.super-lig footer div,
+body.super-lig footer span {
+  color: #ffffff;
+}
+
+body.super-lig nav a:hover,
+body.super-lig nav a.active,
+body.super-lig .section-label,
+body.super-lig .transfer-arrow,
+body.super-lig .season-arrow {
+  color: #D7B85B;
+}
+
+body.super-lig .search-button,
+body.super-lig .season-selector {
+  border-color: #D7B85B;
+}
+
+body.super-lig .club-section,
+body.super-lig .palmares-section,
+body.super-lig .squad-section,
+body.super-lig .coach-section,
+body.super-lig .transfers-section,
+body.super-lig .legends-section,
+body.super-lig .other-trophies,
+body.super-lig .other-trophy,
+body.super-lig .squad-group h3,
+body.super-lig .position-group h3,
+body.super-lig .transfer,
+body.super-lig footer {
+  border-color: #D7B85B;
+}
+
+body.super-lig .season-selector:hover {
+  background: #D7B85B;
+  border-color: #D7B85B;
+}
+
+body.super-lig .season-selector:hover span,
+body.super-lig .season-selector:hover strong,
+body.super-lig .season-selector:hover .season-arrow {
+  color: #191F34;
+}
+
+body.super-lig .competition-button {
+  background: #D7B85B;
+  border-color: #D7B85B;
+}
+
+body.super-lig .competition-button-content span,
+body.super-lig .competition-button-content strong,
+body.super-lig .competition-button-arrow {
+  color: #191F34;
+}
+
+body.super-lig .competition-button-arrow {
+  border-color: #191F34;
+}
+
+body.super-lig .competition-button:hover {
+  background: #191F34;
+  border-color: #D7B85B;
+}
+
+body.super-lig .competition-button:hover .competition-button-content span,
+body.super-lig .competition-button:hover .competition-button-content strong,
+body.super-lig .competition-button:hover .competition-button-arrow {
+  color: #D7B85B;
+}
+
+body.super-lig .competition-button:hover .competition-button-arrow {
+  background: #D7B85B;
+  border-color: #D7B85B;
+}
+
+
+/* =========================================================
+   SCOTTISH PREMIERSHIP
+   ========================================================= */
+
+body.scottish-premiership {
+  background: #202956;
+}
+
+body.scottish-premiership .site-header {
+  background: #202956;
+  border-bottom-color: #D2A615;
+}
+
+body.scottish-premiership .logo,
+body.scottish-premiership nav a,
+body.scottish-premiership .section-label,
+body.scottish-premiership .club-content h2,
+body.scottish-premiership .club-content p,
+body.scottish-premiership .other-trophies summary,
+body.scottish-premiership .other-trophy strong,
+body.scottish-premiership .other-trophy span,
+body.scottish-premiership .section-heading-row h2,
+body.scottish-premiership .season-selector,
+body.scottish-premiership .season-selector span:first-child,
+body.scottish-premiership .season-selector strong,
+body.scottish-premiership .season-arrow,
+body.scottish-premiership .squad-group h3,
+body.scottish-premiership .position-group h3,
+body.scottish-premiership .transfer-column h3,
+body.scottish-premiership .transfer-player,
+body.scottish-premiership .transfer-arrow,
+body.scottish-premiership .transfer-price,
+body.scottish-premiership .history-content h2,
+body.scottish-premiership .history-content p,
+body.scottish-premiership footer div,
+body.scottish-premiership footer span {
+  color: #ffffff;
+}
+
+body.scottish-premiership nav a:hover,
+body.scottish-premiership nav a.active,
+body.scottish-premiership .section-label,
+body.scottish-premiership .transfer-arrow,
+body.scottish-premiership .season-arrow {
+  color: #D2A615;
+}
+
+body.scottish-premiership .search-button,
+body.scottish-premiership .season-selector {
+  border-color: #D2A615;
+}
+
+body.scottish-premiership .club-section,
+body.scottish-premiership .palmares-section,
+body.scottish-premiership .squad-section,
+body.scottish-premiership .coach-section,
+body.scottish-premiership .transfers-section,
+body.scottish-premiership .legends-section,
+body.scottish-premiership .other-trophies,
+body.scottish-premiership .other-trophy,
+body.scottish-premiership .squad-group h3,
+body.scottish-premiership .position-group h3,
+body.scottish-premiership .transfer,
+body.scottish-premiership footer {
+  border-color: #D2A615;
+}
+
+body.scottish-premiership .season-selector:hover {
+  background: #D2A615;
+  border-color: #D2A615;
+}
+
+body.scottish-premiership .season-selector:hover span,
+body.scottish-premiership .season-selector:hover strong,
+body.scottish-premiership .season-selector:hover .season-arrow {
+  color: #202956;
+}
+
+body.scottish-premiership .competition-button {
+  background: #D2A615;
+  border-color: #D2A615;
+}
+
+body.scottish-premiership .competition-button-content span,
+body.scottish-premiership .competition-button-content strong,
+body.scottish-premiership .competition-button-arrow {
+  color: #202956;
+}
+
+body.scottish-premiership .competition-button-arrow {
+  border-color: #202956;
+}
+
+body.scottish-premiership .competition-button:hover {
+  background: #202956;
+  border-color: #D2A615;
+}
+
+body.scottish-premiership .competition-button:hover .competition-button-content span,
+body.scottish-premiership .competition-button:hover .competition-button-content strong,
+body.scottish-premiership .competition-button:hover .competition-button-arrow {
+  color: #D2A615;
+}
+
+body.scottish-premiership .competition-button:hover .competition-button-arrow {
+  background: #D2A615;
+  border-color: #D2A615;
+}
+
+
+/* =========================================================
+   JUPILER PRO LEAGUE
+   ========================================================= */
+
+body.jupiler-pro-league {
+  background: #0B0B0B;
+}
+
+body.jupiler-pro-league .site-header {
+  background: #0B0B0B;
+  border-bottom-color: #ffffff;
+}
+
+body.jupiler-pro-league .logo,
+body.jupiler-pro-league nav a,
+body.jupiler-pro-league .section-label,
+body.jupiler-pro-league .club-content h2,
+body.jupiler-pro-league .club-content p,
+body.jupiler-pro-league .other-trophies summary,
+body.jupiler-pro-league .other-trophy strong,
+body.jupiler-pro-league .other-trophy span,
+body.jupiler-pro-league .section-heading-row h2,
+body.jupiler-pro-league .season-selector,
+body.jupiler-pro-league .season-selector span:first-child,
+body.jupiler-pro-league .season-selector strong,
+body.jupiler-pro-league .season-arrow,
+body.jupiler-pro-league .squad-group h3,
+body.jupiler-pro-league .position-group h3,
+body.jupiler-pro-league .transfer-column h3,
+body.jupiler-pro-league .transfer-player,
+body.jupiler-pro-league .transfer-arrow,
+body.jupiler-pro-league .transfer-price,
+body.jupiler-pro-league .history-content h2,
+body.jupiler-pro-league .history-content p,
+body.jupiler-pro-league footer div,
+body.jupiler-pro-league footer span {
+  color: #ffffff;
+}
+
+body.jupiler-pro-league .search-button,
+body.jupiler-pro-league .season-selector {
+  border-color: #ffffff;
+}
+
+body.jupiler-pro-league .club-section,
+body.jupiler-pro-league .palmares-section,
+body.jupiler-pro-league .squad-section,
+body.jupiler-pro-league .coach-section,
+body.jupiler-pro-league .transfers-section,
+body.jupiler-pro-league .legends-section,
+body.jupiler-pro-league .other-trophies,
+body.jupiler-pro-league .other-trophy,
+body.jupiler-pro-league .squad-group h3,
+body.jupiler-pro-league .position-group h3,
+body.jupiler-pro-league .transfer,
+body.jupiler-pro-league footer {
+  border-color: #ffffff;
+}
+
+body.jupiler-pro-league .season-selector:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+body.jupiler-pro-league .season-selector:hover span,
+body.jupiler-pro-league .season-selector:hover strong,
+body.jupiler-pro-league .season-selector:hover .season-arrow {
+  color: #0B0B0B;
+}
+
+body.jupiler-pro-league .competition-button {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+body.jupiler-pro-league .competition-button-content span,
+body.jupiler-pro-league .competition-button-content strong,
+body.jupiler-pro-league .competition-button-arrow {
+  color: #0B0B0B;
+}
+
+body.jupiler-pro-league .competition-button-arrow {
+  border-color: #0B0B0B;
+}
+
+body.jupiler-pro-league .competition-button:hover {
+  background: #0B0B0B;
+  border-color: #ffffff;
+}
+
+body.jupiler-pro-league .competition-button:hover .competition-button-content span,
+body.jupiler-pro-league .competition-button:hover .competition-button-content strong,
+body.jupiler-pro-league .competition-button:hover .competition-button-arrow {
+  color: #ffffff;
+}
+
+body.jupiler-pro-league .competition-button:hover .competition-button-arrow {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #0B0B0B;
+}
+
+
+/* =========================================================
+   SERIE B
+   ========================================================= */
+
+body.serie-b {
+  background: #073B22;
+}
+
+body.serie-b .site-header {
+  background: #073B22;
+  border-bottom-color: #7CB93F;
+}
+
+body.serie-b .logo,
+body.serie-b nav a,
+body.serie-b .section-label,
+body.serie-b .club-content h2,
+body.serie-b .club-content p,
+body.serie-b .other-trophies summary,
+body.serie-b .other-trophy strong,
+body.serie-b .other-trophy span,
+body.serie-b .section-heading-row h2,
+body.serie-b .season-selector,
+body.serie-b .season-selector span:first-child,
+body.serie-b .season-selector strong,
+body.serie-b .season-arrow,
+body.serie-b .squad-group h3,
+body.serie-b .position-group h3,
+body.serie-b .transfer-column h3,
+body.serie-b .transfer-player,
+body.serie-b .transfer-price,
+body.serie-b .history-content h2,
+body.serie-b .history-content p,
+body.serie-b footer div,
+body.serie-b footer span {
+  color: #ffffff;
+}
+
+body.serie-b nav a:hover,
+body.serie-b nav a.active,
+body.serie-b .section-label,
+body.serie-b .season-arrow {
+  color: #7CB93F;
+}
+
+body.serie-b .transfer-arrow {
+  color: #E10014;
+}
+
+body.serie-b .search-button,
+body.serie-b .season-selector {
+  border-color: #7CB93F;
+}
+
+body.serie-b .club-section,
+body.serie-b .palmares-section,
+body.serie-b .squad-section,
+body.serie-b .coach-section,
+body.serie-b .transfers-section,
+body.serie-b .legends-section,
+body.serie-b .other-trophies,
+body.serie-b .other-trophy,
+body.serie-b .squad-group h3,
+body.serie-b .position-group h3,
+body.serie-b .transfer,
+body.serie-b footer {
+  border-color: #7CB93F;
+}
+
+body.serie-b .season-selector:hover {
+  background: #7CB93F;
+  border-color: #7CB93F;
+}
+
+body.serie-b .season-selector:hover span,
+body.serie-b .season-selector:hover strong,
+body.serie-b .season-selector:hover .season-arrow {
+  color: #073B22;
+}
+
+body.serie-b .competition-button {
+  background: #7CB93F;
+  border-color: #7CB93F;
+}
+
+body.serie-b .competition-button-content span,
+body.serie-b .competition-button-content strong,
+body.serie-b .competition-button-arrow {
+  color: #073B22;
+}
+
+body.serie-b .competition-button-arrow {
+  border-color: #073B22;
+}
+
+body.serie-b .competition-button:hover {
+  background: #073B22;
+  border-color: #7CB93F;
+}
+
+body.serie-b .competition-button:hover .competition-button-content span,
+body.serie-b .competition-button:hover .competition-button-content strong,
+body.serie-b .competition-button:hover .competition-button-arrow {
+  color: #7CB93F;
+}
+
+body.serie-b .competition-button:hover .competition-button-arrow {
+  background: #7CB93F;
+  border-color: #7CB93F;
+}
+
+
+/* =========================================================
+   SEGUNDA DIVISION
+   ========================================================= */
+
+body.segunda-division {
+  background: #231F20;
+}
+
+body.segunda-division .site-header {
+  background: #231F20;
+  border-bottom-color: #00A3E0;
+}
+
+body.segunda-division .logo,
+body.segunda-division nav a,
+body.segunda-division .section-label,
+body.segunda-division .club-content h2,
+body.segunda-division .club-content p,
+body.segunda-division .other-trophies summary,
+body.segunda-division .other-trophy strong,
+body.segunda-division .other-trophy span,
+body.segunda-division .section-heading-row h2,
+body.segunda-division .season-selector,
+body.segunda-division .season-selector span:first-child,
+body.segunda-division .season-selector strong,
+body.segunda-division .season-arrow,
+body.segunda-division .squad-group h3,
+body.segunda-division .position-group h3,
+body.segunda-division .transfer-column h3,
+body.segunda-division .transfer-player,
+body.segunda-division .transfer-price,
+body.segunda-division .history-content h2,
+body.segunda-division .history-content p,
+body.segunda-division footer div,
+body.segunda-division footer span {
+  color: #ffffff;
+}
+
+body.segunda-division nav a:hover,
+body.segunda-division nav a.active,
+body.segunda-division .section-label,
+body.segunda-division .season-arrow {
+  color: #00A3E0;
+}
+
+body.segunda-division .transfer-arrow {
+  color: #E10014;
+}
+
+body.segunda-division .search-button,
+body.segunda-division .season-selector {
+  border-color: #00A3E0;
+}
+
+body.segunda-division .club-section,
+body.segunda-division .palmares-section,
+body.segunda-division .squad-section,
+body.segunda-division .coach-section,
+body.segunda-division .transfers-section,
+body.segunda-division .legends-section,
+body.segunda-division .other-trophies,
+body.segunda-division .other-trophy,
+body.segunda-division .squad-group h3,
+body.segunda-division .position-group h3,
+body.segunda-division .transfer,
+body.segunda-division footer {
+  border-color: #00A3E0;
+}
+
+body.segunda-division .season-selector:hover {
+  background: #00A3E0;
+  border-color: #00A3E0;
+}
+
+body.segunda-division .season-selector:hover span,
+body.segunda-division .season-selector:hover strong,
+body.segunda-division .season-selector:hover .season-arrow {
+  color: #231F20;
+}
+
+body.segunda-division .competition-button {
+  background: #00A3E0;
+  border-color: #00A3E0;
+}
+
+body.segunda-division .competition-button-content span,
+body.segunda-division .competition-button-content strong,
+body.segunda-division .competition-button-arrow {
+  color: #231F20;
+}
+
+body.segunda-division .competition-button-arrow {
+  border-color: #231F20;
+}
+
+body.segunda-division .competition-button:hover {
+  background: #231F20;
+  border-color: #00A3E0;
+}
+
+body.segunda-division .competition-button:hover .competition-button-content span,
+body.segunda-division .competition-button:hover .competition-button-content strong,
+body.segunda-division .competition-button:hover .competition-button-arrow {
+  color: #00A3E0;
+}
+
+body.segunda-division .competition-button:hover .competition-button-arrow {
+  background: #00A3E0;
+  border-color: #00A3E0;
+}
+
+
+/* =========================================================
+   2. BUNDESLIGA
+   ========================================================= */
+
+body.\32-bundesliga {
+  background: #101010;
+}
+
+body.\32-bundesliga .site-header {
+  background: #101010;
+  border-bottom-color: #D71920;
+}
+
+body.\32-bundesliga .logo,
+body.\32-bundesliga nav a,
+body.\32-bundesliga .section-label,
+body.\32-bundesliga .club-content h2,
+body.\32-bundesliga .club-content p,
+body.\32-bundesliga .other-trophies summary,
+body.\32-bundesliga .other-trophy strong,
+body.\32-bundesliga .other-trophy span,
+body.\32-bundesliga .section-heading-row h2,
+body.\32-bundesliga .season-selector,
+body.\32-bundesliga .season-selector span:first-child,
+body.\32-bundesliga .season-selector strong,
+body.\32-bundesliga .season-arrow,
+body.\32-bundesliga .squad-group h3,
+body.\32-bundesliga .position-group h3,
+body.\32-bundesliga .transfer-column h3,
+body.\32-bundesliga .transfer-player,
+body.\32-bundesliga .transfer-price,
+body.\32-bundesliga .history-content h2,
+body.\32-bundesliga .history-content p,
+body.\32-bundesliga footer div,
+body.\32-bundesliga footer span {
+  color: #ffffff;
+}
+
+body.\32-bundesliga nav a:hover,
+body.\32-bundesliga nav a.active,
+body.\32-bundesliga .section-label,
+body.\32-bundesliga .transfer-arrow,
+body.\32-bundesliga .season-arrow {
+  color: #D71920;
+}
+
+body.\32-bundesliga .search-button,
+body.\32-bundesliga .season-selector {
+  border-color: #D71920;
+}
+
+body.\32-bundesliga .club-section,
+body.\32-bundesliga .palmares-section,
+body.\32-bundesliga .squad-section,
+body.\32-bundesliga .coach-section,
+body.\32-bundesliga .transfers-section,
+body.\32-bundesliga .legends-section,
+body.\32-bundesliga .other-trophies,
+body.\32-bundesliga .other-trophy,
+body.\32-bundesliga .squad-group h3,
+body.\32-bundesliga .position-group h3,
+body.\32-bundesliga .transfer,
+body.\32-bundesliga footer {
+  border-color: #D71920;
+}
+
+body.\32-bundesliga .season-selector:hover {
+  background: #D71920;
+  border-color: #D71920;
+}
+
+body.\32-bundesliga .season-selector:hover span,
+body.\32-bundesliga .season-selector:hover strong,
+body.\32-bundesliga .season-selector:hover .season-arrow {
+  color: #ffffff;
+}
+
+body.\32-bundesliga .competition-button {
+  background: #D71920;
+  border-color: #D71920;
+}
+
+body.\32-bundesliga .competition-button-content span,
+body.\32-bundesliga .competition-button-content strong,
+body.\32-bundesliga .competition-button-arrow {
+  color: #ffffff;
+}
+
+body.\32-bundesliga .competition-button-arrow {
+  border-color: #ffffff;
+}
+
+body.\32-bundesliga .competition-button:hover {
+  background: #101010;
+  border-color: #D71920;
+}
+
+body.\32-bundesliga .competition-button:hover .competition-button-content span,
+body.\32-bundesliga .competition-button:hover .competition-button-content strong,
+body.\32-bundesliga .competition-button:hover .competition-button-arrow {
+  color: #D71920;
+}
+
+body.\32-bundesliga .competition-button:hover .competition-button-arrow {
+  background: #D71920;
+  border-color: #D71920;
+}
+
+
+/* =========================================================
+   LIGUE 2
+   ========================================================= */
+
+body.ligue-2 {
+  background: #091C3E;
+}
+
+body.ligue-2 .site-header {
+  background: #091C3E;
+  border-bottom-color: #16FFD0;
+}
+
+body.ligue-2 .logo,
+body.ligue-2 nav a,
+body.ligue-2 .section-label,
+body.ligue-2 .club-content h2,
+body.ligue-2 .club-content p,
+body.ligue-2 .other-trophies summary,
+body.ligue-2 .other-trophy strong,
+body.ligue-2 .other-trophy span,
+body.ligue-2 .section-heading-row h2,
+body.ligue-2 .season-selector,
+body.ligue-2 .season-selector span:first-child,
+body.ligue-2 .season-selector strong,
+body.ligue-2 .season-arrow,
+body.ligue-2 .squad-group h3,
+body.ligue-2 .position-group h3,
+body.ligue-2 .transfer-column h3,
+body.ligue-2 .transfer-player,
+body.ligue-2 .transfer-price,
+body.ligue-2 .history-content h2,
+body.ligue-2 .history-content p,
+body.ligue-2 footer div,
+body.ligue-2 footer span {
+  color: #ffffff;
+}
+
+body.ligue-2 nav a:hover,
+body.ligue-2 nav a.active,
+body.ligue-2 .section-label,
+body.ligue-2 .season-arrow {
+  color: #16FFD0;
+}
+
+body.ligue-2 .transfer-arrow {
+  color: #B6FF00;
+}
+
+body.ligue-2 .search-button,
+body.ligue-2 .season-selector {
+  border-color: #16FFD0;
+}
+
+body.ligue-2 .club-section,
+body.ligue-2 .palmares-section,
+body.ligue-2 .squad-section,
+body.ligue-2 .coach-section,
+body.ligue-2 .transfers-section,
+body.ligue-2 .legends-section,
+body.ligue-2 .other-trophies,
+body.ligue-2 .other-trophy,
+body.ligue-2 .squad-group h3,
+body.ligue-2 .position-group h3,
+body.ligue-2 .transfer,
+body.ligue-2 footer {
+  border-color: #16FFD0;
+}
+
+body.ligue-2 .season-selector:hover {
+  background: #16FFD0;
+  border-color: #16FFD0;
+}
+
+body.ligue-2 .season-selector:hover span,
+body.ligue-2 .season-selector:hover strong,
+body.ligue-2 .season-selector:hover .season-arrow {
+  color: #091C3E;
+}
+
+body.ligue-2 .competition-button {
+  background: #16FFD0;
+  border-color: #16FFD0;
+}
+
+body.ligue-2 .competition-button-content span,
+body.ligue-2 .competition-button-content strong,
+body.ligue-2 .competition-button-arrow {
+  color: #091C3E;
+}
+
+body.ligue-2 .competition-button-arrow {
+  border-color: #091C3E;
+}
+
+body.ligue-2 .competition-button:hover {
+  background: #091C3E;
+  border-color: #16FFD0;
+}
+
+body.ligue-2 .competition-button:hover .competition-button-content span,
+body.ligue-2 .competition-button:hover .competition-button-content strong,
+body.ligue-2 .competition-button:hover .competition-button-arrow {
+  color: #16FFD0;
+}
+
+body.ligue-2 .competition-button:hover .competition-button-arrow {
+  background: #16FFD0;
+  border-color: #16FFD0;
+}
