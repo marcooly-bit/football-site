@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap');
 
+:root {
+  --saudi-bg: #171D27;
+  --saudi-accent: #6699CC;
+  --saudi-white: #FFFFFF;
+  --saudi-panel: #171D27;
+  --saudi-border: rgba(102, 153, 204, .8);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: #000020;
-  color: #FF4B44;
+  background: var(--saudi-bg);
+  color: var(--saudi-white);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,8 +30,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #FF4B44;
-  background: #000020;
+  border-bottom: 1px solid var(--saudi-accent);
+  background: #171D27;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -33,7 +41,7 @@ body {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #FF4B44;
+  color: #6699CC;
 }
 
 nav {
@@ -42,7 +50,7 @@ nav {
 }
 
 nav a {
-  color: #FF4B44;
+  color: #6699CC;
   text-decoration: none;
   font-size: 11px;
   text-transform: uppercase;
@@ -52,15 +60,15 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: #FF4B44;
+  color: #FFFFFF;
 }
 
 .search-button {
   width: 32px;
   height: 32px;
-  border: 1px solid #FF4B44;
+  border: 1px solid #6699CC;
   background: transparent;
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 19px;
   cursor: pointer;
 }
@@ -111,8 +119,8 @@ nav a.active {
 }
 
 .league-team-link:hover {
-  background: #f1f0ec;
-  border-color: #d3d1ca;
+  background: #FFFFFF;
+  border-color: #6699CC;
   transform: translateX(-2px);
 }
 
@@ -121,8 +129,8 @@ nav a.active {
 }
 
 .league-team-link.active {
-  background: #eeece7;
-  border-color: #111;
+  background: #FFFFFF;
+  border-color: #171D27;
 }
 
 .league-team-link.active img {
@@ -153,8 +161,8 @@ nav a.active {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,.78),
-    rgba(0,0,0,.15)
+    rgba(23,29,39,.78),
+    rgba(23,29,39,.15)
   );
 }
 
@@ -166,7 +174,7 @@ nav a.active {
   display: flex;
   align-items: center;
   gap: 28px;
-  color: white;
+  color: #FFFFFF;
 }
 
 .team-crest {
@@ -214,7 +222,7 @@ nav a.active {
 ========================= */
 
 .section-label {
-  color: #FF4B44;
+  color: #6699CC;
   font-size: 9px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -227,7 +235,7 @@ nav a.active {
 
 .club-section {
   padding: 90px 60px;
-  border-bottom: 1px solid #FF4B44;
+  border-bottom: 1px solid #6699CC;
 }
 
 .club-content {
@@ -240,7 +248,7 @@ nav a.active {
 
 .club-content h2 {
   margin: 0;
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 52px;
   line-height: .98;
   font-weight: 500;
@@ -249,7 +257,7 @@ nav a.active {
 
 .club-content p {
   margin: 0;
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 15px;
   line-height: 1.75;
 }
@@ -261,7 +269,7 @@ nav a.active {
 
 .palmares-section {
   padding: 80px 60px;
-  border-bottom: 1px solid #FF4B44;
+  border-bottom: 1px solid #6699CC;
 }
 
 .trophy-grid {
@@ -277,8 +285,8 @@ nav a.active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #d3d1ca;
-  background: #f6f5f1;
+  border: 1px solid #6699CC;
+  background: #171D27;
 }
 
 .trophy-image {
@@ -297,11 +305,11 @@ nav a.active {
   font-size: 38px;
   font-weight: 500;
   letter-spacing: -2px;
-  color: #111;
+  color: #FFFFFF;
 }
 
 .trophy-info span {
-  color: #777;
+  color: #FFFFFF;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -314,14 +322,14 @@ nav a.active {
 
 .other-trophies {
   margin-top: 18px;
-  border: 1px solid #FF4B44;
+  border: 1px solid #6699CC;
 }
 
 .other-trophies summary {
   padding: 20px 22px;
   cursor: pointer;
   list-style: none;
-  color: #FF4B44;
+  color: #6699CC;
   font-size: 10px;
   letter-spacing: 1.5px;
   font-weight: 700;
@@ -349,7 +357,7 @@ nav a.active {
   display: flex;
   align-items: center;
   gap: 14px;
-  border-top: 1px solid #FF4B44;
+  border-top: 1px solid #6699CC;
 }
 
 .other-trophy img {
@@ -366,11 +374,11 @@ nav a.active {
 
 .other-trophy strong {
   font-size: 20px;
-  color: #FF4B44;
+  color: #FFFFFF;
 }
 
 .other-trophy span {
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 9px;
 }
 
@@ -381,7 +389,7 @@ nav a.active {
 
 .squad-section {
   padding: 80px 60px;
-  border-bottom: 1px solid #FF4B44;
+  border-bottom: 1px solid #6699CC;
 }
 
 
@@ -398,7 +406,7 @@ nav a.active {
 
 .section-heading-row h2 {
   margin: 8px 0 0;
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 52px;
   line-height: .98;
   font-weight: 500;
@@ -413,9 +421,9 @@ nav a.active {
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  background: #000020;
-  border: 1px solid #FF4B44;
-  color: #FF4B44;
+  background: #171D27;
+  border: 1px solid #6699CC;
+  color: #FFFFFF;
   cursor: pointer;
   transition:
     background .2s ease,
@@ -423,25 +431,25 @@ nav a.active {
 }
 
 .season-selector:hover {
-  background: #FF4B44;
-  border-color: #FF4B44;
+  background: #6699CC;
+  border-color: #6699CC;
 }
 
 .season-selector span:first-child {
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 
 .season-selector strong {
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: 700;
 }
 
 .season-arrow {
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 17px;
   transition: transform .2s ease;
 }
@@ -449,7 +457,7 @@ nav a.active {
 .season-selector:hover span,
 .season-selector:hover strong,
 .season-selector:hover .season-arrow {
-  color: #000020;
+  color: #171D27;
 }
 
 .season-selector:hover .season-arrow {
@@ -469,10 +477,10 @@ nav a.active {
   display: flex;
   align-items: center;
   gap: 17px;
-  color: #000020;
+  color: #FFFFFF;
   text-decoration: none;
-  background: #ffffff;
-  border: 1px solid #ffffff;
+  background: #171D27;
+  border: 1px solid #6699CC;
   transition:
     background .2s ease,
     border-color .2s ease,
@@ -480,8 +488,8 @@ nav a.active {
 }
 
 .competition-button:hover {
-  background: #000020;
-  border-color: #FF4B44;
+  background: #6699CC;
+  border-color: #6699CC;
   transform: translateY(-2px);
 }
 
@@ -491,8 +499,8 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f6f5f1;
-  border: 1px solid #d3d1ca;
+  background: #171D27;
+  border: 1px solid #6699CC;
   flex-shrink: 0;
 }
 
@@ -509,14 +517,14 @@ nav a.active {
 }
 
 .competition-button-content span {
-  color: #000020;
+  color: #FFFFFF;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 
 .competition-button-content strong {
-  color: #000020;
+  color: #FFFFFF;
   font-size: 21px;
   font-weight: 700;
   letter-spacing: -.4px;
@@ -529,8 +537,8 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #000020;
-  color: #000020;
+  border: 1px solid #6699CC;
+  color: #FFFFFF;
   font-size: 20px;
   transition:
     background .2s ease,
@@ -541,12 +549,12 @@ nav a.active {
 .competition-button:hover .competition-button-content span,
 .competition-button:hover .competition-button-content strong,
 .competition-button:hover .competition-button-arrow {
-  color: #FF4B44;
+  color: #171D27;
 }
 
 .competition-button:hover .competition-button-arrow {
-  background: #000020;
-  border-color: #FF4B44;
+  background: #FFFFFF;
+  border-color: #FFFFFF;
   transform: translateX(3px);
 }
 
@@ -562,8 +570,8 @@ nav a.active {
 .squad-group h3 {
   margin: 0 0 18px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #FF4B44;
-  color: #FF4B44;
+  border-bottom: 1px solid #6699CC;
+  color: #6699CC;
   font-size: 10px;
   letter-spacing: 1.8px;
   font-weight: 700;
@@ -581,8 +589,8 @@ nav a.active {
 .position-group h3 {
   margin: 0 0 18px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #FF4B44;
-  color: #FF4B44;
+  border-bottom: 1px solid #6699CC;
+  color: #6699CC;
   font-size: 10px;
   letter-spacing: 1.8px;
   font-weight: 700;
@@ -610,10 +618,10 @@ nav a.active {
   position: relative;
   overflow: hidden;
   display: block;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
-  background: #d7d5cf;
-  border: 1px solid #d3d1ca;
+  background: #171D27;
+  border: 1px solid #6699CC;
 }
 
 .player-card > img {
@@ -637,8 +645,8 @@ nav a.active {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,.85),
-    rgba(0,0,0,0)
+    rgba(23,29,39,.85),
+    rgba(23,29,39,0)
   );
 }
 
@@ -652,7 +660,7 @@ nav a.active {
   font-weight: 800;
   line-height: .8;
   letter-spacing: -0.5px;
-  color: #FF4B44;
+  color: #6699CC;
 }
 
 .player-card-info {
@@ -705,7 +713,7 @@ nav a.active {
   font-weight: 800;
   line-height: .8;
   letter-spacing: -0.5px;
-  color: #FF4B44;
+  color: #6699CC;
 }
 
 .player-info {
@@ -738,7 +746,7 @@ nav a.active {
 
 .coach-section {
   padding: 85px 60px;
-  border-bottom: 1px solid #FF4B44;
+  border-bottom: 1px solid #6699CC;
 }
 
 .coach-card {
@@ -747,10 +755,10 @@ nav a.active {
   margin-top: 55px;
   display: flex;
   align-items: center;
-  color: #111;
+  color: #FFFFFF;
   text-decoration: none;
-  background: #fff;
-  border: 1px solid #d3d1ca;
+  background: #171D27;
+  border: 1px solid #6699CC;
   transition:
     background .2s ease,
     border-color .2s ease,
@@ -758,8 +766,8 @@ nav a.active {
 }
 
 .coach-card:hover {
-  background: #eeece7;
-  border-color: #111;
+  background: #6699CC;
+  border-color: #6699CC;
   transform: translateY(-2px);
 }
 
@@ -768,7 +776,7 @@ nav a.active {
   height: 180px;
   flex-shrink: 0;
   overflow: hidden;
-  background: #d7d5cf;
+  background: #171D27;
 }
 
 .coach-photo img {
@@ -787,7 +795,7 @@ nav a.active {
 
 .coach-kicker {
   margin-bottom: 8px;
-  color: #888;
+  color: #6699CC;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 1.8px;
@@ -812,12 +820,12 @@ nav a.active {
   height: 14px;
   display: block;
   object-fit: cover;
-  border: 1px solid #d3d1ca;
+  border: 1px solid #6699CC;
 }
 
 .coach-nationality span {
   margin: 0 !important;
-  color: #555 !important;
+  color: #FFFFFF !important;
   font-size: 10px !important;
   letter-spacing: .6px !important;
   text-transform: uppercase;
@@ -825,7 +833,7 @@ nav a.active {
 
 .coach-club {
   margin-top: 8px;
-  color: #777;
+  color: #FFFFFF;
   font-size: 10px;
   letter-spacing: .8px;
   text-transform: uppercase;
@@ -840,7 +848,7 @@ nav a.active {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border: 1px solid #d3d1ca;
+  border: 1px solid #6699CC;
   font-size: 20px;
   transition:
     background .2s ease,
@@ -849,8 +857,8 @@ nav a.active {
 }
 
 .coach-card:hover .coach-arrow {
-  background: #111;
-  color: white;
+  background: #171D27;
+  color: #FFFFFF;
   transform: translateX(3px);
 }
 
@@ -861,7 +869,7 @@ nav a.active {
 
 .transfers-section {
   padding: 80px 60px;
-  border-bottom: 1px solid #FF4B44;
+  border-bottom: 1px solid #6699CC;
 }
 
 .transfers-grid {
@@ -873,7 +881,7 @@ nav a.active {
 
 .transfer-column h3 {
   margin: 0 0 15px;
-  color: #FF4B44;
+  color: #6699CC;
   font-size: 10px;
   letter-spacing: 2px;
 }
@@ -885,14 +893,14 @@ nav a.active {
   grid-template-columns: 52px 1fr 75px 85px;
   align-items: center;
   gap: 12px;
-  border-top: 1px solid #FF4B44;
+  border-top: 1px solid #6699CC;
 }
 
 .transfer-photo {
   width: 52px;
   height: 52px;
   overflow: hidden;
-  background: #ddd;
+  background: #171D27;
 }
 
 .transfer-photo img {
@@ -903,7 +911,7 @@ nav a.active {
 
 .transfer-player {
   font-size: 12px;
-  color: #FF4B44;
+  color: #FFFFFF;
 }
 
 .transfer-club-area {
@@ -913,7 +921,7 @@ nav a.active {
 }
 
 .transfer-arrow {
-  color: #FF4B44;
+  color: #6699CC;
   font-size: 13px;
 }
 
@@ -934,7 +942,7 @@ nav a.active {
 .transfer-price {
   text-align: right;
   font-size: 10px;
-  color: #FF4B44;
+  color: #FFFFFF;
 }
 
 
@@ -944,7 +952,7 @@ nav a.active {
 
 .legends-section {
   padding: 80px 60px;
-  border-bottom: 1px solid #FF4B44;
+  border-bottom: 1px solid #6699CC;
 }
 
 .legends-grid {
@@ -958,8 +966,8 @@ nav a.active {
   min-height: 390px;
   position: relative;
   overflow: hidden;
-  color: white;
-  background: #222;
+  color: #FFFFFF;
+  background: #171D27;
 }
 
 .legend-photo {
@@ -979,8 +987,8 @@ nav a.active {
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(0,0,0,.9),
-    rgba(0,0,0,.05)
+    rgba(23,29,39,.9),
+    rgba(23,29,39,.05)
   );
 }
 
@@ -991,6 +999,7 @@ nav a.active {
   left: 15px;
   font-size: 10px;
   letter-spacing: 1px;
+  color: #6699CC;
 }
 
 .legend-card h3 {
@@ -1022,6 +1031,7 @@ nav a.active {
   right: 18px;
   bottom: 18px;
   font-size: 20px;
+  color: #6699CC;
 }
 
 
@@ -1043,7 +1053,7 @@ nav a.active {
 
 .history-content h2 {
   margin: 0;
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 52px;
   line-height: .98;
   font-weight: 500;
@@ -1052,7 +1062,7 @@ nav a.active {
 
 .history-content p {
   margin: 0;
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 15px;
   line-height: 1.75;
 }
@@ -1067,18 +1077,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid #FF4B44;
+  border-top: 1px solid #6699CC;
 }
 
 footer div {
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #FF4B44;
+  color: #FFFFFF;
 }
 
 footer span {
-  color: #FF4B44;
+  color: #FFFFFF;
   font-size: 10px;
 }
 
@@ -1342,7 +1352,7 @@ footer span {
     font-weight: 800;
     line-height: .8;
     letter-spacing: -0.3px;
-    color: #FF4B44;
+    color: #6699CC;
   }
 
   .legend-card {
@@ -1364,221 +1374,4 @@ footer span {
     right: 13px;
     bottom: 13px;
   }
-}
-
-
-/* =========================================================
-   SAUDI PRO LEAGUE THEME
-   Danube #6699CC | Mirage #171D27 | White #FFFFFF
-   Panel #202A38
-   Add class="saudi-pro-league" to the page's body.
-   Scoped overrides: all other league pages remain unchanged.
-========================================================= */
-
-body.saudi-pro-league {
-  --saudi-bg: #171D27;
-  --saudi-accent: #6699CC;
-  --saudi-white: #FFFFFF;
-  --saudi-muted: rgba(255,255,255,.72);
-  --saudi-border: rgba(102,153,204,.8);
-  --saudi-panel: #202A38;
-  background: var(--saudi-bg);
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .site-header {
-  background: var(--saudi-bg);
-  border-bottom-color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .logo,
-body.saudi-pro-league nav a,
-body.saudi-pro-league .search-button {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league nav a:hover,
-body.saudi-pro-league nav a.active,
-body.saudi-pro-league .search-button:hover {
-  color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .search-button {
-  border-color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .section-label,
-body.saudi-pro-league .squad-group h3,
-body.saudi-pro-league .position-group h3,
-body.saudi-pro-league .transfer-column h3 {
-  color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .club-section,
-body.saudi-pro-league .palmares-section,
-body.saudi-pro-league .squad-section,
-body.saudi-pro-league .coach-section,
-body.saudi-pro-league .transfers-section,
-body.saudi-pro-league .legends-section {
-  border-bottom-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .club-content h2,
-body.saudi-pro-league .club-content p,
-body.saudi-pro-league .section-heading-row h2,
-body.saudi-pro-league .history-content h2,
-body.saudi-pro-league .history-content p,
-body.saudi-pro-league footer div,
-body.saudi-pro-league footer span {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .squad-group h3,
-body.saudi-pro-league .position-group h3 {
-  border-bottom-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .season-selector {
-  background: var(--saudi-panel);
-  border-color: var(--saudi-accent);
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .season-selector span:first-child,
-body.saudi-pro-league .season-selector strong,
-body.saudi-pro-league .season-arrow {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .season-selector:hover {
-  background: var(--saudi-accent);
-  border-color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .season-selector:hover span,
-body.saudi-pro-league .season-selector:hover strong,
-body.saudi-pro-league .season-selector:hover .season-arrow {
-  color: var(--saudi-bg);
-}
-
-body.saudi-pro-league .competition-button {
-  color: var(--saudi-white);
-  background: var(--saudi-panel);
-  border-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .competition-button-logo {
-  background: var(--saudi-bg);
-  border-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .competition-button-content span,
-body.saudi-pro-league .competition-button-content strong,
-body.saudi-pro-league .competition-button-arrow {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .competition-button-arrow {
-  border-color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .competition-button:hover {
-  background: var(--saudi-accent);
-  border-color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .competition-button:hover .competition-button-content span,
-body.saudi-pro-league .competition-button:hover .competition-button-content strong,
-body.saudi-pro-league .competition-button:hover .competition-button-arrow {
-  color: var(--saudi-bg);
-}
-
-body.saudi-pro-league .competition-button:hover .competition-button-arrow {
-  background: var(--saudi-white);
-  border-color: var(--saudi-white);
-}
-
-body.saudi-pro-league .player-card,
-body.saudi-pro-league .trophy-card {
-  background: var(--saudi-panel);
-  border-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .shirt-number,
-body.saudi-pro-league .player-number {
-  color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .trophy-info strong,
-body.saudi-pro-league .trophy-info span {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .other-trophies {
-  border-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .other-trophies summary,
-body.saudi-pro-league .other-trophy strong,
-body.saudi-pro-league .other-trophy span {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .other-trophy {
-  border-top-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .coach-card {
-  color: var(--saudi-white);
-  background: var(--saudi-panel);
-  border-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .coach-card:hover {
-  background: #26364A;
-  border-color: var(--saudi-accent);
-}
-
-body.saudi-pro-league .coach-kicker,
-body.saudi-pro-league .coach-info strong,
-body.saudi-pro-league .coach-nationality span,
-body.saudi-pro-league .coach-club {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .coach-arrow {
-  border-color: var(--saudi-border);
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .coach-card:hover .coach-arrow {
-  background: var(--saudi-accent);
-  border-color: var(--saudi-accent);
-  color: var(--saudi-bg);
-}
-
-body.saudi-pro-league .transfer {
-  border-top-color: var(--saudi-border);
-}
-
-body.saudi-pro-league .transfer-photo {
-  background: var(--saudi-panel);
-}
-
-body.saudi-pro-league .transfer-player,
-body.saudi-pro-league .transfer-arrow,
-body.saudi-pro-league .transfer-price {
-  color: var(--saudi-white);
-}
-
-body.saudi-pro-league .legend-card {
-  background: var(--saudi-panel);
-}
-
-body.saudi-pro-league .legend-number {
-  color: var(--saudi-accent);
-}
-
-body.saudi-pro-league footer {
-  border-top-color: var(--saudi-border);
 }
