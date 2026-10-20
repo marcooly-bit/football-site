@@ -1,357 +1,1584 @@
-/* =========================================
-   SAUDI PRO LEAGUE — PAGES OF FOOTBALL
-   Colori:
-   Danube: #6699CC
-   Mirage: #171D27
-   Bianco: #FFFFFF
-========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap');
 
-:root {
-    --saudi-bg: #171D27;
-    --saudi-accent: #6699CC;
-    --saudi-white: #FFFFFF;
-    --saudi-muted: rgba(255, 255, 255, 0.72);
-    --saudi-border: rgba(102, 153, 204, 0.8);
-    --saudi-panel: #202A38;
+* {
+  box-sizing: border-box;
 }
 
-/* SFONDO GENERALE */
 body {
-    background-color: var(--saudi-bg);
-    color: var(--saudi-white);
+  margin: 0;
+  background: #000020;
+  color: #FF4B44;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
-header,
-.site-header,
-.main-header {
-    background-color: var(--saudi-bg);
-    border-bottom: 2px solid var(--saudi-accent);
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+  height: 72px;
+  padding: 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #FF4B44;
+  background: #000020;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header a,
-.site-header a,
-.main-header a {
-    color: var(--saudi-white);
+.logo {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FF4B44;
 }
 
-header a:hover,
-.site-header a:hover,
-.main-header a:hover {
-    color: var(--saudi-accent);
+nav {
+  display: flex;
+  gap: 34px;
 }
 
-/* LINK */
-a {
-    color: var(--saudi-accent);
+nav a {
+  color: #FF4B44;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: color .2s ease;
 }
 
-a:hover {
-    color: var(--saudi-white);
+nav a:hover,
+nav a.active {
+  color: #FF4B44;
 }
 
-/* SIDEBAR */
-.sidebar,
+.search-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #FF4B44;
+  background: transparent;
+  color: #FF4B44;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+
+/* =========================
+   LEAGUE SIDEBAR
+========================= */
+
 .league-sidebar {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+  position: fixed;
+  top: 90px;
+  right: 18px;
+  width: 68px;
+  max-height: calc(100vh - 108px);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(255,255,255,.75);
+  overflow-y: auto;
+  z-index: 900;
 }
 
-.sidebar a,
-.league-sidebar a {
-    color: var(--saudi-white);
+.league-team-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
 }
 
-.sidebar a:hover,
-.league-sidebar a:hover {
-    color: var(--saudi-accent);
+.league-team-link img {
+  width: 42px;
+  height: 42px;
+  display: block;
+  object-fit: contain;
+  transition: transform .2s ease;
 }
 
-/* HERO */
-.hero,
-.team-hero {
-    background-color: var(--saudi-panel);
-    border: 1px solid var(--saudi-border);
+.league-team-link:hover {
+  background: #f1f0ec;
+  border-color: #d3d1ca;
+  transform: translateX(-2px);
 }
 
-.hero h1,
-.team-hero h1,
-.hero h2,
-.team-hero h2 {
-    color: var(--saudi-white);
+.league-team-link:hover img {
+  transform: scale(1.08);
 }
 
-.hero p,
-.team-hero p {
-    color: var(--saudi-muted);
+.league-team-link.active {
+  background: #eeece7;
+  border-color: #111;
 }
 
-/* SEZIONI */
-section,
-.team-section {
-    border-color: var(--saudi-border);
+.league-team-link.active img {
+  transform: scale(1.05);
 }
 
-section h2,
-section h3,
-.team-section h2,
-.team-section h3 {
-    color: var(--saudi-accent);
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: 100%;
 }
 
-/* SCHEDE E PANNELLI */
-.card,
-.player-card,
-.coach-card,
-.transfer-card,
-.team-card {
-    background-color: var(--saudi-panel);
-    border: 1px solid var(--saudi-border);
-    color: var(--saudi-white);
+.hero-image {
+  min-height: 560px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("#");
+  background-size: cover;
+  background-position: center;
 }
 
-.card:hover,
-.player-card:hover,
-.coach-card:hover,
-.transfer-card:hover,
-.team-card:hover {
-    border-color: var(--saudi-accent);
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.78),
+    rgba(0,0,0,.15)
+  );
 }
 
-/* INFORMAZIONI SQUADRA */
-.team-info,
-.club-info,
-.team-details {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+.hero-content {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 55px 60px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  color: white;
 }
 
-.team-info strong,
-.club-info strong,
-.team-details strong {
-    color: var(--saudi-accent);
+.team-crest {
+  width: 92px;
+  height: 92px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,.95);
+  border: 1px solid rgba(255,255,255,.5);
+  flex-shrink: 0;
 }
 
-/* PALMARÈS E TROFEI */
-.palmares,
-.trophies,
+.team-crest img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-kicker {
+  margin-bottom: 10px;
+  color: rgba(255,255,255,.7);
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 64px;
+  line-height: .95;
+  font-weight: 500;
+  letter-spacing: -3px;
+}
+
+.hero p {
+  margin: 14px 0 0;
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+}
+
+
+/* =========================
+   GENERIC SECTIONS
+========================= */
+
+.section-label {
+  color: #FF4B44;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   CLUB
+========================= */
+
+.club-section {
+  padding: 90px 60px;
+  border-bottom: 1px solid #FF4B44;
+}
+
+.club-content {
+  max-width: 1050px;
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.club-content h2 {
+  margin: 0;
+  color: #FF4B44;
+  font-size: 52px;
+  line-height: .98;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.club-content p {
+  margin: 0;
+  color: #FF4B44;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+
+/* =========================
+   PALMARES
+========================= */
+
+.palmares-section {
+  padding: 80px 60px;
+  border-bottom: 1px solid #FF4B44;
+}
+
+.trophy-grid {
+  margin-top: 38px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
 .trophy-card {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+  min-height: 220px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #d3d1ca;
+  background: #f6f5f1;
 }
 
-.palmares h2,
-.trophies h2 {
-    color: var(--saudi-accent);
+.trophy-image {
+  width: 75px;
+  height: 105px;
+  object-fit: contain;
 }
 
-/* SELETTORE STAGIONE */
-.season-selector,
-.season-select {
-    background-color: var(--saudi-panel);
-    color: var(--saudi-white);
-    border: 1px solid var(--saudi-border);
+.trophy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.season-selector a,
-.season-select a {
-    color: var(--saudi-white);
+.trophy-info strong {
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  color: #111;
 }
 
-.season-selector a.active,
-.season-selector a:hover,
-.season-select a.active,
-.season-select a:hover {
-    background-color: var(--saudi-accent);
-    color: var(--saudi-bg);
+.trophy-info span {
+  color: #777;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* PULSANTI COMPETIZIONI */
-.competition-button,
-.competition-btn,
-.competition-link {
-    background-color: var(--saudi-accent);
-    color: var(--saudi-bg);
-    border: 1px solid var(--saudi-accent);
+
+/* =========================
+   OTHER TROPHIES
+========================= */
+
+.other-trophies {
+  margin-top: 18px;
+  border: 1px solid #FF4B44;
 }
 
-.competition-button:hover,
-.competition-btn:hover,
-.competition-link:hover {
-    background-color: var(--saudi-white);
-    color: var(--saudi-bg);
+.other-trophies summary {
+  padding: 20px 22px;
+  cursor: pointer;
+  list-style: none;
+  color: #FF4B44;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
 }
 
-/* TABELLE E STATISTICHE */
-table {
-    background-color: var(--saudi-panel);
-    color: var(--saudi-white);
-    border-color: var(--saudi-border);
+.other-trophies summary::-webkit-details-marker {
+  display: none;
 }
 
-th {
-    background-color: var(--saudi-accent);
-    color: var(--saudi-bg);
+.other-trophies summary span {
+  margin-right: 10px;
+  font-size: 15px;
 }
 
-td {
-    border-color: var(--saudi-border);
+.other-trophies-list {
+  padding: 0 22px 22px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(102, 153, 204, 0.08);
+.other-trophy {
+  min-height: 100px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid #FF4B44;
 }
 
-/* ALLENATORE */
-.coach,
+.other-trophy img {
+  width: 42px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.other-trophy div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.other-trophy strong {
+  font-size: 20px;
+  color: #FF4B44;
+}
+
+.other-trophy span {
+  color: #FF4B44;
+  font-size: 9px;
+}
+
+
+/* =========================
+   SQUAD
+========================= */
+
+.squad-section {
+  padding: 80px 60px;
+  border-bottom: 1px solid #FF4B44;
+}
+
+
+/* =========================
+   SEASON SELECTOR
+========================= */
+
+.section-heading-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section-heading-row h2 {
+  margin: 8px 0 0;
+  color: #FF4B44;
+  font-size: 52px;
+  line-height: .98;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+.season-selector {
+  min-width: 170px;
+  min-height: 64px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  background: #000020;
+  border: 1px solid #FF4B44;
+  color: #FF4B44;
+  cursor: pointer;
+  transition:
+    background .2s ease,
+    border-color .2s ease;
+}
+
+.season-selector:hover {
+  background: #FF4B44;
+  border-color: #FF4B44;
+}
+
+.season-selector span:first-child {
+  color: #FF4B44;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.season-selector strong {
+  color: #FF4B44;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.season-arrow {
+  color: #FF4B44;
+  font-size: 17px;
+  transition: transform .2s ease;
+}
+
+.season-selector:hover span,
+.season-selector:hover strong,
+.season-selector:hover .season-arrow {
+  color: #000020;
+}
+
+.season-selector:hover .season-arrow {
+  transform: translateY(2px);
+}
+
+
+/* =========================
+   COMPETITION BUTTON
+========================= */
+
+.competition-button {
+  width: min(520px, 100%);
+  min-height: 88px;
+  margin: 34px 0 52px;
+  padding: 12px 14px 12px 12px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  color: #000020;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.competition-button:hover {
+  background: #000020;
+  border-color: #FF4B44;
+  transform: translateY(-2px);
+}
+
+.competition-button-logo {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f5f1;
+  border: 1px solid #d3d1ca;
+  flex-shrink: 0;
+}
+
+.competition-button-logo img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.competition-button-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.competition-button-content span {
+  color: #000020;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.competition-button-content strong {
+  color: #000020;
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -.4px;
+}
+
+.competition-button-arrow {
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000020;
+  color: #000020;
+  font-size: 20px;
+  transition:
+    background .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.competition-button:hover .competition-button-content span,
+.competition-button:hover .competition-button-content strong,
+.competition-button:hover .competition-button-arrow {
+  color: #FF4B44;
+}
+
+.competition-button:hover .competition-button-arrow {
+  background: #000020;
+  border-color: #FF4B44;
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   SQUAD GROUPS
+========================= */
+
+.squad-group {
+  margin-top: 55px;
+}
+
+.squad-group h3 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #FF4B44;
+  color: #FF4B44;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   NEW POSITION GROUPS
+========================= */
+
+.position-group {
+  margin-top: 55px;
+}
+
+.position-group h3 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #FF4B44;
+  color: #FF4B44;
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+
+/* =========================
+   PLAYER CARDS
+========================= */
+
+.players-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.player-card {
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background: #d7d5cf;
+  border: 1px solid #d3d1ca;
+}
+
+.player-card > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .45s ease;
+}
+
+.player-card:hover > img {
+  transform: scale(1.04);
+}
+
+.player-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,0)
+  );
+}
+
+.shirt-number {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: .8;
+  letter-spacing: -0.5px;
+  color: #FF4B44;
+}
+
+.player-card-info {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  right: 15px;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-card-info strong {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.player-card-info strong img {
+  width: 18px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,.35);
+}
+
+.player-card-info > span {
+  color: rgba(255,255,255,.65);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   NEW PLAYER INFO
+========================= */
+
+.player-number {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 12px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: .8;
+  letter-spacing: -0.5px;
+  color: #FF4B44;
+}
+
+.player-info {
+  position: absolute;
+  z-index: 2;
+  left: 15px;
+  right: 15px;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-info strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.player-info span {
+  color: rgba(255,255,255,.65);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   COACH
+========================= */
+
 .coach-section {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+  padding: 85px 60px;
+  border-bottom: 1px solid #FF4B44;
 }
 
-.coach h2,
-.coach-section h2 {
-    color: var(--saudi-accent);
+.coach-card {
+  width: min(760px, 100%);
+  min-height: 180px;
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  color: #111;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #d3d1ca;
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
 }
 
-/* TRASFERIMENTI */
-.transfers,
-.transfer-section {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+.coach-card:hover {
+  background: #eeece7;
+  border-color: #111;
+  transform: translateY(-2px);
 }
 
-.transfer-in {
-    border-left: 3px solid var(--saudi-accent);
+.coach-photo {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #d7d5cf;
 }
 
-.transfer-out {
-    border-left: 3px solid var(--saudi-white);
+.coach-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
 }
 
-/* LEGGENDE */
-.legends,
+.coach-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.coach-kicker {
+  margin-bottom: 8px;
+  color: #888;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.coach-info strong {
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -.8px;
+}
+
+.coach-nationality {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coach-nationality img {
+  width: 20px;
+  height: 14px;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #d3d1ca;
+}
+
+.coach-nationality span {
+  margin: 0 !important;
+  color: #555 !important;
+  font-size: 10px !important;
+  letter-spacing: .6px !important;
+  text-transform: uppercase;
+}
+
+.coach-club {
+  margin-top: 8px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+.coach-arrow {
+  width: 42px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid #d3d1ca;
+  font-size: 20px;
+  transition:
+    background .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+.coach-card:hover .coach-arrow {
+  background: #111;
+  color: white;
+  transform: translateX(3px);
+}
+
+
+/* =========================
+   TRANSFERS
+========================= */
+
+.transfers-section {
+  padding: 80px 60px;
+  border-bottom: 1px solid #FF4B44;
+}
+
+.transfers-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.transfer-column h3 {
+  margin: 0 0 15px;
+  color: #FF4B44;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.transfer {
+  min-height: 70px;
+  padding: 8px 0;
+  display: grid;
+  grid-template-columns: 52px 1fr 75px 85px;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid #FF4B44;
+}
+
+.transfer-photo {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.transfer-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.transfer-player {
+  font-size: 12px;
+  color: #FF4B44;
+}
+
+.transfer-club-area {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.transfer-arrow {
+  color: #FF4B44;
+  font-size: 13px;
+}
+
+.transfer-club {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transfer-club img {
+  width: 27px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.transfer-price {
+  text-align: right;
+  font-size: 10px;
+  color: #FF4B44;
+}
+
+
+/* =========================
+   LEGENDS
+========================= */
+
 .legends-section {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+  padding: 80px 60px;
+  border-bottom: 1px solid #FF4B44;
 }
 
-.legends h2,
-.legends-section h2 {
-    color: var(--saudi-accent);
+.legends-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
 }
 
-/* STORIA DEL CLUB */
-.history,
-.team-history {
-    background-color: var(--saudi-panel);
-    border-color: var(--saudi-border);
+.legend-card {
+  min-height: 390px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  background: #222;
 }
 
-.history h2,
-.team-history h2 {
-    color: var(--saudi-accent);
+.legend-photo {
+  position: absolute;
+  inset: 0;
 }
 
-/* CAMPO DA CALCIO */
-.football-pitch {
-    background-color: #243C38;
-    border: 2px solid var(--saudi-white);
+.legend-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.pitch-halfway,
-.pitch-circle,
-.pitch-box,
-.pitch-goal {
-    border-color: rgba(255, 255, 255, 0.85);
+.legend-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.9),
+    rgba(0,0,0,.05)
+  );
 }
 
-.pitch-player {
-    background-color: var(--saudi-accent);
-    color: var(--saudi-bg);
-    border: 2px solid var(--saudi-white);
+.legend-number {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  left: 15px;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
-.pitch-player.preferred {
-    background-color: var(--saudi-accent);
+.legend-card h3 {
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  bottom: 53px;
+  margin: 0;
+  font-size: 27px;
+  line-height: .95;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 
-.pitch-player.secondary {
-    background-color: var(--saudi-white);
-    color: var(--saudi-bg);
+.legend-card p {
+  position: absolute;
+  z-index: 2;
+  left: 18px;
+  bottom: 20px;
+  margin: 0;
+  color: rgba(255,255,255,.65);
+  font-size: 9px;
+  letter-spacing: 1px;
 }
 
-/* FOOTER */
-footer,
-.site-footer {
-    background-color: var(--saudi-bg);
-    color: var(--saudi-muted);
-    border-top: 2px solid var(--saudi-accent);
+.legend-card b {
+  position: absolute;
+  z-index: 2;
+  right: 18px;
+  bottom: 18px;
+  font-size: 20px;
 }
 
-footer a,
-.site-footer a {
-    color: var(--saudi-accent);
+
+/* =========================
+   HISTORY
+========================= */
+
+.history-section {
+  padding: 90px 60px;
 }
 
-/* TESTI SECONDARI */
-.subtitle,
-.description,
-.muted,
-small {
-    color: var(--saudi-muted);
+.history-content {
+  max-width: 1050px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
 }
 
-/* BORDI */
-hr {
-    border-color: var(--saudi-border);
+.history-content h2 {
+  margin: 0;
+  color: #FF4B44;
+  font-size: 52px;
+  line-height: .98;
+  font-weight: 500;
+  letter-spacing: -2px;
 }
 
-/* INPUT E RICERCA */
-input,
-select,
-textarea {
-    background-color: var(--saudi-panel);
-    color: var(--saudi-white);
-    border: 1px solid var(--saudi-border);
+.history-content p {
+  margin: 0;
+  color: #FF4B44;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-    outline: 2px solid var(--saudi-accent);
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #FF4B44;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .sidebar,
-    .league-sidebar {
-        background-color: var(--saudi-panel);
-    }
-
-    .hero,
-    .team-hero {
-        border-color: var(--saudi-border);
-    }
-
-    .player-card,
-    .coach-card,
-    .transfer-card,
-    .team-card {
-        border-color: var(--saudi-border);
-    }
+footer div {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FF4B44;
 }
 
-@media (max-width: 480px) {
-    section h2,
-    .team-section h2 {
-        color: var(--saudi-accent);
-    }
+footer span {
+  color: #FF4B44;
+  font-size: 10px;
+}
 
-    .competition-button,
-    .competition-btn,
-    .competition-link {
-        width: 100%;
-        text-align: center;
-    }
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+  .league-sidebar {
+    display: none;
+  }
+
+  .site-header {
+    padding: 0 25px;
+  }
+
+  nav {
+    gap: 20px;
+  }
+
+  .hero-content {
+    padding: 45px 35px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .coach-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .players-grid,
+  .player-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trophy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .other-trophies-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .legends-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .club-content,
+  .history-content {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    height: 64px;
+    padding: 0 18px;
+  }
+
+  .logo {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .search-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero-image {
+    min-height: 430px;
+  }
+
+  .hero-content {
+    padding: 30px 22px;
+    gap: 18px;
+  }
+
+  .team-crest {
+    width: 70px;
+    height: 70px;
+    padding: 11px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    letter-spacing: -2px;
+  }
+
+  .hero p {
+    font-size: 11px;
+  }
+
+  .club-section,
+  .palmares-section,
+  .squad-section,
+  .coach-section,
+  .transfers-section,
+  .legends-section,
+  .history-section {
+    padding: 60px 22px;
+  }
+
+  .club-content,
+  .history-content {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .club-content h2,
+  .history-content h2 {
+    font-size: 40px;
+  }
+
+  .club-content p,
+  .history-content p {
+    font-size: 14px;
+  }
+
+  .section-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .section-heading-row h2 {
+    font-size: 40px;
+  }
+
+  .season-selector {
+    width: 100%;
+  }
+
+  .players-grid,
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .player-card {
+    height: 210px;
+  }
+
+  .trophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .other-trophies-list {
+    grid-template-columns: 1fr;
+  }
+
+  .legends-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .coach-card {
+    min-height: 140px;
+  }
+
+  .coach-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .coach-info {
+    padding: 20px;
+  }
+
+  .coach-info strong {
+    font-size: 22px;
+  }
+
+  .coach-arrow {
+    display: none;
+  }
+
+  .transfers-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .transfer {
+    grid-template-columns: 44px 1fr 55px;
+    gap: 8px;
+  }
+
+  .transfer-photo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .transfer-club-area {
+    display: none;
+  }
+
+  .transfer-price {
+    font-size: 9px;
+  }
+
+  footer {
+    padding: 30px 22px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero-content {
+    align-items: flex-end;
+  }
+
+  .team-crest {
+    width: 60px;
+    height: 60px;
+    padding: 9px;
+  }
+
+  .players-grid,
+  .player-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .player-card {
+    height: 190px;
+  }
+
+  .player-card-info,
+  .player-info {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .player-card-info strong,
+  .player-info strong {
+    font-size: 12px;
+  }
+
+  .shirt-number,
+  .player-number {
+    top: 8px;
+    left: 9px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: .8;
+    letter-spacing: -0.3px;
+    color: #FF4B44;
+  }
+
+  .legend-card {
+    min-height: 300px;
+  }
+
+  .legend-card h3 {
+    left: 13px;
+    bottom: 43px;
+    font-size: 21px;
+  }
+
+  .legend-card p {
+    left: 13px;
+    bottom: 14px;
+  }
+
+  .legend-card b {
+    right: 13px;
+    bottom: 13px;
+  }
+}
+
+
+/* =========================================================
+   SAUDI PRO LEAGUE THEME
+   Danube #6699CC | Mirage #171D27 | White #FFFFFF
+   Panel #202A38
+   Add class="saudi-pro-league" to the page's body.
+   Scoped overrides: all other league pages remain unchanged.
+========================================================= */
+
+body.saudi-pro-league {
+  --saudi-bg: #171D27;
+  --saudi-accent: #6699CC;
+  --saudi-white: #FFFFFF;
+  --saudi-muted: rgba(255,255,255,.72);
+  --saudi-border: rgba(102,153,204,.8);
+  --saudi-panel: #202A38;
+  background: var(--saudi-bg);
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .site-header {
+  background: var(--saudi-bg);
+  border-bottom-color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .logo,
+body.saudi-pro-league nav a,
+body.saudi-pro-league .search-button {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league nav a:hover,
+body.saudi-pro-league nav a.active,
+body.saudi-pro-league .search-button:hover {
+  color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .search-button {
+  border-color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .section-label,
+body.saudi-pro-league .squad-group h3,
+body.saudi-pro-league .position-group h3,
+body.saudi-pro-league .transfer-column h3 {
+  color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .club-section,
+body.saudi-pro-league .palmares-section,
+body.saudi-pro-league .squad-section,
+body.saudi-pro-league .coach-section,
+body.saudi-pro-league .transfers-section,
+body.saudi-pro-league .legends-section {
+  border-bottom-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .club-content h2,
+body.saudi-pro-league .club-content p,
+body.saudi-pro-league .section-heading-row h2,
+body.saudi-pro-league .history-content h2,
+body.saudi-pro-league .history-content p,
+body.saudi-pro-league footer div,
+body.saudi-pro-league footer span {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .squad-group h3,
+body.saudi-pro-league .position-group h3 {
+  border-bottom-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .season-selector {
+  background: var(--saudi-panel);
+  border-color: var(--saudi-accent);
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .season-selector span:first-child,
+body.saudi-pro-league .season-selector strong,
+body.saudi-pro-league .season-arrow {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .season-selector:hover {
+  background: var(--saudi-accent);
+  border-color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .season-selector:hover span,
+body.saudi-pro-league .season-selector:hover strong,
+body.saudi-pro-league .season-selector:hover .season-arrow {
+  color: var(--saudi-bg);
+}
+
+body.saudi-pro-league .competition-button {
+  color: var(--saudi-white);
+  background: var(--saudi-panel);
+  border-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .competition-button-logo {
+  background: var(--saudi-bg);
+  border-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .competition-button-content span,
+body.saudi-pro-league .competition-button-content strong,
+body.saudi-pro-league .competition-button-arrow {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .competition-button-arrow {
+  border-color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .competition-button:hover {
+  background: var(--saudi-accent);
+  border-color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .competition-button:hover .competition-button-content span,
+body.saudi-pro-league .competition-button:hover .competition-button-content strong,
+body.saudi-pro-league .competition-button:hover .competition-button-arrow {
+  color: var(--saudi-bg);
+}
+
+body.saudi-pro-league .competition-button:hover .competition-button-arrow {
+  background: var(--saudi-white);
+  border-color: var(--saudi-white);
+}
+
+body.saudi-pro-league .player-card,
+body.saudi-pro-league .trophy-card {
+  background: var(--saudi-panel);
+  border-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .shirt-number,
+body.saudi-pro-league .player-number {
+  color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .trophy-info strong,
+body.saudi-pro-league .trophy-info span {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .other-trophies {
+  border-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .other-trophies summary,
+body.saudi-pro-league .other-trophy strong,
+body.saudi-pro-league .other-trophy span {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .other-trophy {
+  border-top-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .coach-card {
+  color: var(--saudi-white);
+  background: var(--saudi-panel);
+  border-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .coach-card:hover {
+  background: #26364A;
+  border-color: var(--saudi-accent);
+}
+
+body.saudi-pro-league .coach-kicker,
+body.saudi-pro-league .coach-info strong,
+body.saudi-pro-league .coach-nationality span,
+body.saudi-pro-league .coach-club {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .coach-arrow {
+  border-color: var(--saudi-border);
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .coach-card:hover .coach-arrow {
+  background: var(--saudi-accent);
+  border-color: var(--saudi-accent);
+  color: var(--saudi-bg);
+}
+
+body.saudi-pro-league .transfer {
+  border-top-color: var(--saudi-border);
+}
+
+body.saudi-pro-league .transfer-photo {
+  background: var(--saudi-panel);
+}
+
+body.saudi-pro-league .transfer-player,
+body.saudi-pro-league .transfer-arrow,
+body.saudi-pro-league .transfer-price {
+  color: var(--saudi-white);
+}
+
+body.saudi-pro-league .legend-card {
+  background: var(--saudi-panel);
+}
+
+body.saudi-pro-league .legend-number {
+  color: var(--saudi-accent);
+}
+
+body.saudi-pro-league footer {
+  border-top-color: var(--saudi-border);
 }
