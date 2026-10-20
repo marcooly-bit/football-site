@@ -1,0 +1,357 @@
+/* =========================================
+   SAUDI PRO LEAGUE — PAGES OF FOOTBALL
+   Colori:
+   Danube: #6699CC
+   Mirage: #171D27
+   Bianco: #FFFFFF
+========================================= */
+
+:root {
+    --saudi-bg: #171D27;
+    --saudi-accent: #6699CC;
+    --saudi-white: #FFFFFF;
+    --saudi-muted: rgba(255, 255, 255, 0.72);
+    --saudi-border: rgba(102, 153, 204, 0.8);
+    --saudi-panel: #202A38;
+}
+
+/* SFONDO GENERALE */
+body {
+    background-color: var(--saudi-bg);
+    color: var(--saudi-white);
+}
+
+/* HEADER */
+header,
+.site-header,
+.main-header {
+    background-color: var(--saudi-bg);
+    border-bottom: 2px solid var(--saudi-accent);
+}
+
+header a,
+.site-header a,
+.main-header a {
+    color: var(--saudi-white);
+}
+
+header a:hover,
+.site-header a:hover,
+.main-header a:hover {
+    color: var(--saudi-accent);
+}
+
+/* LINK */
+a {
+    color: var(--saudi-accent);
+}
+
+a:hover {
+    color: var(--saudi-white);
+}
+
+/* SIDEBAR */
+.sidebar,
+.league-sidebar {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.sidebar a,
+.league-sidebar a {
+    color: var(--saudi-white);
+}
+
+.sidebar a:hover,
+.league-sidebar a:hover {
+    color: var(--saudi-accent);
+}
+
+/* HERO */
+.hero,
+.team-hero {
+    background-color: var(--saudi-panel);
+    border: 1px solid var(--saudi-border);
+}
+
+.hero h1,
+.team-hero h1,
+.hero h2,
+.team-hero h2 {
+    color: var(--saudi-white);
+}
+
+.hero p,
+.team-hero p {
+    color: var(--saudi-muted);
+}
+
+/* SEZIONI */
+section,
+.team-section {
+    border-color: var(--saudi-border);
+}
+
+section h2,
+section h3,
+.team-section h2,
+.team-section h3 {
+    color: var(--saudi-accent);
+}
+
+/* SCHEDE E PANNELLI */
+.card,
+.player-card,
+.coach-card,
+.transfer-card,
+.team-card {
+    background-color: var(--saudi-panel);
+    border: 1px solid var(--saudi-border);
+    color: var(--saudi-white);
+}
+
+.card:hover,
+.player-card:hover,
+.coach-card:hover,
+.transfer-card:hover,
+.team-card:hover {
+    border-color: var(--saudi-accent);
+}
+
+/* INFORMAZIONI SQUADRA */
+.team-info,
+.club-info,
+.team-details {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.team-info strong,
+.club-info strong,
+.team-details strong {
+    color: var(--saudi-accent);
+}
+
+/* PALMARÈS E TROFEI */
+.palmares,
+.trophies,
+.trophy-card {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.palmares h2,
+.trophies h2 {
+    color: var(--saudi-accent);
+}
+
+/* SELETTORE STAGIONE */
+.season-selector,
+.season-select {
+    background-color: var(--saudi-panel);
+    color: var(--saudi-white);
+    border: 1px solid var(--saudi-border);
+}
+
+.season-selector a,
+.season-select a {
+    color: var(--saudi-white);
+}
+
+.season-selector a.active,
+.season-selector a:hover,
+.season-select a.active,
+.season-select a:hover {
+    background-color: var(--saudi-accent);
+    color: var(--saudi-bg);
+}
+
+/* PULSANTI COMPETIZIONI */
+.competition-button,
+.competition-btn,
+.competition-link {
+    background-color: var(--saudi-accent);
+    color: var(--saudi-bg);
+    border: 1px solid var(--saudi-accent);
+}
+
+.competition-button:hover,
+.competition-btn:hover,
+.competition-link:hover {
+    background-color: var(--saudi-white);
+    color: var(--saudi-bg);
+}
+
+/* TABELLE E STATISTICHE */
+table {
+    background-color: var(--saudi-panel);
+    color: var(--saudi-white);
+    border-color: var(--saudi-border);
+}
+
+th {
+    background-color: var(--saudi-accent);
+    color: var(--saudi-bg);
+}
+
+td {
+    border-color: var(--saudi-border);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(102, 153, 204, 0.08);
+}
+
+/* ALLENATORE */
+.coach,
+.coach-section {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.coach h2,
+.coach-section h2 {
+    color: var(--saudi-accent);
+}
+
+/* TRASFERIMENTI */
+.transfers,
+.transfer-section {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.transfer-in {
+    border-left: 3px solid var(--saudi-accent);
+}
+
+.transfer-out {
+    border-left: 3px solid var(--saudi-white);
+}
+
+/* LEGGENDE */
+.legends,
+.legends-section {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.legends h2,
+.legends-section h2 {
+    color: var(--saudi-accent);
+}
+
+/* STORIA DEL CLUB */
+.history,
+.team-history {
+    background-color: var(--saudi-panel);
+    border-color: var(--saudi-border);
+}
+
+.history h2,
+.team-history h2 {
+    color: var(--saudi-accent);
+}
+
+/* CAMPO DA CALCIO */
+.football-pitch {
+    background-color: #243C38;
+    border: 2px solid var(--saudi-white);
+}
+
+.pitch-halfway,
+.pitch-circle,
+.pitch-box,
+.pitch-goal {
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+.pitch-player {
+    background-color: var(--saudi-accent);
+    color: var(--saudi-bg);
+    border: 2px solid var(--saudi-white);
+}
+
+.pitch-player.preferred {
+    background-color: var(--saudi-accent);
+}
+
+.pitch-player.secondary {
+    background-color: var(--saudi-white);
+    color: var(--saudi-bg);
+}
+
+/* FOOTER */
+footer,
+.site-footer {
+    background-color: var(--saudi-bg);
+    color: var(--saudi-muted);
+    border-top: 2px solid var(--saudi-accent);
+}
+
+footer a,
+.site-footer a {
+    color: var(--saudi-accent);
+}
+
+/* TESTI SECONDARI */
+.subtitle,
+.description,
+.muted,
+small {
+    color: var(--saudi-muted);
+}
+
+/* BORDI */
+hr {
+    border-color: var(--saudi-border);
+}
+
+/* INPUT E RICERCA */
+input,
+select,
+textarea {
+    background-color: var(--saudi-panel);
+    color: var(--saudi-white);
+    border: 1px solid var(--saudi-border);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--saudi-accent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .sidebar,
+    .league-sidebar {
+        background-color: var(--saudi-panel);
+    }
+
+    .hero,
+    .team-hero {
+        border-color: var(--saudi-border);
+    }
+
+    .player-card,
+    .coach-card,
+    .transfer-card,
+    .team-card {
+        border-color: var(--saudi-border);
+    }
+}
+
+@media (max-width: 480px) {
+    section h2,
+    .team-section h2 {
+        color: var(--saudi-accent);
+    }
+
+    .competition-button,
+    .competition-btn,
+    .competition-link {
+        width: 100%;
+        text-align: center;
+    }
+}
